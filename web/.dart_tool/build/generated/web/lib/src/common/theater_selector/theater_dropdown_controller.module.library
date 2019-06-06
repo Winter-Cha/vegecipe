@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["angular|lib/angular.dart","meta|lib/meta.dart","web|lib/src/common/theater_selector/theater_selector_dropdown_menu_component.template.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}

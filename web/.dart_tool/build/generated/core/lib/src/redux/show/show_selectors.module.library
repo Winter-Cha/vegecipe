@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["core|lib/src/models/event.dart","core|lib/src/models/show.dart","core|lib/src/models/show_cache.dart","core|lib/src/redux/app/app_state.dart","kt_dart|lib/collection.dart","memoize|lib/memoize.dart","reselect|lib/reselect.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

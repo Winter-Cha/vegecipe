@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["service_worker|lib/window.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}

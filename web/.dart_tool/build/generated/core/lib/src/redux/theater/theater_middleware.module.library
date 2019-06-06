@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["core|lib/src/models/theater.dart","core|lib/src/parsers/theater_parser.dart","core|lib/src/preloaded_data.dart","core|lib/src/redux/_common/common_actions.dart","core|lib/src/redux/app/app_state.dart","key_value_store|lib/key_value_store.dart","kt_dart|lib/collection.dart","redux|lib/redux.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}

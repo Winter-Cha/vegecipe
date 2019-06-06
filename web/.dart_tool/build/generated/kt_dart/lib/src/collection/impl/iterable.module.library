@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["kt_dart|lib/collection.dart","kt_dart|lib/src/collection/extension/iterable_extension_mixin.dart","kt_dart|lib/src/collection/extension/iterable_mutable_extension_mixin.dart","kt_dart|lib/src/collection/impl/dart_iterable.dart","kt_dart|lib/src/collection/impl/iterator.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

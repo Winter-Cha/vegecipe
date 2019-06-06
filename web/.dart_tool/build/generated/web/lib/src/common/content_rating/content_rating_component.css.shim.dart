@@ -1,0 +1,1 @@
+final List<dynamic> styles = ['._nghost-%ID%[size=small] img._ngcontent-%ID%{width:20px;height:20px}._nghost-%ID%[size=medium] img._ngcontent-%ID%{width:30px;height:30px}img._ngcontent-%ID%{width:20px;height:20px;vertical-align:middle;margin-right:6px}img:last-child._ngcontent-%ID%{margin-right:0}'];

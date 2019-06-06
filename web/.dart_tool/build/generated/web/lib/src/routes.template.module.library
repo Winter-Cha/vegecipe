@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["web|lib/src/routes.dart","angular_router|lib/angular_router.template.dart","web|lib/src/events/events_page_component.template.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

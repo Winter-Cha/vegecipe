@@ -1,0 +1,18 @@
+:host[size=small] img {
+  width: 20px;
+  height: 20px;
+}
+:host[size=medium] img {
+  width: 30px;
+  height: 30px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+img:last-child {
+  margin-right: 0;
+}

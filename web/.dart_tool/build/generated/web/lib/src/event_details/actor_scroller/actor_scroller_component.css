@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  :host {
+    padding-left: 0;
+  }
+}
+:host div {
+  margin-right: 20px;
+  max-width: 60px;
+}
+:host div:last-child {
+  margin-right: 0;
+}
+:host div p {
+  color: #1D1D1B;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 14px;
+  text-align: center;
+}
