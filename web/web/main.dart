@@ -19,6 +19,7 @@ import 'package:firebase/firebase.dart' as fb;
 final Store<AppState> _store = createStore(
   Client(),
   WebKeyValueStore(window.localStorage),
+  fb.firestore(),
 );
 Store<AppState> storeFactory() => _store;
 

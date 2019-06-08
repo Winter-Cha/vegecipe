@@ -1,4 +1,9 @@
 <nav [class.hidden]="theaterDropdownActive">
+  <a [routerLink]="RoutePaths.vegeNews.toUrl()"
+    routerLinkActive="active-route">
+   <img class="icon" alt="Vegan News" src="images/now-in-theaters.svg"/>
+   <span>{{ messages.vegeNews }}</span>
+ </a>
   <a [routerLink]="RoutePaths.nowInTheaters.toUrl()"
      routerLinkActive="active-route">
     <img class="icon" alt="Now in theaters" src="images/now-in-theaters.svg"/>

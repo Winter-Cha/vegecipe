@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection', 'packages/core/core', 'packages/angular_router/src/directives/router_outlet_directive', 'packages/redux/redux', 'packages/angular/angular.template', 'packages/angular_router/angular_router.template', 'packages/web/app_component.template', 'packages/http/src/base_client', 'packages/key_value_store_web/key_value_store_web', 'packages/pwa/client', 'packages/web/app_component', 'packages/angular/src/bootstrap/modules', 'packages/firebase/firebase', 'packages/intl/intl_browser', 'packages/intl/date_symbol_data_local', 'packages/intl/intl'], function(dart_sdk, change_detection, core, router_outlet_directive, redux, angular, angular_router, app_component, base_client, key_value_store_web, client, app_component$, modules, firebase, intl_browser, date_symbol_data_local, intl) {
+define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection', 'packages/core/core', 'packages/angular_router/src/directives/router_outlet_directive', 'packages/redux/redux', 'packages/angular/angular.template', 'packages/angular_router/angular_router.template', 'packages/web/app_component.template', 'packages/http/src/base_client', 'packages/key_value_store_web/key_value_store_web', 'packages/firebase/firebase', 'packages/pwa/client', 'packages/web/app_component', 'packages/angular/src/bootstrap/modules', 'packages/intl/intl_browser', 'packages/intl/date_symbol_data_local', 'packages/intl/intl'], function(dart_sdk, change_detection, core, router_outlet_directive, redux, angular, angular_router, app_component, base_client, key_value_store_web, firebase, client, app_component$, modules, intl_browser, date_symbol_data_local, intl) {
   'use strict';
   const core$ = dart_sdk.core;
   const html = dart_sdk.html;
@@ -26,10 +26,10 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   const app_component$46template = app_component.app_component$46template;
   const src__client = base_client.src__client;
   const key_value_store_web$ = key_value_store_web.key_value_store_web;
+  const src__top_level = firebase.src__top_level;
   const client$ = client.client;
   const app_component$0 = app_component$.app_component;
   const src__bootstrap__run = modules.src__bootstrap__run;
-  const src__top_level = firebase.src__top_level;
   const intl_browser$ = intl_browser.intl_browser;
   const date_symbol_data_local$ = date_symbol_data_local.date_symbol_data_local;
   const intl$ = intl.intl;
@@ -158,7 +158,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   };
   dart.defineLazy(main, {
     /*main._store*/get _store() {
-      return src__redux__store.createStore(src__client.Client.new(), new key_value_store_web$.WebKeyValueStore.new(html.window.localStorage));
+      return src__redux__store.createStore(src__client.Client.new(), new key_value_store_web$.WebKeyValueStore.new(html.window.localStorage), src__top_level.firestore());
     }
   });
   main.storeFactory = function() {
@@ -200,7 +200,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   dart.trackLibraries("web/main.ddc", {
     "main.template.dart": main$46template,
     "main.dart": main
-  }, '{"version":3,"sourceRoot":"","sources":["main.template.dart","main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;mDAyBoC,MAAmB;2BAAN;eAAY,yCAAwB,CAAC,MAAM;EAAC;;;;;;;;;;;;;;;;;cAiB1D,aAAO;6CAAK,gCAAY;IAAE;;cAChC,aAAO;yCAAK,AAAI,iBAAY;IAAE;;cACpB,aAAO;6CAAK,uCAAc,yCAAC,QAAQ,CAAK,+CAAQ,uCAAG,mBAAc,CAAK,0CAAU,EAAE;IAAM;;cAC5F,aAAO;6CAAK,oCAAY,0DAAC,QAAQ,CAAM,gEAAgB;IAAE;;cAC3B,aAAO;6CAAK,oEAA2B;IAAE;;cAC/C,aAAO;6CAAK,8DAAwB,0DAAC,QAAQ,CAAM,gEAAgB,wBAAG,mBAAc,CAAC,mCAAM,2BAAwB,CAAC,kBAAgB;IAAM;;YAClK;IAAI;2BAEP,KAAY,EAAG,MAAmC;6BAA5B,SAAa,2CAAe;AAC9E,UAAI,AAAU,KAAK,KAAM,2CAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,UAAI,AAAU,KAAK,KAAO,+BAAK,EAAG;AAChC,cAAO,oBAAa;;AAEtB,UAAI,AAAU,KAAK,KAAO,yCAAM,EAAG;AACjC,cAAO,uBAAgB;;AAEzB,UAAI,AAAU,KAAK,KAAM,+CAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,UAAI,AAAU,KAAK,KAAO,gEAAgB,EAAG;AAC3C,cAAO,oCAA6B;;AAEtC,UAAI,AAAU,KAAK,KAAO,gEAAgB,EAAG;AAC3C,cAAO,iCAA0B;;AAEnC,UAAI,AAAU,KAAK,KAAM,mDAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,YAAO,OAAM;IACf;;wDA7C0B,MAAmB;2BAAN;IAE1B,aAAO;IAEZ,aAAO;IAEA,aAAO;IAET,aAAO;IAEQ,aAAO;IAEV,aAAO;AAZkB,gIAAM,MAAM;EAAC;;;;;;;;;;;;;;;;;;;;;;;MAgD7D,wBAAQ;YAAG;;;;;AAEb,kBAAI,wBAAQ,GAAE;AACZ;;AAEF,+BAAW;AAEX,IAAM,6BAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,uCAAa;AACnB,IAAM,sCAAa;EACrB;;MCrEsB,WAAM;YAAG,8BAAW,CACxC,sBAAM,QACN,yCAAgB,CAAC,WAAM,aAAa;;;;UAEJ,YAAM;;;MAOlB,iBAAY;YAAQ,+DAAqB;;;;AAEnD;AACV,wBAAU;AACV,YAAM,wBAAmB;AACzB,YAAM,4BAAuB;AAE7B,gCAAM,+BAAI,8CAAqB,mBAAkB,iBAAY;IAC/D;;;AAG2B;AACzB,MAAG,4BAAa,UACN,uDACI,4CACC,iDACF,8BACI,8CACI;IAEvB;;;AAE+B;AAC7B,UAAI,UAAS,MAAM,8BAAgB;AACnC,UAAM,4BAA2B,MAAM,iDAAkB,CAAC,MAAM;AAChE,YAAM,gDAAwB,CAAC,MAAM;AAErC,qBAAK,wBAAwB,GAAE;AAE7B,cAAM,GAAG;AACT,cAAM,iDAAkB,CAAC,MAAM;AAC/B,cAAM,gDAAwB,CAAC,MAAM;;AAGvC,MAAY,oDAAU,GAAG,MAAM,KAAI;AACnC,MAAK,wBAAa,GAAG,MAAM;IAC7B","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["main.template.dart","main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;mDAyBoC,MAAmB;2BAAN;eAAY,yCAAwB,CAAC,MAAM;EAAC;;;;;;;;;;;;;;;;;cAiB1D,aAAO;6CAAK,gCAAY;IAAE;;cAChC,aAAO;yCAAK,AAAI,iBAAY;IAAE;;cACpB,aAAO;6CAAK,uCAAc,yCAAC,QAAQ,CAAK,+CAAQ,uCAAG,mBAAc,CAAK,0CAAU,EAAE;IAAM;;cAC5F,aAAO;6CAAK,oCAAY,0DAAC,QAAQ,CAAM,gEAAgB;IAAE;;cAC3B,aAAO;6CAAK,oEAA2B;IAAE;;cAC/C,aAAO;6CAAK,8DAAwB,0DAAC,QAAQ,CAAM,gEAAgB,wBAAG,mBAAc,CAAC,mCAAM,2BAAwB,CAAC,kBAAgB;IAAM;;YAClK;IAAI;2BAEP,KAAY,EAAG,MAAmC;6BAA5B,SAAa,2CAAe;AAC9E,UAAI,AAAU,KAAK,KAAM,2CAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,UAAI,AAAU,KAAK,KAAO,+BAAK,EAAG;AAChC,cAAO,oBAAa;;AAEtB,UAAI,AAAU,KAAK,KAAO,yCAAM,EAAG;AACjC,cAAO,uBAAgB;;AAEzB,UAAI,AAAU,KAAK,KAAM,+CAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,UAAI,AAAU,KAAK,KAAO,gEAAgB,EAAG;AAC3C,cAAO,oCAA6B;;AAEtC,UAAI,AAAU,KAAK,KAAO,gEAAgB,EAAG;AAC3C,cAAO,iCAA0B;;AAEnC,UAAI,AAAU,KAAK,KAAM,mDAAQ,EAAG;AAClC,cAAO,qBAAc;;AAEvB,YAAO,OAAM;IACf;;wDA7C0B,MAAmB;2BAAN;IAE1B,aAAO;IAEZ,aAAO;IAEA,aAAO;IAET,aAAO;IAEQ,aAAO;IAEV,aAAO;AAZkB,gIAAM,MAAM;EAAC;;;;;;;;;;;;;;;;;;;;;;;MAgD7D,wBAAQ;YAAG;;;;;AAEb,kBAAI,wBAAQ,GAAE;AACZ;;AAEF,+BAAW;AAEX,IAAM,6BAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,uCAAa;AACnB,IAAM,sCAAa;EACrB;;MCrEsB,WAAM;YAAG,8BAAW,CACxC,sBAAM,QACN,yCAAgB,CAAC,WAAM,aAAa,GACpC,AAAG,wBAAS;;;;UAEoB,YAAM;;;MAOlB,iBAAY;YAAQ,+DAAqB;;;;AAEnD;AACV,wBAAU;AACV,YAAM,wBAAmB;AACzB,YAAM,4BAAuB;AAE7B,gCAAM,+BAAI,8CAAqB,mBAAkB,iBAAY;IAC/D;;;AAG2B;AACzB,MAAG,4BAAa,UACN,uDACI,4CACC,iDACF,8BACI,8CACI;IAEvB;;;AAE+B;AAC7B,UAAI,UAAS,MAAM,8BAAgB;AACnC,UAAM,4BAA2B,MAAM,iDAAkB,CAAC,MAAM;AAChE,YAAM,gDAAwB,CAAC,MAAM;AAErC,qBAAK,wBAAwB,GAAE;AAE7B,cAAM,GAAG;AACT,cAAM,iDAAkB,CAAC,MAAM;AAC/B,cAAM,gDAAwB,CAAC,MAAM;;AAGvC,MAAY,oDAAU,GAAG,MAAM,KAAI;AACnC,MAAK,wBAAa,GAAG,MAAM;IAC7B","file":"main.ddc.js"}');
   // Exports:
   return {
     main$46template: main$46template,

@@ -5,6 +5,7 @@ export 'src/models/loading_status.dart';
 export 'src/models/show.dart';
 export 'src/models/show_cache.dart';
 export 'src/models/theater.dart';
+export 'src/models/vegenews.dart';
 
 export 'src/i18n/messages.dart';
 export 'src/i18n/inkino_messages_all.dart';
@@ -20,8 +21,11 @@ export 'src/redux/event/event_actions.dart';
 export 'src/redux/event/event_selectors.dart';
 export 'src/redux/show/show_actions.dart';
 export 'src/redux/show/show_selectors.dart';
+export 'src/redux/vegenews/vegenews_actions.dart';
+export 'src/redux/vegenews/vegenews_selectors.dart';
 export 'src/redux/store.dart';
 
 export 'src/viewmodels/theater_list_view_model.dart';
 export 'src/viewmodels/events_page_view_model.dart';
 export 'src/viewmodels/showtime_page_view_model.dart';
+export 'src/viewmodels/vegenews_page_view_mode.dart';

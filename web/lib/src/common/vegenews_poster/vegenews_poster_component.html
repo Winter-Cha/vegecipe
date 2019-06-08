@@ -1,0 +1,18 @@
+<div class="fallback-icon">
+  <img src="images/fallback-icon.svg"
+       [alt]="'Fallback image for ' + vegeNews.title"/>
+</div>
+
+<lazy-img *ngIf="vegeNews.hasMediumPortraitImage"
+          [src]="vegeNews.images.portraitMedium"
+          [alt]="'Poster for ' + vegeNews.title"></lazy-img>
+
+<div class="vegeNews-information" *ngIf="hasDetails">
+  <p><strong>{{ vegeNews.title }}</strong></p>
+  <p class="genres">{{ vegeNews.genres }}</p>
+</div>
+
+<div class="release-date-information" *ngIf="isComingSoon">
+  <p class="label">{{ messages.releaseDate }}</p>
+  <p class="date">{{ releaseDate }}</p>
+</div>
