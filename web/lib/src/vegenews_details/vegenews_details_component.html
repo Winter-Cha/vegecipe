@@ -1,0 +1,34 @@
+<div class="container" [class.visible]="contentVisible" *ngIf="vegeNews != null">
+  <vegenews-landscape-image [vegeNews]="vegeNews"></vegenews-landscape-image>
+  <img src="images/back.svg" class="back" (click)="goBack()"/>
+
+  <div class="vegenews-header">
+    <vegenews-poster [vegeNews]="vegeNews" [isTouchable]="false" [hasDetails]="false"></vegenews-poster>
+    <div class="vegenews-information">
+      <h2 class="title">{{ vegeNews.title }}</h2>
+
+      <div class="body">
+        <p class="writtenBy" *ngIf="vegeNews.writtenBy != null">
+          <strong>{{ messages.writtenBy }}</strong>: {{ vegeNews.writtenBy }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" *ngIf="vegeNews.hasContent">
+    <div class="centered-content">
+      <p class="content">{{ vegeNews.content }}</p>
+    </div>
+  </div>
+
+  <div class="section footer" *ngIf="vegeNews.galleryImages.isNotEmpty()">
+    <div class="centered-content">
+      <h3>{{ messages.gallery }}</h3>
+
+      <div class="gallery">
+        <img *ngFor="let galleryImage of vegeNews.galleryImages.list" [src]="galleryImage.location"
+             [alt]="'A still frame from the movie ' + vegeNews.title"/>
+      </div>
+    </div>
+  </div>
+</div>

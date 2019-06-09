@@ -6,6 +6,8 @@ import 'package:web/src/events/events_page_component.template.dart'
     as events_page;
 import 'package:web/src/vegenews/vegenews_page_component.template.dart'
     as vegenews_page;
+import 'package:web/src/vegenews_details/vegenews_details_component.template.dart'
+    deferred as vegenews_details;
 import 'package:web/src/showtimes/showtimes_page_component.template.dart'
     deferred as showtimes_page;
 
@@ -13,10 +15,12 @@ class RoutePaths {
 
   // VegeNews
   static final vegeNews = RoutePath(
-    path: '/',
+    path: '/vegenews',
     //additionalData: EventListType.vegeNews,
     useAsDefault: true,
   );
+
+  static final vegeNewsDetails = RoutePath(path: 'vegenews/:vegeNewsId');
 
   // now in theaters <<
   static final nowInTheaters = RoutePath(
@@ -32,6 +36,8 @@ class RoutePaths {
 
   static final eventDetails = RoutePath(path: 'event/:eventId');
   static final showDetails = RoutePath(path: 'show/:eventId/:showId');
+
+  
 }
 
 class Routes {
@@ -41,6 +47,14 @@ class Routes {
       routePath: RoutePaths.vegeNews,
       useAsDefault: true,
       component: vegenews_page.VegeNewsPageComponentNgFactory,
+    ),
+    RouteDefinition.defer(
+      routePath: RoutePaths.vegeNewsDetails,
+      loader: () {
+        return vegenews_details
+            .loadLibrary()
+            .then((_) => vegenews_details.VegeNewsDetailsComponentNgFactory);
+      },
     ),
     RouteDefinition(
       routePath: RoutePaths.nowInTheaters,

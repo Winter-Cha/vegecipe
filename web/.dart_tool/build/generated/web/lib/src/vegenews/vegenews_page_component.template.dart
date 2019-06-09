@@ -194,7 +194,7 @@ class _ViewVegeNewsPageComponent1 extends AppView<import2.VegeNewsPageComponent>
   void _handle_click_0_0($event) {
     final local_vegeNews = import12.unsafeCast<import22.VegeNews>(locals['\$implicit']);
     final _ctx = ctx;
-    _ctx.openEventDetails(local_vegeNews);
+    _ctx.openVegeNewsDetails(local_vegeNews);
   }
 }
 

@@ -6,6 +6,7 @@ class Messages {
         'Vegan News',
         name: 'vegeNews',
       );
+  String get writtenBy => Intl.message('Written by', name: 'writtenBy');
   String get nowInTheaters => Intl.message(
         'Now in theaters',
         name: 'nowInTheaters',

@@ -142,7 +142,7 @@ class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
   void detectChangesInternal() {
     final _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
-    final currVal_2 = import22.RoutePaths.nowInTheaters.toUrl();
+    final currVal_2 = import22.RoutePaths.vegeNews.toUrl();
     if (import23.checkBinding(_expr_2, currVal_2)) {
       _RouterLink_3_5.instance.routerLink = currVal_2;
       _expr_2 = currVal_2;

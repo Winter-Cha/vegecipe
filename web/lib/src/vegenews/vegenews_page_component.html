@@ -11,7 +11,7 @@
       <vegenews-poster 
                     *ngFor="let vegeNews of viewModel.vegeNews.list"
                     [vegeNews]="vegeNews"
-                    (click)="openEventDetails(vegeNews)">
+                    (click)="openVegeNewsDetails(vegeNews)">
       </vegenews-poster>
     </div>
   </loading-view>

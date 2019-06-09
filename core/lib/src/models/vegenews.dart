@@ -24,8 +24,12 @@ class VegeNews {
   final DateTime reportingDate;
   final DateTime lastModifiedDate;
 
+
+  bool get hasContent => (content != null && content.isNotEmpty) ;
+
   // 썸네일에 쓸 이미지 컬럼명이 변경 될수 있어
   bool get hasMediumPortraitImage => images.portraitMedium != null;
+
 
   @override
   bool operator ==(Object other) =>

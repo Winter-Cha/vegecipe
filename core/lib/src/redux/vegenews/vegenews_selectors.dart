@@ -16,6 +16,12 @@ KtList<VegeNews> _vegeNewsOrVegeNewsSearch(KtList<VegeNews> vegeNews, String sea
       : _vegeNewsWithSearchQuery(vegeNews, searchQuery);
 }
 
+VegeNews vegeNewsByIdSelector(AppState state, String id) {
+  final predicate = (vegeNews) => vegeNews.id == id;
+  return vegeNewsSelector(state).firstOrNull(predicate);
+}
+
+
 KtList<VegeNews> _vegeNewsWithSearchQuery(KtList<VegeNews> original, String searchQuery) {
 
   final searchQueryPattern = RegExp(searchQuery, caseSensitive: false);

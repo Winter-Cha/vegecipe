@@ -46,11 +46,11 @@ class VegeNewsPageComponent implements OnActivate {
     // }
   }
 
-  void openEventDetails(VegeNews vegeNews) {
+  void openVegeNewsDetails(VegeNews vegeNews) {
     storeCurrentScrollPosition();
 
     final url =
-        RoutePaths.eventDetails.toUrl(parameters: {'eventId': vegeNews.id});
+        RoutePaths.vegeNewsDetails.toUrl(parameters: {'vegeNewsId': vegeNews.id});
     _router.navigate(url);
   }
 }
