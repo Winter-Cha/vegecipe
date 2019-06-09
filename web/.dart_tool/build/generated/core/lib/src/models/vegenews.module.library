@@ -1,1 +1,1 @@
-{"isEntrypoint":false,"deps":["kt_dart|lib/collection.dart","meta|lib/meta.dart","core|lib/src/models/actor.dart","core|lib/src/models/content_descriptor.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":false,"deps":["kt_dart|lib/collection.dart","meta|lib/meta.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

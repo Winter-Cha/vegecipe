@@ -178,7 +178,7 @@ class _ViewVegeNewsPosterComponent2 extends AppView<import2.VegeNewsPosterCompon
     addShimE(_el_2);
     _el_2.append(_textBinding_3.element);
     final _el_4 = import11.appendElement(doc, _el_0, 'p');
-    this.updateChildClass(_el_4, 'genres');
+    this.updateChildClass(_el_4, 'writtenBy');
     addShimE(_el_4);
     _el_4.append(_textBinding_5.element);
     init1(_el_0);
@@ -188,7 +188,7 @@ class _ViewVegeNewsPosterComponent2 extends AppView<import2.VegeNewsPosterCompon
   void detectChangesInternal() {
     final _ctx = ctx;
     _textBinding_3.updateText(import17.interpolateString0(_ctx.vegeNews.title));
-    _textBinding_5.updateText(import17.interpolateString0(_ctx.vegeNews.genres));
+    _textBinding_5.updateText(import17.interpolateString0(_ctx.vegeNews.writtenBy));
   }
 }
 
@@ -223,7 +223,7 @@ class _ViewVegeNewsPosterComponent3 extends AppView<import2.VegeNewsPosterCompon
   void detectChangesInternal() {
     final _ctx = ctx;
     _textBinding_2.updateText(import17.interpolateString0(_ctx.messages.releaseDate));
-    _textBinding_4.updateText(import17.interpolateString0(_ctx.releaseDate));
+    _textBinding_4.updateText(import17.interpolateString0(_ctx.reportingDate));
   }
 }
 

@@ -56,25 +56,25 @@
   flex-flow: row wrap;
 }
 
-event-poster {
+vegenews-poster {
   width: calc(100% / 2);
   min-height: 243px;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 412px) {
-  event-poster {
+  vegenews-poster {
     min-height: 312px;
   }
 }
 @media only screen and (min-width: 650px) {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 3);
     min-height: 327px;
   }
 }
 @media only screen and (min-width: 768px) {
-  event-poster {
+  vegenews-poster {
     box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.32);
     margin-top: 1.5em;
     margin-right: 1.5em;
@@ -87,7 +87,7 @@ event-poster {
   }
 }
 @media only screen and (min-width: 1024px) {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 3 - 1em);
     min-height: 404px;
   }
@@ -101,7 +101,7 @@ event-poster {
   }
 }
 @media only screen and (min-width: 1800px) {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 4 - 1.15em);
     min-height: 448px;
   }

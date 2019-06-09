@@ -31,5 +31,5 @@ class VegeNewsPosterComponent {
   @Input()
   bool isTouchable = true;
 
-  String get releaseDate => _releaseDateFormat.format(vegeNews.releaseDate);
+  String get reportingDate => _releaseDateFormat.format(vegeNews.reportingDate);
 }

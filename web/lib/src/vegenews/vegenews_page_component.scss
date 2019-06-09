@@ -6,20 +6,20 @@
   flex-flow: row wrap;
 }
 
-event-poster {
+vegenews-poster {
   width: calc(100% / 2);
   min-height: 243px;
   cursor: pointer;
 }
 
 @include screen-size-nexus-5x {
-  event-poster {
+  vegenews-poster {
     min-height: 312px;
   }
 }
 
 @include screen-size-phablet {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 3);
     min-height: 327px;
   }
@@ -29,7 +29,7 @@ $horizontal-margin: 1.5em;
 $vertical-margin: 1.5em;
 
 @include screen-size-tablet {
-  event-poster {
+  vegenews-poster {
     box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.32);
     margin-top: $vertical-margin;
     margin-right: $horizontal-margin;
@@ -43,7 +43,7 @@ $vertical-margin: 1.5em;
 }
 
 @include screen-size-laptop {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 3 - 1em);
     min-height: 404px;
   }
@@ -58,7 +58,7 @@ $vertical-margin: 1.5em;
 }
 
 @include screen-size-huge {
-  event-poster {
+  vegenews-poster {
     width: calc(100% / 4 - 1.15em);
     min-height: 448px;
   }

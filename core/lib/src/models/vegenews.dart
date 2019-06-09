@@ -1,57 +1,30 @@
 import 'package:kt_dart/collection.dart';
 import 'package:meta/meta.dart';
 
-import 'actor.dart';
-import 'content_descriptor.dart';
-
-// enum EventListType {
-//   nowInTheaters,
-//   comingSoon,
-// }
-
 class VegeNews {
   VegeNews({
     this.id,
     this.title,
-    this.originalTitle,
-    this.releaseDate,
-    this.ageRating,
-    this.ageRatingUrl,
-    this.genres,
-    this.directors,
-    this.actors,
-    this.lengthInMinutes,
-    this.shortSynopsis,
-    this.synopsis,
+    this.content,
     this.images,
-    this.contentDescriptors,
-    this.youtubeTrailers,
     this.galleryImages,
+    this.writtenBy,
+    this.writerPhotoUrl,
+    this.reportingDate,
+    this.lastModifiedDate,
   });
 
   final String id;
   final String title;
-  final String originalTitle;
-  final DateTime releaseDate;
-  final String ageRating;
-  final String ageRatingUrl;
-  final String genres;
-  final KtList<String> directors;
-  final String lengthInMinutes;
-  final String shortSynopsis;
-  final String synopsis;
+  final String content;
   final VegeNewsImageData images;
-  final KtList<ContentDescriptor> contentDescriptors;
-  final KtList<String> youtubeTrailers;
-  final KtList<NewsGalleryImage> galleryImages;
+  final KtList<VegeNewsGalleryImage> galleryImages;
+  final String writtenBy;
+  final String writerPhotoUrl;
+  final DateTime reportingDate;
+  final DateTime lastModifiedDate;
 
-  String get director => directors.firstOrNull((e) => e != null);
-  KtList<Actor> actors;
-  KtList<String> get genresSeparated => listFrom(genres.split(', '));
-
-  bool get hasSynopsis =>
-      (shortSynopsis != null && shortSynopsis.isNotEmpty) ||
-      (synopsis != null && synopsis.isNotEmpty);
+  // 썸네일에 쓸 이미지 컬럼명이 변경 될수 있어
   bool get hasMediumPortraitImage => images.portraitMedium != null;
 
   @override
@@ -61,41 +34,29 @@ class VegeNews {
           runtimeType == other.runtimeType &&
           id == other.id &&
           title == other.title &&
-          originalTitle == other.originalTitle &&
-          releaseDate == other.releaseDate &&
-          ageRating == other.ageRating &&
-          ageRatingUrl == other.ageRatingUrl &&
-          genres == other.genres &&
-          directors == other.directors &&
-          lengthInMinutes == other.lengthInMinutes &&
-          shortSynopsis == other.shortSynopsis &&
-          synopsis == other.synopsis &&
+          content == other.content &&
           images == other.images &&
-          contentDescriptors == other.contentDescriptors &&
-          youtubeTrailers == other.youtubeTrailers &&
-          actors == other.actors;
+          galleryImages == other.galleryImages &&
+          writtenBy == other.writtenBy &&
+          writerPhotoUrl == other.writerPhotoUrl &&
+          reportingDate == other.reportingDate &&
+          lastModifiedDate == other.lastModifiedDate;
 
   @override
   int get hashCode =>
       id.hashCode ^
       title.hashCode ^
-      originalTitle.hashCode ^
-      releaseDate.hashCode ^
-      ageRating.hashCode ^
-      ageRatingUrl.hashCode ^
-      genres.hashCode ^
-      directors.hashCode ^
-      lengthInMinutes.hashCode ^
-      shortSynopsis.hashCode ^
-      synopsis.hashCode ^
+      content.hashCode ^
       images.hashCode ^
-      contentDescriptors.hashCode ^
-      youtubeTrailers.hashCode ^
-      actors.hashCode;
+      galleryImages.hashCode ^
+      writtenBy.hashCode ^
+      writerPhotoUrl.hashCode ^
+      reportingDate.hashCode ^
+      lastModifiedDate.hashCode;
 }
 
-class NewsGalleryImage {
-  NewsGalleryImage({
+class VegeNewsGalleryImage {
+  VegeNewsGalleryImage({
     this.location,
     this.thumbnailLocation,
   });
@@ -106,7 +67,7 @@ class NewsGalleryImage {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is NewsGalleryImage &&
+      other is VegeNewsGalleryImage &&
           runtimeType == other.runtimeType &&
           location == other.location &&
           thumbnailLocation == other.thumbnailLocation;
@@ -122,8 +83,6 @@ class VegeNewsImageData {
     @required this.portraitLarge,
     @required this.landscapeSmall,
     @required this.landscapeBig,
-    @required this.landscapeHd,
-    @required this.landscapeHd2,
   });
 
   final String portraitSmall;
@@ -131,8 +90,6 @@ class VegeNewsImageData {
   final String portraitLarge;
   final String landscapeSmall;
   final String landscapeBig;
-  final String landscapeHd;
-  final String landscapeHd2;
 
   String get anyAvailableImage =>
       portraitSmall ??
@@ -146,9 +103,7 @@ class VegeNewsImageData {
         portraitMedium = null,
         portraitLarge = null,
         landscapeSmall = null,
-        landscapeBig = null,
-        landscapeHd = null,
-        landscapeHd2 = null;
+        landscapeBig = null;
 
   @override
   bool operator ==(Object other) =>
@@ -159,9 +114,7 @@ class VegeNewsImageData {
           portraitMedium == other.portraitMedium &&
           portraitLarge == other.portraitLarge &&
           landscapeSmall == other.landscapeSmall &&
-          landscapeBig == other.landscapeBig &&
-          landscapeHd == other.landscapeHd &&
-          landscapeHd2 == other.landscapeHd2;
+          landscapeBig == other.landscapeBig;
 
   @override
   int get hashCode =>
@@ -169,7 +122,5 @@ class VegeNewsImageData {
       portraitMedium.hashCode ^
       portraitLarge.hashCode ^
       landscapeSmall.hashCode ^
-      landscapeBig.hashCode ^
-      landscapeHd.hashCode ^
-      landscapeHd2.hashCode;
+      landscapeBig.hashCode ;
 }

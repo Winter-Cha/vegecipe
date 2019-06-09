@@ -9,10 +9,11 @@
 
 <div class="vegeNews-information" *ngIf="hasDetails">
   <p><strong>{{ vegeNews.title }}</strong></p>
-  <p class="genres">{{ vegeNews.genres }}</p>
+  <p class="writtenBy">{{ vegeNews.writtenBy }}</p>
 </div>
 
+<!-- 필요하면 날짜 넣자... -->
 <div class="release-date-information" *ngIf="isComingSoon">
   <p class="label">{{ messages.releaseDate }}</p>
-  <p class="date">{{ releaseDate }}</p>
+  <p class="date">{{ reportingDate }}</p>
 </div>

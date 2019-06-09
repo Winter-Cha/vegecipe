@@ -12,22 +12,8 @@ final vegeNewsSelector = createSelector2(
 
 KtList<VegeNews> _vegeNewsOrVegeNewsSearch(KtList<VegeNews> vegeNews, String searchQuery) {
   return searchQuery == null
-      ? _uniqueVegeNews(vegeNews)
+      ? vegeNews
       : _vegeNewsWithSearchQuery(vegeNews, searchQuery);
-}
-
-
-/// Since Finnkino XML API considers "The Grinch" and "The Grinch 2D" to be two
-/// completely different events, we might get a lot of duplication. We have to
-/// do this hack because it is quite boring to display four movie posters that
-/// are exactly the same.
-KtList<VegeNews> _uniqueVegeNews(KtList<VegeNews> original) {
-  return original
-      // reverse because last unique key wins
-      .reversed()
-      .associateBy((vegeNews) => vegeNews.originalTitle)
-      .values
-      .reversed();
 }
 
 KtList<VegeNews> _vegeNewsWithSearchQuery(KtList<VegeNews> original, String searchQuery) {
@@ -36,7 +22,6 @@ KtList<VegeNews> _vegeNewsWithSearchQuery(KtList<VegeNews> original, String sear
   print("original" + original.toString());
 
   return original.filter((vegeNews) {
-    return vegeNews.title.contains(searchQueryPattern) ||
-        vegeNews.originalTitle.contains(searchQueryPattern);
+    return vegeNews.title.contains(searchQueryPattern);
   });
 }

@@ -28,4 +28,4 @@ export 'src/redux/store.dart';
 export 'src/viewmodels/theater_list_view_model.dart';
 export 'src/viewmodels/events_page_view_model.dart';
 export 'src/viewmodels/showtime_page_view_model.dart';
-export 'src/viewmodels/vegenews_page_view_mode.dart';
+export 'src/viewmodels/vegenews_page_view_model.dart';
