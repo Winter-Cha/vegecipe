@@ -1,0 +1,1 @@
+final List<dynamic> styles = ['img {\n  max-width: 100%;\n  max-height: 100%;\n  width: 100%;\n  opacity: 0;\n  transition: opacity 750ms ease;\n}\n'];

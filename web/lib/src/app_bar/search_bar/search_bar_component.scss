@@ -3,7 +3,7 @@
 
 :host {
   display: flex;
-  background: #1F3169;
+  background: rgb(244, 247, 244);
 
   &[expanded] {
     position: fixed;
@@ -34,7 +34,7 @@ input {
   display: none;
   background: transparent;
   width: 100%;
-  color: #ffffff;
+  color: #020202;
   font-size: 16px;
   padding: 8px;
 

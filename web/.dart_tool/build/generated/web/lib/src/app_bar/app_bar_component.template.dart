@@ -41,20 +41,17 @@ final List<dynamic> styles$AppBarComponent = [import0.styles];
 
 class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
   final import3.TextBinding _textBinding_7 = import3.TextBinding();
-  final import3.TextBinding _textBinding_9 = import3.TextBinding();
   import4.RouterLinkNgCd _RouterLink_3_5;
-  import5.ViewNavBarComponent0 _compView_11;
-  import6.NavBarComponent _NavBarComponent_11_5;
-  import7.ViewSearchBarComponent0 _compView_14;
-  import8.SearchBarComponent _SearchBarComponent_14_5;
+  import5.ViewNavBarComponent0 _compView_9;
+  import6.NavBarComponent _NavBarComponent_9_5;
+  import7.ViewSearchBarComponent0 _compView_11;
+  import8.SearchBarComponent _SearchBarComponent_11_5;
   bool _expr_0;
   bool _expr_1;
   String _expr_2;
   bool _expr_3;
-  bool _expr_4;
   import9.Element _el_0;
   import9.DivElement _el_3;
-  import9.Element _el_13;
   static import10.ComponentStyles _componentStyles;
   ViewAppBarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.component, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     initComponentStyles();
@@ -66,7 +63,6 @@ class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
 
   @override
   ComponentRef<import2.AppBarComponent> build() {
-    final _ctx = ctx;
     final _rootEl = rootEl;
     final import9.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     final doc = import9.document;
@@ -97,44 +93,33 @@ class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
     final _el_6 = import15.appendElement(doc, _el_5, 'h1');
     addShimE(_el_6);
     _el_6.append(_textBinding_7.element);
-    final _el_8 = import15.appendElement(doc, _el_5, 'p');
-    this.updateChildClass(_el_8, 'theater-name');
-    addShimE(_el_8);
-    _el_8.append(_textBinding_9.element);
-    final _el_10 = import15.appendDiv(doc, _el_3);
-    this.updateChildClass(_el_10, 'mobile-logo-focus-trap');
-    addShimC(_el_10);
-    _compView_11 = import5.ViewNavBarComponent0(this, 11);
-    final _el_11 = _compView_11.rootEl;
-    _el_2.append(_el_11);
-    addShimC(_el_11);
-    _NavBarComponent_11_5 = (import13.isDevMode
+    final _el_8 = import15.appendDiv(doc, _el_3);
+    this.updateChildClass(_el_8, 'mobile-logo-focus-trap');
+    addShimC(_el_8);
+    _compView_9 = import5.ViewNavBarComponent0(this, 9);
+    final _el_9 = _compView_9.rootEl;
+    _el_2.append(_el_9);
+    addShimC(_el_9);
+    _NavBarComponent_9_5 = (import13.isDevMode
         ? import16.debugInjectorWrap(import6.NavBarComponent, () {
             return import6.NavBarComponent(parentView.injectorGet(import20.Messages, viewData.parentIndex));
           })
         : import6.NavBarComponent(parentView.injectorGet(import20.Messages, viewData.parentIndex)));
-    _compView_11.create0(_NavBarComponent_11_5);
-    final _el_12 = import15.appendDiv(doc, _el_1);
-    this.updateChildClass(_el_12, 'right');
-    addShimC(_el_12);
-    _el_13 = import15.appendElement(doc, _el_12, 'img');
-    import15.setAttribute(_el_13, 'alt', 'Change selected theater');
-    this.updateChildClass(_el_13, 'app-bar-button select-theater');
-    import15.setAttribute(_el_13, 'src', 'images/theaters.svg');
-    addShimE(_el_13);
-    _compView_14 = import7.ViewSearchBarComponent0(this, 14);
-    final _el_14 = _compView_14.rootEl;
-    _el_12.append(_el_14);
-    addShimC(_el_14);
-    _SearchBarComponent_14_5 = (import13.isDevMode
+    _compView_9.create0(_NavBarComponent_9_5);
+    final _el_10 = import15.appendDiv(doc, _el_1);
+    this.updateChildClass(_el_10, 'right');
+    addShimC(_el_10);
+    _compView_11 = import7.ViewSearchBarComponent0(this, 11);
+    final _el_11 = _compView_11.rootEl;
+    _el_10.append(_el_11);
+    addShimC(_el_11);
+    _SearchBarComponent_11_5 = (import13.isDevMode
         ? import16.debugInjectorWrap(import8.SearchBarComponent, () {
             return import8.SearchBarComponent(parentView.injectorGet(import20.Messages, viewData.parentIndex), parentView.injectorGet(import21.Store, viewData.parentIndex));
           })
         : import8.SearchBarComponent(parentView.injectorGet(import20.Messages, viewData.parentIndex), parentView.injectorGet(import21.Store, viewData.parentIndex)));
-    _compView_14.create0(_SearchBarComponent_14_5);
+    _compView_11.create0(_SearchBarComponent_11_5);
     _el_3.addEventListener('click', eventHandler1(_RouterLink_3_5.instance.onClick));
-    _el_10.addEventListener('click', eventHandler1(_handle_click_10_0));
-    _el_13.addEventListener('click', eventHandler0(_ctx.openTheaterDropdown));
     init0();
   }
 
@@ -142,14 +127,14 @@ class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
   void detectChangesInternal() {
     final _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
-    final currVal_2 = import22.RoutePaths.vegeNews.toUrl();
+    final currVal_2 = import22.RoutePaths.vegeBook.toUrl();
     if (import23.checkBinding(_expr_2, currVal_2)) {
       _RouterLink_3_5.instance.routerLink = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.theaterDropdownActive;
     if (import23.checkBinding(_expr_3, currVal_3)) {
-      _NavBarComponent_11_5.theaterDropdownActive = currVal_3;
+      _NavBarComponent_9_5.theaterDropdownActive = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_0 = _ctx.theaterDropdownVisible;
@@ -164,28 +149,16 @@ class ViewAppBarComponent0 extends AppView<import2.AppBarComponent> {
     }
     _RouterLink_3_5.detectHostChanges(this, _el_3);
     _textBinding_7.updateText(import24.interpolateString0(_ctx.messages.appName));
-    _textBinding_9.updateText(import24.interpolateString0(_ctx.theaterName));
-    final currVal_4 = _ctx.theaterDropdownVisible;
-    if (import23.checkBinding(_expr_4, currVal_4)) {
-      import15.updateClassBinding(_el_13, 'active', currVal_4);
-      _expr_4 = currVal_4;
-    }
-    _compView_14.detectHostChanges(firstCheck);
+    _compView_11.detectHostChanges(firstCheck);
+    _compView_9.detectChanges();
     _compView_11.detectChanges();
-    _compView_14.detectChanges();
   }
 
   @override
   void destroyInternal() {
+    _compView_9.destroyInternalState();
     _compView_11.destroyInternalState();
-    _compView_14.destroyInternalState();
     _RouterLink_3_5.instance.ngOnDestroy();
-  }
-
-  void _handle_click_10_0($event) {
-    final _ctx = ctx;
-    _ctx.openTheaterDropdown();
-    $event.stopImmediatePropagation();
   }
 
   @override

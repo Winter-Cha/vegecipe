@@ -1,12 +1,16 @@
 import 'package:intl/intl.dart';
 
 class Messages {
-  String get appName => Intl.message('inKino', name: 'appName');
+  String get appName => Intl.message('Vegecipe', name: 'appName');
   String get vegeNews => Intl.message(
         'Vegan News',
         name: 'vegeNews',
       );
   String get writtenBy => Intl.message('Written by', name: 'writtenBy');
+  String get vegeBook => Intl.message(
+        'Vegan Book',
+        name: 'vegeBook',
+      );
   String get nowInTheaters => Intl.message(
         'Now in theaters',
         name: 'nowInTheaters',
@@ -51,7 +55,7 @@ class Messages {
       Intl.message('Error loading events.', name: 'errorLoadingEvents');
 
   String get noMoviesForToday => Intl.message(
-        'Didn\'t find any movies\nabout to start for today. ¯\\_(ツ)_/¯',
+        'Didn\'t find any items to start for today. ¯\\_(ツ)_/¯',
         name: 'noMoviesForToday',
       );
   String get about => Intl.message('About', name: 'about');
@@ -76,5 +80,5 @@ class Messages {
       );
 
   String get searchHint =>
-      Intl.message('Search movies & showtimes...', name: 'searchHint');
+      Intl.message('Search title', name: 'searchHint');
 }

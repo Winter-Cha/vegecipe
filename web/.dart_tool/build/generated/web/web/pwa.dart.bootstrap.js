@@ -36,7 +36,6 @@ let modulePaths = {
  "packages/collection/src/priority_queue": "packages/collection/src/priority_queue.ddc",
  "packages/collection/src/utils": "packages/collection/src/utils.ddc",
  "packages/core/core": "packages/core/core.ddc",
- "packages/firebase/firebase": "packages/firebase/firebase.ddc",
  "packages/firebase/firestore": "packages/firebase/firestore.ddc",
  "packages/firebase/src/app": "packages/firebase/src/app.ddc",
  "packages/http/http": "packages/http/http.ddc",

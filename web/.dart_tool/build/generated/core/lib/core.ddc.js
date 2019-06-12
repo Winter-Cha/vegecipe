@@ -28,15 +28,18 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   const src__models__loading_status = Object.create(dart.library);
   const src__models__show = Object.create(dart.library);
   const src__redux__event__event_state = Object.create(dart.library);
-  const src__models__vegenews = Object.create(dart.library);
-  const src__redux__vegenews__vegenews_state = Object.create(dart.library);
   const src__models__theater = Object.create(dart.library);
   const src__redux__theater__theater_state = Object.create(dart.library);
+  const src__models__vegenews = Object.create(dart.library);
+  const src__redux__vegenews__vegenews_state = Object.create(dart.library);
+  const src__models__vegebook = Object.create(dart.library);
+  const src__redux__vegebook__vegebook_state = Object.create(dart.library);
   const src__redux__show__show_state = Object.create(dart.library);
   const src__redux__app__app_state = Object.create(dart.library);
   const src__models__show_cache = Object.create(dart.library);
   const src__i18n__messages = Object.create(dart.library);
   const src__i18n__inkino_messages_en = Object.create(dart.library);
+  const src__i18n__inkino_messages_ko = Object.create(dart.library);
   const src__i18n__inkino_messages_fi = Object.create(dart.library);
   const src__i18n__inkino_messages_all = Object.create(dart.library);
   const src__networking__image_url_rewriter = Object.create(dart.library);
@@ -57,6 +60,8 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   const src__redux__show__show_selectors = Object.create(dart.library);
   const src__redux__vegenews__vegenews_actions = Object.create(dart.library);
   const src__redux__vegenews__vegenews_selectors = Object.create(dart.library);
+  const src__redux__vegebook__vegebook_actions = Object.create(dart.library);
+  const src__redux__vegebook__vegebook_selectors = Object.create(dart.library);
   const src__tmdb_config = Object.create(dart.library);
   const src__networking__tmdb_api = Object.create(dart.library);
   const src__redux__actor__actor_middleware = Object.create(dart.library);
@@ -65,6 +70,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   const src__redux__show__show_reducer = Object.create(dart.library);
   const src__redux__theater__theater_reducer = Object.create(dart.library);
   const src__redux__vegenews__vegenews_reducer = Object.create(dart.library);
+  const src__redux__vegebook__vegebook_reducer = Object.create(dart.library);
   const src__redux__app__app_reducer = Object.create(dart.library);
   const src__redux__event__event_middleware = Object.create(dart.library);
   const src__utils__clock = Object.create(dart.library);
@@ -74,12 +80,15 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   const src__redux__theater__theater_middleware = Object.create(dart.library);
   const src__parsers__vegenews_parser = Object.create(dart.library);
   const src__redux__vegenews__vegenews_middleware = Object.create(dart.library);
+  const src__parsers__vegebook_parser = Object.create(dart.library);
+  const src__redux__vegebook__vegebook_middleware = Object.create(dart.library);
   const src__redux__store = Object.create(dart.library);
   const src__redux__theater__theater_selectors = Object.create(dart.library);
   const src__viewmodels__theater_list_view_model = Object.create(dart.library);
   const src__viewmodels__events_page_view_model = Object.create(dart.library);
   const src__viewmodels__showtime_page_view_model = Object.create(dart.library);
   const src__viewmodels__vegenews_page_view_model = Object.create(dart.library);
+  const src__viewmodels__vegebook_page_view_model = Object.create(dart.library);
   const $runtimeType = dartx.runtimeType;
   const $hashCode = dartx.hashCode;
   const $_equals = dartx._equals;
@@ -104,9 +113,11 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   let KtListOfGalleryImage = () => (KtListOfGalleryImage = dart.constFn(src__collection__kt_list.KtList$(src__models__event.GalleryImage)))();
   let KtListOfActor = () => (KtListOfActor = dart.constFn(src__collection__kt_list.KtList$(src__models__actor.Actor)))();
   let KtListOfEvent = () => (KtListOfEvent = dart.constFn(src__collection__kt_list.KtList$(src__models__event.Event)))();
+  let KtListOfTheater = () => (KtListOfTheater = dart.constFn(src__collection__kt_list.KtList$(src__models__theater.Theater)))();
   let KtListOfVegeNewsGalleryImage = () => (KtListOfVegeNewsGalleryImage = dart.constFn(src__collection__kt_list.KtList$(src__models__vegenews.VegeNewsGalleryImage)))();
   let KtListOfVegeNews = () => (KtListOfVegeNews = dart.constFn(src__collection__kt_list.KtList$(src__models__vegenews.VegeNews)))();
-  let KtListOfTheater = () => (KtListOfTheater = dart.constFn(src__collection__kt_list.KtList$(src__models__theater.Theater)))();
+  let KtListOfVegeBookGalleryImage = () => (KtListOfVegeBookGalleryImage = dart.constFn(src__collection__kt_list.KtList$(src__models__vegebook.VegeBookGalleryImage)))();
+  let KtListOfVegeBook = () => (KtListOfVegeBook = dart.constFn(src__collection__kt_list.KtList$(src__models__vegebook.VegeBook)))();
   let KtListOfShow = () => (KtListOfShow = dart.constFn(src__collection__kt_list.KtList$(src__models__show.Show)))();
   let KtListOfDateTime = () => (KtListOfDateTime = dart.constFn(src__collection__kt_list.KtList$(core.DateTime)))();
   let KtMapOfDateTheaterPair$KtListOfShow = () => (KtMapOfDateTheaterPair$KtListOfShow = dart.constFn(src__collection__kt_map.KtMap$(src__models__show_cache.DateTheaterPair, KtListOfShow())))();
@@ -145,6 +156,9 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   let AppStateToKtListOfVegeNews = () => (AppStateToKtListOfVegeNews = dart.constFn(dart.fnType(KtListOfVegeNews(), [src__redux__app__app_state.AppState])))();
   let KtListOfVegeNewsAndStringToKtListOfVegeNews = () => (KtListOfVegeNewsAndStringToKtListOfVegeNews = dart.constFn(dart.fnType(KtListOfVegeNews(), [KtListOfVegeNews(), core.String])))();
   let VegeNewsTobool = () => (VegeNewsTobool = dart.constFn(dart.fnType(core.bool, [src__models__vegenews.VegeNews])))();
+  let AppStateToKtListOfVegeBook = () => (AppStateToKtListOfVegeBook = dart.constFn(dart.fnType(KtListOfVegeBook(), [src__redux__app__app_state.AppState])))();
+  let KtListOfVegeBookAndStringToKtListOfVegeBook = () => (KtListOfVegeBookAndStringToKtListOfVegeBook = dart.constFn(dart.fnType(KtListOfVegeBook(), [KtListOfVegeBook(), core.String])))();
+  let VegeBookTobool = () => (VegeBookTobool = dart.constFn(dart.fnType(core.bool, [src__models__vegebook.VegeBook])))();
   let IdentityMapOfString$String = () => (IdentityMapOfString$String = dart.constFn(_js_helper.IdentityMap$(core.String, core.String)))();
   let ListOfMapOfString$dynamic = () => (ListOfMapOfString$dynamic = dart.constFn(core.List$(MapOfString$dynamic())))();
   let FutureOrOfint = () => (FutureOrOfint = dart.constFn(async.FutureOr$(core.int)))();
@@ -159,6 +173,8 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   let TheaterTobool = () => (TheaterTobool = dart.constFn(dart.fnType(core.bool, [src__models__theater.Theater])))();
   let DocumentSnapshotToVegeNews = () => (DocumentSnapshotToVegeNews = dart.constFn(dart.fnType(src__models__vegenews.VegeNews, [src__firestore.DocumentSnapshot])))();
   let dynamicToVegeNewsGalleryImage = () => (dynamicToVegeNewsGalleryImage = dart.constFn(dart.fnType(src__models__vegenews.VegeNewsGalleryImage, [dart.dynamic])))();
+  let DocumentSnapshotToVegeBook = () => (DocumentSnapshotToVegeBook = dart.constFn(dart.fnType(src__models__vegebook.VegeBook, [src__firestore.DocumentSnapshot])))();
+  let dynamicToVegeBookGalleryImage = () => (dynamicToVegeBookGalleryImage = dart.constFn(dart.fnType(src__models__vegebook.VegeBookGalleryImage, [dart.dynamic])))();
   let AppStateAnddynamicToAppState = () => (AppStateAnddynamicToAppState = dart.constFn(dart.fnType(src__redux__app__app_state.AppState, [src__redux__app__app_state.AppState, dart.dynamic])))();
   let dynamicTovoid = () => (dynamicTovoid = dart.constFn(dart.fnType(dart.void, [dart.dynamic])))();
   let StoreOfAppStateAnddynamicAndFnTovoid = () => (StoreOfAppStateAnddynamicAndFnTovoid = dart.constFn(dart.fnType(dart.void, [StoreOfAppState(), dart.dynamic, dynamicTovoid()])))();
@@ -878,9 +894,102 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   }));
   dart.defineExtensionMethods(src__redux__event__event_state.EventState, ['_equals']);
   dart.defineExtensionAccessors(src__redux__event__event_state.EventState, ['hashCode']);
-  src__models__vegenews.VegeNews = class VegeNews extends core.Object {
+  src__models__theater.Theater = class Theater extends core.Object {
     get id() {
       return this[id$1];
+    }
+    set id(value) {
+      super.id = value;
+    }
+    get name() {
+      return this[name$1];
+    }
+    set name(value) {
+      super.name = value;
+    }
+    _equals(other) {
+      if (other == null) return false;
+      return this === other || src__models__theater.Theater.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.id == other.id && this.name == other.name;
+    }
+    get hashCode() {
+      return (dart.hashCode(this.id) ^ dart.hashCode(this.name)) >>> 0;
+    }
+  };
+  (src__models__theater.Theater.new = function(opts) {
+    let id = opts && 'id' in opts ? opts.id : null;
+    let name = opts && 'name' in opts ? opts.name : null;
+    this[id$1] = id;
+    this[name$1] = name;
+  }).prototype = src__models__theater.Theater.prototype;
+  dart.addTypeTests(src__models__theater.Theater);
+  const id$1 = Symbol("Theater.id");
+  const name$1 = Symbol("Theater.name");
+  dart.setMethodSignature(src__models__theater.Theater, () => ({
+    __proto__: dart.getMethods(src__models__theater.Theater.__proto__),
+    _equals: dart.fnType(core.bool, [core.Object]),
+    [$_equals]: dart.fnType(core.bool, [core.Object])
+  }));
+  dart.setFieldSignature(src__models__theater.Theater, () => ({
+    __proto__: dart.getFields(src__models__theater.Theater.__proto__),
+    id: dart.finalFieldType(core.String),
+    name: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(src__models__theater.Theater, ['_equals']);
+  dart.defineExtensionAccessors(src__models__theater.Theater, ['hashCode']);
+  src__redux__theater__theater_state.TheaterState = class TheaterState extends core.Object {
+    get currentTheater() {
+      return this[currentTheater$];
+    }
+    set currentTheater(value) {
+      super.currentTheater = value;
+    }
+    get theaters() {
+      return this[theaters$];
+    }
+    set theaters(value) {
+      super.theaters = value;
+    }
+    static initial() {
+      return new src__redux__theater__theater_state.TheaterState.new({currentTheater: null, theaters: src__collection__collections.emptyList(src__models__theater.Theater)});
+    }
+    copyWith(opts) {
+      let currentTheater = opts && 'currentTheater' in opts ? opts.currentTheater : null;
+      let theaters = opts && 'theaters' in opts ? opts.theaters : null;
+      return new src__redux__theater__theater_state.TheaterState.new({currentTheater: currentTheater != null ? currentTheater : this.currentTheater, theaters: theaters != null ? theaters : this.theaters});
+    }
+    _equals(other) {
+      if (other == null) return false;
+      return this === other || src__redux__theater__theater_state.TheaterState.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && dart.equals(this.currentTheater, other.currentTheater) && dart.equals(this.theaters, other.theaters);
+    }
+    get hashCode() {
+      return (dart.notNull(dart.hashCode(this.currentTheater)) ^ dart.notNull(dart.hashCode(this.theaters))) >>> 0;
+    }
+  };
+  (src__redux__theater__theater_state.TheaterState.new = function(opts) {
+    let currentTheater = opts && 'currentTheater' in opts ? opts.currentTheater : null;
+    let theaters = opts && 'theaters' in opts ? opts.theaters : null;
+    this[currentTheater$] = currentTheater;
+    this[theaters$] = theaters;
+  }).prototype = src__redux__theater__theater_state.TheaterState.prototype;
+  dart.addTypeTests(src__redux__theater__theater_state.TheaterState);
+  const currentTheater$ = Symbol("TheaterState.currentTheater");
+  const theaters$ = Symbol("TheaterState.theaters");
+  dart.setMethodSignature(src__redux__theater__theater_state.TheaterState, () => ({
+    __proto__: dart.getMethods(src__redux__theater__theater_state.TheaterState.__proto__),
+    copyWith: dart.fnType(src__redux__theater__theater_state.TheaterState, [], {currentTheater: src__models__theater.Theater, theaters: src__collection__kt_list.KtList$(src__models__theater.Theater)}),
+    _equals: dart.fnType(core.bool, [core.Object]),
+    [$_equals]: dart.fnType(core.bool, [core.Object])
+  }));
+  dart.setFieldSignature(src__redux__theater__theater_state.TheaterState, () => ({
+    __proto__: dart.getFields(src__redux__theater__theater_state.TheaterState.__proto__),
+    currentTheater: dart.finalFieldType(src__models__theater.Theater),
+    theaters: dart.finalFieldType(KtListOfTheater())
+  }));
+  dart.defineExtensionMethods(src__redux__theater__theater_state.TheaterState, ['_equals']);
+  dart.defineExtensionAccessors(src__redux__theater__theater_state.TheaterState, ['hashCode']);
+  src__models__vegenews.VegeNews = class VegeNews extends core.Object {
+    get id() {
+      return this[id$2];
     }
     set id(value) {
       super.id = value;
@@ -957,7 +1066,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     let writerPhotoUrl = opts && 'writerPhotoUrl' in opts ? opts.writerPhotoUrl : null;
     let reportingDate = opts && 'reportingDate' in opts ? opts.reportingDate : null;
     let lastModifiedDate = opts && 'lastModifiedDate' in opts ? opts.lastModifiedDate : null;
-    this[id$1] = id;
+    this[id$2] = id;
     this[title$1] = title;
     this[content$] = content;
     this[images$1] = images;
@@ -968,7 +1077,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     this[lastModifiedDate$] = lastModifiedDate;
   }).prototype = src__models__vegenews.VegeNews.prototype;
   dart.addTypeTests(src__models__vegenews.VegeNews);
-  const id$1 = Symbol("VegeNews.id");
+  const id$2 = Symbol("VegeNews.id");
   const title$1 = Symbol("VegeNews.title");
   const content$ = Symbol("VegeNews.content");
   const images$1 = Symbol("VegeNews.images");
@@ -1183,99 +1292,311 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   }));
   dart.defineExtensionMethods(src__redux__vegenews__vegenews_state.VegeNewsState, ['_equals']);
   dart.defineExtensionAccessors(src__redux__vegenews__vegenews_state.VegeNewsState, ['hashCode']);
-  src__models__theater.Theater = class Theater extends core.Object {
+  src__models__vegebook.VegeBook = class VegeBook extends core.Object {
     get id() {
-      return this[id$2];
+      return this[id$3];
     }
     set id(value) {
       super.id = value;
     }
-    get name() {
-      return this[name$1];
+    get title() {
+      return this[title$2];
     }
-    set name(value) {
-      super.name = value;
+    set title(value) {
+      super.title = value;
+    }
+    get content() {
+      return this[content$0];
+    }
+    set content(value) {
+      super.content = value;
+    }
+    get images() {
+      return this[images$2];
+    }
+    set images(value) {
+      super.images = value;
+    }
+    get galleryImages() {
+      return this[galleryImages$1];
+    }
+    set galleryImages(value) {
+      super.galleryImages = value;
+    }
+    get writtenBy() {
+      return this[writtenBy$0];
+    }
+    set writtenBy(value) {
+      super.writtenBy = value;
+    }
+    get writerPhotoUrl() {
+      return this[writerPhotoUrl$0];
+    }
+    set writerPhotoUrl(value) {
+      super.writerPhotoUrl = value;
+    }
+    get reportingDate() {
+      return this[reportingDate$0];
+    }
+    set reportingDate(value) {
+      super.reportingDate = value;
+    }
+    get lastModifiedDate() {
+      return this[lastModifiedDate$0];
+    }
+    set lastModifiedDate(value) {
+      super.lastModifiedDate = value;
+    }
+    get hasContent() {
+      return this.content != null && this.content[$isNotEmpty];
+    }
+    get hasMediumPortraitImage() {
+      return this.images.portraitMedium != null;
     }
     _equals(other) {
       if (other == null) return false;
-      return this === other || src__models__theater.Theater.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.id == other.id && this.name == other.name;
+      return this === other || src__models__vegebook.VegeBook.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.id == other.id && this.title == other.title && this.content == other.content && dart.equals(this.images, other.images) && dart.equals(this.galleryImages, other.galleryImages) && this.writtenBy == other.writtenBy && this.writerPhotoUrl == other.writerPhotoUrl && dart.equals(this.reportingDate, other.reportingDate) && dart.equals(this.lastModifiedDate, other.lastModifiedDate);
     }
     get hashCode() {
-      return (dart.hashCode(this.id) ^ dart.hashCode(this.name)) >>> 0;
+      return (dart.hashCode(this.id) ^ dart.hashCode(this.title) ^ dart.hashCode(this.content) ^ dart.notNull(dart.hashCode(this.images)) ^ dart.notNull(dart.hashCode(this.galleryImages)) ^ dart.hashCode(this.writtenBy) ^ dart.hashCode(this.writerPhotoUrl) ^ dart.notNull(dart.hashCode(this.reportingDate)) ^ dart.notNull(dart.hashCode(this.lastModifiedDate))) >>> 0;
     }
   };
-  (src__models__theater.Theater.new = function(opts) {
+  (src__models__vegebook.VegeBook.new = function(opts) {
     let id = opts && 'id' in opts ? opts.id : null;
-    let name = opts && 'name' in opts ? opts.name : null;
-    this[id$2] = id;
-    this[name$1] = name;
-  }).prototype = src__models__theater.Theater.prototype;
-  dart.addTypeTests(src__models__theater.Theater);
-  const id$2 = Symbol("Theater.id");
-  const name$1 = Symbol("Theater.name");
-  dart.setMethodSignature(src__models__theater.Theater, () => ({
-    __proto__: dart.getMethods(src__models__theater.Theater.__proto__),
+    let title = opts && 'title' in opts ? opts.title : null;
+    let content = opts && 'content' in opts ? opts.content : null;
+    let images = opts && 'images' in opts ? opts.images : null;
+    let galleryImages = opts && 'galleryImages' in opts ? opts.galleryImages : null;
+    let writtenBy = opts && 'writtenBy' in opts ? opts.writtenBy : null;
+    let writerPhotoUrl = opts && 'writerPhotoUrl' in opts ? opts.writerPhotoUrl : null;
+    let reportingDate = opts && 'reportingDate' in opts ? opts.reportingDate : null;
+    let lastModifiedDate = opts && 'lastModifiedDate' in opts ? opts.lastModifiedDate : null;
+    this[id$3] = id;
+    this[title$2] = title;
+    this[content$0] = content;
+    this[images$2] = images;
+    this[galleryImages$1] = galleryImages;
+    this[writtenBy$0] = writtenBy;
+    this[writerPhotoUrl$0] = writerPhotoUrl;
+    this[reportingDate$0] = reportingDate;
+    this[lastModifiedDate$0] = lastModifiedDate;
+  }).prototype = src__models__vegebook.VegeBook.prototype;
+  dart.addTypeTests(src__models__vegebook.VegeBook);
+  const id$3 = Symbol("VegeBook.id");
+  const title$2 = Symbol("VegeBook.title");
+  const content$0 = Symbol("VegeBook.content");
+  const images$2 = Symbol("VegeBook.images");
+  const galleryImages$1 = Symbol("VegeBook.galleryImages");
+  const writtenBy$0 = Symbol("VegeBook.writtenBy");
+  const writerPhotoUrl$0 = Symbol("VegeBook.writerPhotoUrl");
+  const reportingDate$0 = Symbol("VegeBook.reportingDate");
+  const lastModifiedDate$0 = Symbol("VegeBook.lastModifiedDate");
+  dart.setMethodSignature(src__models__vegebook.VegeBook, () => ({
+    __proto__: dart.getMethods(src__models__vegebook.VegeBook.__proto__),
     _equals: dart.fnType(core.bool, [core.Object]),
     [$_equals]: dart.fnType(core.bool, [core.Object])
   }));
-  dart.setFieldSignature(src__models__theater.Theater, () => ({
-    __proto__: dart.getFields(src__models__theater.Theater.__proto__),
-    id: dart.finalFieldType(core.String),
-    name: dart.finalFieldType(core.String)
+  dart.setGetterSignature(src__models__vegebook.VegeBook, () => ({
+    __proto__: dart.getGetters(src__models__vegebook.VegeBook.__proto__),
+    hasContent: core.bool,
+    hasMediumPortraitImage: core.bool
   }));
-  dart.defineExtensionMethods(src__models__theater.Theater, ['_equals']);
-  dart.defineExtensionAccessors(src__models__theater.Theater, ['hashCode']);
-  src__redux__theater__theater_state.TheaterState = class TheaterState extends core.Object {
-    get currentTheater() {
-      return this[currentTheater$];
+  dart.setFieldSignature(src__models__vegebook.VegeBook, () => ({
+    __proto__: dart.getFields(src__models__vegebook.VegeBook.__proto__),
+    id: dart.finalFieldType(core.String),
+    title: dart.finalFieldType(core.String),
+    content: dart.finalFieldType(core.String),
+    images: dart.finalFieldType(src__models__vegebook.VegeBookImageData),
+    galleryImages: dart.finalFieldType(KtListOfVegeBookGalleryImage()),
+    writtenBy: dart.finalFieldType(core.String),
+    writerPhotoUrl: dart.finalFieldType(core.String),
+    reportingDate: dart.finalFieldType(core.DateTime),
+    lastModifiedDate: dart.finalFieldType(core.DateTime)
+  }));
+  dart.defineExtensionMethods(src__models__vegebook.VegeBook, ['_equals']);
+  dart.defineExtensionAccessors(src__models__vegebook.VegeBook, ['hashCode']);
+  src__models__vegebook.VegeBookGalleryImage = class VegeBookGalleryImage extends core.Object {
+    get location() {
+      return this[location$1];
     }
-    set currentTheater(value) {
-      super.currentTheater = value;
+    set location(value) {
+      super.location = value;
     }
-    get theaters() {
-      return this[theaters$];
+    get thumbnailLocation() {
+      return this[thumbnailLocation$1];
     }
-    set theaters(value) {
-      super.theaters = value;
+    set thumbnailLocation(value) {
+      super.thumbnailLocation = value;
+    }
+    _equals(other) {
+      if (other == null) return false;
+      return this === other || src__models__vegebook.VegeBookGalleryImage.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.location == other.location && this.thumbnailLocation == other.thumbnailLocation;
+    }
+    get hashCode() {
+      return (dart.hashCode(this.location) ^ dart.hashCode(this.thumbnailLocation)) >>> 0;
+    }
+  };
+  (src__models__vegebook.VegeBookGalleryImage.new = function(opts) {
+    let location = opts && 'location' in opts ? opts.location : null;
+    let thumbnailLocation = opts && 'thumbnailLocation' in opts ? opts.thumbnailLocation : null;
+    this[location$1] = location;
+    this[thumbnailLocation$1] = thumbnailLocation;
+  }).prototype = src__models__vegebook.VegeBookGalleryImage.prototype;
+  dart.addTypeTests(src__models__vegebook.VegeBookGalleryImage);
+  const location$1 = Symbol("VegeBookGalleryImage.location");
+  const thumbnailLocation$1 = Symbol("VegeBookGalleryImage.thumbnailLocation");
+  dart.setMethodSignature(src__models__vegebook.VegeBookGalleryImage, () => ({
+    __proto__: dart.getMethods(src__models__vegebook.VegeBookGalleryImage.__proto__),
+    _equals: dart.fnType(core.bool, [core.Object]),
+    [$_equals]: dart.fnType(core.bool, [core.Object])
+  }));
+  dart.setFieldSignature(src__models__vegebook.VegeBookGalleryImage, () => ({
+    __proto__: dart.getFields(src__models__vegebook.VegeBookGalleryImage.__proto__),
+    location: dart.finalFieldType(core.String),
+    thumbnailLocation: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(src__models__vegebook.VegeBookGalleryImage, ['_equals']);
+  dart.defineExtensionAccessors(src__models__vegebook.VegeBookGalleryImage, ['hashCode']);
+  src__models__vegebook.VegeBookImageData = class VegeBookImageData extends core.Object {
+    get portraitSmall() {
+      return this[portraitSmall$1];
+    }
+    set portraitSmall(value) {
+      super.portraitSmall = value;
+    }
+    get portraitMedium() {
+      return this[portraitMedium$1];
+    }
+    set portraitMedium(value) {
+      super.portraitMedium = value;
+    }
+    get portraitLarge() {
+      return this[portraitLarge$1];
+    }
+    set portraitLarge(value) {
+      super.portraitLarge = value;
+    }
+    get landscapeSmall() {
+      return this[landscapeSmall$1];
+    }
+    set landscapeSmall(value) {
+      super.landscapeSmall = value;
+    }
+    get landscapeBig() {
+      return this[landscapeBig$1];
+    }
+    set landscapeBig(value) {
+      super.landscapeBig = value;
+    }
+    get anyAvailableImage() {
+      let l = this.portraitSmall != null ? this.portraitSmall : this.portraitMedium;
+      let l$ = l != null ? l : this.portraitLarge;
+      let l$0 = l$ != null ? l$ : this.landscapeSmall;
+      return l$0 != null ? l$0 : this.landscapeBig;
+    }
+    _equals(other) {
+      if (other == null) return false;
+      return this === other || src__models__vegebook.VegeBookImageData.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.portraitSmall == other.portraitSmall && this.portraitMedium == other.portraitMedium && this.portraitLarge == other.portraitLarge && this.landscapeSmall == other.landscapeSmall && this.landscapeBig == other.landscapeBig;
+    }
+    get hashCode() {
+      return (dart.hashCode(this.portraitSmall) ^ dart.hashCode(this.portraitMedium) ^ dart.hashCode(this.portraitLarge) ^ dart.hashCode(this.landscapeSmall) ^ dart.hashCode(this.landscapeBig)) >>> 0;
+    }
+  };
+  (src__models__vegebook.VegeBookImageData.new = function(opts) {
+    let portraitSmall = opts && 'portraitSmall' in opts ? opts.portraitSmall : null;
+    let portraitMedium = opts && 'portraitMedium' in opts ? opts.portraitMedium : null;
+    let portraitLarge = opts && 'portraitLarge' in opts ? opts.portraitLarge : null;
+    let landscapeSmall = opts && 'landscapeSmall' in opts ? opts.landscapeSmall : null;
+    let landscapeBig = opts && 'landscapeBig' in opts ? opts.landscapeBig : null;
+    this[portraitSmall$1] = portraitSmall;
+    this[portraitMedium$1] = portraitMedium;
+    this[portraitLarge$1] = portraitLarge;
+    this[landscapeSmall$1] = landscapeSmall;
+    this[landscapeBig$1] = landscapeBig;
+  }).prototype = src__models__vegebook.VegeBookImageData.prototype;
+  (src__models__vegebook.VegeBookImageData.empty = function() {
+    this[portraitSmall$1] = null;
+    this[portraitMedium$1] = null;
+    this[portraitLarge$1] = null;
+    this[landscapeSmall$1] = null;
+    this[landscapeBig$1] = null;
+  }).prototype = src__models__vegebook.VegeBookImageData.prototype;
+  dart.addTypeTests(src__models__vegebook.VegeBookImageData);
+  const portraitSmall$1 = Symbol("VegeBookImageData.portraitSmall");
+  const portraitMedium$1 = Symbol("VegeBookImageData.portraitMedium");
+  const portraitLarge$1 = Symbol("VegeBookImageData.portraitLarge");
+  const landscapeSmall$1 = Symbol("VegeBookImageData.landscapeSmall");
+  const landscapeBig$1 = Symbol("VegeBookImageData.landscapeBig");
+  dart.setMethodSignature(src__models__vegebook.VegeBookImageData, () => ({
+    __proto__: dart.getMethods(src__models__vegebook.VegeBookImageData.__proto__),
+    _equals: dart.fnType(core.bool, [core.Object]),
+    [$_equals]: dart.fnType(core.bool, [core.Object])
+  }));
+  dart.setGetterSignature(src__models__vegebook.VegeBookImageData, () => ({
+    __proto__: dart.getGetters(src__models__vegebook.VegeBookImageData.__proto__),
+    anyAvailableImage: core.String
+  }));
+  dart.setFieldSignature(src__models__vegebook.VegeBookImageData, () => ({
+    __proto__: dart.getFields(src__models__vegebook.VegeBookImageData.__proto__),
+    portraitSmall: dart.finalFieldType(core.String),
+    portraitMedium: dart.finalFieldType(core.String),
+    portraitLarge: dart.finalFieldType(core.String),
+    landscapeSmall: dart.finalFieldType(core.String),
+    landscapeBig: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(src__models__vegebook.VegeBookImageData, ['_equals']);
+  dart.defineExtensionAccessors(src__models__vegebook.VegeBookImageData, ['hashCode']);
+  src__redux__vegebook__vegebook_state.VegeBookState = class VegeBookState extends core.Object {
+    get vegeBookStatus() {
+      return this[vegeBookStatus$];
+    }
+    set vegeBookStatus(value) {
+      super.vegeBookStatus = value;
+    }
+    get vegeBookEvents() {
+      return this[vegeBookEvents$];
+    }
+    set vegeBookEvents(value) {
+      super.vegeBookEvents = value;
     }
     static initial() {
-      return new src__redux__theater__theater_state.TheaterState.new({currentTheater: null, theaters: src__collection__collections.emptyList(src__models__theater.Theater)});
+      return new src__redux__vegebook__vegebook_state.VegeBookState.new({vegeBookStatus: src__models__loading_status.LoadingStatus.idle, vegeBookEvents: src__collection__collections.emptyList(src__models__vegebook.VegeBook)});
     }
     copyWith(opts) {
-      let currentTheater = opts && 'currentTheater' in opts ? opts.currentTheater : null;
-      let theaters = opts && 'theaters' in opts ? opts.theaters : null;
-      return new src__redux__theater__theater_state.TheaterState.new({currentTheater: currentTheater != null ? currentTheater : this.currentTheater, theaters: theaters != null ? theaters : this.theaters});
+      let vegeBookStatus = opts && 'vegeBookStatus' in opts ? opts.vegeBookStatus : null;
+      let vegeBookEvents = opts && 'vegeBookEvents' in opts ? opts.vegeBookEvents : null;
+      return new src__redux__vegebook__vegebook_state.VegeBookState.new({vegeBookStatus: vegeBookStatus != null ? vegeBookStatus : this.vegeBookStatus, vegeBookEvents: vegeBookEvents != null ? vegeBookEvents : this.vegeBookEvents});
     }
     _equals(other) {
       if (other == null) return false;
-      return this === other || src__redux__theater__theater_state.TheaterState.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && dart.equals(this.currentTheater, other.currentTheater) && dart.equals(this.theaters, other.theaters);
+      return this === other || src__redux__vegebook__vegebook_state.VegeBookState.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.vegeBookStatus == other.vegeBookStatus && dart.equals(this.vegeBookEvents, other.vegeBookEvents);
     }
     get hashCode() {
-      return (dart.notNull(dart.hashCode(this.currentTheater)) ^ dart.notNull(dart.hashCode(this.theaters))) >>> 0;
+      return (dart.notNull(dart.hashCode(this.vegeBookStatus)) ^ dart.notNull(dart.hashCode(this.vegeBookEvents))) >>> 0;
     }
   };
-  (src__redux__theater__theater_state.TheaterState.new = function(opts) {
-    let currentTheater = opts && 'currentTheater' in opts ? opts.currentTheater : null;
-    let theaters = opts && 'theaters' in opts ? opts.theaters : null;
-    this[currentTheater$] = currentTheater;
-    this[theaters$] = theaters;
-  }).prototype = src__redux__theater__theater_state.TheaterState.prototype;
-  dart.addTypeTests(src__redux__theater__theater_state.TheaterState);
-  const currentTheater$ = Symbol("TheaterState.currentTheater");
-  const theaters$ = Symbol("TheaterState.theaters");
-  dart.setMethodSignature(src__redux__theater__theater_state.TheaterState, () => ({
-    __proto__: dart.getMethods(src__redux__theater__theater_state.TheaterState.__proto__),
-    copyWith: dart.fnType(src__redux__theater__theater_state.TheaterState, [], {currentTheater: src__models__theater.Theater, theaters: src__collection__kt_list.KtList$(src__models__theater.Theater)}),
+  (src__redux__vegebook__vegebook_state.VegeBookState.new = function(opts) {
+    let vegeBookStatus = opts && 'vegeBookStatus' in opts ? opts.vegeBookStatus : null;
+    let vegeBookEvents = opts && 'vegeBookEvents' in opts ? opts.vegeBookEvents : null;
+    this[vegeBookStatus$] = vegeBookStatus;
+    this[vegeBookEvents$] = vegeBookEvents;
+  }).prototype = src__redux__vegebook__vegebook_state.VegeBookState.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_state.VegeBookState);
+  const vegeBookStatus$ = Symbol("VegeBookState.vegeBookStatus");
+  const vegeBookEvents$ = Symbol("VegeBookState.vegeBookEvents");
+  dart.setMethodSignature(src__redux__vegebook__vegebook_state.VegeBookState, () => ({
+    __proto__: dart.getMethods(src__redux__vegebook__vegebook_state.VegeBookState.__proto__),
+    copyWith: dart.fnType(src__redux__vegebook__vegebook_state.VegeBookState, [], {vegeBookStatus: src__models__loading_status.LoadingStatus, vegeBookEvents: src__collection__kt_list.KtList$(src__models__vegebook.VegeBook)}),
     _equals: dart.fnType(core.bool, [core.Object]),
     [$_equals]: dart.fnType(core.bool, [core.Object])
   }));
-  dart.setFieldSignature(src__redux__theater__theater_state.TheaterState, () => ({
-    __proto__: dart.getFields(src__redux__theater__theater_state.TheaterState.__proto__),
-    currentTheater: dart.finalFieldType(src__models__theater.Theater),
-    theaters: dart.finalFieldType(KtListOfTheater())
+  dart.setFieldSignature(src__redux__vegebook__vegebook_state.VegeBookState, () => ({
+    __proto__: dart.getFields(src__redux__vegebook__vegebook_state.VegeBookState.__proto__),
+    vegeBookStatus: dart.finalFieldType(src__models__loading_status.LoadingStatus),
+    vegeBookEvents: dart.finalFieldType(KtListOfVegeBook())
   }));
-  dart.defineExtensionMethods(src__redux__theater__theater_state.TheaterState, ['_equals']);
-  dart.defineExtensionAccessors(src__redux__theater__theater_state.TheaterState, ['hashCode']);
+  dart.defineExtensionMethods(src__redux__vegebook__vegebook_state.VegeBookState, ['_equals']);
+  dart.defineExtensionAccessors(src__redux__vegebook__vegebook_state.VegeBookState, ['hashCode']);
   src__redux__show__show_state.ShowState = class ShowState extends core.Object {
     get loadingStatus() {
       return this[loadingStatus$];
@@ -1386,8 +1707,14 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     set vegeNewsState(value) {
       super.vegeNewsState = value;
     }
+    get vegeBookState() {
+      return this[vegeBookState$];
+    }
+    set vegeBookState(value) {
+      super.vegeBookState = value;
+    }
     static initial() {
-      return new src__redux__app__app_state.AppState.new({searchQuery: null, actorsByName: src__collection__collections.emptyMap(core.String, src__models__actor.Actor), theaterState: src__redux__theater__theater_state.TheaterState.initial(), showState: src__redux__show__show_state.ShowState.initial(), eventState: src__redux__event__event_state.EventState.initial(), vegeNewsState: src__redux__vegenews__vegenews_state.VegeNewsState.initial()});
+      return new src__redux__app__app_state.AppState.new({searchQuery: null, actorsByName: src__collection__collections.emptyMap(core.String, src__models__actor.Actor), theaterState: src__redux__theater__theater_state.TheaterState.initial(), showState: src__redux__show__show_state.ShowState.initial(), eventState: src__redux__event__event_state.EventState.initial(), vegeNewsState: src__redux__vegenews__vegenews_state.VegeNewsState.initial(), vegeBookState: src__redux__vegebook__vegebook_state.VegeBookState.initial()});
     }
     copyWith(opts) {
       let searchQuery = opts && 'searchQuery' in opts ? opts.searchQuery : null;
@@ -1396,14 +1723,15 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
       let showState = opts && 'showState' in opts ? opts.showState : null;
       let eventState = opts && 'eventState' in opts ? opts.eventState : null;
       let vegeNewsState = opts && 'vegeNewsState' in opts ? opts.vegeNewsState : null;
-      return new src__redux__app__app_state.AppState.new({searchQuery: searchQuery != null ? searchQuery : this.searchQuery, actorsByName: actorsByName != null ? actorsByName : this.actorsByName, theaterState: theaterState != null ? theaterState : this.theaterState, showState: showState != null ? showState : this.showState, eventState: eventState != null ? eventState : this.eventState, vegeNewsState: vegeNewsState != null ? vegeNewsState : this.vegeNewsState});
+      let vegeBookState = opts && 'vegeBookState' in opts ? opts.vegeBookState : null;
+      return new src__redux__app__app_state.AppState.new({searchQuery: searchQuery != null ? searchQuery : this.searchQuery, actorsByName: actorsByName != null ? actorsByName : this.actorsByName, theaterState: theaterState != null ? theaterState : this.theaterState, showState: showState != null ? showState : this.showState, eventState: eventState != null ? eventState : this.eventState, vegeNewsState: vegeNewsState != null ? vegeNewsState : this.vegeNewsState, vegeBookState: vegeBookState != null ? vegeBookState : this.vegeBookState});
     }
     _equals(other) {
       if (other == null) return false;
-      return this === other || src__redux__app__app_state.AppState.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.searchQuery == other.searchQuery && dart.equals(this.actorsByName, other.actorsByName) && dart.equals(this.theaterState, other.theaterState) && dart.equals(this.showState, other.showState) && dart.equals(this.eventState, other.eventState) && dart.equals(this.vegeNewsState, other.vegeNewsState);
+      return this === other || src__redux__app__app_state.AppState.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.searchQuery == other.searchQuery && dart.equals(this.actorsByName, other.actorsByName) && dart.equals(this.theaterState, other.theaterState) && dart.equals(this.showState, other.showState) && dart.equals(this.eventState, other.eventState) && dart.equals(this.vegeNewsState, other.vegeNewsState) && dart.equals(this.vegeBookState, other.vegeBookState);
     }
     get hashCode() {
-      return (dart.hashCode(this.searchQuery) ^ dart.notNull(dart.hashCode(this.actorsByName)) ^ dart.notNull(dart.hashCode(this.theaterState)) ^ dart.notNull(dart.hashCode(this.showState)) ^ dart.notNull(dart.hashCode(this.eventState)) ^ dart.notNull(dart.hashCode(this.vegeNewsState))) >>> 0;
+      return (dart.hashCode(this.searchQuery) ^ dart.notNull(dart.hashCode(this.actorsByName)) ^ dart.notNull(dart.hashCode(this.theaterState)) ^ dart.notNull(dart.hashCode(this.showState)) ^ dart.notNull(dart.hashCode(this.eventState)) ^ dart.notNull(dart.hashCode(this.vegeNewsState)) ^ dart.notNull(dart.hashCode(this.vegeBookState))) >>> 0;
     }
   };
   (src__redux__app__app_state.AppState.new = function(opts) {
@@ -1413,12 +1741,14 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     let showState = opts && 'showState' in opts ? opts.showState : null;
     let eventState = opts && 'eventState' in opts ? opts.eventState : null;
     let vegeNewsState = opts && 'vegeNewsState' in opts ? opts.vegeNewsState : null;
+    let vegeBookState = opts && 'vegeBookState' in opts ? opts.vegeBookState : null;
     this[searchQuery$] = searchQuery;
     this[actorsByName$] = actorsByName;
     this[theaterState$] = theaterState;
     this[showState$] = showState;
     this[eventState$] = eventState;
     this[vegeNewsState$] = vegeNewsState;
+    this[vegeBookState$] = vegeBookState;
   }).prototype = src__redux__app__app_state.AppState.prototype;
   dart.addTypeTests(src__redux__app__app_state.AppState);
   const searchQuery$ = Symbol("AppState.searchQuery");
@@ -1427,9 +1757,10 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   const showState$ = Symbol("AppState.showState");
   const eventState$ = Symbol("AppState.eventState");
   const vegeNewsState$ = Symbol("AppState.vegeNewsState");
+  const vegeBookState$ = Symbol("AppState.vegeBookState");
   dart.setMethodSignature(src__redux__app__app_state.AppState, () => ({
     __proto__: dart.getMethods(src__redux__app__app_state.AppState.__proto__),
-    copyWith: dart.fnType(src__redux__app__app_state.AppState, [], {searchQuery: core.String, actorsByName: src__collection__kt_map.KtMap$(core.String, src__models__actor.Actor), theaterState: src__redux__theater__theater_state.TheaterState, showState: src__redux__show__show_state.ShowState, eventState: src__redux__event__event_state.EventState, vegeNewsState: src__redux__vegenews__vegenews_state.VegeNewsState}),
+    copyWith: dart.fnType(src__redux__app__app_state.AppState, [], {searchQuery: core.String, actorsByName: src__collection__kt_map.KtMap$(core.String, src__models__actor.Actor), theaterState: src__redux__theater__theater_state.TheaterState, showState: src__redux__show__show_state.ShowState, eventState: src__redux__event__event_state.EventState, vegeNewsState: src__redux__vegenews__vegenews_state.VegeNewsState, vegeBookState: src__redux__vegebook__vegebook_state.VegeBookState}),
     _equals: dart.fnType(core.bool, [core.Object]),
     [$_equals]: dart.fnType(core.bool, [core.Object])
   }));
@@ -1440,7 +1771,8 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     theaterState: dart.finalFieldType(src__redux__theater__theater_state.TheaterState),
     showState: dart.finalFieldType(src__redux__show__show_state.ShowState),
     eventState: dart.finalFieldType(src__redux__event__event_state.EventState),
-    vegeNewsState: dart.finalFieldType(src__redux__vegenews__vegenews_state.VegeNewsState)
+    vegeNewsState: dart.finalFieldType(src__redux__vegenews__vegenews_state.VegeNewsState),
+    vegeBookState: dart.finalFieldType(src__redux__vegebook__vegebook_state.VegeBookState)
   }));
   dart.defineExtensionMethods(src__redux__app__app_state.AppState, ['_equals']);
   dart.defineExtensionAccessors(src__redux__app__app_state.AppState, ['hashCode']);
@@ -1495,13 +1827,16 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   });
   src__i18n__messages.Messages = class Messages extends core.Object {
     get appName() {
-      return intl$.Intl.message("inKino", {name: "appName"});
+      return intl$.Intl.message("Vegecipe", {name: "appName"});
     }
     get vegeNews() {
       return intl$.Intl.message("Vegan News", {name: "vegeNews"});
     }
     get writtenBy() {
       return intl$.Intl.message("Written by", {name: "writtenBy"});
+    }
+    get vegeBook() {
+      return intl$.Intl.message("Vegan Book", {name: "vegeBook"});
     }
     get nowInTheaters() {
       return intl$.Intl.message("Now in theaters", {name: "nowInTheaters"});
@@ -1558,7 +1893,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
       return intl$.Intl.message("Error loading events.", {name: "errorLoadingEvents"});
     }
     get noMoviesForToday() {
-      return intl$.Intl.message("Didn't find any movies\nabout to start for today. ¯\\_(ツ)_/¯", {name: "noMoviesForToday"});
+      return intl$.Intl.message("Didn't find any items to start for today. ¯\\_(ツ)_/¯", {name: "noMoviesForToday"});
     }
     get about() {
       return intl$.Intl.message("About", {name: "about"});
@@ -1585,7 +1920,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
       return intl$.Intl.message("This product uses the TMDb API but is not endorsed or certified by TMDb.", {name: "tmdbAttribution"});
     }
     get searchHint() {
-      return intl$.Intl.message("Search movies & showtimes...", {name: "searchHint"});
+      return intl$.Intl.message("Search title", {name: "searchHint"});
     }
   };
   (src__i18n__messages.Messages.new = function() {
@@ -1596,6 +1931,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     appName: core.String,
     vegeNews: core.String,
     writtenBy: core.String,
+    vegeBook: core.String,
     nowInTheaters: core.String,
     showtimes: core.String,
     comingSoon: core.String,
@@ -1660,6 +1996,41 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     __proto__: dart.getFields(src__i18n__inkino_messages_en.MessageLookup.__proto__),
     messages: dart.finalFieldType(MapOfString$dynamic())
   }));
+  dart.defineLazy(src__i18n__inkino_messages_ko, {
+    /*src__i18n__inkino_messages_ko.messages*/get messages() {
+      return new src__i18n__inkino_messages_ko.MessageLookup.new();
+    },
+    /*src__i18n__inkino_messages_ko._keepAnalysisHappy*/get _keepAnalysisHappy() {
+      return intl$.Intl.defaultLocale;
+    }
+  });
+  src__i18n__inkino_messages_ko.MessageLookup = class MessageLookup extends message_lookup_by_library$.MessageLookupByLibrary {
+    get localeName() {
+      return "ko";
+    }
+    get messages() {
+      return this[messages$];
+    }
+    set messages(value) {
+      super.messages = value;
+    }
+    static _notInlinedMessages(_) {
+      return new (IdentityMapOfString$Function()).from(["about", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("About")), "aboutInKino", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("About inKino")), "aboutInKinoDescription", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("inKino is the unofficial Finnkino client that is minimalistic, fast, and delightful to use.")), "allEmpty", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("비었음!")), "appDevelopedWith", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("The app was developed with")), "appName", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Vegecipe")), "at", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("at")), "cast", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Cast")), "checkoutRepo", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("and it's open source; check out the source code yourself from")), "collapseStoryline", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("touch to collapse")), "comingSoon", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Coming soon")), "director", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Director")), "errorLoadingEvents", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Error loading events.")), "expandStoryline", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("touch to expand")), "gallery", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Gallery")), "githubRepo", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("the GitHub repo")), "gotIt", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Okay, got it!")), "loadingMoviesError", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("There was an error while\nloading movies.")), "noMovies", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Didn't find any movies at\nall.")), "noMoviesForToday", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("¯\\_(ツ)_/¯")), "nowInTheaters", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Now in theaters")), "oops", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("이런!")), "releaseDate", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Release date")), "searchHint", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("검색어를 입력하세요...")), "showtimes", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Showtimes")), "storyline", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Storyline")), "tickets", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Tickets")), "tmdbAttribution", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("This product uses the TMDb API but is not endorsed or certified by TMDb.")), "tryAgain", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("TRY AGAIN")), "vegeNews", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Vegan News")), "vegeBook", core.Function._check(message_lookup_by_library$.MessageLookupByLibrary.simpleMessage("Vegan Book"))]);
+    }
+  };
+  (src__i18n__inkino_messages_ko.MessageLookup.new = function() {
+    this[messages$] = src__i18n__inkino_messages_ko.MessageLookup._notInlinedMessages(dart.fn(src__i18n__inkino_messages_ko.MessageLookup._notInlinedMessages, dynamicTodynamic()));
+  }).prototype = src__i18n__inkino_messages_ko.MessageLookup.prototype;
+  dart.addTypeTests(src__i18n__inkino_messages_ko.MessageLookup);
+  const messages$ = Symbol("MessageLookup.messages");
+  dart.setGetterSignature(src__i18n__inkino_messages_ko.MessageLookup, () => ({
+    __proto__: dart.getGetters(src__i18n__inkino_messages_ko.MessageLookup.__proto__),
+    localeName: core.String
+  }));
+  dart.setFieldSignature(src__i18n__inkino_messages_ko.MessageLookup, () => ({
+    __proto__: dart.getFields(src__i18n__inkino_messages_ko.MessageLookup.__proto__),
+    messages: dart.finalFieldType(MapOfString$dynamic())
+  }));
   dart.defineLazy(src__i18n__inkino_messages_fi, {
     /*src__i18n__inkino_messages_fi.messages*/get messages() {
       return new src__i18n__inkino_messages_fi.MessageLookup.new();
@@ -1673,7 +2044,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
       return "fi";
     }
     get messages() {
-      return this[messages$];
+      return this[messages$0];
     }
     set messages(value) {
       super.messages = value;
@@ -1683,10 +2054,10 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     }
   };
   (src__i18n__inkino_messages_fi.MessageLookup.new = function() {
-    this[messages$] = src__i18n__inkino_messages_fi.MessageLookup._notInlinedMessages(dart.fn(src__i18n__inkino_messages_fi.MessageLookup._notInlinedMessages, dynamicTodynamic()));
+    this[messages$0] = src__i18n__inkino_messages_fi.MessageLookup._notInlinedMessages(dart.fn(src__i18n__inkino_messages_fi.MessageLookup._notInlinedMessages, dynamicTodynamic()));
   }).prototype = src__i18n__inkino_messages_fi.MessageLookup.prototype;
   dart.addTypeTests(src__i18n__inkino_messages_fi.MessageLookup);
-  const messages$ = Symbol("MessageLookup.messages");
+  const messages$0 = Symbol("MessageLookup.messages");
   dart.setGetterSignature(src__i18n__inkino_messages_fi.MessageLookup, () => ({
     __proto__: dart.getGetters(src__i18n__inkino_messages_fi.MessageLookup.__proto__),
     localeName: core.String
@@ -1697,7 +2068,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   }));
   dart.defineLazy(src__i18n__inkino_messages_all, {
     /*src__i18n__inkino_messages_all._deferredLibraries*/get _deferredLibraries() {
-      return new (IdentityMapOfString$VoidToFuture()).from(["en", dart.fn(() => dart.loadLibrary(), VoidToFuture()), "fi", dart.fn(() => dart.loadLibrary(), VoidToFuture())]);
+      return new (IdentityMapOfString$VoidToFuture()).from(["en", dart.fn(() => dart.loadLibrary(), VoidToFuture()), "ko", dart.fn(() => dart.loadLibrary(), VoidToFuture()), "fi", dart.fn(() => dart.loadLibrary(), VoidToFuture())]);
     },
     set _deferredLibraries(_) {}
   });
@@ -1706,6 +2077,10 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
       case "en":
       {
         return src__i18n__inkino_messages_en.messages;
+      }
+      case "ko":
+      {
+        return src__i18n__inkino_messages_ko.messages;
       }
       case "fi":
       {
@@ -2395,6 +2770,53 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     core.print("original" + dart.notNull(dart.toString(original)));
     return original.filter(dart.fn(vegeNews => vegeNews.title[$contains](searchQueryPattern), VegeNewsTobool()));
   };
+  src__redux__vegebook__vegebook_actions.RefreshVegeBookAction = class RefreshVegeBookAction extends core.Object {};
+  (src__redux__vegebook__vegebook_actions.RefreshVegeBookAction.new = function() {
+  }).prototype = src__redux__vegebook__vegebook_actions.RefreshVegeBookAction.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_actions.RefreshVegeBookAction);
+  src__redux__vegebook__vegebook_actions.RequestingVegeBookAction = class RequestingVegeBookAction extends core.Object {};
+  (src__redux__vegebook__vegebook_actions.RequestingVegeBookAction.new = function() {
+  }).prototype = src__redux__vegebook__vegebook_actions.RequestingVegeBookAction.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_actions.RequestingVegeBookAction);
+  src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction = class ReceivedInTheatersVegeBookAction extends core.Object {
+    get vegeBook() {
+      return this[vegeBook$];
+    }
+    set vegeBook(value) {
+      super.vegeBook = value;
+    }
+  };
+  (src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction.new = function(vegeBook) {
+    this[vegeBook$] = vegeBook;
+  }).prototype = src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction);
+  const vegeBook$ = Symbol("ReceivedInTheatersVegeBookAction.vegeBook");
+  dart.setFieldSignature(src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction, () => ({
+    __proto__: dart.getFields(src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction.__proto__),
+    vegeBook: dart.finalFieldType(KtListOfVegeBook())
+  }));
+  src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction = class ErrorLoadingVegeBookAction extends core.Object {};
+  (src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction.new = function() {
+  }).prototype = src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction);
+  dart.defineLazy(src__redux__vegebook__vegebook_selectors, {
+    /*src__redux__vegebook__vegebook_selectors.vegeBookSelector*/get vegeBookSelector() {
+      return reselect$.createSelector2(src__redux__app__app_state.AppState, KtListOfVegeBook(), core.String, KtListOfVegeBook(), dart.fn(state => state.vegeBookState.vegeBookEvents, AppStateToKtListOfVegeBook()), dart.fn(state => state.searchQuery, AppStateToString()), dart.fn(src__redux__vegebook__vegebook_selectors._vegeBookOrVegeBookSearch, KtListOfVegeBookAndStringToKtListOfVegeBook()));
+    }
+  });
+  src__redux__vegebook__vegebook_selectors._vegeBookOrVegeBookSearch = function(vegeBook, searchQuery) {
+    return searchQuery == null ? vegeBook : src__redux__vegebook__vegebook_selectors._vegeBookWithSearchQuery(vegeBook, searchQuery);
+  };
+  src__redux__vegebook__vegebook_selectors.vegeBookByIdSelector = function(state, id) {
+    let predicate = vegeBook => dart.equals(dart.dload(vegeBook, 'id'), id);
+    dart.fn(predicate, dynamicTobool());
+    return src__redux__vegebook__vegebook_selectors.vegeBookSelector(state).firstOrNull(predicate);
+  };
+  src__redux__vegebook__vegebook_selectors._vegeBookWithSearchQuery = function(original, searchQuery) {
+    let searchQueryPattern = core.RegExp.new(searchQuery, {caseSensitive: false});
+    core.print("original" + dart.notNull(dart.toString(original)));
+    return original.filter(dart.fn(vegeBook => vegeBook.title[$contains](searchQueryPattern), VegeBookTobool()));
+  };
   src__tmdb_config.TMDBConfig = class TMDBConfig extends core.Object {};
   (src__tmdb_config.TMDBConfig.new = function() {
   }).prototype = src__tmdb_config.TMDBConfig.prototype;
@@ -2619,8 +3041,26 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     let status = src__models__loading_status.LoadingStatus.error;
     return state.copyWith({vegeNewsStatus: status});
   };
+  src__redux__vegebook__vegebook_reducer.vegeBookReducer = function(state, action) {
+    if (src__redux__vegebook__vegebook_actions.RequestingVegeBookAction.is(action)) {
+      return src__redux__vegebook__vegebook_reducer._requestingVegeBook(state);
+    } else if (src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction.is(action)) {
+      return state.copyWith({vegeBookStatus: src__models__loading_status.LoadingStatus.success, vegeBookEvents: action.vegeBook});
+    } else if (src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction.is(action)) {
+      return src__redux__vegebook__vegebook_reducer._errorLoadingVegeBook(state);
+    }
+    return state;
+  };
+  src__redux__vegebook__vegebook_reducer._requestingVegeBook = function(state) {
+    let status = src__models__loading_status.LoadingStatus.loading;
+    return state.copyWith({vegeBookStatus: status});
+  };
+  src__redux__vegebook__vegebook_reducer._errorLoadingVegeBook = function(state) {
+    let status = src__models__loading_status.LoadingStatus.error;
+    return state.copyWith({vegeBookStatus: status});
+  };
   src__redux__app__app_reducer.appReducer = function(state, action) {
-    return new src__redux__app__app_state.AppState.new({searchQuery: src__redux___common__search.searchQueryReducer(state.searchQuery, action), actorsByName: src__redux__actor__actor_reducer.actorReducer(state.actorsByName, action), theaterState: src__redux__theater__theater_reducer.theaterReducer(state.theaterState, action), showState: src__redux__show__show_reducer.showReducer(state.showState, action), eventState: src__redux__event__event_reducer.eventReducer(state.eventState, action), vegeNewsState: src__redux__vegenews__vegenews_reducer.vegeNewsReducer(state.vegeNewsState, action)});
+    return new src__redux__app__app_state.AppState.new({searchQuery: src__redux___common__search.searchQueryReducer(state.searchQuery, action), actorsByName: src__redux__actor__actor_reducer.actorReducer(state.actorsByName, action), theaterState: src__redux__theater__theater_reducer.theaterReducer(state.theaterState, action), showState: src__redux__show__show_reducer.showReducer(state.showState, action), eventState: src__redux__event__event_reducer.eventReducer(state.eventState, action), vegeNewsState: src__redux__vegenews__vegenews_reducer.vegeNewsReducer(state.vegeNewsState, action), vegeBookState: src__redux__vegebook__vegebook_reducer.vegeBookReducer(state.vegeBookState, action)});
   };
   const _determineTheater = dart.privateName(src__redux__event__event_middleware, "_determineTheater");
   const _fetchNowPlayingEvents = dart.privateName(src__redux__event__event_middleware, "_fetchNowPlayingEvents");
@@ -3015,10 +3455,98 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     __proto__: dart.getFields(src__redux__vegenews__vegenews_middleware.VegeNewsMiddleware.__proto__),
     fs: dart.finalFieldType(src__firestore.Firestore)
   }));
+  src__parsers__vegebook_parser.VegeBookParser = class VegeBookParser extends core.Object {
+    static parse(snapshot) {
+      return KtListOfVegeBook()._check(src__collection__collections.listFrom(src__firestore.DocumentSnapshot, snapshot.docs).map(src__models__vegebook.VegeBook, dart.fn(doc => {
+        core.print(doc.get("id"));
+        return new src__models__vegebook.VegeBook.new({id: core.String._check(doc.get("id")), title: core.String._check(doc.get("title")), content: core.String._check(doc.get("content")), images: src__parsers__vegebook_parser.VegeBookImageDataParser.parse(core.Map._check(doc.get("images"))), galleryImages: src__parsers__vegebook_parser.VegeBookGalleryParser.parse(core.List._check(doc.get("galleryImages"))), writtenBy: core.String._check(doc.get("writtenBy")), writerPhotoUrl: core.String._check(doc.get("writerPhotoUrl")), reportingDate: core.DateTime._check(doc.get("reportingDate")), lastModifiedDate: core.DateTime._check(doc.get("lastModifiedDate"))});
+      }, DocumentSnapshotToVegeBook())));
+    }
+  };
+  (src__parsers__vegebook_parser.VegeBookParser.new = function() {
+  }).prototype = src__parsers__vegebook_parser.VegeBookParser.prototype;
+  dart.addTypeTests(src__parsers__vegebook_parser.VegeBookParser);
+  src__parsers__vegebook_parser.VegeBookImageDataParser = class VegeBookImageDataParser extends core.Object {
+    static parse(images) {
+      if (images == null || dart.test(images[$isEmpty])) {
+        return new src__models__vegebook.VegeBookImageData.empty();
+      }
+      return new src__models__vegebook.VegeBookImageData.new({portraitSmall: core.String._check(images[$_get]("portraitSmall")), portraitMedium: core.String._check(images[$_get]("portraitMedium")), portraitLarge: core.String._check(images[$_get]("portraitLarge")), landscapeSmall: core.String._check(images[$_get]("landscapeSmall")), landscapeBig: core.String._check(images[$_get]("landscapeBig"))});
+    }
+  };
+  (src__parsers__vegebook_parser.VegeBookImageDataParser.new = function() {
+  }).prototype = src__parsers__vegebook_parser.VegeBookImageDataParser.prototype;
+  dart.addTypeTests(src__parsers__vegebook_parser.VegeBookImageDataParser);
+  src__parsers__vegebook_parser.VegeBookGalleryParser = class VegeBookGalleryParser extends core.Object {
+    static parse(galleryImage) {
+      if (galleryImage == null || dart.test(galleryImage[$isEmpty])) {
+        return src__collection__collections.emptyList(src__models__vegebook.VegeBookGalleryImage);
+      }
+      return KtListOfVegeBookGalleryImage()._check(src__collection__collections.listFrom(dart.dynamic, galleryImage).map(src__models__vegebook.VegeBookGalleryImage, dart.fn(node => {
+        core.print(node);
+        return new src__models__vegebook.VegeBookGalleryImage.new({location: core.String._check(node)});
+      }, dynamicToVegeBookGalleryImage())));
+    }
+  };
+  (src__parsers__vegebook_parser.VegeBookGalleryParser.new = function() {
+  }).prototype = src__parsers__vegebook_parser.VegeBookGalleryParser.prototype;
+  dart.addTypeTests(src__parsers__vegebook_parser.VegeBookGalleryParser);
+  const _fetchLatestVegeBook = dart.privateName(src__redux__vegebook__vegebook_middleware, "_fetchLatestVegeBook");
+  const _refreshEvents$0 = dart.privateName(src__redux__vegebook__vegebook_middleware, "_refreshEvents");
+  src__redux__vegebook__vegebook_middleware.VegeBookMiddleware = class VegeBookMiddleware extends src__store.MiddlewareClass$(src__redux__app__app_state.AppState) {
+    get fs() {
+      return this[fs$0];
+    }
+    set fs(value) {
+      super.fs = value;
+    }
+    call(store, action, next) {
+      StoreOfAppState()._check(store);
+      return async.async(dart.void, (function* call() {
+        next(action);
+        if (src__redux___common__common_actions.InitCompleteAction.is(action)) {
+          yield this[_fetchLatestVegeBook](next);
+        } else if (src__redux__vegebook__vegebook_actions.RefreshVegeBookAction.is(action)) {
+          yield this[_refreshEvents$0](action, next);
+        }
+      }).bind(this));
+    }
+    [_fetchLatestVegeBook](next) {
+      return async.async(dart.void, (function* _fetchLatestVegeBook() {
+        next(new src__redux__vegebook__vegebook_actions.RequestingVegeBookAction.new());
+        try {
+          core.print(yield this.fs.collection("vegebook").get());
+          let latestVegeBook = (yield this.fs.collection("vegebook").get());
+          next(new src__redux__vegebook__vegebook_actions.ReceivedInTheatersVegeBookAction.new(src__parsers__vegebook_parser.VegeBookParser.parse(latestVegeBook)));
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          next(new src__redux__vegebook__vegebook_actions.ErrorLoadingVegeBookAction.new());
+        }
+      }).bind(this));
+    }
+    [_refreshEvents$0](action, next) {
+      return this[_fetchLatestVegeBook](next);
+    }
+  };
+  (src__redux__vegebook__vegebook_middleware.VegeBookMiddleware.new = function(fs) {
+    this[fs$0] = fs;
+  }).prototype = src__redux__vegebook__vegebook_middleware.VegeBookMiddleware.prototype;
+  dart.addTypeTests(src__redux__vegebook__vegebook_middleware.VegeBookMiddleware);
+  const fs$0 = Symbol("VegeBookMiddleware.fs");
+  dart.setMethodSignature(src__redux__vegebook__vegebook_middleware.VegeBookMiddleware, () => ({
+    __proto__: dart.getMethods(src__redux__vegebook__vegebook_middleware.VegeBookMiddleware.__proto__),
+    call: dart.fnType(async.Future$(dart.void), [core.Object, dart.dynamic, dart.fnType(dart.void, [dart.dynamic])]),
+    [_fetchLatestVegeBook]: dart.fnType(async.Future$(dart.void), [dart.fnType(dart.void, [dart.dynamic])]),
+    [_refreshEvents$0]: dart.fnType(async.Future$(dart.void), [src__redux__vegebook__vegebook_actions.RefreshVegeBookAction, dart.fnType(dart.void, [dart.dynamic])])
+  }));
+  dart.setFieldSignature(src__redux__vegebook__vegebook_middleware.VegeBookMiddleware, () => ({
+    __proto__: dart.getFields(src__redux__vegebook__vegebook_middleware.VegeBookMiddleware.__proto__),
+    fs: dart.finalFieldType(src__firestore.Firestore)
+  }));
   src__redux__store.createStore = function(client, keyValueStore, fs) {
     let tmdbApi = new src__networking__tmdb_api.TMDBApi.new(client);
     let finnkinoApi = new src__networking__finnkino_api.FinnkinoApi.new(client);
-    return new (StoreOfAppState()).new(dart.fn(src__redux__app__app_reducer.appReducer, AppStateAnddynamicToAppState()), {initialState: src__redux__app__app_state.AppState.initial(), distinct: true, middleware: JSArrayOfStoreOfAppStateAnddynamicAndFnTovoid().of([dart.bindCall(new src__redux__actor__actor_middleware.ActorMiddleware.new(tmdbApi), 'call'), dart.bindCall(new src__redux__theater__theater_middleware.TheaterMiddleware.new(keyValueStore), 'call'), dart.bindCall(new src__redux__show__show_middleware.ShowMiddleware.new(finnkinoApi), 'call'), dart.bindCall(new src__redux__event__event_middleware.EventMiddleware.new(finnkinoApi), 'call'), dart.bindCall(new src__redux__vegenews__vegenews_middleware.VegeNewsMiddleware.new(fs), 'call')])});
+    return new (StoreOfAppState()).new(dart.fn(src__redux__app__app_reducer.appReducer, AppStateAnddynamicToAppState()), {initialState: src__redux__app__app_state.AppState.initial(), distinct: true, middleware: JSArrayOfStoreOfAppStateAnddynamicAndFnTovoid().of([dart.bindCall(new src__redux__actor__actor_middleware.ActorMiddleware.new(tmdbApi), 'call'), dart.bindCall(new src__redux__theater__theater_middleware.TheaterMiddleware.new(keyValueStore), 'call'), dart.bindCall(new src__redux__show__show_middleware.ShowMiddleware.new(finnkinoApi), 'call'), dart.bindCall(new src__redux__event__event_middleware.EventMiddleware.new(finnkinoApi), 'call'), dart.bindCall(new src__redux__vegenews__vegenews_middleware.VegeNewsMiddleware.new(fs), 'call'), dart.bindCall(new src__redux__vegebook__vegebook_middleware.VegeBookMiddleware.new(fs), 'call')])});
   };
   src__redux__theater__theater_selectors.currentTheaterSelector = function(state) {
     return state.theaterState.currentTheater;
@@ -3280,6 +3808,61 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
   }));
   dart.defineExtensionMethods(src__viewmodels__vegenews_page_view_model.VegeNewsPageViewModel, ['_equals']);
   dart.defineExtensionAccessors(src__viewmodels__vegenews_page_view_model.VegeNewsPageViewModel, ['hashCode']);
+  src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel = class VegeBookPageViewModel extends core.Object {
+    get status() {
+      return this[status$2];
+    }
+    set status(value) {
+      super.status = value;
+    }
+    get vegeBook() {
+      return this[vegeBook$0];
+    }
+    set vegeBook(value) {
+      super.vegeBook = value;
+    }
+    get refreshVegeBook() {
+      return this[refreshVegeBook$];
+    }
+    set refreshVegeBook(value) {
+      super.refreshVegeBook = value;
+    }
+    static fromStore(store) {
+      return new src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.new({status: store.state.vegeBookState.vegeBookStatus, vegeBook: src__redux__vegebook__vegebook_selectors.vegeBookSelector(store.state), refreshVegeBook: dart.fn(() => store.dispatch(new src__redux__vegebook__vegebook_actions.RefreshVegeBookAction.new()), VoidTovoid())});
+    }
+    _equals(other) {
+      if (other == null) return false;
+      return this === other || src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.is(other) && dart.equals(this[$runtimeType], dart.runtimeType(other)) && this.status == other.status && dart.equals(this.vegeBook, other.vegeBook);
+    }
+    get hashCode() {
+      return (dart.notNull(dart.hashCode(this.status)) ^ dart.notNull(dart.hashCode(this.vegeBook))) >>> 0;
+    }
+  };
+  (src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.new = function(opts) {
+    let status = opts && 'status' in opts ? opts.status : null;
+    let vegeBook = opts && 'vegeBook' in opts ? opts.vegeBook : null;
+    let refreshVegeBook = opts && 'refreshVegeBook' in opts ? opts.refreshVegeBook : null;
+    this[status$2] = status;
+    this[vegeBook$0] = vegeBook;
+    this[refreshVegeBook$] = refreshVegeBook;
+  }).prototype = src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.prototype;
+  dart.addTypeTests(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel);
+  const status$2 = Symbol("VegeBookPageViewModel.status");
+  const vegeBook$0 = Symbol("VegeBookPageViewModel.vegeBook");
+  const refreshVegeBook$ = Symbol("VegeBookPageViewModel.refreshVegeBook");
+  dart.setMethodSignature(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel, () => ({
+    __proto__: dart.getMethods(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.__proto__),
+    _equals: dart.fnType(core.bool, [core.Object]),
+    [$_equals]: dart.fnType(core.bool, [core.Object])
+  }));
+  dart.setFieldSignature(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel, () => ({
+    __proto__: dart.getFields(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel.__proto__),
+    status: dart.finalFieldType(src__models__loading_status.LoadingStatus),
+    vegeBook: dart.finalFieldType(KtListOfVegeBook()),
+    refreshVegeBook: dart.finalFieldType(core.Function)
+  }));
+  dart.defineExtensionMethods(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel, ['_equals']);
+  dart.defineExtensionAccessors(src__viewmodels__vegebook_page_view_model.VegeBookPageViewModel, ['hashCode']);
   dart.trackLibraries("packages/core/core.ddc", {
     "package:core/core.dart": core$,
     "package:core/src/models/actor.dart": src__models__actor,
@@ -3288,15 +3871,18 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     "package:core/src/models/loading_status.dart": src__models__loading_status,
     "package:core/src/models/show.dart": src__models__show,
     "package:core/src/redux/event/event_state.dart": src__redux__event__event_state,
-    "package:core/src/models/vegenews.dart": src__models__vegenews,
-    "package:core/src/redux/vegenews/vegenews_state.dart": src__redux__vegenews__vegenews_state,
     "package:core/src/models/theater.dart": src__models__theater,
     "package:core/src/redux/theater/theater_state.dart": src__redux__theater__theater_state,
+    "package:core/src/models/vegenews.dart": src__models__vegenews,
+    "package:core/src/redux/vegenews/vegenews_state.dart": src__redux__vegenews__vegenews_state,
+    "package:core/src/models/vegebook.dart": src__models__vegebook,
+    "package:core/src/redux/vegebook/vegebook_state.dart": src__redux__vegebook__vegebook_state,
     "package:core/src/redux/show/show_state.dart": src__redux__show__show_state,
     "package:core/src/redux/app/app_state.dart": src__redux__app__app_state,
     "package:core/src/models/show_cache.dart": src__models__show_cache,
     "package:core/src/i18n/messages.dart": src__i18n__messages,
     "package:core/src/i18n/inkino_messages_en.dart": src__i18n__inkino_messages_en,
+    "package:core/src/i18n/inkino_messages_ko.dart": src__i18n__inkino_messages_ko,
     "package:core/src/i18n/inkino_messages_fi.dart": src__i18n__inkino_messages_fi,
     "package:core/src/i18n/inkino_messages_all.dart": src__i18n__inkino_messages_all,
     "package:core/src/networking/image_url_rewriter.dart": src__networking__image_url_rewriter,
@@ -3317,6 +3903,8 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     "package:core/src/redux/show/show_selectors.dart": src__redux__show__show_selectors,
     "package:core/src/redux/vegenews/vegenews_actions.dart": src__redux__vegenews__vegenews_actions,
     "package:core/src/redux/vegenews/vegenews_selectors.dart": src__redux__vegenews__vegenews_selectors,
+    "package:core/src/redux/vegebook/vegebook_actions.dart": src__redux__vegebook__vegebook_actions,
+    "package:core/src/redux/vegebook/vegebook_selectors.dart": src__redux__vegebook__vegebook_selectors,
     "package:core/src/tmdb_config.dart": src__tmdb_config,
     "package:core/src/networking/tmdb_api.dart": src__networking__tmdb_api,
     "package:core/src/redux/actor/actor_middleware.dart": src__redux__actor__actor_middleware,
@@ -3325,6 +3913,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     "package:core/src/redux/show/show_reducer.dart": src__redux__show__show_reducer,
     "package:core/src/redux/theater/theater_reducer.dart": src__redux__theater__theater_reducer,
     "package:core/src/redux/vegenews/vegenews_reducer.dart": src__redux__vegenews__vegenews_reducer,
+    "package:core/src/redux/vegebook/vegebook_reducer.dart": src__redux__vegebook__vegebook_reducer,
     "package:core/src/redux/app/app_reducer.dart": src__redux__app__app_reducer,
     "package:core/src/redux/event/event_middleware.dart": src__redux__event__event_middleware,
     "package:core/src/utils/clock.dart": src__utils__clock,
@@ -3334,13 +3923,16 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     "package:core/src/redux/theater/theater_middleware.dart": src__redux__theater__theater_middleware,
     "package:core/src/parsers/vegenews_parser.dart": src__parsers__vegenews_parser,
     "package:core/src/redux/vegenews/vegenews_middleware.dart": src__redux__vegenews__vegenews_middleware,
+    "package:core/src/parsers/vegebook_parser.dart": src__parsers__vegebook_parser,
+    "package:core/src/redux/vegebook/vegebook_middleware.dart": src__redux__vegebook__vegebook_middleware,
     "package:core/src/redux/store.dart": src__redux__store,
     "package:core/src/redux/theater/theater_selectors.dart": src__redux__theater__theater_selectors,
     "package:core/src/viewmodels/theater_list_view_model.dart": src__viewmodels__theater_list_view_model,
     "package:core/src/viewmodels/events_page_view_model.dart": src__viewmodels__events_page_view_model,
     "package:core/src/viewmodels/showtime_page_view_model.dart": src__viewmodels__showtime_page_view_model,
-    "package:core/src/viewmodels/vegenews_page_view_model.dart": src__viewmodels__vegenews_page_view_model
-  }, '{"version":3,"sourceRoot":"","sources":["src/models/actor.dart","src/models/content_descriptor.dart","src/models/event.dart","src/models/show.dart","src/redux/event/event_state.dart","src/models/vegenews.dart","src/redux/vegenews/vegenews_state.dart","src/models/theater.dart","src/redux/theater/theater_state.dart","src/redux/show/show_state.dart","src/redux/app/app_state.dart","src/models/show_cache.dart","src/i18n/messages.dart","src/i18n/inkino_messages_en.dart","src/i18n/inkino_messages_fi.dart","src/i18n/inkino_messages_all.dart","src/networking/image_url_rewriter.dart","src/utils/xml_utils.dart","src/parsers/content_descriptor_parser.dart","src/parsers/gallery_parser.dart","src/utils/event_name_cleaner.dart","src/parsers/event_parser.dart","src/parsers/show_parser.dart","src/networking/finnkino_api.dart","src/redux/_common/search.dart","src/redux/_common/common_actions.dart","src/redux/actor/actor_actions.dart","src/redux/actor/actor_selectors.dart","src/redux/event/event_actions.dart","src/redux/event/event_selectors.dart","src/redux/show/show_actions.dart","src/redux/show/show_selectors.dart","src/redux/vegenews/vegenews_actions.dart","src/redux/vegenews/vegenews_selectors.dart","src/tmdb_config.dart","src/networking/tmdb_api.dart","src/redux/actor/actor_middleware.dart","src/redux/actor/actor_reducer.dart","src/redux/event/event_reducer.dart","src/redux/show/show_reducer.dart","src/redux/theater/theater_reducer.dart","src/redux/vegenews/vegenews_reducer.dart","src/redux/app/app_reducer.dart","src/redux/event/event_middleware.dart","src/utils/clock.dart","src/redux/show/show_middleware.dart","src/parsers/theater_parser.dart","src/preloaded_data.dart","src/redux/theater/theater_middleware.dart","src/parsers/vegenews_parser.dart","src/redux/vegenews/vegenews_middleware.dart","src/redux/store.dart","src/redux/theater/theater_selectors.dart","src/viewmodels/theater_list_view_model.dart","src/viewmodels/events_page_view_model.dart","src/viewmodels/showtime_page_view_model.dart","src/viewmodels/vegenews_page_view_model.dart"],"names":[],"mappings":"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","file":"core.ddc.js"}');
+    "package:core/src/viewmodels/vegenews_page_view_model.dart": src__viewmodels__vegenews_page_view_model,
+    "package:core/src/viewmodels/vegebook_page_view_model.dart": src__viewmodels__vegebook_page_view_model
+  }, '{"version":3,"sourceRoot":"","sources":["src/models/actor.dart","src/models/content_descriptor.dart","src/models/event.dart","src/models/show.dart","src/redux/event/event_state.dart","src/models/theater.dart","src/redux/theater/theater_state.dart","src/models/vegenews.dart","src/redux/vegenews/vegenews_state.dart","src/models/vegebook.dart","src/redux/vegebook/vegebook_state.dart","src/redux/show/show_state.dart","src/redux/app/app_state.dart","src/models/show_cache.dart","src/i18n/messages.dart","src/i18n/inkino_messages_en.dart","src/i18n/inkino_messages_ko.dart","src/i18n/inkino_messages_fi.dart","src/i18n/inkino_messages_all.dart","src/networking/image_url_rewriter.dart","src/utils/xml_utils.dart","src/parsers/content_descriptor_parser.dart","src/parsers/gallery_parser.dart","src/utils/event_name_cleaner.dart","src/parsers/event_parser.dart","src/parsers/show_parser.dart","src/networking/finnkino_api.dart","src/redux/_common/search.dart","src/redux/_common/common_actions.dart","src/redux/actor/actor_actions.dart","src/redux/actor/actor_selectors.dart","src/redux/event/event_actions.dart","src/redux/event/event_selectors.dart","src/redux/show/show_actions.dart","src/redux/show/show_selectors.dart","src/redux/vegenews/vegenews_actions.dart","src/redux/vegenews/vegenews_selectors.dart","src/redux/vegebook/vegebook_actions.dart","src/redux/vegebook/vegebook_selectors.dart","src/tmdb_config.dart","src/networking/tmdb_api.dart","src/redux/actor/actor_middleware.dart","src/redux/actor/actor_reducer.dart","src/redux/event/event_reducer.dart","src/redux/show/show_reducer.dart","src/redux/theater/theater_reducer.dart","src/redux/vegenews/vegenews_reducer.dart","src/redux/vegebook/vegebook_reducer.dart","src/redux/app/app_reducer.dart","src/redux/event/event_middleware.dart","src/utils/clock.dart","src/redux/show/show_middleware.dart","src/parsers/theater_parser.dart","src/preloaded_data.dart","src/redux/theater/theater_middleware.dart","src/parsers/vegenews_parser.dart","src/redux/vegenews/vegenews_middleware.dart","src/parsers/vegebook_parser.dart","src/redux/vegebook/vegebook_middleware.dart","src/redux/store.dart","src/redux/theater/theater_selectors.dart","src/viewmodels/theater_list_view_model.dart","src/viewmodels/events_page_view_model.dart","src/viewmodels/showtime_page_view_model.dart","src/viewmodels/vegenews_page_view_model.dart","src/viewmodels/vegebook_page_view_model.dart"],"names":[],"mappings":"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","file":"core.ddc.js"}');
   // Exports:
   return {
     core: core$,
@@ -3350,15 +3942,18 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     src__models__loading_status: src__models__loading_status,
     src__models__show: src__models__show,
     src__redux__event__event_state: src__redux__event__event_state,
-    src__models__vegenews: src__models__vegenews,
-    src__redux__vegenews__vegenews_state: src__redux__vegenews__vegenews_state,
     src__models__theater: src__models__theater,
     src__redux__theater__theater_state: src__redux__theater__theater_state,
+    src__models__vegenews: src__models__vegenews,
+    src__redux__vegenews__vegenews_state: src__redux__vegenews__vegenews_state,
+    src__models__vegebook: src__models__vegebook,
+    src__redux__vegebook__vegebook_state: src__redux__vegebook__vegebook_state,
     src__redux__show__show_state: src__redux__show__show_state,
     src__redux__app__app_state: src__redux__app__app_state,
     src__models__show_cache: src__models__show_cache,
     src__i18n__messages: src__i18n__messages,
     src__i18n__inkino_messages_en: src__i18n__inkino_messages_en,
+    src__i18n__inkino_messages_ko: src__i18n__inkino_messages_ko,
     src__i18n__inkino_messages_fi: src__i18n__inkino_messages_fi,
     src__i18n__inkino_messages_all: src__i18n__inkino_messages_all,
     src__networking__image_url_rewriter: src__networking__image_url_rewriter,
@@ -3379,6 +3974,8 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     src__redux__show__show_selectors: src__redux__show__show_selectors,
     src__redux__vegenews__vegenews_actions: src__redux__vegenews__vegenews_actions,
     src__redux__vegenews__vegenews_selectors: src__redux__vegenews__vegenews_selectors,
+    src__redux__vegebook__vegebook_actions: src__redux__vegebook__vegebook_actions,
+    src__redux__vegebook__vegebook_selectors: src__redux__vegebook__vegebook_selectors,
     src__tmdb_config: src__tmdb_config,
     src__networking__tmdb_api: src__networking__tmdb_api,
     src__redux__actor__actor_middleware: src__redux__actor__actor_middleware,
@@ -3387,6 +3984,7 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     src__redux__show__show_reducer: src__redux__show__show_reducer,
     src__redux__theater__theater_reducer: src__redux__theater__theater_reducer,
     src__redux__vegenews__vegenews_reducer: src__redux__vegenews__vegenews_reducer,
+    src__redux__vegebook__vegebook_reducer: src__redux__vegebook__vegebook_reducer,
     src__redux__app__app_reducer: src__redux__app__app_reducer,
     src__redux__event__event_middleware: src__redux__event__event_middleware,
     src__utils__clock: src__utils__clock,
@@ -3396,12 +3994,15 @@ define(['dart_sdk', 'packages/kt_dart/collection', 'packages/intl/intl', 'packag
     src__redux__theater__theater_middleware: src__redux__theater__theater_middleware,
     src__parsers__vegenews_parser: src__parsers__vegenews_parser,
     src__redux__vegenews__vegenews_middleware: src__redux__vegenews__vegenews_middleware,
+    src__parsers__vegebook_parser: src__parsers__vegebook_parser,
+    src__redux__vegebook__vegebook_middleware: src__redux__vegebook__vegebook_middleware,
     src__redux__store: src__redux__store,
     src__redux__theater__theater_selectors: src__redux__theater__theater_selectors,
     src__viewmodels__theater_list_view_model: src__viewmodels__theater_list_view_model,
     src__viewmodels__events_page_view_model: src__viewmodels__events_page_view_model,
     src__viewmodels__showtime_page_view_model: src__viewmodels__showtime_page_view_model,
-    src__viewmodels__vegenews_page_view_model: src__viewmodels__vegenews_page_view_model
+    src__viewmodels__vegenews_page_view_model: src__viewmodels__vegenews_page_view_model,
+    src__viewmodels__vegebook_page_view_model: src__viewmodels__vegebook_page_view_model
   };
 });
 

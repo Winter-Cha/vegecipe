@@ -1,1 +1,1 @@
-{"isEntrypoint":false,"deps":["intl|lib/intl.dart","intl|lib/message_lookup_by_library.dart","intl|lib/src/intl_helpers.dart","core|lib/src/i18n/inkino_messages_en.dart","core|lib/src/i18n/inkino_messages_fi.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}
+{"isEntrypoint":false,"deps":["intl|lib/intl.dart","intl|lib/message_lookup_by_library.dart","intl|lib/src/intl_helpers.dart","core|lib/src/i18n/inkino_messages_en.dart","core|lib/src/i18n/inkino_messages_ko.dart","core|lib/src/i18n/inkino_messages_fi.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}

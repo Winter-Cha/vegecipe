@@ -6,6 +6,7 @@ import 'package:core/src/redux/event/event_reducer.dart';
 import 'package:core/src/redux/show/show_reducer.dart';
 import 'package:core/src/redux/theater/theater_reducer.dart';
 import 'package:core/src/redux/vegenews/vegenews_reducer.dart';
+import 'package:core/src/redux/vegebook/vegebook_reducer.dart';
 
 AppState appReducer(AppState state, dynamic action) {
   return new AppState(
@@ -15,5 +16,6 @@ AppState appReducer(AppState state, dynamic action) {
     showState: showReducer(state.showState, action),
     eventState: eventReducer(state.eventState, action),
     vegeNewsState: vegeNewsReducer(state.vegeNewsState, action),
+    vegeBookState: vegeBookReducer(state.vegeBookState, action),
   );
 }

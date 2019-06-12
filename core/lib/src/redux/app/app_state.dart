@@ -1,8 +1,9 @@
 import 'package:core/src/models/actor.dart';
 import 'package:core/src/redux/event/event_state.dart';
-import 'package:core/src/redux/vegenews/vegenews_state.dart';
 import 'package:core/src/redux/show/show_state.dart';
 import 'package:core/src/redux/theater/theater_state.dart';
+import 'package:core/src/redux/vegenews/vegenews_state.dart';
+import 'package:core/src/redux/vegebook/vegebook_state.dart';
 import 'package:kt_dart/collection.dart';
 import 'package:meta/meta.dart';
 
@@ -15,6 +16,7 @@ class AppState {
     @required this.showState,
     @required this.eventState,
     @required this.vegeNewsState,
+    @required this.vegeBookState,
   });
 
   final String searchQuery;
@@ -23,6 +25,7 @@ class AppState {
   final ShowState showState;
   final EventState eventState;
   final VegeNewsState vegeNewsState;
+  final VegeBookState vegeBookState;
 
   factory AppState.initial() {
     return AppState(
@@ -32,6 +35,7 @@ class AppState {
       showState: ShowState.initial(),
       eventState: EventState.initial(),
       vegeNewsState: VegeNewsState.initial(),
+      vegeBookState: VegeBookState.initial(),
     );
   }
 
@@ -42,6 +46,7 @@ class AppState {
     ShowState showState,
     EventState eventState,
     VegeNewsState vegeNewsState,
+    VegeBookState vegeBookState,
   }) {
     return AppState(
       searchQuery: searchQuery ?? this.searchQuery,
@@ -50,6 +55,7 @@ class AppState {
       showState: showState ?? this.showState,
       eventState: eventState ?? this.eventState,
       vegeNewsState: vegeNewsState ?? this.vegeNewsState,
+      vegeBookState: vegeBookState ?? this.vegeBookState,
     );
   }
 
@@ -63,7 +69,8 @@ class AppState {
           theaterState == other.theaterState &&
           showState == other.showState &&
           eventState == other.eventState &&
-          vegeNewsState == other.vegeNewsState;
+          vegeNewsState == other.vegeNewsState &&
+          vegeBookState == other.vegeBookState;
 
   @override
   int get hashCode =>
@@ -72,5 +79,6 @@ class AppState {
       theaterState.hashCode ^
       showState.hashCode ^
       eventState.hashCode ^
-      vegeNewsState.hashCode;
+      vegeNewsState.hashCode ^
+      vegeBookState.hashCode;
 }

@@ -39,7 +39,7 @@ class VegeNewsPageComponent implements OnActivate {
   void onActivate(RouterState previous, RouterState current) {
     //_listType = current.routePath.additionalData;
     
-    restoreScrollPositionIfNeeded(previous, RoutePaths.eventDetails);
+    restoreScrollPositionIfNeeded(previous, RoutePaths.vegeNewsDetails);
 
     // if (_listType == EventListType.comingSoon) {
     //   _store.dispatch(FetchComingSoonEventsIfNotLoadedAction());

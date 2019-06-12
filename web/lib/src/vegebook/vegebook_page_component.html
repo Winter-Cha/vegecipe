@@ -1,0 +1,18 @@
+<div class="content-wrapper">
+  <div class="page-title">
+    <h3>{{ VegeBookTitle }}</h3>
+  </div>
+
+  <loading-view [status]="viewModel.status"
+                [contentEmpty]="viewModel.vegeBook.isEmpty()"
+                [errorMessage]="messages.errorLoadingEvents"
+                (actionButtonClicked)="viewModel.refreshVegeBook()">
+    <div class="grid-container">
+      <vegebook-poster 
+                    *ngFor="let vegeBook of viewModel.vegeBook.list"
+                    [vegeBook]="vegeBook"
+                    (click)="openVegeBookDetails(vegeBook)">
+      </vegebook-poster>
+    </div>
+  </loading-view>
+</div>

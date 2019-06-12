@@ -1,0 +1,34 @@
+<div class="container" [class.visible]="contentVisible" *ngIf="vegeBook != null">
+  <vegebook-landscape-image [vegeBook]="vegeBook"></vegebook-landscape-image>
+  <img src="images/back.svg" class="back" (click)="goBack()"/>
+
+  <div class="vegebook-header">
+    <vegebook-poster [vegeBook]="vegeBook" [isTouchable]="false" [hasDetails]="false"></vegebook-poster>
+    <div class="vegebook-information">
+      <h2 class="title">{{ vegeBook.title }}</h2>
+
+      <div class="body">
+        <p class="writtenBy" *ngIf="vegeBook.writtenBy != null">
+          <strong>{{ messages.writtenBy }}</strong>: {{ vegeBook.writtenBy }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" *ngIf="vegeBook.hasContent">
+    <div class="centered-content">
+      <p class="content">{{ vegeBook.content }}</p>
+    </div>
+  </div>
+
+  <div class="section footer" *ngIf="vegeBook.galleryImages.isNotEmpty()">
+    <div class="centered-content">
+      <h3>{{ messages.gallery }}</h3>
+
+      <div class="gallery">
+        <img *ngFor="let galleryImage of vegeBook.galleryImages.list" [src]="galleryImage.location"
+             [alt]="'A still frame from the movie ' + vegeBook.title"/>
+      </div>
+    </div>
+  </div>
+</div>

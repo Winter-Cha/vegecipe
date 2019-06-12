@@ -6,7 +6,8 @@ import 'routes.dart';
 export 'routes.dart';
 import 'package:angular_router/angular_router.template.dart' as _ref0;
 import 'package:web/src/events/events_page_component.template.dart' as _ref1;
-import 'package:web/src/vegenews/vegenews_page_component.template.dart' as _ref2;
+import 'package:web/src/vegebook/vegebook_page_component.template.dart' as _ref2;
+import 'package:web/src/vegenews/vegenews_page_component.template.dart' as _ref3;
 
 var _visited = false;
 void initReflector() {
@@ -18,4 +19,5 @@ void initReflector() {
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
+  _ref3.initReflector();
 }

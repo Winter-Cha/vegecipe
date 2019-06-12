@@ -4,12 +4,17 @@ import 'package:web/src/event_details/event_details_component.template.dart'
     deferred as event_details;
 import 'package:web/src/events/events_page_component.template.dart'
     as events_page;
+import 'package:web/src/showtimes/showtimes_page_component.template.dart'
+    deferred as showtimes_page;
+
 import 'package:web/src/vegenews/vegenews_page_component.template.dart'
     as vegenews_page;
 import 'package:web/src/vegenews_details/vegenews_details_component.template.dart'
     deferred as vegenews_details;
-import 'package:web/src/showtimes/showtimes_page_component.template.dart'
-    deferred as showtimes_page;
+import 'package:web/src/vegebook/vegebook_page_component.template.dart'
+    as vegebook_page;
+import 'package:web/src/vegebook_details/vegebook_details_component.template.dart'
+    deferred as vegebook_details;
 
 class RoutePaths {
 
@@ -17,10 +22,18 @@ class RoutePaths {
   static final vegeNews = RoutePath(
     path: '/vegenews',
     //additionalData: EventListType.vegeNews,
-    useAsDefault: true,
   );
 
   static final vegeNewsDetails = RoutePath(path: 'vegenews/:vegeNewsId');
+
+   // VegeBook
+  static final vegeBook = RoutePath(
+    path: '/vegebook',
+    useAsDefault: true,
+    //additionalData: EventListType.vegeNews,
+  );
+
+  static final vegeBookDetails = RoutePath(path: 'vegebook/:vegeBookId');
 
   // now in theaters <<
   static final nowInTheaters = RoutePath(
@@ -45,7 +58,6 @@ class Routes {
 
     RouteDefinition(
       routePath: RoutePaths.vegeNews,
-      useAsDefault: true,
       component: vegenews_page.VegeNewsPageComponentNgFactory,
     ),
     RouteDefinition.defer(
@@ -54,6 +66,19 @@ class Routes {
         return vegenews_details
             .loadLibrary()
             .then((_) => vegenews_details.VegeNewsDetailsComponentNgFactory);
+      },
+    ),
+    RouteDefinition(
+      routePath: RoutePaths.vegeBook,
+      useAsDefault: true,
+      component: vegebook_page.VegeBookPageComponentNgFactory,
+    ),
+    RouteDefinition.defer(
+      routePath: RoutePaths.vegeBookDetails,
+      loader: () {
+        return vegebook_details
+            .loadLibrary()
+            .then((_) => vegebook_details.VegeBookDetailsComponentNgFactory);
       },
     ),
     RouteDefinition(

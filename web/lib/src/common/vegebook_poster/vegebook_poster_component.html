@@ -1,0 +1,19 @@
+<div class="fallback-icon">
+  <img src="images/fallback-icon.svg"
+       [alt]="'Fallback image for ' + vegeBook.title"/>
+</div>
+
+<lazy-img *ngIf="vegeBook.hasMediumPortraitImage"
+          [src]="vegeBook.images.portraitMedium"
+          [alt]="'Poster for ' + vegeBook.title"></lazy-img>
+
+<div class="vegebook-information" *ngIf="hasDetails">
+  <p><strong>{{ vegeBook.title }}</strong></p>
+  <p class="writtenBy">{{ vegeBook.writtenBy }}</p>
+</div>
+
+<!-- 필요하면 날짜 넣자... -->
+<div class="release-date-information" *ngIf="isComingSoon">
+  <p class="label">{{ messages.releaseDate }}</p>
+  <p class="date">{{ reportingDate }}</p>
+</div>

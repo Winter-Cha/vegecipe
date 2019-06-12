@@ -1,22 +1,24 @@
 <nav [class.hidden]="theaterDropdownActive">
-  <a [routerLink]="RoutePaths.vegeNews.toUrl()"
-    routerLinkActive="active-route">
-   <img class="icon" alt="Vegan News" src="images/now-in-theaters.svg"/>
-   <span>{{ messages.vegeNews }}</span>
- </a>
-  <a [routerLink]="RoutePaths.nowInTheaters.toUrl()"
-     routerLinkActive="active-route">
-    <img class="icon" alt="Now in theaters" src="images/now-in-theaters.svg"/>
+  <a [routerLink]="RoutePaths.vegeBook.toUrl()" routerLinkActive="active-route">
+    <img class="icon" alt="Vegan Book" src="images/now-in-theaters.svg" />
+    <span>{{ messages.vegeBook }}</span>
+  </a>
+  <a [routerLink]="RoutePaths.vegeNews.toUrl()" routerLinkActive="active-route">
+    <img class="icon" alt="Vegan News" src="images/now-in-theaters.svg" />
+    <span>{{ messages.vegeNews }}</span>
+  </a>
+
+
+   <!-- <a [routerLink]="RoutePaths.nowInTheaters.toUrl()" routerLinkActive="active-route">
+    <img class="icon" alt="Now in theaters" src="images/now-in-theaters.svg" />
     <span>{{ messages.nowInTheaters }}</span>
   </a>
-  <a [routerLink]="RoutePaths.showtimes.toUrl()"
-     routerLinkActive="active-route">
-    <img class="icon" alt="Showtimes" src="images/showtimes.svg"/>
+  <a [routerLink]="RoutePaths.showtimes.toUrl()" routerLinkActive="active-route">
+    <img class="icon" alt="Showtimes" src="images/showtimes.svg" />
     <span>{{ messages.showtimes }}</span>
   </a>
-  <a [routerLink]="RoutePaths.comingSoon.toUrl()"
-     routerLinkActive="active-route">
-    <img class="icon" alt="Coming soon" src="images/coming-soon.svg"/>
+  <a [routerLink]="RoutePaths.comingSoon.toUrl()" routerLinkActive="active-route">
+    <img class="icon" alt="Coming soon" src="images/coming-soon.svg" />
     <span>{{ messages.comingSoon }}</span>
-  </a>
+  </a> -->
 </nav>

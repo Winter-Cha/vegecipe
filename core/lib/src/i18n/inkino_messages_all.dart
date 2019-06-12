@@ -10,11 +10,13 @@ import 'package:intl/message_lookup_by_library.dart';
 import 'package:intl/src/intl_helpers.dart';
 
 import 'package:core/src/i18n/inkino_messages_en.dart' deferred as messages_en;
+import 'package:core/src/i18n/inkino_messages_ko.dart' deferred as messages_ko;
 import 'package:core/src/i18n/inkino_messages_fi.dart' deferred as messages_fi;
 
 typedef Future<dynamic> LibraryLoader();
 Map<String, LibraryLoader> _deferredLibraries = {
   'en': () => messages_en.loadLibrary(),
+  'ko': () => messages_en.loadLibrary(),
   'fi': () => messages_fi.loadLibrary(),
 };
 
@@ -22,6 +24,8 @@ MessageLookupByLibrary _findExact(localeName) {
   switch (localeName) {
     case 'en':
       return messages_en.messages;
+    case 'ko':
+      return messages_ko.messages;
     case 'fi':
       return messages_fi.messages;
     default:

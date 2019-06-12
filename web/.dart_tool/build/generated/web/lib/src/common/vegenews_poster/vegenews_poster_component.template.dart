@@ -170,7 +170,7 @@ class _ViewVegeNewsPosterComponent2 extends AppView<import2.VegeNewsPosterCompon
   ComponentRef<import2.VegeNewsPosterComponent> build() {
     final doc = import5.document;
     final _el_0 = doc.createElement('div');
-    this.updateChildClass(_el_0, 'vegeNews-information');
+    this.updateChildClass(_el_0, 'vegenews-information');
     addShimC(_el_0);
     final _el_1 = import11.appendElement(doc, _el_0, 'p');
     addShimE(_el_1);
