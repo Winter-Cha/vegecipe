@@ -7,6 +7,7 @@ import 'package:redux/redux.dart';
 import 'package:web/src/app_bar/nav_bar/nav_bar_component.dart';
 import 'package:web/src/app_bar/scroll_utils.dart';
 import 'package:web/src/app_bar/search_bar/search_bar_component.dart';
+import 'package:web/src/app_bar/signin_bar/signin_bar_component.dart';
 import 'package:web/src/routes.dart';
 
 @Component(
@@ -16,6 +17,7 @@ import 'package:web/src/routes.dart';
   directives: [
     NavBarComponent,
     SearchBarComponent,
+    SignInBarComponent,
     routerDirectives,
   ],
   exports: [RoutePaths],

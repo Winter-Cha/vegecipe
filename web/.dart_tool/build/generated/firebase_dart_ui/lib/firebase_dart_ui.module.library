@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["firebase_dart_ui|lib/src/firebase_auth_ui_component.dart","firebase_dart_ui|lib/src/auth_ui_js.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

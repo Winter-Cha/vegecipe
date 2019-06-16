@@ -1,0 +1,28 @@
+<!-- Basic Dialog -->
+<div class="signin-button-group">
+  <material-button *ngIf="!isAuthenticated()" class="green" (trigger)="showBasicDialog = true"
+    [disabled]="showBasicDialog" (click)="getSigninPage()" raised>
+    Sign in
+  </material-button>
+
+  <material-button *ngIf="isAuthenticated()" (click)="logout()" class="red" raised>
+    Logout
+  </material-button>
+
+</div>
+
+
+<modal [(visible)]="showBasicDialog">
+  <material-dialog class="basic-dialog">
+    <h1 header>Sign in</h1>
+
+    <signin-page></signin-page>
+
+    <div footer>
+      <material-button autoFocus clear-size (trigger)="showBasicDialog = false">
+        Close
+      </material-button>
+    </div>
+
+  </material-dialog>
+</modal>

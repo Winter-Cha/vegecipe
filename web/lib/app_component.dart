@@ -6,7 +6,6 @@ import 'package:core/core.dart';
 import 'package:redux/redux.dart';
 import 'package:web/src/app_bar/app_bar_component.dart';
 import 'package:web/src/common/theater_selector/theater_dropdown_controller.dart';
-
 import 'src/routes.dart';
 
 @Component(
@@ -16,6 +15,7 @@ import 'src/routes.dart';
   directives: [
     AppBarComponent,
     routerDirectives,
+    NgIf,
   ],
   exports: [Routes],
 )

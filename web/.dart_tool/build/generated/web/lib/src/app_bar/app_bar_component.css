@@ -93,11 +93,12 @@ header.hidden {
   cursor: pointer;
 }
 .logo img {
-  width: 28px;
-  height: 28px;
+  width: 42px;
+  height: 42px;
   margin-top: 2px;
 }
 .logo h1 {
+  display: none;
   font-size: 20px;
   font-weight: 500;
   color: #FEFEFE;
@@ -144,6 +145,7 @@ header.hidden {
     height: 32px;
   }
   .logo h1 {
+    display: block;
     font-size: 30px;
   }
 
@@ -161,5 +163,14 @@ header.hidden {
     min-width: 850px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+  .logo h1 {
+    display: block;
+    font-size: 30px;
   }
 }

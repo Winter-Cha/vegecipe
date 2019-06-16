@@ -35,16 +35,26 @@ final List<dynamic> styles$NavBarComponent = [import0.styles];
 class ViewNavBarComponent0 extends AppView<import2.NavBarComponent> {
   final import3.TextBinding _textBinding_5 = import3.TextBinding();
   final import3.TextBinding _textBinding_11 = import3.TextBinding();
+  final import3.TextBinding _textBinding_17 = import3.TextBinding();
+  final import3.TextBinding _textBinding_23 = import3.TextBinding();
   import4.RouterLinkNgCd _RouterLink_1_5;
   import5.RouterLinkActive _RouterLinkActive_1_6;
   import4.RouterLinkNgCd _RouterLink_7_5;
   import5.RouterLinkActive _RouterLinkActive_7_6;
+  import4.RouterLinkNgCd _RouterLink_13_5;
+  import5.RouterLinkActive _RouterLinkActive_13_6;
+  import4.RouterLinkNgCd _RouterLink_19_5;
+  import5.RouterLinkActive _RouterLinkActive_19_6;
   bool _expr_0;
   String _expr_1;
   String _expr_3;
+  String _expr_5;
+  String _expr_7;
   import6.Element _el_0;
   import6.AnchorElement _el_1;
   import6.AnchorElement _el_7;
+  import6.AnchorElement _el_13;
+  import6.AnchorElement _el_19;
   static import7.ComponentStyles _componentStyles;
   ViewNavBarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.component, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     initComponentStyles();
@@ -109,8 +119,58 @@ class ViewNavBarComponent0 extends AppView<import2.NavBarComponent> {
     _el_10.append(_textBinding_11.element);
     _RouterLinkActive_7_6.links = [_RouterLink_7_5.instance];
     final _text_12 = import12.appendText(_el_0, ' ');
+    _el_13 = import12.appendElement(doc, _el_0, 'a');
+    import12.setAttribute(_el_13, 'routerLinkActive', 'active-route');
+    addShimC(_el_13);
+    _RouterLink_13_5 = import4.RouterLinkNgCd((import10.isDevMode
+        ? import13.debugInjectorWrap(import14.RouterLink, () {
+            return import14.RouterLink(parentView.injectorGet(import15.Router, viewData.parentIndex), parentView.injectorGet(import16.Location, viewData.parentIndex), null, _el_13);
+          })
+        : import14.RouterLink(parentView.injectorGet(import15.Router, viewData.parentIndex), parentView.injectorGet(import16.Location, viewData.parentIndex), null, _el_13)));
+    _RouterLinkActive_13_6 = (import10.isDevMode
+        ? import13.debugInjectorWrap(import5.RouterLinkActive, () {
+            return import5.RouterLinkActive(_el_13, parentView.injectorGet(import15.Router, viewData.parentIndex));
+          })
+        : import5.RouterLinkActive(_el_13, parentView.injectorGet(import15.Router, viewData.parentIndex)));
+    final _el_14 = import12.appendElement(doc, _el_13, 'img');
+    import12.setAttribute(_el_14, 'alt', 'Now in theaters');
+    this.updateChildClass(_el_14, 'icon');
+    import12.setAttribute(_el_14, 'src', 'images/now-in-theaters.svg');
+    addShimE(_el_14);
+    final _text_15 = import12.appendText(_el_13, ' ');
+    final _el_16 = import12.appendSpan(doc, _el_13);
+    addShimE(_el_16);
+    _el_16.append(_textBinding_17.element);
+    _RouterLinkActive_13_6.links = [_RouterLink_13_5.instance];
+    final _text_18 = import12.appendText(_el_0, ' ');
+    _el_19 = import12.appendElement(doc, _el_0, 'a');
+    import12.setAttribute(_el_19, 'routerLinkActive', 'active-route');
+    addShimC(_el_19);
+    _RouterLink_19_5 = import4.RouterLinkNgCd((import10.isDevMode
+        ? import13.debugInjectorWrap(import14.RouterLink, () {
+            return import14.RouterLink(parentView.injectorGet(import15.Router, viewData.parentIndex), parentView.injectorGet(import16.Location, viewData.parentIndex), null, _el_19);
+          })
+        : import14.RouterLink(parentView.injectorGet(import15.Router, viewData.parentIndex), parentView.injectorGet(import16.Location, viewData.parentIndex), null, _el_19)));
+    _RouterLinkActive_19_6 = (import10.isDevMode
+        ? import13.debugInjectorWrap(import5.RouterLinkActive, () {
+            return import5.RouterLinkActive(_el_19, parentView.injectorGet(import15.Router, viewData.parentIndex));
+          })
+        : import5.RouterLinkActive(_el_19, parentView.injectorGet(import15.Router, viewData.parentIndex)));
+    final _el_20 = import12.appendElement(doc, _el_19, 'img');
+    import12.setAttribute(_el_20, 'alt', 'Showtimes');
+    this.updateChildClass(_el_20, 'icon');
+    import12.setAttribute(_el_20, 'src', 'images/showtimes.svg');
+    addShimE(_el_20);
+    final _text_21 = import12.appendText(_el_19, ' ');
+    final _el_22 = import12.appendSpan(doc, _el_19);
+    addShimE(_el_22);
+    _el_22.append(_textBinding_23.element);
+    _RouterLinkActive_19_6.links = [_RouterLink_19_5.instance];
+    final _text_24 = import12.appendText(_el_0, ' ');
     _el_1.addEventListener('click', eventHandler1(_RouterLink_1_5.instance.onClick));
     _el_7.addEventListener('click', eventHandler1(_RouterLink_7_5.instance.onClick));
+    _el_13.addEventListener('click', eventHandler1(_RouterLink_13_5.instance.onClick));
+    _el_19.addEventListener('click', eventHandler1(_RouterLink_19_5.instance.onClick));
     init0();
   }
 
@@ -134,6 +194,22 @@ class ViewNavBarComponent0 extends AppView<import2.NavBarComponent> {
     if (firstCheck) {
       (_RouterLinkActive_7_6.routerLinkActive = 'active-route');
     }
+    final currVal_5 = import17.RoutePaths.nowInTheaters.toUrl();
+    if (import18.checkBinding(_expr_5, currVal_5)) {
+      _RouterLink_13_5.instance.routerLink = currVal_5;
+      _expr_5 = currVal_5;
+    }
+    if (firstCheck) {
+      (_RouterLinkActive_13_6.routerLinkActive = 'active-route');
+    }
+    final currVal_7 = import17.RoutePaths.showtimes.toUrl();
+    if (import18.checkBinding(_expr_7, currVal_7)) {
+      _RouterLink_19_5.instance.routerLink = currVal_7;
+      _expr_7 = currVal_7;
+    }
+    if (firstCheck) {
+      (_RouterLinkActive_19_6.routerLinkActive = 'active-route');
+    }
     final currVal_0 = _ctx.theaterDropdownActive;
     if (import18.checkBinding(_expr_0, currVal_0)) {
       import12.updateClassBinding(_el_0, 'hidden', currVal_0);
@@ -143,10 +219,16 @@ class ViewNavBarComponent0 extends AppView<import2.NavBarComponent> {
     _textBinding_5.updateText(import19.interpolateString0(_ctx.messages.vegeBook));
     _RouterLink_7_5.detectHostChanges(this, _el_7);
     _textBinding_11.updateText(import19.interpolateString0(_ctx.messages.vegeNews));
+    _RouterLink_13_5.detectHostChanges(this, _el_13);
+    _textBinding_17.updateText(import19.interpolateString0(_ctx.messages.nowInTheaters));
+    _RouterLink_19_5.detectHostChanges(this, _el_19);
+    _textBinding_23.updateText(import19.interpolateString0(_ctx.messages.showtimes));
     if ((!import18.AppViewUtils.throwOnChanges)) {
       if (firstCheck) {
         _RouterLinkActive_1_6.ngAfterViewInit();
         _RouterLinkActive_7_6.ngAfterViewInit();
+        _RouterLinkActive_13_6.ngAfterViewInit();
+        _RouterLinkActive_19_6.ngAfterViewInit();
       }
     }
   }
@@ -157,6 +239,10 @@ class ViewNavBarComponent0 extends AppView<import2.NavBarComponent> {
     _RouterLinkActive_1_6.ngOnDestroy();
     _RouterLink_7_5.instance.ngOnDestroy();
     _RouterLinkActive_7_6.ngOnDestroy();
+    _RouterLink_13_5.instance.ngOnDestroy();
+    _RouterLinkActive_13_6.ngOnDestroy();
+    _RouterLink_19_5.instance.ngOnDestroy();
+    _RouterLinkActive_19_6.ngOnDestroy();
   }
 
   @override
