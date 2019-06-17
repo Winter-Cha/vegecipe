@@ -48,6 +48,7 @@ void _initializeFirebase() async{
     storageBucket: "vegecipeapp.appspot.com",
     messagingSenderId: "432274912386",
   );
+  
   var lang = await findSystemLocale();
   fb.auth().languageCode = lang;
 }

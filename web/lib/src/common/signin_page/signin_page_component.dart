@@ -65,11 +65,23 @@ class SignInPageComponent {
           customParameters:
               new GoogleCustomParameters(prompt: 'select_account'));
 
-      var gitHub = new CustomSignInOptions(
-          provider: fb.GithubAuthProvider.PROVIDER_ID,
-          // sample below of asking for additional scopes.
-          // See https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/
-          scopes: [/*'repo', 'gist' */]);
+      var facebookOptions = new CustomSignInOptions(
+          provider: fb.FacebookAuthProvider.PROVIDER_ID,
+          //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
+          customParameters:
+              new FacebookCustomParameters());
+
+      var twitterOptions = new CustomSignInOptions(
+          provider: fb.TwitterAuthProvider.PROVIDER_ID);
+          //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
+          //customParameters:new FacebookCustomParameters());
+
+
+      // var gitHub = new CustomSignInOptions(
+      //     provider: fb.GithubAuthProvider.PROVIDER_ID,
+      //     // sample below of asking for additional scopes.
+      //     // See https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/
+      //     scopes: [/*'repo', 'gist' */]);
 
 
       var callbacks = new Callbacks(
@@ -83,8 +95,11 @@ class SignInPageComponent {
           signInSuccessUrl: '/',
           signInOptions: [
             googleOptions,
-            fb.EmailAuthProvider.PROVIDER_ID,
-            gitHub
+            facebookOptions,
+            twitterOptions,
+            //fb.EmailAuthProvider.PROVIDER_ID,
+            //fb.PhoneAuthProvider.PROVIDER_ID,
+            //gitHub
           ],
           signInFlow: "redirect",
           //signInFlow: "popup",
