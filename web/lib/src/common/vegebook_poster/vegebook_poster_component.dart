@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/angular_components.dart';
 import 'package:core/core.dart';
 import 'package:intl/intl.dart';
 import 'package:web/src/common/vegebook_poster/lazy_image_component.dart';
@@ -9,6 +10,7 @@ import 'package:web/src/common/vegebook_poster/lazy_image_component.dart';
   templateUrl: 'vegebook_poster_component.html',
   directives: [
     LazyImageComponent,
+    MaterialButtonComponent,
     NgIf,
     NgFor,
   ],

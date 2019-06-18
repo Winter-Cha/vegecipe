@@ -15,6 +15,8 @@ import 'package:web/src/vegebook/vegebook_page_component.template.dart'
     as vegebook_page;
 import 'package:web/src/vegebook_details/vegebook_details_component.template.dart'
     deferred as vegebook_details;
+import 'package:web/src/vegebook_details/write_vegebook/write_vegebook_component.template.dart'
+    as write_vegebook;
 
 class RoutePaths {
 
@@ -34,6 +36,7 @@ class RoutePaths {
   );
 
   static final vegeBookDetails = RoutePath(path: 'vegebook/:vegeBookId');
+  static final writeBook = RoutePath(path: 'writebook');
 
   // now in theaters <<
   static final nowInTheaters = RoutePath(
@@ -80,6 +83,10 @@ class Routes {
             .loadLibrary()
             .then((_) => vegebook_details.VegeBookDetailsComponentNgFactory);
       },
+    ),
+    RouteDefinition(
+      routePath: RoutePaths.writeBook,
+      component: write_vegebook.WriteVegeBookComponentNgFactory,
     ),
     RouteDefinition(
       routePath: RoutePaths.nowInTheaters,

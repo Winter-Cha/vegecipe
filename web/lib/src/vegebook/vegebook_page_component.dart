@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:core/core.dart';
 import 'package:redux/redux.dart';
@@ -8,6 +9,9 @@ import 'package:web/src/routes.dart';
 
 import '../restore_scroll_position.dart';
 
+
+import 'package:firebase/firebase.dart' as fb;
+
 @Component(
   selector: 'vegebook-page',
   styleUrls: ['vegebook_page_component.css'],
@@ -15,7 +19,9 @@ import '../restore_scroll_position.dart';
   directives: [
     LoadingViewComponent,
     VegeBookPosterComponent,
+    MaterialButtonComponent,
     NgFor,
+    NgIf,
   ],
 )
 class VegeBookPageComponent implements OnActivate {
@@ -24,7 +30,14 @@ class VegeBookPageComponent implements OnActivate {
   final Router _router;
   final Messages messages;
 
+  bool isAuthenticated() => fb.auth().currentUser != null;
+
   String get VegeBookTitle => this.messages.vegeBook;
+
+  void writeBook() {
+    final url = RoutePaths.writeBook.toUrl();
+    _router.navigate(url);
+  }
 
   VegeBookPageViewModel get viewModel =>
       VegeBookPageViewModel.fromStore(_store);

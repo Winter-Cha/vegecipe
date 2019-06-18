@@ -67,7 +67,7 @@ class AppBarComponent implements OnInit, OnDestroy {
       // 여기서 아래의 path로 이동시 app_bar를 숨긴다.
       isEventDetailsPage = path == RoutePaths.eventDetails.path ||
           path == RoutePaths.showDetails.path || path == RoutePaths.vegeNewsDetails.path
-          || path == RoutePaths.vegeBookDetails.path;
+          || path == RoutePaths.vegeBookDetails.path || path == RoutePaths.writeBook.path;
 
       hide = isEventDetailsPage;
     });
