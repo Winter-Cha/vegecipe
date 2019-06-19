@@ -112,7 +112,7 @@ class ViewVegeBookPageComponent0 extends AppView<import2.VegeBookPageComponent> 
   @override
   void detectChangesInternal() {
     final _ctx = ctx;
-    _NgIf_4_9.ngIf = (!_ctx.isAuthenticated());
+    _NgIf_4_9.ngIf = _ctx.isAuthenticated();
     final currVal_1 = _ctx.viewModel.vegeBook.isEmpty();
     if (import19.checkBinding(_expr_1, currVal_1)) {
       _LoadingViewComponent_5_5.contentEmpty = currVal_1;

@@ -2,10 +2,6 @@
   <vegebook-landscape-image [vegeBook]="vegeBook"></vegebook-landscape-image>
 
   <img src="images/back.svg" class="back" (click)="goBack()">
-  <material-button class="blue add-post-image" 
-  raised>
-  Add post image
-  </material-button>
   <material-button class="blue add-landscape-image" 
                     raised>
   Add Landscape image
@@ -25,9 +21,18 @@
     </div>
   </div>
 
-  <div class="section" *ngIf="vegeBook.hasContent">
+  <div class="section" >
     <div class="centered-content">
-      <p class="content">{{ vegeBook.content }}</p>
+
+      <!-- <p class="content">{{ vegeBook.content }}</p> -->
+
+      <quill
+            [(ngModel)]="htmlStr"
+            placeholder="Write something..."
+            (blur)="blur()"
+            (input)="input()"
+            >
+    </quill>
     </div>
   </div>
 

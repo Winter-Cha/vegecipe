@@ -85,7 +85,7 @@ class ViewVegeBookPosterComponent0 extends AppView<import2.VegeBookPosterCompone
           })
         : import16.AcxDarkTheme(parentView.injectorGetOptional(const import17.OpaqueToken<dynamic>('acxDarkTheme'), viewData.parentIndex)));
     _MaterialButtonComponent_3_6 = import6.MaterialButtonComponent(_el_3, _AcxDarkTheme_3_5, _compView_3, null);
-    final _text_4 = import13.createText('Add post image');
+    final _text_4 = import13.createText('Add post');
     _compView_3.create(_MaterialButtonComponent_3_6, [
       [_text_4]
     ]);

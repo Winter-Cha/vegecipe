@@ -50,7 +50,8 @@ class SignInBarComponent {
   final Messages messages;
   final Store<AppState> store;
   
-  bool showBasicDialog = false;
+  bool showSignInDialog = false;
+  bool showUserInfoDialog = false;
 
   bool getSignInOpen() => (signInOpen) ;
 
@@ -65,6 +66,9 @@ class SignInBarComponent {
   String providerAccessToken = "";
 
   bool isAuthenticated() => fb.auth().currentUser != null;
+  String get userEmail => fb.auth().currentUser?.email;
+  String get displayName => fb.auth().currentUser?.displayName;
+  Map<String, dynamic> get userJson => fb.auth().currentUser?.toJson();
 
   Future<Null> logout() async {
     print("@@@@@@@@@@@@@@@@");

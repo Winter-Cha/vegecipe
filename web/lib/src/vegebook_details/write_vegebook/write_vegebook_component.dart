@@ -3,7 +3,7 @@ import 'dart:html' as html;
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_button/material_button.dart';
-import 'package:angular_components/material_button/material_button_base.dart';
+import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:core/core.dart';
 import 'package:redux/redux.dart';
@@ -12,6 +12,10 @@ import 'package:web/src/common/vegebook_poster/vegebook_poster_component.dart';
 import 'package:web/src/routes.dart';
 import 'package:web/src/vegebook_details/landscape_image/vegebook_landscape_image_component.dart';
 
+import 'package:firebase/firebase.dart' as fb;
+
+import 'package:angular_forms/angular_forms.dart';
+import 'package:angular_quill/angular_quill.dart';
 
 @Component(
   selector: 'write-vegebook',
@@ -24,6 +28,9 @@ import 'package:web/src/vegebook_details/landscape_image/vegebook_landscape_imag
     MaterialButtonComponent,
     NgIf,
     NgFor,
+    NgModel,
+    COMMON_DIRECTIVES,
+    quillDirectives,
   ],
   pipes: [DatePipe],
 )
@@ -32,6 +39,8 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   final Store<AppState> _store;
   final Router _router;
   final Messages messages;
+
+  String htmlStr = "";
 
   VegeBook vegeBook = VegeBook(
     id: '',
@@ -44,7 +53,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
       portraitMedium: null,
       portraitLarge: null,
     ),
-    writtenBy: '',
+    writtenBy: fb.auth().currentUser?.displayName,
     writerPhotoUrl: '',
   );
   bool _navigatedFromApp = false;
@@ -124,5 +133,13 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
       RoutePaths.vegeBook.toUrl(),
       replace: true,
     );
+  }
+
+  void blur(){
+
+  }
+
+  void input(){
+
   }
 }

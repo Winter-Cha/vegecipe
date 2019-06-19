@@ -3,7 +3,7 @@
     <h3>{{ VegeBookTitle }}</h3>
   </div>
 
-  <material-button *ngIf="!isAuthenticated()" 
+  <material-button *ngIf="isAuthenticated()" 
                   class="blue" 
                   (click)="writeBook()" 
                   raised>

@@ -24,11 +24,6 @@ class SignInPageComponent {
   final Messages messages;
   final Store<AppState> store;
 
-  bool isAuthenticated() => fb.auth().currentUser != null;
-  String get userEmail => fb.auth().currentUser?.email;
-  String get displayName => fb.auth().currentUser?.displayName;
-  Map<String, dynamic> get userJson => fb.auth().currentUser?.toJson();
-
   // If the provider gave us an access token, we put it here.
   String providerAccessToken = "";
   
@@ -49,7 +44,7 @@ class SignInPageComponent {
   // Example SignInSuccess callback handler
   bool signInSuccess(fb.UserCredential authResult, String redirectUrl) {
     print("sign in  success. ProviderID =  ${authResult.credential.providerId}");
-    print("Info= ${authResult.additionalUserInfo}");
+    print("Info= ${authResult.additionalUserInfo.username}");
 
     // returning false gets rid of the double page load (no need to redirect to /)
     return false;
@@ -72,9 +67,9 @@ class SignInPageComponent {
               new FacebookCustomParameters());
 
       var twitterOptions = new CustomSignInOptions(
-          provider: fb.TwitterAuthProvider.PROVIDER_ID);
+          provider: fb.TwitterAuthProvider.PROVIDER_ID
           //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
-          //customParameters:new FacebookCustomParameters());
+          );
 
 
       // var gitHub = new CustomSignInOptions(

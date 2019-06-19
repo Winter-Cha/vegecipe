@@ -1,25 +1,33 @@
 <!-- Basic Dialog -->
 <div class="signin-button-group">
-  <material-button *ngIf="!isAuthenticated()" class="green" (trigger)="showBasicDialog = true"
-    [disabled]="showBasicDialog" (click)="getSigninPage()" raised>
+  <material-button *ngIf="!isAuthenticated()" class="green" (trigger)="showSignInDialog = true"
+    [disabled]="showSignInDialog" (click)="getSigninPage()" raised>
     Sign in
   </material-button>
 
+ 
+  <div *ngIf="isAuthenticated()" class="signin-user-info" >
+      {{displayName}}
+    <!-- <p>User email: {{userEmail}}  Display Name: {{displayName}}</p>
+    <p>User Json: {{userJson}}</p>
+    <p>Provider Access Token 
+    (may not be present unless session is new) : {{providerAccessToken}}</p>
+     -->
+  </div>
   <material-button *ngIf="isAuthenticated()" (click)="logout()" class="red" raised>
-    Logout
-  </material-button>
-
+      Logout
+    </material-button>
 </div>
 
 
-<modal [(visible)]="showBasicDialog">
+<modal [(visible)]="showSignInDialog">
   <material-dialog class="basic-dialog">
     <h1 header>Sign in</h1>
 
     <signin-page></signin-page>
 
     <div footer>
-      <material-button autoFocus clear-size (trigger)="showBasicDialog = false">
+      <material-button autoFocus clear-size (trigger)="showSignInDialog = false">
         Close
       </material-button>
     </div>
