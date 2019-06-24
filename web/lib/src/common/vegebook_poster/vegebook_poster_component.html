@@ -7,11 +7,6 @@
           [src]="vegeBook.images.portraitMedium"
           [alt]="'Poster for ' + vegeBook.title"></lazy-img>
 
-<material-button class="blue vegebook-add-post-image" 
-          raised>
-Add post
-</material-button>
-
 <div class="vegebook-information" *ngIf="hasDetails">
   <p><strong>{{ vegeBook.title }}</strong></p>
   <p class="writtenBy">{{ vegeBook.writtenBy }}</p>

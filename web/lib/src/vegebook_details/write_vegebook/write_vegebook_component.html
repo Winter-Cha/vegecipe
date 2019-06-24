@@ -1,17 +1,53 @@
 <div class="container" [class.visible]="contentVisible" *ngIf="vegeBook != null">
-  <vegebook-landscape-image [vegeBook]="vegeBook"></vegebook-landscape-image>
+  <div class="landscape-container">
+    <div class="landscape-placeholder">
+      <img src="images/fallback-icon.svg"/>
+    </div>
+    <img #landscapeImage class="landscape-actual" [src]="landscapeImageSrc"/>
+  </div>
+  <img src="images/back.svg" class="back" (click)="goBack()"/>
 
-  <img src="images/back.svg" class="back" (click)="goBack()">
   <material-button class="blue add-landscape-image" 
-                    raised>
+                    raised
+                    type="file"
+                    (click)="landscapeImagefileInput.click()">
   Add Landscape image
   </material-button>
+  <material-button class="red save-btn" 
+                  raised
+                  type="file"
+                  (click)="submit()">
+  Save
+  </material-button>
+  <input hidden (change)="onLandscapeImageFileSelected($event)" #landscapeImagefileInput type="file" accept="image/png, image/jpeg">
 
   <div class="vegebook-header">
-    <vegebook-poster [vegeBook]="vegeBook" [isTouchable]="false" [hasDetails]="false"></vegebook-poster>
+    <div class="vegebook-poster">
+        <div class="fallback-icon">
+            <img src="images/fallback-icon.svg" [alt]="'Fallback image'"/>
+        </div>
+      
+          <img #posterImage class="poster-actual" [src]="posterImageSrc"/>
+      
+          <material-button class="blue add-post-image" 
+                    raised
+                    (click)="posterImagefileInput.click()">
+          Add post
+          </material-button>
+          <input hidden (change)="onPosterImageFileSelected($event)" #posterImagefileInput type="file" accept="image/png, image/jpeg">
+    </div>
 
     <div class="vegebook-information">
-      <h2 class="title">{{ vegeBook.title }}</h2>
+      <!-- <h2 class="title">{{ vegeBook.title }}</h2> -->
+      <material-input floatingLabel 
+                      type="text" 
+                      label="Type title [required]"
+                      [(ngModel)]="title"
+                      required
+                      requiredErrorMsg="This input requires a value!"
+                      class="title"
+                      >
+      </material-input>
 
       <div class="body">
         <p class="writtenBy" *ngIf="vegeBook.writtenBy != null">
@@ -23,16 +59,15 @@
 
   <div class="section" >
     <div class="centered-content">
-
       <!-- <p class="content">{{ vegeBook.content }}</p> -->
-
       <quill
             [(ngModel)]="htmlStr"
             placeholder="Write something..."
             (blur)="blur()"
             (input)="input()"
+            class="quill_pad"
             >
-    </quill>
+      </quill>
     </div>
   </div>
 
