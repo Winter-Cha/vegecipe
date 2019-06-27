@@ -27,7 +27,6 @@ class VegeNewsMiddleware extends MiddlewareClass<AppState> {
       next(RequestingVegeNewsAction());
       try {
 
-        print(await fs.collection('vegenews').get());
         QuerySnapshot latestVegeNews = (await fs.collection('vegenews').get()) ;
 
         next(ReceivedInTheatersVegeNewsAction(VegeNewsParser.parse(latestVegeNews)));

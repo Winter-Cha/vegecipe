@@ -14,15 +14,15 @@ class VegeBook {
     this.lastModifiedDate,
   });
 
-   String id;
-   String title;
-   String content;
-   VegeBookImageData images;
-   KtList<VegeBookGalleryImage> galleryImages;
-   String writtenBy;
-   String writerPhotoUrl;
-   DateTime reportingDate;
-   DateTime lastModifiedDate;
+   final String id;
+   final String title;
+   final String content;
+   final VegeBookImageData images;
+   final KtList<VegeBookGalleryImage> galleryImages;
+   final String writtenBy;
+   final String writerPhotoUrl;
+   final DateTime reportingDate;
+   final DateTime lastModifiedDate;
 
 
   bool get hasContent => (content != null && content.isNotEmpty) ;
@@ -65,8 +65,8 @@ class VegeBookGalleryImage {
     this.thumbnailLocation,
   });
 
-   String location;
-   String thumbnailLocation;
+   final String location;
+   final String thumbnailLocation;
 
   @override
   bool operator ==(Object other) =>
@@ -89,11 +89,11 @@ class VegeBookImageData {
     @required this.landscapeBig,
   });
 
-   String portraitSmall;
-   String portraitMedium;
-   String portraitLarge;
-   String landscapeSmall;
-   String landscapeBig;
+   final String portraitSmall;
+   final String portraitMedium;
+   final String portraitLarge;
+   final String landscapeSmall;
+   final String landscapeBig;
 
   String get anyAvailableImage =>
       portraitSmall ??

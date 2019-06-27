@@ -6,7 +6,6 @@ class VegeBookParser {
   static KtList<VegeBook> parse(QuerySnapshot snapshot) {
 
     return listFrom(snapshot.docs).map((doc) {
-      print(doc.get('id'));
       return VegeBook(
         id: doc.get('id'),
         title: doc.get('title'),
@@ -48,7 +47,6 @@ class VegeBookGalleryParser {
     }
 
     return listFrom(galleryImage).map((node) {
-      print(node);
       return VegeBookGalleryImage(
         location: node,
       );

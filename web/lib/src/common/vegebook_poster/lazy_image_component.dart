@@ -57,7 +57,6 @@ class LazyImageComponent implements OnInit {
   void ngOnInit() {
     
     final ImageElement image = root.querySelector('img');
-    print(image.clientWidth);
     _calculateDimensionsIfNeeded(image);
 
     if (supportsIntersectionObserver) {
@@ -71,10 +70,8 @@ class LazyImageComponent implements OnInit {
 
   /// TODO: srcsets are probably the way to go instead.
   void _calculateDimensionsIfNeeded(ImageElement image) {
-    print(_adjustedWidth);
     if (_adjustedWidth == null || _adjustedHeight == null) {
       final clientWidth = image.clientWidth;
-      print(clientWidth);
       if (clientWidth == null || clientWidth == 0 || clientWidth > 300) {
         _adjustedWidth = 300;
         _adjustedHeight = (_adjustedWidth / _ratio).round();

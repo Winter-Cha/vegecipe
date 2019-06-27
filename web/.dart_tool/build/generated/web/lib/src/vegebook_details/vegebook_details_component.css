@@ -179,10 +179,6 @@ vegebook-poster {
   margin-right: 0;
 }
 
-.content {
-  white-space: pre-wrap;
-}
-
 @media only screen and (min-width: 412px) {
   .gallery img {
     min-height: 124px;

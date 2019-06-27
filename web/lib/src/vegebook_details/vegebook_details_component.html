@@ -17,7 +17,8 @@
 
   <div class="section" *ngIf="vegeBook.hasContent">
     <div class="centered-content">
-      <p class="content">{{ vegeBook.content }}</p>
+      <!-- <div class="content">{{ vegeBook.content }}</div> -->
+      <simple-html [innerHtml]="vegeBook.content"></simple-html>
     </div>
   </div>
 

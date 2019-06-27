@@ -42,7 +42,6 @@ class VegeNewsDetailsComponent implements OnInit, OnActivate, OnDestroy {
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    print("@@@@@@@@@" + previous.toString());
     _navigatedFromApp = previous != null;
 
     _populateVegeNewsDetails(

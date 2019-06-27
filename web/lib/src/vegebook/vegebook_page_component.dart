@@ -39,8 +39,7 @@ class VegeBookPageComponent implements OnActivate {
     _router.navigate(url);
   }
 
-  VegeBookPageViewModel get viewModel =>
-      VegeBookPageViewModel.fromStore(_store);
+  VegeBookPageViewModel get viewModel => VegeBookPageViewModel.fromStore(_store);
 
   // String get eventTypeTitle => _listType == EventListType.nowInTheaters
   //     ? messages.nowInTheaters

@@ -1,4 +1,4 @@
-<div class="container" [class.visible]="contentVisible" *ngIf="vegeBook != null">
+<div class="container" [class.visible]="contentVisible">
   <div class="landscape-container">
     <div class="landscape-placeholder">
       <img src="images/fallback-icon.svg"/>
@@ -50,8 +50,8 @@
       </material-input>
 
       <div class="body">
-        <p class="writtenBy" *ngIf="vegeBook.writtenBy != null">
-          <strong>{{ messages.writtenBy }}</strong>: {{ vegeBook.writtenBy }}
+        <p class="writtenBy" >
+          <strong>{{ messages.writtenBy }}</strong>: {{ writer }}
         </p>
       </div>
     </div>

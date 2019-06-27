@@ -30,7 +30,6 @@ class SignInPageComponent {
   UIConfig _uiConfig;
 
   Future<Null> logout() async {
-    print("@@@@@@@@@@@@@@@@");
     await fb.auth().signOut();
     providerAccessToken = "";
   }

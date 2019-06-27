@@ -25,7 +25,6 @@ VegeBook vegeBookByIdSelector(AppState state, String id) {
 KtList<VegeBook> _vegeBookWithSearchQuery(KtList<VegeBook> original, String searchQuery) {
 
   final searchQueryPattern = RegExp(searchQuery, caseSensitive: false);
-  print("original" + original.toString());
 
   return original.filter((vegeBook) {
     return vegeBook.title.contains(searchQueryPattern);

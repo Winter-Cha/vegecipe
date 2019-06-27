@@ -250,7 +250,8 @@ AppView<void> viewFactory_VegeBookDetailsComponent2(AppView<dynamic> parentView,
 }
 
 class _ViewVegeBookDetailsComponent3 extends AppView<import2.VegeBookDetailsComponent> {
-  final import13.TextBinding _textBinding_3 = import13.TextBinding();
+  var _expr_0;
+  import8.Element _el_2;
   _ViewVegeBookDetailsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     initComponentStyles();
   }
@@ -263,17 +264,19 @@ class _ViewVegeBookDetailsComponent3 extends AppView<import2.VegeBookDetailsComp
     final _el_1 = import11.appendDiv(doc, _el_0);
     this.updateChildClass(_el_1, 'centered-content');
     addShimC(_el_1);
-    final _el_2 = import11.appendElement(doc, _el_1, 'p');
-    this.updateChildClass(_el_2, 'content');
+    _el_2 = import11.appendElement(doc, _el_1, 'simple-html');
     addShimE(_el_2);
-    _el_2.append(_textBinding_3.element);
     init1(_el_0);
   }
 
   @override
   void detectChangesInternal() {
     final _ctx = ctx;
-    _textBinding_3.updateText(import21.interpolateString0(_ctx.vegeBook.content));
+    final currVal_0 = _ctx.vegeBook.content;
+    if (import20.checkBinding(_expr_0, currVal_0)) {
+      import11.setProperty(_el_2, 'innerHTML', import20.appViewUtils.sanitizer.sanitizeHtml(currVal_0));
+      _expr_0 = currVal_0;
+    }
   }
 }
 

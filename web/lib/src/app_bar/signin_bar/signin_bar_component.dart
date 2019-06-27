@@ -71,7 +71,6 @@ class SignInBarComponent {
   Map<String, dynamic> get userJson => fb.auth().currentUser?.toJson();
 
   Future<Null> logout() async {
-    print("@@@@@@@@@@@@@@@@");
     await fb.auth().signOut();
     providerAccessToken = "";
   }

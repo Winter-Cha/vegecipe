@@ -3,6 +3,7 @@ import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_button/material_button.dart';
+import 'package:angular_components/material_datepicker/proto/date.pb.dart';
 import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
@@ -54,6 +55,7 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
 
   String title = "";
   String htmlStr = "";
+  String writer = "";
 
   String landscapeImageSrc = "";
   Object selectedLImage = null;
@@ -61,81 +63,21 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
   Object selectedPImage = null;
 
   bool loading;
-
-
-  VegeBook vegeBook = VegeBook(
-    id: '',
-    title: '',
-    content: '',
-    images: VegeBookImageData(
-      landscapeBig: null,
-      landscapeSmall: null,
-      portraitSmall: null,
-      portraitMedium: null,
-      portraitLarge: null,
-    ),
-    writtenBy: fb.auth().currentUser?.displayName,
-    writerPhotoUrl: fb.auth().currentUser?.photoURL,
-  );
-
   bool _navigatedFromApp = false;
   bool contentVisible = false;
+
   StreamSubscription<AppState> _vegeBookDetailsSubscription;
 
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    print("@@@@@@@@@" + previous.toString());
+    this.writer = fb.auth().currentUser?.displayName;
     _navigatedFromApp = previous != null;
     _animateContentIntoView();
-    // _populateVegeBookDetails(
-    //   current.parameters['vegeBookId'],
-    // );
   }
 
   @override
   void ngOnDestroy() => _vegeBookDetailsSubscription?.cancel();
-
-  void _populateVegeBookDetails(vegeBookId) {
-    vegeBook = vegeBookByIdSelector(_store.state, vegeBookId);
-
-    if (vegeBook != null) {
-      _animateContentIntoView();
-    } else {
-      _store.dispatch(RefreshVegeBookAction());
-      _waitForEventDetails(vegeBookId);
-    }
-  }
-
-  /// The event details page was opened before loading data has finished.
-  ///
-  /// This happened because the user came to event details page by a link,
-  /// for example [https://inkino.app/#event/302789].
-  ///
-  /// Since in this case, the event details page is the first entry point for
-  /// inKino, we'll have to wait until the store is populated with all the events.
-  void _waitForEventDetails(String vegeBookId) {
-    final state = _store.state.vegeBookState;
-    final isLoading = state.vegeBookStatus == LoadingStatus.loading;
-
-    if (!isLoading) {
-      return;
-    }
-
-    _vegeBookDetailsSubscription = _store.onChange.listen((state) {
-      final state = _store.state.vegeBookState;
-      final hasFinishedLoading =
-          state.vegeBookStatus != LoadingStatus.loading;
-
-      if (hasFinishedLoading) {
-        _populateVegeBookDetails(vegeBookId);
-        _vegeBookDetailsSubscription.cancel();
-        _vegeBookDetailsSubscription = null;
-
-        _animateContentIntoView();
-      }
-    });
-  }
 
   void _animateContentIntoView() =>
       Timer(Duration.zero, () => contentVisible = true);
@@ -192,7 +134,8 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
 
   Future submit() async {
     fb.StorageReference stRef = fb.storage().ref("vegebook");
-    
+    var landscapeBig = '';
+    var portraitMedium = '';
     try {
       File lImgFile = this.selectedLImage;
       var filePath = '${lImgFile.name}${DateTime.now().millisecondsSinceEpoch}.png';
@@ -201,7 +144,7 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
            .listen((_) => loading = true, onDone: () => loading = false);
 
       var dowurl = await (await task.future).ref.getDownloadURL();
-      vegeBook.images.landscapeBig = dowurl.toString();
+      landscapeBig = dowurl.toString();
       print(' url l ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
@@ -215,24 +158,43 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
           .listen((_) => loading = true, onDone: () => loading = false);
 
       var dowurl = await (await task.future).ref.getDownloadURL();
-      vegeBook.images.portraitMedium = dowurl.toString();
+      portraitMedium = dowurl.toString();
       print(' url p ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
-    await fb.firestore().collection('vegebook').add(
-                {
+
+
+      VegeBook vegeBook = VegeBook(
+        id: '',
+        title: '',
+        content: '',
+        images: VegeBookImageData(
+          landscapeBig: landscapeBig,
+          landscapeSmall: null,
+          portraitSmall: null,
+          portraitMedium: portraitMedium,
+          portraitLarge: null,
+        ),
+        writtenBy: fb.auth().currentUser?.displayName,
+        writerPhotoUrl: fb.auth().currentUser?.photoURL,
+      );
+
+    DocumentReference doc = fb.firestore().collection('vegebook').doc();
+    var vegeBookMap  = {
                   //TODO : id field 만들기
-                  'image': {
+                  'id': doc.id,
+                  'images': {
                     'landscapeBig': vegeBook.images.landscapeBig,
                     'portraitMedium': vegeBook.images.portraitMedium,
                   },
-                  'contents': this.htmlStr,
+                  'content': this.htmlStr,
                   'title': this.title,
                   'writtenBy': vegeBook.writtenBy,
                   'writerPhotoUrl': vegeBook.writerPhotoUrl,
                   'reportingDate': DateTime.now(),
-                }).then((docRef) => print(docRef.id));
+                };
+    await doc.set(vegeBookMap).then((doc) => print(doc));
 
   }
 
