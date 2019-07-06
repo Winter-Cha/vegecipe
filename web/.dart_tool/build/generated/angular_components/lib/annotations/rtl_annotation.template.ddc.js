@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/annotations/rtl_annotation', 'p
   };
   dart.trackLibraries("packages/angular_components/annotations/rtl_annotation.template.ddc", {
     "package:angular_components/annotations/rtl_annotation.template.dart": annotations__rtl_annotation$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["rtl_annotation.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAUI,+CAAQ;YAAG;;;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAO,uCAAoB,CAAC,mEAAY,EAAE,sCACxC,oCAAK,4BAAQ;AAEf,IAAM,gCAAa;EACrB","file":"rtl_annotation.template.ddc.js"}');
   // Exports:
   return {

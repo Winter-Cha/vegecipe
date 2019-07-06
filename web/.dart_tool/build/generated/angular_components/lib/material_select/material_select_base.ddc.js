@@ -25,7 +25,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       }
       set width(val) {
         this[_width] = utils__angular__properties__properties.getInt(val, {defaultValue: 0});
-        if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed();
+        if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_select/material_select_base.dart", 38, 12, "_width >= 0 && _width <= 5");
       }
       get itemRenderer() {
         let l = super.itemRenderer;
@@ -52,6 +52,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       __proto__: dart.getSetters(MaterialSelectBase.__proto__),
       width: dart.dynamic
     }));
+    dart.setLibraryUri(MaterialSelectBase, "package:angular_components/material_select/material_select_base.dart");
     dart.setFieldSignature(MaterialSelectBase, () => ({
       __proto__: dart.getFields(MaterialSelectBase.__proto__),
       [_width]: dart.fieldType(core.int)
@@ -62,6 +63,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   dart.addTypeTests(material_select__material_select_base.MaterialSelectBase, _is_MaterialSelectBase_default);
   dart.trackLibraries("packages/angular_components/material_select/material_select_base.ddc", {
     "package:angular_components/material_select/material_select_base.dart": material_select__material_select_base
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_select_base.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;wEAyB4B,cAAS;MAAuB;;cAC/B,YAAC,kBAAa;;;cAQxB,aAAM;;gBACb,GAAG;AACX,oBAAM,GAAG,6CAAM,CAAC,GAAG,iBAAgB;AACnC,cAAc,AAAK,aAAZ,YAAM,KAAI,KAAY,aAAP,YAAM,KAAI;MAClC;;gBAKoC,kBAAkB;+BAAI,uEAAmB;;;;;;;MAHzE,YAAM,GAAG;;IAIf","file":"material_select_base.ddc.js"}');
   // Exports:
   return {

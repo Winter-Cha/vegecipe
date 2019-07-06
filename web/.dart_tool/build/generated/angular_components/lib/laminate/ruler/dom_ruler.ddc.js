@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/ruler/ruler_interf
   }).prototype = laminate__ruler__dom_ruler.DomRuler.prototype;
   dart.addTypeTests(laminate__ruler__dom_ruler.DomRuler);
   laminate__ruler__dom_ruler.DomRuler[dart.implements] = () => [RulerOfElement()];
+  dart.setLibraryUri(laminate__ruler__dom_ruler.DomRuler, "package:angular_components/laminate/ruler/dom_ruler.dart");
   const _document = dart.privateName(laminate__ruler__dom_ruler, "_document");
   const _domService = dart.privateName(laminate__ruler__dom_ruler, "_domService");
   let const$;
@@ -114,6 +115,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/ruler/ruler_interf
     __proto__: dart.getGetters(laminate__ruler__dom_ruler.DomRulerImpl.__proto__),
     onLayoutChanged: async.Stream
   }));
+  dart.setLibraryUri(laminate__ruler__dom_ruler.DomRulerImpl, "package:angular_components/laminate/ruler/dom_ruler.dart");
   dart.setFieldSignature(laminate__ruler__dom_ruler.DomRulerImpl, () => ({
     __proto__: dart.getFields(laminate__ruler__dom_ruler.DomRulerImpl.__proto__),
     [_document]: dart.finalFieldType(html.Document),
@@ -121,7 +123,8 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/ruler/ruler_interf
   }));
   dart.trackLibraries("packages/angular_components/laminate/ruler/dom_ruler.ddc", {
     "package:angular_components/laminate/ruler/dom_ruler.dart": laminate__ruler__dom_ruler
-  }, '{"version":3,"sourceRoot":"","sources":["dom_ruler.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;eAemB,QAAiB,EAAE,UAAqB;AAAI,6DAA5C,QAAiB,EAAE,UAAqB;IAAgB;;;;;;;;;;;;iBAYvD,OAAe;0BAAP;AACxB,+BAAI,eAAS,GAAkB;AAC7B,cAAO,YAAC,qBAAC,eAAS,MAAsB,SAAS,CAAC,OAAO;;AAE3D,YAAO,YAAC,eAAS,SAAS,CAAC,OAAO;IACpC;;YAG8B,kBAAW,gBAAgB;;;YAGhC,kBAAW,OAAO;IAAE;;YAGnB,kBAAW,QAAQ;IAAE;YAGrB,OAAe;0BAAP;UAAe,kDAAS;AACxD,oBAAI,iBAAY,CAAC,OAAO,IAAG;AAGzB,cAAO,+BAAuB,CAAC,mCAAM,sBAAS,CAAC,GAAG,GAAG,GAAG;;AAE1D,YAAO,cAAa,CAAC,OAAO,WAAU,MAAM;IAC9C;gBAGsB,OAAe;0BAAP;UAAe,kDAAS;AAGpD,oBAAI,MAAM,GAAE;AACV,cAAO,QAAO,SAAO;;AAEvB,YAAO,QAAO,sBAAsB;IACtC;UAGwB,OAAe;0BAAP;AAC9B,oBAAI,iBAAY,CAAC,OAAO,IAAG;AAGzB,cAAO,sCAA8B,CAAC,2EAAO,sBAAS,CAAC,GAAG,GAAG,GAAG;;AAElE,YAAO,YAAW,CAAC,OAAO;IAC5B;yBAG0B,OAAe,EAAE,OAAoB;0BAA7B;AAChC,aAAO,UAAQ,UAAU,CAAC,OAAO,QAAM,CAAC,QAAC,CAAC,IAAK,CAAC,aAAW;IAC7D;sBAGuB,OAAe,EAAE,OAAoB;0BAA7B;AAC7B,aAAO,UAAQ,OAAO,CAAC,OAAO,QAAM,CAAC,QAAC,CAAC,IAAK,CAAC,aAAW;IAC1D;2BAG4B,OAAe;0BAAP;AAClC,aAAO,MAAM,QAAQ,GAAG;IAC1B;uBAII,OAAe,EAAE,YAAmB,EAAE,aAAoB;0BAAlD;AACV,aAAO,MAAM,cAAY,CAAC,YAAY,EAAE,aAAa;IACvD;;;IApEkB,eAAS;IAAO,iBAAW;;EAAC","file":"dom_ruler.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["dom_ruler.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;eAemB,QAAiB,EAAE,UAAqB;AAAI,6DAA5C,QAAiB,EAAE,UAAqB;IAAgB;;;;;;;;;;;;;iBAYvD,OAAe;0BAAP;AACxB,+BAAI,eAAS,GAAkB;AAC7B,cAAO,YAAC,qBAAC,eAAS,MAAsB,SAAS,CAAC,OAAO;;AAE3D,YAAO,YAAC,eAAS,SAAS,CAAC,OAAO;IACpC;;YAG8B,kBAAW,gBAAgB;;;YAGhC,kBAAW,OAAO;IAAE;;YAGnB,kBAAW,QAAQ;IAAE;YAGrB,OAAe;0BAAP;UAAe,kDAAS;AACxD,oBAAI,iBAAY,CAAC,OAAO,IAAG;AAGzB,cAAO,+BAAuB,CAAC,mCAAM,sBAAS,CAAC,GAAG,GAAG,GAAG;;AAE1D,YAAO,cAAa,CAAC,OAAO,WAAU,MAAM;IAC9C;gBAGsB,OAAe;0BAAP;UAAe,kDAAS;AAGpD,oBAAI,MAAM,GAAE;AACV,cAAO,QAAO,SAAO;;AAEvB,YAAO,QAAO,sBAAsB;IACtC;UAGwB,OAAe;0BAAP;AAC9B,oBAAI,iBAAY,CAAC,OAAO,IAAG;AAGzB,cAAO,sCAA8B,CAAC,2EAAO,sBAAS,CAAC,GAAG,GAAG,GAAG;;AAElE,YAAO,YAAW,CAAC,OAAO;IAC5B;yBAG0B,OAAe,EAAE,OAAoB;0BAA7B;AAChC,aAAO,UAAQ,UAAU,CAAC,OAAO,QAAM,CAAC,QAAC,CAAC,IAAK,CAAC,aAAW;IAC7D;sBAGuB,OAAe,EAAE,OAAoB;0BAA7B;AAC7B,aAAO,UAAQ,OAAO,CAAC,OAAO,QAAM,CAAC,QAAC,CAAC,IAAK,CAAC,aAAW;IAC1D;2BAG4B,OAAe;0BAAP;AAClC,aAAO,MAAM,QAAQ,GAAG;IAC1B;uBAII,OAAe,EAAE,YAAmB,EAAE,aAAoB;0BAAlD;AACV,aAAO,MAAM,cAAY,CAAC,YAAY,EAAE,aAAa;IACvD;;;IApEkB,eAAS;IAAO,iBAAW;;EAAC","file":"dom_ruler.ddc.js"}');
   // Exports:
   return {
     laminate__ruler__dom_ruler: laminate__ruler__dom_ruler

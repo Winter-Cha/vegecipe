@@ -39,6 +39,7 @@ define(['dart_sdk', 'packages/angular_components/model/menu/menu_item_affix.temp
   };
   dart.trackLibraries("packages/angular_components/model/menu/menu.template.ddc", {
     "package:angular_components/model/menu/menu.template.dart": model__menu__menu$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["menu.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;MAkBI,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,qDAAa;AACnB,IAAM,qDAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,yDAAa;AACnB,IAAM,wDAAa;AACnB,IAAM,sDAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,wCAAa;AACnB,IAAM,+DAAa;AACnB,IAAO,0DAAa;EACtB","file":"menu.template.ddc.js"}');
   // Exports:
   return {

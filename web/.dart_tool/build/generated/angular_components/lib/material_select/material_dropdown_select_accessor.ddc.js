@@ -36,7 +36,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
       initializeSelectionModel() {
         if (dart.test(this.initialized)) return;
         this.initialized = true;
-        if (!(this[_select].selection == null)) dart.assertFailed("Cannot set [selection] when using a Dropdown control value accessor.");
+        if (!(this[_select].selection == null)) dart.assertFailed("Cannot set [selection] when using a Dropdown control value accessor.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_select/material_dropdown_select_accessor.dart", 118, 12, "_select.selection == null");
         this[_select].selection = this.selectionModel;
       }
       registerOnTouched(callback) {
@@ -69,6 +69,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
       ngOnDestroy: dart.fnType(dart.void, []),
       onDisabledChanged: dart.fnType(dart.void, [core.bool])
     }));
+    dart.setLibraryUri(BaseDropdownSelectValueAccessor, "package:angular_components/material_select/material_dropdown_select_accessor.dart");
     dart.setFieldSignature(BaseDropdownSelectValueAccessor, () => ({
       __proto__: dart.getFields(BaseDropdownSelectValueAccessor.__proto__),
       [_select]: dart.finalFieldType(MaterialDropdownSelectComponentOfT()),
@@ -123,6 +124,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
       registerOnChange: dart.fnType(dart.void, [dart.fnType(dart.dynamic, [dart.dynamic], {rawValue: core.String})]),
       writeValue: dart.fnType(dart.void, [dart.dynamic])
     }));
+    dart.setLibraryUri(DropdownSelectValueAccessor, "package:angular_components/material_select/material_dropdown_select_accessor.dart");
     dart.setFieldSignature(DropdownSelectValueAccessor, () => ({
       __proto__: dart.getFields(DropdownSelectValueAccessor.__proto__),
       [_selectionChangesSub]: dart.fieldType(async.StreamSubscription)
@@ -157,7 +159,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
         this.initializeSelectionModel();
         this.selectionModel.clear();
         if (newValue == null) return;
-        if (!core.Iterable.is(newValue)) dart.assertFailed("Multi select must be backed by an iterable");
+        if (!core.Iterable.is(newValue)) dart.assertFailed("Multi select must be backed by an iterable", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_select/material_dropdown_select_accessor.dart", 89, 12, "newValue is Iterable");
         for (let value of core.Iterable._check(newValue)) {
           this.selectionModel.select(T._check(value));
         }
@@ -181,6 +183,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
       registerOnChange: dart.fnType(dart.void, [dart.fnType(dart.dynamic, [dart.dynamic], {rawValue: core.String})]),
       writeValue: dart.fnType(dart.void, [dart.dynamic])
     }));
+    dart.setLibraryUri(MultiDropdownSelectValueAccessor, "package:angular_components/material_select/material_dropdown_select_accessor.dart");
     dart.setFieldSignature(MultiDropdownSelectValueAccessor, () => ({
       __proto__: dart.getFields(MultiDropdownSelectValueAccessor.__proto__),
       selectionChangesSub: dart.fieldType(StreamSubscriptionOfListOfSelectionChangeRecordOfT())
@@ -191,7 +194,8 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
   dart.addTypeTests(material_select__material_dropdown_select_accessor.MultiDropdownSelectValueAccessor, _is_MultiDropdownSelectValueAccessor_default);
   dart.trackLibraries("packages/angular_components/material_select/material_dropdown_select_accessor.ddc", {
     "package:angular_components/material_select/material_dropdown_select_accessor.dart": material_select__material_dropdown_select_accessor
-  }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_select_accessor.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;MA2G0B;;;;;;MAEnB;;;;;;;AAMH,sBAAI,gBAAW,GAAE;AACjB,wBAAW,GAAG;AACd,cAAO,aAAO,UAAU,IAAI,yBACxB;AACJ,qBAAO,UAAU,GAAG,mBAAc;MACpC;wBAGuB,QAAQ;AAC7B,0BAAY,GAAG,aAAO,cAAc,OAAO,CAAC,QAAC,CAAC;AAE5C,4BAAY,OAAO;AACnB,kBAAQ;;MAEZ;;AAIE,kCAAY;;MACd;wBAGuB,UAAe,GAAG;;4DA1BK,cAAmB;MAH9C,kBAAY;MAC1B,iBAAW,GAAG;MAEkB,aAAO;MAAO,qBAAc,GAAd,cAAc;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;uBAjF5C,QAAQ;AAC5B,kCAAoB,GAAG,mBAAc,iBAAiB,OAAO,CAAC,QAAC,CAAC;AAC9D,cAAI,QAAQ,AAAC,mBAAc,eAAe,IAAI,kBACtC,mBAAc,eAAe,UAAQ,IACvC;oBACA,mBAAc,eAAe;;;AACnC,kBAAQ,CAAC,KAAK;;MAElB;iBAGgB,QAAQ;AACtB,qCAAwB;AACxB,YAAI,QAAQ,IAAI,MAAM;AACpB,6BAAc,OAAO,UAAC,QAAQ;eACzB;AACL,6BAAc,MAAM;;MAExB;;AAIE,0CAAoB;;AACpB,yBAAiB;MACnB;;gDA5B4B,MAAsC;MAD/C,0BAAoB;AAEjC,uGAAM,MAAM,GAAE,0BAAqB;IAAG;;;;;;;;;;;;;;;;;;;;;;;;;MA4CO;;;;;;uBAM7B,QAAQ;AAC5B,gCAAmB,GAAG,mBAAc,iBAAiB,OAAO,CAAC,QAAC,CAAC;AAC7D,kBAAQ;oBAAC,mBAAc,eAAe;;;;MAE1C;iBAGgB,QAAQ;AACtB,qCAAwB;AACxB,2BAAc,MAAM;AACpB,YAAI,QAAQ,IAAI,MAAM;AACtB,8BAAO,QAAQ,qBAAc;AAC7B,iBAAW,8BAAS,QAAQ,GAAE;AAC5B,6BAAc,OAAO,UAAC,KAAK;;MAE/B;;AAIE,wCAAmB;;AACnB,yBAAiB;MACnB;;qDAzBiC,MAAyC;MAFvB,yBAAmB;AAGhE,gEAAM,MAAM,EAAE,4BAAsB;IAAG","file":"material_dropdown_select_accessor.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_select_accessor.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;MA2G0B;;;;;;MAEnB;;;;;;;AAMH,sBAAI,gBAAW,GAAE;AACjB,wBAAW,GAAG;AACd,cAAO,aAAO,UAAU,IAAI,yBACxB;AACJ,qBAAO,UAAU,GAAG,mBAAc;MACpC;wBAGuB,QAAQ;AAC7B,0BAAY,GAAG,aAAO,cAAc,OAAO,CAAC,QAAC,CAAC;AAE5C,4BAAY,OAAO;AACnB,kBAAQ;;MAEZ;;AAIE,kCAAY;;MACd;wBAGuB,UAAe,GAAG;;4DA1BK,cAAmB;MAH9C,kBAAY;MAC1B,iBAAW,GAAG;MAEkB,aAAO;MAAO,qBAAc,GAAd,cAAc;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;uBAjF5C,QAAQ;AAC5B,kCAAoB,GAAG,mBAAc,iBAAiB,OAAO,CAAC,QAAC,CAAC;AAC9D,cAAI,QAAQ,AAAC,mBAAc,eAAe,IAAI,kBACtC,mBAAc,eAAe,UAAQ,IACvC;oBACA,mBAAc,eAAe;;;AACnC,kBAAQ,CAAC,KAAK;;MAElB;iBAGgB,QAAQ;AACtB,qCAAwB;AACxB,YAAI,QAAQ,IAAI,MAAM;AACpB,6BAAc,OAAO,UAAC,QAAQ;eACzB;AACL,6BAAc,MAAM;;MAExB;;AAIE,0CAAoB;;AACpB,yBAAiB;MACnB;;gDA5B4B,MAAsC;MAD/C,0BAAoB;AAEjC,uGAAM,MAAM,GAAE,0BAAqB;IAAG;;;;;;;;;;;;;;;;;;;;;;;;;;MA4CO;;;;;;uBAM7B,QAAQ;AAC5B,gCAAmB,GAAG,mBAAc,iBAAiB,OAAO,CAAC,QAAC,CAAC;AAC7D,kBAAQ;oBAAC,mBAAc,eAAe;;;;MAE1C;iBAGgB,QAAQ;AACtB,qCAAwB;AACxB,2BAAc,MAAM;AACpB,YAAI,QAAQ,IAAI,MAAM;AACtB,8BAAO,QAAQ,qBAAc;AAC7B,iBAAW,8BAAS,QAAQ,GAAE;AAC5B,6BAAc,OAAO,UAAC,KAAK;;MAE/B;;AAIE,wCAAmB;;AACnB,yBAAiB;MACnB;;qDAzBiC,MAAyC;MAFvB,yBAAmB;AAGhE,gEAAM,MAAM,EAAE,4BAAsB;IAAG","file":"material_dropdown_select_accessor.ddc.js"}');
   // Exports:
   return {
     material_select__material_dropdown_select_accessor: material_select__material_dropdown_select_accessor

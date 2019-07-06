@@ -26,6 +26,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = ReducerClass.prototype;
     dart.addTypeTests(ReducerClass);
     ReducerClass.prototype[_is_ReducerClass_default] = true;
+    dart.setLibraryUri(ReducerClass, "package:redux/src/store.dart");
     return ReducerClass;
   });
   src__store.ReducerClass = src__store.ReducerClass$();
@@ -37,6 +38,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = MiddlewareClass.prototype;
     dart.addTypeTests(MiddlewareClass);
     MiddlewareClass.prototype[_is_MiddlewareClass_default] = true;
+    dart.setLibraryUri(MiddlewareClass, "package:redux/src/store.dart");
     return MiddlewareClass;
   });
   src__store.MiddlewareClass = src__store.MiddlewareClass$();
@@ -118,6 +120,7 @@ define(['dart_sdk'], function(dart_sdk) {
       state: State,
       onChange: async.Stream$(State)
     }));
+    dart.setLibraryUri(Store, "package:redux/src/store.dart");
     dart.setFieldSignature(Store, () => ({
       __proto__: dart.getFields(Store.__proto__),
       reducer: dart.fieldType(StateAnddynamicToState()),
@@ -159,6 +162,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getMethods(TypedReducer.__proto__),
       call: dart.fnType(State, [core.Object, dart.dynamic])
     }));
+    dart.setLibraryUri(TypedReducer, "package:redux/src/utils.dart");
     dart.setFieldSignature(TypedReducer, () => ({
       __proto__: dart.getFields(TypedReducer.__proto__),
       reducer: dart.finalFieldType(StateAndActionToState())
@@ -199,6 +203,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getMethods(TypedMiddleware.__proto__),
       call: dart.fnType(dart.void, [core.Object, dart.dynamic, dart.fnType(dart.void, [dart.dynamic])])
     }));
+    dart.setLibraryUri(TypedMiddleware, "package:redux/src/utils.dart");
     dart.setFieldSignature(TypedMiddleware, () => ({
       __proto__: dart.getFields(TypedMiddleware.__proto__),
       middleware: dart.finalFieldType(StoreOfStateAndActionAndFnTovoid())
@@ -219,7 +224,8 @@ define(['dart_sdk'], function(dart_sdk) {
     "package:redux/redux.dart": redux,
     "package:redux/src/store.dart": src__store,
     "package:redux/src/utils.dart": src__utils
-  }, '{"version":3,"sourceRoot":"","sources":["src/store.dart","src/utils.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;IAgDA;;;;;;;;;;;IAqDA;;;;;;;;;;;;;;;;;;MAsDiB;;;;;;;cA6BI,aAAM;;;cAwBK,wBAAiB,OAAO;;+BAOhB,QAAa;AACjD,cAAO,SAAC,MAAc;AACpB,cAAM,QAAQ,YAAO,CAAC,YAAM,EAAE,MAAM;AAEpC,wBAAI,QAAQ,iBAAI,KAAK,EAAI,YAAM,GAAE;AAEjC,sBAAM,GAAG,KAAK;AACd,iCAAiB,IAAI,CAAC,KAAK;;MAE/B;2BAGE,UAAkC,EAClC,eAA8B;AAE9B,YAAM,cAAc;QAAd,kBAAsC,eAAe;AAG3D,iBAAS,iBAAkB,WAAU,WAAS,EAAE;AAC9C,cAAM,OAAO,WAAW,OAAK;AAE7B,qBAAW,MAAI,CACb,QAAC,MAAc,IAAK,cAAc,CAAC,MAAM,MAAM,EAAE,IAAI;;AAIzD,cAAO,YAAW,WAAS,SAAO;MACpC;eAMc,MAAc;AAC1B,0BAAY,QAAC,GAAG,MAAM;MACxB;;AAMkB;AAChB,sBAAM,GAAG;AACT,gBAAO,wBAAiB,MAAM;QAChC;;;0BAjGE,OAAY;UACN;UACkB,8DAAa;UAChC,8DAAY;UAQZ,wDAAU;MAfX,YAAM;MACS,kBAAY;MAG1B,cAAO,GAAP,OAAO;MAaR,uBAAiB,GAAG,AAAI,mCAA0B,QAAO,UAAU;AACvE,kBAAM,GAAG,YAAY;AACrB,wBAAY,GAAG,wBAAkB,CAC/B,UAAU,EACV,4BAAsB,CAAC,QAAQ;IAEnC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MCtFiD;;;;;;WAKtC,KAAW,EAAE,MAAc;qBAArB;AACf,sBAAI,MAAM,GAAY;AACpB,gBAAO,aAAO,CAAC,KAAK,EAAE,MAAM;;AAG9B,cAAO,MAAK;MACd;;iCATa,OAAY;MAAP,cAAO,GAAP,OAAO;IAAC;;;;;;;;;;;;;;;;;;;;;;;MAiHxB;;;;;;WAKQ,KAAkB,EAAE,MAAc,EAAE,IAAmB;8BAA1C;AACrB,sBAAI,MAAM,GAAY;AACpB,yBAAU,CAAC,KAAK,EAAE,MAAM,EAAE,IAAI;eACzB;AACL,cAAI,CAAC,MAAM;;MAEf;;oCATgB,UAAe;MAAV,iBAAU,GAAV,UAAU;IAAC;;;;;;;;;;;;;;;;;+CAgCI,QAAiC;AACrE,UAAO,UAAC,KAAW,EAAE,MAAc;AACjC,eAAW,UAAW,SAAQ,EAAE;AAC9B,aAAK,GAAG,OAAO,CAAC,KAAK,EAAE,MAAM;;AAE/B,YAAO,MAAK;;EAEhB","file":"redux.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["src/store.dart","src/utils.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;IAgDA;;;;;;;;;;;;IAqDA;;;;;;;;;;;;;;;;;;;MAsDiB;;;;;;;cA6BI,aAAM;;;cAwBK,wBAAiB,OAAO;;+BAOhB,QAAa;AACjD,cAAO,SAAC,MAAc;AACpB,cAAM,QAAQ,YAAO,CAAC,YAAM,EAAE,MAAM;AAEpC,wBAAI,QAAQ,iBAAI,KAAK,EAAI,YAAM,GAAE;AAEjC,sBAAM,GAAG,KAAK;AACd,iCAAiB,IAAI,CAAC,KAAK;;MAE/B;2BAGE,UAAkC,EAClC,eAA8B;AAE9B,YAAM,cAAc;QAAd,kBAAsC,eAAe;AAG3D,iBAAS,iBAAkB,WAAU,WAAS,EAAE;AAC9C,cAAM,OAAO,WAAW,OAAK;AAE7B,qBAAW,MAAI,CACb,QAAC,MAAc,IAAK,cAAc,CAAC,MAAM,MAAM,EAAE,IAAI;;AAIzD,cAAO,YAAW,WAAS,SAAO;MACpC;eAMc,MAAc;AAC1B,0BAAY,QAAC,GAAG,MAAM;MACxB;;AAMkB;AAChB,sBAAM,GAAG;AACT,gBAAO,wBAAiB,MAAM;QAChC;;;0BAjGE,OAAY;UACN;UACkB,8DAAa;UAChC,8DAAY;UAQZ,wDAAU;MAfX,YAAM;MACS,kBAAY;MAG1B,cAAO,GAAP,OAAO;MAaR,uBAAiB,GAAG,AAAI,mCAA0B,QAAO,UAAU;AACvE,kBAAM,GAAG,YAAY;AACrB,wBAAY,GAAG,wBAAkB,CAC/B,UAAU,EACV,4BAAsB,CAAC,QAAQ;IAEnC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MCtFiD;;;;;;WAKtC,KAAW,EAAE,MAAc;qBAArB;AACf,sBAAI,MAAM,GAAY;AACpB,gBAAO,aAAO,CAAC,KAAK,EAAE,MAAM;;AAG9B,cAAO,MAAK;MACd;;iCATa,OAAY;MAAP,cAAO,GAAP,OAAO;IAAC;;;;;;;;;;;;;;;;;;;;;;;;MAiHxB;;;;;;WAKQ,KAAkB,EAAE,MAAc,EAAE,IAAmB;8BAA1C;AACrB,sBAAI,MAAM,GAAY;AACpB,yBAAU,CAAC,KAAK,EAAE,MAAM,EAAE,IAAI;eACzB;AACL,cAAI,CAAC,MAAM;;MAEf;;oCATgB,UAAe;MAAV,iBAAU,GAAV,UAAU;IAAC;;;;;;;;;;;;;;;;;;+CAgCI,QAAiC;AACrE,UAAO,UAAC,KAAW,EAAE,MAAc;AACjC,eAAW,UAAW,SAAQ,EAAE;AAC9B,aAAK,GAAG,OAAO,CAAC,KAAK,EAAE,MAAM;;AAE/B,YAAO,MAAK;;EAEhB","file":"redux.ddc.js"}');
   // Exports:
   return {
     redux: redux,

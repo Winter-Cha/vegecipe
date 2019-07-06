@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/overlay/overlay_re
   };
   dart.trackLibraries("packages/angular_components/laminate/overlay/overlay.template.ddc", {
     "package:angular_components/laminate/overlay/overlay.template.dart": laminate__overlay__overlay$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["overlay.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,8CAAQ;YAAG;;;;;AAEb,kBAAI,8CAAQ,GAAE;AACZ;;AAEF,qDAAW;AAEX,IAAM,4DAAa;AACnB,IAAM,gEAAa;AACnB,IAAM,8DAAa;AACnB,IAAM,mFAAa;EACrB","file":"overlay.template.ddc.js"}');
   // Exports:
   return {

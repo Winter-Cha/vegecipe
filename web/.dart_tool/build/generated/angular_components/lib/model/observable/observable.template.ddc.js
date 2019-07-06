@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer.templat
   };
   dart.trackLibraries("packages/angular_components/model/observable/observable.template.ddc", {
     "package:angular_components/model/observable/observable.template.dart": model__observable__observable$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["observable.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,iDAAQ;YAAG;;;;;AAEb,kBAAI,iDAAQ,GAAE;AACZ;;AAEF,wDAAW;AAEX,IAAM,kDAAa;EACrB","file":"observable.template.ddc.js"}');
   // Exports:
   return {

@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/scorecard/scorecard_bar.template.ddc", {
     "package:angular_components/scorecard/scorecard_bar.template.dart": scorecard__scorecard_bar$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["scorecard_bar.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,4CAAQ;YAAG;;;;;AAEb,kBAAI,4CAAQ,GAAE;AACZ;;AAEF,mDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,+DAAa;AACnB,IAAM,kDAAa;EACrB","file":"scorecard_bar.template.ddc.js"}');
   // Exports:
   return {

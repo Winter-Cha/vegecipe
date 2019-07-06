@@ -16,13 +16,16 @@ define(['dart_sdk'], function(dart_sdk) {
   (dart2js._NoInline.new = function() {
   }).prototype = dart2js._NoInline.prototype;
   dart.addTypeTests(dart2js._NoInline);
+  dart.setLibraryUri(dart2js._NoInline, "package:meta/dart2js.dart");
   dart2js._TryInline = class _TryInline extends core.Object {};
   (dart2js._TryInline.new = function() {
   }).prototype = dart2js._TryInline.prototype;
   dart.addTypeTests(dart2js._TryInline);
+  dart.setLibraryUri(dart2js._TryInline, "package:meta/dart2js.dart");
   dart.trackLibraries("packages/meta/dart2js.ddc", {
     "package:meta/dart2js.dart": dart2js
-  }, '{"version":3,"sourceRoot":"","sources":["dart2js.dart"],"names":[],"mappings":";;;;;;;MAmBgB,gBAAQ;YAAG,gBAAM,qBAAS;;MAiBzB,iBAAS;YAAG,gBAAM,sBAAU;;;;;EAG1B;;;;EAIC","file":"dart2js.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["dart2js.dart"],"names":[],"mappings":";;;;;;;MAmBgB,gBAAQ;YAAG,gBAAM,qBAAS;;MAiBzB,iBAAS;YAAG,gBAAM,sBAAU;;;;;EAG1B;;;;;EAIC","file":"dart2js.ddc.js"}');
   // Exports:
   return {
     dart2js: dart2js

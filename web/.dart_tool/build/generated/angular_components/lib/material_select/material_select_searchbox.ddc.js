@@ -86,6 +86,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     filterable: model__selection__select.Filterable,
     input: material_input__material_input.MaterialInputComponent
   }));
+  dart.setLibraryUri(material_select__material_select_searchbox.MaterialSelectSearchboxComponent, "package:angular_components/material_select/material_select_searchbox.dart");
   dart.setFieldSignature(material_select__material_select_searchbox.MaterialSelectSearchboxComponent, () => ({
     __proto__: dart.getFields(material_select__material_select_searchbox.MaterialSelectSearchboxComponent.__proto__),
     [_filterable]: dart.fieldType(model__selection__select.Filterable),
@@ -95,6 +96,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   }));
   dart.trackLibraries("packages/angular_components/material_select/material_select_searchbox.ddc", {
     "package:angular_components/material_select/material_select_searchbox.dart": material_select__material_select_searchbox
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_select_searchbox.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;YAkC0B,iBAAU;;kBACpB,IAAW;AACvB,UAAI,gBAAU,IAAI,IAAI,EAAE;AACtB,wBAAU,GAAG,IAAI;AACjB,qBAAO;;IAEX;mBAIe,QAAmB;AAChC,uBAAI,iBAAW,EAAI,QAAQ,GAAE;AAC3B,yBAAW,GAAG,QAAQ;AACtB,qBAAO;;IAEX;IAGO;;;;;;;AAGL,qCAAiB;;AACjB,eAAoB,iBAAW;6BAAd;gBAAuB,gBAAU;+BAAI;;IACxD;cAGU,KAA4B;AACpC,oBAAS,GAAG,KAAK;IACnB;4BAI6B,aAA2B;AACtD,oBAAI,yCAAU,CAAC,aAAa,IAAG;AAC7B,qBAAa,gBAAgB;;IAEjC;;AAIE,qCAAiB;;AACjB,6BAAiB,GAAG;IACtB;;;IAjDW,iBAAW;IACf,gBAAU,GAAG;IAGH,uBAAiB;IAqB3B,WAAK;;EAyBd","file":"material_select_searchbox.ddc.js"}');
   // Exports:
   return {

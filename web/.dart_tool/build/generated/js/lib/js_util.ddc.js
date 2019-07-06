@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const js_util = Object.create(dart.library);
   dart.trackLibraries("packages/js/js_util.ddc", {
     "package:js/js_util.dart": js_util
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"js_util.ddc.js"}');
   // Exports:
   return {

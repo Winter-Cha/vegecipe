@@ -35,6 +35,7 @@ define(['dart_sdk'], function(dart_sdk) {
     pop: dart.fnType(core.int, []),
     peek: dart.fnType(core.int, [])
   }));
+  dart.setLibraryUri(laminate__overlay__zindexer.ZIndexer, "package:angular_components/laminate/overlay/zindexer.dart");
   dart.defineLazy(laminate__overlay__zindexer.ZIndexer, {
     /*laminate__overlay__zindexer.ZIndexer._currentInstance*/get _currentInstance() {
       return null;
@@ -43,7 +44,8 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/laminate/overlay/zindexer.ddc", {
     "package:angular_components/laminate/overlay/zindexer.dart": laminate__overlay__zindexer
-  }, '{"version":3,"sourceRoot":"","sources":["zindexer.dart"],"names":[],"mappings":";;;;;;;MAkBU,kDAAsB;YAAG;;;;;AAU/B,UAAI,qBAAc,IAAI,MAAM;AAC1B,gCAAiB,IAAsB;;IAE3C;;AAEmB,AACjB,cAAO,qDAAgB;yBAAhB,qDAAgB,OAAK,uCAAU;IACxC;;qCAnCF,aA0CiB,qBAAc,IA1C/B;IA0C+B;;YAGf,sBAAc;;;;AAP1B,oDAAW;EACb;;;;;;;;MAdgB,qDAAgB","file":"zindexer.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["zindexer.dart"],"names":[],"mappings":";;;;;;;MAkBU,kDAAsB;YAAG;;;;;AAU/B,UAAI,qBAAc,IAAI,MAAM;AAC1B,gCAAiB,IAAsB;;IAE3C;;AAEmB,AACjB,cAAO,qDAAgB;yBAAhB,qDAAgB,OAAK,uCAAU;IACxC;;qCAnCF,aA0CiB,qBAAc,IA1C/B;IA0C+B;;YAGf,sBAAc;;;;AAP1B,oDAAW;EACb;;;;;;;;;MAdgB,qDAAgB","file":"zindexer.ddc.js"}');
   // Exports:
   return {
     laminate__overlay__zindexer: laminate__overlay__zindexer

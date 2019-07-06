@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/angular/css/css.template.ddc", {
     "package:angular_components/utils/angular/css/css.template.dart": utils__angular__css__css$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["css.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"css.template.ddc.js"}');
   // Exports:
   return {

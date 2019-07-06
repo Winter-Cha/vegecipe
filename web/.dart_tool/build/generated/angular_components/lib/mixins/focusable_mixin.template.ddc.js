@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/mixins/focusable_mixin.template.ddc", {
     "package:angular_components/mixins/focusable_mixin.template.dart": mixins__focusable_mixin$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focusable_mixin.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,2CAAQ;YAAG;;;;;AAEb,kBAAI,2CAAQ,GAAE;AACZ;;AAEF,kDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;EACrB","file":"focusable_mixin.template.ddc.js"}');
   // Exports:
   return {

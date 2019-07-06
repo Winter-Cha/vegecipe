@@ -21,6 +21,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (utils__id_generator__id_generator.IdGenerator.new = function() {
   }).prototype = utils__id_generator__id_generator.IdGenerator.prototype;
   dart.addTypeTests(utils__id_generator__id_generator.IdGenerator);
+  dart.setLibraryUri(utils__id_generator__id_generator.IdGenerator, "package:angular_components/utils/id_generator/id_generator.dart");
   const _prefix = dart.privateName(utils__id_generator__id_generator, "_prefix");
   const _seq = dart.privateName(utils__id_generator__id_generator, "_seq");
   utils__id_generator__id_generator.SequentialIdGenerator = class SequentialIdGenerator extends core.Object {
@@ -52,6 +53,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getMethods(utils__id_generator__id_generator.SequentialIdGenerator.__proto__),
     nextId: dart.fnType(core.String, [])
   }));
+  dart.setLibraryUri(utils__id_generator__id_generator.SequentialIdGenerator, "package:angular_components/utils/id_generator/id_generator.dart");
   dart.setFieldSignature(utils__id_generator__id_generator.SequentialIdGenerator, () => ({
     __proto__: dart.getFields(utils__id_generator__id_generator.SequentialIdGenerator.__proto__),
     [_prefix]: dart.finalFieldType(core.String),
@@ -64,7 +66,8 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/utils/id_generator/id_generator.ddc", {
     "package:angular_components/utils/id_generator/id_generator.dart": utils__id_generator__id_generator
-  }, '{"version":3,"sourceRoot":"","sources":["id_generator.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;EAUA;;;;;;YA2BqB,UAAE,aAAO;gBAAI,UAAI;uCArCtC;;;IAqC0C;;AAQtC,UAAI,QAAQ,oBAAkB,CAAC,IAAI,QAAC,CAAC,IAAK,4DAAI,QAAQ,CAAC;AACvD,WAAK,QAAC,GAAe,AAAQ,aAAjB,KAAK,QAAC,MAAK,KAAQ;AAC/B,WAAK,QAAC,GAAe,AAAQ,aAAjB,KAAK,QAAC,MAAK,KAAQ;AAE/B,UAAI,kCAAQ,KAAK,MACT,cAAC,QAAC,CAAC,IAAK,CAAC,gBAAc,CAAC,aAAW,CAAC,GAAG,6BACtC,gBACO;AAEhB,YAAO,AAAG,MAAK,YAAU,CAAC,GAAG,WAAM,KAAK,YAAU,CAAC,GAAG,aAClD,AAAG,KAAK,YAAU,CAAC,IAAI,YAAO,KAAK,YAAU,CAAC,IAAI,aAC/C,KAAK,YAAU,CAAC,IAAI;IAC7B;;;IAxCI,UAAI,GAAG;IAQgB,aAAO;EAAC;;2EASK,mEAAW;EAAG;;;;;;;;;;;;;MAnBzC,4DAAI;YAAG,gBAAW","file":"id_generator.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["id_generator.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;EAUA;;;;;;;YA2BqB,UAAE,aAAO;gBAAI,UAAI;uCArCtC;;;IAqC0C;;AAQtC,UAAI,QAAQ,oBAAkB,CAAC,IAAI,QAAC,CAAC,IAAK,4DAAI,QAAQ,CAAC;AACvD,WAAK,QAAC,GAAe,AAAQ,aAAjB,KAAK,QAAC,MAAK,KAAQ;AAC/B,WAAK,QAAC,GAAe,AAAQ,aAAjB,KAAK,QAAC,MAAK,KAAQ;AAE/B,UAAI,kCAAQ,KAAK,MACT,cAAC,QAAC,CAAC,IAAK,CAAC,gBAAc,CAAC,aAAW,CAAC,GAAG,6BACtC,gBACO;AAEhB,YAAO,AAAG,MAAK,YAAU,CAAC,GAAG,WAAM,KAAK,YAAU,CAAC,GAAG,aAClD,AAAG,KAAK,YAAU,CAAC,IAAI,YAAO,KAAK,YAAU,CAAC,IAAI,aAC/C,KAAK,YAAU,CAAC,IAAI;IAC7B;;;IAxCI,UAAI,GAAG;IAQgB,aAAO;EAAC;;2EASK,mEAAW;EAAG;;;;;;;;;;;;;;MAnBzC,4DAAI;YAAG,gBAAW","file":"id_generator.ddc.js"}');
   // Exports:
   return {
     utils__id_generator__id_generator: utils__id_generator__id_generator

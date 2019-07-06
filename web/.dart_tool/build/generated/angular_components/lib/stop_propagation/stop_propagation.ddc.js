@@ -44,6 +44,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     [_handleClick]: dart.fnType(dart.void, [html.MouseEvent]),
     [_handleKeyPress]: dart.fnType(dart.void, [html.KeyboardEvent])
   }));
+  dart.setLibraryUri(stop_propagation__stop_propagation.StopPropagationDirective, "package:angular_components/stop_propagation/stop_propagation.dart");
   dart.setFieldSignature(stop_propagation__stop_propagation.StopPropagationDirective, () => ({
     __proto__: dart.getFields(stop_propagation__stop_propagation.StopPropagationDirective.__proto__),
     [_clickSubscription]: dart.fieldType(async.StreamSubscription),
@@ -51,6 +52,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   }));
   dart.trackLibraries("packages/angular_components/stop_propagation/stop_propagation.ddc", {
     "package:angular_components/stop_propagation/stop_propagation.dart": stop_propagation__stop_propagation
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["stop_propagation.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AA4BI,sCAAkB;;AAClB,0CAAqB;;IACvB;mBAEkB,CAAY;AAC5B,OAAC,gBAAgB;IACnB;sBAEqB,CAAe;AAClC,UAAI,CAAC,QAAQ,KAAI,YAAO,MAAM,cAAI,yCAAU,CAAC,CAAC,IAAG;AAC/C,SAAC,gBAAgB;;IAErB;;8EAnByB,CAAS;IAFf,wBAAkB;IAAE,2BAAqB;AAG1D,4BAAkB,GAAG,CAAC,UAAQ,OAAO,CAAC,6BAAY;AAClD,+BAAqB,GAAG,CAAC,aAAW,OAAO,CAAC,gCAAe;EAC7D","file":"stop_propagation.ddc.js"}');
   // Exports:
   return {

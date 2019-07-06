@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular_components/src/material_tooltip/tooltip_co
   };
   dart.trackLibraries("packages/angular_components/src/material_tooltip/tooltip_controller.template.ddc", {
     "package:angular_components/src/material_tooltip/tooltip_controller.template.dart": src__material_tooltip__tooltip_controller$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tooltip_controller.template.dart"],"names":[],"mappings":";;;;;;;;;;;MASI,6DAAQ;YAAG;;;;;AAEb,kBAAI,6DAAQ,GAAE;AACZ;;AAEF,oEAAW;AAEX,IAAO,kCAAe,CAAC,0EAAiB,EAAE,kBAAM,+DAAiB;AACjE,IAAM,gCAAa;EACrB","file":"tooltip_controller.template.ddc.js"}');
   // Exports:
   return {

@@ -12,6 +12,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/model/ui/template_support.ddc", {
     "package:angular_components/model/ui/template_support.dart": model__ui__template_support
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["template_support.dart"],"names":[],"mappings":";;;;;;;;MAQgB,2CAAe;YAAG,UAAC,KAAS,EAAE,CAAS,KAAK,KAAK","file":"template_support.ddc.js"}');
   // Exports:
   return {

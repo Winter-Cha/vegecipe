@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/scorecard/scorecard.scss.css.shim.ddc", {
     "package:angular_components/scorecard/scorecard.scss.css.shim.dart": scorecard__scorecard$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["scorecard.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,+CAAM;YAAG,EAAC","file":"scorecard.scss.css.shim.ddc.js"}');
   // Exports:
   return {

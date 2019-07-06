@@ -39,6 +39,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/angul
       hasLabel: core.bool,
       uiDisplayName: core.String
     }));
+    dart.setLibraryUri(LabeledList, "package:angular_components/model/collection/labeled_list.dart");
     dart.setFieldSignature(LabeledList, () => ({
       __proto__: dart.getFields(LabeledList.__proto__),
       [_labelFcn]: dart.finalFieldType(VoidToString())
@@ -49,6 +50,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/angul
   dart.addTypeTests(model__collection__labeled_list.LabeledList, _is_LabeledList_default);
   dart.trackLibraries("packages/angular_components/model/collection/labeled_list.ddc", {
     "package:angular_components/model/collection/labeled_list.dart": model__collection__labeled_list
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["labeled_list.dart"],"names":[],"mappings":";;;;;;;;;;;;;;cAeuB,gBAAS,IAAI;MAAI;;cAGV,gBAAS,IAAI,OAAO,eAAS,KAAK;MAAI;;gCAEtD,KAAa;;MAAQ,eAAS;AAAK,2CAAM,KAAK;IAAC;8CAE7B,KAAa,EAAG,QAAsB;+BAAR;iCACjD,KAAK,EAAE,QAAQ;IAAC;sCAEL,KAAa,EAAG,KAAY;4BAAL;iCAClC,KAAK,EAAE,KAAK,IAAI,OAAQ,cAAM,KAAK,oBAAI;IAAK","file":"labeled_list.ddc.js"}');
   // Exports:
   return {

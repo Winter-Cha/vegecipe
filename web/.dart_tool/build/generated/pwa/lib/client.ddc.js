@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
   (client.Client[dart.mixinNew] = function() {
   }).prototype = client.Client.prototype;
   dart.addTypeTests(client.Client);
+  dart.setLibraryUri(client.Client, "package:pwa/client.dart");
   client.PushPermission = class PushPermission extends core.Object {
     get isPrompt() {
       return this.status === client.PushPermissionStatus.prompt;
@@ -50,6 +51,7 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
     isSubscribed: core.bool,
     isEnabled: core.bool
   }));
+  dart.setLibraryUri(client.PushPermission, "package:pwa/client.dart");
   client.PushPermissionStatus = class PushPermissionStatus extends core.Object {
     toString() {
       return {
@@ -64,6 +66,7 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
     this.index = x;
   }).prototype = client.PushPermissionStatus.prototype;
   dart.addTypeTests(client.PushPermissionStatus);
+  dart.setLibraryUri(client.PushPermissionStatus, "package:pwa/client.dart");
   dart.setFieldSignature(client.PushPermissionStatus, () => ({
     __proto__: dart.getFields(client.PushPermissionStatus.__proto__),
     index: dart.finalFieldType(core.int)
@@ -151,6 +154,7 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
     __proto__: dart.getGetters(client._Client.__proto__),
     isSupported: core.bool
   }));
+  dart.setLibraryUri(client._Client, "package:pwa/client.dart");
   dart.setFieldSignature(client._Client, () => ({
     __proto__: dart.getFields(client._Client.__proto__),
     [_registration]: dart.fieldType(FutureOfServiceWorkerRegistration())
@@ -194,6 +198,7 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
     endpointUrl: core.String,
     clientKeys: core.Map$(core.String, core.String)
   }));
+  dart.setLibraryUri(client._PushPermission, "package:pwa/client.dart");
   dart.setFieldSignature(client._PushPermission, () => ({
     __proto__: dart.getFields(client._PushPermission.__proto__),
     [_status]: dart.fieldType(client.PushPermissionStatus),
@@ -201,7 +206,8 @@ define(['dart_sdk', 'packages/service_worker/window', 'packages/service_worker/s
   }));
   dart.trackLibraries("packages/pwa/client.ddc", {
     "package:pwa/client.dart": client
-  }, '{"version":3,"sourceRoot":"","sources":["client.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;UAQyB,2DAAW;AAAkB,YAAG,KAAI,kBAAO,CAAC,SAAS;IAAC;;;;;;;YAmBxD,YAAM,KAAI,2BAAoB,OAAO;;;YAGrC,YAAM,KAAI,2BAAoB,OAAO;;;YAGpC,YAAM,KAAI,2BAAoB,QAAQ;;;YAGnC,YAAM,KAAI,2BAAoB,WAAW;;;YAGlC,WAAV,cAAS,eAAI,iBAAY;;;;EAajD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;YA8B6B,oBAAW;;;UAI5B,mFAAmB;AAAQ;AACnC,YAAI,OAAM,MAAM,mBAAa;AAC7B,YAAqB,aAAa,2BAAoB,OAAO;AAC7D,YAAoB;AAEpB,YAAI,sBACA,kBAAgD;AACpD,YAAO,UAAS,MAAM,GAAG,YAAY,gBAAgB,CAAC,mBAAmB;AACzE,YAAI,MAAM,KAAI,YAAY,MAAM,KAAI,WAAW;AAC7C,oBAAU,GAAG,2BAAoB,OAAO;cACnC,KAAI,MAAM,KAAI,UAAU;AAC7B,oBAAU,GAAG,2BAAoB,OAAO;cACnC,KAAI,MAAM,KAAI,WAAW;AAC9B,sBAAY,IAAG,MAAM,GAAG,YAAY,gBAAgB;AACpD,oBAAU,GAAG,YAAY,IAAI,OACvB,2BAAoB,QAAQ,GAC5B,2BAAoB,WAAW;;AAGvC,sBAAI,iBAAiB,KACjB,YAAY,IAAI,SACf,UAAU,KAAI,2BAAoB,OAAO,IACtC,UAAU,KAAI,2BAAoB,QAAQ,GAAG;AACnD,cAAI;AACF,kBAAM,GAAG,YAAY,UAAU,CAAC,mBAAmB;;gBAC5C;AAAG;AACZ,gBAAO,uBAAiB,qBAAoB;;AAG9C,cAAO,KAAI,0BAAe,CAAC,UAAU,EAAE,YAAY;MACrD;;uBAEsD,GAAU;AAAE;AAChE,YAAI,OAAM,MAAM,AAAG,gBAAQ,CAAC,GAAG;AAK/B,cAAO,OAAM,AAAG,aAAK,QACT,CAAC,mCAAM,iBAAQ,WAAU,mBAAe,cAAM,GAAG;MAC/D;;;AAE4B;AAC1B,YAAmC,iBAC/B,MAAM,AAAG,wBAAgB;AAC7B,YAAI,aAAa,IAAI,MAAM;AAC3B,iBAAS,MAAO,cAAa,EAAE;AAC7B,cAAiB,SAAS,GAAG,OAAO;AACpC,cAAI,MAAM,IAAI,QAAQ,MAAM,UAAU,WAAS,CAAC,mBAAmB;AACjE,kBAAM,GAAG,WAAW;;;MAG1B;;;iCAlEQ,SAAgB;IAFa,mBAAa;AAGhD,kBAAI,gBAAW,GAAE;AACf,UAAI;AACF,gCAAkB;;YACX;AAAG;AACZ,yBAAa,GAAG,sBAAgB,CAAC,SAAS;;EAE9C;;;;;;;;;;;;;;;;;;;;;YAqEmC,cAAO;;;YAItC,oBAAa,IAAI,OAAO;gBAAO,mBAAa,SAAS;;;IAAY;;YAIjE,oBAAa,IAAI,OAAO,2CAAK,mBAAa,gBAAgB;IAAE;;AAG3C;AACnB,YAAI,mBAAa,IAAI,MAAM;AAC3B,cAAM,mBAAa,YAAY;AAC/B,2BAAa,GAAG;AAChB,qBAAO,GAAG,2BAAoB,QAAQ;MACxC;;;;IAnBqB,aAAO;IAAO,mBAAa;EAAC","file":"client.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["client.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;UAQyB,2DAAW;AAAkB,YAAG,KAAI,kBAAO,CAAC,SAAS;IAAC;;;;;;;;YAmBxD,YAAM,KAAI,2BAAoB,OAAO;;;YAGrC,YAAM,KAAI,2BAAoB,OAAO;;;YAGpC,YAAM,KAAI,2BAAoB,QAAQ;;;YAGnC,YAAM,KAAI,2BAAoB,WAAW;;;YAGlC,WAAV,cAAS,eAAI,iBAAY;;;;EAajD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;YA8B6B,oBAAW;;;UAI5B,mFAAmB;AAAQ;AACnC,YAAI,OAAM,MAAM,mBAAa;AAC7B,YAAqB,aAAa,2BAAoB,OAAO;AAC7D,YAAoB;AAEpB,YAAI,sBACA,kBAAgD;AACpD,YAAO,UAAS,MAAM,GAAG,YAAY,gBAAgB,CAAC,mBAAmB;AACzE,YAAI,MAAM,KAAI,YAAY,MAAM,KAAI,WAAW;AAC7C,oBAAU,GAAG,2BAAoB,OAAO;cACnC,KAAI,MAAM,KAAI,UAAU;AAC7B,oBAAU,GAAG,2BAAoB,OAAO;cACnC,KAAI,MAAM,KAAI,WAAW;AAC9B,sBAAY,IAAG,MAAM,GAAG,YAAY,gBAAgB;AACpD,oBAAU,GAAG,YAAY,IAAI,OACvB,2BAAoB,QAAQ,GAC5B,2BAAoB,WAAW;;AAGvC,sBAAI,iBAAiB,KACjB,YAAY,IAAI,SACf,UAAU,KAAI,2BAAoB,OAAO,IACtC,UAAU,KAAI,2BAAoB,QAAQ,GAAG;AACnD,cAAI;AACF,kBAAM,GAAG,YAAY,UAAU,CAAC,mBAAmB;;gBAC5C;AAAG;AACZ,gBAAO,uBAAiB,qBAAoB;;AAG9C,cAAO,KAAI,0BAAe,CAAC,UAAU,EAAE,YAAY;MACrD;;uBAEsD,GAAU;AAAE;AAChE,YAAI,OAAM,MAAM,AAAG,gBAAQ,CAAC,GAAG;AAK/B,cAAO,OAAM,AAAG,aAAK,QACT,CAAC,mCAAM,iBAAQ,WAAU,mBAAe,cAAM,GAAG;MAC/D;;;AAE4B;AAC1B,YAAmC,iBAC/B,MAAM,AAAG,wBAAgB;AAC7B,YAAI,aAAa,IAAI,MAAM;AAC3B,iBAAS,MAAO,cAAa,EAAE;AAC7B,cAAiB,SAAS,GAAG,OAAO;AACpC,cAAI,MAAM,IAAI,QAAQ,MAAM,UAAU,WAAS,CAAC,mBAAmB;AACjE,kBAAM,GAAG,WAAW;;;MAG1B;;;iCAlEQ,SAAgB;IAFa,mBAAa;AAGhD,kBAAI,gBAAW,GAAE;AACf,UAAI;AACF,gCAAkB;;YACX;AAAG;AACZ,yBAAa,GAAG,sBAAgB,CAAC,SAAS;;EAE9C;;;;;;;;;;;;;;;;;;;;;;YAqEmC,cAAO;;;YAItC,oBAAa,IAAI,OAAO;gBAAO,mBAAa,SAAS;;;IAAY;;YAIjE,oBAAa,IAAI,OAAO,2CAAK,mBAAa,gBAAgB;IAAE;;AAG3C;AACnB,YAAI,mBAAa,IAAI,MAAM;AAC3B,cAAM,mBAAa,YAAY;AAC/B,2BAAa,GAAG;AAChB,qBAAO,GAAG,2BAAoB,QAAQ;MACxC;;;;IAnBqB,aAAO;IAAO,mBAAa;EAAC","file":"client.ddc.js"}');
   // Exports:
   return {
     client: client

@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/range.templ
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/comparison_option.template.ddc", {
     "package:angular_components/material_datepicker/comparison_option.template.dart": material_datepicker__comparison_option$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["comparison_option.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,0DAAQ;YAAG;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAM,mDAAa;EACrB","file":"comparison_option.template.ddc.js"}');
   // Exports:
   return {

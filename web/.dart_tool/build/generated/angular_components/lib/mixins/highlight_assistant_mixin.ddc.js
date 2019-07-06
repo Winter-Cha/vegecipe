@@ -97,6 +97,7 @@ define(['dart_sdk', 'packages/angular_components/highlighted_text/highlighted_va
       optionHighlighter: dart.fnType(core.List$(model__ui__highlighted_text_model.HighlightedTextSegment), [core.String, dart.dynamic]),
       highlightMatchFromStartOfWord: core.bool
     }));
+    dart.setLibraryUri(HighlightAssistantMixin, "package:angular_components/mixins/highlight_assistant_mixin.dart");
     dart.setFieldSignature(HighlightAssistantMixin, () => ({
       __proto__: dart.getFields(HighlightAssistantMixin.__proto__),
       highlightComponentRenderer: dart.finalFieldType(dynamicToType()),
@@ -111,6 +112,7 @@ define(['dart_sdk', 'packages/angular_components/highlighted_text/highlighted_va
   dart.addTypeTests(mixins__highlight_assistant_mixin.HighlightAssistantMixin, _is_HighlightAssistantMixin_default);
   dart.trackLibraries("packages/angular_components/mixins/highlight_assistant_mixin.ddc", {
     "package:angular_components/mixins/highlight_assistant_mixin.dart": mixins__highlight_assistant_mixin
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlight_assistant_mixin.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAmB0B;;;;;;MAEF;;;;;;;cAMe,yBAAkB;;4BAQjC,KAAiB;AACrC,gCAAkB,GAAG,KAAK;AAC1B,iCAAmB,GAAG;MACxB;wCAMkC,KAAU;AAC1C,4CAA8B,GAAG,KAAK;AACtC,iCAAmB,GAAG;MACxB;;yEAII,YAAO,IAAiB;yDAAC,YAAO,cAA4B;iCAAI;eAAK;MAAE;;AAGzE,aAAK,sBAAiB,IAAI,oBAClB,sBAAiB,EAAI,+BAA0B,OAClD,oBAAe,IAAI,oBAChB,oBAAe,EAAI,6BAAwB,IAAG;AACpD,kBAAO,iBAAY;iCAAI,uEAAmB;;AAE5C,cAAO,wEAAmB;MAC5B;sBAG6C,IAAW;AACtD,yCAAmB;oDAAK,qDAAkB,qBACnB,sBAAiB,wBACd,oCAA8B;AACxD,cAAO,0BAAmB,gBAAgB,IACtC,mBAAc,EAAE,IAAI,EAAE,wBAAkB;MAC9C;;;MAnDwB,gCAA0B,GAC9C,QAAC,CAAC,IAAK,4EAAyB;MACd,8BAAwB,GAC1C,QAAC,CAAC,IAAe,iFAAkC;MAEpC,yBAAmB;MAE1B,wBAAkB;MAczB,oCAA8B,GAAG;IA+BxC","file":"highlight_assistant_mixin.ddc.js"}');
   // Exports:
   return {

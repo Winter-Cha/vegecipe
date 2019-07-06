@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/keyboard/keyboard.template.ddc", {
     "package:angular_components/utils/keyboard/keyboard.template.dart": utils__keyboard__keyboard$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["keyboard.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"keyboard.template.ddc.js"}');
   // Exports:
   return {

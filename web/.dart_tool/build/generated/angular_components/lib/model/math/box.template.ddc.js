@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/math/box.template.ddc", {
     "package:angular_components/model/math/box.template.dart": model__math__box$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["box.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"box.template.ddc.js"}');
   // Exports:
   return {

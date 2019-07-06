@@ -22,6 +22,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(src__exception__exceptions.IndexOutOfBoundsException);
   const message$ = Symbol("IndexOutOfBoundsException.message");
   src__exception__exceptions.IndexOutOfBoundsException[dart.implements] = () => [core.Exception];
+  dart.setLibraryUri(src__exception__exceptions.IndexOutOfBoundsException, "package:kt_dart/src/exception/exceptions.dart");
   dart.setFieldSignature(src__exception__exceptions.IndexOutOfBoundsException, () => ({
     __proto__: dart.getFields(src__exception__exceptions.IndexOutOfBoundsException.__proto__),
     message: dart.finalFieldType(core.String)
@@ -45,6 +46,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(src__exception__exceptions.NoSuchElementException);
   const message$0 = Symbol("NoSuchElementException.message");
   src__exception__exceptions.NoSuchElementException[dart.implements] = () => [core.Exception];
+  dart.setLibraryUri(src__exception__exceptions.NoSuchElementException, "package:kt_dart/src/exception/exceptions.dart");
   dart.setFieldSignature(src__exception__exceptions.NoSuchElementException, () => ({
     __proto__: dart.getFields(src__exception__exceptions.NoSuchElementException.__proto__),
     message: dart.finalFieldType(core.String)
@@ -52,7 +54,8 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.defineExtensionMethods(src__exception__exceptions.NoSuchElementException, ['toString']);
   dart.trackLibraries("packages/kt_dart/src/exception/exceptions.ddc", {
     "package:kt_dart/src/exception/exceptions.dart": src__exception__exceptions
-  }, '{"version":3,"sourceRoot":"","sources":["exceptions.dart"],"names":[],"mappings":";;;;;;;IAGe;;;;;;;YAGQ,aAAO,IAAI,OAC1B,8BACA,yCAA6B,YAAO;IAAC;;uEAPhB,OAAY;4BAAP;kBAAO,GAAP,OAAO;EAAE;;;;;;;;;;IAa5B;;;;;;;YAGQ,aAAO,IAAI,OAC1B,2BACA,sCAA0B,YAAO;IAAC;;oEAPhB,OAAY;4BAAP;mBAAO,GAAP,OAAO;EAAE","file":"exceptions.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["exceptions.dart"],"names":[],"mappings":";;;;;;;IAGe;;;;;;;YAGQ,aAAO,IAAI,OAC1B,8BACA,yCAA6B,YAAO;IAAC;;uEAPhB,OAAY;4BAAP;kBAAO,GAAP,OAAO;EAAE;;;;;;;;;;;IAa5B;;;;;;;YAGQ,aAAO,IAAI,OAC1B,2BACA,sCAA0B,YAAO;IAAC;;oEAPhB,OAAY;4BAAP;mBAAO,GAAP,OAAO;EAAE","file":"exceptions.ddc.js"}');
   // Exports:
   return {
     src__exception__exceptions: src__exception__exceptions

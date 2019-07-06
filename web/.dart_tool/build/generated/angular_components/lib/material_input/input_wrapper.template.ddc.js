@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_input/input_wrapper.template.ddc", {
     "package:angular_components/material_input/input_wrapper.template.dart": material_input__input_wrapper$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["input_wrapper.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,iDAAQ;YAAG;;;;;AAEb,kBAAI,iDAAQ,GAAE;AACZ;;AAEF,wDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,iDAAa;EACrB","file":"input_wrapper.template.ddc.js"}');
   // Exports:
   return {

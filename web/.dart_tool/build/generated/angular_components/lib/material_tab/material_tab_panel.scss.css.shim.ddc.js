@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_tab/material_tab_panel.scss.css.shim.ddc", {
     "package:angular_components/material_tab/material_tab_panel.scss.css.shim.dart": material_tab__material_tab_panel$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_tab_panel.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,2DAAM;YAAG,EAAC","file":"material_tab_panel.scss.css.shim.ddc.js"}');
   // Exports:
   return {

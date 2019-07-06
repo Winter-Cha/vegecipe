@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/action/delayed_action.template.ddc", {
     "package:angular_components/model/action/delayed_action.template.dart": model__action__delayed_action$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["delayed_action.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"delayed_action.template.ddc.js"}');
   // Exports:
   return {

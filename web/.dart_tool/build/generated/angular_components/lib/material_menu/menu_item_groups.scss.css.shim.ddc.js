@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_menu/menu_item_groups.scss.css.shim.ddc", {
     "package:angular_components/material_menu/menu_item_groups.scss.css.shim.dart": material_menu__menu_item_groups$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["menu_item_groups.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,0DAAM;YAAG,EAAC","file":"menu_item_groups.scss.css.shim.ddc.js"}');
   // Exports:
   return {

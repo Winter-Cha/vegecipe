@@ -37,6 +37,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
       __proto__: dart.getSetters(NgForIdentity.__proto__),
       ngForIdentityOf: core.Iterable$(T)
     }));
+    dart.setLibraryUri(NgForIdentity, "package:angular/src/common/directives/ng_for_identity.dart");
     dart.setFieldSignature(NgForIdentity, () => ({
       __proto__: dart.getFields(NgForIdentity.__proto__),
       [_template]: dart.finalFieldType(src__core__linker__template_ref.TemplateRef),
@@ -48,6 +49,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
   dart.addTypeTests(src__common__directives__ng_for_identity.NgForIdentity, _is_NgForIdentity_default);
   dart.trackLibraries("packages/angular/src/common/directives/ng_for_identity.ddc", {
     "package:angular/src/common/directives/ng_for_identity.dart": src__common__directives__ng_for_identity
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["ng_for_identity.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;0BA+BsB,QAAoB;6BAAR;AAC9B,wBAAU,MAAM;AAChB,YAAI,QAAQ,IAAI,kBAAQ,QAAQ,UAAQ,GAAE;AACxC;;AAEF,YAAI,IAAI;AACR,iBAAW,UAAW,SAAQ,EAAE;AAC9B,cAAM,OAAO,gBAAU,mBAAmB,CAAC,eAAS;AACpD,cAAI,SAAS,CAAC,aAAc,OAAO;AACnC,cAAI,SAAS,CAAC,SAAU,CAAC;;MAG7B;;;MAjBO,eAAS;MACT,gBAAU;IAChB","file":"ng_for_identity.ddc.js"}');
   // Exports:
   return {

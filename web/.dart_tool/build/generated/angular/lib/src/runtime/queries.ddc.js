@@ -22,6 +22,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular/src/runtime/queries.ddc", {
     "package:angular/src/runtime/queries.dart": src__runtime__queries
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["queries.dart"],"names":[],"mappings":";;;;;;;;;;;;mDAGwB,KAAmB;AACzC,QAAM,SAAS;AACf,aAAS,IAAI,GAAG,IAAI,KAAK,SAAO,EAAE,AAAE,CAAD,gBAAG,CAAC,GAAE,CAAC,IAAI;AAC5C,YAAM,SAAO,CAAC,KAAK,QAAC,CAAC;;AAEvB,UAAO,OAAM;EACf;kDAGiB,KAAa;qBAAK,KAAK,aAAW,IAAG,KAAK,QAAM,GAAG;EAAI","file":"queries.ddc.js"}');
   // Exports:
   return {

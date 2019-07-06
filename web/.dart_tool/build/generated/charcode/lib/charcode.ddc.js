@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const charcode = Object.create(dart.library);
   dart.trackLibraries("packages/charcode/charcode.ddc", {
     "package:charcode/charcode.dart": charcode
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"charcode.ddc.js"}');
   // Exports:
   return {

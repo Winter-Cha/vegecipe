@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular_components/laminate/enums/alignment', 'pac
   }).prototype = mixins__material_dropdown_base.DropdownHandle.prototype;
   dart.addTypeTests(mixins__material_dropdown_base.DropdownHandle);
   const autoDismiss = Symbol("DropdownHandle.autoDismiss");
+  dart.setLibraryUri(mixins__material_dropdown_base.DropdownHandle, "package:angular_components/mixins/material_dropdown_base.dart");
   dart.setFieldSignature(mixins__material_dropdown_base.DropdownHandle, () => ({
     __proto__: dart.getFields(mixins__material_dropdown_base.DropdownHandle.__proto__),
     autoDismiss: dart.fieldType(core.bool)
@@ -143,6 +144,7 @@ define(['dart_sdk', 'packages/angular_components/laminate/enums/alignment', 'pac
     __proto__: dart.getSetters(mixins__material_dropdown_base.MaterialDropdownBase.__proto__),
     visible: core.bool
   }));
+  dart.setLibraryUri(mixins__material_dropdown_base.MaterialDropdownBase, "package:angular_components/mixins/material_dropdown_base.dart");
   dart.setFieldSignature(mixins__material_dropdown_base.MaterialDropdownBase, () => ({
     __proto__: dart.getFields(mixins__material_dropdown_base.MaterialDropdownBase.__proto__),
     [_visibleStream]: dart.finalFieldType(StreamControllerOfbool()),
@@ -157,7 +159,8 @@ define(['dart_sdk', 'packages/angular_components/laminate/enums/alignment', 'pac
   }));
   dart.trackLibraries("packages/angular_components/mixins/material_dropdown_base.ddc", {
     "package:angular_components/mixins/material_dropdown_base.dart": mixins__material_dropdown_base
-  }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_base.dart"],"names":[],"mappings":";;;;;;;;;;;;IAmBO;;;;;;;;qBAAW;EAClB;;;;;;;;;;;;YAqBoC,qBAAc,OAAO;;IAMlD;;;;;;IAIA;;;;;;IAIA;;;;;;IAME;;;;;;IAGF;;;;;;;YAIe,eAAQ;;gBAIhB,KAAU;AACpB,UAAK,MAAM,KAAK;AAEhB,oBAAI,GAAG,KAAI,cAAQ,IAAI,GAAG,EAAE;AAC1B,6BAAe,IAAI,CAAC;;AAEtB,oBAAQ,GAAG,GAAG;IAChB;IAIc;;;;;;cAEC,GAAQ;AACrB,0BAAc,IAAI,CAAC,GAAG;AACtB,kBAAO,GAAG,GAAG;AAGb,qBAAK,GAAG,GAAE;AACR,6BAAe,IAAI,CAAC;;IAExB;;AAGE,kBAAO,GAAG;IACZ;;AAGE,kBAAO,GAAG;IACZ;;AAGE,kBAAO,GAAG,WAAC,YAAO;IACpB;;YAGmC,sBAAe,OAAO;;;YAGnC,aAAO;;;YAGQ,mBAAa;;;;IAxE5C,oBAAc,GAAG,kCAAgC,QAAO;IACxD,qBAAe,GAAG,kCAAgC,QAAO;IAI1D,6BAAuB,GAAG;IAI1B,yBAAmB,GAAG;IAItB,0BAAoB,GAAG;IAMrB,WAAK;IAGP,kBAAW,GAAG;IAEd,cAAQ,GAAG;IAiBF,wBAAkB,GAAG,2CAAgB,gBAAgB;EAgCrE","file":"material_dropdown_base.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_base.dart"],"names":[],"mappings":";;;;;;;;;;;;IAmBO;;;;;;;;qBAAW;EAClB;;;;;;;;;;;;;YAqBoC,qBAAc,OAAO;;IAMlD;;;;;;IAIA;;;;;;IAIA;;;;;;IAME;;;;;;IAGF;;;;;;;YAIe,eAAQ;;gBAIhB,KAAU;AACpB,UAAK,MAAM,KAAK;AAEhB,oBAAI,GAAG,KAAI,cAAQ,IAAI,GAAG,EAAE;AAC1B,6BAAe,IAAI,CAAC;;AAEtB,oBAAQ,GAAG,GAAG;IAChB;IAIc;;;;;;cAEC,GAAQ;AACrB,0BAAc,IAAI,CAAC,GAAG;AACtB,kBAAO,GAAG,GAAG;AAGb,qBAAK,GAAG,GAAE;AACR,6BAAe,IAAI,CAAC;;IAExB;;AAGE,kBAAO,GAAG;IACZ;;AAGE,kBAAO,GAAG;IACZ;;AAGE,kBAAO,GAAG,WAAC,YAAO;IACpB;;YAGmC,sBAAe,OAAO;;;YAGnC,aAAO;;;YAGQ,mBAAa;;;;IAxE5C,oBAAc,GAAG,kCAAgC,QAAO;IACxD,qBAAe,GAAG,kCAAgC,QAAO;IAI1D,6BAAuB,GAAG;IAI1B,yBAAmB,GAAG;IAItB,0BAAoB,GAAG;IAMrB,WAAK;IAGP,kBAAW,GAAG;IAEd,cAAQ,GAAG;IAiBF,wBAAkB,GAAG,2CAAgB,gBAAgB;EAgCrE","file":"material_dropdown_base.ddc.js"}');
   // Exports:
   return {
     mixins__material_dropdown_base: mixins__material_dropdown_base

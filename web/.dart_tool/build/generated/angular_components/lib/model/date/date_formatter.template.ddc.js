@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/date.template'], fun
   };
   dart.trackLibraries("packages/angular_components/model/date/date_formatter.template.ddc", {
     "package:angular_components/model/date/date_formatter.template.dart": model__date__date_formatter$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_formatter.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,+CAAQ;YAAG;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAM,0CAAa;EACrB","file":"date_formatter.template.ddc.js"}');
   // Exports:
   return {

@@ -199,6 +199,7 @@ define(['dart_sdk', 'packages/intl/intl', 'packages/angular_components/utils/bro
     primary: html.HtmlElement,
     secondary: html.HtmlElement
   }));
+  dart.setLibraryUri(material_progress__material_progress.MaterialProgressComponent, "package:angular_components/material_progress/material_progress.dart");
   dart.setFieldSignature(material_progress__material_progress.MaterialProgressComponent, () => ({
     __proto__: dart.getFields(material_progress__material_progress.MaterialProgressComponent.__proto__),
     [_changeDetector]: dart.finalFieldType(src__core__change_detection__change_detector_ref.ChangeDetectorRef),
@@ -218,6 +219,7 @@ define(['dart_sdk', 'packages/intl/intl', 'packages/angular_components/utils/bro
   }));
   dart.trackLibraries("packages/angular_components/material_progress/material_progress.ddc", {
     "package:angular_components/material_progress/material_progress.dart": material_progress__material_progress
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_progress.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;MAWa,uDAAkB;YAAG;;MACR,yDAAoB;YAAG,0CAC/C,YAAY,QACZ,cAAc,WAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;IAmBzB;;;;;;IAKA;;;;;;IAMA;;;;;;IAMA;;;;;;sBAMc,CAAM;AACtB,0BAAc,GAAG,CAAC;AAElB,oBAAI,kBAAa,GAAE;AACjB,gCAAkB;aACb;AACL,uCAAiB;;AACjB,0CAAmB;;;IAEvB;;YAG0B,qBAAc;;;YAOtB,WAAd,kBAAa,iBAAM,wBAAkB,gBAAK,uEAAoB;IAAC;;YAExC,mBAAa,KAAI,OAAO,OAAO,SAAG,mBAAc;IAAE;;uBAGzE,kBAAa,IAAG,mBAAa,GAAG,0BAAoB,CAAC,mBAAc;IAAC;2BAK5C,cAAkB;YAC1C,WAAI,QAAQ,CAAC,8BAAkB,cAAc,UACnC,wDACA,wCACA,sBAAC,cAAc,cACX,6DAAO,kBAAkB;IAAI;;YAG3C,uCAAgC,CAAC,mBAAc,EAAE,sBAAiB;IAAC;uCAG/D,cAAkB,EAAE,iBAAqB;YAC7C,WAAI,QAAQ,CACR,8BAAkB,cAAc,sCAAqB,iBAAiB,UAChE,oEACA,sDACA,sBAAC,cAAc,EAAE,iBAAiB,cAC9B,+DAAO,kBAAkB,GAAG,qBAAqB;IAAI;;YAExC,sBAAU,gBAAU,CAAC,mBAAc;IAAI;;YAErC,sBAAU,gBAAU,CAAC,sBAAiB;IAAI;iBAEzD,KAAS;YAAmC,EAA7B,AAAsB,KAAjB,QAAM,CAAC,QAAG,EAAE,QAAG,iBAAI,QAAG,MAAS,aAAJ,QAAG,iBAAG,QAAG;IAAC;gBAG/D,KAAiB;AAC3B,6BAAiB,0BAAG,KAAK;IAC3B;kBAMc,KAAiB;AAC7B,+BAAmB,0BAAG,KAAK;IAC7B;;AAaE,0BAAc,GAAG;AACjB,oBAAI,kBAAa,GAAE,wBAAkB;IACvC;;AAIE,qCAAiB;;AACjB,wCAAmB;;AACnB,6BAAiB,GAAG;AACpB,+BAAmB,GAAG;AACtB,6BAAiB,GAAG;AACpB,+BAAmB,GAAG;IACxB;;AAIE,qBAAK,kBAAa,gBACb,wBAAkB,gBAClB,oBAAc,gBACd,uEAAoB,GAAE;AAE3B,UAAM,QAAQ,cAAQ,sBAAsB,UAAQ;AACpD,UAAI,KAAK,KAAI,GAAG;AAMd,+BAAiB,CAAC;AAChB,kCAAkB,GAAG;AACrB,+BAAe,aAAa;;AAE9B;;AAGF,UAAM,mBAAmB,kCACvB,+DAAO,aAAa,gCACpB,+DAAO,aAAa,+BAA+B,UAAU,SAC7D,yCACE,aAAa,yBAAc,AAAK,oBAAE,KAAK,yBACvC,UAAU,OAEZ,yCAAC,aAAa,yBAAc,KAAK,qBAAiB,UAAU,QAC5D,yCAAC,aAAa,yBAAc,KAAK;AAEnC,UAAM,qBAAqB,kCACzB,+DAAO,aAAa,gCACpB,+DAAO,aAAa,6BAA6B,UAAU,QAC3D,+DAAO,aAAa,+BAA+B,UAAU,QAC7D,yCAAC,aAAa,yBAAc,KAAK;AAEnC,6BAAiB,GACb,uBAAiB,UAAQ,CAAC,gBAAgB,EAAE,yDAAoB;AACpE,+BAAmB,GACf,yBAAmB,UAAQ,CAAC,kBAAkB,EAAE,yDAAoB;IAC1E;;iFA9DI,qBAAkE;IA9FlE,oBAAc,GAAG;IAKjB,uBAAiB,GAAG;IAMpB,SAAG,GAAG;IAMN,SAAG,GAAG;IAiBL,oBAAc,GAAG;IAIjB,oBAAc,GAAG;IAWf,mBAAa,GAChB,UAAI,QAAQ,CAAC,kBAAiB;IAgCvB,uBAAiB;IAClB,uBAAiB;IAOhB,yBAAmB;IACpB,yBAAmB;IAIpB,qBAAe;IACf,cAAQ;IACX,wBAAkB,GAAG,qBAAqB,IAAI;EAAI","file":"material_progress.ddc.js"}');
   // Exports:
   return {

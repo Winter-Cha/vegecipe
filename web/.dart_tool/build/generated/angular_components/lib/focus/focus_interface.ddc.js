@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (focus__focus_interface.Focusable.new = function() {
   }).prototype = focus__focus_interface.Focusable.prototype;
   dart.addTypeTests(focus__focus_interface.Focusable);
+  dart.setLibraryUri(focus__focus_interface.Focusable, "package:angular_components/focus/focus_interface.dart");
   dart.trackLibraries("packages/angular_components/focus/focus_interface.ddc", {
     "package:angular_components/focus/focus_interface.dart": focus__focus_interface
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_interface.dart"],"names":[],"mappings":";;;;;;;;EAWA","file":"focus_interface.ddc.js"}');
   // Exports:
   return {

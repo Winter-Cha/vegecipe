@@ -75,7 +75,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
       this[_disposeListeners]();
     }
     [_attach](child) {
-      if (!(child != null)) dart.assertFailed();
+      if (!(child != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/laminate/popup/popup_hierarchy.dart", 40, 12, "child != null");
       if (dart.test(this[_visiblePopupStack][$isEmpty])) {
         this[_rootPane] = utils__browser__events__events.closestWithClass(html.Element._check(child.elementRef.nativeElement), "pane");
       }
@@ -168,6 +168,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getGetters(src__laminate__popup__popup_hierarchy.PopupHierarchy.__proto__),
     islastTriggerWithKeyboard: core$.bool
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_hierarchy.PopupHierarchy, "package:angular_components/src/laminate/popup/popup_hierarchy.dart");
   dart.setFieldSignature(src__laminate__popup__popup_hierarchy.PopupHierarchy, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_hierarchy.PopupHierarchy.__proto__),
     [_visiblePopupStack]: dart.finalFieldType(ListOfPopupHierarchyElement()),
@@ -203,6 +204,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getGetters(src__laminate__popup__popup_hierarchy.PopupHierarchyElement.__proto__),
     elementRef: src__core__linker__element_ref.ElementRef
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_hierarchy.PopupHierarchyElement, "package:angular_components/src/laminate/popup/popup_hierarchy.dart");
   const _backingMap = dart.privateName(src__laminate__popup__popup_state, "_backingMap");
   let const$;
   let const$0;
@@ -355,6 +357,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     trackLayoutChanges: core$.bool,
     constrainToViewport: core$.bool
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_state.PopupState, "package:angular_components/src/laminate/popup/popup_state.dart");
   dart.setFieldSignature(src__laminate__popup__popup_state.PopupState, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_state.PopupState.__proto__),
     [_backingMap]: dart.finalFieldType(ObservableMapOfSymbol$Object())
@@ -365,6 +368,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_interface.PopupInterface.new = function() {
   }).prototype = src__laminate__popup__popup_interface.PopupInterface.prototype;
   dart.addTypeTests(src__laminate__popup__popup_interface.PopupInterface);
+  dart.setLibraryUri(src__laminate__popup__popup_interface.PopupInterface, "package:angular_components/src/laminate/popup/popup_interface.dart");
   src__laminate__popup__popup_interface.PopupEvents = class PopupEvents extends core$.Object {
     get onOpen() {
       return this.onOpenController.stream;
@@ -409,6 +413,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     onClose: async.Stream$(dart.void),
     onVisible: async.Stream$(core$.bool)
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_interface.PopupEvents, "package:angular_components/src/laminate/popup/popup_interface.dart");
   dart.setFieldSignature(src__laminate__popup__popup_interface.PopupEvents, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_interface.PopupEvents.__proto__),
     onOpenController: dart.finalFieldType(StreamControllerOfvoid()),
@@ -460,6 +465,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     trackLayoutChanges: core$.bool,
     constrainToViewport: core$.bool
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_interface.PopupBase, "package:angular_components/src/laminate/popup/popup_interface.dart");
   src__laminate__popup__popup_interface.PopupComposite = class PopupComposite extends core$.Object {
     get autoDismiss() {
       return this[autoDismiss];
@@ -553,6 +559,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getMethods(src__laminate__popup__popup_interface.PopupComposite.__proto__),
     toggle: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_interface.PopupComposite, "package:angular_components/src/laminate/popup/popup_interface.dart");
   dart.setFieldSignature(src__laminate__popup__popup_interface.PopupComposite, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_interface.PopupComposite.__proto__),
     autoDismiss: dart.fieldType(core$.bool),
@@ -570,6 +577,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_size_provider.PopupSizeProvider.new = function() {
   }).prototype = src__laminate__popup__popup_size_provider.PopupSizeProvider.prototype;
   dart.addTypeTests(src__laminate__popup__popup_size_provider.PopupSizeProvider);
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider.PopupSizeProvider, "package:angular_components/src/laminate/popup/popup_size_provider.dart");
   const _minWidthPercentage = dart.privateName(src__laminate__popup__popup_size_provider, "_minWidthPercentage");
   const _minHeightPercentage = dart.privateName(src__laminate__popup__popup_size_provider, "_minHeightPercentage");
   const _maxWidthPercentage = dart.privateName(src__laminate__popup__popup_size_provider, "_maxWidthPercentage");
@@ -607,6 +615,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     getMaxWidth: dart.fnType(core$.num, [core$.num, core$.num]),
     getMaxHeight: dart.fnType(core$.num, [core$.num, core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider.PercentagePopupSizeProvider, "package:angular_components/src/laminate/popup/popup_size_provider.dart");
   dart.setFieldSignature(src__laminate__popup__popup_size_provider.PercentagePopupSizeProvider, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_size_provider.PercentagePopupSizeProvider.__proto__),
     [_minWidthPercentage]: dart.finalFieldType(core$.num),
@@ -639,6 +648,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     getMinHeight: dart.fnType(core$.num, [core$.num, core$.num]),
     getMinWidth: dart.fnType(core$.num, [core$.num, core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider.WithinViewportPopupSizeProvider, "package:angular_components/src/laminate/popup/popup_size_provider.dart");
   dart.defineLazy(src__laminate__popup__popup_size_provider.WithinViewportPopupSizeProvider, {
     /*src__laminate__popup__popup_size_provider.WithinViewportPopupSizeProvider._paddingPixels*/get _paddingPixels() {
       return 8;
@@ -681,6 +691,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     getMaxWidth: dart.fnType(core$.num, [core$.num, core$.num]),
     getMaxHeight: dart.fnType(core$.num, [core$.num, core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider.FixedPopupSizeProvider, "package:angular_components/src/laminate/popup/popup_size_provider.dart");
   dart.setFieldSignature(src__laminate__popup__popup_size_provider.FixedPopupSizeProvider, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_size_provider.FixedPopupSizeProvider.__proto__),
     [_minWidth]: dart.finalFieldType(core$.num),
@@ -697,6 +708,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_position_mixin.PopupPosition.new = function() {
   }).prototype = src__laminate__popup__popup_position_mixin.PopupPosition.prototype;
   dart.addTypeTests(src__laminate__popup__popup_position_mixin.PopupPosition);
+  dart.setLibraryUri(src__laminate__popup__popup_position_mixin.PopupPosition, "package:angular_components/src/laminate/popup/popup_position_mixin.dart");
   dart.defineLazy(src__laminate__popup__popup_position_mixin.PopupPosition, {
     /*src__laminate__popup__popup_position_mixin.PopupPosition.AUTO*/get AUTO() {
       return "";
@@ -784,6 +796,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getSetters(src__laminate__popup__popup_position_mixin.PopupPositionMixin.__proto__),
     popupPosition: core$.String
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_position_mixin.PopupPositionMixin, "package:angular_components/src/laminate/popup/popup_position_mixin.dart");
   dart.setFieldSignature(src__laminate__popup__popup_position_mixin.PopupPositionMixin, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_position_mixin.PopupPositionMixin.__proto__),
     delegatePopupSizeProvider: dart.fieldType(src__laminate__popup__popup_size_provider.PopupSizeProvider),
@@ -802,6 +815,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_ref.PopupRef.new = function() {
   }).prototype = src__laminate__popup__popup_ref.PopupRef.prototype;
   dart.addTypeTests(src__laminate__popup__popup_ref.PopupRef);
+  dart.setLibraryUri(src__laminate__popup__popup_ref.PopupRef, "package:angular_components/src/laminate/popup/popup_ref.dart");
   const _parentPopupSizeProvider = dart.privateName(src__laminate__popup__popup_size_provider_directive, "_parentPopupSizeProvider");
   const _minHeight$ = dart.privateName(src__laminate__popup__popup_size_provider_directive, "_minHeight");
   const _minWidth$ = dart.privateName(src__laminate__popup__popup_size_provider_directive, "_minWidth");
@@ -844,6 +858,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     getMaxWidth: dart.fnType(core$.num, [core$.num, core$.num]),
     getMaxHeight: dart.fnType(core$.num, [core$.num, core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider_directive.PopupSizeProviderDirective, "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart");
   dart.setFieldSignature(src__laminate__popup__popup_size_provider_directive.PopupSizeProviderDirective, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_size_provider_directive.PopupSizeProviderDirective.__proto__),
     [_minHeight$]: dart.fieldType(src__laminate__popup__popup_size_provider_directive._SizeDefinition),
@@ -877,6 +892,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_size_provider_directive._SizeDefinition[dart.mixinNew] = function() {
   }).prototype = src__laminate__popup__popup_size_provider_directive._SizeDefinition.prototype;
   dart.addTypeTests(src__laminate__popup__popup_size_provider_directive._SizeDefinition);
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider_directive._SizeDefinition, "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart");
   dart.defineLazy(src__laminate__popup__popup_size_provider_directive._SizeDefinition, {
     /*src__laminate__popup__popup_size_provider_directive._SizeDefinition._parseAttribute*/get _parseAttribute() {
       return core$.RegExp.new("([\\d.]+)\\s*([^\\d\\s]+)");
@@ -897,6 +913,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getMethods(src__laminate__popup__popup_size_provider_directive._PixelSizeDefinition.__proto__),
     getPixels: dart.fnType(core$.num, [core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider_directive._PixelSizeDefinition, "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart");
   dart.setFieldSignature(src__laminate__popup__popup_size_provider_directive._PixelSizeDefinition, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_size_provider_directive._PixelSizeDefinition.__proto__),
     [_size]: dart.finalFieldType(core$.num)
@@ -916,6 +933,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getMethods(src__laminate__popup__popup_size_provider_directive._PercentSizeDefinition.__proto__),
     getPixels: dart.fnType(core$.num, [core$.num])
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider_directive._PercentSizeDefinition, "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart");
   dart.setFieldSignature(src__laminate__popup__popup_size_provider_directive._PercentSizeDefinition, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_size_provider_directive._PercentSizeDefinition.__proto__),
     [_percent]: dart.finalFieldType(core$.num)
@@ -924,6 +942,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   (src__laminate__popup__popup_size_provider_directive.PopupWithinViewportDirective.new = function() {
   }).prototype = src__laminate__popup__popup_size_provider_directive.PopupWithinViewportDirective.prototype;
   dart.addTypeTests(src__laminate__popup__popup_size_provider_directive.PopupWithinViewportDirective);
+  dart.setLibraryUri(src__laminate__popup__popup_size_provider_directive.PopupWithinViewportDirective, "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart");
   const _domPopupSourceFactory = dart.privateName(src__laminate__popup__popup_source_directive, "_domPopupSourceFactory");
   const _element = dart.privateName(src__laminate__popup__popup_source_directive, "_element");
   const _referenceDirective = dart.privateName(src__laminate__popup__popup_source_directive, "_referenceDirective");
@@ -1045,6 +1064,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     alignY: core$.String,
     popupId: core$.String
   }));
+  dart.setLibraryUri(src__laminate__popup__popup_source_directive.PopupSourceDirective, "package:angular_components/src/laminate/popup/popup_source_directive.dart");
   dart.setFieldSignature(src__laminate__popup__popup_source_directive.PopupSourceDirective, () => ({
     __proto__: dart.getFields(src__laminate__popup__popup_source_directive.PopupSourceDirective.__proto__),
     [_domPopupSourceFactory]: dart.finalFieldType(src__laminate__popup__dom_popup_source.DomPopupSourceFactory),
@@ -1066,7 +1086,8 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     "package:angular_components/src/laminate/popup/popup_ref.dart": src__laminate__popup__popup_ref,
     "package:angular_components/src/laminate/popup/popup_size_provider_directive.dart": src__laminate__popup__popup_size_provider_directive,
     "package:angular_components/src/laminate/popup/popup_source_directive.dart": src__laminate__popup__popup_source_directive
-  }, '{"version":3,"sourceRoot":"","sources":["popup_hierarchy.dart","popup_state.dart","popup_interface.dart","popup_size_provider.dart","popup_position_mixin.dart","popup_ref.dart","popup_size_provider_directive.dart","popup_source_directive.dart"],"names":[],"mappings":"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","file":"popup_hierarchy.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["popup_hierarchy.dart","popup_state.dart","popup_interface.dart","popup_size_provider.dart","popup_position_mixin.dart","popup_ref.dart","popup_size_provider_directive.dart","popup_source_directive.dart"],"names":[],"mappings":"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","file":"popup_hierarchy.ddc.js"}');
   // Exports:
   return {
     src__laminate__popup__popup_hierarchy: src__laminate__popup__popup_hierarchy,

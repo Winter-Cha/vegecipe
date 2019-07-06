@@ -38,7 +38,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
       return this[_role];
     }
     set role(value) {
-      if (!(this.ariaRole == null)) dart.assertFailed("Aria role can only be set before initialization.");
+      if (!(this.ariaRole == null)) dart.assertFailed("Aria role can only be set before initialization.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_select/dropdown_button.dart", 68, 9, "ariaRole == null");
       this[_role] = value;
     }
     get ariaRole() {
@@ -172,6 +172,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
     ariaLabelledBy: core.String,
     showButtonBorder: core.bool
   }));
+  dart.setLibraryUri(material_select__dropdown_button.DropdownButtonComponent, "package:angular_components/material_select/dropdown_button.dart");
   dart.setFieldSignature(material_select__dropdown_button.DropdownButtonComponent, () => ({
     __proto__: dart.getFields(material_select__dropdown_button.DropdownButtonComponent.__proto__),
     [_role]: dart.fieldType(core.String),
@@ -191,6 +192,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
   }));
   dart.trackLibraries("packages/angular_components/material_select/dropdown_button.ddc", {
     "package:angular_components/material_select/dropdown_button.dart": material_select__dropdown_button
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dropdown_button.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;eAwDa,CAAiB;AAC1B,mBAAO,GAAG,CAAC;AACX,oBAAS,GAAG,CAAC;IACf;;YAEmB,YAAK;;aAIf,KAAY;AACnB,YACI,aAAQ,IAAI,yBAAM;AACtB,iBAAK,GAAG,KAAK;IACf;;YAEuB,gBAAS;;;AAI9B,cAAY,SAAI;qBAAP,mBAAW;IACtB;IAMO;;;;;;IAMA;;;;;;IAIA;;;;;;IAIF;;;;;;IAIE;;;;;;IAGM;;;;;;uBASM,UAAiB;YAAK,sBAAe,GAAG,UAAU;;;YAMjE,sBAAe,IAAI,OAAO,OAAO,SAAE,qBAAe,mBAAE,SAAI;IAAC;IAGtD;;;;;;;YAEa,WAAK,IAAI;IAAI;yBAIZ,KAAU;AAC7B,6BAAiB,GAAG,KAAK;IAC3B;;AAGE,UAAI,uBAAiB,IAAI,MAAM,MAAO,wBAAiB;AAGvD,YAAO,gBAAU,IAAI;IACvB;;YAMiC,YAAK,OAAO;;eAG7B,KAAgB;AAC9B,iBAAK,IAAI,CAAC,KAAK;IACjB;;YAI+B,cAAO,QAAQ;;IAIzC;;;;;;;;IA7GE,WAAK;IACL,eAAS;IAMA,aAAO;IA6BhB,eAAS,GAAG;IAMZ,WAAK;IAIL,cAAQ;IAIV,kBAAY;IAIV,0BAAoB;IAGd,UAAI,OAAG,gEAA8B,SAAS;IAEpD,qBAAe;IAgBf,qBAAe;IAiBjB,uBAAiB;IAKhB,WAAK,GAAG,kCAA4B,QAAO;IAY5C,cAAQ,GAAG;;AAzGd,iBAAQ,GAAG;EACb","file":"dropdown_button.ddc.js"}');
   // Exports:
   return {

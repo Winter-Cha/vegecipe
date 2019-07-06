@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/pedantic/pedantic.ddc", {
     "package:pedantic/pedantic.dart": pedantic
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["pedantic.dart"],"names":[],"mappings":";;;;;;gCAwBe,MAAmB;EAAG","file":"pedantic.ddc.js"}');
   // Exports:
   return {

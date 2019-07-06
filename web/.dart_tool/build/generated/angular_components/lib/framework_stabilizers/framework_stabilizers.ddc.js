@@ -40,6 +40,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (framework_stabilizers__framework_stabilizers.FrameworkStabilizers.new = function() {
   }).prototype = framework_stabilizers__framework_stabilizers.FrameworkStabilizers.prototype;
   dart.addTypeTests(framework_stabilizers__framework_stabilizers.FrameworkStabilizers);
+  dart.setLibraryUri(framework_stabilizers__framework_stabilizers.FrameworkStabilizers, "package:angular_components/framework_stabilizers/framework_stabilizers.dart");
   dart.defineLazy(framework_stabilizers__framework_stabilizers.FrameworkStabilizers, {
     /*framework_stabilizers__framework_stabilizers.FrameworkStabilizers._idToFrameworkStabilizer*/get _idToFrameworkStabilizer() {
       return new (IdentityMapOfint$dynamic()).new();
@@ -51,7 +52,8 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/framework_stabilizers/framework_stabilizers.ddc", {
     "package:angular_components/framework_stabilizers/framework_stabilizers.dart": framework_stabilizers__framework_stabilizers
-  }, '{"version":3,"sourceRoot":"","sources":["framework_stabilizers.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;AAmCI,UAAI,gCAAuB,IAAI,MAAM;AACnC,2CAA0B;;AAE5B,YAAO,iCAAuB;IAChC;eAkBe,EAAsB;AACnC,UAAI,YAAY,eAAY,aAAC,EAAE;AAC/B,UAAI,KAAK,yEAAO;MAAP,yEAAO,gBAAZ,MA3DR;AA4DI,gGAAwB,QAAC,EAAE,EAAI,SAAS;AACxC,6FAAqB,MAAI,CAAC,SAAS;AACnC,YAAO,GAAE;IACX;kBAGmB,EAAM;AACvB,UAAI,YAAY,0FAAwB,SAAO,CAAC,EAAE;AAClD,YAAO,UAAS,IAAI,OAAO,QAAQ,uFAAqB,SAAO,CAAC,SAAS;IAC3E;;AAGE,gGAAwB,QAAM;AAC9B,6FAAqB,QAAM;IAC7B;;;EACF;;;MA5CiC,0FAAwB;YAAG;;MAC/C,yEAAO;YAAG","file":"framework_stabilizers.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["framework_stabilizers.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;AAmCI,UAAI,gCAAuB,IAAI,MAAM;AACnC,2CAA0B;;AAE5B,YAAO,iCAAuB;IAChC;eAkBe,EAAsB;AACnC,UAAI,YAAY,eAAY,aAAC,EAAE;AAC/B,UAAI,KAAK,yEAAO;MAAP,yEAAO,gBAAZ,MA3DR;AA4DI,gGAAwB,QAAC,EAAE,EAAI,SAAS;AACxC,6FAAqB,MAAI,CAAC,SAAS;AACnC,YAAO,GAAE;IACX;kBAGmB,EAAM;AACvB,UAAI,YAAY,0FAAwB,SAAO,CAAC,EAAE;AAClD,YAAO,UAAS,IAAI,OAAO,QAAQ,uFAAqB,SAAO,CAAC,SAAS;IAC3E;;AAGE,gGAAwB,QAAM;AAC9B,6FAAqB,QAAM;IAC7B;;;EACF;;;;MA5CiC,0FAAwB;YAAG;;MAC/C,yEAAO;YAAG","file":"framework_stabilizers.ddc.js"}');
   // Exports:
   return {
     framework_stabilizers__framework_stabilizers: framework_stabilizers__framework_stabilizers

@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/laminate/popup/module.template.ddc", {
     "package:angular_components/laminate/popup/module.template.dart": laminate__popup__module$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,2CAAQ;YAAG;;;;;AAEb,kBAAI,2CAAQ,GAAE;AACZ;;AAEF,kDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,kDAAa;AACnB,IAAM,+DAAa;EACrB","file":"module.template.ddc.js"}');
   // Exports:
   return {

@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular_components/src/model/action/async_action.t
   };
   dart.trackLibraries("packages/angular_components/model/action/async_action.template.ddc", {
     "package:angular_components/model/action/async_action.template.dart": model__action__async_action$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["async_action.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,+CAAQ;YAAG;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAM,yDAAa;AACnB,IAAM,oEAAa;AACnB,IAAM,oEAAa;EACrB","file":"async_action.template.ddc.js"}');
   // Exports:
   return {

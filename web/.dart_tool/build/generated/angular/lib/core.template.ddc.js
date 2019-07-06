@@ -30,6 +30,7 @@ define(['dart_sdk', 'packages/angular/src/core/application_tokens.template', 'pa
   };
   dart.trackLibraries("packages/angular/core.template.ddc", {
     "package:angular/core.template.dart": core$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["core.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAaI,wBAAQ;YAAG;;;;;AAEb,kBAAI,wBAAQ,GAAE;AACZ;;AAEF,+BAAW;AAEX,IAAM,sDAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,sCAAa;AACnB,IAAM,4CAAa;AACnB,IAAM,wCAAa;AACnB,IAAM,uDAAa;EACrB","file":"core.template.ddc.js"}');
   // Exports:
   return {

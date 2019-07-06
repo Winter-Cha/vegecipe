@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_button/material_fab.scss.css.shim.ddc", {
     "package:angular_components/material_button/material_fab.scss.css.shim.dart": material_button__material_fab$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_fab.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,wDAAM;YAAG,EAAC","file":"material_fab.scss.css.shim.ddc.js"}');
   // Exports:
   return {

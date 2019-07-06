@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/src/laminate/enums/base.template.ddc", {
     "package:angular_components/src/laminate/enums/base.template.dart": src__laminate__enums__base$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["base.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"base.template.ddc.js"}');
   // Exports:
   return {

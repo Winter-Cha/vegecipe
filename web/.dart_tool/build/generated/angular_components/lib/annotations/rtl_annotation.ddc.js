@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   };
   dart.trackLibraries("packages/angular_components/annotations/rtl_annotation.ddc", {
     "package:angular_components/annotations/rtl_annotation.dart": annotations__rtl_annotation
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["rtl_annotation.dart"],"names":[],"mappings":";;;;;;;;;;;MAcM,oCAAQ;4BAAG,2CAAW,CAAC;;MAEvB,uCAAW;wBACb,2CAAwB,CAAC,oCAAQ,EAAE,mEAAY,SAAQ,gBAAC,4BAAQ;;;sDAGlD,QAAiB;UAC/B,AAAsC,SAA9B,gBAAgB,IAAI,KAAI,SAChC,qBAAC,QAAQ,MAAsB,IAAI,KAAI;EAAK","file":"rtl_annotation.ddc.js"}');
   // Exports:
   return {

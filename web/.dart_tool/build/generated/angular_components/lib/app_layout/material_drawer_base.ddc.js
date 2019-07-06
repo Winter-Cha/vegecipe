@@ -62,6 +62,7 @@ define(['dart_sdk', 'packages/angular_components/content/deferred_content_aware'
     __proto__: dart.getSetters(app_layout__material_drawer_base.MaterialDrawerBase.__proto__),
     visible: core.bool
   }));
+  dart.setLibraryUri(app_layout__material_drawer_base.MaterialDrawerBase, "package:angular_components/app_layout/material_drawer_base.dart");
   dart.setFieldSignature(app_layout__material_drawer_base.MaterialDrawerBase, () => ({
     __proto__: dart.getFields(app_layout__material_drawer_base.MaterialDrawerBase.__proto__),
     [_visible]: dart.fieldType(core.bool),
@@ -69,6 +70,7 @@ define(['dart_sdk', 'packages/angular_components/content/deferred_content_aware'
   }));
   dart.trackLibraries("packages/angular_components/app_layout/material_drawer_base.ddc", {
     "package:angular_components/app_layout/material_drawer_base.dart": app_layout__material_drawer_base
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_drawer_base.dart"],"names":[],"mappings":";;;;;;;;;;;;MAWM,kDAAiB;4BAAG,iBAAQ,gBAAe;;;;;;;YAO3B,eAAQ;;gBAIhB,KAAU;AACpB,UAAI,KAAK,IAAI,cAAQ,EAAE;AACvB,oBAAQ,GAAG,KAAK;AAEhB,qBAAK,cAAQ,GAAE;AAEb,uBAAK,CAAC,kDAAiB,EAAE;AAGvB,yBAAK,cAAQ,GAAE,oBAAc,IAAI,CAAC,cAAQ;;aAEvC;AAEL,4BAAc,IAAI,CAAC,cAAQ;;IAE/B;;YASmC,qBAAc,OAAO;;;AAItD,kBAAO,GAAG,WAAC,YAAO;IACpB;;AAIE,0BAAc,IAAI,CAAC,cAAQ;IAC7B;;;QA1CyB,qDAAU;IAyB7B,oBAAc,GAAG,kCAAgC,QAAO;IAzBlB,cAAQ,GAAG,OAAO","file":"material_drawer_base.ddc.js"}');
   // Exports:
   return {

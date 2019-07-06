@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_tab/tab_change_event.template.ddc", {
     "package:angular_components/material_tab/tab_change_event.template.dart": material_tab__tab_change_event$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_change_event.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"tab_change_event.template.ddc.js"}');
   // Exports:
   return {

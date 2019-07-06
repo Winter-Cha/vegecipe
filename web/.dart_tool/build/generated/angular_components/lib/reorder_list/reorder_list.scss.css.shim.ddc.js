@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/reorder_list/reorder_list.scss.css.shim.ddc", {
     "package:angular_components/reorder_list/reorder_list.scss.css.shim.dart": reorder_list__reorder_list$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["reorder_list.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,qDAAM;YAAG,EAAC","file":"reorder_list.scss.css.shim.ddc.js"}');
   // Exports:
   return {

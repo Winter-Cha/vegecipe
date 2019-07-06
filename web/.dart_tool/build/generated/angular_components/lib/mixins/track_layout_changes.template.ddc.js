@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular/angular.template'], function(dart_sdk, ang
   };
   dart.trackLibraries("packages/angular_components/mixins/track_layout_changes.template.ddc", {
     "package:angular_components/mixins/track_layout_changes.template.dart": mixins__track_layout_changes$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["track_layout_changes.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,gDAAQ;YAAG;;;;;AAEb,kBAAI,gDAAQ,GAAE;AACZ;;AAEF,uDAAW;AAEX,IAAM,gCAAa;EACrB","file":"track_layout_changes.template.ddc.js"}');
   // Exports:
   return {

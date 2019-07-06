@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const function_defs = Object.create(dart.library);
   dart.trackLibraries("packages/memoize/function_defs.ddc", {
     "package:memoize/function_defs.dart": function_defs
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"function_defs.ddc.js"}');
   // Exports:
   return {

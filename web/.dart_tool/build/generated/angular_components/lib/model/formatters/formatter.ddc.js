@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = Formatter.prototype;
     dart.addTypeTests(Formatter);
     Formatter.prototype[_is_Formatter_default] = true;
+    dart.setLibraryUri(Formatter, "package:angular_components/model/formatters/formatter.dart");
     return Formatter;
   });
   model__formatters__formatter.Formatter = model__formatters__formatter.Formatter$();
@@ -42,6 +43,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getGetters(StyleFormatter.__proto__),
       primaryStyle: core.String
     }));
+    dart.setLibraryUri(StyleFormatter, "package:angular_components/model/formatters/formatter.dart");
     return StyleFormatter;
   });
   model__formatters__formatter.StyleFormatter = model__formatters__formatter.StyleFormatter$();
@@ -55,6 +57,7 @@ define(['dart_sdk'], function(dart_sdk) {
     dart.addTypeTests(EntityFormatter);
     EntityFormatter.prototype[_is_EntityFormatter_default] = true;
     EntityFormatter[dart.implements] = () => [FormatterOfT()];
+    dart.setLibraryUri(EntityFormatter, "package:angular_components/model/formatters/formatter.dart");
     return EntityFormatter;
   });
   model__formatters__formatter.EntityFormatter = model__formatters__formatter.EntityFormatter$();
@@ -68,13 +71,15 @@ define(['dart_sdk'], function(dart_sdk) {
     dart.addTypeTests(EntityStyleFormatter);
     EntityStyleFormatter.prototype[_is_EntityStyleFormatter_default] = true;
     EntityStyleFormatter[dart.implements] = () => [StyleFormatterOfT()];
+    dart.setLibraryUri(EntityStyleFormatter, "package:angular_components/model/formatters/formatter.dart");
     return EntityStyleFormatter;
   });
   model__formatters__formatter.EntityStyleFormatter = model__formatters__formatter.EntityStyleFormatter$();
   dart.addTypeTests(model__formatters__formatter.EntityStyleFormatter, _is_EntityStyleFormatter_default);
   dart.trackLibraries("packages/angular_components/model/formatters/formatter.ddc", {
     "package:angular_components/model/formatters/formatter.dart": model__formatters__formatter
-  }, '{"version":3,"sourceRoot":"","sources":["formatter.dart"],"names":[],"mappings":";;;;;;;;;;IAOA;;;;;;;;;;;;mBAK4B,KAAO,EAAG,UAAiB;iBAAzB;mCAAe;cAAgB;MAAQ;;cAIxC;MAAI;;;IACjC;;;;;;;;;;;;;;;;;;;;;IAYA;;;;;;;;;;;;;IAQA","file":"formatter.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["formatter.dart"],"names":[],"mappings":";;;;;;;;;;IAOA;;;;;;;;;;;;;mBAK4B,KAAO,EAAG,UAAiB;iBAAzB;mCAAe;cAAgB;MAAQ;;cAIxC;MAAI;;;IACjC;;;;;;;;;;;;;;;;;;;;;;IAYA;;;;;;;;;;;;;;IAQA","file":"formatter.ddc.js"}');
   // Exports:
   return {
     model__formatters__formatter: model__formatters__formatter

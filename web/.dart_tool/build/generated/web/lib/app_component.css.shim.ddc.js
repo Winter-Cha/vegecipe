@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/web/app_component.css.shim.ddc", {
     "package:web/app_component.css.shim.dart": app_component$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["app_component.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,iCAAM;YAAG,EAAC","file":"app_component.css.shim.ddc.js"}');
   // Exports:
   return {

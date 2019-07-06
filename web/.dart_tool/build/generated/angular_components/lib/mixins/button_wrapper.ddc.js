@@ -74,6 +74,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon', 'packages/angul
     __proto__: dart.getGetters(mixins__button_wrapper.MaterialButtonWrapper.__proto__),
     buttonIcon: model__ui__icon.Icon
   }));
+  dart.setLibraryUri(mixins__button_wrapper.MaterialButtonWrapper, "package:angular_components/mixins/button_wrapper.dart");
   dart.setFieldSignature(mixins__button_wrapper.MaterialButtonWrapper, () => ({
     __proto__: dart.getFields(mixins__button_wrapper.MaterialButtonWrapper.__proto__),
     buttonText: dart.fieldType(core.String),
@@ -86,6 +87,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon', 'packages/angul
   }));
   dart.trackLibraries("packages/angular_components/mixins/button_wrapper.ddc", {
     "package:angular_components/mixins/button_wrapper.dart": mixins__button_wrapper
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["button_wrapper.dart"],"names":[],"mappings":";;;;;;;;;;;IAaS;;;;;;IAIA;;;;;;IAIF;;;;;;IAIA;;;;;;IAME;;;;;;IAIF;;;;;;;AAIH,UAAI,SAAI,IAAI,MAAM,MAAO,UAAI;AAC7B,UAAI,iBAAW,IAAI,QAAS,aAAQ,IAAI,QAAQ,aAAQ,aAAW,EAAG;AACpE,yBAAW,OAAG,wBAAI,CAAC,aAAQ;;AAE7B,YAAO,kBAAW;IACpB;;;IA/BO,gBAAU;IAIV,qBAAe;IAIjB,cAAQ,GAAG;IAIX,WAAI;IAMF,cAAQ;IAIV,YAAM,GAAG;IAET,iBAAW;EAQlB","file":"button_wrapper.ddc.js"}');
   // Exports:
   return {

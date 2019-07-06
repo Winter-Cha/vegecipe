@@ -76,6 +76,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       ngOnDestroy: dart.fnType(dart.void, []),
       onDisabledChanged: dart.fnType(dart.void, [core.bool])
     }));
+    dart.setLibraryUri(BaseMaterialInputValueAccessor, "package:angular_components/material_input/material_input_default_value_accessor.dart");
     dart.setFieldSignature(BaseMaterialInputValueAccessor, () => ({
       __proto__: dart.getFields(BaseMaterialInputValueAccessor.__proto__),
       disposer: dart.finalFieldType(utils__disposer__disposer.Disposer),
@@ -101,6 +102,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getMethods(material_input__material_input_default_value_accessor.MaterialInputDefaultValueAccessor.__proto__),
     registerOnChange: dart.fnType(dart.void, [dart.fnType(dart.dynamic, [core.String], {rawValue: core.String})])
   }));
+  dart.setLibraryUri(material_input__material_input_default_value_accessor.MaterialInputDefaultValueAccessor, "package:angular_components/material_input/material_input_default_value_accessor.dart");
   material_input__material_input_default_value_accessor.MaterialInputBlurValueAccessor = class MaterialInputBlurValueAccessor extends material_input__material_input_default_value_accessor.BaseMaterialInputValueAccessor$(core.String) {
     registerOnChange(callback) {
       this.disposer.addStreamSubscription(html.FocusEvent, this.input.onBlur.listen(dart.fn(_ => {
@@ -116,6 +118,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getMethods(material_input__material_input_default_value_accessor.MaterialInputBlurValueAccessor.__proto__),
     registerOnChange: dart.fnType(dart.void, [dart.fnType(dart.dynamic, [core.String], {rawValue: core.String})])
   }));
+  dart.setLibraryUri(material_input__material_input_default_value_accessor.MaterialInputBlurValueAccessor, "package:angular_components/material_input/material_input_default_value_accessor.dart");
   material_input__material_input_default_value_accessor.MaterialInputChangeValueAccessor = class MaterialInputChangeValueAccessor extends material_input__material_input_default_value_accessor.BaseMaterialInputValueAccessor$(core.String) {
     registerOnChange(callback) {
       this.disposer.addStreamSubscription(core.String, this.input.onChange.listen(dart.fn(_ => {
@@ -131,9 +134,11 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getMethods(material_input__material_input_default_value_accessor.MaterialInputChangeValueAccessor.__proto__),
     registerOnChange: dart.fnType(dart.void, [dart.fnType(dart.dynamic, [core.String], {rawValue: core.String})])
   }));
+  dart.setLibraryUri(material_input__material_input_default_value_accessor.MaterialInputChangeValueAccessor, "package:angular_components/material_input/material_input_default_value_accessor.dart");
   dart.trackLibraries("packages/angular_components/material_input/material_input_default_value_accessor.ddc", {
     "package:angular_components/material_input/material_input_default_value_accessor.dart": material_input__material_input_default_value_accessor
-  }, '{"version":3,"sourceRoot":"","sources":["material_input_default_value_accessor.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;MA+EQ;;;;;;MAEkB;;;;;;iBAeR,QAAU;iBAAR;AAChB,kBAAK,UAAU,GAAG,gBAAW,CAAC,QAAQ;MACxC;kBAMmB,KAAO;iBAAL;cAAU,UAAG,KAAK,WAAL,KAAK,GAAI;MAAI;wBAGxB,QAAQ;AAC7B,YAAI;AACJ,WAAG,GAAG,UAAK,OAAO,OAAO,CAAC,QAAC,CAAC;AAC1B,wBAAG;AACH,kBAAQ;;AAEV,qBAAQ,sBAAsB,+CAAC,GAAG;MACpC;;AAIE,qBAAQ,QAAQ;MAClB;wBAGuB,UAAe;AACpC,kBAAK,SAAS,GAAG,UAAU;MAC7B;;mDAxC+B,KAAU;MALnC,cAAQ,OAAG,0CAAgB;MAKG,YAAK,GAAL,KAAK;MAA2B,SAAG;AAGrE,eAAG,kBAAH,SAAG,cAAe,GAAG;AACrB,mBAAQ,YAAY,CAAC;AAGnB,iBAAG,kBAAH,SAAG,cAAe,GAAG;;IAEzB;;;;;;;;;;;;;;;;;;;;;;;;;qBAhEsB,QAAQ;AAC5B,mBAAQ,sBAAsB,cAAC,UAAK,WAAW,OAAO,CAAC,QAAC,KAAK;AAC3D,gBAAQ,CAAC,KAAK;;IAElB;;0GARI,KAAuB,EAAE,OAAqC;AAC5D,qHAAM,KAAK,EAAE,OAAO;EAAC;;;;;;;qBAsBL,QAAQ;AAC5B,mBAAQ,sBAAsB,kBAAC,UAAK,OAAO,OAAO,CAAC,QAAC,CAAC;AACnD,YAAI,UAAK,IAAI,MAAM,QAAQ,CAAC,UAAK,UAAU;;IAE/C;;uGARI,KAAuB,EAAE,OAAqC;AAC5D,kHAAM,KAAK,EAAE,OAAO;EAAC;;;;;;;qBAsBL,QAAQ;AAC5B,mBAAQ,sBAAsB,cAAC,UAAK,SAAS,OAAO,CAAC,QAAC,CAAC;AACrD,YAAI,UAAK,IAAI,MAAM,QAAQ,CAAC,UAAK,UAAU;;IAE/C;;yGARI,KAAuB,EAAE,OAAqC;AAC5D,oHAAM,KAAK,EAAE,OAAO;EAAC","file":"material_input_default_value_accessor.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_input_default_value_accessor.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;MA+EQ;;;;;;MAEkB;;;;;;iBAeR,QAAU;iBAAR;AAChB,kBAAK,UAAU,GAAG,gBAAW,CAAC,QAAQ;MACxC;kBAMmB,KAAO;iBAAL;cAAU,UAAG,KAAK,WAAL,KAAK,GAAI;MAAI;wBAGxB,QAAQ;AAC7B,YAAI;AACJ,WAAG,GAAG,UAAK,OAAO,OAAO,CAAC,QAAC,CAAC;AAC1B,wBAAG;AACH,kBAAQ;;AAEV,qBAAQ,sBAAsB,+CAAC,GAAG;MACpC;;AAIE,qBAAQ,QAAQ;MAClB;wBAGuB,UAAe;AACpC,kBAAK,SAAS,GAAG,UAAU;MAC7B;;mDAxC+B,KAAU;MALnC,cAAQ,OAAG,0CAAgB;MAKG,YAAK,GAAL,KAAK;MAA2B,SAAG;AAGrE,eAAG,kBAAH,SAAG,cAAe,GAAG;AACrB,mBAAQ,YAAY,CAAC;AAGnB,iBAAG,kBAAH,SAAG,cAAe,GAAG;;IAEzB;;;;;;;;;;;;;;;;;;;;;;;;;;qBAhEsB,QAAQ;AAC5B,mBAAQ,sBAAsB,cAAC,UAAK,WAAW,OAAO,CAAC,QAAC,KAAK;AAC3D,gBAAQ,CAAC,KAAK;;IAElB;;0GARI,KAAuB,EAAE,OAAqC;AAC5D,qHAAM,KAAK,EAAE,OAAO;EAAC;;;;;;;;qBAsBL,QAAQ;AAC5B,mBAAQ,sBAAsB,kBAAC,UAAK,OAAO,OAAO,CAAC,QAAC,CAAC;AACnD,YAAI,UAAK,IAAI,MAAM,QAAQ,CAAC,UAAK,UAAU;;IAE/C;;uGARI,KAAuB,EAAE,OAAqC;AAC5D,kHAAM,KAAK,EAAE,OAAO;EAAC;;;;;;;;qBAsBL,QAAQ;AAC5B,mBAAQ,sBAAsB,cAAC,UAAK,SAAS,OAAO,CAAC,QAAC,CAAC;AACrD,YAAI,UAAK,IAAI,MAAM,QAAQ,CAAC,UAAK,UAAU;;IAE/C;;yGARI,KAAuB,EAAE,OAAqC;AAC5D,oHAAM,KAAK,EAAE,OAAO;EAAC","file":"material_input_default_value_accessor.ddc.js"}');
   // Exports:
   return {
     material_input__material_input_default_value_accessor: material_input__material_input_default_value_accessor

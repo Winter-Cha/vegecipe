@@ -67,6 +67,7 @@ define(['dart_sdk'], function(dart_sdk) {
     label: core.String,
     width: core.String
   }));
+  dart.setLibraryUri(material_tab__tab_mixin.TabMixin, "package:angular_components/material_tab/tab_mixin.dart");
   dart.setFieldSignature(material_tab__tab_mixin.TabMixin, () => ({
     __proto__: dart.getFields(material_tab__tab_mixin.TabMixin.__proto__),
     [_label]: dart.fieldType(core.String),
@@ -74,6 +75,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/angular_components/material_tab/tab_mixin.ddc", {
     "package:angular_components/material_tab/tab_mixin.dart": material_tab__tab_mixin
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_mixin.dart"],"names":[],"mappings":";;;;;;;;;;;;;;YAoBsB,aAAM;;cAEhB,KAAY;AACpB,sBAAU,GAAG;AACb,kBAAM,GAAG,KAAK;IAChB;;YAIuB,mBAAa,cAAY;;;YAG1B,mBAAa,aAAW;;;YAG1B,mBAAa,MAAM,QAAM;;cACnC,KAAY;YAAK,mBAAa,MAAM,QAAM,GAAG,KAAK;;;YAGvC,iBAAU;;;AAM7B,UAAI,gBAAU,KAAI,GAAG;AACnB,wBAAU,GAAG,gBAAW;;IAE5B;;AAME,UAAI,gBAAU,KAAI,KAAK,UAAK,aAAW,EAAE;AACvC,kBAAK,GAAG;;IAEZ;;;IA/CO,YAAM;IACT,gBAAU,GAAG;EA+CnB","file":"tab_mixin.ddc.js"}');
   // Exports:
   return {

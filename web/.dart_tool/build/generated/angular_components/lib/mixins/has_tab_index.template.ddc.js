@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/mixins/has_tab_index.template.ddc", {
     "package:angular_components/mixins/has_tab_index.template.dart": mixins__has_tab_index$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_tab_index.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,yCAAQ;YAAG;;;;;AAEb,kBAAI,yCAAQ,GAAE;AACZ;;AAEF,gDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,+DAAa;EACrB","file":"has_tab_index.template.ddc.js"}');
   // Exports:
   return {

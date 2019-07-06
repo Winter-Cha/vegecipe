@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/date.template'], fun
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/calendar.template.ddc", {
     "package:angular_components/material_datepicker/calendar.template.dart": material_datepicker__calendar$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["calendar.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,iDAAQ;YAAG;;;;;AAEb,kBAAI,iDAAQ,GAAE;AACZ;;AAEF,wDAAW;AAEX,IAAM,0CAAa;EACrB","file":"calendar.template.ddc.js"}');
   // Exports:
   return {

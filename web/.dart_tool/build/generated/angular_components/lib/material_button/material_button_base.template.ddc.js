@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_button/material_button_base.template.ddc", {
     "package:angular_components/material_button/material_button_base.template.dart": material_button__material_button_base$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_button_base.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,yDAAQ;YAAG;;;;;AAEb,kBAAI,yDAAQ,GAAE;AACZ;;AAEF,gEAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,2DAAa;EACrB","file":"material_button_base.template.ddc.js"}');
   // Exports:
   return {

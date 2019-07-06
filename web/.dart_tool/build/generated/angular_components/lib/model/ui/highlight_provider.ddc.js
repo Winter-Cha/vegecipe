@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (model__ui__highlight_provider.HighlightProvider.new = function() {
   }).prototype = model__ui__highlight_provider.HighlightProvider.prototype;
   dart.addTypeTests(model__ui__highlight_provider.HighlightProvider);
+  dart.setLibraryUri(model__ui__highlight_provider.HighlightProvider, "package:angular_components/model/ui/highlight_provider.dart");
   dart.trackLibraries("packages/angular_components/model/ui/highlight_provider.ddc", {
     "package:angular_components/model/ui/highlight_provider.dart": model__ui__highlight_provider
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlight_provider.dart"],"names":[],"mappings":";;;;;;;;EAQA","file":"highlight_provider.ddc.js"}');
   // Exports:
   return {

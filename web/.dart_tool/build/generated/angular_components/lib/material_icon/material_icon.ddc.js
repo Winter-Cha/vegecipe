@@ -39,6 +39,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
     __proto__: dart.getSetters(material_icon__material_icon.MaterialIconComponent.__proto__),
     icon: dart.dynamic
   }));
+  dart.setLibraryUri(material_icon__material_icon.MaterialIconComponent, "package:angular_components/material_icon/material_icon.dart");
   dart.setFieldSignature(material_icon__material_icon.MaterialIconComponent, () => ({
     __proto__: dart.getFields(material_icon__material_icon.MaterialIconComponent.__proto__),
     [_icon]: dart.fieldType(dart.dynamic),
@@ -48,6 +49,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
   (material_icon__material_icon.IconSize.new = function() {
   }).prototype = material_icon__material_icon.IconSize.prototype;
   dart.addTypeTests(material_icon__material_icon.IconSize);
+  dart.setLibraryUri(material_icon__material_icon.IconSize, "package:angular_components/material_icon/material_icon.dart");
   dart.defineLazy(material_icon__material_icon.IconSize, {
     /*material_icon__material_icon.IconSize.defaultSize*/get defaultSize() {
       return "";
@@ -73,7 +75,8 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
   });
   dart.trackLibraries("packages/angular_components/material_icon/material_icon.ddc", {
     "package:angular_components/material_icon/material_icon.dart": material_icon__material_icon
-  }, '{"version":3,"sourceRoot":"","sources":["material_icon.dart"],"names":[],"mappings":";;;;;;;;;;;MAYmB,0CAAa;YAAG,iBACjC,cACA,iBACA,gBACA,iBACA,mBACA,iBACA,aACA,cACA,eACA,aACA;;;;;;aA2CS,KAAa;AACpB,iBAAK,GAAG,KAAK;AACb,oBAAI,0CAAa,WAAS,CAAC,aAAQ,IAAG;AACpC,sBAAQ,eAAa,CAAC,QAAQ;;IAElC;;wDAKuB,WAAK,eAAW,WAAK,YAAQ,WAAK;;;;IAHjD,WAAK;IAOc,cAAQ;EAAC;;;;;;;;;;;;;;;;;EAatC;;;MARe,iDAAW;YAAG;;MACd,4CAAM;YAAG;;MACT,2CAAK;YAAG;;MACR,4CAAM;YAAG;;MACT,2CAAK;YAAG;;MACR,4CAAM;YAAG;;MAET,4CAAM;YAAG,iBAAC,EAAW,EAAE,SAAM,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAM","file":"material_icon.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_icon.dart"],"names":[],"mappings":";;;;;;;;;;;MAYmB,0CAAa;YAAG,iBACjC,cACA,iBACA,gBACA,iBACA,mBACA,iBACA,aACA,cACA,eACA,aACA;;;;;;aA2CS,KAAa;AACpB,iBAAK,GAAG,KAAK;AACb,oBAAI,0CAAa,WAAS,CAAC,aAAQ,IAAG;AACpC,sBAAQ,eAAa,CAAC,QAAQ;;IAElC;;wDAKuB,WAAK,eAAW,WAAK,YAAQ,WAAK;;;;IAHjD,WAAK;IAOc,cAAQ;EAAC;;;;;;;;;;;;;;;;;;EAatC;;;;MARe,iDAAW;YAAG;;MACd,4CAAM;YAAG;;MACT,2CAAK;YAAG;;MACR,4CAAM;YAAG;;MACT,2CAAK;YAAG;;MACR,4CAAM;YAAG;;MAET,4CAAM;YAAG,iBAAC,EAAW,EAAE,SAAM,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAM","file":"material_icon.ddc.js"}');
   // Exports:
   return {
     material_icon__material_icon: material_icon__material_icon

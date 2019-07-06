@@ -12,6 +12,7 @@ define(['dart_sdk', 'packages/quiver/core'], function(dart_sdk, core) {
   (model__ui__display_name.HasUIDisplayName.new = function() {
   }).prototype = model__ui__display_name.HasUIDisplayName.prototype;
   dart.addTypeTests(model__ui__display_name.HasUIDisplayName);
+  dart.setLibraryUri(model__ui__display_name.HasUIDisplayName, "package:angular_components/model/ui/display_name.dart");
   const _is_LabeledValue_default = Symbol('_is_LabeledValue_default');
   model__ui__display_name.LabeledValue$ = dart.generic(T => {
     let LabeledValueOfT = () => (LabeledValueOfT = dart.constFn(model__ui__display_name.LabeledValue$(T)))();
@@ -63,6 +64,7 @@ define(['dart_sdk', 'packages/quiver/core'], function(dart_sdk, core) {
       hashCode: core$.int,
       [$hashCode]: core$.int
     }));
+    dart.setLibraryUri(LabeledValue, "package:angular_components/model/ui/display_name.dart");
     dart.setFieldSignature(LabeledValue, () => ({
       __proto__: dart.getFields(LabeledValue.__proto__),
       value: dart.finalFieldType(T),
@@ -76,7 +78,8 @@ define(['dart_sdk', 'packages/quiver/core'], function(dart_sdk, core) {
   dart.addTypeTests(model__ui__display_name.LabeledValue, _is_LabeledValue_default);
   dart.trackLibraries("packages/angular_components/model/ui/display_name.ddc", {
     "package:angular_components/model/ui/display_name.dart": model__ui__display_name
-  }, '{"version":3,"sourceRoot":"","sources":["display_name.dart"],"names":[],"mappings":";;;;;;;;;;;;EAUA;;;;;;MAMU;;;;;;MAGK;;;;;;oBAMe,KAAO,EAAE,SAAmB;AAAE,mBACtD,uBAAY,CAAC,KAAK,EAAE,SAAS,OAAO,CAAC,KAAK;MAAE;;cAG3B,mBAAa;;;cAGd,aAAK,eAAC,UAAK,iBAAW,kBAAa;MAAU;cAGhD,CAAC;YAAD,CAAC;cACwC,yCAAtD,CAAC,KAAoB,CAAC,cAAc,IAAI,kBAAa,gBAAI,CAAC,MAAM,EAAI,UAAK;;;iCAf1D,KAAU,EAAE,aAAkB;MAAzB,YAAK,GAAL,KAAK;MAAO,oBAAa,GAAb,aAAa;IAAC","file":"display_name.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["display_name.dart"],"names":[],"mappings":";;;;;;;;;;;;EAUA;;;;;;;MAMU;;;;;;MAGK;;;;;;oBAMe,KAAO,EAAE,SAAmB;AAAE,mBACtD,uBAAY,CAAC,KAAK,EAAE,SAAS,OAAO,CAAC,KAAK;MAAE;;cAG3B,mBAAa;;;cAGd,aAAK,eAAC,UAAK,iBAAW,kBAAa;MAAU;cAGhD,CAAC;YAAD,CAAC;cACwC,yCAAtD,CAAC,KAAoB,CAAC,cAAc,IAAI,kBAAa,gBAAI,CAAC,MAAM,EAAI,UAAK;;;iCAf1D,KAAU,EAAE,aAAkB;MAAzB,YAAK,GAAL,KAAK;MAAO,oBAAa,GAAb,aAAa;IAAC","file":"display_name.ddc.js"}');
   // Exports:
   return {
     model__ui__display_name: model__ui__display_name

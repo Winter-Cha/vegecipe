@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     __proto__: dart.getMethods(utils__disposer__disposable_callback.DisposableCallbackBase.__proto__),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(utils__disposer__disposable_callback.DisposableCallbackBase, "package:angular_components/utils/disposer/disposable_callback.dart");
   dart.setFieldSignature(utils__disposer__disposable_callback.DisposableCallbackBase, () => ({
     __proto__: dart.getFields(utils__disposer__disposable_callback.DisposableCallbackBase.__proto__),
     [_callback]: dart.fieldType(core.Function)
@@ -40,6 +41,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     __proto__: dart.getMethods(utils__disposer__disposable_callback.DisposableCallback.__proto__),
     call: dart.fnType(dart.dynamic, [])
   }));
+  dart.setLibraryUri(utils__disposer__disposable_callback.DisposableCallback, "package:angular_components/utils/disposer/disposable_callback.dart");
   const _is_SingleValueCallback_default = Symbol('_is_SingleValueCallback_default');
   utils__disposer__disposable_callback.SingleValueCallback$ = dart.generic(T => {
     class SingleValueCallback extends utils__disposer__disposable_callback.DisposableCallbackBase {
@@ -60,13 +62,15 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       __proto__: dart.getMethods(SingleValueCallback.__proto__),
       call: dart.fnType(dart.dynamic, [core.Object])
     }));
+    dart.setLibraryUri(SingleValueCallback, "package:angular_components/utils/disposer/disposable_callback.dart");
     return SingleValueCallback;
   });
   utils__disposer__disposable_callback.SingleValueCallback = utils__disposer__disposable_callback.SingleValueCallback$();
   dart.addTypeTests(utils__disposer__disposable_callback.SingleValueCallback, _is_SingleValueCallback_default);
   dart.trackLibraries("packages/angular_components/utils/disposer/disposable_callback.ddc", {
     "package:angular_components/utils/disposer/disposable_callback.dart": utils__disposer__disposable_callback
-  }, '{"version":3,"sourceRoot":"","sources":["disposable_callback.dart"],"names":[],"mappings":";;;;;;;;;;AAqBI,qBAAS,GAAG;IACd;;;IALS,eAAS;EAMpB;;;;;;;;;;;;;AAWI,UAAI,eAAS,IAAI,MAAM;AACrB,kCAAS;;IAEb;;0EARmB,QAA0B;;AAC3C,mBAAS,GAAG,QAAQ;EACtB;;;;;;;;;WAeK,KAAO;iBAAL;AACL,YAAI,eAAS,IAAI,MAAM;AACrB,oCAAS,GAAC,KAAK;;MAEnB;;wCARoB,QAAiC;;AACnD,qBAAS,GAAG,QAAQ;IACtB","file":"disposable_callback.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["disposable_callback.dart"],"names":[],"mappings":";;;;;;;;;;AAqBI,qBAAS,GAAG;IACd;;;IALS,eAAS;EAMpB;;;;;;;;;;;;;;AAWI,UAAI,eAAS,IAAI,MAAM;AACrB,kCAAS;;IAEb;;0EARmB,QAA0B;;AAC3C,mBAAS,GAAG,QAAQ;EACtB;;;;;;;;;;WAeK,KAAO;iBAAL;AACL,YAAI,eAAS,IAAI,MAAM;AACrB,oCAAS,GAAC,KAAK;;MAEnB;;wCARoB,QAAiC;;AACnD,qBAAS,GAAG,QAAQ;IACtB","file":"disposable_callback.ddc.js"}');
   // Exports:
   return {
     utils__disposer__disposable_callback: utils__disposer__disposable_callback

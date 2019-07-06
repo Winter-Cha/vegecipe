@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events.tem
   };
   dart.trackLibraries("packages/angular_components/model/a11y/keyboard_handler_mixin.template.ddc", {
     "package:angular_components/model/a11y/keyboard_handler_mixin.template.dart": model__a11y__keyboard_handler_mixin$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["keyboard_handler_mixin.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,uDAAQ;YAAG;;;;;AAEb,kBAAI,uDAAQ,GAAE;AACZ;;AAEF,8DAAW;AAEX,IAAM,uDAAa;EACrB","file":"keyboard_handler_mixin.template.ddc.js"}');
   // Exports:
   return {

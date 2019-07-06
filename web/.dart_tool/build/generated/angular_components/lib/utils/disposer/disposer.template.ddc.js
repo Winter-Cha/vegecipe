@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/disposer/disposer.template.ddc", {
     "package:angular_components/utils/disposer/disposer.template.dart": utils__disposer__disposer$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["disposer.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"disposer.template.ddc.js"}');
   // Exports:
   return {

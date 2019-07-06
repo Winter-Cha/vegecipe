@@ -23,6 +23,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer.template'
   };
   dart.trackLibraries("packages/angular_components/model/ui/has_factory.template.ddc", {
     "package:angular_components/model/ui/has_factory.template.dart": model__ui__has_factory$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_factory.template.dart"],"names":[],"mappings":";;;;;;;;;MAUI,0CAAQ;YAAG;;;;;AAEb,kBAAI,0CAAQ,GAAE;AACZ;;AAEF,iDAAW;AAEX,IAAM,gDAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,gCAAa;EACrB","file":"has_factory.template.ddc.js"}');
   // Exports:
   return {

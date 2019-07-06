@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/xml/src/xml/builder', 'packages/petitparser/src/co
   };
   dart.trackLibraries("packages/xml/xml.ddc", {
     "package:xml/xml.dart": xml
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["xml.dart"],"names":[],"mappings":";;;;;;;;;;;;MAmDa,WAAO;iBAAG,wCAAmB,QAAQ;;;uBAIhC,KAAY;AAC5B,QAAM,SAAS,WAAO,MAAM,CAAC,KAAK;AAClC,kBAAI,MAAM,UAAU,GAAE;AACpB,UAAM,WAAW,sBAAK,gBAAgB,CAAC,KAAK,EAAE,MAAM,SAAS;AAC7D,qBAAM,kDAAkB,CAAC,MAAM,QAAQ,EAAE,QAAQ,QAAC,IAAI,QAAQ,QAAC;;AAEjE,wDAAO,MAAM,MAAM;EACrB","file":"xml.ddc.js"}');
   // Exports:
   return {

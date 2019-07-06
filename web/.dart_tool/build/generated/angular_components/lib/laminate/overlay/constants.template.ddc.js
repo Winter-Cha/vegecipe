@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/laminate/overlay/constants.template.ddc", {
     "package:angular_components/laminate/overlay/constants.template.dart": laminate__overlay__constants$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["constants.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"constants.template.ddc.js"}');
   // Exports:
   return {

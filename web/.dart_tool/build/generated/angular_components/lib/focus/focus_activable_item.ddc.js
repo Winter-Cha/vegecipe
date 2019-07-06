@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus', 'packages/angular
   dart.addTypeTests(focus__focus_activable_item.FocusActivableItemDirective);
   const key = Symbol("FocusActivableItemDirective.key");
   focus__focus_activable_item.FocusActivableItemDirective[dart.implements] = () => [focus__focus_activable_item.FocusableActivateItem];
+  dart.setLibraryUri(focus__focus_activable_item.FocusActivableItemDirective, "package:angular_components/focus/focus_activable_item.dart");
   dart.setFieldSignature(focus__focus_activable_item.FocusActivableItemDirective, () => ({
     __proto__: dart.getFields(focus__focus_activable_item.FocusActivableItemDirective.__proto__),
     key: dart.fieldType(core.String)
@@ -30,9 +31,11 @@ define(['dart_sdk', 'packages/angular_components/focus/focus', 'packages/angular
   }).prototype = focus__focus_activable_item.FocusableActivateItem.prototype;
   dart.addTypeTests(focus__focus_activable_item.FocusableActivateItem);
   focus__focus_activable_item.FocusableActivateItem[dart.implements] = () => [focus__focus_interface.Focusable];
+  dart.setLibraryUri(focus__focus_activable_item.FocusableActivateItem, "package:angular_components/focus/focus_activable_item.dart");
   dart.trackLibraries("packages/angular_components/focus/focus_activable_item.ddc", {
     "package:angular_components/focus/focus_activable_item.dart": focus__focus_activable_item
-  }, '{"version":3,"sourceRoot":"","sources":["focus_activable_item.dart"],"names":[],"mappings":";;;;;;;;;IAsBS;;;;;;;0EAEqB,IAAgB;IAFrC,SAAG;AAEsC,qFAAM,IAAI;EAAC;;;;;;;;;;EAM7D","file":"focus_activable_item.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["focus_activable_item.dart"],"names":[],"mappings":";;;;;;;;;IAsBS;;;;;;;0EAEqB,IAAgB;IAFrC,SAAG;AAEsC,qFAAM,IAAI;EAAC;;;;;;;;;;;EAM7D","file":"focus_activable_item.ddc.js"}');
   // Exports:
   return {
     focus__focus_activable_item: focus__focus_activable_item

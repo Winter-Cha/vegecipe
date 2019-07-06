@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const utils__angular__managed_zone__interface = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/utils/angular/managed_zone/interface.ddc", {
     "package:angular_components/utils/angular/managed_zone/interface.dart": utils__angular__managed_zone__interface
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"interface.ddc.js"}');
   // Exports:
   return {

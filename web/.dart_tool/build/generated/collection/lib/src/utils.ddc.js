@@ -29,6 +29,7 @@ define(['dart_sdk'], function(dart_sdk) {
     Pair.prototype[_is_Pair_default] = true;
     const first$ = Symbol("Pair.first");
     const last$ = Symbol("Pair.last");
+    dart.setLibraryUri(Pair, "package:collection/src/utils.dart");
     dart.setFieldSignature(Pair, () => ({
       __proto__: dart.getFields(Pair.__proto__),
       first: dart.fieldType(E),
@@ -43,7 +44,8 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/collection/src/utils.ddc", {
     "package:collection/src/utils.dart": src__utils
-  }, '{"version":3,"sourceRoot":"","sources":["utils.dart"],"names":[],"mappings":";;;;;;;;;;MAMI;;;;;;MACA;;;;;;;yBAEG,KAAU,EAAE,IAAS;MAAhB,YAAK,GAAL,KAAK;MAAO,WAAI,GAAJ,IAAI;IAAC;;;;;;;;;;;;;;;UAKzB,UAAC,MAAM,EAAE,MAAM,KAAK,mBAAC,MAAM,aAAyB,CAAC,MAAM;EAAC","file":"utils.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["utils.dart"],"names":[],"mappings":";;;;;;;;;;MAMI;;;;;;MACA;;;;;;;yBAEG,KAAU,EAAE,IAAS;MAAhB,YAAK,GAAL,KAAK;MAAO,WAAI,GAAJ,IAAI;IAAC;;;;;;;;;;;;;;;;UAKzB,UAAC,MAAM,EAAE,MAAM,KAAK,mBAAC,MAAM,aAAyB,CAAC,MAAM;EAAC","file":"utils.ddc.js"}');
   // Exports:
   return {
     src__utils: src__utils

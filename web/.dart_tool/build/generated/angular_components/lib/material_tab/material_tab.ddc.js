@@ -14,6 +14,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
   (material_tab__material_tab.Tab.new = function() {
   }).prototype = material_tab__material_tab.Tab.prototype;
   dart.addTypeTests(material_tab__material_tab.Tab);
+  dart.setLibraryUri(material_tab__material_tab.Tab, "package:angular_components/material_tab/material_tab.dart");
   const _uuid = dart.privateName(material_tab__material_tab, "_uuid");
   const _visible = dart.privateName(material_tab__material_tab, "_visible");
   const _active = dart.privateName(material_tab__material_tab, "_active");
@@ -67,6 +68,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     panelId: core.String,
     tabId: core.String
   }));
+  dart.setLibraryUri(material_tab__material_tab.MaterialTabComponent, "package:angular_components/material_tab/material_tab.dart");
   dart.setFieldSignature(material_tab__material_tab.MaterialTabComponent, () => ({
     __proto__: dart.getFields(material_tab__material_tab.MaterialTabComponent.__proto__),
     [_uuid]: dart.finalFieldType(core.String),
@@ -81,7 +83,8 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
   });
   dart.trackLibraries("packages/angular_components/material_tab/material_tab.ddc", {
     "package:angular_components/material_tab/material_tab.dart": material_tab__material_tab
-  }, '{"version":3,"sourceRoot":"","sources":["material_tab.dart"],"names":[],"mappings":";;;;;;;;;;;;;;EAyBA;;;;;;IAoCS;;;;;;;AAIL,mBAAO,GAAG;AACV,oBAAQ,IAAI,CAAC;IACf;;AAIE,mBAAO,GAAG;AACV,oBAAQ,IAAI,CAAC;IACf;;YAGmC,eAAQ,OAAO;;;YAI/B,cAAO;;;YAKJ,qBAAQ,WAAK;IAAC;;YAKhB,mBAAM,WAAK;IAAC;;kEApCX,OAAmB,EAAE,WAAmC;IAFvE,cAAQ,GAAG,kCAAgC,QAAO;IASjD,WAAK;IAoBP,aAAO,GAAG;IA1BT,WAAK,GAAG,CAAC,WAAW,WAAX,WAAW,OAAI,gEAA8B,UAAU;AAChE,6EAAM,OAAO;EAAC;;;;;;;;;;;;;;;;;;;;;;;;MAPP,wDAAQ;YAAG","file":"material_tab.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_tab.dart"],"names":[],"mappings":";;;;;;;;;;;;;;EAyBA;;;;;;;IAoCS;;;;;;;AAIL,mBAAO,GAAG;AACV,oBAAQ,IAAI,CAAC;IACf;;AAIE,mBAAO,GAAG;AACV,oBAAQ,IAAI,CAAC;IACf;;YAGmC,eAAQ,OAAO;;;YAI/B,cAAO;;;YAKJ,qBAAQ,WAAK;IAAC;;YAKhB,mBAAM,WAAK;IAAC;;kEApCX,OAAmB,EAAE,WAAmC;IAFvE,cAAQ,GAAG,kCAAgC,QAAO;IASjD,WAAK;IAoBP,aAAO,GAAG;IA1BT,WAAK,GAAG,CAAC,WAAW,WAAX,WAAW,OAAI,gEAA8B,UAAU;AAChE,6EAAM,OAAO;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;MAPP,wDAAQ;YAAG","file":"material_tab.ddc.js"}');
   // Exports:
   return {
     material_tab__material_tab: material_tab__material_tab

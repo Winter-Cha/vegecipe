@@ -180,6 +180,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     yes: async.Stream$(html.UIEvent),
     no: async.Stream$(html.UIEvent)
   }));
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.MaterialYesNoButtonsComponent, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.setFieldSignature(material_yes_no_buttons__material_yes_no_buttons.MaterialYesNoButtonsComponent, () => ({
     __proto__: dart.getFields(material_yes_no_buttons__material_yes_no_buttons.MaterialYesNoButtonsComponent.__proto__),
     [_yes]: dart.finalFieldType(StreamControllerOfUIEvent()),
@@ -216,6 +217,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     yesNo.noText = material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective._msgCancel;
   }).prototype = material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective.prototype;
   dart.addTypeTests(material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective);
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.defineLazy(material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective, {
     /*material_yes_no_buttons__material_yes_no_buttons.MaterialSaveCancelButtonsDirective._msgSave*/get _msgSave() {
       return intl$.Intl.message("Save", {desc: "Text on save button.", meaning: "Text on save button."});
@@ -230,6 +232,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     yesNo.yesText = material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective._msgSubmit;
   }).prototype = material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective.prototype;
   dart.addTypeTests(material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective);
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.defineLazy(material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective, {
     /*material_yes_no_buttons__material_yes_no_buttons.MaterialSubmitCancelButtonsDirective._msgSubmit*/get _msgSubmit() {
       return intl$.Intl.message("Submit", {desc: "Text on submit button.", meaning: "Text on submit button."});
@@ -256,6 +259,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     __proto__: dart.getMethods(material_yes_no_buttons__material_yes_no_buttons.BoundaryAwareKeyUpDirective.__proto__),
     ngOnDestroy: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.BoundaryAwareKeyUpDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.setFieldSignature(material_yes_no_buttons__material_yes_no_buttons.BoundaryAwareKeyUpDirective, () => ({
     __proto__: dart.getFields(material_yes_no_buttons__material_yes_no_buttons.BoundaryAwareKeyUpDirective.__proto__),
     [_subscription]: dart.fieldType(async.StreamSubscription)
@@ -273,6 +277,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
   }).prototype = material_yes_no_buttons__material_yes_no_buttons.KeyUpBoundaryDirective.prototype;
   dart.addTypeTests(material_yes_no_buttons__material_yes_no_buttons.KeyUpBoundaryDirective);
   const keyUpStream = Symbol("KeyUpBoundaryDirective.keyUpStream");
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.KeyUpBoundaryDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.setFieldSignature(material_yes_no_buttons__material_yes_no_buttons.KeyUpBoundaryDirective, () => ({
     __proto__: dart.getFields(material_yes_no_buttons__material_yes_no_buttons.KeyUpBoundaryDirective.__proto__),
     keyUpStream: dart.finalFieldType(StreamOfKeyboardEvent())
@@ -306,6 +311,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     __proto__: dart.getGetters(material_yes_no_buttons__material_yes_no_buttons.EscapeCancelsDirective.__proto__),
     noButton: material_button__material_button.MaterialButtonComponent
   }));
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.EscapeCancelsDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.setFieldSignature(material_yes_no_buttons__material_yes_no_buttons.EscapeCancelsDirective, () => ({
     __proto__: dart.getFields(material_yes_no_buttons__material_yes_no_buttons.EscapeCancelsDirective.__proto__),
     [_yesNo]: dart.finalFieldType(material_yes_no_buttons__material_yes_no_buttons.MaterialYesNoButtonsComponent)
@@ -352,6 +358,7 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
     yesButton: material_button__material_button.MaterialButtonComponent,
     noButton: material_button__material_button.MaterialButtonComponent
   }));
+  dart.setLibraryUri(material_yes_no_buttons__material_yes_no_buttons.EnterAcceptsDirective, "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart");
   dart.setFieldSignature(material_yes_no_buttons__material_yes_no_buttons.EnterAcceptsDirective, () => ({
     __proto__: dart.getFields(material_yes_no_buttons__material_yes_no_buttons.EnterAcceptsDirective.__proto__),
     [_yesNo]: dart.finalFieldType(material_yes_no_buttons__material_yes_no_buttons.MaterialYesNoButtonsComponent),
@@ -359,7 +366,8 @@ define(['dart_sdk', 'packages/angular_components/interfaces/has_disabled', 'pack
   }));
   dart.trackLibraries("packages/angular_components/material_yes_no_buttons/material_yes_no_buttons.ddc", {
     "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.dart": material_yes_no_buttons__material_yes_no_buttons
-  }, '{"version":3,"sourceRoot":"","sources":["material_yes_no_buttons.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;YA2C6B,WAAI,OAAO;;;YAOZ,UAAG,OAAO;;IAO7B;;;;;;IAMA;;;;;;IAMF;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAUA;;;;;;IAOE;;;;;;IAOA;;;;;;IAMF;;;;;;IAMA;;;;;;IAGmB;;;;;;IAGA;;;;;;UAEb,KAAa;AACtB,gBAAI,IAAI,CAAC,KAAK;IAChB;SAEU,KAAa;AACrB,eAAG,IAAI,CAAC,KAAK;IACf;;;IArHM,UAAI,GAAG,qCAAmC;IAO1C,SAAG,GAAG,qCAAmC;IAMxC,aAAO,GAAG,sFAAO;IAMjB,YAAM,GAAG,qFAAM;IAMjB,oBAAc,GAAG;IAMjB,YAAM,GAAG;IAMT,eAAS,GAAG;IAMZ,cAAQ,GAAG;IAMX,iBAAW,GAAG;IAMd,kBAAY,GAAG;IAMf,gBAAU,GAAG;IAMb,iBAAW,GAAG;IAUd,aAAO,GAAG;IAOR,kBAAY;IAOZ,iBAAW;IAMb,kBAAY,GAAG;IAMf,iBAAW,GAAG;IAGK,eAAS;IAGT,cAAQ;EAmBlC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MATe,sFAAO;YAAG,WAAI,QAAQ,CAAC,cAC1B,iBACA,gCACG;;MAEA,qFAAM;YAAG,WAAI,QAAQ,CAAC,aACzB,gBACA,+BACG;;;;sGASsB,KAAmC;AACpE,SAAK,QAAQ,GAAG,4FAAQ;AACxB,SAAK,OAAO,GAAG,8FAAU;EAC3B;;;MAEa,4FAAQ;YAAG,WAAI,QAAQ,CAAC,eAC3B,iCAAiC;;MAE9B,8FAAU;YAAG,WAAI,QAAQ,CAAC,iBAC7B,mCAAmC;;;;wGAWR,KAAmC;AAClE,mHAAM,KAAK;AACf,SAAK,QAAQ,GAAG,gGAAU;EAC5B;;;MAEa,gGAAU;YAAG,WAAI,QAAQ,CAAC,iBAC7B,mCAAmC;;;;;;;;AAoB3C,yBAAa,OAAO;AACpB,yBAAa,GAAG;IAClB;;+FAXI,OAAe,EAAE,QAA2C;IAH7C,mBAAa;AAI9B,YACI,QAAQ,kBAAR,QAAQ,YAAa;QADG,8BACC,YAAO,WAAW,WAAW,CAAC,OAAO;AAClE,uBAAa,GACT,WAAW,MAAM,CAAC,iCAAgB,QAAQ,CAAC,iCAAgB;EACjE;;;;;;;;;;;;IAyB4B;;;;;;;0FAEL,OAAe;IAChC,iBAAW,GAAG,YAAO,WAAW,WAAW,CAAC,OAAO;EAAC;;;;;;;;;;YAclB,aAAM,SAAS;;uBAOjC,KAAmB;AACvC,UAAI,KAAK,QAAQ,KAAI,YAAO,IAAI,EAAE,MAAO;AAEzC,UAAI,aAAQ,IAAI,kBAAQ,aAAQ,SAAS,GAAE,MAAO;AAElD,YAAO;IACT;uBAGsB,KAAmB;YAAK,aAAM,KAAK,CAAC,KAAK;IAAC;;iGAb/C,OAAe,EAAE,QAA2C;IAApE,YAAM;AACT,qGAAM,OAAO,EAAE,QAAQ;EAAC;;;;;;;;;;;;;;;;;;YA0BW,aAAM,UAAU;;;YACjB,aAAM,SAAS;;IAQlD;;;;;;uBAGiB,KAAmB;AACvC,qBAAK,iBAAY,GAAE,MAAO;AAC1B,UAAI,KAAK,QAAQ,KAAI,YAAO,MAAM,EAAE,MAAO;AAE3C,UAAI,cAAS,IAAI,kBAAQ,cAAS,SAAS,GAAE,MAAO;AAGpD,UAAI,aAAQ,IAAI,kBAAQ,aAAQ,QAAQ,GAAE,MAAO;AAEjD,YAAO;IACT;uBAGsB,KAAmB;YAAK,aAAM,MAAM,CAAC,KAAK;IAAC;;gGArBhD,OAAe,EAAE,QAA2C;IAKxE,kBAAY,GAAG;IALX,YAAM;AACT,oGAAM,OAAO,EAAE,QAAQ;EAAC","file":"material_yes_no_buttons.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_yes_no_buttons.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;YA2C6B,WAAI,OAAO;;;YAOZ,UAAG,OAAO;;IAO7B;;;;;;IAMA;;;;;;IAMF;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAMA;;;;;;IAUA;;;;;;IAOE;;;;;;IAOA;;;;;;IAMF;;;;;;IAMA;;;;;;IAGmB;;;;;;IAGA;;;;;;UAEb,KAAa;AACtB,gBAAI,IAAI,CAAC,KAAK;IAChB;SAEU,KAAa;AACrB,eAAG,IAAI,CAAC,KAAK;IACf;;;IArHM,UAAI,GAAG,qCAAmC;IAO1C,SAAG,GAAG,qCAAmC;IAMxC,aAAO,GAAG,sFAAO;IAMjB,YAAM,GAAG,qFAAM;IAMjB,oBAAc,GAAG;IAMjB,YAAM,GAAG;IAMT,eAAS,GAAG;IAMZ,cAAQ,GAAG;IAMX,iBAAW,GAAG;IAMd,kBAAY,GAAG;IAMf,gBAAU,GAAG;IAMb,iBAAW,GAAG;IAUd,aAAO,GAAG;IAOR,kBAAY;IAOZ,iBAAW;IAMb,kBAAY,GAAG;IAMf,iBAAW,GAAG;IAGK,eAAS;IAGT,cAAQ;EAmBlC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MATe,sFAAO;YAAG,WAAI,QAAQ,CAAC,cAC1B,iBACA,gCACG;;MAEA,qFAAM;YAAG,WAAI,QAAQ,CAAC,aACzB,gBACA,+BACG;;;;sGASsB,KAAmC;AACpE,SAAK,QAAQ,GAAG,4FAAQ;AACxB,SAAK,OAAO,GAAG,8FAAU;EAC3B;;;;MAEa,4FAAQ;YAAG,WAAI,QAAQ,CAAC,eAC3B,iCAAiC;;MAE9B,8FAAU;YAAG,WAAI,QAAQ,CAAC,iBAC7B,mCAAmC;;;;wGAWR,KAAmC;AAClE,mHAAM,KAAK;AACf,SAAK,QAAQ,GAAG,gGAAU;EAC5B;;;;MAEa,gGAAU;YAAG,WAAI,QAAQ,CAAC,iBAC7B,mCAAmC;;;;;;;;AAoB3C,yBAAa,OAAO;AACpB,yBAAa,GAAG;IAClB;;+FAXI,OAAe,EAAE,QAA2C;IAH7C,mBAAa;AAI9B,YACI,QAAQ,kBAAR,QAAQ,YAAa;QADG,8BACC,YAAO,WAAW,WAAW,CAAC,OAAO;AAClE,uBAAa,GACT,WAAW,MAAM,CAAC,iCAAgB,QAAQ,CAAC,iCAAgB;EACjE;;;;;;;;;;;;;IAyB4B;;;;;;;0FAEL,OAAe;IAChC,iBAAW,GAAG,YAAO,WAAW,WAAW,CAAC,OAAO;EAAC;;;;;;;;;;;YAclB,aAAM,SAAS;;uBAOjC,KAAmB;AACvC,UAAI,KAAK,QAAQ,KAAI,YAAO,IAAI,EAAE,MAAO;AAEzC,UAAI,aAAQ,IAAI,kBAAQ,aAAQ,SAAS,GAAE,MAAO;AAElD,YAAO;IACT;uBAGsB,KAAmB;YAAK,aAAM,KAAK,CAAC,KAAK;IAAC;;iGAb/C,OAAe,EAAE,QAA2C;IAApE,YAAM;AACT,qGAAM,OAAO,EAAE,QAAQ;EAAC;;;;;;;;;;;;;;;;;;;YA0BW,aAAM,UAAU;;;YACjB,aAAM,SAAS;;IAQlD;;;;;;uBAGiB,KAAmB;AACvC,qBAAK,iBAAY,GAAE,MAAO;AAC1B,UAAI,KAAK,QAAQ,KAAI,YAAO,MAAM,EAAE,MAAO;AAE3C,UAAI,cAAS,IAAI,kBAAQ,cAAS,SAAS,GAAE,MAAO;AAGpD,UAAI,aAAQ,IAAI,kBAAQ,aAAQ,QAAQ,GAAE,MAAO;AAEjD,YAAO;IACT;uBAGsB,KAAmB;YAAK,aAAM,MAAM,CAAC,KAAK;IAAC;;gGArBhD,OAAe,EAAE,QAA2C;IAKxE,kBAAY,GAAG;IALX,YAAM;AACT,oGAAM,OAAO,EAAE,QAAQ;EAAC","file":"material_yes_no_buttons.ddc.js"}');
   // Exports:
   return {
     material_yes_no_buttons__material_yes_no_buttons: material_yes_no_buttons__material_yes_no_buttons

@@ -32,6 +32,7 @@ define(['dart_sdk', 'packages/angular_components/utils/angular/managed_zone/angu
   };
   dart.trackLibraries("packages/angular_components/utils/angular/managed_zone/angular_2.template.ddc", {
     "package:angular_components/utils/angular/managed_zone/angular_2.template.dart": utils__angular__managed_zone__angular_2$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["angular_2.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MAYI,2DAAQ;YAAG;;;;;;;AAEb,kBAAI,2DAAQ,GAAE;AACZ;;AAEF,kEAAW;AAEX,IAAO,kCAAe,CAAC,0EAAmB,EAAE,QAAC,EAAa,QAAK,+DAAmB,CAAC,EAAE;AACrF,IAAO,uCAAoB,CAAC,0EAAmB,EAAE,sCAC/C,oCAAK,8CAAM;AAEb,IAAM,2BAAa;AACnB,IAAM,wEAAa;AACnB,IAAM,wEAAa;EACrB","file":"angular_2.template.ddc.js"}');
   // Exports:
   return {

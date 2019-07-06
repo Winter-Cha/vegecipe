@@ -13,6 +13,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (material_list__material_list_size.MaterialListSize.new = function() {
   }).prototype = material_list__material_list_size.MaterialListSize.prototype;
   dart.addTypeTests(material_list__material_list_size.MaterialListSize);
+  dart.setLibraryUri(material_list__material_list_size.MaterialListSize, "package:angular_components/material_list/material_list_size.dart");
   dart.defineLazy(material_list__material_list_size.MaterialListSize, {
     /*material_list__material_list_size.MaterialListSize.auto*/get auto() {
       return "auto";
@@ -35,7 +36,8 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_list/material_list_size.ddc", {
     "package:angular_components/material_list/material_list_size.dart": material_list__material_list_size
-  }, '{"version":3,"sourceRoot":"","sources":["material_list_size.dart"],"names":[],"mappings":";;;;;;;;;YAcM,qCAAe,MAAI,EAAE,SAAM,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAM;IAAC;;;EAChE;;;MARsB,uDAAI;YAAG;;MACP,yDAAM;YAAG;;MACT,wDAAK;YAAG;;MACR,yDAAM;YAAG;;MACT,wDAAK;YAAG;;MACR,yDAAM;YAAG","file":"material_list_size.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_list_size.dart"],"names":[],"mappings":";;;;;;;;;YAcM,qCAAe,MAAI,EAAE,SAAM,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAM;IAAC;;;EAChE;;;;MARsB,uDAAI;YAAG;;MACP,yDAAM;YAAG;;MACT,wDAAK;YAAG;;MACR,yDAAM;YAAG;;MACT,wDAAK;YAAG;;MACR,yDAAM;YAAG","file":"material_list_size.ddc.js"}');
   // Exports:
   return {
     material_list__material_list_size: material_list__material_list_size

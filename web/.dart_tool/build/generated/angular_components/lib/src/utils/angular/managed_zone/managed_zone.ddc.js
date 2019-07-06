@@ -14,6 +14,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   }).prototype = src__utils__angular__managed_zone__managed_zone.ManagedZone.prototype;
   dart.addTypeTests(src__utils__angular__managed_zone__managed_zone.ManagedZone);
   src__utils__angular__managed_zone__managed_zone.ManagedZone[dart.implements] = () => [utils__disposer__disposer.Disposable];
+  dart.setLibraryUri(src__utils__angular__managed_zone__managed_zone.ManagedZone, "package:angular_components/src/utils/angular/managed_zone/managed_zone.dart");
   const _onTurnDoneController = dart.privateName(src__utils__angular__managed_zone__managed_zone, "_onTurnDoneController");
   const _onTurnStartController = dart.privateName(src__utils__angular__managed_zone__managed_zone, "_onTurnStartController");
   const _onEventDoneController = dart.privateName(src__utils__angular__managed_zone__managed_zone, "_onEventDoneController");
@@ -107,6 +108,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     onTurnDone: async.Stream,
     onEventDone: async.Stream
   }));
+  dart.setLibraryUri(src__utils__angular__managed_zone__managed_zone.ManagedZoneBase, "package:angular_components/src/utils/angular/managed_zone/managed_zone.dart");
   dart.setFieldSignature(src__utils__angular__managed_zone__managed_zone.ManagedZoneBase, () => ({
     __proto__: dart.getFields(src__utils__angular__managed_zone__managed_zone.ManagedZoneBase.__proto__),
     [_onTurnDoneController]: dart.fieldType(async.StreamController),
@@ -117,7 +119,8 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   dart.defineExtensionMethods(src__utils__angular__managed_zone__managed_zone.ManagedZoneBase, ['toString']);
   dart.trackLibraries("packages/angular_components/src/utils/angular/managed_zone/managed_zone.ddc", {
     "package:angular_components/src/utils/angular/managed_zone/managed_zone.dart": src__utils__angular__managed_zone__managed_zone
-  }, '{"version":3,"sourceRoot":"","sources":["managed_zone.dart"],"names":[],"mappings":";;;;;;;;;;;;;EA6DA;;;;;;;;sBAYyB,KAAa;AAClC,sBAAU,GAAG;AACb,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,IAAI,CAAC;;IAE/B;qBAEsB,KAAa;AACjC,sBAAU,GAAG;AACb,UAAI,2BAAqB,IAAI,MAAM;AACjC,mCAAqB,IAAI,CAAC;;IAE9B;sBAEuB,KAAa;AAClC,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,IAAI,CAAC;;IAE/B;;YAGsB,iBAAU;;eAGhB;;yBAGQ,UAAI,QAAQ,EAAI,cAAS;;;yBAGzB,UAAI,QAAQ,EAAI,cAAS;;;AAI/C,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,GAAG,gCAA0B,QAAO;;AAE5D,YAAO,6BAAsB,OAAO;IACtC;;AAIE,UAAI,2BAAqB,IAAI,MAAM;AACjC,mCAAqB,GAAG,gCAA0B,QAAO;;AAE3D,YAAO,4BAAqB,OAAO;IACrC;;AAIE,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,GAAG,gCAA0B,QAAO;;AAE5D,YAAO,6BAAsB,OAAO;IACtC;iBAGe,EAAM;AACnB,oBAAI,gBAAW,GAAE;AACf,cAAO,GAAE;aACJ;AACL,cAAO,eAAS,IAAI,IAAC,EAAE;;IAE3B;kBAGgB,EAAM;AACpB,oBAAI,gBAAW,GAAE;AACf,cAAO,GAAE;aACJ;AACL,cAAO,eAAS,IAAI,IAAC,EAAE;;IAE3B;;YAII,AAAe,+BACf,uCAAC,eAAe,gBAAW,EAAE,eAAe,gBAAW,aAAU;IAAE;;;IArFtD,2BAAqB;IACrB,4BAAsB;IACtB,4BAAsB;IAIlC,gBAAU,GAAG;EAgFpB","file":"managed_zone.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["managed_zone.dart"],"names":[],"mappings":";;;;;;;;;;;;;EA6DA;;;;;;;;;sBAYyB,KAAa;AAClC,sBAAU,GAAG;AACb,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,IAAI,CAAC;;IAE/B;qBAEsB,KAAa;AACjC,sBAAU,GAAG;AACb,UAAI,2BAAqB,IAAI,MAAM;AACjC,mCAAqB,IAAI,CAAC;;IAE9B;sBAEuB,KAAa;AAClC,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,IAAI,CAAC;;IAE/B;;YAGsB,iBAAU;;eAGhB;;yBAGQ,UAAI,QAAQ,EAAI,cAAS;;;yBAGzB,UAAI,QAAQ,EAAI,cAAS;;;AAI/C,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,GAAG,gCAA0B,QAAO;;AAE5D,YAAO,6BAAsB,OAAO;IACtC;;AAIE,UAAI,2BAAqB,IAAI,MAAM;AACjC,mCAAqB,GAAG,gCAA0B,QAAO;;AAE3D,YAAO,4BAAqB,OAAO;IACrC;;AAIE,UAAI,4BAAsB,IAAI,MAAM;AAClC,oCAAsB,GAAG,gCAA0B,QAAO;;AAE5D,YAAO,6BAAsB,OAAO;IACtC;iBAGe,EAAM;AACnB,oBAAI,gBAAW,GAAE;AACf,cAAO,GAAE;aACJ;AACL,cAAO,eAAS,IAAI,IAAC,EAAE;;IAE3B;kBAGgB,EAAM;AACpB,oBAAI,gBAAW,GAAE;AACf,cAAO,GAAE;aACJ;AACL,cAAO,eAAS,IAAI,IAAC,EAAE;;IAE3B;;YAII,AAAe,+BACf,uCAAC,eAAe,gBAAW,EAAE,eAAe,gBAAW,aAAU;IAAE;;;IArFtD,2BAAqB;IACrB,4BAAsB;IACtB,4BAAsB;IAIlC,gBAAU,GAAG;EAgFpB","file":"managed_zone.ddc.js"}');
   // Exports:
   return {
     src__utils__angular__managed_zone__managed_zone: src__utils__angular__managed_zone__managed_zone

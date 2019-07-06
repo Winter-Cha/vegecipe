@@ -73,6 +73,7 @@ define(['dart_sdk', 'packages/core/core', 'packages/web/src/app_bar/app_bar_comp
     theaterDropdownVisible: core$.bool,
     theaterDropdownActive: core$.bool
   }));
+  dart.setLibraryUri(app_component.AppComponent, "package:web/app_component.dart");
   dart.setFieldSignature(app_component.AppComponent, () => ({
     __proto__: dart.getFields(app_component.AppComponent.__proto__),
     [_store]: dart.finalFieldType(StoreOfAppState()),
@@ -82,6 +83,7 @@ define(['dart_sdk', 'packages/core/core', 'packages/web/src/app_bar/app_bar_comp
   }));
   dart.trackLibraries("packages/web/app_component.ddc", {
     "package:web/app_component.dart": app_component
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["app_component.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;IA2BmB;;;;;;;;gBAGkB,wBAAkB;;eAAa;IAAI;;;gBACpC,wBAAkB;;eAAiB;IAAK;;YAGvD,aAAM,SAAS,KAAC,kDAAU;IAAG;;YAGnB,cAAQ,KAAK,UAAQ,IAAI,CAAC;IAAS;;AAEnC;AAC3B,uBAAK,0BAAqB,GAAE;AAC1B,kCAAkB,IAAG,MAAM,oFAAyB,YAAY,CAC9D,aAAO,EACP,qBAAgB,eACJ;eAET;AACL,kCAAkB,eAAe;;MAErC;;;;IAtBiB,sBAAgB;IAEP,wBAAkB;IAP1B,YAAM;IAAO,aAAO;EAAC","file":"app_component.ddc.js"}');
   // Exports:
   return {

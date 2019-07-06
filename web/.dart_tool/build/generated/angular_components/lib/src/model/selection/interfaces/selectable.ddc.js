@@ -17,6 +17,7 @@ define(['dart_sdk'], function(dart_sdk) {
     this.index = x;
   }).prototype = src__model__selection__interfaces__selectable.SelectableOption.prototype;
   dart.addTypeTests(src__model__selection__interfaces__selectable.SelectableOption);
+  dart.setLibraryUri(src__model__selection__interfaces__selectable.SelectableOption, "package:angular_components/src/model/selection/interfaces/selectable.dart");
   dart.setFieldSignature(src__model__selection__interfaces__selectable.SelectableOption, () => ({
     __proto__: dart.getFields(src__model__selection__interfaces__selectable.SelectableOption.__proto__),
     index: dart.finalFieldType(core.int)
@@ -76,6 +77,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getMethods(Selectable.__proto__),
       getSelectable: dart.fnType(src__model__selection__interfaces__selectable.SelectableOption, [core.Object])
     }));
+    dart.setLibraryUri(Selectable, "package:angular_components/src/model/selection/interfaces/selectable.dart");
     return Selectable;
   });
   src__model__selection__interfaces__selectable.Selectable = src__model__selection__interfaces__selectable.Selectable$();
@@ -92,6 +94,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = HasSelectionRationale.prototype;
     dart.addTypeTests(HasSelectionRationale);
     HasSelectionRationale.prototype[_is_HasSelectionRationale_default] = true;
+    dart.setLibraryUri(HasSelectionRationale, "package:angular_components/src/model/selection/interfaces/selectable.dart");
     return HasSelectionRationale;
   });
   src__model__selection__interfaces__selectable.HasSelectionRationale = src__model__selection__interfaces__selectable.HasSelectionRationale$();
@@ -115,13 +118,15 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getMethods(_NullHasSelectionRationale.__proto__),
       getSelectableRationale: dart.fnType(core.String, [core.Object], [core.bool])
     }));
+    dart.setLibraryUri(_NullHasSelectionRationale, "package:angular_components/src/model/selection/interfaces/selectable.dart");
     return _NullHasSelectionRationale;
   });
   src__model__selection__interfaces__selectable._NullHasSelectionRationale = src__model__selection__interfaces__selectable._NullHasSelectionRationale$();
   dart.addTypeTests(src__model__selection__interfaces__selectable._NullHasSelectionRationale, _is__NullHasSelectionRationale_default);
   dart.trackLibraries("packages/angular_components/src/model/selection/interfaces/selectable.ddc", {
     "package:angular_components/src/model/selection/interfaces/selectable.dart": src__model__selection__interfaces__selectable
-  }, '{"version":3,"sourceRoot":"","sources":["selectable.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+BA+BI,YAAmB,EACnB,IAAM,EACN,MAAuB,EACvB,yBAA8B;AAE9B,4EAAI,YAAY,GAAmB;AACjC,gBAAO,AAAU,aAAY,cAAc,CAAC,IAAI,KAAG,MAAM;;AAE3D,cAAO,0BAAyB;MAClC;4BAIE,YAAmB,EACnB,IAAM,EACN,yBAAwE;kDAAvD,4BAA4B,8DAAgB,WAAW;AAExE,4EAAI,YAAY,GAAmB;AACjC,gBAAO,aAAY,cAAc,CAAC,IAAI;;AAExC,cAAO,0BAAyB;MAClC;sCAIE,YAAmB,EACnB,yBAAqC;kDAAhC,4BAA4B;AAEjC,YAAiB,eAAgB,CAAC,IAAK,yBAAyB;gBAA/C;AACjB,4EAAI,YAAY,GAAmB;AACjC,sBAAY,GAAG,QAAC,MAAM,IACb,AACL,YAAY,cAAc,CAAC,MAAM,MACjC,8DAAgB,WAAW;;AAIjC,cAAO,aAAY;MACrB;+BAIE,KAAY,EACZ,IAAM,EACN,yBAAqC;kDAAhC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,WAAW,EAC3B,yBAAyB;MAE7B;6BAIE,KAAY,EACZ,IAAM,EACN,yBAAsC;kDAAjC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,SAAS,EACzB,yBAAyB;MAE7B;2BAIE,KAAY,EACZ,IAAM,EACN,yBAAsC;kDAAjC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,OAAO,EACvB,yBAAyB;MAE7B;oBAG+B,IAAM;iBAAJ;cAAS,+DAAgB,WAAW;;;;IACvE;;;;;;;;;;;;;;;;AAc+C;MAA6B;;;;;;;;;;;;;;6BA2B5C,IAAM,EAAG,YAAyB;iBAAhC;qCAAY,eAAe;cAAW;MAAI;;;IAHxC","file":"selectable.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["selectable.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+BA+BI,YAAmB,EACnB,IAAM,EACN,MAAuB,EACvB,yBAA8B;AAE9B,4EAAI,YAAY,GAAmB;AACjC,gBAAO,AAAU,aAAY,cAAc,CAAC,IAAI,KAAG,MAAM;;AAE3D,cAAO,0BAAyB;MAClC;4BAIE,YAAmB,EACnB,IAAM,EACN,yBAAwE;kDAAvD,4BAA4B,8DAAgB,WAAW;AAExE,4EAAI,YAAY,GAAmB;AACjC,gBAAO,aAAY,cAAc,CAAC,IAAI;;AAExC,cAAO,0BAAyB;MAClC;sCAIE,YAAmB,EACnB,yBAAqC;kDAAhC,4BAA4B;AAEjC,YAAiB,eAAgB,CAAC,IAAK,yBAAyB;gBAA/C;AACjB,4EAAI,YAAY,GAAmB;AACjC,sBAAY,GAAG,QAAC,MAAM,IACb,AACL,YAAY,cAAc,CAAC,MAAM,MACjC,8DAAgB,WAAW;;AAIjC,cAAO,aAAY;MACrB;+BAIE,KAAY,EACZ,IAAM,EACN,yBAAqC;kDAAhC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,WAAW,EAC3B,yBAAyB;MAE7B;6BAIE,KAAY,EACZ,IAAM,EACN,yBAAsC;kDAAjC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,SAAS,EACzB,yBAAyB;MAE7B;2BAIE,KAAY,EACZ,IAAM,EACN,yBAAsC;kDAAjC,4BAA4B;AAEjC,cAAO,wEAAc,IACnB,KAAK,EACL,IAAI,EACJ,8DAAgB,OAAO,EACvB,yBAAyB;MAE7B;oBAG+B,IAAM;iBAAJ;cAAS,+DAAgB,WAAW;;;;IACvE;;;;;;;;;;;;;;;;;AAc+C;MAA6B;;;;;;;;;;;;;;;6BA2B5C,IAAM,EAAG,YAAyB;iBAAhC;qCAAY,eAAe;cAAW;MAAI;;;IAHxC","file":"selectable.ddc.js"}');
   // Exports:
   return {
     src__model__selection__interfaces__selectable: src__model__selection__interfaces__selectable

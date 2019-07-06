@@ -68,9 +68,9 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       t == null ? utils__browser__events__events.enableNewTriggerLogic = true : t;
     }
     controller = StreamControllerOfEvent().broadcast({sync: true, onListen: dart.fn(() => {
-        if (!(clickListener == null)) dart.assertFailed();
-        if (!(mouseDownListener == null)) dart.assertFailed();
-        if (!(mouseUpListener == null)) dart.assertFailed();
+        if (!(clickListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 76, 16, "clickListener == null");
+        if (!(mouseDownListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 77, 16, "mouseDownListener == null");
+        if (!(mouseUpListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 78, 16, "mouseUpListener == null");
         let lastEvent = null;
         let lastDownEvent = null;
         listener = dart.fn(e => {
@@ -127,7 +127,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     return controller.stream;
   };
   utils__browser__events__events.onResize = function(element) {
-    if (!dart.test(utils__browser__feature_detector__feature_detector.supportsResizeObserver)) dart.assertFailed("ResizeObserver support is required");
+    if (!dart.test(utils__browser__feature_detector__feature_detector.supportsResizeObserver)) dart.assertFailed("ResizeObserver support is required", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 169, 10, "supportsResizeObserver");
     let controller = null;
     let observer = null;
     controller = StreamControllerOfRectangleOfnum().broadcast({sync: true, onListen: dart.fn(() => {
@@ -195,6 +195,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
   };
   dart.trackLibraries("packages/angular_components/utils/browser/events/events.ddc", {
     "package:angular_components/utils/browser/events/events.dart": utils__browser__events__events
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["events.dart"],"names":[],"mappings":"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","file":"events.ddc.js"}');
   // Exports:
   return {

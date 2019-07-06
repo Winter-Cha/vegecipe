@@ -82,6 +82,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer.templat
     "package:angular_components/utils/angular/scroll_host/interface.template.dart": utils__angular__scroll_host__interface$46template,
     "package:angular_components/src/utils/angular/scroll_host/scroll_host_event_impl.template.dart": src__utils__angular__scroll_host__scroll_host_event_impl$46template,
     "package:angular_components/src/utils/angular/scroll_host/gestures.template.dart": src__utils__angular__scroll_host__gestures$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["../../../src/utils/angular/scroll_host/scroll_observer.template.dart","interface.template.dart","../../../src/utils/angular/scroll_host/scroll_host_event_impl.template.dart","../../../src/utils/angular/scroll_host/gestures.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;MASI,qEAAQ;YAAG;;;;;AAEb,kBAAI,qEAAQ,GAAE;AACZ;;AAEF,4EAAW;AAEX,IAAM,+DAAa;AACnB,IAAM,kDAAa;EACrB;;MCRI,0DAAQ;YAAG;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAM,mEAAa;AACnB,IAAM,gFAAa;AACnB,IAAM,0EAAa;EACrB;;MCZI,4EAAQ;YAAG;;;;;AAEb,kBAAI,4EAAQ,GAAE;AACZ;;AAEF,mFAAW;AAEX,IAAM,+DAAa;EACrB;;MCHI,8DAAQ;YAAG;;;;;;;AAEb,kBAAI,8DAAQ,GAAE;AACZ;;AAEF,qEAAW;AAEX,IAAO,kCAAe,CAAC,gFAAsB,EAAE,QAAC,EAAY,QAAK,qEAAsB,CAAC,EAAE;AAC1F,IAAO,uCAAoB,CAAC,gFAAsB,EAAE,sCAClD,oCAAK,0BAAK;AAEZ,IAAM,gCAAa;AACnB,IAAM,iFAAa;AACnB,IAAM,gFAAa;AACnB,IAAM,kDAAa;EACrB","file":"interface.template.ddc.js"}');
   // Exports:
   return {

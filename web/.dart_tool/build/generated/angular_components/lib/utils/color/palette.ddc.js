@@ -13,6 +13,7 @@ define(['dart_sdk', 'packages/angular_components/utils/color/material', 'package
   });
   dart.trackLibraries("packages/angular_components/utils/color/palette.ddc", {
     "package:angular_components/utils/color/palette.dart": utils__color__palette
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["palette.dart"],"names":[],"mappings":";;;;;;;;;MAQM,qCAAe;YAAG,iBACtB,8BAAO,EACP,6BAAM,EACN,gCAAS,EACT,+BAAQ,EACR,gCAAS,EACT,8BAAO,EACP,oCAAa,EACb,8BAAO,EACP,gCAAS,EACT,8BAAO,EACP,8BAAO,EACP,8BAAO","file":"palette.ddc.js"}');
   // Exports:
   return {

@@ -11,12 +11,14 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = Sequential.prototype;
     dart.addTypeTests(Sequential);
     Sequential.prototype[_is_Sequential_default] = true;
+    dart.setLibraryUri(Sequential, "package:angular_components/src/material_datepicker/sequential.dart");
     return Sequential;
   });
   src__material_datepicker__sequential.Sequential = src__material_datepicker__sequential.Sequential$();
   dart.addTypeTests(src__material_datepicker__sequential.Sequential, _is_Sequential_default);
   dart.trackLibraries("packages/angular_components/src/material_datepicker/sequential.ddc", {
     "package:angular_components/src/material_datepicker/sequential.dart": src__material_datepicker__sequential
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["sequential.dart"],"names":[],"mappings":";;;;;;;;;;IAuBA","file":"sequential.ddc.js"}');
   // Exports:
   return {

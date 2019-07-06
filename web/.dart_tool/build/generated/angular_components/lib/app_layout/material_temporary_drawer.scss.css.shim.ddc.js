@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/app_layout/material_temporary_drawer.scss.css.shim.ddc", {
     "package:angular_components/app_layout/material_temporary_drawer.scss.css.shim.dart": app_layout__material_temporary_drawer$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_temporary_drawer.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,gEAAM;YAAG,EAAC","file":"material_temporary_drawer.scss.css.shim.ddc.js"}');
   // Exports:
   return {

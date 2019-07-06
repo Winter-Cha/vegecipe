@@ -23,6 +23,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/angular/meta.template.ddc", {
     "package:angular/meta.template.dart": meta$46template,
     "package:angular/src/meta.template.dart": src__meta$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["meta.template.dart","src/meta.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,wBAAQ;YAAG;;;;;AAEb,kBAAI,wBAAQ,GAAE;AACZ;;AAEF,+BAAW;AAEX,IAAM,kCAAa;EACrB;;ECRsB","file":"meta.template.ddc.js"}');
   // Exports:
   return {

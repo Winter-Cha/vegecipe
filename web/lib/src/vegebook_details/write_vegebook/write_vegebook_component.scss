@@ -200,7 +200,10 @@
 }
 
 .content {
-  white-space: pre-wrap;
+  overflow-y: scroll;
+  white-space: pre;
+  max-height: 300px;
+
 }
 
 @include screen-size-nexus-5x {
@@ -289,6 +292,12 @@
       font-size: 16px;
     }
   }
+
+  .content {
+    overflow-y: scroll;
+    white-space: pre;
+    max-height: 400px;
+  }
 }
 
 @include screen-size-laptop {
@@ -332,5 +341,11 @@
     p {
       font-size: 16px;
     }
+  }
+
+  .content {
+    overflow-y: scroll;
+    white-space: pre;
+    max-height: 400px;
   }
 }

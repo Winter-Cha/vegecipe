@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus.template'], functio
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/date_range_editor_host.template.ddc", {
     "package:angular_components/material_datepicker/date_range_editor_host.template.dart": material_datepicker__date_range_editor_host$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_range_editor_host.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,+DAAQ;YAAG;;;;;AAEb,kBAAI,+DAAQ,GAAE;AACZ;;AAEF,sEAAW;AAEX,IAAM,qCAAa;EACrB","file":"date_range_editor_host.template.ddc.js"}');
   // Exports:
   return {

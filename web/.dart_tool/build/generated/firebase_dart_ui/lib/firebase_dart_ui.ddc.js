@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const firebase_dart_ui = Object.create(dart.library);
   dart.trackLibraries("packages/firebase_dart_ui/firebase_dart_ui.ddc", {
     "package:firebase_dart_ui/firebase_dart_ui.dart": firebase_dart_ui
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"firebase_dart_ui.ddc.js"}');
   // Exports:
   return {

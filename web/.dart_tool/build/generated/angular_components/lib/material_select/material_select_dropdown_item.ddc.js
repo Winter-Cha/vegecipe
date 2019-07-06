@@ -59,6 +59,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
       __proto__: dart.getSetters(MaterialSelectDropdownItemComponent.__proto__),
       id: core.String
     }));
+    dart.setLibraryUri(MaterialSelectDropdownItemComponent, "package:angular_components/material_select/material_select_dropdown_item.dart");
     dart.setFieldSignature(MaterialSelectDropdownItemComponent, () => ({
       __proto__: dart.getFields(MaterialSelectDropdownItemComponent.__proto__),
       [_generatedId]: dart.finalFieldType(core.String),
@@ -76,7 +77,8 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
   dart.addTypeTests(material_select__material_select_dropdown_item.MaterialSelectDropdownItemComponent, _is_MaterialSelectDropdownItemComponent_default);
   dart.trackLibraries("packages/angular_components/material_select/material_select_dropdown_item.ddc", {
     "package:angular_components/material_select/material_select_dropdown_item.dart": material_select__material_select_dropdown_item
-  }, '{"version":3,"sourceRoot":"","sources":["material_select_dropdown_item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;yBA+CmB,yBAAmB,IAAG;kBAAQ,SAAG;iCAAI,kBAAY;;MAAC;aAG5D,EAAS;AACd,iBAAG,GAAG,EAAE;MACV;;cAmBuB,iBAAgB;;qCAGH,CAAY;AAC9C,sBAAI,CAAC,SAAS,GAAE,CAAC,eAAe;MAClC;4BAG2B,GAAgB;AACzC,iCAAmB,gDAAG,GAAG,kBAAH,GAAG,SAAU;AACnC,sBAAI,yBAAmB,GAAE,SAAI,GAAG;MAClC;;wDAzBI,OAAmB,EACnB,IAA8B,EAC9B,QAAmC,EACnC,iBAA+C,EAC/C,WAAmC,EACnC,KAAuB;MAnBpB,SAAG;MAWL,yBAAmB,GAAG;MASrB,kBAAY,GACR,CAAC,WAAW,WAAX,WAAW,OAAI,gEAA8B,UAAU;AAC5D,mEAAM,OAAO,EAAE,QAAQ,EAAE,iBAAiB,EAAE,KAAK,EAAE,IAAI,WAAJ,IAAI,GAAI;AAC/D,uBAAiB,GAAG,uEAAmB;IACzC;;;;;;;;;;;;;;;;;;;;;;;;;;MA5Ba,4FAAS;YAAG","file":"material_select_dropdown_item.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_select_dropdown_item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;yBA+CmB,yBAAmB,IAAG;kBAAQ,SAAG;iCAAI,kBAAY;;MAAC;aAG5D,EAAS;AACd,iBAAG,GAAG,EAAE;MACV;;cAmBuB,iBAAgB;;qCAGH,CAAY;AAC9C,sBAAI,CAAC,SAAS,GAAE,CAAC,eAAe;MAClC;4BAG2B,GAAgB;AACzC,iCAAmB,gDAAG,GAAG,kBAAH,GAAG,SAAU;AACnC,sBAAI,yBAAmB,GAAE,SAAI,GAAG;MAClC;;wDAzBI,OAAmB,EACnB,IAA8B,EAC9B,QAAmC,EACnC,iBAA+C,EAC/C,WAAmC,EACnC,KAAuB;MAnBpB,SAAG;MAWL,yBAAmB,GAAG;MASrB,kBAAY,GACR,CAAC,WAAW,WAAX,WAAW,OAAI,gEAA8B,UAAU;AAC5D,mEAAM,OAAO,EAAE,QAAQ,EAAE,iBAAiB,EAAE,KAAK,EAAE,IAAI,WAAJ,IAAI,GAAI;AAC/D,uBAAiB,GAAG,uEAAmB;IACzC;;;;;;;;;;;;;;;;;;;;;;;;;;;MA5Ba,4FAAS;YAAG","file":"material_select_dropdown_item.ddc.js"}');
   // Exports:
   return {
     material_select__material_select_dropdown_item: material_select__material_select_dropdown_item

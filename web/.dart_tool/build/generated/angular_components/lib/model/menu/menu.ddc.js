@@ -97,6 +97,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       isCollapsible: core$.bool,
       isExpanded: core$.bool
     }));
+    dart.setLibraryUri(MenuItemGroup, "package:angular_components/model/menu/menu.dart");
     dart.setFieldSignature(MenuItemGroup, () => ({
       __proto__: dart.getFields(MenuItemGroup.__proto__),
       [_isCollapsible]: dart.finalFieldType(ObservableReferenceOfbool()),
@@ -150,7 +151,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
           this[_width] = null;
         } else {
           this[_width] = utils__angular__properties__properties.getInt(val);
-          if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed();
+          if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/menu.dart", 125, 14, "_width >= 0 && _width <= 5");
         }
       }
     }
@@ -191,6 +192,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       __proto__: dart.getSetters(MenuModel.__proto__),
       width: dart.dynamic
     }));
+    dart.setLibraryUri(MenuModel, "package:angular_components/model/menu/menu.dart");
     dart.setFieldSignature(MenuModel, () => ({
       __proto__: dart.getFields(MenuModel.__proto__),
       itemGroups: dart.finalFieldType(ListOfMenuItemGroupOfT()),
@@ -246,6 +248,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     hasSecondaryLabel: core$.bool,
     showTooltip: core$.bool
   }));
+  dart.setLibraryUri(model__menu__menu.MenuItemMixin, "package:angular_components/model/menu/menu.dart");
   const _is_MenuItem_default = Symbol('_is_MenuItem_default');
   model__menu__menu.MenuItem$ = dart.generic(T => {
     let MenuModelOfT = () => (MenuModelOfT = dart.constFn(model__menu__menu.MenuModel$(T)))();
@@ -347,7 +350,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       this[itemSuffixes$] = itemSuffixes != null ? itemSuffixes : new (ObservableListOfMenuItemAffix()).from(new core$0.Optional.fromNullable(itemSuffix));
       this[cssClasses$] = BuiltListOfString().new(core$.Iterable._check(cssClasses != null ? cssClasses : const$ || (const$ = dart.constList([], dart.dynamic))));
       this[ariaLabel$] = ariaLabel != null ? ariaLabel : label;
-      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided");
+      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/menu.dart", 202, 12, "itemSuffix == null || itemSuffixes == null");
     }).prototype = MenuItem.prototype;
     dart.addTypeTests(MenuItem);
     MenuItem.prototype[_is_MenuItem_default] = true;
@@ -368,6 +371,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       toString: dart.fnType(core$.String, []),
       [$toString]: dart.fnType(core$.String, [])
     }));
+    dart.setLibraryUri(MenuItem, "package:angular_components/model/menu/menu.dart");
     dart.setFieldSignature(MenuItem, () => ({
       __proto__: dart.getFields(MenuItem.__proto__),
       label: dart.finalFieldType(core$.String),
@@ -391,12 +395,14 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
   (model__menu__menu._MenuItemBase.new = function() {
   }).prototype = model__menu__menu._MenuItemBase.prototype;
   dart.addTypeTests(model__menu__menu._MenuItemBase);
+  dart.setLibraryUri(model__menu__menu._MenuItemBase, "package:angular_components/model/menu/menu.dart");
   model__menu__menu.NullMenuItem = class NullMenuItem extends model__menu__menu.MenuItem {
     static new() {
       dart.throw(new core$.UnsupportedError.new("Should be never instantiatied"));
     }
   };
   dart.addTypeTests(model__menu__menu.NullMenuItem);
+  dart.setLibraryUri(model__menu__menu.NullMenuItem, "package:angular_components/model/menu/menu.dart");
   const _filterOutUnselectableItems = dart.privateName(model__menu__menu, "_filterOutUnselectableItems");
   const _is_ActiveMenuItemModel_default = Symbol('_is_ActiveMenuItemModel_default');
   model__menu__menu.ActiveMenuItemModel$ = dart.generic(T => {
@@ -432,6 +438,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       __proto__: dart.getSetters(ActiveMenuItemModel.__proto__),
       menu: model__menu__menu.MenuModel$(T)
     }));
+    dart.setLibraryUri(ActiveMenuItemModel, "package:angular_components/model/menu/menu.dart");
     dart.setFieldSignature(ActiveMenuItemModel, () => ({
       __proto__: dart.getFields(ActiveMenuItemModel.__proto__),
       [_filterOutUnselectableItems]: dart.finalFieldType(core$.bool)
@@ -443,7 +450,8 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
   dart.setBaseClass(model__menu__menu.NullMenuItem, model__menu__menu.MenuItem$(model__menu__menu.NullMenuItem));
   dart.trackLibraries("packages/angular_components/model/menu/menu.ddc", {
     "package:angular_components/model/menu/menu.dart": model__menu__menu
-  }, '{"version":3,"sourceRoot":"","sources":["menu.dart"],"names":[],"mappings":"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","file":"menu.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["menu.dart"],"names":[],"mappings":"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","file":"menu.ddc.js"}');
   // Exports:
   return {
     model__menu__menu: model__menu__menu

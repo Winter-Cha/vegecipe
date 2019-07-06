@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/model/menu/menu.template', 'pac
   };
   dart.trackLibraries("packages/angular_components/model/menu/selectable_menu.template.ddc", {
     "package:angular_components/model/menu/selectable_menu.template.dart": model__menu__selectable_menu$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["selectable_menu.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAYI,gDAAQ;YAAG;;;;;AAEb,kBAAI,gDAAQ,GAAE;AACZ;;AAEF,uDAAW;AAEX,IAAM,0CAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,0DAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,wCAAa;EACrB","file":"selectable_menu.template.ddc.js"}');
   // Exports:
   return {

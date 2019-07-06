@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base.templat
   };
   dart.trackLibraries("packages/angular_components/laminate/enums/visibility.template.ddc", {
     "package:angular_components/laminate/enums/visibility.template.dart": laminate__enums__visibility$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["visibility.template.dart"],"names":[],"mappings":";;;;;;;;MASI,+CAAQ;YAAG;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAM,mDAAa;AACnB,IAAM,mDAAa;EACrB","file":"visibility.template.ddc.js"}');
   // Exports:
   return {

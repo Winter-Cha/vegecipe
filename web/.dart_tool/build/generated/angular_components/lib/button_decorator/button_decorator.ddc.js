@@ -101,6 +101,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getSetters(button_decorator__button_decorator.ButtonDirective.__proto__),
     tabindex: core.String
   }));
+  dart.setLibraryUri(button_decorator__button_decorator.ButtonDirective, "package:angular_components/button_decorator/button_decorator.dart");
   dart.setFieldSignature(button_decorator__button_decorator.ButtonDirective, () => ({
     __proto__: dart.getFields(button_decorator__button_decorator.ButtonDirective.__proto__),
     [_trigger]: dart.finalFieldType(StreamControllerOfUIEvent()),
@@ -113,6 +114,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   }));
   dart.trackLibraries("packages/angular_components/button_decorator/button_decorator.ddc", {
     "package:angular_components/button_decorator/button_decorator.dart": button_decorator__button_decorator
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["button_decorator.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;YA+BiC,eAAQ,OAAO;;IAmBvC;;;;;;;YAGgB,UAAI;;;YAID,UAAE,aAAQ;IAAC;IAKhC;;;;;;IAIA;;;;;;;uBAGD,aAAQ,gBAAK,aAAQ,IAAG,mBAAa,GAAG,uBAAiB;;iBAMhD,KAAY;AACvB,yBAAa,GAAG,KAAK;IACvB;gBAIiB,UAAqB;AACpC,oBAAI,aAAQ,GAAE;AACd,oBAAQ,IAAI,CAAC,UAAU;IACzB;mBAIoB,aAA2B;AAC7C,oBAAI,aAAQ,GAAE;AACd,oBAAI,yCAAU,CAAC,aAAa,iBAAM,2BAAqB,GAAE;AACzD,UAAI,UAAU,aAAa,QAAQ;AACnC,UAAI,OAAO,KAAI,YAAO,MAAM,cAAI,yCAAU,CAAC,aAAa,IAAG;AACzD,sBAAQ,IAAI,CAAC,aAAa;AAE1B,qBAAa,eAAe;;IAEhC;;qEA1DgB,OAAe,EAAE,IAA8B;QACrD,8GAA6B;QAAY,sFAAqB;IAPlE,cAAQ,GAAG,qCAAmC,QAAO;IAEpD,mBAAa,GAAG;IA2BlB,cAAQ,GAAG;IAIX,cAAQ,GAAG;IAzBL,WAAI,GAAI,IAAI,WAAJ,IAAI,GAAI;IAGrB,uBAAiB,aAAG,0BAA0B,IAAG,OAAO;IACxD,2BAAqB,GAAG,kBAAkB,WAAlB,kBAAkB,GAAI;AAC9C,gFAAM,OAAO;EAAC","file":"button_decorator.ddc.js"}');
   // Exports:
   return {

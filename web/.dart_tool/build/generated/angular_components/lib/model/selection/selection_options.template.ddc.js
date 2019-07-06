@@ -40,6 +40,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list.t
   dart.trackLibraries("packages/angular_components/model/selection/selection_options.template.ddc", {
     "package:angular_components/src/model/selection/delegating_selection_options.template.dart": src__model__selection__delegating_selection_options$46template,
     "package:angular_components/model/selection/selection_options.template.dart": model__selection__selection_options$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["../../src/model/selection/delegating_selection_options.template.dart","selection_options.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAQI,uEAAQ;YAAG;;;;;AAEb,kBAAI,uEAAQ,GAAE;AACZ;;AAEF,8EAAW;AAEX,IAAM,4DAAa;EACrB;;MCLI,uDAAQ;YAAG;;;;;AAEb,kBAAI,uDAAQ,GAAE;AACZ;;AAEF,8DAAW;AAEX,IAAM,wDAAa;AACnB,IAAM,sDAAa;AACnB,IAAM,4EAAa;AACnB,IAAM,kDAAa;EACrB","file":"selection_options.template.ddc.js"}');
   // Exports:
   return {

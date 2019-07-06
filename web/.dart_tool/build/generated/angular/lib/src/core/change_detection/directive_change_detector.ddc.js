@@ -39,7 +39,7 @@ define(['dart_sdk', 'packages/angular/src/core/application_tokens', 'packages/an
       this[el] = value;
     }
     initCd() {
-      if (!src__core__change_detection__component_state.ComponentState.is(this.directive)) dart.assertFailed("Should never be called");
+      if (!src__core__change_detection__component_state.ComponentState.is(this.directive)) dart.assertFailed("Should never be called", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/core/change_detection/directive_change_detector.dart", 25, 12, "directive is ComponentState");
       src__core__change_detection__component_state.internalSetStateChanged(src__runtime__optimizations.unsafeCast(src__core__change_detection__component_state.ComponentState, this.directive), dart.fn(() => {
         if (!dart.test(this[_hasHostChanges])) {
           this[_hasHostChanges] = true;
@@ -100,6 +100,7 @@ define(['dart_sdk', 'packages/angular/src/core/application_tokens', 'packages/an
     setAttrNS: dart.fnType(dart.void, [html.Element, core.String, core.String, core.String]),
     setProp: dart.fnType(dart.void, [html.Element, core.String, core.Object])
   }));
+  dart.setLibraryUri(src__core__change_detection__directive_change_detector.DirectiveChangeDetector, "package:angular/src/core/change_detection/directive_change_detector.dart");
   dart.setFieldSignature(src__core__change_detection__directive_change_detector.DirectiveChangeDetector, () => ({
     __proto__: dart.getFields(src__core__change_detection__directive_change_detector.DirectiveChangeDetector.__proto__),
     directive: dart.fieldType(core.Object),
@@ -109,6 +110,7 @@ define(['dart_sdk', 'packages/angular/src/core/application_tokens', 'packages/an
   }));
   dart.trackLibraries("packages/angular/src/core/change_detection/directive_change_detector.ddc", {
     "package:angular/src/core/change_detection/directive_change_detector.dart": src__core__change_detection__directive_change_detector
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["directive_change_detector.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;IAaS;;;;;;IACS;;;;;;IACR;;;;;;;AASN,0EAAO,cAAS,qBAAoB;AACpC,0EAAuB,CAAC,sCAAU,8DAAC,cAAS,GAAG;AAC7C,uBAAK,qBAAe,GAAE;AACpB,+BAAe,GAAG;AAClB,+DAAmB,mBAAmB,CAAC,oCAAiB,EAAE,SAAI,EAAE,OAAE;;;IAGxE;;AAGE,2BAAe,GAAG;IACpB;sBAGuB,IAAoB,EAAE,EAAU,GAAG;oBAGrC,OAAe,EAAE,SAAgB,EAAE,KAAU;AAChE,oBAAI,KAAK,GAAE;AACT,eAAO,UAAQ,IAAI,CAAC,SAAS;aACxB;AACL,eAAO,UAAQ,OAAO,CAAC,SAAS;;IAEpC;YAGI,aAAqB,EAAE,aAAoB,EAAE,cAAqB;AACpE,UAAI,cAAc,IAAI,MAAM;AAC1B,qBAAa,eAAa,CAAC,aAAa,EAAE,cAAc;aACnD;AACL,qBAAa,aAAW,SAAO,CAAC,aAAa;;IAEjD;eAGI,aAAqB,EAAE,aAAoB,EAAE,cAAqB;AACpE,mBAAa,eAAa,CAAC,aAAa,EAAE,cAAc;IAC1D;cAEe,aAAqB,EAAE,MAAa,EAAE,aAAoB,EACrE,cAAqB;AACvB,UAAI,cAAc,IAAI,MAAM;AAC1B,qBAAa,iBAAe,CAAC,MAAM,EAAE,aAAa,EAAE,cAAc;aAC7D;AACL,qBAAa,0BAAwB,CAAC,MAAM,UAAQ,CAAC,aAAa;;IAEtE;YAEa,OAAe,EAAE,IAAW,EAAE,KAAY;AACrD,MAAQ,mBAAW,CAAC,OAAO,EAAE,IAAI,EAAE,KAAK;IAC1C;;;IA7DO,eAAS;IACA,UAAI;IACZ,QAAE;IACL,qBAAe,GAAG;EA2DzB","file":"directive_change_detector.ddc.js"}');
   // Exports:
   return {

@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular/meta.
   };
   dart.trackLibraries("packages/angular_components/focus/keyboard_only_focus_indicator.template.ddc", {
     "package:angular_components/focus/keyboard_only_focus_indicator.template.dart": focus__keyboard_only_focus_indicator$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["keyboard_only_focus_indicator.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,wDAAQ;YAAG;;;;;AAEb,kBAAI,wDAAQ,GAAE;AACZ;;AAEF,+DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,6BAAa;AACnB,IAAM,iEAAa;EACrB","file":"keyboard_only_focus_indicator.template.ddc.js"}');
   // Exports:
   return {

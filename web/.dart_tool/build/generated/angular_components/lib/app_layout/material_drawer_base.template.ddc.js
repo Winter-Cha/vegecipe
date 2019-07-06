@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/app_layout/material_drawer_base.template.ddc", {
     "package:angular_components/app_layout/material_drawer_base.template.dart": app_layout__material_drawer_base$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_drawer_base.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,oDAAQ;YAAG;;;;;AAEb,kBAAI,oDAAQ,GAAE;AACZ;;AAEF,2DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,wDAAa;EACrB","file":"material_drawer_base.template.ddc.js"}');
   // Exports:
   return {

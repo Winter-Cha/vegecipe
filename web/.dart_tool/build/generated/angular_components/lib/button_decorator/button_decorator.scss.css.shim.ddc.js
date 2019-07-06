@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/button_decorator/button_decorator.scss.css.shim.ddc", {
     "package:angular_components/button_decorator/button_decorator.scss.css.shim.dart": button_decorator__button_decorator$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["button_decorator.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,6DAAM;YAAG,EAAC","file":"button_decorator.scss.css.shim.ddc.js"}');
   // Exports:
   return {

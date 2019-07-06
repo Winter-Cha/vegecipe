@@ -157,6 +157,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const PERCENT_PATTERN$ = Symbol("NumberSymbols.PERCENT_PATTERN");
   const CURRENCY_PATTERN$ = Symbol("NumberSymbols.CURRENCY_PATTERN");
   const DEF_CURRENCY_CODE$ = Symbol("NumberSymbols.DEF_CURRENCY_CODE");
+  dart.setLibraryUri(number_symbols.NumberSymbols, "package:intl/number_symbols.dart");
   dart.setFieldSignature(number_symbols.NumberSymbols, () => ({
     __proto__: dart.getFields(number_symbols.NumberSymbols.__proto__),
     NAME: dart.finalFieldType(core.String),
@@ -209,6 +210,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const COMPACT_DECIMAL_SHORT_PATTERN$ = Symbol("CompactNumberSymbols.COMPACT_DECIMAL_SHORT_PATTERN");
   const COMPACT_DECIMAL_LONG_PATTERN$ = Symbol("CompactNumberSymbols.COMPACT_DECIMAL_LONG_PATTERN");
   const COMPACT_DECIMAL_SHORT_CURRENCY_PATTERN$ = Symbol("CompactNumberSymbols.COMPACT_DECIMAL_SHORT_CURRENCY_PATTERN");
+  dart.setLibraryUri(number_symbols.CompactNumberSymbols, "package:intl/number_symbols.dart");
   dart.setFieldSignature(number_symbols.CompactNumberSymbols, () => ({
     __proto__: dart.getFields(number_symbols.CompactNumberSymbols.__proto__),
     COMPACT_DECIMAL_SHORT_PATTERN: dart.finalFieldType(MapOfint$String()),
@@ -217,7 +219,8 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/intl/number_symbols.ddc", {
     "package:intl/number_symbols.dart": number_symbols
-  }, '{"version":3,"sourceRoot":"","sources":["number_symbols.dart"],"names":[],"mappings":";;;;;;;;IAUe;;;;;;IACA;;;;;;IACT;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;;YAoBU,UAAI;;;;QAjBR;QACD;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;IAfC,WAAI,GAAJ,IAAI;IACL,kBAAW,GAAX,WAAW;IACX,gBAAS,GAAT,SAAS;IACT,cAAO,GAAP,OAAO;IACP,iBAAU,GAAV,UAAU;IACV,gBAAS,GAAT,SAAS;IACT,iBAAU,GAAV,UAAU;IACV,iBAAU,GAAV,UAAU;IACV,cAAO,GAAP,OAAO;IACP,eAAQ,GAAR,QAAQ;IACR,UAAG,GAAH,GAAG;IACH,sBAAe,GAAf,eAAe;IACf,yBAAkB,GAAlB,kBAAkB;IAClB,sBAAe,GAAf,eAAe;IACf,uBAAgB,GAAhB,gBAAgB;IAChB,wBAAiB,GAAjB,iBAAiB;EAAE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAML;;;;;;IACA;;;;;;IACA;;;;;;;;QAEb;QACD;QACA;IAFC,oCAA6B,GAA7B,6BAA6B;IAC9B,mCAA4B,GAA5B,4BAA4B;IAC5B,6CAAsC,GAAtC,sCAAsC;EAAE","file":"number_symbols.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["number_symbols.dart"],"names":[],"mappings":";;;;;;;;IAUe;;;;;;IACA;;;;;;IACT;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;;YAoBU,UAAI;;;;QAjBR;QACD;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;IAfC,WAAI,GAAJ,IAAI;IACL,kBAAW,GAAX,WAAW;IACX,gBAAS,GAAT,SAAS;IACT,cAAO,GAAP,OAAO;IACP,iBAAU,GAAV,UAAU;IACV,gBAAS,GAAT,SAAS;IACT,iBAAU,GAAV,UAAU;IACV,iBAAU,GAAV,UAAU;IACV,cAAO,GAAP,OAAO;IACP,eAAQ,GAAR,QAAQ;IACR,UAAG,GAAH,GAAG;IACH,sBAAe,GAAf,eAAe;IACf,yBAAkB,GAAlB,kBAAkB;IAClB,sBAAe,GAAf,eAAe;IACf,uBAAgB,GAAhB,gBAAgB;IAChB,wBAAiB,GAAjB,iBAAiB;EAAE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAML;;;;;;IACA;;;;;;IACA;;;;;;;;QAEb;QACD;QACA;IAFC,oCAA6B,GAA7B,6BAA6B;IAC9B,mCAA4B,GAA5B,4BAA4B;IAC5B,6CAAsC,GAAtC,sCAAsC;EAAE","file":"number_symbols.ddc.js"}');
   // Exports:
   return {
     number_symbols: number_symbols

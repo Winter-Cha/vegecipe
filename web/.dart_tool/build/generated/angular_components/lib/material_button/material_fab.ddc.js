@@ -40,6 +40,7 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
     hostClassIsFocused: core.bool,
     hostClassIsPressed: core.bool
   }));
+  dart.setLibraryUri(material_button__material_fab.MaterialFabComponent, "package:angular_components/material_button/material_fab.dart");
   dart.setFieldSignature(material_button__material_fab.MaterialFabComponent, () => ({
     __proto__: dart.getFields(material_button__material_fab.MaterialFabComponent.__proto__),
     [_changeDetector]: dart.finalFieldType(src__core__change_detection__change_detector_ref.ChangeDetectorRef)
@@ -51,7 +52,8 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
   });
   dart.trackLibraries("packages/angular_components/material_button/material_fab.ddc", {
     "package:angular_components/material_button/material_fab.dart": material_button__material_fab
-  }, '{"version":3,"sourceRoot":"","sources":["material_fab.dart"],"names":[],"mappings":";;;;;;;;;;;YA+DoC,WAAZ,gBAAW,eAAI,YAAO;;;AAI1C,2BAAe,aAAa;IAC9B;;uBAI2B,aAAQ,IAAG,KAAK;IAAI;;uBAItB,WAAM,IAAG,KAAK;IAAI;;YAIZ,iBAAW;;;YAIX,eAAS;;;qEAzBnB,OAAmB;IAAO,qBAAe;AACxD,gFAAM,OAAO,EAAE;EAAK;;;;;;;;;;;;;;;MA4BN,+DAAY;YAAG","file":"material_fab.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_fab.dart"],"names":[],"mappings":";;;;;;;;;;;YA+DoC,WAAZ,gBAAW,eAAI,YAAO;;;AAI1C,2BAAe,aAAa;IAC9B;;uBAI2B,aAAQ,IAAG,KAAK;IAAI;;uBAItB,WAAM,IAAG,KAAK;IAAI;;YAIZ,iBAAW;;;YAIX,eAAS;;;qEAzBnB,OAAmB;IAAO,qBAAe;AACxD,gFAAM,OAAO,EAAE;EAAK;;;;;;;;;;;;;;;;MA4BN,+DAAY;YAAG","file":"material_fab.ddc.js"}');
   // Exports:
   return {
     material_button__material_fab: material_button__material_fab

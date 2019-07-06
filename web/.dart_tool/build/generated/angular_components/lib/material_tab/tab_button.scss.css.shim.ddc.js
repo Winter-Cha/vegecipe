@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_tab/tab_button.scss.css.shim.ddc", {
     "package:angular_components/material_tab/tab_button.scss.css.shim.dart": material_tab__tab_button$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_button.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,mDAAM;YAAG,EAAC","file":"tab_button.scss.css.shim.ddc.js"}');
   // Exports:
   return {

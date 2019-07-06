@@ -39,6 +39,7 @@ define(['dart_sdk'], function(dart_sdk) {
     theme: dart.fnType(dart.void, [html.HtmlElement]),
     themeElement: dart.fnType(dart.void, [html.HtmlElement])
   }));
+  dart.setLibraryUri(theme__dark_theme.AcxDarkTheme, "package:angular_components/theme/dark_theme.dart");
   dart.setFieldSignature(theme__dark_theme.AcxDarkTheme, () => ({
     __proto__: dart.getFields(theme__dark_theme.AcxDarkTheme.__proto__),
     isDarkTheme: dart.finalFieldType(core.bool)
@@ -47,9 +48,11 @@ define(['dart_sdk'], function(dart_sdk) {
   (theme__dark_theme.DarkThemeDirective.new = function() {
   }).prototype = theme__dark_theme.DarkThemeDirective.prototype;
   dart.addTypeTests(theme__dark_theme.DarkThemeDirective);
+  dart.setLibraryUri(theme__dark_theme.DarkThemeDirective, "package:angular_components/theme/dark_theme.dart");
   dart.trackLibraries("packages/angular_components/theme/dark_theme.ddc", {
     "package:angular_components/theme/dark_theme.dart": theme__dark_theme
-  }, '{"version":3,"sourceRoot":"","sources":["dark_theme.dart"],"names":[],"mappings":";;;;;;;;;MAWM,gCAAc;YAAG;;;;IAqBV;;;;;;UAKA,OAAmB;AAC5B,oBAAI,gBAAW,GAAE;AACf,eAAO,UAAQ,IAAI,CAAC,gBAAc;;IAEtC;iBAEkB,OAAmB;AACnC,oBAAI,gBAAW,GAAE;AACf,eAAO,UAAQ,IAAI,CAAC,gBAAc;;IAEtC;;iDAba,IAA6C;IACpD,iBAAW,GAAG,IAAI,WAAJ,IAAI,GAAI;EAAK;;;;;;;;;;;;;;EAoBT","file":"dark_theme.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["dark_theme.dart"],"names":[],"mappings":";;;;;;;;;MAWM,gCAAc;YAAG;;;;IAqBV;;;;;;UAKA,OAAmB;AAC5B,oBAAI,gBAAW,GAAE;AACf,eAAO,UAAQ,IAAI,CAAC,gBAAc;;IAEtC;iBAEkB,OAAmB;AACnC,oBAAI,gBAAW,GAAE;AACf,eAAO,UAAQ,IAAI,CAAC,gBAAc;;IAEtC;;iDAba,IAA6C;IACpD,iBAAW,GAAG,IAAI,WAAJ,IAAI,GAAI;EAAK;;;;;;;;;;;;;;;EAoBT","file":"dark_theme.ddc.js"}');
   // Exports:
   return {
     theme__dark_theme: theme__dark_theme

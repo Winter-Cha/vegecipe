@@ -61,6 +61,7 @@ define(['dart_sdk'], function(dart_sdk) {
     restart: dart.fnType(async.Future$(core.bool), []),
     [_reset]: dart.fnType(dart.void, [dart.dynamic])
   }));
+  dart.setLibraryUri(model__action__delayed_action.DelayedAction, "package:angular_components/model/action/delayed_action.dart");
   dart.setFieldSignature(model__action__delayed_action.DelayedAction, () => ({
     __proto__: dart.getFields(model__action__delayed_action.DelayedAction.__proto__),
     [_callback]: dart.finalFieldType(VoidTovoid()),
@@ -70,6 +71,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/angular_components/model/action/delayed_action.ddc", {
     "package:angular_components/model/action/delayed_action.dart": model__action__delayed_action
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["delayed_action.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAoBI,qBAAS;AACT,kBAAM,CAAC;IACT;;AAOE,UAAI,YAAM,IAAI,MAAM;AAClB,wBAAU,GAAG,qBAAe;AAC5B,oBAAM,GAAG,eAAK,CAAC,eAAS,EAAE,iCAAgB;;AAE5C,YAAO,iBAAU,OAAO;IAC1B;;AAIE,kBAAM,CAAC;IACT;;AAIE,4BAAgB;IAClB;;AAIE,iBAAM;AACN,YAAO,WAAK;IACd;aAEY,QAAQ;AAClB,0BAAM;;AACN,kBAAM,GAAG;AACT,+BAAU;8DAAW,QAAQ;AAC7B,sBAAU,GAAG;IACf;;;IA3CM,YAAM;IACI,gBAAU;IAEP,eAAS;IAAO,eAAS;EAAC","file":"delayed_action.ddc.js"}');
   // Exports:
   return {

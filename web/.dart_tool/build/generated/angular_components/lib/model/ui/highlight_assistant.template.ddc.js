@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer.template'
   };
   dart.trackLibraries("packages/angular_components/model/ui/highlight_assistant.template.ddc", {
     "package:angular_components/model/ui/highlight_assistant.template.dart": model__ui__highlight_assistant$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlight_assistant.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,kDAAQ;YAAG;;;;;AAEb,kBAAI,kDAAQ,GAAE;AACZ;;AAEF,yDAAW;AAEX,IAAM,gDAAa;AACnB,IAAM,0DAAa;EACrB","file":"highlight_assistant.template.ddc.js"}');
   // Exports:
   return {

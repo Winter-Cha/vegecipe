@@ -9,6 +9,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   (src__utils__angular__scroll_host__scroll_host_interface.ScrollHostEvent.new = function() {
   }).prototype = src__utils__angular__scroll_host__scroll_host_interface.ScrollHostEvent.prototype;
   dart.addTypeTests(src__utils__angular__scroll_host__scroll_host_interface.ScrollHostEvent);
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.ScrollHostEvent, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   src__utils__angular__scroll_host__scroll_host_interface.ScrollHost = class ScrollHost extends core.Object {
     startNativeScrollListener() {}
   };
@@ -20,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     __proto__: dart.getMethods(src__utils__angular__scroll_host__scroll_host_interface.ScrollHost.__proto__),
     startNativeScrollListener: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.ScrollHost, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   src__utils__angular__scroll_host__scroll_host_interface.StickyPosition = class StickyPosition extends core.Object {
     toString() {
       return {
@@ -33,6 +35,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     this.index = x;
   }).prototype = src__utils__angular__scroll_host__scroll_host_interface.StickyPosition.prototype;
   dart.addTypeTests(src__utils__angular__scroll_host__scroll_host_interface.StickyPosition);
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.StickyPosition, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   dart.setFieldSignature(src__utils__angular__scroll_host__scroll_host_interface.StickyPosition, () => ({
     __proto__: dart.getFields(src__utils__angular__scroll_host__scroll_host_interface.StickyPosition.__proto__),
     index: dart.finalFieldType(core.int)
@@ -56,6 +59,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   dart.addTypeTests(src__utils__angular__scroll_host__scroll_host_interface.StickyController);
   const enableSmoothPushing = Symbol("StickyController.enableSmoothPushing");
   src__utils__angular__scroll_host__scroll_host_interface.StickyController[dart.implements] = () => [utils__disposer__disposer.Disposable];
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.StickyController, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   dart.setFieldSignature(src__utils__angular__scroll_host__scroll_host_interface.StickyController, () => ({
     __proto__: dart.getFields(src__utils__angular__scroll_host__scroll_host_interface.StickyController.__proto__),
     enableSmoothPushing: dart.fieldType(core.bool)
@@ -71,13 +75,16 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   }).prototype = src__utils__angular__scroll_host__scroll_host_interface.PanController.prototype;
   dart.addTypeTests(src__utils__angular__scroll_host__scroll_host_interface.PanController);
   src__utils__angular__scroll_host__scroll_host_interface.PanController[dart.implements] = () => [utils__disposer__disposer.Disposable];
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.PanController, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   src__utils__angular__scroll_host__scroll_host_interface.PanEvent = class PanEvent extends src__utils__angular__scroll_host__scroll_host_interface.ScrollHostEvent {};
   (src__utils__angular__scroll_host__scroll_host_interface.PanEvent.new = function() {
   }).prototype = src__utils__angular__scroll_host__scroll_host_interface.PanEvent.prototype;
   dart.addTypeTests(src__utils__angular__scroll_host__scroll_host_interface.PanEvent);
+  dart.setLibraryUri(src__utils__angular__scroll_host__scroll_host_interface.PanEvent, "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart");
   dart.trackLibraries("packages/angular_components/src/utils/angular/scroll_host/scroll_host_interface.ddc", {
     "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.dart": src__utils__angular__scroll_host__scroll_host_interface
-  }, '{"version":3,"sourceRoot":"","sources":["scroll_host_interface.dart"],"names":[],"mappings":";;;;;;;;;EAmBA;;;iCAgCoC;;;EAwCpC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IA8DO;;;;;;;;6BAAmB;EAC1B;;;;;;;;;MAGI,8EAAsB;YAAG;;;;;;EAU7B;;;;;EAkBA","file":"scroll_host_interface.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["scroll_host_interface.dart"],"names":[],"mappings":";;;;;;;;;EAmBA;;;;iCAgCoC;;;EAwCpC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IA8DO;;;;;;;;6BAAmB;EAC1B;;;;;;;;;;MAGI,8EAAsB;YAAG;;;;;;EAU7B;;;;;;EAkBA","file":"scroll_host_interface.ddc.js"}');
   // Exports:
   return {
     src__utils__angular__scroll_host__scroll_host_interface: src__utils__angular__scroll_host__scroll_host_interface

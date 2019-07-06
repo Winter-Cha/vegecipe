@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/model.templ
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/module.template.ddc", {
     "package:angular_components/material_datepicker/module.template.dart": material_datepicker__module$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,+CAAQ;YAAG;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAM,mDAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,2DAAa;EACrB","file":"module.template.ddc.js"}');
   // Exports:
   return {

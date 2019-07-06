@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer.templat
   };
   dart.trackLibraries("packages/angular_components/src/utils/angular/scroll_host/scroll_host_interface.template.ddc", {
     "package:angular_components/src/utils/angular/scroll_host/scroll_host_interface.template.dart": src__utils__angular__scroll_host__scroll_host_interface$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["scroll_host_interface.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,2EAAQ;YAAG;;;;;AAEb,kBAAI,2EAAQ,GAAE;AACZ;;AAEF,kFAAW;AAEX,IAAM,kDAAa;EACrB","file":"scroll_host_interface.template.ddc.js"}');
   // Exports:
   return {

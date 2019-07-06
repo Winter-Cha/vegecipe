@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     focus: dart.fnType(dart.void, []),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(focus__focus.RootFocusable, "package:angular_components/focus/focus.dart");
   dart.setFieldSignature(focus__focus.RootFocusable, () => ({
     __proto__: dart.getFields(focus__focus.RootFocusable.__proto__),
     [_root]: dart.fieldType(html.Element)
@@ -50,7 +51,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
         return;
       }
       FutureOfNull()._check(this.focusDelegate.then(core.Null, dart.fn(delegate => {
-        if (!(focus__focus_interface.Focusable.is(delegate) || html.Element.is(delegate))) dart.assertFailed();
+        if (!(focus__focus_interface.Focusable.is(delegate) || html.Element.is(delegate))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/focus/focus.dart", 56, 14, "delegate is Focusable || delegate is Element");
         if (focus__focus_interface.Focusable.is(delegate)) {
           this[_resolvedFocusable] = delegate;
         } else {
@@ -69,6 +70,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     __proto__: dart.getMethods(focus__focus.ProjectedFocus.__proto__),
     focus: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(focus__focus.ProjectedFocus, "package:angular_components/focus/focus.dart");
   dart.setFieldSignature(focus__focus.ProjectedFocus, () => ({
     __proto__: dart.getFields(focus__focus.ProjectedFocus.__proto__),
     [_resolvedFocusable]: dart.fieldType(focus__focus_interface.Focusable)
@@ -78,6 +80,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
   }).prototype = focus__focus.FocusableItem.prototype;
   dart.addTypeTests(focus__focus.FocusableItem);
   focus__focus.FocusableItem[dart.implements] = () => [focus__focus_interface.Focusable];
+  dart.setLibraryUri(focus__focus.FocusableItem, "package:angular_components/focus/focus.dart");
   const _preventDefaultDelegate = dart.privateName(focus__focus, "_preventDefaultDelegate");
   focus__focus.FocusMoveEvent = class FocusMoveEvent extends core.Object {
     get focusItem() {
@@ -169,6 +172,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     __proto__: dart.getMethods(focus__focus.FocusMoveEvent.__proto__),
     preventDefault: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(focus__focus.FocusMoveEvent, "package:angular_components/focus/focus.dart");
   dart.setFieldSignature(focus__focus.FocusMoveEvent, () => ({
     __proto__: dart.getFields(focus__focus.FocusMoveEvent.__proto__),
     focusItem: dart.finalFieldType(focus__focus.FocusableItem),
@@ -240,6 +244,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     __proto__: dart.getSetters(focus__focus.AutoFocusDirective.__proto__),
     autoFocus: core.bool
   }));
+  dart.setLibraryUri(focus__focus.AutoFocusDirective, "package:angular_components/focus/focus.dart");
   dart.setFieldSignature(focus__focus.AutoFocusDirective, () => ({
     __proto__: dart.getFields(focus__focus.AutoFocusDirective.__proto__),
     [_disposer]: dart.finalFieldType(utils__disposer__disposer.Disposer),
@@ -254,9 +259,11 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
     focus__focus.FocusableDirective.__proto__.new.call(this, node);
   }).prototype = focus__focus.FocusableDirective.prototype;
   dart.addTypeTests(focus__focus.FocusableDirective);
+  dart.setLibraryUri(focus__focus.FocusableDirective, "package:angular_components/focus/focus.dart");
   dart.trackLibraries("packages/angular_components/focus/focus.ddc", {
     "package:angular_components/focus/focus.dart": focus__focus
-  }, '{"version":3,"sourceRoot":"","sources":["focus.dart"],"names":[],"mappings":"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","file":"focus.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["focus.dart"],"names":[],"mappings":"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","file":"focus.ddc.js"}');
   // Exports:
   return {
     focus__focus: focus__focus

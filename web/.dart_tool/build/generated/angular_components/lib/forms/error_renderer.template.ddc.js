@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/forms/error_renderer.template.ddc", {
     "package:angular_components/forms/error_renderer.template.dart": forms__error_renderer$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["error_renderer.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"error_renderer.template.ddc.js"}');
   // Exports:
   return {

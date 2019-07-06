@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const typed_data = Object.create(dart.library);
   dart.trackLibraries("packages/typed_data/typed_data.ddc", {
     "package:typed_data/typed_data.dart": typed_data
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"typed_data.ddc.js"}');
   // Exports:
   return {

@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
   };
   dart.trackLibraries("packages/angular_components/model/a11y/active_item.template.ddc", {
     "package:angular_components/model/a11y/active_item.template.dart": model__a11y__active_item$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["active_item.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,4CAAQ;YAAG;;;;;AAEb,kBAAI,4CAAQ,GAAE;AACZ;;AAEF,mDAAW;AAEX,IAAM,0DAAa;EACrB","file":"active_item.template.ddc.js"}');
   // Exports:
   return {

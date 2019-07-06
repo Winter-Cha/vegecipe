@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__laminate__enums__base.ElementStyleEnum.new = function() {
   }).prototype = src__laminate__enums__base.ElementStyleEnum.prototype;
   dart.addTypeTests(src__laminate__enums__base.ElementStyleEnum);
+  dart.setLibraryUri(src__laminate__enums__base.ElementStyleEnum, "package:angular_components/src/laminate/enums/base.dart");
   dart.trackLibraries("packages/angular_components/src/laminate/enums/base.ddc", {
     "package:angular_components/src/laminate/enums/base.dart": src__laminate__enums__base
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["base.dart"],"names":[],"mappings":";;;;;;;;EAUA","file":"base.ddc.js"}');
   // Exports:
   return {

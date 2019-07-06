@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_yes_no_buttons/material_yes_no_buttons.scss.css.shim.ddc", {
     "package:angular_components/material_yes_no_buttons/material_yes_no_buttons.scss.css.shim.dart": material_yes_no_buttons__material_yes_no_buttons$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_yes_no_buttons.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,2EAAM;YAAG,EAAC","file":"material_yes_no_buttons.scss.css.shim.ddc.js"}');
   // Exports:
   return {

@@ -37,6 +37,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(utils__angular__id__id$46template.AutoIdDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(utils__angular__id__id$46template.AutoIdDirectiveNgCd, "package:angular_components/utils/angular/id/id.template.dart");
   dart.setFieldSignature(utils__angular__id__id$46template.AutoIdDirectiveNgCd, () => ({
     __proto__: dart.getFields(utils__angular__id__id$46template.AutoIdDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(utils__angular__id__id.AutoIdDirective)
@@ -57,7 +58,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/utils/angular/id/id.template.ddc", {
     "package:angular_components/utils/angular/id/id.template.dart": utils__angular__id__id$46template
-  }, '{"version":3,"sourceRoot":"","sources":["id.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;IAegC;;;;;;sBAEP,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,GAAG,IAAE,OAAO;AACjC,UAAQ,yCAAe,CAAC,EAAE,EAAE,MAAM,aAAQ,GAAG;;;IAGnD;;wEARoB,QAAa;IAAR,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;MAWhC,0CAAQ;YAAG;;;;;AAEb,kBAAI,0CAAQ,GAAE;AACZ;;AAEF,iDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,0DAAa;EACrB","file":"id.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["id.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;IAegC;;;;;;sBAEP,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,GAAG,IAAE,OAAO;AACjC,UAAQ,yCAAe,CAAC,EAAE,EAAE,MAAM,aAAQ,GAAG;;;IAGnD;;wEARoB,QAAa;IAAR,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;MAWhC,0CAAQ;YAAG;;;;;AAEb,kBAAI,0CAAQ,GAAE;AACZ;;AAEF,iDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,0DAAa;EACrB","file":"id.template.ddc.js"}');
   // Exports:
   return {
     utils__angular__id__id$46template: utils__angular__id__id$46template

@@ -17,12 +17,14 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = interfaces__has_disabled.HasDisabled.prototype;
   dart.addTypeTests(interfaces__has_disabled.HasDisabled);
   const disabled = Symbol("HasDisabled.disabled");
+  dart.setLibraryUri(interfaces__has_disabled.HasDisabled, "package:angular_components/interfaces/has_disabled.dart");
   dart.setFieldSignature(interfaces__has_disabled.HasDisabled, () => ({
     __proto__: dart.getFields(interfaces__has_disabled.HasDisabled.__proto__),
     disabled: dart.fieldType(core.bool)
   }));
   dart.trackLibraries("packages/angular_components/interfaces/has_disabled.ddc", {
     "package:angular_components/interfaces/has_disabled.dart": interfaces__has_disabled
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_disabled.dart"],"names":[],"mappings":";;;;;;;IAMO;;;;;;;;kBAAQ;EACf","file":"has_disabled.ddc.js"}');
   // Exports:
   return {

@@ -48,6 +48,7 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
     hostClassActive: core.bool,
     hostDisabled: core.String
   }));
+  dart.setLibraryUri(material_tab__tab_button.TabButtonComponent, "package:angular_components/material_tab/tab_button.dart");
   dart.setFieldSignature(material_tab__tab_button.TabButtonComponent, () => ({
     __proto__: dart.getFields(material_tab__tab_button.TabButtonComponent.__proto__),
     [_nativeElement]: dart.finalFieldType(html.Element),
@@ -55,6 +56,7 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
   }));
   dart.trackLibraries("packages/angular_components/material_tab/tab_button.ddc", {
     "package:angular_components/material_tab/tab_button.dart": material_tab__tab_button
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_button.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;YA8B+B,qBAAc;;IAItC;;;;;;;YAGsB,iBAAW;;;YAGD,WAAT,aAAQ,eAAI,gBAAW;;;uBAGxB,aAAQ,IAAG,KAAK;IAAI;;;IAT1C,cAAQ,GAAG;IAPQ,oBAAc;AAAI,yEAAM,wCAAgB;EAAM","file":"tab_button.ddc.js"}');
   // Exports:
   return {

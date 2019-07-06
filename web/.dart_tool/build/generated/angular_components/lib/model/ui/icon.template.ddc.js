@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/ui/icon.template.ddc", {
     "package:angular_components/model/ui/icon.template.dart": model__ui__icon$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["icon.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"icon.template.ddc.js"}');
   // Exports:
   return {

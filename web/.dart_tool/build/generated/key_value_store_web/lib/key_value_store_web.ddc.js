@@ -95,12 +95,14 @@ define(['dart_sdk', 'packages/key_value_store/key_value_store'], function(dart_s
     clear: dart.fnType(async.Future$(core.bool), []),
     [_setValue]: dart.fnType(async.Future$(core.bool), [core.String, dart.dynamic])
   }));
+  dart.setLibraryUri(key_value_store_web.WebKeyValueStore, "package:key_value_store_web/key_value_store_web.dart");
   dart.setFieldSignature(key_value_store_web.WebKeyValueStore, () => ({
     __proto__: dart.getFields(key_value_store_web.WebKeyValueStore.__proto__),
     [_storage]: dart.finalFieldType(html.Storage)
   }));
   dart.trackLibraries("packages/key_value_store_web/key_value_store_web.ddc", {
     "package:key_value_store_web/key_value_store_web.dart": key_value_store_web
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["key_value_store_web.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;kCAqB2B,cAAQ,OAAK;;YAGzB,GAAU;YAAK,eAAQ,QAAC,GAAG,MAAK;IAAM;WAGxC,GAAU;YAAK,SAAG,MAAM,CAAC,cAAQ,QAAC,GAAG;IAAE;cAGjC,GAAU;YAAK,YAAM,MAAM,CAAC,cAAQ,QAAC,GAAG;IAAE;cAG1C,GAAU;YAAK,eAAQ,QAAC,GAAG;IAAC;kBAGlB,GAAU;mCACjC,aAAC,YAAI,OAAO,CAAC,cAAQ,QAAC,GAAG,UAAgB;IAAU;YAGlC,GAAU,EAAE,KAAU;YAAK,gBAAS,CAAC,GAAG,EAAE,KAAK;IAAC;WAGjD,GAAU,EAAE,KAAS;YAAK,gBAAS,CAAC,GAAG,EAAE,KAAK;IAAC;cAG5C,GAAU,EAAE,KAAY;YAAK,gBAAS,CAAC,GAAG,EAAE,KAAK;IAAC;cAGlD,GAAU,EAAE,KAAY;YAAK,gBAAS,CAAC,GAAG,EAAE,KAAK;IAAC;kBAG9C,GAAU,EAAE,MAAmB;YAAK,gBAAS,CAAC,GAAG,EAAE,MAAM;IAAC;WAGjE,GAAU;AAC5B,oBAAQ,SAAO,CAAC,GAAG;AACnB,YAAO,qBAAY,CAAC;IACtB;;AAIE,oBAAQ,QAAM;AACd,YAAO,qBAAY,CAAC;IACtB;gBAEuB,GAAU,EAAE,KAAa;AAC9C,iBAAI,KAAK,cAAY;AACnB,sBAAQ,QAAC,GAAG,EAAI,KAAK;YAChB,YAAI,KAAK,wBAAY,KAAK,4BAAc,KAAK,GAAS;AAC3D,sBAAQ,QAAC,GAAG,gBAAI,KAAK;YAChB,kBAAI,KAAK,GAAU;AACxB,sBAAQ,QAAC,GAAG,EAAI,YAAI,OAAO,CAAC,KAAK;;AAGnC,YAAO,qBAAY,CAAC;IACtB;;;IA3DsB,cAAQ;EAAC","file":"key_value_store_web.ddc.js"}');
   // Exports:
   return {

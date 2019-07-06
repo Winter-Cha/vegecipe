@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/laminate/portal/portal.template.ddc", {
     "package:angular_components/laminate/portal/portal.template.dart": laminate__portal__portal$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["portal.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,4CAAQ;YAAG;;;;;AAEb,kBAAI,4CAAQ,GAAE;AACZ;;AAEF,mDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,yEAAa;AACnB,IAAM,kDAAa;EACrB","file":"portal.template.ddc.js"}');
   // Exports:
   return {

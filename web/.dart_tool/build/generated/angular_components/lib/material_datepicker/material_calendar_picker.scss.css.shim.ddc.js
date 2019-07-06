@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/material_calendar_picker.scss.css.shim.ddc", {
     "package:angular_components/material_datepicker/material_calendar_picker.scss.css.shim.dart": material_datepicker__material_calendar_picker$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_calendar_picker.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,wEAAM;YAAG,EAAC","file":"material_calendar_picker.scss.css.shim.ddc.js"}');
   // Exports:
   return {

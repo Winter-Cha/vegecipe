@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   };
   dart.trackLibraries("packages/angular_components/model/selection/selection_container.template.ddc", {
     "package:angular_components/model/selection/selection_container.template.dart": model__selection__selection_container$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["selection_container.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,yDAAQ;YAAG;;;;;AAEb,kBAAI,yDAAQ,GAAE;AACZ;;AAEF,gEAAW;AAEX,IAAM,0DAAa;AACnB,IAAM,4DAAa;AACnB,IAAM,+CAAa;EACrB","file":"selection_container.template.ddc.js"}');
   // Exports:
   return {

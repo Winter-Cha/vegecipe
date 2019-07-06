@@ -12,6 +12,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/comparison'
     material_datepicker__model.DatepickerModel.__proto__.new.call(this, value);
   }).prototype = material_datepicker__model.DatepickerModel.prototype;
   dart.addTypeTests(material_datepicker__model.DatepickerModel);
+  dart.setLibraryUri(material_datepicker__model.DatepickerModel, "package:angular_components/material_datepicker/model.dart");
   material_datepicker__model.DateRangePickerConfiguration = class DateRangePickerConfiguration extends core.Object {
     toString() {
       return {
@@ -25,6 +26,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/comparison'
     this.index = x;
   }).prototype = material_datepicker__model.DateRangePickerConfiguration.prototype;
   dart.addTypeTests(material_datepicker__model.DateRangePickerConfiguration);
+  dart.setLibraryUri(material_datepicker__model.DateRangePickerConfiguration, "package:angular_components/material_datepicker/model.dart");
   dart.setFieldSignature(material_datepicker__model.DateRangePickerConfiguration, () => ({
     __proto__: dart.getFields(material_datepicker__model.DateRangePickerConfiguration.__proto__),
     index: dart.finalFieldType(core.int)
@@ -36,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/comparison'
   material_datepicker__model.DateRangePickerConfiguration.values = dart.constList([material_datepicker__model.DateRangePickerConfiguration.basic, material_datepicker__model.DateRangePickerConfiguration.predefinedRangesOnly, material_datepicker__model.DateRangePickerConfiguration.fullyLoaded], material_datepicker__model.DateRangePickerConfiguration);
   dart.trackLibraries("packages/angular_components/material_datepicker/model.ddc", {
     "package:angular_components/material_datepicker/model.dart": material_datepicker__model
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["model.dart"],"names":[],"mappings":";;;;;;;;;6DAiBmB,KAA0B;0BAAL;AAAU,wEAAM,KAAK;EAAC","file":"model.ddc.js"}');
   // Exports:
   return {

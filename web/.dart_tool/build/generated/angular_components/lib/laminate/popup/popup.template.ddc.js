@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/popup/dom_popup_so
   };
   dart.trackLibraries("packages/angular_components/laminate/popup/popup.template.ddc", {
     "package:angular_components/laminate/popup/popup.template.dart": laminate__popup__popup$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["popup.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;MAiBI,0CAAQ;YAAG;;;;;AAEb,kBAAI,0CAAQ,GAAE;AACZ;;AAEF,iDAAW;AAEX,IAAM,+DAAa;AACnB,IAAM,8DAAa;AACnB,IAAM,8DAAa;AACnB,IAAM,mEAAa;AACnB,IAAM,wDAAa;AACnB,IAAM,kEAAa;AACnB,IAAM,4EAAa;AACnB,IAAM,2DAAa;AACnB,IAAM,qEAAa;AACnB,IAAM,0DAAa;EACrB","file":"popup.template.ddc.js"}');
   // Exports:
   return {

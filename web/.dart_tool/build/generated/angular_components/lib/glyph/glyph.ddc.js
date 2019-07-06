@@ -40,7 +40,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
       return this[_iconSet] == null ? "material-icons-extended" : this[_iconSet];
     }
     set iconSet(value) {
-      if (!(value == null || value === "material-icons-extended")) dart.assertFailed();
+      if (!(value == null || value === "material-icons-extended")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/glyph/glyph.dart", 88, 12, "value == null || value == _materialIconsExtended");
       this[_iconSet] = value;
     }
     get useMaterialIconsExtended() {
@@ -67,6 +67,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
     icon: dart.dynamic,
     iconSet: core.String
   }));
+  dart.setLibraryUri(glyph__glyph.GlyphComponent, "package:angular_components/glyph/glyph.dart");
   dart.setFieldSignature(glyph__glyph.GlyphComponent, () => ({
     __proto__: dart.getFields(glyph__glyph.GlyphComponent.__proto__),
     [_icon]: dart.fieldType(dart.dynamic),
@@ -91,6 +92,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
     __proto__: dart.getGetters(glyph__glyph.GlyphSize.__proto__),
     values: core.List$(core.String)
   }));
+  dart.setLibraryUri(glyph__glyph.GlyphSize, "package:angular_components/glyph/glyph.dart");
   dart.defineLazy(glyph__glyph.GlyphSize, {
     /*glyph__glyph.GlyphSize.DEFAULT*/get DEFAULT() {
       return "";
@@ -113,7 +115,8 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
   });
   dart.trackLibraries("packages/angular_components/glyph/glyph.ddc", {
     "package:angular_components/glyph/glyph.dart": glyph__glyph
-  }, '{"version":3,"sourceRoot":"","sources":["glyph.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAYmB,0BAAa;YAAG,iBACjC,cACA,iBACA,gBACA,iBACA,mBACA,iBACA,aACA,cACA,eACA,aACA;;;;;;;;;aAwCS,KAAa;AACpB,iBAAK,GAAG,KAAK;AACb,oBAAI,0BAAa,WAAS,CAAC,aAAQ,IAAG;AACpC,sBAAQ,eAAa,CAAC,QAAQ;;IAElC;;YAEoB,YAAK;;;qCAGA,SAAI;IAAQ;;0CAEd,kBAAY,eAAG,SAAI,YAAQ,SAAI;;;YAKhC,eAAQ,IAAI,OAAO,yBAAsB,GAAG,cAAQ;;gBAM9D,KAAY;AACtB,YAAO,AAAc,KAAT,IAAI,QAAQ,KAAK,KAAI,yBAAsB;AACvD,oBAAQ,GAAG,KAAK;IAClB;;YAIqC,gCAAyB;;;;IAtB1D,WAAK;IAOF,cAAQ;IAaV,+BAAyB,GAAG;IAMb,cAAQ;EAAC;;;;;;;;;;;;;;;;;;;;;;;MAxCT,kDAAsB;YAAG;;;;;YAmDlB,uBAAC,EAAO,EAAE,SAAO,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAO;IAAC;;;EAC9E;;;;;;;MAPe,8BAAO;YAAG;;MACV,8BAAO;YAAG;;MACV,4BAAK;YAAG;;MACR,6BAAM;YAAG;;MACT,4BAAK;YAAG;;MACR,8BAAO;YAAG","file":"glyph.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["glyph.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAYmB,0BAAa;YAAG,iBACjC,cACA,iBACA,gBACA,iBACA,mBACA,iBACA,aACA,cACA,eACA,aACA;;;;;;;;;aAwCS,KAAa;AACpB,iBAAK,GAAG,KAAK;AACb,oBAAI,0BAAa,WAAS,CAAC,aAAQ,IAAG;AACpC,sBAAQ,eAAa,CAAC,QAAQ;;IAElC;;YAEoB,YAAK;;;qCAGA,SAAI;IAAQ;;0CAEd,kBAAY,eAAG,SAAI,YAAQ,SAAI;;;YAKhC,eAAQ,IAAI,OAAO,yBAAsB,GAAG,cAAQ;;gBAM9D,KAAY;AACtB,YAAO,AAAc,KAAT,IAAI,QAAQ,KAAK,KAAI,yBAAsB;AACvD,oBAAQ,GAAG,KAAK;IAClB;;YAIqC,gCAAyB;;;;IAtB1D,WAAK;IAOF,cAAQ;IAaV,+BAAyB,GAAG;IAMb,cAAQ;EAAC;;;;;;;;;;;;;;;;;;;;;;;;MAxCT,kDAAsB;YAAG;;;;;YAmDlB,uBAAC,EAAO,EAAE,SAAO,EAAE,OAAK,EAAE,QAAM,EAAE,OAAK,EAAE,SAAO;IAAC;;;EAC9E;;;;;;;;MAPe,8BAAO;YAAG;;MACV,8BAAO;YAAG;;MACV,4BAAK;YAAG;;MACR,6BAAM;YAAG;;MACT,4BAAK;YAAG;;MACR,8BAAO;YAAG","file":"glyph.ddc.js"}');
   // Exports:
   return {
     glyph__glyph: glyph__glyph

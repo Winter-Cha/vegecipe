@@ -13,8 +13,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__meta._VisibleForTemplate.new = function() {
   }).prototype = src__meta._VisibleForTemplate.prototype;
   dart.addTypeTests(src__meta._VisibleForTemplate);
+  dart.setLibraryUri(src__meta._VisibleForTemplate, "package:angular/src/meta.dart");
   dart.trackLibraries("packages/angular/src/meta.ddc", {
     "package:angular/src/meta.dart": src__meta
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;;MAgDM,4BAAkB;4BAAG,iCAAmB;;;;;EAGjB","file":"meta.ddc.js"}');
   // Exports:
   return {

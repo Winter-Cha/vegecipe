@@ -18,6 +18,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = js.JS.prototype;
   dart.addTypeTests(js.JS);
   const name$ = Symbol("JS.name");
+  dart.setLibraryUri(js.JS, "package:js/js.dart");
   dart.setFieldSignature(js.JS, () => ({
     __proto__: dart.getFields(js.JS.__proto__),
     name: dart.finalFieldType(core.String)
@@ -26,6 +27,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (js._Anonymous.new = function() {
   }).prototype = js._Anonymous.prototype;
   dart.addTypeTests(js._Anonymous);
+  dart.setLibraryUri(js._Anonymous, "package:js/js.dart");
   dart.defineLazy(js, {
     /*js.anonymous*/get anonymous() {
       return dart.const(new js._Anonymous.new());
@@ -33,7 +35,8 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/js/js.ddc", {
     "package:js/js.dart": js
-  }, '{"version":3,"sourceRoot":"","sources":["js.dart"],"names":[],"mappings":";;;;;;;IAiBe;;;;;;;wBACH,IAAS;yBAAJ;eAAI,GAAJ,IAAI;EAAE;;;;;;;;;EAIH;;;MASH,YAAS;YAAG,gBAAM,iBAAU","file":"js.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["js.dart"],"names":[],"mappings":";;;;;;;IAiBe;;;;;;;wBACH,IAAS;yBAAJ;eAAI,GAAJ,IAAI;EAAE;;;;;;;;;;EAIH;;;;MASH,YAAS;YAAG,gBAAM,iBAAU","file":"js.ddc.js"}');
   // Exports:
   return {
     js: js

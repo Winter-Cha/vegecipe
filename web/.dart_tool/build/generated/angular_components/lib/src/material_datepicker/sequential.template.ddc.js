@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable.tem
   };
   dart.trackLibraries("packages/angular_components/src/material_datepicker/sequential.template.ddc", {
     "package:angular_components/src/material_datepicker/sequential.template.dart": src__material_datepicker__sequential$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["sequential.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,wDAAQ;YAAG;;;;;AAEb,kBAAI,wDAAQ,GAAE;AACZ;;AAEF,+DAAW;AAEX,IAAM,sDAAa;EACrB","file":"sequential.template.ddc.js"}');
   // Exports:
   return {

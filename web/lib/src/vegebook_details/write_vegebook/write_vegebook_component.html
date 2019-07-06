@@ -7,70 +7,85 @@
   </div>
   <img src="images/back.svg" class="back" (click)="goBack()"/>
 
-  <material-button class="blue add-landscape-image" 
-                    raised
-                    type="file"
-                    (click)="landscapeImagefileInput.click()">
-  Add Landscape image
-  </material-button>
-  <material-button class="red save-btn" 
-                  raised
-                  type="file"
-                  (click)="submit()">
-  Save
-  </material-button>
-  <input hidden (change)="onLandscapeImageFileSelected($event)" #landscapeImagefileInput type="file" accept="image/png, image/jpeg">
+  <form (ngSubmit)="onSubmit()" #bookForm="ngForm">
 
-  <div class="vegebook-header">
-    <div class="vegebook-poster">
-        <div class="fallback-icon">
-            <img src="images/fallback-icon.svg" [alt]="'Fallback image'"/>
+    <material-button class="blue add-landscape-image" 
+                      raised
+                      (click)="landscapeImagefileInput.click()">
+    Add Landscape image
+    </material-button>
+    <material-button class="red save-btn" 
+                    raised
+                    type="submit"
+                    [disabled]="!bookForm.form.valid"
+                    (click)="onSubmit()"
+                    #submit="ngForm"
+                    >
+    Save
+    </material-button>
+    <input hidden 
+          #landscapeImagefileInput
+          type="file" 
+          required
+          (change)="onLandscapeImageFileSelected($event)" 
+          accept="image/png, image/jpeg">
+
+    <div class="vegebook-header">
+      <div class="vegebook-poster">
+          <div class="fallback-icon">
+              <img src="images/fallback-icon.svg" [alt]="'Fallback image'"/>
+          </div>
+        
+            <img #posterImage class="poster-actual" [src]="posterImageSrc"/>
+        
+            <material-button class="blue add-post-image" 
+                      raised
+                      (click)="posterImagefileInput.click()">
+            Add post
+            </material-button>
+            <input hidden (change)="onPosterImageFileSelected($event)" #posterImagefileInput type="file" accept="image/png, image/jpeg">
+      </div>
+
+      <div class="vegebook-information">
+        <!-- <h2 class="title">{{ vegeBook.title }}</h2> -->
+        <material-input floatingLabel 
+                        type="text" 
+                        label="Type title [required]"
+                        [(ngModel)]="vegeBook.title"
+                        required
+                        requiredErrorMsg="This input requires a value!"
+                        class="title"
+                        id="title"
+                        #title="ngForm"
+                        ngControl="title"
+                        >
+        </material-input>
+        <div class="body">
+          <p class="writtenBy" >
+            <strong>{{ messages.writtenBy }}</strong>: {{ writer }}
+          </p>
         </div>
-      
-          <img #posterImage class="poster-actual" [src]="posterImageSrc"/>
-      
-          <material-button class="blue add-post-image" 
-                    raised
-                    (click)="posterImagefileInput.click()">
-          Add post
-          </material-button>
-          <input hidden (change)="onPosterImageFileSelected($event)" #posterImagefileInput type="file" accept="image/png, image/jpeg">
-    </div>
-
-    <div class="vegebook-information">
-      <!-- <h2 class="title">{{ vegeBook.title }}</h2> -->
-      <material-input floatingLabel 
-                      type="text" 
-                      label="Type title [required]"
-                      [(ngModel)]="title"
-                      required
-                      requiredErrorMsg="This input requires a value!"
-                      class="title"
-                      >
-      </material-input>
-
-      <div class="body">
-        <p class="writtenBy" >
-          <strong>{{ messages.writtenBy }}</strong>: {{ writer }}
-        </p>
       </div>
     </div>
-  </div>
-
-  <div class="section" >
-    <div class="centered-content">
-      <!-- <p class="content">{{ vegeBook.content }}</p> -->
-      <quill
-            [(ngModel)]="htmlStr"
-            placeholder="Write something..."
-            (blur)="blur()"
-            (input)="input()"
-            class="quill_pad"
-            >
-      </quill>
+    
+    
+    <div class="section" >
+      <div class="centered-content">
+        <input 
+          hidden
+          type="text" 
+          [(ngModel)]="vegeBook.content"
+          #content="ngForm"
+          ngControl="content"
+          id="editableInput"
+          required />
+        
+        <div class="editable content">
+        </div>
+        
+      </div>
     </div>
-  </div>
-
+  </form>
   <!-- <div class="section footer" *ngIf="vegeBook.galleryImages.isNotEmpty()">
     <div class="centered-content">
       <h3>{{ messages.gallery }}</h3>

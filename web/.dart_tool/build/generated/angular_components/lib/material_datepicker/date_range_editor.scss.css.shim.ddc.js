@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/date_range_editor.scss.css.shim.ddc", {
     "package:angular_components/material_datepicker/date_range_editor.scss.css.shim.dart": material_datepicker__date_range_editor$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_range_editor.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,iEAAM;YAAG,EAAC","file":"date_range_editor.scss.css.shim.ddc.js"}');
   // Exports:
   return {

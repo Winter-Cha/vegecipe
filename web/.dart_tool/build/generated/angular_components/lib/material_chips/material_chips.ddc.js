@@ -87,6 +87,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       selectionModel: model__selection__selection_model.SelectionModel$(T),
       itemRenderer: dart.fnType(core.String, [T])
     }));
+    dart.setLibraryUri(MaterialChipsComponent, "package:angular_components/material_chips/material_chips.dart");
     dart.setFieldSignature(MaterialChipsComponent, () => ({
       __proto__: dart.getFields(MaterialChipsComponent.__proto__),
       [_changeDetector]: dart.finalFieldType(src__core__change_detection__change_detector_ref.ChangeDetectorRef),
@@ -101,6 +102,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   dart.addTypeTests(material_chips__material_chips.MaterialChipsComponent, _is_MaterialChipsComponent_default);
   dart.trackLibraries("packages/angular_components/material_chips/material_chips.ddc", {
     "package:angular_components/material_chips/material_chips.dart": material_chips__material_chips
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_chips.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA4BO;;;;;;yBASc,KAAuB;mCAAL;AACnC,6BAAe,GAAG,KAAK;AACvB,QACE,AAAE,uBAAO;QACT,AAAE,6BAAa,uDAAC,qBAAe,iBAAiB,OAAO,CAAC,QAAC,CAAC;AACxD,+BAAe,aAAa;;MAElC;;cAEwC,sBAAe;;uBAatC,KAAqB;AACpC,2BAAa,GAAG,KAAK;MACvB;;cAIoC,oBAAa;;;cAEhB,oBAAc,eAAe;;kCAG3B,KAAY;cAAK,MAAK,gCAAL,KAAK;MAAY;;AAMnE,uBAAS,QAAQ;MACnB;;;MArDe,eAAS,OAAG,wCAAc;MAIpC,eAAS,GAAG;MAKC,qBAAe,GAAG,+BAAM,4BAAoB;MA8B9C,mBAAa,GAAG,qGAAoB;MASxB,qBAAe;IAAC","file":"material_chips.ddc.js"}');
   // Exports:
   return {

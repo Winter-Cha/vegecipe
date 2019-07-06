@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_stepper/common.template.ddc", {
     "package:angular_components/material_stepper/common.template.dart": material_stepper__common$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["common.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"common.template.ddc.js"}');
   // Exports:
   return {

@@ -36,6 +36,7 @@ define(['dart_sdk', 'packages/angular/core.template', 'packages/angular/src/boot
   };
   dart.trackLibraries("packages/angular/angular.template.ddc", {
     "package:angular/angular.template.dart": angular$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["angular.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;MAgBI,2BAAQ;YAAG;;;;;AAEb,kBAAI,2BAAQ,GAAE;AACZ;;AAEF,kCAAW;AAEX,IAAM,6BAAa;AACnB,IAAM,4CAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,2CAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,0CAAa;AACnB,IAAM,4DAAa;AACnB,IAAM,6DAAa;EACrB","file":"angular.template.ddc.js"}');
   // Exports:
   return {

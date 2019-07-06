@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/ui/accepts_width.template.ddc", {
     "package:angular_components/model/ui/accepts_width.template.dart": model__ui__accepts_width$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["accepts_width.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"accepts_width.template.ddc.js"}');
   // Exports:
   return {

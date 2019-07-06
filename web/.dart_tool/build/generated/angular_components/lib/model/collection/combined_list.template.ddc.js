@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/collection/combined_list.template.ddc", {
     "package:angular_components/model/collection/combined_list.template.dart": model__collection__combined_list$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["combined_list.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"combined_list.template.ddc.js"}');
   // Exports:
   return {

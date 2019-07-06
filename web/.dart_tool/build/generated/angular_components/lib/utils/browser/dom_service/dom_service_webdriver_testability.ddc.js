@@ -29,12 +29,14 @@ define(['dart_sdk', 'packages/angular_components/framework_stabilizers/testabili
     __proto__: dart.getGetters(utils__browser__dom_service__dom_service_webdriver_testability.DomServiceWebdriverTestability.__proto__),
     isStable: core.bool
   }));
+  dart.setLibraryUri(utils__browser__dom_service__dom_service_webdriver_testability.DomServiceWebdriverTestability, "package:angular_components/utils/browser/dom_service/dom_service_webdriver_testability.dart");
   dart.setFieldSignature(utils__browser__dom_service__dom_service_webdriver_testability.DomServiceWebdriverTestability, () => ({
     __proto__: dart.getFields(utils__browser__dom_service__dom_service_webdriver_testability.DomServiceWebdriverTestability.__proto__),
     [_domService]: dart.finalFieldType(utils__browser__dom_service__dom_service.DomService)
   }));
   dart.trackLibraries("packages/angular_components/utils/browser/dom_service/dom_service_webdriver_testability.ddc", {
     "package:angular_components/utils/browser/dom_service/dom_service_webdriver_testability.dart": utils__browser__dom_service__dom_service_webdriver_testability
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dom_service_webdriver_testability.dart"],"names":[],"mappings":";;;;;;;;;iHAOiD,UAAqB;AACpE,kBAAI,uDAAoB,GAAE;AACxB,iBAAO,gGAAgC,CAAC,UAAU;;AAEpD,eAAO,sDAAe;EACxB;;;;YAYuB,kBAAW,SAAS;;;;IALH,iBAAW;;AAC/C,qBAAW,kBAAkB,OAAO,CAAC,QAAC,CAAC,IAAK,gBAAW;EACzD","file":"dom_service_webdriver_testability.ddc.js"}');
   // Exports:
   return {

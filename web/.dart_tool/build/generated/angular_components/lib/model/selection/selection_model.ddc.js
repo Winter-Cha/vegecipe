@@ -49,6 +49,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       __proto__: dart.getMethods(CastIterable.__proto__),
       castIterable: dart.fnType(core.Iterable$(T), [core.Iterable])
     }));
+    dart.setLibraryUri(CastIterable, "package:angular_components/model/selection/selection_model.dart");
     return CastIterable;
   });
   model__selection__selection_model.CastIterable = model__selection__selection_model.CastIterable$();
@@ -164,6 +165,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       hasSelectionObservers: core.bool,
       selectionChanges: async.Stream$(core.List$(model__selection__selection_model.SelectionChangeRecord$(T)))
     }));
+    dart.setLibraryUri(DelegatingSelectionModel, "package:angular_components/src/model/selection/delegating_selection_model.dart");
     dart.setFieldSignature(DelegatingSelectionModel, () => ({
       __proto__: dart.getFields(DelegatingSelectionModel.__proto__),
       [_delegateModel]: dart.finalFieldType(SelectionModelOfT()),
@@ -191,6 +193,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       __proto__: dart.getGetters(DelegatingSingleSelectionModel.__proto__),
       selectedValue: T
     }));
+    dart.setLibraryUri(DelegatingSingleSelectionModel, "package:angular_components/src/model/selection/delegating_selection_model.dart");
     return DelegatingSingleSelectionModel;
   });
   src__model__selection__delegating_selection_model.DelegatingSingleSelectionModel = src__model__selection__delegating_selection_model.DelegatingSingleSelectionModel$();
@@ -220,6 +223,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       selectAll: dart.fnType(dart.void, [core.Object]),
       deselectAll: dart.fnType(dart.void, [core.Object])
     }));
+    dart.setLibraryUri(DelegatingMultiSelectionModel, "package:angular_components/src/model/selection/delegating_selection_model.dart");
     return DelegatingMultiSelectionModel;
   });
   src__model__selection__delegating_selection_model.DelegatingMultiSelectionModel = src__model__selection__delegating_selection_model.DelegatingMultiSelectionModel$();
@@ -245,6 +249,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       __proto__: dart.getMethods(RadioGroupSingleSelectionModel.__proto__),
       deselect: dart.fnType(core.bool, [core.Object])
     }));
+    dart.setLibraryUri(RadioGroupSingleSelectionModel, "package:angular_components/src/model/selection/radio_group_single_selection_model.dart");
     return RadioGroupSingleSelectionModel;
   });
   src__model__selection__radio_group_single_selection_model.RadioGroupSingleSelectionModel = src__model__selection__radio_group_single_selection_model.RadioGroupSingleSelectionModel$();
@@ -311,6 +316,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       __proto__: dart.getGetters(SelectionModel.__proto__),
       isNotEmpty: core.bool
     }));
+    dart.setLibraryUri(SelectionModel, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(SelectionModel, () => ({
       __proto__: dart.getFields(SelectionModel.__proto__),
       isSingleSelect: dart.finalFieldType(core.bool)
@@ -331,6 +337,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     }
     dart.addTypeTests(SingleSelectionModel);
     SingleSelectionModel.prototype[_is_SingleSelectionModel_default] = true;
+    dart.setLibraryUri(SingleSelectionModel, "package:angular_components/model/selection/selection_model.dart");
     return SingleSelectionModel;
   });
   model__selection__selection_model.SingleSelectionModel = model__selection__selection_model.SingleSelectionModel$();
@@ -345,6 +352,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     }
     dart.addTypeTests(NullSelectionModel);
     NullSelectionModel.prototype[_is_NullSelectionModel_default] = true;
+    dart.setLibraryUri(NullSelectionModel, "package:angular_components/model/selection/selection_model.dart");
     return NullSelectionModel;
   });
   model__selection__selection_model.NullSelectionModel = model__selection__selection_model.NullSelectionModel$();
@@ -362,6 +370,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     }
     dart.addTypeTests(MultiSelectionModel);
     MultiSelectionModel.prototype[_is_MultiSelectionModel_default] = true;
+    dart.setLibraryUri(MultiSelectionModel, "package:angular_components/model/selection/selection_model.dart");
     return MultiSelectionModel;
   });
   model__selection__selection_model.MultiSelectionModel = model__selection__selection_model.MultiSelectionModel$();
@@ -376,6 +385,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     }
     dart.addTypeTests(SelectionChangeRecord);
     SelectionChangeRecord.prototype[_is_SelectionChangeRecord_default] = true;
+    dart.setLibraryUri(SelectionChangeRecord, "package:angular_components/model/selection/selection_model.dart");
     return SelectionChangeRecord;
   });
   model__selection__selection_model.SelectionChangeRecord = model__selection__selection_model.SelectionChangeRecord$();
@@ -455,6 +465,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       hasSelectionObservers: core.bool,
       selectionChanges: async.Stream$(core.List$(model__selection__selection_model.SelectionChangeRecord$(T)))
     }));
+    dart.setLibraryUri(SelectionChangeNotifier, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(SelectionChangeNotifier, () => ({
       __proto__: dart.getFields(SelectionChangeNotifier.__proto__),
       [_selectionChangeController]: dart.fieldType(StreamControllerOfListOfSelectionChangeRecordOfT()),
@@ -593,6 +604,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       isEmpty: core.bool,
       isNotEmpty: core.bool
     }));
+    dart.setLibraryUri(_MultiSelectionModelImpl, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(_MultiSelectionModelImpl, () => ({
       __proto__: dart.getFields(_MultiSelectionModelImpl.__proto__),
       isSingleSelect: dart.finalFieldType(core.bool),
@@ -689,6 +701,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       changes: async.Stream$(core.List$(src__records.ChangeRecord)),
       selectionChanges: async.Stream$(core.List$(model__selection__selection_model.SelectionChangeRecord$(T)))
     }));
+    dart.setLibraryUri(_NoopSelectionModelImpl, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(_NoopSelectionModelImpl, () => ({
       __proto__: dart.getFields(_NoopSelectionModelImpl.__proto__),
       isSingleSelect: dart.finalFieldType(core.bool),
@@ -710,6 +723,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     }).prototype = SelectionObservable.prototype;
     dart.addTypeTests(SelectionObservable);
     SelectionObservable.prototype[_is_SelectionObservable_default] = true;
+    dart.setLibraryUri(SelectionObservable, "package:angular_components/model/selection/selection_model.dart");
     return SelectionObservable;
   });
   model__selection__selection_model.SelectionObservable = model__selection__selection_model.SelectionObservable$();
@@ -747,6 +761,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       toString: dart.fnType(core.String, []),
       [$toString]: dart.fnType(core.String, [])
     }));
+    dart.setLibraryUri(_SelectionChangeRecordImpl, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(_SelectionChangeRecordImpl, () => ({
       __proto__: dart.getFields(_SelectionChangeRecordImpl.__proto__),
       added: dart.finalFieldType(IterableOfT()),
@@ -886,6 +901,7 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
       selectedValues: core.Iterable$(T),
       selectedValue: T
     }));
+    dart.setLibraryUri(_SingleSelectionModelImpl, "package:angular_components/model/selection/selection_model.dart");
     dart.setFieldSignature(_SingleSelectionModelImpl, () => ({
       __proto__: dart.getFields(_SingleSelectionModelImpl.__proto__),
       [_keyOf]: dart.finalFieldType(TToObject()),
@@ -901,7 +917,9 @@ define(['dart_sdk', 'packages/observable/observable'], function(dart_sdk, observ
     "package:angular_components/src/model/selection/delegating_selection_model.dart": src__model__selection__delegating_selection_model,
     "package:angular_components/src/model/selection/radio_group_single_selection_model.dart": src__model__selection__radio_group_single_selection_model,
     "package:angular_components/model/selection/selection_model.dart": model__selection__selection_model
-  }, '{"version":3,"sourceRoot":"","sources":["selection_model.dart","../../src/model/selection/delegating_selection_model.dart","../../src/model/selection/radio_group_single_selection_model.dart","../../src/model/selection/selection_change_notifier.dart","../../src/model/selection/multi_selection_model_impl.dart","../../src/model/selection/noop_selection_model_impl.dart","../../src/model/selection/single_selection_model_impl.dart"],"names":[],"mappings":"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","file":"selection_model.ddc.js"}');
+  }, {
+    "package:angular_components/model/selection/selection_model.dart": ["package:angular_components/src/model/selection/multi_selection_model_impl.dart", "package:angular_components/src/model/selection/noop_selection_model_impl.dart", "package:angular_components/src/model/selection/selection_change_notifier.dart", "package:angular_components/src/model/selection/single_selection_model_impl.dart"]
+  }, '{"version":3,"sourceRoot":"","sources":["selection_model.dart","../../src/model/selection/delegating_selection_model.dart","../../src/model/selection/radio_group_single_selection_model.dart","../../src/model/selection/selection_change_notifier.dart","../../src/model/selection/multi_selection_model_impl.dart","../../src/model/selection/noop_selection_model_impl.dart","../../src/model/selection/single_selection_model_impl.dart"],"names":[],"mappings":"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","file":"selection_model.ddc.js"}');
   // Exports:
   return {
     src__model__selection__delegating_selection_model: src__model__selection__delegating_selection_model,

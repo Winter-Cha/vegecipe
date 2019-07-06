@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/mixins/button_wrapper.template.ddc", {
     "package:angular_components/mixins/button_wrapper.template.dart": mixins__button_wrapper$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["button_wrapper.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,0CAAQ;YAAG;;;;;AAEb,kBAAI,0CAAQ,GAAE;AACZ;;AAEF,iDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,wCAAa;EACrB","file":"button_wrapper.template.ddc.js"}');
   // Exports:
   return {

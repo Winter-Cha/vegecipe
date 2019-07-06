@@ -3,7 +3,6 @@ import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_button/material_button.dart';
-import 'package:angular_components/material_datepicker/proto/date.pb.dart';
 import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
@@ -17,7 +16,7 @@ import 'package:web/src/vegebook_details/landscape_image/vegebook_landscape_imag
 
 import 'package:firebase/firebase.dart' as fb;
 
-import 'package:angular_quill/angular_quill.dart';
+import 'medium_editor.dart';
 
 @Component(
   selector: 'write-vegebook',
@@ -34,12 +33,12 @@ import 'package:angular_quill/angular_quill.dart';
     NgIf,
     NgFor,
     NgModel,
-    COMMON_DIRECTIVES,
-    quillDirectives,
+    coreDirectives,
+    formDirectives,
   ],
   pipes: [DatePipe],
 )
-class WriteVegeBookComponent implements OnActivate, OnDestroy {
+class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   WriteVegeBookComponent(this._store, this._router, this.messages);
   final Store<AppState> _store;
   final Router _router;
@@ -53,6 +52,8 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
   @ViewChild('posterImage')
   ImageElement posterImageElement;
 
+  var mediumEditor = null;
+
   String title = "";
   String htmlStr = "";
   String writer = "";
@@ -62,18 +63,21 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
   String posterImageSrc = "";
   Object selectedPImage = null;
 
+  bool bookFormValid = false;
   bool loading;
   bool _navigatedFromApp = false;
   bool contentVisible = false;
 
   StreamSubscription<AppState> _vegeBookDetailsSubscription;
 
+  VegeBook vegeBook = VegeBook();
 
   @override
   void onActivate(RouterState previous, RouterState current) {
     this.writer = fb.auth().currentUser?.displayName;
     _navigatedFromApp = previous != null;
     _animateContentIntoView();
+    _creatMediumEditor();
   }
 
   @override
@@ -81,6 +85,21 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
 
   void _animateContentIntoView() =>
       Timer(Duration.zero, () => contentVisible = true);
+
+  void _creatMediumEditor() =>
+      Timer(Duration.zero, () {
+          mediumEditor = new MediumEditor( 
+            document.querySelector('.editable'),
+            options: new MediumEditorOptions(
+              placeholder: new PlaceHolderOptions(text: 'Edit me!', hideOnClick: true),
+              toolbar: new Toolbar(buttons: ['bold', 'italic', 'underline', 'anchor','h1', 'h2', 'h3']),
+            )
+          );
+          mediumEditor.subscribe('editableInput',  (event,editable) {
+              print("여기서 버튼 세팅");
+              vegeBook.content = mediumEditor.getContent();
+            });
+        });
 
   void goBack() {
     if (_navigatedFromApp) {
@@ -92,6 +111,10 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
       RoutePaths.vegeBook.toUrl(),
       replace: true,
     );
+  }
+  void onChangeContent(dynamic event){
+
+    print("!111111");
   }
 
   void onLandscapeImageFileSelected(dynamic event){
@@ -132,7 +155,7 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
     }
   }
 
-  Future submit() async {
+  Future onSubmit() async {
     fb.StorageReference stRef = fb.storage().ref("vegebook");
     var landscapeBig = '';
     var portraitMedium = '';
@@ -164,21 +187,20 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
       print("Error in uploading to storage: $e");
     }
 
-
-      VegeBook vegeBook = VegeBook(
-        id: '',
-        title: '',
-        content: '',
-        images: VegeBookImageData(
-          landscapeBig: landscapeBig,
-          landscapeSmall: null,
-          portraitSmall: null,
-          portraitMedium: portraitMedium,
-          portraitLarge: null,
-        ),
-        writtenBy: fb.auth().currentUser?.displayName,
-        writerPhotoUrl: fb.auth().currentUser?.photoURL,
-      );
+    vegeBook = VegeBook(
+      id: '',
+      title: '',
+      content: '',
+      images: VegeBookImageData(
+        landscapeBig: landscapeBig,
+        landscapeSmall: null,
+        portraitSmall: null,
+        portraitMedium: portraitMedium,
+        portraitLarge: null,
+      ),
+      writtenBy: fb.auth().currentUser?.displayName,
+      writerPhotoUrl: fb.auth().currentUser?.photoURL,
+    );
 
     DocumentReference doc = fb.firestore().collection('vegebook').doc();
     var vegeBookMap  = {
@@ -204,5 +226,10 @@ class WriteVegeBookComponent implements OnActivate, OnDestroy {
 
   void input(){
 
+  }
+
+  @override
+  void ngOnInit() {
+    
   }
 }

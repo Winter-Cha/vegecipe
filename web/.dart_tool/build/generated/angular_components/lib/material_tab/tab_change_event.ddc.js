@@ -73,6 +73,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getGetters(material_tab__tab_change_event.TabChangeEvent.__proto__),
     isDeEmphasizedTabChange: core.bool
   }));
+  dart.setLibraryUri(material_tab__tab_change_event.TabChangeEvent, "package:angular_components/material_tab/tab_change_event.dart");
   dart.setFieldSignature(material_tab__tab_change_event.TabChangeEvent, () => ({
     __proto__: dart.getFields(material_tab__tab_change_event.TabChangeEvent.__proto__),
     oldIndex: dart.finalFieldType(core.int),
@@ -84,6 +85,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.defineExtensionMethods(material_tab__tab_change_event.TabChangeEvent, ['toString']);
   dart.trackLibraries("packages/angular_components/material_tab/tab_change_event.ddc", {
     "package:angular_components/material_tab/tab_change_event.dart": material_tab__tab_change_event
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_change_event.dart"],"names":[],"mappings":";;;;;;;MAKU,+CAAgB;YAAG,EAAC;;;;IAUlB;;;;;;IACA;;;;;;IAEA;;;;;;IACA;;;;;;IACL;;;;;;;AAOH,2BAAgB,GAAG;IACrB;;YAII,AAAgC,iBAArB,KAAI,EAAgB,IAAI,gBAAW,KAAI,EAAgB;;;YAIlE,gCAAmB,aAAQ,mBAAE,gBAAW,wBAAO,aAAQ,mBAAE,gBAAW;IAAE;;gEAd3D,QAAa,EAAE,QAAa;QACjC,iEAAc,EAAgB;QAC/B,iEAAc,EAAgB;IAJlC,sBAAgB,GAAG;IAEJ,eAAQ,GAAR,QAAQ;IAAO,eAAQ,GAAR,QAAQ;IACjC,kBAAW,GAAX,WAAW;IACZ,kBAAW,GAAX,WAAW;EAAqB","file":"tab_change_event.ddc.js"}');
   // Exports:
   return {

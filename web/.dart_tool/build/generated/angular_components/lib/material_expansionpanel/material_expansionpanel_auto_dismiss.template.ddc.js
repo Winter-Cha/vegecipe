@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_expansionpanel/material_expansionpanel_auto_dismiss.template.ddc", {
     "package:angular_components/material_expansionpanel/material_expansionpanel_auto_dismiss.template.dart": material_expansionpanel__material_expansionpanel_auto_dismiss$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_expansionpanel_auto_dismiss.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,iFAAQ;YAAG;;;;;AAEb,kBAAI,iFAAQ,GAAE;AACZ;;AAEF,wFAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,kDAAa;AACnB,IAAM,yEAAa;EACrB","file":"material_expansionpanel_auto_dismiss.template.ddc.js"}');
   // Exports:
   return {

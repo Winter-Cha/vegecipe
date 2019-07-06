@@ -33,6 +33,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/time_zone_aware_cloc
   };
   dart.trackLibraries("packages/angular_components/model/date/time_zone_aware_clock.template.ddc", {
     "package:angular_components/model/date/time_zone_aware_clock.template.dart": model__date__time_zone_aware_clock$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["time_zone_aware_clock.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MAUI,sDAAQ;YAAG;;;;;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAO,kCAAe,CAAC,oEAAkB,EAAE,QAAC,EAAuB,QAAK,yDAAkB,CAAC,EAAE;AAC7F,IAAO,uCAAoB,CAAC,oEAAkB,EAAE,sCAC9C,oCAAK,kEAAgB;AAEvB,IAAO,uCAAoB,CAAC,mFAAY,EAAE,sCACxC,sCAAK,kEAAgB;AAEvB,IAAM,2BAAa;EACrB","file":"time_zone_aware_clock.template.ddc.js"}');
   // Exports:
   return {

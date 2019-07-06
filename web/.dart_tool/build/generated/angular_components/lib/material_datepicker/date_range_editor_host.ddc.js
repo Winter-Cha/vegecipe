@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (material_datepicker__date_range_editor_host.DateRangeEditorHost.new = function() {
   }).prototype = material_datepicker__date_range_editor_host.DateRangeEditorHost.prototype;
   dart.addTypeTests(material_datepicker__date_range_editor_host.DateRangeEditorHost);
+  dart.setLibraryUri(material_datepicker__date_range_editor_host.DateRangeEditorHost, "package:angular_components/material_datepicker/date_range_editor_host.dart");
   dart.trackLibraries("packages/angular_components/material_datepicker/date_range_editor_host.ddc", {
     "package:angular_components/material_datepicker/date_range_editor_host.dart": material_datepicker__date_range_editor_host
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_range_editor_host.dart"],"names":[],"mappings":";;;;;;;;EAQA","file":"date_range_editor_host.ddc.js"}');
   // Exports:
   return {

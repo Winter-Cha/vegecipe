@@ -132,6 +132,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getSetters(focus__focus_list.FocusListDirective.__proto__),
     listItems: core.List$(focus__focus.FocusableItem)
   }));
+  dart.setLibraryUri(focus__focus_list.FocusListDirective, "package:angular_components/focus/focus_list.dart");
   dart.setFieldSignature(focus__focus_list.FocusListDirective, () => ({
     __proto__: dart.getFields(focus__focus_list.FocusListDirective.__proto__),
     [_ngZone]: dart.finalFieldType(src__core__zone__ng_zone.NgZone),
@@ -143,6 +144,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   }));
   dart.trackLibraries("packages/angular_components/focus/focus_list.ddc", {
     "package:angular_components/focus/focus_list.dart": focus__focus_list
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_list.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IA8Be;;;;;;;YAGM,gBAAS,SAAO;;IAQ9B;;;;;;IAMD;;;;;;kBAGU,SAA6B;AACzC,qBAAS,QAAM;AACf,qBAAS,QAAQ;AACjB,eAAS,UAAQ,CAAC,QAAC,CAAC;AAClB,uBAAS,MAAI,CAAC,CAAC;AACf,uBAAS,cAAc,uCAAC,CAAC,UAAU,OAAO,CAAC,2BAAU;;AAIvD,yCAAO,YAAY,MAAM,KAAK,YAAC,QAAC,CAAC;AAC/B,uBAAS,UAAQ,CAAC,QAAC,CAAC;AAClB,WAAC,SAAS,GAAG;;AAEf,sBAAI,eAAS,aAAW,GAAE;AACxB,cAAI,mBAAc,IAAI,MAAM;AAC1B,sBAAK,CAAC,mBAAc;iBACf;AACL,2BAAS,QAAM,SAAS,GAAG;;;;IAInC;iBAEgB,KAAoB;AAClC,oBAAI,KAAK,KAAK,GAAE;AACd,kBAAK,CAAC;YACD,eAAI,KAAK,IAAI,GAAE;AACpB,kBAAK,CAAS,aAAR,aAAO,IAAG;aACX;AACL,YAAI,IAAI,eAAS,UAAQ,CAAC,KAAK,UAAU;AACzC,YAAI,CAAC,KAAI,CAAC,GAAG;AACX,oBAAK,CAAG,aAAF,CAAC,iBAAG,KAAK,OAAO;;;AAG1B,WAAK,eAAe;IACtB;UAEW,KAAS;AAClB,UAAI,aAAO,KAAI,GAAG;AAClB,UAAI;AACJ,oBAAI,SAAI,GAAE;AACR,gBAAQ,GAAG,AAAM,KAAD,UAAG,aAAO;aACrB;AACL,gBAAQ,GAAG,KAAK,QAAM,CAAC,GAAW,aAAR,aAAO,IAAG;;AAEtC,qBAAS,wBAAC,QAAQ,QAAO;AACzB,qBAAS,UAAQ,CAAC,QAAC,CAAC;AAClB,SAAC,SAAS,GAAG;;AAEf,qBAAS,wBAAC,QAAQ,WAAU,GAAG;IACjC;;AAIE,qBAAS,QAAQ;IACnB;;+DAtEiC,IAA8B;IAJzD,eAAS,OAAG,wCAAc;IAC1B,eAAS,GAAG;IASb,UAAI,GAAG;IAMR,oBAAc;IAZM,aAAO;YACb,IAAI;IAAX,WAAI,mBAAW;EAAM","file":"focus_list.ddc.js"}');
   // Exports:
   return {

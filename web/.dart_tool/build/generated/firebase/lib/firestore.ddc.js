@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const firestore = Object.create(dart.library);
   dart.trackLibraries("packages/firebase/firestore.ddc", {
     "package:firebase/firestore.dart": firestore
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"firestore.ddc.js"}');
   // Exports:
   return {

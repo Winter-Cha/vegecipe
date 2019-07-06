@@ -31,7 +31,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     let FutureOfT = () => (FutureOfT = dart.constFn(async.Future$(T)))();
     class Portal extends core.Object {
       attach(host) {
-        if (!(host != null)) dart.assertFailed();
+        if (!(host != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 22, 12, "host != null");
         if (dart.test(this.isAttached)) {
           dart.throw(new core.StateError.new("Already attached to host!"));
         } else {
@@ -41,7 +41,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       }
       detach() {
         let currentHost = this[_attachedHost];
-        if (!(currentHost != null)) dart.assertFailed();
+        if (!(currentHost != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 39, 12, "currentHost != null");
         this[_attachedHost] = null;
         return currentHost.detach();
       }
@@ -67,6 +67,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       __proto__: dart.getGetters(Portal.__proto__),
       isAttached: core.bool
     }));
+    dart.setLibraryUri(Portal, "package:angular_components/laminate/portal/portal.dart");
     dart.setFieldSignature(Portal, () => ({
       __proto__: dart.getFields(Portal.__proto__),
       [_attachedHost]: dart.fieldType(laminate__portal__portal.PortalHost)
@@ -116,6 +117,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       __proto__: dart.getGetters(ComponentPortal.__proto__),
       component: core.Type
     }));
+    dart.setLibraryUri(ComponentPortal, "package:angular_components/laminate/portal/portal.dart");
     dart.setFieldSignature(ComponentPortal, () => ({
       __proto__: dart.getFields(ComponentPortal.__proto__),
       origin: dart.finalFieldType(src__core__linker__view_container_ref.ViewContainerRef),
@@ -166,8 +168,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     this[template$] = template;
     this[viewContainer$] = viewContainer;
     laminate__portal__portal.TemplatePortal.__proto__.new.call(this);
-    if (!(this.template != null)) dart.assertFailed();
-    if (!(this.viewContainer != null)) dart.assertFailed();
+    if (!(this.template != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 91, 12, "template != null");
+    if (!(this.viewContainer != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 92, 12, "viewContainer != null");
   }).prototype = laminate__portal__portal.TemplatePortal.prototype;
   dart.addTypeTests(laminate__portal__portal.TemplatePortal);
   const template$ = Symbol("TemplatePortal.template");
@@ -183,6 +185,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     origin: dart.dynamic,
     locals: core.Map$(core.String, dart.dynamic)
   }));
+  dart.setLibraryUri(laminate__portal__portal.TemplatePortal, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.TemplatePortal, () => ({
     __proto__: dart.getFields(laminate__portal__portal.TemplatePortal.__proto__),
     [_locals]: dart.fieldType(MapOfString$dynamic()),
@@ -194,12 +197,13 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
   }).prototype = laminate__portal__portal.PortalHost.prototype;
   dart.addTypeTests(laminate__portal__portal.PortalHost);
   laminate__portal__portal.PortalHost[dart.implements] = () => [utils__disposer__disposer.Disposable];
+  dart.setLibraryUri(laminate__portal__portal.PortalHost, "package:angular_components/laminate/portal/portal.dart");
   const _attachedPortal = dart.privateName(laminate__portal__portal, "_attachedPortal");
   const _detachPortal = dart.privateName(laminate__portal__portal, "_detachPortal");
   const _isDisposed = dart.privateName(laminate__portal__portal, "_isDisposed");
   laminate__portal__portal.BasePortalHost = class BasePortalHost extends core.Object {
     attach(portal) {
-      if (!(portal != null)) dart.assertFailed();
+      if (!(portal != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 152, 12, "portal != null");
       if (dart.test(this[_isDisposed])) {
         dart.throw(new core.StateError.new("Already disposed."));
       }
@@ -242,7 +246,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       return this[_attachedPortal] != null;
     }
     setPortalDisposer(fn) {
-      if (!(this[_detachPortal] == null)) dart.assertFailed();
+      if (!(this[_detachPortal] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 204, 12, "_detachPortal == null");
       this[_detachPortal] = fn;
     }
   };
@@ -264,6 +268,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     __proto__: dart.getGetters(laminate__portal__portal.BasePortalHost.__proto__),
     hasAttached: core.bool
   }));
+  dart.setLibraryUri(laminate__portal__portal.BasePortalHost, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.BasePortalHost, () => ({
     __proto__: dart.getFields(laminate__portal__portal.BasePortalHost.__proto__),
     [_attachedPortal]: dart.fieldType(laminate__portal__portal.Portal),
@@ -300,6 +305,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     __proto__: dart.getGetters(laminate__portal__portal.DelegatingPortalHost.__proto__),
     hasAttached: core.bool
   }));
+  dart.setLibraryUri(laminate__portal__portal.DelegatingPortalHost, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.DelegatingPortalHost, () => ({
     __proto__: dart.getFields(laminate__portal__portal.DelegatingPortalHost.__proto__),
     [_delegateHost]: dart.finalFieldType(laminate__portal__portal.PortalHost)
@@ -351,6 +357,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     __proto__: dart.getSetters(laminate__portal__portal.PortalHostDirective.__proto__),
     portal: laminate__portal__portal.Portal
   }));
+  dart.setLibraryUri(laminate__portal__portal.PortalHostDirective, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.PortalHostDirective, () => ({
     __proto__: dart.getFields(laminate__portal__portal.PortalHostDirective.__proto__),
     [_componentLoader]: dart.finalFieldType(src__core__linker__component_loader.ComponentLoader),
@@ -387,6 +394,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     attachComponentPortal: dart.fnType(async.Future$(src__core__linker__component_factory.ComponentRef), [laminate__portal__portal.ComponentPortal]),
     attachTemplatePortal: dart.fnType(async.Future$(core.Map$(core.String, dart.dynamic)), [laminate__portal__portal.TemplatePortal])
   }));
+  dart.setLibraryUri(laminate__portal__portal.DomPortalHost, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.DomPortalHost, () => ({
     __proto__: dart.getFields(laminate__portal__portal.DomPortalHost.__proto__),
     [_hostElement]: dart.finalFieldType(html.HtmlElement),
@@ -410,13 +418,15 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     __proto__: dart.getGetters(laminate__portal__portal.TemplatePortalDirective.__proto__),
     ready: async.Stream$(laminate__portal__portal.TemplatePortalDirective)
   }));
+  dart.setLibraryUri(laminate__portal__portal.TemplatePortalDirective, "package:angular_components/laminate/portal/portal.dart");
   dart.setFieldSignature(laminate__portal__portal.TemplatePortalDirective, () => ({
     __proto__: dart.getFields(laminate__portal__portal.TemplatePortalDirective.__proto__),
     [_ready]: dart.finalFieldType(StreamControllerOfTemplatePortalDirective())
   }));
   dart.trackLibraries("packages/angular_components/laminate/portal/portal.ddc", {
     "package:angular_components/laminate/portal/portal.dart": laminate__portal__portal
-  }, '{"version":3,"sourceRoot":"","sources":["portal.dart"],"names":[],"mappings":"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","file":"portal.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["portal.dart"],"names":[],"mappings":"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","file":"portal.ddc.js"}');
   // Exports:
   return {
     laminate__portal__portal: laminate__portal__portal

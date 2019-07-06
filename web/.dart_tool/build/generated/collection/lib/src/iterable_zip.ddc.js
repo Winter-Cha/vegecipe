@@ -38,6 +38,7 @@ define(['dart_sdk'], function(dart_sdk) {
       iterator: core.Iterator$(core.List$(T)),
       [$iterator]: core.Iterator$(core.List$(T))
     }));
+    dart.setLibraryUri(IterableZip, "package:collection/src/iterable_zip.dart");
     dart.setFieldSignature(IterableZip, () => ({
       __proto__: dart.getFields(IterableZip.__proto__),
       [_iterables]: dart.finalFieldType(IterableOfIterableOfT())
@@ -89,6 +90,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getGetters(_IteratorZip.__proto__),
       current: core.List$(T)
     }));
+    dart.setLibraryUri(_IteratorZip, "package:collection/src/iterable_zip.dart");
     dart.setFieldSignature(_IteratorZip, () => ({
       __proto__: dart.getFields(_IteratorZip.__proto__),
       [_iterators]: dart.finalFieldType(ListOfIteratorOfT()),
@@ -100,7 +102,8 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(src__iterable_zip._IteratorZip, _is__IteratorZip_default);
   dart.trackLibraries("packages/collection/src/iterable_zip.ddc", {
     "package:collection/src/iterable_zip.dart": src__iterable_zip
-  }, '{"version":3,"sourceRoot":"","sources":["iterable_zip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAuBI,YAAI,2CAAY,gBAAU,MAAI,gBAAC,QAAC,CAAC,IAAK,CAAC,WAAS,wCAAQ,YAAW;AAEnE,cAAO,KAAI,uBAAe,CAAC,SAAS;MACtC;;gCARY,SAA+B;MAAS,gBAAU,GAAG,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkBxE,sBAAI,gBAAU,UAAQ,GAAE,MAAO;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,gBAAU,SAAO,GAAE,CAAC,IAAI;AAC1C,yBAAK,gBAAU,QAAC,CAAC,UAAU,KAAI;AAC7B,0BAAQ,GAAG;AACX,kBAAO;;;AAGX,sBAAQ,GAAG,AAAI,aAAI,CAAC,gBAAU,SAAO;AACrC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,gBAAU,SAAO,GAAE,CAAC,IAAI;AAC1C,wBAAQ,QAAC,CAAC,EAAI,gBAAU,QAAC,CAAC,SAAS;;AAErC,cAAO;MACT;;cAEuB,eAAQ;;;iCAjBlB,SAA2B;MAFhC,cAAQ;MAE4B,gBAAU,GAAG,SAAS","file":"iterable_zip.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["iterable_zip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAuBI,YAAI,2CAAY,gBAAU,MAAI,gBAAC,QAAC,CAAC,IAAK,CAAC,WAAS,wCAAQ,YAAW;AAEnE,cAAO,KAAI,uBAAe,CAAC,SAAS;MACtC;;gCARY,SAA+B;MAAS,gBAAU,GAAG,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkBxE,sBAAI,gBAAU,UAAQ,GAAE,MAAO;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,gBAAU,SAAO,GAAE,CAAC,IAAI;AAC1C,yBAAK,gBAAU,QAAC,CAAC,UAAU,KAAI;AAC7B,0BAAQ,GAAG;AACX,kBAAO;;;AAGX,sBAAQ,GAAG,AAAI,aAAI,CAAC,gBAAU,SAAO;AACrC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,gBAAU,SAAO,GAAE,CAAC,IAAI;AAC1C,wBAAQ,QAAC,CAAC,EAAI,gBAAU,QAAC,CAAC,SAAS;;AAErC,cAAO;MACT;;cAEuB,eAAQ;;;iCAjBlB,SAA2B;MAFhC,cAAQ;MAE4B,gBAAU,GAAG,SAAS","file":"iterable_zip.ddc.js"}');
   // Exports:
   return {
     src__iterable_zip: src__iterable_zip

@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const di = Object.create(dart.library);
   dart.trackLibraries("packages/angular/di.ddc", {
     "package:angular/di.dart": di
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"di.ddc.js"}');
   // Exports:
   return {

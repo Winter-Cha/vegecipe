@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_conta
   };
   dart.trackLibraries("packages/angular_components/material_select/material_select_base.template.ddc", {
     "package:angular_components/material_select/material_select_base.template.dart": material_select__material_select_base$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_select_base.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAYI,yDAAQ;YAAG;;;;;AAEb,kBAAI,yDAAQ,GAAE;AACZ;;AAEF,gEAAW;AAEX,IAAM,8DAAa;AACnB,IAAM,0DAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,gDAAa;AACnB,IAAM,+DAAa;EACrB","file":"material_select_base.template.ddc.js"}');
   // Exports:
   return {

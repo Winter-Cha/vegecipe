@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/glyph/glyph.scss.css.shim.ddc", {
     "package:angular_components/glyph/glyph.scss.css.shim.dart": glyph__glyph$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["glyph.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,uCAAM;YAAG,EAAC","file":"glyph.scss.css.shim.ddc.js"}');
   // Exports:
   return {

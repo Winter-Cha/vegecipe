@@ -51,7 +51,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
         if (value == null) {
           this.selection.clear();
         } else {
-          if (!SingleSelectionModelOfT().is(this.selection)) dart.assertFailed("Passing selected value through `selection` input is only supported " + "for single select.");
+          if (!SingleSelectionModelOfT().is(this.selection)) dart.assertFailed("Passing selected value through `selection` input is only supported " + "for single select.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/mixins/selection_input_adapter.dart", 62, 11, "selection is SingleSelectionModel<T>");
           this.selection.select(T._check(value));
         }
       }
@@ -85,6 +85,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       selectionInput: dart.dynamic,
       optionsInput: dart.dynamic
     }));
+    dart.setLibraryUri(SelectionInputAdapter, "package:angular_components/mixins/selection_input_adapter.dart");
     dart.setFieldSignature(SelectionInputAdapter, () => ({
       __proto__: dart.getFields(SelectionInputAdapter.__proto__),
       [_selectionChangeController]: dart.fieldType(async.StreamController)
@@ -95,6 +96,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   dart.addTypeTests(mixins__selection_input_adapter.SelectionInputAdapter, _is_SelectionInputAdapter_default);
   dart.trackLibraries("packages/angular_components/mixins/selection_input_adapter.ddc", {
     "package:angular_components/mixins/selection_input_adapter.dart": mixins__selection_input_adapter
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["selection_input_adapter.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;AAmBI,8BAAS;qCAAK,0BAAqB;MACrC;;AAQE,YAAI,gCAA0B,IAAI,MAAM;AACtC,0CAA0B,GAAG,0BAAgB;;AAE/C,iCAAmB;AACnB,cAAO,iCAA0B,OAAO;MAC1C;;AAIE,YAAI,gCAA0B,IAAI,MAAM;AACxC,yCAAI,cAAS,GAA6B;AACxC,0CAA0B,IAAI,WAAC,cAAS,eAAe,aAAW,IAC5D,cAAS,eAAe,QAAM,GAC9B;eACD;AACL,0CAA0B,IAAI,CAAC,cAAS,eAAe;;MAE3D;yBAMmB,KAAa;AAC9B,mCAAI,KAAK,GAAuB;AAC9B,wBAAS,GAAG,KAAK;AACjB;;AAEF,iCAAmB;AACnB,YAAI,KAAK,IAAI,MAAM;AACjB,wBAAS,MAAM;eACV;AACL,4CACI,cAAS,qBACT,wEACA;AACJ,wBAAS,OAAO,UAAC,KAAK;;MAE1B;uBAOiB,KAAa;AAC5B,YAAI,KAAK,IAAI,iCAAQ,KAAK,GAAyB;AACjD,sBAAO,gCAAG,KAAK;cACV,kBAAI,KAAK,GAAa;AAC3B,sBAAO,OAAG,iCAAsB,CAAC,KAAK,uBAAsB,iBAAY;eACnE;AACL,yBAAM,sBAAa,CACf,8DACA,+BAAmB,gBAAC,6BAAY,gBAAC,6CAAY,KAAK;;MAE1D;;;MAnEiB,gCAA0B;IAoE7C","file":"selection_input_adapter.ddc.js"}');
   // Exports:
   return {

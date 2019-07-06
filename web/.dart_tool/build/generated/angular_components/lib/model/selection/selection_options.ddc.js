@@ -62,6 +62,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
       __proto__: dart.getSetters(DelegatingSelectionOptions.__proto__),
       optionGroups: core.List$(model__selection__selection_options.OptionGroup$(T))
     }));
+    dart.setLibraryUri(DelegatingSelectionOptions, "package:angular_components/src/model/selection/delegating_selection_options.dart");
     dart.setFieldSignature(DelegatingSelectionOptions, () => ({
       __proto__: dart.getFields(DelegatingSelectionOptions.__proto__),
       [_options]: dart.fieldType(SelectionOptionsOfT())
@@ -114,6 +115,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
       emptyLabel: core.String,
       hasEmptyLabel: core.bool
     }));
+    dart.setLibraryUri(OptionGroup, "package:angular_components/model/selection/selection_options.dart");
     dart.setFieldSignature(OptionGroup, () => ({
       __proto__: dart.getFields(OptionGroup.__proto__),
       [_emptyLabelFcn]: dart.fieldType(VoidToString())
@@ -136,6 +138,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
       __proto__: dart.getMethods(GroupedOptions.__proto__),
       dispose: dart.fnType(dart.void, [])
     }));
+    dart.setLibraryUri(GroupedOptions, "package:angular_components/model/selection/selection_options.dart");
     return GroupedOptions;
   });
   model__selection__selection_options.GroupedOptions = model__selection__selection_options.GroupedOptions$();
@@ -226,6 +229,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
       __proto__: dart.getSetters(SelectionOptions.__proto__),
       optionGroups: core.List$(model__selection__selection_options.OptionGroup$(T))
     }));
+    dart.setLibraryUri(SelectionOptions, "package:angular_components/model/selection/selection_options.dart");
     dart.setFieldSignature(SelectionOptions, () => ({
       __proto__: dart.getFields(SelectionOptions.__proto__),
       [_controller]: dart.finalFieldType(StreamControllerOfListOfOptionGroupOfT()),
@@ -247,6 +251,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
     }).prototype = _FutureSelectionOptions.prototype;
     dart.addTypeTests(_FutureSelectionOptions);
     _FutureSelectionOptions.prototype[_is__FutureSelectionOptions_default] = true;
+    dart.setLibraryUri(_FutureSelectionOptions, "package:angular_components/model/selection/selection_options.dart");
     return _FutureSelectionOptions;
   });
   model__selection__selection_options._FutureSelectionOptions = model__selection__selection_options._FutureSelectionOptions$();
@@ -269,6 +274,7 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
     }).prototype = _StreamSelectionOptions.prototype;
     dart.addTypeTests(_StreamSelectionOptions);
     _StreamSelectionOptions.prototype[_is__StreamSelectionOptions_default] = true;
+    dart.setLibraryUri(_StreamSelectionOptions, "package:angular_components/model/selection/selection_options.dart");
     dart.setFieldSignature(_StreamSelectionOptions, () => ({
       __proto__: dart.getFields(_StreamSelectionOptions.__proto__),
       [_streamSub]: dart.fieldType(async.StreamSubscription)
@@ -280,7 +286,9 @@ define(['dart_sdk', 'packages/angular_components/model/collection/labeled_list',
   dart.trackLibraries("packages/angular_components/model/selection/selection_options.ddc", {
     "package:angular_components/src/model/selection/delegating_selection_options.dart": src__model__selection__delegating_selection_options,
     "package:angular_components/model/selection/selection_options.dart": model__selection__selection_options
-  }, '{"version":3,"sourceRoot":"","sources":["../../src/model/selection/delegating_selection_options.dart","selection_options.dart","../../src/model/selection/future_selection_options_impl.dart","../../src/model/selection/stream_selection_options_impl.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;cAe2C,eAAQ,aAAa;;uBAG7C,MAA2B;sCAAN;AACpC,sBAAQ,aAAa,GAAG,MAAM;MAChC;;AAIE,sBAAQ,QAAQ;MAClB;;cAGuB,eAAQ,WAAW;;;cAGf,eAAQ,YAAY;;;cAGJ,eAAQ,OAAO;;;;MAtB1B,cAAQ;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cCUhB,qBAAc,IAAI,OAAO,oBAAc,KAAK;MAAI;;cAI/C,qBAAc,IAAI;MAAI;wBAgBf,KAAS,EAAE,GAAO;AACjD,YAAQ,eAAe,YAAY,CAAC,KAAK,EAAE,GAAG;AAE9C,mBAAO,oCAA6B,CAChC,YAAY,YAAE,aAAQ,IAAG,OAAO,cAAM,kBAAa,mBAAE,oBAAc;MACzE;;gCAnBY,KAAa,EAAG,QAAsB;+BAAR;MAJ5B,oBAAc;AAI2B,2CAAM,KAAK,EAAE,QAAQ;IAAC;8CAE/C,KAAa,EACtC,QAAsB;+BAAR;;MAAe,oBAAc;AAC1C,yDAAwB,KAAK,EAAE,QAAQ;IAAC;sCAIxB,KAAa,EAAG,KAAY,EAAE,UAAiB;4BAAxB;iCAAc;MACrD,oBAAc,GAAG,UAAU,IAAI,OAAQ,cAAM,UAAU,oBAAI;AAC3D,iDAAgB,KAAK,EAAE,KAAK;IAAC;;;;;;;;;;;;;;;;;;;;;;;iBA8BnB;;;IAClB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;wBAmCU,qBAAkD;AAAE,mBACxD,kCAA0B,CAAC,qBAAqB;MAAC;wBAQ7C,qBAAkD;AAAE,mBACxD,kCAA0B,CAAC,qBAAqB;MAAC;;cAIV,kBAAW,OAAO;;;cAGpB,oBAAa;;uBAGrC,KAA0B;sCAAL;AACpC,YAAI,WAAW,mBAAa;AAC5B,yBAAI,QAAQ,EAAI,KAAK,GAAE;AACrB,6BAAa,GAAG,KAAK;AACrB,8BAAc,GAAG,mBAAa,IAAI,4BAC5B,mBAAa,SAAO,IAAC,QAAC,CAAC,IAAK,CAAC,8CAAQ,KACrC;AACN,2BAAW,IAAI,CAAC,mBAAa;;MAEjC;;cAI2B,qBAAc;;;cAGlB,kBAAY,MAAI,CAAC,QAAC,KAAK,IAAK,KAAK,WAAW;MAAC;oBAEnD,UAA+B;sCAAV;AACpC,yBAAY,GAAG,UAAU;MAC3B;;AAIE,yBAAW,MAAM;AACjB,qBAAa;MACf;;qCA7DiB,YAAiC;MAP5C,iBAAW,GACb,kDAAgD,QAAO;MAEnD,oBAAc;MACD,mBAAa;AAIhC,uBAAiB,GAAG,YAAY;IAClC;0CAI0B,OAAe;UAAU;sCACxC,kCAAiB,4BAAwB,CAAC,OAAO,EAAE,KAAK;IAAG;kDAGpC,YAAiC;sCACxD,YAAY;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4CC7FA,qBAAkD;AACpE,uDAAM;AACV,2BAAqB,KAAK,YAAC,4BAAW;IACxC;;;;;;;;;;;;;;ACKE,gCAAU;;MACZ;;4CARwB,qBAAkD;MADvD,gBAAU;AAEvB,uDAAM;AACV,sBAAU,GAAG,qBAAqB,OAAO,CAAC,4BAAW;IACvD","file":"selection_options.ddc.js"}');
+  }, {
+    "package:angular_components/model/selection/selection_options.dart": ["package:angular_components/src/model/selection/future_selection_options_impl.dart", "package:angular_components/src/model/selection/stream_selection_options_impl.dart"]
+  }, '{"version":3,"sourceRoot":"","sources":["../../src/model/selection/delegating_selection_options.dart","selection_options.dart","../../src/model/selection/future_selection_options_impl.dart","../../src/model/selection/stream_selection_options_impl.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;cAe2C,eAAQ,aAAa;;uBAG7C,MAA2B;sCAAN;AACpC,sBAAQ,aAAa,GAAG,MAAM;MAChC;;AAIE,sBAAQ,QAAQ;MAClB;;cAGuB,eAAQ,WAAW;;;cAGf,eAAQ,YAAY;;;cAGJ,eAAQ,OAAO;;;;MAtB1B,cAAQ;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cCUhB,qBAAc,IAAI,OAAO,oBAAc,KAAK;MAAI;;cAI/C,qBAAc,IAAI;MAAI;wBAgBf,KAAS,EAAE,GAAO;AACjD,YAAQ,eAAe,YAAY,CAAC,KAAK,EAAE,GAAG;AAE9C,mBAAO,oCAA6B,CAChC,YAAY,YAAE,aAAQ,IAAG,OAAO,cAAM,kBAAa,mBAAE,oBAAc;MACzE;;gCAnBY,KAAa,EAAG,QAAsB;+BAAR;MAJ5B,oBAAc;AAI2B,2CAAM,KAAK,EAAE,QAAQ;IAAC;8CAE/C,KAAa,EACtC,QAAsB;+BAAR;;MAAe,oBAAc;AAC1C,yDAAwB,KAAK,EAAE,QAAQ;IAAC;sCAIxB,KAAa,EAAG,KAAY,EAAE,UAAiB;4BAAxB;iCAAc;MACrD,oBAAc,GAAG,UAAU,IAAI,OAAQ,cAAM,UAAU,oBAAI;AAC3D,iDAAgB,KAAK,EAAE,KAAK;IAAC;;;;;;;;;;;;;;;;;;;;;;;;iBA8BnB;;;IAClB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;wBAmCU,qBAAkD;AAAE,mBACxD,kCAA0B,CAAC,qBAAqB;MAAC;wBAQ7C,qBAAkD;AAAE,mBACxD,kCAA0B,CAAC,qBAAqB;MAAC;;cAIV,kBAAW,OAAO;;;cAGpB,oBAAa;;uBAGrC,KAA0B;sCAAL;AACpC,YAAI,WAAW,mBAAa;AAC5B,yBAAI,QAAQ,EAAI,KAAK,GAAE;AACrB,6BAAa,GAAG,KAAK;AACrB,8BAAc,GAAG,mBAAa,IAAI,4BAC5B,mBAAa,SAAO,IAAC,QAAC,CAAC,IAAK,CAAC,8CAAQ,KACrC;AACN,2BAAW,IAAI,CAAC,mBAAa;;MAEjC;;cAI2B,qBAAc;;;cAGlB,kBAAY,MAAI,CAAC,QAAC,KAAK,IAAK,KAAK,WAAW;MAAC;oBAEnD,UAA+B;sCAAV;AACpC,yBAAY,GAAG,UAAU;MAC3B;;AAIE,yBAAW,MAAM;AACjB,qBAAa;MACf;;qCA7DiB,YAAiC;MAP5C,iBAAW,GACb,kDAAgD,QAAO;MAEnD,oBAAc;MACD,mBAAa;AAIhC,uBAAiB,GAAG,YAAY;IAClC;0CAI0B,OAAe;UAAU;sCACxC,kCAAiB,4BAAwB,CAAC,OAAO,EAAE,KAAK;IAAG;kDAGpC,YAAiC;sCACxD,YAAY;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4CC7FA,qBAAkD;AACpE,uDAAM;AACV,2BAAqB,KAAK,YAAC,4BAAW;IACxC;;;;;;;;;;;;;;;ACKE,gCAAU;;MACZ;;4CARwB,qBAAkD;MADvD,gBAAU;AAEvB,uDAAM;AACV,sBAAU,GAAG,qBAAqB,OAAO,CAAC,4BAAW;IACvD","file":"selection_options.ddc.js"}');
   // Exports:
   return {
     src__model__selection__delegating_selection_options: src__model__selection__delegating_selection_options,

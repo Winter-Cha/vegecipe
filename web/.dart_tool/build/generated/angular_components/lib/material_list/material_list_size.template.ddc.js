@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_list/material_list_size.template.ddc", {
     "package:angular_components/material_list/material_list_size.template.dart": material_list__material_list_size$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_list_size.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"material_list_size.template.ddc.js"}');
   // Exports:
   return {

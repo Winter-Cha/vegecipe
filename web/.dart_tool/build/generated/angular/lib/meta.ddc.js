@@ -9,6 +9,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular/meta.ddc", {
     "package:angular/meta.dart": meta
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;kDA+CE,QAAsB;AAEtB,UAAO,SAAC,OAAO,IAAK,QAAQ,MAAC,OAAO;EACtC","file":"meta.ddc.js"}');
   // Exports:
   return {

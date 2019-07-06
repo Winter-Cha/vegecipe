@@ -102,6 +102,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getSetters(content__deferred_content.DeferredContentDirective.__proto__),
     deferredContentForceContent: core.bool
   }));
+  dart.setLibraryUri(content__deferred_content.DeferredContentDirective, "package:angular_components/content/deferred_content.dart");
   dart.setFieldSignature(content__deferred_content.DeferredContentDirective, () => ({
     __proto__: dart.getFields(content__deferred_content.DeferredContentDirective.__proto__),
     [_disposer]: dart.finalFieldType(utils__disposer__disposer.Disposer),
@@ -144,6 +145,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     [_setVisible]: dart.fnType(dart.void, [core.bool]),
     ngOnDestroy: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(content__deferred_content.CachingDeferredContentDirective, "package:angular_components/content/deferred_content.dart");
   dart.setFieldSignature(content__deferred_content.CachingDeferredContentDirective, () => ({
     __proto__: dart.getFields(content__deferred_content.CachingDeferredContentDirective.__proto__),
     [_viewContainer]: dart.fieldType(src__core__linker__view_container_ref.ViewContainerRef),
@@ -154,7 +156,8 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   }));
   dart.trackLibraries("packages/angular_components/content/deferred_content.ddc", {
     "package:angular_components/content/deferred_content.dart": content__deferred_content
-  }, '{"version":3,"sourceRoot":"","sources":["deferred_content.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAoCO;;;;;;oCAO2B,KAAU;AACxC,yBAAa,GAAG,KAAK;AACrB,uBAAW;IACb;;AAQE,UAAK,QAAiB,UAAT,cAAQ,eAAI,mBAAa;AACtC,UAAI,KAAK,KAAI,YAAM,EAAE;AACrB,UAAI,KAAK,EAAE;AACT,sBAAI,uBAAkB,GAAE;AAEtB,4BAAY,SAAO;;AAErB,sBAAQ,GAAG,oBAAc,mBAAmB,CAAC,eAAS;aACjD;AACL,sBAAI,uBAAkB,GAAE;AAEtB,kBAAgB,cAAQ;;cAApB,4BAAmC;AACvC,cAAI,oBAAU,SAAS,aAAW,IAAG,SAAS,QAAM,GAAG;AACvD,kCAAI,OAAO,GAAiB;AAG1B,gBAAI,aAAa,OAAO,sBAAsB;AAC9C,YAAA,AACE,AAAE,kBADQ,MAAM,QACT,GAAG,SAAG,UAAU,QAAM;YAD/B,AAEE,AAAE,kBAFQ,MAAM,SAER,GAAG,SAAG,UAAU,SAAO;;;AAKrC,4BAAc,MAAM;AAEpB,sBAAI,uBAAkB,GAAE;AAEtB,mBAAgB,oBAAc,QAAQ;cAAlC;AACJ,eAAI,SAAS,6BAAT,SAAS,oBAAgB,MAAM;AACjC,2CAAS,kCAAyB,kBAAY,EAAE,SAAS;;;;AAI/D,kBAAM,GAAG,KAAK;IAChB;;AAYE,qBAAS,QAAQ;AACjB,0BAAc,GAAG;AACjB,qBAAS,GAAG;IACd;;8FAZyC,MAA2B;IAtE9D,eAAS,OAAG,0CAAgB;IAC5B,kBAAY,GAAG,mBAAU;IAGf,cAAQ;IAUnB,wBAAkB,GAAG;IAarB,YAAM,GAAG;IACT,cAAQ,GAAG;IACX,mBAAa,GAAG;IAyCZ,oBAAc;IAAO,eAAS;AACrC,mBAAS,sBAAsB,YAAC,MAAM,eAAe,OAAO,CAAC,QAAC,KAAK;AACjE,oBAAQ,GAAG,KAAK;AAChB,uBAAW;;EAEf;;;;;;;;;;;;;;;;;;;;;;;;;;;kBA4BiB,KAAU;AACzB,UAAI,KAAK,IAAI,cAAQ,EAAE;AACvB,oBAAI,KAAK,KAAI,WAAK,IAAI,MAAM;AAC1B,mBAAK,GAAG,oBAAc,mBAAmB,CAAC,eAAS;;AAErD,oBAAQ,GAAG,KAAK;IAClB;;AASE,qBAAS,QAAQ;AACjB,0BAAc,GAAG;AACjB,qBAAS,GAAG;IACd;;qGATyC,MAA2B;IAf9D,eAAS,OAAG,0CAAgB;IAC1B,WAAK;IAGR,cAAQ,GAAG;IAWP,oBAAc;IAAO,eAAS;AACrC,mBAAS,sBAAsB,YAAC,MAAM,eAAe,OAAO,CAAC,4BAAW;EAC1E","file":"deferred_content.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["deferred_content.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAoCO;;;;;;oCAO2B,KAAU;AACxC,yBAAa,GAAG,KAAK;AACrB,uBAAW;IACb;;AAQE,UAAK,QAAiB,UAAT,cAAQ,eAAI,mBAAa;AACtC,UAAI,KAAK,KAAI,YAAM,EAAE;AACrB,UAAI,KAAK,EAAE;AACT,sBAAI,uBAAkB,GAAE;AAEtB,4BAAY,SAAO;;AAErB,sBAAQ,GAAG,oBAAc,mBAAmB,CAAC,eAAS;aACjD;AACL,sBAAI,uBAAkB,GAAE;AAEtB,kBAAgB,cAAQ;;cAApB,4BAAmC;AACvC,cAAI,oBAAU,SAAS,aAAW,IAAG,SAAS,QAAM,GAAG;AACvD,kCAAI,OAAO,GAAiB;AAG1B,gBAAI,aAAa,OAAO,sBAAsB;AAC9C,YAAA,AACE,AAAE,kBADQ,MAAM,QACT,GAAG,SAAG,UAAU,QAAM;YAD/B,AAEE,AAAE,kBAFQ,MAAM,SAER,GAAG,SAAG,UAAU,SAAO;;;AAKrC,4BAAc,MAAM;AAEpB,sBAAI,uBAAkB,GAAE;AAEtB,mBAAgB,oBAAc,QAAQ;cAAlC;AACJ,eAAI,SAAS,6BAAT,SAAS,oBAAgB,MAAM;AACjC,2CAAS,kCAAyB,kBAAY,EAAE,SAAS;;;;AAI/D,kBAAM,GAAG,KAAK;IAChB;;AAYE,qBAAS,QAAQ;AACjB,0BAAc,GAAG;AACjB,qBAAS,GAAG;IACd;;8FAZyC,MAA2B;IAtE9D,eAAS,OAAG,0CAAgB;IAC5B,kBAAY,GAAG,mBAAU;IAGf,cAAQ;IAUnB,wBAAkB,GAAG;IAarB,YAAM,GAAG;IACT,cAAQ,GAAG;IACX,mBAAa,GAAG;IAyCZ,oBAAc;IAAO,eAAS;AACrC,mBAAS,sBAAsB,YAAC,MAAM,eAAe,OAAO,CAAC,QAAC,KAAK;AACjE,oBAAQ,GAAG,KAAK;AAChB,uBAAW;;EAEf;;;;;;;;;;;;;;;;;;;;;;;;;;;;kBA4BiB,KAAU;AACzB,UAAI,KAAK,IAAI,cAAQ,EAAE;AACvB,oBAAI,KAAK,KAAI,WAAK,IAAI,MAAM;AAC1B,mBAAK,GAAG,oBAAc,mBAAmB,CAAC,eAAS;;AAErD,oBAAQ,GAAG,KAAK;IAClB;;AASE,qBAAS,QAAQ;AACjB,0BAAc,GAAG;AACjB,qBAAS,GAAG;IACd;;qGATyC,MAA2B;IAf9D,eAAS,OAAG,0CAAgB;IAC1B,WAAK;IAGR,cAAQ,GAAG;IAWP,oBAAc;IAAO,eAAS;AACrC,mBAAS,sBAAsB,YAAC,MAAM,eAAe,OAAO,CAAC,4BAAW;EAC1E","file":"deferred_content.ddc.js"}');
   // Exports:
   return {
     content__deferred_content: content__deferred_content

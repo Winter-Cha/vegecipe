@@ -47,6 +47,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(app_layout__material_persistent_drawer$46template.MaterialPersistentDrawerDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(app_layout__material_persistent_drawer$46template.MaterialPersistentDrawerDirectiveNgCd, "package:angular_components/app_layout/material_persistent_drawer.template.dart");
   dart.setFieldSignature(app_layout__material_persistent_drawer$46template.MaterialPersistentDrawerDirectiveNgCd, () => ({
     __proto__: dart.getFields(app_layout__material_persistent_drawer$46template.MaterialPersistentDrawerDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(app_layout__material_persistent_drawer.MaterialPersistentDrawerDirective),
@@ -70,7 +71,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/app_layout/material_persistent_drawer.template.ddc", {
     "package:angular_components/app_layout/material_persistent_drawer.template.dart": app_layout__material_persistent_drawer$46template
-  }, '{"version":3,"sourceRoot":"","sources":["material_persistent_drawer.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;IAiBkD;;;;;;sBAIzB,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,uBAAuB;AACjD,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,wBAAwB,SAAS;AACvE,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,sBAAsB;AAChD,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,uBAAuB,SAAS;AACtE,qBAAO,GAAG,SAAS;;IAEvB;;0GAZsC,QAAa;IAF9C,aAAO;IACP,aAAO;IAC+B,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;MAelD,0DAAQ;YAAG;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAM,yDAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,wDAAa;EACrB","file":"material_persistent_drawer.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_persistent_drawer.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;IAiBkD;;;;;;sBAIzB,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,uBAAuB;AACjD,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,wBAAwB,SAAS;AACvE,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,sBAAsB;AAChD,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,uBAAuB,SAAS;AACtE,qBAAO,GAAG,SAAS;;IAEvB;;0GAZsC,QAAa;IAF9C,aAAO;IACP,aAAO;IAC+B,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;;MAelD,0DAAQ;YAAG;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAM,yDAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,wDAAa;EACrB","file":"material_persistent_drawer.template.ddc.js"}');
   // Exports:
   return {
     app_layout__material_persistent_drawer$46template: app_layout__material_persistent_drawer$46template

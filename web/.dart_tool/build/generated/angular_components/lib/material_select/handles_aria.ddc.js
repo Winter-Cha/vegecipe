@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (material_select__handles_aria.HandlesAria.new = function() {
   }).prototype = material_select__handles_aria.HandlesAria.prototype;
   dart.addTypeTests(material_select__handles_aria.HandlesAria);
+  dart.setLibraryUri(material_select__handles_aria.HandlesAria, "package:angular_components/material_select/handles_aria.dart");
   dart.trackLibraries("packages/angular_components/material_select/handles_aria.ddc", {
     "package:angular_components/material_select/handles_aria.dart": material_select__handles_aria
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["handles_aria.dart"],"names":[],"mappings":";;;;;;;;EAiBmB","file":"handles_aria.ddc.js"}');
   // Exports:
   return {

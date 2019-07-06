@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/framework_stabilizers/framework_stabilizers.template.ddc", {
     "package:angular_components/framework_stabilizers/framework_stabilizers.template.dart": framework_stabilizers__framework_stabilizers$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["framework_stabilizers.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"framework_stabilizers.template.ddc.js"}');
   // Exports:
   return {

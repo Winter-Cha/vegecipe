@@ -22,8 +22,10 @@ define(['dart_sdk', 'packages/angular_components/app_layout/material_drawer_base
     hostMatDrawerCollapsed: core.bool,
     hostMatDrawerExpanded: core.bool
   }));
+  dart.setLibraryUri(app_layout__material_persistent_drawer.MaterialPersistentDrawerDirective, "package:angular_components/app_layout/material_persistent_drawer.dart");
   dart.trackLibraries("packages/angular_components/app_layout/material_persistent_drawer.ddc", {
     "package:angular_components/app_layout/material_persistent_drawer.dart": app_layout__material_persistent_drawer
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_persistent_drawer.dart"],"names":[],"mappings":";;;;;;;;;YA2BqC,YAAC,YAAO;;;YAGT,aAAO;;;;AANH;EAAO","file":"material_persistent_drawer.ddc.js"}');
   // Exports:
   return {

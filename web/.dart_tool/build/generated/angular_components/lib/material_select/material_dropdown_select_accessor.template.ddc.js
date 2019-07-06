@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/material_dropdo
   };
   dart.trackLibraries("packages/angular_components/material_select/material_dropdown_select_accessor.template.ddc", {
     "package:angular_components/material_select/material_dropdown_select_accessor.template.dart": material_select__material_dropdown_select_accessor$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_select_accessor.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,sEAAQ;YAAG;;;;;AAEb,kBAAI,sEAAQ,GAAE;AACZ;;AAEF,6EAAW;AAEX,IAAM,kEAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,0DAAa;AACnB,IAAM,sCAAa;EACrB","file":"material_dropdown_select_accessor.template.ddc.js"}');
   // Exports:
   return {

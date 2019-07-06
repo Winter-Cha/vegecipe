@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const model__action__async_action = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/model/action/async_action.ddc", {
     "package:angular_components/model/action/async_action.dart": model__action__async_action
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"async_action.ddc.js"}');
   // Exports:
   return {

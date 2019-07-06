@@ -18,12 +18,14 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
   }).prototype = utils__angular__id__id.AutoIdDirective.prototype;
   dart.addTypeTests(utils__angular__id__id.AutoIdDirective);
   const id = Symbol("AutoIdDirective.id");
+  dart.setLibraryUri(utils__angular__id__id.AutoIdDirective, "package:angular_components/utils/angular/id/id.dart");
   dart.setFieldSignature(utils__angular__id__id.AutoIdDirective, () => ({
     __proto__: dart.getFields(utils__angular__id__id.AutoIdDirective.__proto__),
     id: dart.finalFieldType(core.String)
   }));
   dart.trackLibraries("packages/angular_components/utils/angular/id/id.ddc", {
     "package:angular_components/utils/angular/id/id.dart": utils__angular__id__id
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["id.dart"],"names":[],"mappings":";;;;;;;;IAoBe;;;;;;;yDAGT,WAAmC,EAAE,UAAkC;IACrE,QAAE,GAAG,UAAU,WAAV,UAAU,GACV,CAAC,WAAW,WAAX,WAAW,OAAI,gEAA8B,UAAU;EAAG","file":"id.ddc.js"}');
   // Exports:
   return {

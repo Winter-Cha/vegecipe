@@ -27,6 +27,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(reorder_list__reorder_events.ReorderEvent);
   const sourceIndex$ = Symbol("ReorderEvent.sourceIndex");
   const destIndex$ = Symbol("ReorderEvent.destIndex");
+  dart.setLibraryUri(reorder_list__reorder_events.ReorderEvent, "package:angular_components/reorder_list/reorder_events.dart");
   dart.setFieldSignature(reorder_list__reorder_events.ReorderEvent, () => ({
     __proto__: dart.getFields(reorder_list__reorder_events.ReorderEvent.__proto__),
     sourceIndex: dart.finalFieldType(core.int),
@@ -46,6 +47,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = reorder_list__reorder_events.MultiReorderEvent.prototype;
   dart.addTypeTests(reorder_list__reorder_events.MultiReorderEvent);
   const sourceIndexes$ = Symbol("MultiReorderEvent.sourceIndexes");
+  dart.setLibraryUri(reorder_list__reorder_events.MultiReorderEvent, "package:angular_components/reorder_list/reorder_events.dart");
   dart.setFieldSignature(reorder_list__reorder_events.MultiReorderEvent, () => ({
     __proto__: dart.getFields(reorder_list__reorder_events.MultiReorderEvent.__proto__),
     sourceIndexes: dart.finalFieldType(ListOfint())
@@ -63,13 +65,15 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = reorder_list__reorder_events.ItemSelectionEvent.prototype;
   dart.addTypeTests(reorder_list__reorder_events.ItemSelectionEvent);
   const selectedIndexes = Symbol("ItemSelectionEvent.selectedIndexes");
+  dart.setLibraryUri(reorder_list__reorder_events.ItemSelectionEvent, "package:angular_components/reorder_list/reorder_events.dart");
   dart.setFieldSignature(reorder_list__reorder_events.ItemSelectionEvent, () => ({
     __proto__: dart.getFields(reorder_list__reorder_events.ItemSelectionEvent.__proto__),
     selectedIndexes: dart.finalFieldType(ListOfint())
   }));
   dart.trackLibraries("packages/angular_components/reorder_list/reorder_events.ddc", {
     "package:angular_components/reorder_list/reorder_events.dart": reorder_list__reorder_events
-  }, '{"version":3,"sourceRoot":"","sources":["reorder_events.dart"],"names":[],"mappings":";;;;;;;;;IAMY;;;;;;IACA;;;;;;;4DAEG,WAAgB,EAAE,SAAc;IAA3B,kBAAW,GAAX,WAAW;IAAO,gBAAS,GAAT,SAAS;EAAC;;;;;;;;;;IAQ9B;;;;;;;iEAEE,aAAuB,EAAE,SAAa;IAClD,oBAAa,GAAG,aAAa;AAC7B,4EAAM,aAAa,QAAC,IAAI,SAAS;EAAC;;;;;;;;IAMxB;;;;;;;kEAEG,OAAiB;IAC9B,qBAAe,GAAG,wBAAsB,CAAC,OAAO;EAAC","file":"reorder_events.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["reorder_events.dart"],"names":[],"mappings":";;;;;;;;;IAMY;;;;;;IACA;;;;;;;4DAEG,WAAgB,EAAE,SAAc;IAA3B,kBAAW,GAAX,WAAW;IAAO,gBAAS,GAAT,SAAS;EAAC;;;;;;;;;;;IAQ9B;;;;;;;iEAEE,aAAuB,EAAE,SAAa;IAClD,oBAAa,GAAG,aAAa;AAC7B,4EAAM,aAAa,QAAC,IAAI,SAAS;EAAC;;;;;;;;;IAMxB;;;;;;;kEAEG,OAAiB;IAC9B,qBAAe,GAAG,wBAAsB,CAAC,OAAO;EAAC","file":"reorder_events.ddc.js"}');
   // Exports:
   return {
     reorder_list__reorder_events: reorder_list__reorder_events

@@ -68,6 +68,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/dom_service/dom_s
     onFocus: dart.fnType(dart.void, [html.Event]),
     focus: dart.fnType(dart.void, [], [html.UIEvent])
   }));
+  dart.setLibraryUri(focus__keyboard_only_focus_indicator.KeyboardOnlyFocusIndicatorDirective, "package:angular_components/focus/keyboard_only_focus_indicator.dart");
   dart.setFieldSignature(focus__keyboard_only_focus_indicator.KeyboardOnlyFocusIndicatorDirective, () => ({
     __proto__: dart.getFields(focus__keyboard_only_focus_indicator.KeyboardOnlyFocusIndicatorDirective.__proto__),
     [_element]: dart.finalFieldType(html.HtmlElement),
@@ -87,6 +88,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/dom_service/dom_s
     this.index = x;
   }).prototype = focus__keyboard_only_focus_indicator._InteractionType.prototype;
   dart.addTypeTests(focus__keyboard_only_focus_indicator._InteractionType);
+  dart.setLibraryUri(focus__keyboard_only_focus_indicator._InteractionType, "package:angular_components/focus/keyboard_only_focus_indicator.dart");
   dart.setFieldSignature(focus__keyboard_only_focus_indicator._InteractionType, () => ({
     __proto__: dart.getFields(focus__keyboard_only_focus_indicator._InteractionType.__proto__),
     index: dart.finalFieldType(core.int)
@@ -98,6 +100,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/dom_service/dom_s
   focus__keyboard_only_focus_indicator._InteractionType.values = dart.constList([focus__keyboard_only_focus_indicator._InteractionType.mouse, focus__keyboard_only_focus_indicator._InteractionType.keyboard, focus__keyboard_only_focus_indicator._InteractionType.none], focus__keyboard_only_focus_indicator._InteractionType);
   dart.trackLibraries("packages/angular_components/focus/keyboard_only_focus_indicator.ddc", {
     "package:angular_components/focus/keyboard_only_focus_indicator.dart": focus__keyboard_only_focus_indicator
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["keyboard_only_focus_indicator.dart"],"names":[],"mappings":";;;;;;;;;;;;;;YA2Be,CAAe;AAC1B,4BAAgB,GAAG,qDAAgB,SAAS;AAC5C,uBAAY;IACd;;AAKE,UAAI,cAAQ,MAAM,UAAQ,KAAI,IAAI;AAChC,yBAAW,cAAc,CAAC;AACxB,wBAAQ,MAAM,UAAQ,GAAG;;;IAG/B;;AAME,4BAAgB,GAAG,qDAAgB,MAAM;AACzC,sBAAW;IACb;;AAIE,UAAI,cAAQ,MAAM,UAAQ,KAAI,QAAQ;AACpC,yBAAW,cAAc,CAAC;AACxB,wBAAQ,MAAM,UAAQ,GAAG;;;IAG/B;YAIa,KAAW;AAItB,UAAI,sBAAgB,KAAI,qDAAgB,MAAM,EAAE;AAC9C,wBAAW;aACN;AACL,yBAAY;;IAEhB;UAiBY,KAAa;4BAAL;AAClB,uBAAW,cAAc,CAAC;AACxB,sBAAQ,MAAM;;AAEhB,6BAAI,KAAK,GAAgB;AACvB,wBAAW;aACN;AACL,yBAAY;;IAEhB;;;IA3EiB,sBAAgB,GAAG,qDAAgB,KAAK;IAEhB,cAAQ;IAAO,iBAAW;EAAC","file":"keyboard_only_focus_indicator.ddc.js"}');
   // Exports:
   return {

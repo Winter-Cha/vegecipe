@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_input/material_percent_directive.template.ddc", {
     "package:angular_components/material_input/material_percent_directive.template.dart": material_input__material_percent_directive$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_percent_directive.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,8DAAQ;YAAG;;;;;AAEb,kBAAI,8DAAQ,GAAE;AACZ;;AAEF,qEAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,kEAAa;AACnB,IAAM,iEAAa;EACrB","file":"material_percent_directive.template.ddc.js"}');
   // Exports:
   return {

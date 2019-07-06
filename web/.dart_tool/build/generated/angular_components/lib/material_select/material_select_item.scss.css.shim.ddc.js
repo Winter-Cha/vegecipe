@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_select/material_select_item.scss.css.shim.ddc", {
     "package:angular_components/material_select/material_select_item.scss.css.shim.dart": material_select__material_select_item$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_select_item.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,gEAAM;YAAG,EAAC","file":"material_select_item.scss.css.shim.ddc.js"}');
   // Exports:
   return {

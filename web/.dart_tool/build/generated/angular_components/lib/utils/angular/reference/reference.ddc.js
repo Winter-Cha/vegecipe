@@ -18,12 +18,14 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
   }).prototype = utils__angular__reference__reference.ReferenceDirective.prototype;
   dart.addTypeTests(utils__angular__reference__reference.ReferenceDirective);
   const elementRef$ = Symbol("ReferenceDirective.elementRef");
+  dart.setLibraryUri(utils__angular__reference__reference.ReferenceDirective, "package:angular_components/utils/angular/reference/reference.dart");
   dart.setFieldSignature(utils__angular__reference__reference.ReferenceDirective, () => ({
     __proto__: dart.getFields(utils__angular__reference__reference.ReferenceDirective.__proto__),
     elementRef: dart.finalFieldType(src__core__linker__element_ref.ElementRef)
   }));
   dart.trackLibraries("packages/angular_components/utils/angular/reference/reference.ddc", {
     "package:angular_components/utils/angular/reference/reference.dart": utils__angular__reference__reference
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["reference.dart"],"names":[],"mappings":";;;;;;;;IAqBmB;;;;;;;0EAEE,UAAe;IAAV,iBAAU,GAAV,UAAU;EAAC","file":"reference.ddc.js"}');
   // Exports:
   return {

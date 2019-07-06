@@ -82,6 +82,7 @@ define(['dart_sdk', 'packages/angular_components/button_decorator/button_decorat
     isMouseDown: core.bool,
     zElevation: core.int
   }));
+  dart.setLibraryUri(material_button__material_button_base.MaterialButtonBase, "package:angular_components/material_button/material_button_base.dart");
   dart.setFieldSignature(material_button__material_button_base.MaterialButtonBase, () => ({
     __proto__: dart.getFields(material_button__material_button_base.MaterialButtonBase.__proto__),
     [_focused]: dart.fieldType(core.bool),
@@ -99,7 +100,8 @@ define(['dart_sdk', 'packages/angular_components/button_decorator/button_decorat
   });
   dart.trackLibraries("packages/angular_components/material_button/material_button_base.ddc", {
     "package:angular_components/material_button/material_button_base.dart": material_button__material_button_base
-  }, '{"version":3,"sourceRoot":"","sources":["material_button_base.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAsBO;;;;;;;YAGwB,WAAT,cAAQ,eAAI,mBAAa;;;YAGrB,eAAQ;;;YAGR,mBAAY;;;uBAMhC,kBAAY,eAAI,cAAQ,IAAG,CAAe,GAAG,CAAY;;kBAQ5C,QAAa;AAC5B,6BAAiB,CAAC;AAChB,YAAI,cAAQ,IAAI,QAAQ,EAAE;AACxB,wBAAQ,GAAG,QAAQ;AACnB,kCAAmB;;;IAGzB;2BAG4B;gBAIX,CAAC;AAChB,yBAAa,GAAG;AAChB,wBAAY,GAAG;IACjB;cAIe,CAAC;AACd,wBAAY,GAAG;IACjB;YAIa,KAAa;AACxB,oBAAI,mBAAa,GAAE;AACnB,uBAAW,CAAC;IACd;WAIY,KAAa;AACvB,oBAAI,mBAAa,GAAE,mBAAa,GAAG;AAEnC,uBAAW,CAAC;IACd;;2EA5CmB,OAAmB,EAAE,IAAW;QACzC,sFAAqB;IAzB1B,cAAQ,GAAG;IACX,mBAAa,GAAG;IAChB,kBAAY,GAAG;IAKf,YAAM,GAAG;AAmBR,sFAAM,OAAO,EAAE,IAAI,uBAAsB,kBAAkB;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;MA7BrD,qEAAY;YAAG;;MACf,wEAAe;YAAG","file":"material_button_base.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_button_base.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAsBO;;;;;;;YAGwB,WAAT,cAAQ,eAAI,mBAAa;;;YAGrB,eAAQ;;;YAGR,mBAAY;;;uBAMhC,kBAAY,eAAI,cAAQ,IAAG,CAAe,GAAG,CAAY;;kBAQ5C,QAAa;AAC5B,6BAAiB,CAAC;AAChB,YAAI,cAAQ,IAAI,QAAQ,EAAE;AACxB,wBAAQ,GAAG,QAAQ;AACnB,kCAAmB;;;IAGzB;2BAG4B;gBAIX,CAAC;AAChB,yBAAa,GAAG;AAChB,wBAAY,GAAG;IACjB;cAIe,CAAC;AACd,wBAAY,GAAG;IACjB;YAIa,KAAa;AACxB,oBAAI,mBAAa,GAAE;AACnB,uBAAW,CAAC;IACd;WAIY,KAAa;AACvB,oBAAI,mBAAa,GAAE,mBAAa,GAAG;AAEnC,uBAAW,CAAC;IACd;;2EA5CmB,OAAmB,EAAE,IAAW;QACzC,sFAAqB;IAzB1B,cAAQ,GAAG;IACX,mBAAa,GAAG;IAChB,kBAAY,GAAG;IAKf,YAAM,GAAG;AAmBR,sFAAM,OAAO,EAAE,IAAI,uBAAsB,kBAAkB;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA7BrD,qEAAY;YAAG;;MACf,wEAAe;YAAG","file":"material_button_base.ddc.js"}');
   // Exports:
   return {
     material_button__material_button_base: material_button__material_button_base

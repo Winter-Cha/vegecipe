@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/auto_dismiss/auto_dismiss.template.ddc", {
     "package:angular_components/auto_dismiss/auto_dismiss.template.dart": auto_dismiss__auto_dismiss$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["auto_dismiss.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,8CAAQ;YAAG;;;;;AAEb,kBAAI,8CAAQ,GAAE;AACZ;;AAEF,qDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,uDAAa;EACrB","file":"auto_dismiss.template.ddc.js"}');
   // Exports:
   return {

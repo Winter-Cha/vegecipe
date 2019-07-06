@@ -34,6 +34,7 @@ define(['dart_sdk', 'packages/quiver/time', 'packages/angular/src/core/change_de
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/module.ddc", {
     "package:angular_components/material_datepicker/module.dart": material_datepicker__module
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.dart"],"names":[],"mappings":";;;;;;;;;;;;MAWM,sCAAU;4BAAG,eAAK;;MAElB,2CAAe;4BACjB,2CAAW,CAAC;;MAOV,8CAAkB;YAAG,iBACzB,qCAAa,EACb,+CAAmB,aACnB,4CAAyB,CAAC,2CAAe,EAAE,0BAAK;;MAc5C,4DAAgC;YAAG,iBACvC,+CAAmB,EACnB,8DAA2B,aAC3B,4CAAyB,CAAC,2CAAe,EAAE,qDAAkB;;MAMzD,+CAAmB;wBAAG,+BAAQ,CAAC,0BAAK,aAAY,sCAAU;;MAI1D,4CAAgB;4BAAG,2CAAW,CAAC;;MAK/B,iDAAqB;4BAAG,2CAAW,CAAC","file":"module.ddc.js"}');
   // Exports:
   return {

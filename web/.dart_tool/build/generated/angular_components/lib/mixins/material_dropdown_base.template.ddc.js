@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/mixins/material_dropdown_base.template.ddc", {
     "package:angular_components/mixins/material_dropdown_base.template.dart": mixins__material_dropdown_base$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_dropdown_base.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,kDAAQ;YAAG;;;;;AAEb,kBAAI,kDAAQ,GAAE;AACZ;;AAEF,yDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,wDAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,+CAAa;EACrB","file":"material_dropdown_base.template.ddc.js"}');
   // Exports:
   return {

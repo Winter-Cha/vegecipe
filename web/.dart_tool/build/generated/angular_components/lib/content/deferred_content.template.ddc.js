@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular_components/content/deferred_content_aware.
   };
   dart.trackLibraries("packages/angular_components/content/deferred_content.template.ddc", {
     "package:angular_components/content/deferred_content.template.dart": content__deferred_content$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["deferred_content.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,6CAAQ;YAAG;;;;;AAEb,kBAAI,6CAAQ,GAAE;AACZ;;AAEF,oDAAW;AAEX,IAAM,wDAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,kDAAa;EACrB","file":"deferred_content.template.ddc.js"}');
   // Exports:
   return {

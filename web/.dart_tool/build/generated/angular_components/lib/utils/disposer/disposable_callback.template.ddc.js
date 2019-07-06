@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer.templat
   };
   dart.trackLibraries("packages/angular_components/utils/disposer/disposable_callback.template.ddc", {
     "package:angular_components/utils/disposer/disposable_callback.template.dart": utils__disposer__disposable_callback$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["disposable_callback.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,wDAAQ;YAAG;;;;;AAEb,kBAAI,wDAAQ,GAAE;AACZ;;AAEF,+DAAW;AAEX,IAAM,kDAAa;EACrB","file":"disposable_callback.template.ddc.js"}');
   // Exports:
   return {

@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/framework_stabilizers/framework
   };
   dart.trackLibraries("packages/angular_components/framework_stabilizers/testability.template.ddc", {
     "package:angular_components/framework_stabilizers/testability.template.dart": framework_stabilizers__testability$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["testability.template.dart"],"names":[],"mappings":";;;;;;;;MASI,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,qEAAa;AACnB,IAAM,qEAAa;EACrB","file":"testability.template.ddc.js"}');
   // Exports:
   return {

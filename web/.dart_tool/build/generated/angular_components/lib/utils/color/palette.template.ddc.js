@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/utils/color/material.template']
   };
   dart.trackLibraries("packages/angular_components/utils/color/palette.template.ddc", {
     "package:angular_components/utils/color/palette.template.dart": utils__color__palette$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["palette.template.dart"],"names":[],"mappings":";;;;;;;;MASI,yCAAQ;YAAG;;;;;AAEb,kBAAI,yCAAQ,GAAE;AACZ;;AAEF,gDAAW;AAEX,IAAM,+CAAa;AACnB,IAAM,+CAAa;EACrB","file":"palette.template.ddc.js"}');
   // Exports:
   return {

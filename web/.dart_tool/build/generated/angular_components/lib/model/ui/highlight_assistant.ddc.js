@@ -53,6 +53,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/highlighted_text_model
     __proto__: dart.getGetters(model__ui__highlight_assistant.HighlightAssistant.__proto__),
     [_textHighlighter]: model__ui__highlighted_text_model.TextHighlighter
   }));
+  dart.setLibraryUri(model__ui__highlight_assistant.HighlightAssistant, "package:angular_components/model/ui/highlight_assistant.dart");
   dart.setFieldSignature(model__ui__highlight_assistant.HighlightAssistant, () => ({
     __proto__: dart.getFields(model__ui__highlight_assistant.HighlightAssistant.__proto__),
     [_highlightCache]: dart.finalFieldType(MapOfString$MapOfdynamic$ListOfHighlightedTextSegment()),
@@ -67,7 +68,8 @@ define(['dart_sdk', 'packages/angular_components/model/ui/highlighted_text_model
   });
   dart.trackLibraries("packages/angular_components/model/ui/highlight_assistant.ddc", {
     "package:angular_components/model/ui/highlight_assistant.dart": model__ui__highlight_assistant
-  }, '{"version":3,"sourceRoot":"","sources":["highlight_assistant.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;cAqB0C,uBAAiB;uDACrD,qDAAe,wBAAuB,2BAAqB;IAAC;uBAa5D,UAAiB,EAAE,IAAY,EAAE,YAA4B;AAC/D,cAA2B,qBAAe,QAAC,UAAU;UAAjD,mCAAuB,qBAAe,QAAC,UAAU,EAAM;AAC3D,UAAI,QAAQ,oBAAoB,QAAC,IAAI;AACrC,UAAI,KAAK,IAAI,MAAM;AACjB,aAAK,GAAI,wBAAkB,IAAI,OACzB,wBAAkB,CAAC,UAAU,EAAE,IAAI,IACnC,sBAAgB,UAAU,CACxB,YAAY,UAAC,IAAI,IAAG,UAAU,QAAM,CAAC,iEAAe;AAC5D,4BAAoB,QAAC,IAAI,EAAI,KAAK;;AAEpC,YAAO,MAAK;IACd;;;QAhBiB;QAAwB,4FAAuB;IAlB1D,qBAAe,GACjB;IAKY,uBAAiB;IAa3B,wBAAkB,GAAG,iBAAiB;IACtC,2BAAqB,GAAG,oBAAoB;;;;;;;;;;;;;;;;;;;MAvB9B,iEAAe;YAAG,gBAAM,CAAC","file":"highlight_assistant.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["highlight_assistant.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;cAqB0C,uBAAiB;uDACrD,qDAAe,wBAAuB,2BAAqB;IAAC;uBAa5D,UAAiB,EAAE,IAAY,EAAE,YAA4B;AAC/D,cAA2B,qBAAe,QAAC,UAAU;UAAjD,mCAAuB,qBAAe,QAAC,UAAU,EAAM;AAC3D,UAAI,QAAQ,oBAAoB,QAAC,IAAI;AACrC,UAAI,KAAK,IAAI,MAAM;AACjB,aAAK,GAAI,wBAAkB,IAAI,OACzB,wBAAkB,CAAC,UAAU,EAAE,IAAI,IACnC,sBAAgB,UAAU,CACxB,YAAY,UAAC,IAAI,IAAG,UAAU,QAAM,CAAC,iEAAe;AAC5D,4BAAoB,QAAC,IAAI,EAAI,KAAK;;AAEpC,YAAO,MAAK;IACd;;;QAhBiB;QAAwB,4FAAuB;IAlB1D,qBAAe,GACjB;IAKY,uBAAiB;IAa3B,wBAAkB,GAAG,iBAAiB;IACtC,2BAAqB,GAAG,oBAAoB;;;;;;;;;;;;;;;;;;;;MAvB9B,iEAAe;YAAG,gBAAM,CAAC","file":"highlight_assistant.ddc.js"}');
   // Exports:
   return {
     model__ui__highlight_assistant: model__ui__highlight_assistant

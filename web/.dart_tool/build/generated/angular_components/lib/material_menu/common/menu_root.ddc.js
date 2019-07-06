@@ -19,6 +19,7 @@ define(['dart_sdk', 'packages/angular_components/mixins/material_dropdown_base']
   }).prototype = material_menu__common__menu_root.MenuRoot.prototype;
   dart.addTypeTests(material_menu__common__menu_root.MenuRoot);
   const visible = Symbol("MenuRoot.visible");
+  dart.setLibraryUri(material_menu__common__menu_root.MenuRoot, "package:angular_components/material_menu/common/menu_root.dart");
   dart.setFieldSignature(material_menu__common__menu_root.MenuRoot, () => ({
     __proto__: dart.getFields(material_menu__common__menu_root.MenuRoot.__proto__),
     visible: dart.fieldType(core.bool)
@@ -39,13 +40,15 @@ define(['dart_sdk', 'packages/angular_components/mixins/material_dropdown_base']
     __proto__: dart.getMethods(material_menu__common__menu_root.MenuRootDirective.__proto__),
     closeHierarchy: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(material_menu__common__menu_root.MenuRootDirective, "package:angular_components/material_menu/common/menu_root.dart");
   dart.setFieldSignature(material_menu__common__menu_root.MenuRootDirective, () => ({
     __proto__: dart.getFields(material_menu__common__menu_root.MenuRootDirective.__proto__),
     [_dropdown]: dart.finalFieldType(mixins__material_dropdown_base.DropdownHandle)
   }));
   dart.trackLibraries("packages/angular_components/material_menu/common/menu_root.ddc", {
     "package:angular_components/material_menu/common/menu_root.dart": material_menu__common__menu_root
-  }, '{"version":3,"sourceRoot":"","sources":["menu_root.dart"],"names":[],"mappings":";;;;;;;;;IAiCO;;;;;;;;iBAAO;EACd;;;;;;;;;AAdI,kBAAO,GAAG;AACV,qBAAS,MAAM;IACjB;;;IAPmC,eAAS;;AAC1C,gBAAO,GAAG;EACZ","file":"menu_root.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["menu_root.dart"],"names":[],"mappings":";;;;;;;;;IAiCO;;;;;;;;iBAAO;EACd;;;;;;;;;;AAdI,kBAAO,GAAG;AACV,qBAAS,MAAM;IACjB;;;IAPmC,eAAS;;AAC1C,gBAAO,GAAG;EACZ","file":"menu_root.ddc.js"}');
   // Exports:
   return {
     material_menu__common__menu_root: material_menu__common__menu_root

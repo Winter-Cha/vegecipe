@@ -25,7 +25,7 @@ define(['dart_sdk', 'packages/quiver/strings', 'packages/angular_components/util
       } else if (this.hostTabIndex == null) {
         return null;
       } else if (!dart.test(strings$.isBlank(this.hostTabIndex))) {
-        if (!(utils__angular__properties__properties.getInt(this.hostTabIndex) != null)) dart.assertFailed();
+        if (!(utils__angular__properties__properties.getInt(this.hostTabIndex) != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/mixins/has_tab_index.dart", 35, 14, "getInt(hostTabIndex) != null");
         return this.hostTabIndex;
       }
       dart.throw("Host tabIndex should either be null or a value");
@@ -45,12 +45,14 @@ define(['dart_sdk', 'packages/quiver/strings', 'packages/angular_components/util
     hostTabIndex: core.String,
     tabIndex: core.String
   }));
+  dart.setLibraryUri(mixins__has_tab_index.HasTabIndex, "package:angular_components/mixins/has_tab_index.dart");
   dart.setFieldSignature(mixins__has_tab_index.HasTabIndex, () => ({
     __proto__: dart.getFields(mixins__has_tab_index.HasTabIndex.__proto__),
     [_tabIndex]: dart.fieldType(core.String)
   }));
   dart.trackLibraries("packages/angular_components/mixins/has_tab_index.ddc", {
     "package:angular_components/mixins/has_tab_index.dart": mixins__has_tab_index
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_tab_index.dart"],"names":[],"mappings":";;;;;;;;;;;;YAe6B;IAAG;;AAO5B,qBAAS,GAAG,sBAAgB;IAC9B;;cAGuB,eAAS;6BAAI,sBAAgB;IAAE;;AAGpD,oBAAI,aAAQ,GAAE;AACZ,cAAO;YACF,KAAI,iBAAY,IAAI,MAAM;AAC/B,cAAO;YACF,gBAAK,gBAAO,CAAC,iBAAY,IAAG;AACjC,cAAO,6CAAM,CAAC,iBAAY,KAAK;AAC/B,cAAO,kBAAY;;AAErB,iBAAM;IACR;;;IApBO,eAAS;EAqBlB","file":"has_tab_index.ddc.js"}');
   // Exports:
   return {

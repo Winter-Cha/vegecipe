@@ -12,6 +12,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   });
   dart.trackLibraries("packages/angular_components/theme/module.ddc", {
     "package:angular_components/theme/module.dart": theme__module
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.dart"],"names":[],"mappings":";;;;;;;;MAOM,4BAAc;4BAAG,2CAAW,CAAC","file":"module.ddc.js"}');
   // Exports:
   return {

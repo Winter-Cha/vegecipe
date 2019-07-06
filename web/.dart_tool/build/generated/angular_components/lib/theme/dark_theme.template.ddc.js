@@ -35,6 +35,7 @@ define(['dart_sdk', 'packages/angular_components/theme/dark_theme', 'packages/an
   };
   dart.trackLibraries("packages/angular_components/theme/dark_theme.template.ddc", {
     "package:angular_components/theme/dark_theme.template.dart": theme__dark_theme$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dark_theme.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;MAWI,qCAAQ;YAAG;;;;;;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAO,kCAAe,CAAC,6CAAY,EAAE,QAAC,EAAO,QAAK,kCAAY,CAAC,EAAE;AACjE,IAAO,uCAAoB,CAAC,6CAAY,EAAE,sCACxC,2EAAC,oCAAa,oCAAC,2CAAwB,CAAC,2DAAkB,sCAAe;AAE3E,IAAM,gCAAa;AACnB,IAAM,sCAAa;EACrB","file":"dark_theme.template.ddc.js"}');
   // Exports:
   return {

@@ -37,6 +37,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
     setState: dart.fnType(dart.void, [dart.fnType(dart.void, [])]),
     deliverStateChanges: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(src__core__change_detection__component_state.ComponentState, "package:angular/src/core/change_detection/component_state.dart");
   dart.setFieldSignature(src__core__change_detection__component_state.ComponentState, () => ({
     __proto__: dart.getFields(src__core__change_detection__component_state.ComponentState.__proto__),
     [_onStateChanged]: dart.fieldType(VoidTovoid())
@@ -49,7 +50,8 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
     "package:angular/src/core/change_detection/component_state.dart": src__core__change_detection__component_state,
     "package:angular/src/core/change_detection.dart": src__core__change_detection,
     "package:angular/src/core/zone.dart": src__core__zone
-  }, '{"version":3,"sourceRoot":"","sources":["application_tokens.dart","change_detection/component_state.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAeM,oCAAM;4BAAG,2BAAmB,CAAC;;;;;aCkCnB,4BAA4C;AACxD,kCAA4B;AAC5B,8BAAmB;IACrB;;AAUE,UAAM,iBAAiB,qBAAe;AACtC,UAAI,cAAc,IAAI,MAAM;AAC1B,sBAAc;;IAElB;;;IA3CgB,qBAAe;EA4CjC;;;;;;;;;;;kFAKE,SAAwB,EACxB,cAA8B;AAE9B,aAAS,iBAAgB,GAAG,cAAc;EAC5C","file":"application_tokens.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["application_tokens.dart","change_detection/component_state.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAeM,oCAAM;4BAAG,2BAAmB,CAAC;;;;;aCkCnB,4BAA4C;AACxD,kCAA4B;AAC5B,8BAAmB;IACrB;;AAUE,UAAM,iBAAiB,qBAAe;AACtC,UAAI,cAAc,IAAI,MAAM;AAC1B,sBAAc;;IAElB;;;IA3CgB,qBAAe;EA4CjC;;;;;;;;;;;;kFAKE,SAAwB,EACxB,cAA8B;AAE9B,aAAS,iBAAgB,GAAG,cAAc;EAC5C","file":"application_tokens.ddc.js"}');
   // Exports:
   return {
     src__core__application_tokens: src__core__application_tokens,

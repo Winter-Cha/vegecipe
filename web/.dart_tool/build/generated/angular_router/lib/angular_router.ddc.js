@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const angular_router = Object.create(dart.library);
   dart.trackLibraries("packages/angular_router/angular_router.ddc", {
     "package:angular_router/angular_router.dart": angular_router
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"angular_router.ddc.js"}');
   // Exports:
   return {

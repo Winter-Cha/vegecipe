@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_expansionpanel/material_expansionpanel.scss.css.shim.ddc", {
     "package:angular_components/material_expansionpanel/material_expansionpanel.scss.css.shim.dart": material_expansionpanel__material_expansionpanel$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_expansionpanel.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,2EAAM;YAAG,EAAC","file":"material_expansionpanel.scss.css.shim.ddc.js"}');
   // Exports:
   return {

@@ -92,6 +92,7 @@ define(['dart_sdk', 'packages/angular_components/utils/rate_limit_utils/rate_lim
     "package:angular_components/src/utils/async/simple_stream.template.dart": src__utils__async__simple_stream$46template,
     "package:angular_components/src/utils/async/throttle_stream.template.dart": src__utils__async__throttle_stream$46template,
     "package:angular_components/src/utils/async/zoned_async.template.dart": src__utils__async__zoned_async$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["async_update_scheduler.template.dart","async_where.template.dart","rate_limit.template.dart","debounce_stream.template.dart","disposable_future.template.dart","lazy_stream_controller.template.dart","priority_stream_iterator.template.dart","simple_stream.template.dart","throttle_stream.template.dart","zoned_async.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;EAQsB;;ECAA;;MCAlB,iDAAQ;YAAG;;;;;AAEb,kBAAI,iDAAQ,GAAE;AACZ;;AAEF,wDAAW;AAEX,IAAM,kEAAa;EACrB;;MCPI,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,kEAAa;AACnB,IAAM,sDAAa;EACrB;;MCVI,wDAAQ;YAAG;;;;;AAEb,kBAAI,wDAAQ,GAAE;AACZ;;AAEF,+DAAW;AAEX,IAAM,kDAAa;EACrB;;ECRsB;;ECAA;;ECAA;;MCClB,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,kEAAa;AACnB,IAAM,sDAAa;EACrB;;ECVsB","file":"async_update_scheduler.template.ddc.js"}');
   // Exports:
   return {

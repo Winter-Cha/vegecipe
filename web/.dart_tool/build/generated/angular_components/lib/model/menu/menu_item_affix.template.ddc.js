@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon.template'], funct
   };
   dart.trackLibraries("packages/angular_components/model/menu/menu_item_affix.template.ddc", {
     "package:angular_components/model/menu/menu_item_affix.template.dart": model__menu__menu_item_affix$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["menu_item_affix.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,gDAAQ;YAAG;;;;;AAEb,kBAAI,gDAAQ,GAAE;AACZ;;AAEF,uDAAW;AAEX,IAAM,wCAAa;EACrB","file":"menu_item_affix.template.ddc.js"}');
   // Exports:
   return {

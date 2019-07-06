@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/ui/highlighted_text_model.template.ddc", {
     "package:angular_components/model/ui/highlighted_text_model.template.dart": model__ui__highlighted_text_model$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlighted_text_model.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"highlighted_text_model.template.ddc.js"}');
   // Exports:
   return {

@@ -68,6 +68,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     ngOnDestroy: dart.fnType(dart.void, []),
     handleActivate: dart.fnType(dart.void, [html.UIEvent])
   }));
+  dart.setLibraryUri(material_list__material_list_item.MaterialListItemComponent, "package:angular_components/material_list/material_list_item.dart");
   dart.setFieldSignature(material_list__material_list_item.MaterialListItemComponent, () => ({
     __proto__: dart.getFields(material_list__material_list_item.MaterialListItemComponent.__proto__),
     [_disposer]: dart.finalFieldType(utils__disposer__disposer.Disposer),
@@ -83,7 +84,8 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   });
   dart.trackLibraries("packages/angular_components/material_list/material_list_item.ddc", {
     "package:angular_components/material_list/material_list_item.dart": material_list__material_list_item
-  }, '{"version":3,"sourceRoot":"","sources":["material_list_item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAqCe;;;;;;IAEG;;;;;;;YAaK,eAAc;;iBAMtB,KAAU;YAAK,eAAc,GAAG,KAAK;;IAK7C;;;;;;;AAIH,qBAAS,QAAQ;IACnB;mBAEoB,CAAa;AAC/B,oBAAI,oBAAe,GAAE;uBAAS,kBAAT,eAAS,MAAO;;IACvC;;8EA/B0B,OAAY,YAClC,QAA+B,EAAE,IAA8B;IAT7D,eAAS,OAAG,0CAAgB;IA8B7B,qBAAe,GAAG;IAtBQ,cAAO,GAAP,OAAO;IAAmB,eAAS;IAE5D,kBAAY,sBAAG,QAAQ,WAAR,QAAQ,GAAI;AAC3B,yFAAM,OAAO,EAAE,IAAI,WAAJ,IAAI,GAAI;AAC3B,QAAI,eAAS,IAAI,MAAM;AACrB,qBAAS,cAAc,gCAAC,YAAO,OAAO,CAAC,iCAAc;;EAEzD;;;;;;;;;;;;;;;;;;;;MAjBa,qEAAS;YAAG","file":"material_list_item.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_list_item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAqCe;;;;;;IAEG;;;;;;;YAaK,eAAc;;iBAMtB,KAAU;YAAK,eAAc,GAAG,KAAK;;IAK7C;;;;;;;AAIH,qBAAS,QAAQ;IACnB;mBAEoB,CAAa;AAC/B,oBAAI,oBAAe,GAAE;uBAAS,kBAAT,eAAS,MAAO;;IACvC;;8EA/B0B,OAAY,YAClC,QAA+B,EAAE,IAA8B;IAT7D,eAAS,OAAG,0CAAgB;IA8B7B,qBAAe,GAAG;IAtBQ,cAAO,GAAP,OAAO;IAAmB,eAAS;IAE5D,kBAAY,sBAAG,QAAQ,WAAR,QAAQ,GAAI;AAC3B,yFAAM,OAAO,EAAE,IAAI,WAAJ,IAAI,GAAI;AAC3B,QAAI,eAAS,IAAI,MAAM;AACrB,qBAAS,cAAc,gCAAC,YAAO,OAAO,CAAC,iCAAc;;EAEzD;;;;;;;;;;;;;;;;;;;;;MAjBa,qEAAS;YAAG","file":"material_list_item.ddc.js"}');
   // Exports:
   return {
     material_list__material_list_item: material_list__material_list_item

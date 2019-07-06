@@ -129,6 +129,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getSetters(material_menu__dropdown_menu.DropdownMenuComponent.__proto__),
     disabled: core.bool
   }));
+  dart.setLibraryUri(material_menu__dropdown_menu.DropdownMenuComponent, "package:angular_components/material_menu/dropdown_menu.dart");
   dart.setFieldSignature(material_menu__dropdown_menu.DropdownMenuComponent, () => ({
     __proto__: dart.getFields(material_menu__dropdown_menu.DropdownMenuComponent.__proto__),
     [_disposer]: dart.finalFieldType(utils__disposer__disposer.Disposer),
@@ -142,6 +143,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   }));
   dart.trackLibraries("packages/angular_components/material_menu/dropdown_menu.ddc", {
     "package:angular_components/material_menu/dropdown_menu.dart": material_menu__dropdown_menu
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dropdown_menu.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkDI,qBAAS,QAAQ;IACnB;;AAIE,oBAAS,GAAG,kBAAY;IAC1B;IAIO;;;;;;;YAIc,gBAAS;;iBAGjB,CAAM;AACjB,qBAAS,GAAG,CAAC;AACb,oBAAS,GAAG,kBAAY;IAC1B;IAIO;;;;;;IAIF;;;;;;;YAEqB,qBAAc;;IAIhB;;;;;;IAGL;;;;;;;+DAGf,aAAQ,IAAG,iBAAQ,eAAU,IAAG,cAAS,GAAG,mBAAc;IAAC;;qEAnDzC,eAAiC;IAFjD,eAAS,OAAG,0CAAgB;IAuB3B,gBAAU;IAEZ,eAAS,GAAG;IAYV,2BAAqB;IAIvB,cAAQ,GAAG;IAGX,oBAAc,GAAG;IAGE,oBAAc;IAGnB,eAAS;;AA7C1B,mBAAS,sBAAsB,YAAC,qBAAgB,OAAO,CAAC,QAAC,CAAC;AACxD,oBAAS,GAAG,kBAAY;AACxB,qBAAe,aAAa;;EAEhC","file":"dropdown_menu.ddc.js"}');
   // Exports:
   return {

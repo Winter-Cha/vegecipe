@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/utils/showhide/showhide.template.ddc", {
     "package:angular_components/utils/showhide/showhide.template.dart": utils__showhide__showhide$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["showhide.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,6CAAQ;YAAG;;;;;AAEb,kBAAI,6CAAQ,GAAE;AACZ;;AAEF,oDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,+DAAa;EACrB","file":"showhide.template.ddc.js"}');
   // Exports:
   return {

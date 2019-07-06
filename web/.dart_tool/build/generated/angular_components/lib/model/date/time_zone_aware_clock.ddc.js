@@ -41,6 +41,7 @@ define(['dart_sdk', 'packages/logging/logging', 'packages/angular/src/core/chang
     model__date__time_zone_aware_clock.TimeZoneAwareClock.__proto__.new.call(this, dart.fn(() => time, VoidToDateTime()));
   }).prototype = model__date__time_zone_aware_clock.TimeZoneAwareClock.prototype;
   dart.addTypeTests(model__date__time_zone_aware_clock.TimeZoneAwareClock);
+  dart.setLibraryUri(model__date__time_zone_aware_clock.TimeZoneAwareClock, "package:angular_components/model/date/time_zone_aware_clock.dart");
   dart.defineExtensionMethods(model__date__time_zone_aware_clock.TimeZoneAwareClock, ['toString']);
   model__date__time_zone_aware_clock.clockFactory = function(timeZone) {
     return new model__date__time_zone_aware_clock.TimeZoneAwareClock.new(timeZone);
@@ -121,6 +122,7 @@ define(['dart_sdk', 'packages/logging/logging', 'packages/angular/src/core/chang
     __proto__: dart.getSetters(model__date__time_zone_aware_clock.SettableTimeZone.__proto__),
     offsetFromUtc: core.Duration
   }));
+  dart.setLibraryUri(model__date__time_zone_aware_clock.SettableTimeZone, "package:angular_components/model/date/time_zone_aware_clock.dart");
   dart.setFieldSignature(model__date__time_zone_aware_clock.SettableTimeZone, () => ({
     __proto__: dart.getFields(model__date__time_zone_aware_clock.SettableTimeZone.__proto__),
     [_time]: dart.finalFieldType(VoidToDateTime()),
@@ -130,7 +132,8 @@ define(['dart_sdk', 'packages/logging/logging', 'packages/angular/src/core/chang
   }));
   dart.trackLibraries("packages/angular_components/model/date/time_zone_aware_clock.ddc", {
     "package:angular_components/model/date/time_zone_aware_clock.dart": model__date__time_zone_aware_clock
-  }, '{"version":3,"sourceRoot":"","sources":["time_zone_aware_clock.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;MAWM,0CAAO;YACT,oBAAM,CAAC;;MAOL,qDAAkB;4BAAG,2CAAW,CAAC;;MAIjC,8DAA2B;YAAG,4BAClC,sCAAe,CAAC,kEAAgB,EAAE,6FAAuB,eACzD,oCAAa,CAAC,oEAAkB,eAChC,4CAAyB,CAAC,qDAAkB,EAAE,oEAAkB;;MAI5D,2DAAwB;wBAAG,0BAAM,WAAU,8DAA2B;;;;;;YA8BrD;IAAoB;;wEAPtB,QAAyB;AAAI,6FAAM,QAAQ;EAAM;0EAI3C,IAAa;AAAI,mFAAM,cAAM,IAAI;EAAC;;;6DAO1C,QAAyB;eAAK,yDAAkB,CAAC,QAAQ;EAAC;;eAK/B,uDAAgB;EAAE;;;;;;;YAahC,qBAAc;;sBAC1B,SAAkB;AAClC,UAAI,SAAS,IAAI,QAAQ,SAAS,eAAe,IAAI,MAAM;AACzD,uBAAM,wBAAmB,CACrB,SAAS,EAAE,cAAY;;AAE7B,UAAI,SAAS,IAAI,QAAQ,SAAS,eAAe,QAAM,EAAE;AACvD,uBAAM,wBAAmB,CAAC,SAAS,EAAE,cAAY;;AAGnD,qBAAK,kBAAY,YAAY,KAAI,SAAS,IAAI,MAAM;AAClD,0BAAY,SAAS;;AAEvB,0BAAc,GAAG,SAAS;IAC5B;;YAK0B,qBAAc,IAAI;IAAI;;YAIrB,mBAAY,OAAO;;;AAkB5C,UAAI,aAAa,WAAK;AACtB,UAAI,kBAAa,IAAI,MAAM;AAEzB,uBAAI,4BAAsB,GAAE;AAC1B,yBAAM,mBAAU,CACZ;eACC;AACL,oDAAO,OAAO,CAAC;AACf,gBAAO,WAAU;;YAEd,KAAI,UAAU,eAAe,eAAe,IAAI,MAAM;AAC3D,uBAAM,mBAAU,CACZ,mEAAuD,UAAU;YAChE,KAAI,UAAU,eAAe,eAAe,QAAM,EAAE;AACzD,uBAAM,mBAAU,CAAC,qDAAyC,UAAU;;AAKtE,UAAI,SAAS,AAAc,kBAAD,MAAG,UAAU,eAAe;AACtD,UAAI,MAAM,eAAe,IAAI,MAAM;AACjC,uBAAM,mBAAU,CAAC,iDACb,SAAE,kBAAa,qBAAK,UAAU,eAAe,qBAAK,MAAM;;AAE9D,UAAI,MAAM,eAAe,QAAM,EAAE;AAC/B,uBAAM,mBAAU,CAAC,mCACb,SAAE,kBAAa,qBAAK,UAAU,eAAe,qBAAK,MAAM;;AAE9D,YAAO,WAAU,IAAI,CAAC,MAAM;IAC9B;;sEArCK,QAAkC,EAAE,qBAAkC;6BAAzD,WAAW,2CAAU;0CAAO,wBAAwB;IAxChE,kBAAY,GAAG,qBAAe;IAuB3B,oBAAc;IAkBjB,WAAK,GAAG,QAAQ;IAChB,4BAAsB,GAAG,qBAAqB","file":"time_zone_aware_clock.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["time_zone_aware_clock.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;MAWM,0CAAO;YACT,oBAAM,CAAC;;MAOL,qDAAkB;4BAAG,2CAAW,CAAC;;MAIjC,8DAA2B;YAAG,4BAClC,sCAAe,CAAC,kEAAgB,EAAE,6FAAuB,eACzD,oCAAa,CAAC,oEAAkB,eAChC,4CAAyB,CAAC,qDAAkB,EAAE,oEAAkB;;MAI5D,2DAAwB;wBAAG,0BAAM,WAAU,8DAA2B;;;;;;YA8BrD;IAAoB;;wEAPtB,QAAyB;AAAI,6FAAM,QAAQ;EAAM;0EAI3C,IAAa;AAAI,mFAAM,cAAM,IAAI;EAAC;;;;6DAO1C,QAAyB;eAAK,yDAAkB,CAAC,QAAQ;EAAC;;eAK/B,uDAAgB;EAAE;;;;;;;YAahC,qBAAc;;sBAC1B,SAAkB;AAClC,UAAI,SAAS,IAAI,QAAQ,SAAS,eAAe,IAAI,MAAM;AACzD,uBAAM,wBAAmB,CACrB,SAAS,EAAE,cAAY;;AAE7B,UAAI,SAAS,IAAI,QAAQ,SAAS,eAAe,QAAM,EAAE;AACvD,uBAAM,wBAAmB,CAAC,SAAS,EAAE,cAAY;;AAGnD,qBAAK,kBAAY,YAAY,KAAI,SAAS,IAAI,MAAM;AAClD,0BAAY,SAAS;;AAEvB,0BAAc,GAAG,SAAS;IAC5B;;YAK0B,qBAAc,IAAI;IAAI;;YAIrB,mBAAY,OAAO;;;AAkB5C,UAAI,aAAa,WAAK;AACtB,UAAI,kBAAa,IAAI,MAAM;AAEzB,uBAAI,4BAAsB,GAAE;AAC1B,yBAAM,mBAAU,CACZ;eACC;AACL,oDAAO,OAAO,CAAC;AACf,gBAAO,WAAU;;YAEd,KAAI,UAAU,eAAe,eAAe,IAAI,MAAM;AAC3D,uBAAM,mBAAU,CACZ,mEAAuD,UAAU;YAChE,KAAI,UAAU,eAAe,eAAe,QAAM,EAAE;AACzD,uBAAM,mBAAU,CAAC,qDAAyC,UAAU;;AAKtE,UAAI,SAAS,AAAc,kBAAD,MAAG,UAAU,eAAe;AACtD,UAAI,MAAM,eAAe,IAAI,MAAM;AACjC,uBAAM,mBAAU,CAAC,iDACb,SAAE,kBAAa,qBAAK,UAAU,eAAe,qBAAK,MAAM;;AAE9D,UAAI,MAAM,eAAe,QAAM,EAAE;AAC/B,uBAAM,mBAAU,CAAC,mCACb,SAAE,kBAAa,qBAAK,UAAU,eAAe,qBAAK,MAAM;;AAE9D,YAAO,WAAU,IAAI,CAAC,MAAM;IAC9B;;sEArCK,QAAkC,EAAE,qBAAkC;6BAAzD,WAAW,2CAAU;0CAAO,wBAAwB;IAxChE,kBAAY,GAAG,qBAAe;IAuB3B,oBAAc;IAkBjB,WAAK,GAAG,QAAQ;IAChB,4BAAsB,GAAG,qBAAqB","file":"time_zone_aware_clock.ddc.js"}');
   // Exports:
   return {
     model__date__time_zone_aware_clock: model__date__time_zone_aware_clock

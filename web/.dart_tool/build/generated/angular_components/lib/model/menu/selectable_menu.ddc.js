@@ -174,7 +174,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       this[itemSuffixes$] = itemSuffixes != null ? itemSuffixes : new (ObservableListOfMenuItemAffix()).from(new core$0.Optional.fromNullable(itemSuffix));
       this[cssClasses$] = BuiltListOfString().new(core$.Iterable._check(cssClasses != null ? cssClasses : const$ || (const$ = dart.constList([], dart.dynamic))));
       SelectableMenuItem.__proto__.new.call(this);
-      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided");
+      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/selectable_menu.dart", 147, 12, "itemSuffix == null || itemSuffixes == null");
     }).prototype = SelectableMenuItem.prototype;
     dart.addTypeTests(SelectableMenuItem);
     SelectableMenuItem.prototype[_is_SelectableMenuItem_default] = true;
@@ -211,6 +211,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       action: core$.Function,
       selectableState: src__model__selection__interfaces__selectable.SelectableOption
     }));
+    dart.setLibraryUri(SelectableMenuItem, "package:angular_components/model/menu/selectable_menu.dart");
     dart.setFieldSignature(SelectableMenuItem, () => ({
       __proto__: dart.getFields(SelectableMenuItem.__proto__),
       [_action]: dart.fieldType(core$.Function),
@@ -294,6 +295,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       __proto__: dart.getGetters(MenuItemGroupWithSelection.__proto__),
       isMultiSelect: core$.bool
     }));
+    dart.setLibraryUri(MenuItemGroupWithSelection, "package:angular_components/model/menu/selectable_menu.dart");
     dart.setFieldSignature(MenuItemGroupWithSelection, () => ({
       __proto__: dart.getFields(MenuItemGroupWithSelection.__proto__),
       selectionModel: dart.finalFieldType(SelectionModelOfSelectionItemType()),
@@ -308,7 +310,8 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   };
   dart.trackLibraries("packages/angular_components/model/menu/selectable_menu.ddc", {
     "package:angular_components/model/menu/selectable_menu.dart": model__menu__selectable_menu
-  }, '{"version":3,"sourceRoot":"","sources":["selectable_menu.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAwES;;;;;;MAKsB;;;;;;MAMd;;;;;;MAOJ;;;;;;MAGA;;;;;;MAGK;;;;;;MAGH;;;;;;MAGA;;;;;;MAGuB;;;;;;MAGZ;;;;;;MAGX;;;;;;;cAwCO,kBAAY,CAAC,UAAK;MAAC;;cAGf,WAAK;;;gBAGU,aAAO;+BAAI,yDAAK;;;cAGnC,UAAI,IAAI;MAAI;;cAGT,aAAO,IAAI;MAAI;;cAGd,oBAAU,CAAC,YAAO;MAAC;;cAGxB,UAAI;;;cAGK,WAAK;;;cAGb,qBAAe,KAAI,8DAAgB,WAAW;;kBAGtD,KAAU;AACpB,4BAAe,aACX,KAAK,IAAG,8DAAgB,WAAW,GAAG,8DAAgB,SAAS;MACrE;;cAGuB,cAAO;;iBAGnB,KAAc;AACvB,wBAAI,KAAK,EAAI,aAAO,GAAE;AAEtB,qBAAO,GAAG,KAAK;AACf,iCAAoB,iBAAC,uEAAS,aAAO,EAAE,KAAK;MAC9C;;cAG8B,oBAAc,IAAI;MAAI;;cAGZ,uBAAgB;;0BAEpC,KAAsB;AACxC,YAAI,KAAK,IAAI,sBAAgB,EAAE;AAE/B,8BAAgB,GAAG,KAAK;AACxB,iCAAoB,iEAAC,gFAAkB,sBAAgB,EAAE,KAAK;MAChE;;;UA/EoB;UACX,oEAAe,uEAAmB;UAClC;UACA;UACA;UACA;UACA;UACY;UACR,kDAAS,yDAAK;UACN,6EAAkB,8DAAgB,WAAW;UACzD;UACS;UACgB;MAlE3B,iBAAW;MAsDE,YAAK,GAAL,KAAK;MAChB,mBAAY,GAAZ,YAAY;MACZ,WAAI,GAAJ,IAAI;MACJ,cAAO,GAAP,OAAO;MACP,cAAO,GAAP,OAAO;MACP,qBAAc,GAAd,cAAc;MACd,sBAAe,GAAf,eAAe;MAOlB,aAAO,GAAG,MAAM;MAChB,sBAAgB,GAAG,eAAe;MAClC,8BAAuB,GAAG,uBAAuB,WAAvB,uBAAuB,GAAI,OAAO,IAAI;MAChE,mBAAY,GAAG,YAAY,WAAZ,YAAY,OACvB,sCAAkC,KAC9B,4BAAqB,CAAC,UAAU;MACxC,iBAAU,GAAG,uBAAiB,uBAAC,UAAU,WAAV,UAAU,GAAI;;AACjD,YAAO,AAAmB,UAAT,IAAI,QAAQ,YAAY,IAAI,yBACzC;IACN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA7HwC;;;;;;MAUlC;;;;;;MAGK;;;;;;;wEAmBe,mBAAc;MAAuB;oBAGhC,IAAsB;iCAAJ;AAC/C,iBAAW,WAAY,OAAM;AAC3B,0BAAI,QAAQ,MAAM,EAAI,IAAI,GAAE,MAAO,SAAQ,gBAAgB;;AAG7D,cAAO,+DAAgB,WAAW;MACpC;;;UAzB2D;UACxC;UACR;UACF;MAFU,qBAAc,GAAd,cAAc;cAGE,0BAA0B;MAAvD,iCAA0B,6EACtB,cAAc;MAClB,eAAS,GAAG;gBAAC,cAAc;;+BAAoB;aACzC,kBACA;AACN,0DAAM,KAAK,EAAE,KAAK;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;EAgKb","file":"selectable_menu.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["selectable_menu.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAwES;;;;;;MAKsB;;;;;;MAMd;;;;;;MAOJ;;;;;;MAGA;;;;;;MAGK;;;;;;MAGH;;;;;;MAGA;;;;;;MAGuB;;;;;;MAGZ;;;;;;MAGX;;;;;;;cAwCO,kBAAY,CAAC,UAAK;MAAC;;cAGf,WAAK;;;gBAGU,aAAO;+BAAI,yDAAK;;;cAGnC,UAAI,IAAI;MAAI;;cAGT,aAAO,IAAI;MAAI;;cAGd,oBAAU,CAAC,YAAO;MAAC;;cAGxB,UAAI;;;cAGK,WAAK;;;cAGb,qBAAe,KAAI,8DAAgB,WAAW;;kBAGtD,KAAU;AACpB,4BAAe,aACX,KAAK,IAAG,8DAAgB,WAAW,GAAG,8DAAgB,SAAS;MACrE;;cAGuB,cAAO;;iBAGnB,KAAc;AACvB,wBAAI,KAAK,EAAI,aAAO,GAAE;AAEtB,qBAAO,GAAG,KAAK;AACf,iCAAoB,iBAAC,uEAAS,aAAO,EAAE,KAAK;MAC9C;;cAG8B,oBAAc,IAAI;MAAI;;cAGZ,uBAAgB;;0BAEpC,KAAsB;AACxC,YAAI,KAAK,IAAI,sBAAgB,EAAE;AAE/B,8BAAgB,GAAG,KAAK;AACxB,iCAAoB,iEAAC,gFAAkB,sBAAgB,EAAE,KAAK;MAChE;;;UA/EoB;UACX,oEAAe,uEAAmB;UAClC;UACA;UACA;UACA;UACA;UACY;UACR,kDAAS,yDAAK;UACN,6EAAkB,8DAAgB,WAAW;UACzD;UACS;UACgB;MAlE3B,iBAAW;MAsDE,YAAK,GAAL,KAAK;MAChB,mBAAY,GAAZ,YAAY;MACZ,WAAI,GAAJ,IAAI;MACJ,cAAO,GAAP,OAAO;MACP,cAAO,GAAP,OAAO;MACP,qBAAc,GAAd,cAAc;MACd,sBAAe,GAAf,eAAe;MAOlB,aAAO,GAAG,MAAM;MAChB,sBAAgB,GAAG,eAAe;MAClC,8BAAuB,GAAG,uBAAuB,WAAvB,uBAAuB,GAAI,OAAO,IAAI;MAChE,mBAAY,GAAG,YAAY,WAAZ,YAAY,OACvB,sCAAkC,KAC9B,4BAAqB,CAAC,UAAU;MACxC,iBAAU,GAAG,uBAAiB,uBAAC,UAAU,WAAV,UAAU,GAAI;;AACjD,YAAO,AAAmB,UAAT,IAAI,QAAQ,YAAY,IAAI,yBACzC;IACN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA7HwC;;;;;;MAUlC;;;;;;MAGK;;;;;;;wEAmBe,mBAAc;MAAuB;oBAGhC,IAAsB;iCAAJ;AAC/C,iBAAW,WAAY,OAAM;AAC3B,0BAAI,QAAQ,MAAM,EAAI,IAAI,GAAE,MAAO,SAAQ,gBAAgB;;AAG7D,cAAO,+DAAgB,WAAW;MACpC;;;UAzB2D;UACxC;UACR;UACF;MAFU,qBAAc,GAAd,cAAc;cAGE,0BAA0B;MAAvD,iCAA0B,6EACtB,cAAc;MAClB,eAAS,GAAG;gBAAC,cAAc;;+BAAoB;aACzC,kBACA;AACN,0DAAM,KAAK,EAAE,KAAK;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;EAgKb","file":"selectable_menu.ddc.js"}');
   // Exports:
   return {
     model__menu__selectable_menu: model__menu__selectable_menu

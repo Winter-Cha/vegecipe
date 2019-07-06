@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/utils/browser/events/events.template.ddc", {
     "package:angular_components/utils/browser/events/events.template.dart": utils__browser__events__events$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["events.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,kDAAQ;YAAG;;;;;AAEb,kBAAI,kDAAQ,GAAE;AACZ;;AAEF,yDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,2EAAa;EACrB","file":"events.template.ddc.js"}');
   // Exports:
   return {

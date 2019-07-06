@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular/angular.template'], function(dart_sdk, ang
   };
   dart.trackLibraries("packages/angular_components/utils/angular/reference/reference.template.ddc", {
     "package:angular_components/utils/angular/reference/reference.template.dart": utils__angular__reference__reference$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["reference.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,wDAAQ;YAAG;;;;;AAEb,kBAAI,wDAAQ,GAAE;AACZ;;AAEF,+DAAW;AAEX,IAAM,gCAAa;EACrB","file":"reference.template.ddc.js"}');
   // Exports:
   return {

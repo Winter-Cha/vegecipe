@@ -40,6 +40,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base'], func
     __proto__: dart.getMethods(laminate__enums__visibility.Visibility.__proto__),
     apply: dart.fnType(dart.void, [dart.fnType(dart.void, [core.String, dart.dynamic])])
   }));
+  dart.setLibraryUri(laminate__enums__visibility.Visibility, "package:angular_components/laminate/enums/visibility.dart");
   dart.setFieldSignature(laminate__enums__visibility.Visibility, () => ({
     __proto__: dart.getFields(laminate__enums__visibility.Visibility.__proto__),
     displayName: dart.finalFieldType(core.String),
@@ -60,7 +61,8 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base'], func
   });
   dart.trackLibraries("packages/angular_components/laminate/enums/visibility.ddc", {
     "package:angular_components/laminate/enums/visibility.dart": laminate__enums__visibility
-  }, '{"version":3,"sourceRoot":"","sources":["visibility.dart"],"names":[],"mappings":";;;;;;;;;;IAoBe;;;;;;uBAKkB,OAAY;AAAE,AAC3C,uBAAO,OAAO,IAAG,8CAAO,GAAG,2CAAI;IACjC;UAMW,WAAyB;AAClC,UAAI,mBAAa,IAAI,MAAM;AACzB,mBAAW,CAAC,mBAAa,EAAE,oBAAc;;IAE7C;;YAGqB,2BAAc,gBAAW;IAAE;;wDAX7B,WAAgB;;;IAAX,kBAAW,GAAX,WAAW;IACzB,mBAAa;IAAO,oBAAc;EAAE;;;;;;;;;;;;;;;;MAnBjC,2CAAI;4BAAG,yCAAY,CAAC,QAAQ,WAAW;;MAGvC,6CAAM;4BAAG,yCAAY,CAAC,UAAU,cAAc;;MAG9C,8CAAO;4BAAG,yCAAY,CAAC","file":"visibility.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["visibility.dart"],"names":[],"mappings":";;;;;;;;;;IAoBe;;;;;;uBAKkB,OAAY;AAAE,AAC3C,uBAAO,OAAO,IAAG,8CAAO,GAAG,2CAAI;IACjC;UAMW,WAAyB;AAClC,UAAI,mBAAa,IAAI,MAAM;AACzB,mBAAW,CAAC,mBAAa,EAAE,oBAAc;;IAE7C;;YAGqB,2BAAc,gBAAW;IAAE;;wDAX7B,WAAgB;;;IAAX,kBAAW,GAAX,WAAW;IACzB,mBAAa;IAAO,oBAAc;EAAE;;;;;;;;;;;;;;;;;MAnBjC,2CAAI;4BAAG,yCAAY,CAAC,QAAQ,WAAW;;MAGvC,6CAAM;4BAAG,yCAAY,CAAC,UAAU,cAAc;;MAG9C,8CAAO;4BAAG,yCAAY,CAAC","file":"visibility.ddc.js"}');
   // Exports:
   return {
     laminate__enums__visibility: laminate__enums__visibility

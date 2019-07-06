@@ -51,6 +51,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       [_handleClick]: dart.fnType(dart.void, [html.MouseEvent, core.Object]),
       handle: dart.fnType(core.bool, [html.UIEvent, dart.dynamic])
     }));
+    dart.setLibraryUri(ShiftClickSelectionMixin, "package:angular_components/material_select/shift_click_selection.dart");
     dart.setFieldSignature(ShiftClickSelectionMixin, () => ({
       __proto__: dart.getFields(ShiftClickSelectionMixin.__proto__),
       [_pivot]: dart.fieldType(T)
@@ -61,6 +62,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   dart.addTypeTests(material_select__shift_click_selection.ShiftClickSelectionMixin, _is_ShiftClickSelectionMixin_default);
   dart.trackLibraries("packages/angular_components/material_select/shift_click_selection.ddc", {
     "package:angular_components/material_select/shift_click_selection.dart": material_select__shift_click_selection
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["shift_click_selection.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;qBA6BoB,CAAY,EAAE,KAAO;iBAAL;AAChC,YAAI,4BACA,cAAS,WAAW,CAAC,KAAK,eAAI,cAAS,0BAAY,cAAS;AAChE,YAAI,YAAM,IAAI,mBAAS,CAAC,SAAS,GAAE;AACjC,yBAAe,CAAC,KAAK;eAChB;AACL,cAAM,eAAe,YAAO,YAAY;AACxC,cAAM,eAAe,YAAY,UAAQ,CAAC,KAAK;AAC/C,cAAM,aAAa,YAAY,UAAQ,CAAC,YAAM;AAC9C,cAAI,UAAU,KAAI,CAAC,GAAG;AACpB,2BAAM,mBAAU,CAAC,oDAAwC,YAAM;;AAEjE,sBAAY,OACH,CAAC,QAAG,WAAC,UAAU,EAAE,YAAY,SAC7B,CAAC,AAAkC,CAAtB,aAAX,UAAU,iBAAG,YAAY,QAAK,KAAK,YAClC,CAAC,eAAe;;AAE9B,oBAAM,GAAG,KAAK;MAChB;aAOY,KAAa,EAAE,cAAsB;AAC/C,sEAAI,cAAS,yBAA4B,KAAK,GAAiB,MAAO;AAGtE,0BAAY,wBAAC,KAAK,QAAE,cAAc;AAClC,cAAO;MACT;;;MA1CE,YAAM;IA2CV","file":"shift_click_selection.ddc.js"}');
   // Exports:
   return {

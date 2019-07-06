@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(focus__focus_list$46template.FocusListDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(focus__focus_list$46template.FocusListDirectiveNgCd, "package:angular_components/focus/focus_list.template.dart");
   dart.setFieldSignature(focus__focus_list$46template.FocusListDirectiveNgCd, () => ({
     __proto__: dart.getFields(focus__focus_list$46template.FocusListDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(focus__focus_list.FocusListDirective)
@@ -59,7 +60,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/focus/focus_list.template.ddc", {
     "package:angular_components/focus/focus_list.template.dart": focus__focus_list$46template
-  }, '{"version":3,"sourceRoot":"","sources":["focus_list.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAgBmC;;;;;;sBAEV,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,KAAK,IAAE,OAAO;AACnC,UAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,aAAQ,KAAK;;;IAGvD;;sEARuB,QAAa;IAAR,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;MAWnC,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;AACnB,IAAM,kDAAa;EACrB","file":"focus_list.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["focus_list.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAgBmC;;;;;;sBAEV,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,KAAK,IAAE,OAAO;AACnC,UAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,aAAQ,KAAK;;;IAGvD;;sEARuB,QAAa;IAAR,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;MAWnC,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;AACnB,IAAM,kDAAa;EACrB","file":"focus_list.template.ddc.js"}');
   // Exports:
   return {
     focus__focus_list$46template: focus__focus_list$46template

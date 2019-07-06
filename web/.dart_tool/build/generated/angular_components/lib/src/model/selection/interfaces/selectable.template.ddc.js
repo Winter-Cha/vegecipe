@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/src/model/selection/interfaces/selectable.template.ddc", {
     "package:angular_components/src/model/selection/interfaces/selectable.template.dart": src__model__selection__interfaces__selectable$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["selectable.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"selectable.template.ddc.js"}');
   // Exports:
   return {

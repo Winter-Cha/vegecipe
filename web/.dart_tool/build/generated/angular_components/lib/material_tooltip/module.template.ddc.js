@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/material_tooltip/module', 'pack
   };
   dart.trackLibraries("packages/angular_components/material_tooltip/module.template.ddc", {
     "package:angular_components/material_tooltip/module.template.dart": material_tooltip__module$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;MAaI,4CAAQ;YAAG;;;;;;;;;;;AAEb,kBAAI,4CAAQ,GAAE;AACZ;;AAEF,mDAAW;AAEX,IAAO,uCAAoB,CAAC,4GAAuB,EAAE,sCACnD,sCAAK,0EAAiB,qCAAE,sCAAe,2CAAI,sCAAe,sBAC1D,sCAAK,iDAAQ,uCAAE,sCAAe;AAEhC,IAAM,gCAAa;AACnB,IAAM,kEAAa;AACnB,IAAM,kDAAa;EACrB","file":"module.template.ddc.js"}');
   // Exports:
   return {

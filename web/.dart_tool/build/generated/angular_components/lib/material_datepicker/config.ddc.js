@@ -18,12 +18,14 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = material_datepicker__config.DatepickerConfig.prototype;
   dart.addTypeTests(material_datepicker__config.DatepickerConfig);
   const movingStartMaintainsLength$ = Symbol("DatepickerConfig.movingStartMaintainsLength");
+  dart.setLibraryUri(material_datepicker__config.DatepickerConfig, "package:angular_components/material_datepicker/config.dart");
   dart.setFieldSignature(material_datepicker__config.DatepickerConfig, () => ({
     __proto__: dart.getFields(material_datepicker__config.DatepickerConfig.__proto__),
     movingStartMaintainsLength: dart.finalFieldType(core.bool)
   }));
   dart.trackLibraries("packages/angular_components/material_datepicker/config.ddc", {
     "package:angular_components/material_datepicker/config.dart": material_datepicker__config
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["config.dart"],"names":[],"mappings":";;;;;;;IAUa;;;;;;;;QAEY,8GAA6B;IAA7B,iCAA0B,GAA1B,0BAA0B;EAAS","file":"config.ddc.js"}');
   // Exports:
   return {

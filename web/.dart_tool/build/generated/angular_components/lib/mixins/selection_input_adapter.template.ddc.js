@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular/di.template', 'packages/angular_components
   };
   dart.trackLibraries("packages/angular_components/mixins/selection_input_adapter.template.ddc", {
     "package:angular_components/mixins/selection_input_adapter.template.dart": mixins__selection_input_adapter$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["selection_input_adapter.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAYI,mDAAQ;YAAG;;;;;AAEb,kBAAI,mDAAQ,GAAE;AACZ;;AAEF,0DAAW;AAEX,IAAM,2BAAa;AACnB,IAAM,8DAAa;AACnB,IAAM,0DAAa;AACnB,IAAM,4DAAa;AACnB,IAAM,mEAAa;EACrB","file":"selection_input_adapter.template.ddc.js"}');
   // Exports:
   return {

@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const laminate__popup__popup = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/laminate/popup/popup.ddc", {
     "package:angular_components/laminate/popup/popup.dart": laminate__popup__popup
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"popup.ddc.js"}');
   // Exports:
   return {

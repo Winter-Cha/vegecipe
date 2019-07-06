@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_menu/affix/base_affix.template.ddc", {
     "package:angular_components/material_menu/affix/base_affix.template.dart": material_menu__affix__base_affix$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["base_affix.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,oDAAQ;YAAG;;;;;AAEb,kBAAI,oDAAQ,GAAE;AACZ;;AAEF,2DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,qDAAa;AACnB,IAAM,gDAAa;EACrB","file":"base_affix.template.ddc.js"}');
   // Exports:
   return {

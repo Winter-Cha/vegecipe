@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_select/handles_aria.template.ddc", {
     "package:angular_components/material_select/handles_aria.template.dart": material_select__handles_aria$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["handles_aria.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"handles_aria.template.ddc.js"}');
   // Exports:
   return {

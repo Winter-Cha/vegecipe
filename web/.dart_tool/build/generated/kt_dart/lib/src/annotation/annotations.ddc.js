@@ -13,6 +13,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__annotation__annotations._Nullable.new = function() {
   }).prototype = src__annotation__annotations._Nullable.prototype;
   dart.addTypeTests(src__annotation__annotations._Nullable);
+  dart.setLibraryUri(src__annotation__annotations._Nullable, "package:kt_dart/src/annotation/annotations.dart");
   dart.defineLazy(src__annotation__annotations, {
     /*src__annotation__annotations.nonNull*/get nonNull() {
       return dart.const(new src__annotation__annotations._NonNull.new());
@@ -22,6 +23,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__annotation__annotations._NonNull.new = function() {
   }).prototype = src__annotation__annotations._NonNull.prototype;
   dart.addTypeTests(src__annotation__annotations._NonNull);
+  dart.setLibraryUri(src__annotation__annotations._NonNull, "package:kt_dart/src/annotation/annotations.dart");
   dart.defineLazy(src__annotation__annotations, {
     /*src__annotation__annotations.tooGeneric*/get tooGeneric() {
       return dart.const(new src__annotation__annotations.TooGeneric.new());
@@ -41,13 +43,15 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = src__annotation__annotations.TooGeneric.prototype;
   dart.addTypeTests(src__annotation__annotations.TooGeneric);
   const extensionForType$ = Symbol("TooGeneric.extensionForType");
+  dart.setLibraryUri(src__annotation__annotations.TooGeneric, "package:kt_dart/src/annotation/annotations.dart");
   dart.setFieldSignature(src__annotation__annotations.TooGeneric, () => ({
     __proto__: dart.getFields(src__annotation__annotations.TooGeneric.__proto__),
     extensionForType: dart.finalFieldType(core.String)
   }));
   dart.trackLibraries("packages/kt_dart/src/annotation/annotations.ddc", {
     "package:kt_dart/src/annotation/annotations.dart": src__annotation__annotations
-  }, '{"version":3,"sourceRoot":"","sources":["annotations.dart"],"names":[],"mappings":";;;;;;;MAOa,qCAAQ;YAAG,gBAAM,0CAAS;;;;;EAGpB;;;MAUN,oCAAO;YAAG,gBAAM,yCAAQ;;;;;EAGnB;;;MAWL,uCAAU;YAAG,gBAAM,2CAAU;;;;IAc3B;;;;;;;;QAHU;2BAAgB,GAAhB,gBAAgB;EAAE","file":"annotations.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["annotations.dart"],"names":[],"mappings":";;;;;;;MAOa,qCAAQ;YAAG,gBAAM,0CAAS;;;;;EAGpB;;;;MAUN,oCAAO;YAAG,gBAAM,yCAAQ;;;;;EAGnB;;;;MAWL,uCAAU;YAAG,gBAAM,2CAAU;;;;IAc3B;;;;;;;;QAHU;2BAAgB,GAAhB,gBAAgB;EAAE","file":"annotations.ddc.js"}');
   // Exports:
   return {
     src__annotation__annotations: src__annotation__annotations

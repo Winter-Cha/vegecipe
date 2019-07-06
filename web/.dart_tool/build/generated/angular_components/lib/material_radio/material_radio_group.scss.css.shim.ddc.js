@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_radio/material_radio_group.scss.css.shim.ddc", {
     "package:angular_components/material_radio/material_radio_group.scss.css.shim.dart": material_radio__material_radio_group$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_radio_group.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,+DAAM;YAAG,EAAC","file":"material_radio_group.scss.css.shim.ddc.js"}');
   // Exports:
   return {

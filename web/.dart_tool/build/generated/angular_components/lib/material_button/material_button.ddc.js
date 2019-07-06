@@ -46,6 +46,7 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
     hostClassIsFocused: core.bool,
     hostElevation: core.String
   }));
+  dart.setLibraryUri(material_button__material_button.MaterialButtonComponent, "package:angular_components/material_button/material_button.dart");
   dart.setFieldSignature(material_button__material_button.MaterialButtonComponent, () => ({
     __proto__: dart.getFields(material_button__material_button.MaterialButtonComponent.__proto__),
     [_changeDetector]: dart.finalFieldType(src__core__change_detection__change_detector_ref.ChangeDetectorRef),
@@ -58,7 +59,8 @@ define(['dart_sdk', 'packages/angular_components/material_button/material_button
   });
   dart.trackLibraries("packages/angular_components/material_button/material_button.ddc", {
     "package:angular_components/material_button/material_button.dart": material_button__material_button
-  }, '{"version":3,"sourceRoot":"","sources":["material_button.dart"],"names":[],"mappings":";;;;;;;;;;;AA6FI,2BAAe,aAAa;IAC9B;;uBAW2B,aAAQ,IAAG,KAAK;IAAI;;uBAItB,WAAM,IAAG,KAAK;IAAI;;YAIZ,iBAAW;;;YAId,UAAE,eAAU;IAAC;IAO5B;;;;;;;2EA5BW,OAAmB,EAAE,SAAsB,kBACzC,IAA8B;IA2B3C,eAAS,GAAG;IA3BhB,qBAAe;AAClB,sFAAM,OAAO,EAAE,IAAI;AACvB,QAAI,qBAAe,IAAI,MAAM,WAAM,kBAAS,CAAC;AAC7C,aAAS,aAAa,CAAC,OAAO;EAChC;;;;;;;;;;;;;;;;MAoBoB,qEAAY;YAAG","file":"material_button.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_button.dart"],"names":[],"mappings":";;;;;;;;;;;AA6FI,2BAAe,aAAa;IAC9B;;uBAW2B,aAAQ,IAAG,KAAK;IAAI;;uBAItB,WAAM,IAAG,KAAK;IAAI;;YAIZ,iBAAW;;;YAId,UAAE,eAAU;IAAC;IAO5B;;;;;;;2EA5BW,OAAmB,EAAE,SAAsB,kBACzC,IAA8B;IA2B3C,eAAS,GAAG;IA3BhB,qBAAe;AAClB,sFAAM,OAAO,EAAE,IAAI;AACvB,QAAI,qBAAe,IAAI,MAAM,WAAM,kBAAS,CAAC;AAC7C,aAAS,aAAa,CAAC,OAAO;EAChC;;;;;;;;;;;;;;;;;MAoBoB,qEAAY;YAAG","file":"material_button.ddc.js"}');
   // Exports:
   return {
     material_button__material_button: material_button__material_button

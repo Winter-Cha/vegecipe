@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/next_prev_buttons.scss.css.shim.ddc", {
     "package:angular_components/material_datepicker/next_prev_buttons.scss.css.shim.dart": material_datepicker__next_prev_buttons$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["next_prev_buttons.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,iEAAM;YAAG,EAAC","file":"next_prev_buttons.scss.css.shim.ddc.js"}');
   // Exports:
   return {

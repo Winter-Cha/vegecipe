@@ -48,6 +48,7 @@ define(['dart_sdk', 'packages/angular_components/utils/angular/scroll_host/angul
   };
   dart.trackLibraries("packages/angular_components/utils/angular/scroll_host/angular_2.template.ddc", {
     "package:angular_components/utils/angular/scroll_host/angular_2.template.dart": utils__angular__scroll_host__angular_2$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["angular_2.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;MAoBI,0DAAQ;YAAG;;;;;;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAO,kCAAe,CAAC,sEAAgB,EAAE,SAAC,EAAiB,EAAE,EAAa,EAAE,EAA6B,EAAE,EAAa,SAAK,2DAAgB,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE;AAC5J,IAAO,uCAAoB,CAAC,sEAAgB,EAAE,sCAC5C,oCAAK,kEAAU,kBACf,sCAAK,8CAAM,kBACX,sCAAK,gFAAsB,kBAC3B,sCAAK,0BAAM;AAEb,IAAM,gCAAa;AACnB,IAAM,mEAAa;AACnB,IAAM,2EAAa;AACnB,IAAM,gFAAa;AACnB,IAAM,gFAAa;AACnB,IAAM,+DAAa;AACnB,IAAM,+DAAa;AACnB,IAAM,+DAAa;EACrB","file":"angular_2.template.ddc.js"}');
   // Exports:
   return {

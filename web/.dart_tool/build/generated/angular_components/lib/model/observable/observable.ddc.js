@@ -31,6 +31,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     }).prototype = ObserveAware.prototype;
     dart.addTypeTests(ObserveAware);
     ObserveAware.prototype[_is_ObserveAware_default] = true;
+    dart.setLibraryUri(ObserveAware, "package:angular_components/model/observable/observable.dart");
     return ObserveAware;
   });
   model__observable__observable.ObserveAware = model__observable__observable.ObserveAware$();
@@ -81,6 +82,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       hashCode: core.int,
       [$hashCode]: core.int
     }));
+    dart.setLibraryUri(Change, "package:angular_components/model/observable/observable.dart");
     dart.setFieldSignature(Change, () => ({
       __proto__: dart.getFields(Change.__proto__),
       previous: dart.finalFieldType(T),
@@ -99,6 +101,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     }).prototype = ChangeAware.prototype;
     dart.addTypeTests(ChangeAware);
     ChangeAware.prototype[_is_ChangeAware_default] = true;
+    dart.setLibraryUri(ChangeAware, "package:angular_components/model/observable/observable.dart");
     return ChangeAware;
   });
   model__observable__observable.ChangeAware = model__observable__observable.ChangeAware$();
@@ -230,6 +233,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       [_isActive]: core.bool,
       [_isInactive]: core.bool
     }));
+    dart.setLibraryUri(ChangeNotificationProvider, "package:angular_components/model/observable/observable.dart");
     dart.setFieldSignature(ChangeNotificationProvider, () => ({
       __proto__: dart.getFields(ChangeNotificationProvider.__proto__),
       [_coalesce]: dart.fieldType(core.bool),
@@ -257,6 +261,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
     dart.addTypeTests(ObservableView);
     ObservableView.prototype[_is_ObservableView_default] = true;
     ObservableView[dart.implements] = () => [utils__disposer__disposer.Disposable];
+    dart.setLibraryUri(ObservableView, "package:angular_components/model/observable/observable.dart");
     return ObservableView;
   });
   model__observable__observable.ObservableView = model__observable__observable.ObservableView$();
@@ -313,6 +318,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       values: async.Stream$(T),
       nonNullValues: async.Stream$(T)
     }));
+    dart.setLibraryUri(ObservableViewMixin, "package:angular_components/model/observable/observable.dart");
     return ObservableViewMixin;
   });
   model__observable__observable.ObservableViewMixin = model__observable__observable.ObservableViewMixin$();
@@ -348,6 +354,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       value: O,
       stream: async.Stream$(O)
     }));
+    dart.setLibraryUri(_MappedView, "package:angular_components/model/observable/observable.dart");
     dart.setFieldSignature(_MappedView, () => ({
       __proto__: dart.getFields(_MappedView.__proto__),
       [_delegate]: dart.finalFieldType(ObservableViewOfI()),
@@ -425,6 +432,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       __proto__: dart.getSetters(ObservableReference.__proto__),
       value: T
     }));
+    dart.setLibraryUri(ObservableReference, "package:angular_components/model/observable/observable.dart");
     dart.setFieldSignature(ObservableReference, () => ({
       __proto__: dart.getFields(ObservableReference.__proto__),
       [_equalsFn]: dart.finalFieldType(TAndTTobool()),
@@ -460,7 +468,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
         let replaces = opts && 'replaces' in opts ? opts.replaces : null;
         let initialNotification = opts && 'initialNotification' in opts ? opts.initialNotification : true;
         if (dart.test(this[_subscriptions][$containsKey](stream))) {
-          if (!(replaces == null)) dart.assertFailed();
+          if (!(replaces == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/observable/observable.dart", 374, 14, "replaces == null");
           return stream;
         }
         if (replaces != null) {
@@ -472,7 +480,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
             stackTrace = core.StackTrace.current;
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed();
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/observable/observable.dart", 382, 12, "() {if (_withStackTrace) {stackTrace = StackTrace.current;} return true;}()");
         this[_subscriptions][$_set](stream, stream.listen(dart.fn(_ => {
           if (stackTrace != null) {
             core.print("Coalescer notified from " + dart.str(stackTrace));
@@ -521,6 +529,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
       registerStream: dart.fnType(async.Stream, [async.Stream], {replaces: async.Stream, initialNotification: core.bool}),
       unregisterStream: dart.fnType(dart.void, [async.Stream])
     }));
+    dart.setLibraryUri(ObservableComposite, "package:angular_components/model/observable/observable.dart");
     dart.setFieldSignature(ObservableComposite, () => ({
       __proto__: dart.getFields(ObservableComposite.__proto__),
       [_subscriptions]: dart.fieldType(MapOfStream$StreamSubscription()),
@@ -533,7 +542,8 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer'], func
   dart.addTypeTests(model__observable__observable.ObservableComposite, _is_ObservableComposite_default);
   dart.trackLibraries("packages/angular_components/model/observable/observable.ddc", {
     "package:angular_components/model/observable/observable.dart": model__observable__observable
-  }, '{"version":3,"sourceRoot":"","sources":["observable.dart"],"names":[],"mappings":"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","file":"observable.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["observable.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IA4BA;;;;;;;;;;;MAIU;;;;;;MACA;;;;;;cAIS,KAAK;YAAL,KAAK;cAEgB,yCADjC,KAAK,iBACL,aAAa,EAAI,KAAK,SAAS,iBAC/B,SAAS,EAAI,KAAK,KAAK;MAAC;;cAGT,AAAC,UAAI,IAAI,OAAQ,kBAAI,SAAI;MAAS;;cAGjC,sBAAS,aAAQ,uBAAM,SAAI;MAAE;;2BAZ3C,QAAa,EAAE,IAAS;MAAnB,eAAQ,GAAR,QAAQ;MAAO,WAAI,GAAJ,IAAI;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAmBlC;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuBI,YAAI,uBAAiB,IAAI,MAAM;AAC7B,iCAAiB,GAAG,+BAA6B,QAAO;;AAE1D,cAAO,wBAAiB,OAAO;MACjC;;AAKE,YAAI,uBAAiB,IAAI,MAAM;AAC7B,iCAAiB,GAAG,uCAAqC,QAAO;;AAElE,cAAO,wBAAiB,OAAO;MACjC;mBAImB,QAAU,EAAE,IAAM;iCAAhB;;6BAAY;;AAC/B,sBAAI,iBAAW,GAAE;AACjB,wBAAM,wBAAkB,eAAI,uBAAiB,SAAS,kBAChD,wBAAkB,eAAI,uBAAiB,SAAS,IAAG;AACvD;;AAEF,sBAAI,eAAS,GAAE;AACb,2BAAW,CAAC,QAAQ,EAAE,IAAI;eACrB;AACL,+BAAe,CAAC,QAAQ,EAAE,IAAI;;MAElC;oBAEiB,QAAU,EAAE,IAAM;iBAAhB;iBAAY;AAC7B,sBAAI,wBAAkB,GAAE;AAGtB,qBAAK,GAAG,IAAI;eACP;AACL,yBAAS,GAAG,QAAQ;AACpB,qBAAK,GAAG,IAAI;AACZ,kCAAkB,GAAG;AACrB,iCAAiB,CAAC;AAIhB,gBAAI,cAAc,eAAS;AAC3B,gBAAI,cAAc,WAAK;AACvB,2BAAS,GAAG;AACZ,uBAAK,GAAG;AAER,oCAAkB,GAAG;AACrB,0BAAI,eAAS,GAAE;AAEb,mCAAe,CAAC,WAAW,EAAE,WAAW;;;;MAIhD;wBAEqB,QAAU,EAAE,IAAM;iBAAhB;iBAAY;AACjC,sBAAI,wBAAkB,GAAE;AACtB,iCAAiB,IAAI,CAAC,IAAI;;AAE5B,sBAAI,wBAAkB,GAAE;AACtB,iCAAiB,IAAI,KAAC,iBAAM,CAAC,QAAQ,EAAE,IAAI;;MAE/C;;AAIE,YAAI,uBAAiB,IAAI,MAAM;AAC7B,iCAAiB,MAAM;AACvB,iCAAiB,GAAG;;AAEtB,YAAI,uBAAiB,IAAI,MAAM;AAC7B,iCAAiB,MAAM;AACvB,iCAAiB,GAAG;;MAExB;;cAGK,AAA2B,wBAAV,IAAI,kBAAU,uBAAiB,YAAY;MAAC;;cAG7D,AAA2B,wBAAV,IAAI,kBAAU,uBAAiB,YAAY;MAAC;;cAEzB,WAAnB,wBAAkB,eAAI,wBAAkB;;;cACtC,YAAC,eAAS;;;;MAvG7B,wBAAkB,GAAG;MACN,uBAAiB;MACT,uBAAiB;MAG3C,eAAS;MACT,WAAK;MAOE,eAAS;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;wBA8He,MAAgB;YAAK;AAAe,oBAClE,8BAAmB,CAAC,YAAY;iBAAU,MAAM;;MAAC;;;;;;;;;;;;;;;;;;;;;AAQnD,YAAI,OAAO,UAAK;AAGhB,0CAAO,WAAM,IAAI,cAAC,QAAC,CAAC;AAClB,cAAI,aAAS,iBAAM,CAAC,IAAI,EAAE,CAAC;AAC3B,cAAI,GAAG,CAAC;AACR,gBAAO,OAAM;;MAEjB;;cAG8B,WAAK,IAAI,OACjC,iBAAY,CAAC,UAAK,IAClB,WAAM,WAAW,CAAC,QAAC,KAAK,IAAK,KAAK,IAAI;MAAK;;AAW/C,YAAoB;AACpB,kBAAU,GAAG,yBAAgB,YAAW;AACtC,sBAAU,IAAI,CAAC,UAAK;AACpB,sBAAU,UAAU,CAAC,WAAM,MAAM,eAAC,QAAC,CAAC,IAAK,UAAU,MAAM;;AAE3D,cAAO,WAAU,OAAO;MAC1B;;cAG+B,YAAM,MAAM,CAAC,QAAC,KAAK,IAAK,KAAK,IAAI;MAAK;aAG5C,MAAoB;mBACzC,sDAAiB,CAAC,MAAM,MAAM;MAAC;;;IACrC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cAUiB,cAAO,CAAC,eAAS,MAAM;MAAC;;kCAGf,eAAS,OAAO,IAAI,IAAC,aAAO;MAAC;iBAGrC;;;MATC,eAAS;MAAO,aAAO;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;wBAkBlB,CAAC,EAAE,CAAC;2BAAK,CAAC,EAAI,CAAC;;;cAiBvB,aAAM;;gBAGX,KAAO;iBAAL;AACV,sBAAI,eAAS,CAAC,YAAM,EAAE,KAAK,IAAG;AAC9B,YAAI,WAAW,YAAM;AACrB,oBAAM,GAAG,KAAK;AACd,yBAAY,CAAC,QAAQ,EAAE,KAAK;MAC9B;aAOc,MAAgB;2BAAN;AACtB,gCAAU;;AACV,wBAAU,GAAG,MAAM,OAAO,CAAC,QAAC,CAAC;AAC3B,oBAAK,GAAG,CAAC;;AAEX,cAAO,iBAAU,SAAS;MAC5B;;cAQ+B,oBAAmB,SAAS,CAAC,eAAS;MAAC;;AAIpE,qBAAa;AACb,gCAAU;;AACV,oBAAM,GAAG;MACX;;;UAzCiB,wDAAW,gGAAU;UAAO,wDAAW;MATrC,gBAAU;MAQJ,YAAM;MAEzB,eAAS,GAAG,QAAQ;AACpB,mDAAM,QAAQ;IAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;eAmEC,KAAkB;YACtB;YAAe,yFAAsB;AACrD,YAAI,KAAK,IAAI,MAAM,MAAO;AAC1B,YAAO,iBAAiB,AAAC,QAAQ,IAAI,OAAQ,OAAO,QAAQ,OAAO;AACnE,2BAAc,CAAC,KAAK,OAAO,aACb,cAAc,uBAAuB,mBAAmB;AACtE,oDAAI,KAAK,GAAgB;AACvB,yBAAS,cAAc,6CAAC,KAAK;;AAE/B,cAAO,MAAK;MACd;iBAGgB,KAAkB;AAChC,YAAI,KAAK,IAAI,MAAM;AACnB,6BAAgB,CAAC,KAAK,OAAO;MAC/B;qBAGsB,MAAa;YACvB;YAAe,yFAAsB;AAC/C,sBAAI,oBAAc,cAAY,CAAC,MAAM,IAAG;AAEtC,gBAAO,QAAQ,IAAI;AAEnB,gBAAO,OAAM;;AAEf,YAAI,QAAQ,IAAI,MAAM;AACpB,+BAAgB,CAAC,QAAQ;;AAE3B,YAAW;AACX,uBAAO;AAEL,wBAAI,qBAAe,GAAE;AACnB,sBAAU,GAAG,eAAU,QAAQ;;AAEjC,gBAAO;;AAET,4BAAc,QAAC,MAAM,EAAI,MAAM,OAAO,CAAC,QAAC,CAAC;AACvC,cAAI,UAAU,IAAI,MAAM;AACtB,sBAAK,CAAC,sCAA0B,UAAU;;AAE5C,2BAAY;;AAEd,sBAAI,mBAAmB,GAAE;AACvB,2BAAY;;AAEd,cAAO,OAAM;MACf;uBAGsB,MAAa;AACjC,YAAI,MAAM,IAAI,MAAM;AACpB,YAAmB,OAAO,oBAAc,SAAO,CAAC,MAAM;AACtD,YAAI,IAAI,IAAI,MAAM;AAChB,cAAI,OAAO;;MAEf;;AAIE,qBAAa;AACb,4BAAc,SAAO,UAAQ,CAAC,QAAC,YAAY,IAAK,YAAY,OAAO;AACnE,4BAAc,QAAM;AACpB,uBAAS,QAAQ;MACnB;;;UA9EU,wDAAW;UACE;UACd,0EAAiB;MAXM,oBAAc,GAC1C;MACE,eAAS,OAAG,0CAAgB;MAU5B,qBAAe,GAAG,cAAc;AAChC,mDAAM,QAAQ;AAClB,UAAI,MAAM,IAAI,MAAM;AAClB,iBAAS,MAAO,OAAM,EAAE;AACtB,uBAAQ,CAAC,GAAG;;;IAGlB","file":"observable.ddc.js"}');
   // Exports:
   return {
     model__observable__observable: model__observable__observable

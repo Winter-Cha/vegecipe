@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/src/material_tree/group/materia
   };
   dart.trackLibraries("packages/angular_components/material_tree/material_tree.template.ddc", {
     "package:angular_components/material_tree/material_tree.template.dart": material_tree__material_tree$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_tree.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAYI,gDAAQ;YAAG;;;;;AAEb,kBAAI,gDAAQ,GAAE;AACZ;;AAEF,uDAAW;AAEX,IAAM,uEAAa;AACnB,IAAM,mEAAa;AACnB,IAAM,uEAAa;AACnB,IAAM,+DAAa;AACnB,IAAM,4EAAa;EACrB","file":"material_tree.template.ddc.js"}');
   // Exports:
   return {

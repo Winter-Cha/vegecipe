@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (content__deferred_content_aware.DeferredContentAware.new = function() {
   }).prototype = content__deferred_content_aware.DeferredContentAware.prototype;
   dart.addTypeTests(content__deferred_content_aware.DeferredContentAware);
+  dart.setLibraryUri(content__deferred_content_aware.DeferredContentAware, "package:angular_components/content/deferred_content_aware.dart");
   dart.trackLibraries("packages/angular_components/content/deferred_content_aware.ddc", {
     "package:angular_components/content/deferred_content_aware.dart": content__deferred_content_aware
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["deferred_content_aware.dart"],"names":[],"mappings":";;;;;;;;EAcA","file":"deferred_content_aware.ddc.js"}');
   // Exports:
   return {

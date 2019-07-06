@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/id_generator/id_generator.template.ddc", {
     "package:angular_components/utils/id_generator/id_generator.template.dart": utils__id_generator__id_generator$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["id_generator.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"id_generator.template.ddc.js"}');
   // Exports:
   return {

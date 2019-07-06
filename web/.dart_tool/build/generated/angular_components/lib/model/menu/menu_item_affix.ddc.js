@@ -25,6 +25,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
       isVisibleOnHover: core.bool,
       isVisible: core.bool
     }));
+    dart.setLibraryUri(MenuItemAffix, "package:angular_components/model/menu/menu_item_affix.dart");
     return MenuItemAffix;
   });
   model__menu__menu_item_affix.MenuItemAffix = model__menu__menu_item_affix.MenuItemAffix$();
@@ -68,6 +69,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
   const ariaLabel$ = Symbol("IconWithAction.ariaLabel");
   const keyCode$ = Symbol("IconWithAction.keyCode");
   const shouldCloseMenuOnTrigger$ = Symbol("IconWithAction.shouldCloseMenuOnTrigger");
+  dart.setLibraryUri(model__menu__menu_item_affix.IconWithAction, "package:angular_components/model/menu/menu_item_affix.dart");
   dart.setFieldSignature(model__menu__menu_item_affix.IconWithAction, () => ({
     __proto__: dart.getFields(model__menu__menu_item_affix.IconWithAction.__proto__),
     action: dart.finalFieldType(VoidTovoid()),
@@ -88,6 +90,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
     this.index = x;
   }).prototype = model__menu__menu_item_affix.IconVisibility.prototype;
   dart.addTypeTests(model__menu__menu_item_affix.IconVisibility);
+  dart.setLibraryUri(model__menu__menu_item_affix.IconVisibility, "package:angular_components/model/menu/menu_item_affix.dart");
   dart.setFieldSignature(model__menu__menu_item_affix.IconVisibility, () => ({
     __proto__: dart.getFields(model__menu__menu_item_affix.IconVisibility.__proto__),
     index: dart.finalFieldType(core.int)
@@ -99,7 +102,8 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
   model__menu__menu_item_affix.IconVisibility.values = dart.constList([model__menu__menu_item_affix.IconVisibility.hidden, model__menu__menu_item_affix.IconVisibility.hover, model__menu__menu_item_affix.IconVisibility.visible], model__menu__menu_item_affix.IconVisibility);
   dart.trackLibraries("packages/angular_components/model/menu/menu_item_affix.ddc", {
     "package:angular_components/model/menu/menu_item_affix.dart": model__menu__menu_item_affix
-  }, '{"version":3,"sourceRoot":"","sources":["menu_item_affix.dart"],"names":[],"mappings":";;;;;;;;;;;;cAe+B,gBAAU,KAAI,2CAAc,MAAM;;;cACzC,gBAAU,KAAI,2CAAc,OAAO;;;;IALpC;;;;;;;;;;;;;IA0BJ;;;;;;IACJ;;;;;;IACH;;;;;;IAGC;;;;;;;8DAEI,IAAW,EAAE,MAAW,EAAE,SAAc,EAAE,OAAY;QAC3D,wGAA2B;IADJ,aAAM,GAAN,MAAM;IAAO,gBAAS,GAAT,SAAS;IAAO,cAAO,GAAP,OAAO;IAC3D,+BAAwB,GAAxB,wBAAwB;AAC5B,yEAAM,IAAI;EAAC","file":"menu_item_affix.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["menu_item_affix.dart"],"names":[],"mappings":";;;;;;;;;;;;cAe+B,gBAAU,KAAI,2CAAc,MAAM;;;cACzC,gBAAU,KAAI,2CAAc,OAAO;;;;IALpC;;;;;;;;;;;;;;IA0BJ;;;;;;IACJ;;;;;;IACH;;;;;;IAGC;;;;;;;8DAEI,IAAW,EAAE,MAAW,EAAE,SAAc,EAAE,OAAY;QAC3D,wGAA2B;IADJ,aAAM,GAAN,MAAM;IAAO,gBAAS,GAAT,SAAS;IAAO,cAAO,GAAP,OAAO;IAC3D,+BAAwB,GAAxB,wBAAwB;AAC5B,yEAAM,IAAI;EAAC","file":"menu_item_affix.ddc.js"}');
   // Exports:
   return {
     model__menu__menu_item_affix: model__menu__menu_item_affix

@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
   (model__selection__select.Filterable.new = function() {
   }).prototype = model__selection__select.Filterable.prototype;
   dart.addTypeTests(model__selection__select.Filterable);
+  dart.setLibraryUri(model__selection__select.Filterable, "package:angular_components/model/selection/select.dart");
   let const$;
   const _is_Parent_default = Symbol('_is_Parent_default');
   model__selection__select.Parent$ = dart.generic((P, C) => {
@@ -44,13 +45,15 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
       hasChildren: dart.fnType(core.bool, [core.Object]),
       childrenOf: dart.fnType(src__utils__async__disposable_future.DisposableFuture$(C), [core.Object], [core.Object])
     }));
+    dart.setLibraryUri(Parent, "package:angular_components/model/selection/select.dart");
     return Parent;
   });
   model__selection__select.Parent = model__selection__select.Parent$();
   dart.addTypeTests(model__selection__select.Parent, _is_Parent_default);
   dart.trackLibraries("packages/angular_components/model/selection/select.ddc", {
     "package:angular_components/model/selection/select.dart": model__selection__select
-  }, '{"version":3,"sourceRoot":"","sources":["select.dart"],"names":[],"mappings":";;;;;;;;;MAcU,mCAAU;YAAG,SAAC,CAAC,IAAK;;;MACpB,oCAAW;YAAG,SAAC,CAAC,IAAK;;;;;;EA8B/B;;;;;;;kBAImB,IAAM;iBAAJ;cAAS;MAAK;iBAIF,MAAQ,EAAG,WAAkB;iBAA3B;oCAAgB;cAC7C,gCAA0B,MAAC;MAAc;;;IAC/C","file":"select.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["select.dart"],"names":[],"mappings":";;;;;;;;;MAcU,mCAAU;YAAG,SAAC,CAAC,IAAK;;;MACpB,oCAAW;YAAG,SAAC,CAAC,IAAK;;;;;;EA8B/B;;;;;;;;kBAImB,IAAM;iBAAJ;cAAS;MAAK;iBAIF,MAAQ,EAAG,WAAkB;iBAA3B;oCAAgB;cAC7C,gCAA0B,MAAC;MAAc;;;IAC/C","file":"select.ddc.js"}');
   // Exports:
   return {
     model__selection__select: model__selection__select

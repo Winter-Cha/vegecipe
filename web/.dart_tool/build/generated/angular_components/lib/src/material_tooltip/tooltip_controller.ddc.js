@@ -16,6 +16,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__material_tooltip__tooltip_controller.Tooltip.new = function() {
   }).prototype = src__material_tooltip__tooltip_controller.Tooltip.prototype;
   dart.addTypeTests(src__material_tooltip__tooltip_controller.Tooltip);
+  dart.setLibraryUri(src__material_tooltip__tooltip_controller.Tooltip, "package:angular_components/src/material_tooltip/tooltip_controller.dart");
   const _activeTooltip = dart.privateName(src__material_tooltip__tooltip_controller, "_activeTooltip");
   const _closeTimerByTooltip = dart.privateName(src__material_tooltip__tooltip_controller, "_closeTimerByTooltip");
   const _cancelTooltipCloseTimer = dart.privateName(src__material_tooltip__tooltip_controller, "_cancelTooltipCloseTimer");
@@ -69,6 +70,7 @@ define(['dart_sdk'], function(dart_sdk) {
     [_cancelTooltipCloseTimer]: dart.fnType(dart.void, [src__material_tooltip__tooltip_controller.Tooltip]),
     proxyFor: dart.fnType(src__material_tooltip__tooltip_controller.Tooltip, [src__material_tooltip__tooltip_controller.Tooltip])
   }));
+  dart.setLibraryUri(src__material_tooltip__tooltip_controller.TooltipController, "package:angular_components/src/material_tooltip/tooltip_controller.dart");
   dart.setFieldSignature(src__material_tooltip__tooltip_controller.TooltipController, () => ({
     __proto__: dart.getFields(src__material_tooltip__tooltip_controller.TooltipController.__proto__),
     [_activeTooltip]: dart.fieldType(src__material_tooltip__tooltip_controller.Tooltip),
@@ -105,6 +107,7 @@ define(['dart_sdk'], function(dart_sdk) {
     activate: dart.fnType(dart.void, []),
     deactivate: dart.fnType(dart.void, [], {immediate: core.bool})
   }));
+  dart.setLibraryUri(src__material_tooltip__tooltip_controller._ProxyTooltip, "package:angular_components/src/material_tooltip/tooltip_controller.dart");
   dart.setFieldSignature(src__material_tooltip__tooltip_controller._ProxyTooltip, () => ({
     __proto__: dart.getFields(src__material_tooltip__tooltip_controller._ProxyTooltip.__proto__),
     [_tooltip]: dart.finalFieldType(src__material_tooltip__tooltip_controller.Tooltip),
@@ -112,7 +115,8 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/angular_components/src/material_tooltip/tooltip_controller.ddc", {
     "package:angular_components/src/material_tooltip/tooltip_controller.dart": src__material_tooltip__tooltip_controller
-  }, '{"version":3,"sourceRoot":"","sources":["tooltip_controller.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;EAoBA;;;;;;aAUgB,OAAe;AAC3B,UAAI,OAAO,IAAI,oBAAQ,OAAO,EAAI,oBAAc,GAAE;AAClD,kCAAc;;AACd,MAAwB,AAAE,gBAAQ;0BAApB,GAAG,OAAO;IAC1B;eAMgB,OAAe;AAC7B,UAAI,OAAO,IAAI,MAAM;AAGrB,UAAM,iBAAiB,OAAO;AAC9B,wCAAoB,QAAC,cAAc;;AACnC,gCAAoB,QAAC,cAAc,EAAI,eAAK,CAAC,2DAAiB,EAAE;AAC9D,sBAAc,WAAW;AACzB,wBAAI,cAAc,EAAI,oBAAc,GAAE,oBAAc,GAAG;AACvD,kCAAoB,SAAO,CAAC,cAAc;;IAE9C;0BAG2B,OAAe;AACxC,aAAO,kBAAP,OAAO,WAAY;AACnB,sBAAI,OAAO,EAAI,oBAAc,GAAE,oBAAc,GAAG;IAClD;aAEc,OAAe;AAC3B,uBAAI,OAAO,EAAI,oBAAc,GAAE;AAC/B,oCAAwB,CAAC,OAAO;IAClC;+BAE8B,OAAe;AAC3C,wCAAoB,QAAC,OAAO;;AAC5B,gCAAoB,SAAO,CAAC,OAAO;IACrC;aAQiB,OAAe;iBAAK,2DAAa,CAAC,OAAO,EAAE;IAAK;;;IALzD,oBAAc;IAGlB,0BAAoB,GAAG;EAG7B;;;;;;;;;;;;;;;;;MAEM,2DAAiB;4BAAG,iBAAQ,gBAAe;;;;;;;AAU7C,uBAAW,SAAS,CAAC,cAAQ;IAC/B;;UAGsB,2DAAY;AAChC,oBAAI,SAAS,GAAE;AACb,yBAAW,sBAAsB,CAAC,cAAQ;aACrC;AACL,yBAAW,WAAW,CAAC,cAAQ;;IAEnC;;;IAdmB,cAAQ;IAAO,iBAAW;EAAC","file":"tooltip_controller.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["tooltip_controller.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;EAoBA;;;;;;;aAUgB,OAAe;AAC3B,UAAI,OAAO,IAAI,oBAAQ,OAAO,EAAI,oBAAc,GAAE;AAClD,kCAAc;;AACd,MAAwB,AAAE,gBAAQ;0BAApB,GAAG,OAAO;IAC1B;eAMgB,OAAe;AAC7B,UAAI,OAAO,IAAI,MAAM;AAGrB,UAAM,iBAAiB,OAAO;AAC9B,wCAAoB,QAAC,cAAc;;AACnC,gCAAoB,QAAC,cAAc,EAAI,eAAK,CAAC,2DAAiB,EAAE;AAC9D,sBAAc,WAAW;AACzB,wBAAI,cAAc,EAAI,oBAAc,GAAE,oBAAc,GAAG;AACvD,kCAAoB,SAAO,CAAC,cAAc;;IAE9C;0BAG2B,OAAe;AACxC,aAAO,kBAAP,OAAO,WAAY;AACnB,sBAAI,OAAO,EAAI,oBAAc,GAAE,oBAAc,GAAG;IAClD;aAEc,OAAe;AAC3B,uBAAI,OAAO,EAAI,oBAAc,GAAE;AAC/B,oCAAwB,CAAC,OAAO;IAClC;+BAE8B,OAAe;AAC3C,wCAAoB,QAAC,OAAO;;AAC5B,gCAAoB,SAAO,CAAC,OAAO;IACrC;aAQiB,OAAe;iBAAK,2DAAa,CAAC,OAAO,EAAE;IAAK;;;IALzD,oBAAc;IAGlB,0BAAoB,GAAG;EAG7B;;;;;;;;;;;;;;;;;;MAEM,2DAAiB;4BAAG,iBAAQ,gBAAe;;;;;;;AAU7C,uBAAW,SAAS,CAAC,cAAQ;IAC/B;;UAGsB,2DAAY;AAChC,oBAAI,SAAS,GAAE;AACb,yBAAW,sBAAsB,CAAC,cAAQ;aACrC;AACL,yBAAW,WAAW,CAAC,cAAQ;;IAEnC;;;IAdmB,cAAQ;IAAO,iBAAW;EAAC","file":"tooltip_controller.ddc.js"}');
   // Exports:
   return {
     src__material_tooltip__tooltip_controller: src__material_tooltip__tooltip_controller

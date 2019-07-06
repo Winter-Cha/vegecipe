@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/config.template.ddc", {
     "package:angular_components/material_datepicker/config.template.dart": material_datepicker__config$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["config.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"config.template.ddc.js"}');
   // Exports:
   return {

@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable.tem
   };
   dart.trackLibraries("packages/angular_components/model/date/date.template.ddc", {
     "package:angular_components/model/date/date.template.dart": model__date__date$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,sDAAa;AACnB,IAAM,wDAAa;EACrB","file":"date.template.ddc.js"}');
   // Exports:
   return {

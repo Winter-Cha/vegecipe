@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer.templat
   };
   dart.trackLibraries("packages/angular_components/src/utils/angular/managed_zone/managed_zone.template.ddc", {
     "package:angular_components/src/utils/angular/managed_zone/managed_zone.template.dart": src__utils__angular__managed_zone__managed_zone$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["managed_zone.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,mEAAQ;YAAG;;;;;AAEb,kBAAI,mEAAQ,GAAE;AACZ;;AAEF,0EAAW;AAEX,IAAM,kDAAa;EACrB","file":"managed_zone.template.ddc.js"}');
   // Exports:
   return {

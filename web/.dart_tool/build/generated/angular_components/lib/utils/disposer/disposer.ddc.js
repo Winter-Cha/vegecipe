@@ -31,6 +31,7 @@ define(['dart_sdk'], function(dart_sdk) {
   (utils__disposer__disposer.Disposable[dart.mixinNew] = function() {
   }).prototype = utils__disposer__disposer.Disposable.prototype;
   dart.addTypeTests(utils__disposer__disposer.Disposable);
+  dart.setLibraryUri(utils__disposer__disposer.Disposable, "package:angular_components/utils/disposer/disposer.dart");
   dart.defineLazy(utils__disposer__disposer.Disposable, {
     /*utils__disposer__disposer.Disposable.Noop*/get Noop() {
       return dart.const(new utils__disposer__disposer._NoopDisposable.new());
@@ -47,6 +48,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getMethods(utils__disposer__disposer._NoopDisposable.__proto__),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(utils__disposer__disposer._NoopDisposable, "package:angular_components/utils/disposer/disposer.dart");
   const _disposeFn = dart.privateName(utils__disposer__disposer, "_disposeFn");
   utils__disposer__disposer._SingleFunctionDisposable = class _SingleFunctionDisposable extends core.Object {
     dispose() {
@@ -62,6 +64,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getMethods(utils__disposer__disposer._SingleFunctionDisposable.__proto__),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(utils__disposer__disposer._SingleFunctionDisposable, "package:angular_components/utils/disposer/disposer.dart");
   dart.setFieldSignature(utils__disposer__disposer._SingleFunctionDisposable, () => ({
     __proto__: dart.getFields(utils__disposer__disposer._SingleFunctionDisposable.__proto__),
     [_disposeFn]: dart.finalFieldType(VoidTovoid())
@@ -107,7 +110,7 @@ define(['dart_sdk'], function(dart_sdk) {
       return disposable;
     }
     addFunction(disposable) {
-      if (!(disposable != null)) dart.assertFailed();
+      if (!(disposable != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/disposer/disposer.dart", 145, 12, "disposable != null");
       let t = this[_disposeFunctions];
       t == null ? this[_disposeFunctions] = JSArrayOfVoidTovoid().of([]) : t;
       this[_disposeFunctions][$add](disposable);
@@ -115,7 +118,7 @@ define(['dart_sdk'], function(dart_sdk) {
       return disposable;
     }
     [_checkIfAlreadyDisposed]() {
-      if (!!(dart.test(this[_oneShot]) && dart.test(this[_disposeCalled]))) dart.assertFailed("Possible memory leak detected: A disposable should not be added to one shot disposers after the dispose() method has been called.");
+      if (!!(dart.test(this[_oneShot]) && dart.test(this[_disposeCalled]))) dart.assertFailed("Possible memory leak detected: A disposable should not be added to one shot disposers after the dispose() method has been called.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/disposer/disposer.dart", 154, 12, "!(_oneShot && _disposeCalled)");
     }
     dispose() {
       if (this[_disposeSubs] != null) {
@@ -185,6 +188,7 @@ define(['dart_sdk'], function(dart_sdk) {
     [_checkIfAlreadyDisposed]: dart.fnType(dart.void, []),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(utils__disposer__disposer.Disposer, "package:angular_components/utils/disposer/disposer.dart");
   dart.setFieldSignature(utils__disposer__disposer.Disposer, () => ({
     __proto__: dart.getFields(utils__disposer__disposer.Disposer.__proto__),
     [_disposeFunctions]: dart.fieldType(ListOfVoidTovoid()),
@@ -196,7 +200,8 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/angular_components/utils/disposer/disposer.ddc", {
     "package:angular_components/utils/disposer/disposer.dart": utils__disposer__disposer
-  }, '{"version":3,"sourceRoot":"","sources":["disposer.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;MAQa,2DAAiC;YAC1C,yEACA;;;;eAWiB,SAAyB;AAAI,yEAA7B,SAAyB;IAA6B;;;;;;MAHjD,yCAAI;4BAAG,6CAAe;;;;eAe9B;;;EAHO;;;;;;;;;;AAcrB,sBAAU;IACZ;;;IAL+B,gBAAU;EAAC;;;;;;;;;;;;;;;;;;;qBAgEvB,UAAY;AAI7B,UAAQ,cAAc,UAAU;AAChC,kDAAI,WAAW,GAAgB;AAC7B,yCAAmB;gDAAK;AACxB,iCAAmB,MAAI,yCAAC,UAAU;AAClC,qCAAuB;YAClB,iCAAI,WAAW,GAAwB;AAC5C,kCAAqB,eAAC,WAAW;YAC5B,wBAAI,WAAW,GAAe;AACnC,yBAAY,eAAC,WAAW;YACnB,qBAAI,WAAW,GAAqB;AACzC,wBAAW,CAAC,WAAW;aAClB;AACL,uBAAM,wBAAmB,CAAC,UAAU,EAAE;;AAExC,YAAO,WAAU;IACnB;6BAII,UAAgC;AAClC,gCAAY;uCAAK;AACjB,wBAAY,MAAI,CAAC,UAAU;AAC3B,mCAAuB;AACvB,YAAO,WAAU;IACnB;oBAG6B,UAAuB;AAClD,iCAAa;wCAAK;AAClB,yBAAa,MAAI,CAAC,UAAU;AAC5B,mCAAuB;AACvB,YAAO,WAAU;IACnB;gBAG4B,UAA0B;AACpD,YAAO,UAAU,IAAI;AACrB,qCAAiB;4CAAK;AACtB,6BAAiB,MAAI,CAAC,UAAU;AAChC,mCAAuB;AACvB,YAAO,WAAU;IACnB;;AAIE,WAAO,YAAE,cAAQ,eAAI,oBAAc,sBAAG,mIAAiC;IACzE;;AAIE,UAAI,kBAAY,IAAI,MAAM;AACxB,YAAI,MAAM,kBAAY,SAAO;AAC7B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,4BAAY,QAAC,CAAC,QAAQ;;AAExB,0BAAY,GAAG;;AAEjB,UAAI,mBAAa,IAAI,MAAM;AACzB,YAAI,MAAM,mBAAa,SAAO;AAC9B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,6BAAa,QAAC,CAAC,OAAO;;AAExB,2BAAa,GAAG;;AAElB,UAAI,yBAAmB,IAAI,MAAM;AAC/B,YAAI,MAAM,yBAAmB,SAAO;AACpC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,mCAAmB,QAAC,CAAC,SAAS;;AAEhC,iCAAmB,GAAG;;AAExB,UAAI,uBAAiB,IAAI,MAAM;AAC7B,YAAI,MAAM,uBAAiB,SAAO;AAClC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,iCAAiB,QAAC,CAAC;;AAErB,+BAAiB,GAAG;;AAEtB,0BAAc,GAAG;IACnB;;;QAjGe,qDAAU;IAVH,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAKa,cAAQ,GAAG,OAAO;;;IAV/B,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAQD,cAAQ,GAAG;EAAI;;IAbd,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAWH,cAAQ,GAAG;EAAK","file":"disposer.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["disposer.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;MAQa,2DAAiC;YAC1C,yEACA;;;;eAWiB,SAAyB;AAAI,yEAA7B,SAAyB;IAA6B;;;;;;;MAHjD,yCAAI;4BAAG,6CAAe;;;;eAe9B;;;EAHO;;;;;;;;;;;AAcrB,sBAAU;IACZ;;;IAL+B,gBAAU;EAAC;;;;;;;;;;;;;;;;;;;;qBAgEvB,UAAY;AAI7B,UAAQ,cAAc,UAAU;AAChC,kDAAI,WAAW,GAAgB;AAC7B,yCAAmB;gDAAK;AACxB,iCAAmB,MAAI,yCAAC,UAAU;AAClC,qCAAuB;YAClB,iCAAI,WAAW,GAAwB;AAC5C,kCAAqB,eAAC,WAAW;YAC5B,wBAAI,WAAW,GAAe;AACnC,yBAAY,eAAC,WAAW;YACnB,qBAAI,WAAW,GAAqB;AACzC,wBAAW,CAAC,WAAW;aAClB;AACL,uBAAM,wBAAmB,CAAC,UAAU,EAAE;;AAExC,YAAO,WAAU;IACnB;6BAII,UAAgC;AAClC,gCAAY;uCAAK;AACjB,wBAAY,MAAI,CAAC,UAAU;AAC3B,mCAAuB;AACvB,YAAO,WAAU;IACnB;oBAG6B,UAAuB;AAClD,iCAAa;wCAAK;AAClB,yBAAa,MAAI,CAAC,UAAU;AAC5B,mCAAuB;AACvB,YAAO,WAAU;IACnB;gBAG4B,UAA0B;AACpD,YAAO,UAAU,IAAI;AACrB,qCAAiB;4CAAK;AACtB,6BAAiB,MAAI,CAAC,UAAU;AAChC,mCAAuB;AACvB,YAAO,WAAU;IACnB;;AAIE,WAAO,YAAE,cAAQ,eAAI,oBAAc,sBAAG,mIAAiC;IACzE;;AAIE,UAAI,kBAAY,IAAI,MAAM;AACxB,YAAI,MAAM,kBAAY,SAAO;AAC7B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,4BAAY,QAAC,CAAC,QAAQ;;AAExB,0BAAY,GAAG;;AAEjB,UAAI,mBAAa,IAAI,MAAM;AACzB,YAAI,MAAM,mBAAa,SAAO;AAC9B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,6BAAa,QAAC,CAAC,OAAO;;AAExB,2BAAa,GAAG;;AAElB,UAAI,yBAAmB,IAAI,MAAM;AAC/B,YAAI,MAAM,yBAAmB,SAAO;AACpC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,mCAAmB,QAAC,CAAC,SAAS;;AAEhC,iCAAmB,GAAG;;AAExB,UAAI,uBAAiB,IAAI,MAAM;AAC7B,YAAI,MAAM,uBAAiB,SAAO;AAClC,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,GAAG,GAAE,CAAC,IAAI;AAC5B,iCAAiB,QAAC,CAAC;;AAErB,+BAAiB,GAAG;;AAEtB,0BAAc,GAAG;IACnB;;;QAjGe,qDAAU;IAVH,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAKa,cAAQ,GAAG,OAAO;;;IAV/B,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAQD,cAAQ,GAAG;EAAI;;IAbd,uBAAiB;IACd,kBAAY;IACrB,mBAAa;IACZ,yBAAmB;IAE/B,oBAAc,GAAG;IAWH,cAAQ,GAAG;EAAK","file":"disposer.ddc.js"}');
   // Exports:
   return {
     utils__disposer__disposer: utils__disposer__disposer

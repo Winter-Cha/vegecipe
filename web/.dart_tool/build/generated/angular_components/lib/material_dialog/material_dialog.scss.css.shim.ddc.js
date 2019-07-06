@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_dialog/material_dialog.scss.css.shim.ddc", {
     "package:angular_components/material_dialog/material_dialog.scss.css.shim.dart": material_dialog__material_dialog$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_dialog.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,2DAAM;YAAG,EAAC","file":"material_dialog.scss.css.shim.ddc.js"}');
   // Exports:
   return {

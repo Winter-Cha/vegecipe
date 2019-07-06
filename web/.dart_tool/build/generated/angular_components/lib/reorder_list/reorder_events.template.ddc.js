@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/reorder_list/reorder_events.template.ddc", {
     "package:angular_components/reorder_list/reorder_events.template.dart": reorder_list__reorder_events$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["reorder_events.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"reorder_events.template.ddc.js"}');
   // Exports:
   return {

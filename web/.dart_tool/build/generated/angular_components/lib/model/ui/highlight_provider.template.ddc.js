@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/highlighted_text_model
   };
   dart.trackLibraries("packages/angular_components/model/ui/highlight_provider.template.ddc", {
     "package:angular_components/model/ui/highlight_provider.template.dart": model__ui__highlight_provider$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlight_provider.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,iDAAQ;YAAG;;;;;AAEb,kBAAI,iDAAQ,GAAE;AACZ;;AAEF,wDAAW;AAEX,IAAM,0DAAa;EACrB","file":"highlight_provider.template.ddc.js"}');
   // Exports:
   return {

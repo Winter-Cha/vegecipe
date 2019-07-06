@@ -63,6 +63,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(button_decorator__button_decorator$46template.ButtonDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(button_decorator__button_decorator$46template.ButtonDirectiveNgCd, "package:angular_components/button_decorator/button_decorator.template.dart");
   dart.setFieldSignature(button_decorator__button_decorator$46template.ButtonDirectiveNgCd, () => ({
     __proto__: dart.getFields(button_decorator__button_decorator$46template.ButtonDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(button_decorator__button_decorator.ButtonDirective),
@@ -90,7 +91,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/button_decorator/button_decorator.template.ddc", {
     "package:angular_components/button_decorator/button_decorator.template.dart": button_decorator__button_decorator$46template
-  }, '{"version":3,"sourceRoot":"","sources":["button_decorator.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;IAmBgC;;;;;;sBAMP,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,YAAY,SAAS;AACjD,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,SAAS;AAC7C,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,YAAY;AACtC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,iBAAiB,SAAS;AACtD,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,eAAe,SAAS;AAC9D,qBAAO,GAAG,SAAS;;IAEvB;;oFAtBoB,QAAa;IAJ7B,aAAO;IACP,aAAO;IACP,aAAO;IACN,aAAO;IACa,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;;;MAyBhC,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,8CAAa;AACnB,IAAM,uDAAa;EACrB","file":"button_decorator.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["button_decorator.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;IAmBgC;;;;;;sBAMP,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,YAAY,SAAS;AACjD,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,SAAS;AAC7C,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,YAAY;AACtC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,iBAAiB,SAAS;AACtD,qBAAO,GAAG,SAAS;;AAErB,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,eAAe,SAAS;AAC9D,qBAAO,GAAG,SAAS;;IAEvB;;oFAtBoB,QAAa;IAJ7B,aAAO;IACP,aAAO;IACP,aAAO;IACN,aAAO;IACa,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;;;;MAyBhC,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,8CAAa;AACnB,IAAM,uDAAa;EACrB","file":"button_decorator.template.ddc.js"}');
   // Exports:
   return {
     button_decorator__button_decorator$46template: button_decorator__button_decorator$46template

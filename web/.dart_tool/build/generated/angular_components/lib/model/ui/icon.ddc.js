@@ -8,10 +8,12 @@ define(['dart_sdk'], function(dart_sdk) {
   (model__ui__icon.HasIcon.new = function() {
   }).prototype = model__ui__icon.HasIcon.prototype;
   dart.addTypeTests(model__ui__icon.HasIcon);
+  dart.setLibraryUri(model__ui__icon.HasIcon, "package:angular_components/model/ui/icon.dart");
   model__ui__icon.HasHoverIcon = class HasHoverIcon extends core.Object {};
   (model__ui__icon.HasHoverIcon.new = function() {
   }).prototype = model__ui__icon.HasHoverIcon.prototype;
   dart.addTypeTests(model__ui__icon.HasHoverIcon);
+  dart.setLibraryUri(model__ui__icon.HasHoverIcon, "package:angular_components/model/ui/icon.dart");
   model__ui__icon.Icon = class Icon extends core.Object {
     get name() {
       return this[name$];
@@ -28,13 +30,15 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = model__ui__icon.Icon.prototype;
   dart.addTypeTests(model__ui__icon.Icon);
   const name$ = Symbol("Icon.name");
+  dart.setLibraryUri(model__ui__icon.Icon, "package:angular_components/model/ui/icon.dart");
   dart.setFieldSignature(model__ui__icon.Icon, () => ({
     __proto__: dart.getFields(model__ui__icon.Icon.__proto__),
     name: dart.finalFieldType(core.String)
   }));
   dart.trackLibraries("packages/angular_components/model/ui/icon.ddc", {
     "package:angular_components/model/ui/icon.dart": model__ui__icon
-  }, '{"version":3,"sourceRoot":"","sources":["icon.dart"],"names":[],"mappings":";;;;;;;;EAOA;;;;EAMA;;;IAKe;;;;;;;uCAEF,IAAS;IAAJ,WAAI,GAAJ,IAAI;EAAC;;IAWA,WAAI,GAAG;EAAE","file":"icon.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["icon.dart"],"names":[],"mappings":";;;;;;;;EAOA;;;;;EAMA;;;;IAKe;;;;;;;uCAEF,IAAS;IAAJ,WAAI,GAAJ,IAAI;EAAC;;IAWA,WAAI,GAAG;EAAE","file":"icon.ddc.js"}');
   // Exports:
   return {
     model__ui__icon: model__ui__icon

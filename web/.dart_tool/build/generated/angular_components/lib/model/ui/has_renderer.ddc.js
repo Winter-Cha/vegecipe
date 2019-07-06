@@ -25,6 +25,7 @@ define(['dart_sdk'], function(dart_sdk) {
     dart.addTypeTests(HasRenderer);
     HasRenderer.prototype[_is_HasRenderer_default] = true;
     const itemRenderer = Symbol("HasRenderer.itemRenderer");
+    dart.setLibraryUri(HasRenderer, "package:angular_components/model/ui/has_renderer.dart");
     dart.setFieldSignature(HasRenderer, () => ({
       __proto__: dart.getFields(HasRenderer.__proto__),
       itemRenderer: dart.fieldType(TToString())
@@ -62,6 +63,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }).prototype = RendersValue.prototype;
     dart.addTypeTests(RendersValue);
     RendersValue.prototype[_is_RendersValue_default] = true;
+    dart.setLibraryUri(RendersValue, "package:angular_components/model/ui/has_renderer.dart");
     return RendersValue;
   });
   model__ui__has_renderer.RendersValue = model__ui__has_renderer.RendersValue$();
@@ -83,6 +85,7 @@ define(['dart_sdk'], function(dart_sdk) {
     dart.addTypeTests(HasComponentRenderer);
     HasComponentRenderer.prototype[_is_HasComponentRenderer_default] = true;
     const componentRenderer = Symbol("HasComponentRenderer.componentRenderer");
+    dart.setLibraryUri(HasComponentRenderer, "package:angular_components/model/ui/has_renderer.dart");
     dart.setFieldSignature(HasComponentRenderer, () => ({
       __proto__: dart.getFields(HasComponentRenderer.__proto__),
       componentRenderer: dart.fieldType(IToType())
@@ -104,7 +107,8 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/ui/has_renderer.ddc", {
     "package:angular_components/model/ui/has_renderer.dart": model__ui__has_renderer
-  }, '{"version":3,"sourceRoot":"","sources":["has_renderer.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MASkB;;;;;;;;wBAAY;IAC9B;;;;;;;;;;;;;MAEM,uCAAe;iBAAG,gBAAO,CAAC;;;+DAOU,YAA4B;AACpE,QAAI,YAAY,IAAI,QAAQ,uCAAe,MAAC,YAAY,KAAK,MAAM;AACjE,YAAO,aAAY;;AAErB,QAAI,SAAS;AACb,QAAgB,sBAAuB,IAAM;AAC3C,UAAO,QAAQ,MAAM,QAAC,IAAI;AAC1B,UAAI,KAAK,IAAI,MAAM;AACjB,aAAK,GAAG,YAAY,CAAC,IAAI;AACzB,cAAM,QAAC,IAAI,EAAI,KAAK;;AAEtB,YAAO,MAAK;;YANE;AAQhB,2CAAe,MAAC,mBAAmB,EAAI,mBAAmB;AAE1D,UAAO,oBAAmB;EAC5B;;;;;IASA;;;;;;;;;;;MAW0B;;;;;;;;6BAAiB;IAC3C;;;;;;;;;;;;yDAE2B,KAAa;UAAK,UAAE,KAAK;EAAC;;MAGlC,oCAAY;YAAG,kEAAa;;;mDAE1B,KAAa;UAC9B,gBAAM,mBAAU,CAAC;EAAsC","file":"has_renderer.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["has_renderer.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MASkB;;;;;;;;wBAAY;IAC9B;;;;;;;;;;;;;;MAEM,uCAAe;iBAAG,gBAAO,CAAC;;;+DAOU,YAA4B;AACpE,QAAI,YAAY,IAAI,QAAQ,uCAAe,MAAC,YAAY,KAAK,MAAM;AACjE,YAAO,aAAY;;AAErB,QAAI,SAAS;AACb,QAAgB,sBAAuB,IAAM;AAC3C,UAAO,QAAQ,MAAM,QAAC,IAAI;AAC1B,UAAI,KAAK,IAAI,MAAM;AACjB,aAAK,GAAG,YAAY,CAAC,IAAI;AACzB,cAAM,QAAC,IAAI,EAAI,KAAK;;AAEtB,YAAO,MAAK;;YANE;AAQhB,2CAAe,MAAC,mBAAmB,EAAI,mBAAmB;AAE1D,UAAO,oBAAmB;EAC5B;;;;;IASA;;;;;;;;;;;;MAW0B;;;;;;;;6BAAiB;IAC3C;;;;;;;;;;;;;yDAE2B,KAAa;UAAK,UAAE,KAAK;EAAC;;MAGlC,oCAAY;YAAG,kEAAa;;;mDAE1B,KAAa;UAC9B,gBAAM,mBAAU,CAAC;EAAsC","file":"has_renderer.ddc.js"}');
   // Exports:
   return {
     model__ui__has_renderer: model__ui__has_renderer

@@ -36,6 +36,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
   };
   dart.trackLibraries("packages/angular_components/utils/async/async.template.ddc", {
     "package:angular_components/utils/async/async.template.dart": utils__async__async$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["async.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;MAgBI,uCAAQ;YAAG;;;;;AAEb,kBAAI,uCAAQ,GAAE;AACZ;;AAEF,8CAAW;AAEX,IAAM,kEAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,2DAAa;AACnB,IAAM,6DAAa;AACnB,IAAM,kEAAa;AACnB,IAAM,oEAAa;AACnB,IAAM,yDAAa;AACnB,IAAM,2DAAa;AACnB,IAAM,uDAAa;EACrB","file":"async.template.ddc.js"}');
   // Exports:
   return {

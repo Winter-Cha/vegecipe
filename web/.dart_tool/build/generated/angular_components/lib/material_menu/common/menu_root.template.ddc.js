@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_menu/common/menu_root.template.ddc", {
     "package:angular_components/material_menu/common/menu_root.template.dart": material_menu__common__menu_root$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["menu_root.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,oDAAQ;YAAG;;;;;AAEb,kBAAI,oDAAQ,GAAE;AACZ;;AAEF,2DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,uDAAa;EACrB","file":"menu_root.template.ddc.js"}');
   // Exports:
   return {

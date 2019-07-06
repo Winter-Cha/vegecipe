@@ -45,6 +45,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(focus__focus_item$46template.FocusItemDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(focus__focus_item$46template.FocusItemDirectiveNgCd, "package:angular_components/focus/focus_item.template.dart");
   dart.setFieldSignature(focus__focus_item$46template.FocusItemDirectiveNgCd, () => ({
     __proto__: dart.getFields(focus__focus_item$46template.FocusItemDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(focus__focus_item.FocusItemDirective),
@@ -66,7 +67,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/focus/focus_item.template.ddc", {
     "package:angular_components/focus/focus_item.template.dart": focus__focus_item$46template
-  }, '{"version":3,"sourceRoot":"","sources":["focus_item.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAgBmC;;;;;;sBAGV,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,KAAK,IAAE,OAAO;AACnC,UAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,aAAQ,KAAK;;;AAGrD,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,YAAY,SAAS;AACjD,qBAAO,GAAG,SAAS;;IAEvB;;sEAbuB,QAAa;IADhC,aAAO;IACiB,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;MAgBnC,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;EACrB","file":"focus_item.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["focus_item.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAgBmC;;;;;;sBAGV,IAAqB,EAAE,EAAkB;AAC9D,UAAK,aAAc,IAAI,QAAQ,KAAI;AACnC,UAAI,UAAU,EAAE;AACd,cAAK,AAAU,aAAQ,KAAK,IAAE,OAAO;AACnC,UAAQ,yCAAe,CAAC,EAAE,EAAE,QAAQ,aAAQ,KAAK;;;AAGrD,UAAM,YAAY,aAAQ,SAAS;AACnC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,yCAAe,CAAC,EAAE,EAAE,YAAY,SAAS;AACjD,qBAAO,GAAG,SAAS;;IAEvB;;sEAbuB,QAAa;IADhC,aAAO;IACiB,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;MAgBnC,qCAAQ;YAAG;;;;;AAEb,kBAAI,qCAAQ,GAAE;AACZ;;AAEF,4CAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;EACrB","file":"focus_item.template.ddc.js"}');
   // Exports:
   return {
     focus__focus_item$46template: focus__focus_item$46template

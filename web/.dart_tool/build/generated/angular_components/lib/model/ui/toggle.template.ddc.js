@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/ui/toggle.template.ddc", {
     "package:angular_components/model/ui/toggle.template.dart": model__ui__toggle$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["toggle.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"toggle.template.ddc.js"}');
   // Exports:
   return {

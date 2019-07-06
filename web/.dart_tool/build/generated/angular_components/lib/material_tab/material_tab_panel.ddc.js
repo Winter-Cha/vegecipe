@@ -91,7 +91,7 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
       return this[_tabIds];
     }
     [_setActiveTab](i, focusTab) {
-      if (!(dart.notNull(i) >= 0 && dart.notNull(i) < dart.notNull(this[_tabs][$length]))) dart.assertFailed();
+      if (!(dart.notNull(i) >= 0 && dart.notNull(i) < dart.notNull(this[_tabs][$length]))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_tab/material_tab_panel.dart", 119, 12, "i >= 0 && i < _tabs.length");
       let t = this[_activeTab];
       t == null ? null : t.deactivate();
       this[_activeTabIndex] = i;
@@ -145,6 +145,7 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
     activeTabIndex: dart.dynamic,
     tabs: core.List$(material_tab__material_tab.Tab)
   }));
+  dart.setLibraryUri(material_tab__material_tab_panel.MaterialTabPanelComponent, "package:angular_components/material_tab/material_tab_panel.dart");
   dart.setFieldSignature(material_tab__material_tab_panel.MaterialTabPanelComponent, () => ({
     __proto__: dart.getFields(material_tab__material_tab_panel.MaterialTabPanelComponent.__proto__),
     [_changeDetector]: dart.finalFieldType(src__core__change_detection__change_detector_ref.ChangeDetectorRef),
@@ -165,7 +166,8 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
   });
   dart.trackLibraries("packages/angular_components/material_tab/material_tab_panel.ddc", {
     "package:angular_components/material_tab/material_tab_panel.dart": material_tab__material_tab_panel
-  }, '{"version":3,"sourceRoot":"","sources":["material_tab_panel.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAmCgD,uBAAgB,OAAO;;;YAM7B,iBAAU,OAAO;;IAOpD;;;;;;uBAMc,KAAK;AAEtB,UAAI,WAAK,IAAI,MAAM;AACjB,2BAAa,iBAAC,KAAK,GAAE;aAChB;AAEL,6BAAe,mBAAG,KAAK;;IAE3B;;YAG0B,sBAAe;;;AAMvC,wBAAY,GAAG;AACf,qBAAS;IACX;aAGS,IAAc;AACrB,8BAAkB,GAAG,AAAC,WAAK,IAAI,OAAQ,gBAAU,GAAG;AACpD,iBAAK,GAAG,IAAI;AAGZ,oBAAI,kBAAY,GAAE,eAAS;IAC7B;;AAGE,sBAAU,6BAAG,WAAK,MAAI,cAAC,QAAC,CAAC,IAAK,CAAC,MAAM,2BAAQ;AAC7C,mBAAO,6BAAG,WAAK,MAAI,cAAC,QAAC,CAAC,IAAK,CAAC,MAAM,2BAAQ;AAI1C,6BAAiB,CAAC;AAChB,6BAAe,aAAa;AAE5B,YAAI,wBAAkB,IAAI,MAAM;AAC9B,+BAAe,GAAG,WAAK,UAAQ,CAAC,wBAAkB;AAClD,kCAAkB,GAAG;AACrB,cAAI,qBAAe,KAAI,CAAC,GAAG;AAEzB,iCAAe,GAAG;iBACb;AAEL;;;AAGJ,wBAAU,SAAS;;IAEvB;;YAGsB,YAAK,QAAC,qBAAe;IAAC;;YAGd,iBAAU;;;YAGb,cAAO;;oBAEf,CAAK,EAAE,QAAa;AACrC,YAAS,AAAK,aAAP,CAAC,KAAI,KAAO,aAAF,CAAC,iBAAG,WAAK,SAAO;AACjC,8BAAU;;AACV,2BAAe,GAAG,CAAC;AACnB,sBAAU,SAAS;AACnB,2BAAe,aAAa;AAE5B,qBAAK,QAAQ,GAAE;AACf,sBAAU,MAAM;IAClB;sBAGuB,CAAgB;AACrC,4BAAgB,IAAI,CAAC,CAAC;IACxB;gBAGiB,CAAgB;AAC/B,yBAAc,GAAG,CAAC,SAAS;AAC3B,sBAAU,IAAI,CAAC,CAAC;IAClB;;;IA/GK,kBAAY,GAAG;IAChB,wBAAkB;IAShB,sBAAgB,GAClB,4CAA0C,QAAO;IAK/C,gBAAU,GAAG,4CAA0C,QAAO;IAM/D,gBAAU,GAAG;IAgBd,qBAAe,GAAG;IA4CZ,WAAK;IAGF,gBAAU;IAGV,aAAO;IA/CW,qBAAe;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA5ClC,oEAAS;YAAG","file":"material_tab_panel.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_tab_panel.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAmCgD,uBAAgB,OAAO;;;YAM7B,iBAAU,OAAO;;IAOpD;;;;;;uBAMc,KAAK;AAEtB,UAAI,WAAK,IAAI,MAAM;AACjB,2BAAa,iBAAC,KAAK,GAAE;aAChB;AAEL,6BAAe,mBAAG,KAAK;;IAE3B;;YAG0B,sBAAe;;;AAMvC,wBAAY,GAAG;AACf,qBAAS;IACX;aAGS,IAAc;AACrB,8BAAkB,GAAG,AAAC,WAAK,IAAI,OAAQ,gBAAU,GAAG;AACpD,iBAAK,GAAG,IAAI;AAGZ,oBAAI,kBAAY,GAAE,eAAS;IAC7B;;AAGE,sBAAU,6BAAG,WAAK,MAAI,cAAC,QAAC,CAAC,IAAK,CAAC,MAAM,2BAAQ;AAC7C,mBAAO,6BAAG,WAAK,MAAI,cAAC,QAAC,CAAC,IAAK,CAAC,MAAM,2BAAQ;AAI1C,6BAAiB,CAAC;AAChB,6BAAe,aAAa;AAE5B,YAAI,wBAAkB,IAAI,MAAM;AAC9B,+BAAe,GAAG,WAAK,UAAQ,CAAC,wBAAkB;AAClD,kCAAkB,GAAG;AACrB,cAAI,qBAAe,KAAI,CAAC,GAAG;AAEzB,iCAAe,GAAG;iBACb;AAEL;;;AAGJ,wBAAU,SAAS;;IAEvB;;YAGsB,YAAK,QAAC,qBAAe;IAAC;;YAGd,iBAAU;;;YAGb,cAAO;;oBAEf,CAAK,EAAE,QAAa;AACrC,YAAS,AAAK,aAAP,CAAC,KAAI,KAAO,aAAF,CAAC,iBAAG,WAAK,SAAO;AACjC,8BAAU;;AACV,2BAAe,GAAG,CAAC;AACnB,sBAAU,SAAS;AACnB,2BAAe,aAAa;AAE5B,qBAAK,QAAQ,GAAE;AACf,sBAAU,MAAM;IAClB;sBAGuB,CAAgB;AACrC,4BAAgB,IAAI,CAAC,CAAC;IACxB;gBAGiB,CAAgB;AAC/B,yBAAc,GAAG,CAAC,SAAS;AAC3B,sBAAU,IAAI,CAAC,CAAC;IAClB;;;IA/GK,kBAAY,GAAG;IAChB,wBAAkB;IAShB,sBAAgB,GAClB,4CAA0C,QAAO;IAK/C,gBAAU,GAAG,4CAA0C,QAAO;IAM/D,gBAAU,GAAG;IAgBd,qBAAe,GAAG;IA4CZ,WAAK;IAGF,gBAAU;IAGV,aAAO;IA/CW,qBAAe;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA5ClC,oEAAS;YAAG","file":"material_tab_panel.ddc.js"}');
   // Exports:
   return {
     material_tab__material_tab_panel: material_tab__material_tab_panel

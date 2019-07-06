@@ -77,6 +77,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
     ngOnDestroy: dart.fnType(dart.void, []),
     [_onMouseUp]: dart.fnType(dart.void, [html.MouseEvent])
   }));
+  dart.setLibraryUri(material_expansionpanel__material_expansionpanel_auto_dismiss.MaterialExpansionPanelAutoDismiss, "package:angular_components/material_expansionpanel/material_expansionpanel_auto_dismiss.dart");
   dart.setFieldSignature(material_expansionpanel__material_expansionpanel_auto_dismiss.MaterialExpansionPanelAutoDismiss, () => ({
     __proto__: dart.getFields(material_expansionpanel__material_expansionpanel_auto_dismiss.MaterialExpansionPanelAutoDismiss.__proto__),
     [_expansionPanel]: dart.finalFieldType(material_expansionpanel__material_expansionpanel.MaterialExpansionPanel),
@@ -88,6 +89,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   }));
   dart.trackLibraries("packages/angular_components/material_expansionpanel/material_expansionpanel_auto_dismiss.ddc", {
     "package:angular_components/material_expansionpanel/material_expansionpanel_auto_dismiss.dart": material_expansionpanel__material_expansionpanel_auto_dismiss
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_expansionpanel_auto_dismiss.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;sBAuDyB,MAAW;AAChC,8CAA0B;;AAC1B,oBAAI,MAAM,GAAE;AACV,wCAA0B,GAAG,8BAAwB,OAAO,OACjD,CAAC,QAAC,CAAC,IAAK,qBAAe,SAAS,gBAAe;;IAE9D;;AAIE,8CAA0B;;IAC5B;iBAEgB,CAAY;AAC1B,UAAI,uBAAO,CAAC,SAAO;AACnB,aAAO,IAAI,IAAI,MAAM;AACnB,YAAI,UAAU,IAAI,QAAQ,cAAY;AACtC,wBAAI,IAAI,EAAI,cAAa,GAAE;AAEzB;cACK,iBAAI,IAAI,EAAI,4BAAsB,GAAE;AAEzC;cACK,KAAI,OAAO,KAAI,QAAQ;AAK5B,wCAAwB,IAAI,CAAC,CAAC;AAC9B;cACK,KAAI,OAAO,KAAI,qBAClB,OAAO,KAAI,qBACX,OAAO,KAAI,WACX,OAAO,KAAI,KAAK;AAElB;;AAEF,YAAI,GAAG,IAAI,SAAO;;IAOtB;;;IAjEwB,8BAAwB;IACtB,gCAA0B;IACrB,sBAAgB;IAGtC,qBAAe;IAC4B,4BAAsB;IACjE,cAAQ;AACf,kCAAwB,GAAG,mCAA0B,QAC3C,gBACI;AACR,8BAAgB,GAAG,aAAQ,YAAU,OAAO,CAAC,2BAAU;kCAE/C;AACR,8BAAgB,OAAO;AACvB,8BAAgB,GAAG;;EAE3B","file":"material_expansionpanel_auto_dismiss.ddc.js"}');
   // Exports:
   return {

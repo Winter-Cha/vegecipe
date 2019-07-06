@@ -53,6 +53,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface'], functi
     __proto__: dart.getSetters(mixins__focusable_mixin.FocusableMixin.__proto__),
     focusable: focus__focus_interface.Focusable
   }));
+  dart.setLibraryUri(mixins__focusable_mixin.FocusableMixin, "package:angular_components/mixins/focusable_mixin.dart");
   dart.setFieldSignature(mixins__focusable_mixin.FocusableMixin, () => ({
     __proto__: dart.getFields(mixins__focusable_mixin.FocusableMixin.__proto__),
     [_onFocus]: dart.finalFieldType(StreamControllerOfFocusEvent()),
@@ -61,6 +62,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface'], functi
   }));
   dart.trackLibraries("packages/angular_components/mixins/focusable_mixin.ddc", {
     "package:angular_components/mixins/focusable_mixin.dart": mixins__focusable_mixin
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focusable_mixin.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;YAcoC,eAAQ,OAAO;;kBAOnC,SAAmB;AAC/B,sBAAU,GAAG,SAAS;AACtB,oBAAI,mBAAa,KAAI,SAAS,IAAI,MAAM;AACtC,2BAAa,GAAG;AAChB,wBAAU,MAAM;;IAEpB;;AAIE,UAAI,gBAAU,IAAI,MAAM;AACtB,2BAAa,GAAG;aACX;AACL,wBAAU,MAAM;;IAEpB;gBAEiB,KAAgB;AAC/B,oBAAQ,IAAI,CAAC,KAAK;IACpB;;;IAzBmC,cAAQ,GACvC,wCAAsC,QAAO;IAEvC,gBAAU;IACf,mBAAa,GAAG;EAsBvB","file":"focusable_mixin.ddc.js"}');
   // Exports:
   return {

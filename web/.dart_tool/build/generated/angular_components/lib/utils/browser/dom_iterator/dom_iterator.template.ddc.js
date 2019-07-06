@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/browser/dom_iterator/dom_iterator.template.ddc", {
     "package:angular_components/utils/browser/dom_iterator/dom_iterator.template.dart": utils__browser__dom_iterator__dom_iterator$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dom_iterator.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"dom_iterator.template.ddc.js"}');
   // Exports:
   return {

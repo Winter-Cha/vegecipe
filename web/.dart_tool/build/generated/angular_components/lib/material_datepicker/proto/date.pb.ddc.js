@@ -110,6 +110,7 @@ define(['dart_sdk', 'packages/protobuf/protobuf'], function(dart_sdk, protobuf) 
     month: core.int,
     day: core.int
   }));
+  dart.setLibraryUri(material_datepicker__proto__date$46pb.Date, "package:angular_components/material_datepicker/proto/date.pb.dart");
   dart.defineLazy(material_datepicker__proto__date$46pb.Date, {
     /*material_datepicker__proto__date$46pb.Date._i*/get _i() {
       let _ = new protobuf$.BuilderInfo.new("Date", {package: dart.const(new protobuf$.PackageName.new("angular_components.lib.material_datepicker.proto"))});
@@ -126,7 +127,8 @@ define(['dart_sdk', 'packages/protobuf/protobuf'], function(dart_sdk, protobuf) 
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/proto/date.pb.ddc", {
     "package:angular_components/material_datepicker/proto/date.pb.dart": material_datepicker__proto__date$46pb
-  }, '{"version":3,"sourceRoot":"","sources":["date.pb.dart"],"names":[],"mappings":";;;;;;;;;;;kBA2BkB,8CAAI;yBAAqB;;IAAK;aAChC,OAA2B;+DACrC,cAAc,CAAC,QAAC,OAAO,IAAK,OAAO,+CAAC,OAAO;IAAU;;YAC5B,8CAAE;;;iBACP,8CAAI;IAAE;;YACA,kDAAM;IAAE;;iBACM,oBAAgB;IAAE;;cAClC,2DAAgB;yBAAhB,2DAAgB;gBAAK,iDAAM;;;;IAAY;;YAG7C,WAAK,WAAC,GAAG;IAAE;aACxB,CAAW;AAClB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEwB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;YAEV,WAAK,WAAC,GAAG;IAAE;cACxB,CAAW;AACnB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEyB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;YAEb,WAAK,WAAC,GAAG;IAAE;YACxB,CAAW;AACjB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEuB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;;AAvCvB;EAAO;oEACA,CAAuB,EAClC,CAAqD;sBAA/B,IAAI,2BAAqB,MAAM;AACpD,+EAAiB,CAAC,EAAE,CAAC;EAAC;kEACd,CAAc,EACvB,CAAqD;sBAA/B,IAAI,2BAAqB,MAAM;AACpD,6EAAe,CAAC,EAAE,CAAC;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAdG,6CAAE;kBAAG,yBAAe,CAAC,kBACrC,eAAM,yBAAe,CAC1B;oBACS,GAAG,QAAQ,qBAAe,GAAG;oBAC7B,GAAG,SAAS,qBAAe,GAAG;oBAC9B,GAAG,OAAO,qBAAe,GAAG;4BACrB;;;MAiBZ,2DAAgB","file":"date.pb.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["date.pb.dart"],"names":[],"mappings":";;;;;;;;;;;kBA2BkB,8CAAI;yBAAqB;;IAAK;aAChC,OAA2B;+DACrC,cAAc,CAAC,QAAC,OAAO,IAAK,OAAO,+CAAC,OAAO;IAAU;;YAC5B,8CAAE;;;iBACP,8CAAI;IAAE;;YACA,kDAAM;IAAE;;iBACM,oBAAgB;IAAE;;cAClC,2DAAgB;yBAAhB,2DAAgB;gBAAK,iDAAM;;;;IAAY;;YAG7C,WAAK,WAAC,GAAG;IAAE;aACxB,CAAW;AAClB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEwB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;YAEV,WAAK,WAAC,GAAG;IAAE;cACxB,CAAW;AACnB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEyB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;YAEb,WAAK,WAAC,GAAG;IAAE;YACxB,CAAW;AACjB,2BAAgB,CAAC,GAAG,CAAC;IACvB;;YAEuB,WAAK,CAAC;IAAE;;YACZ,gBAAU,CAAC;IAAE;;;AAvCvB;EAAO;oEACA,CAAuB,EAClC,CAAqD;sBAA/B,IAAI,2BAAqB,MAAM;AACpD,+EAAiB,CAAC,EAAE,CAAC;EAAC;kEACd,CAAc,EACvB,CAAqD;sBAA/B,IAAI,2BAAqB,MAAM;AACpD,6EAAe,CAAC,EAAE,CAAC;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAdG,6CAAE;kBAAG,yBAAe,CAAC,kBACrC,eAAM,yBAAe,CAC1B;oBACS,GAAG,QAAQ,qBAAe,GAAG;oBAC7B,GAAG,SAAS,qBAAe,GAAG;oBAC9B,GAAG,OAAO,qBAAe,GAAG;4BACrB;;;MAiBZ,2DAAgB","file":"date.pb.ddc.js"}');
   // Exports:
   return {
     material_datepicker__proto__date$46pb: material_datepicker__proto__date$46pb

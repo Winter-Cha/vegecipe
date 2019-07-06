@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/proto/date.
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/proto/date_range.pb.template.ddc", {
     "package:angular_components/material_datepicker/proto/date_range.pb.template.dart": material_datepicker__proto__date_range$46pb$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_range.pb.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,+DAAQ;YAAG;;;;;AAEb,kBAAI,+DAAQ,GAAE;AACZ;;AAEF,sEAAW;AAEX,IAAM,8DAAa;EACrB","file":"date_range.pb.template.ddc.js"}');
   // Exports:
   return {

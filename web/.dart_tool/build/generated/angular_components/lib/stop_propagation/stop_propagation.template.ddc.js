@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/stop_propagation/stop_propagation.template.ddc", {
     "package:angular_components/stop_propagation/stop_propagation.template.dart": stop_propagation__stop_propagation$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["stop_propagation.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,uDAAa;EACrB","file":"stop_propagation.template.ddc.js"}');
   // Exports:
   return {

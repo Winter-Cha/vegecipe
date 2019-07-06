@@ -29,6 +29,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   };
   dart.trackLibraries("packages/angular/di.template.ddc", {
     "package:angular/di.template.dart": di$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["di.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAaI,sBAAQ;YAAG;;;;;AAEb,kBAAI,sBAAQ,GAAE;AACZ;;AAEF,6BAAW;AAEX,IAAM,oEAAa;AACnB,IAAM,sCAAa;AACnB,IAAM,4CAAa;AACnB,IAAM,4CAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,uDAAa;EACrB","file":"di.template.ddc.js"}');
   // Exports:
   return {

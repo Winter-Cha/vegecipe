@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/proto/date.pb.template.ddc", {
     "package:angular_components/material_datepicker/proto/date.pb.template.dart": material_datepicker__proto__date$46pb$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date.pb.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"date.pb.template.ddc.js"}');
   // Exports:
   return {

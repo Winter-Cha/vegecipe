@@ -30,6 +30,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer', 'packag
     __proto__: dart.getGetters(highlighted_text__highlighted_value.HighlightedValueComponent.__proto__),
     segments: core.List$(model__ui__highlighted_text_model.HighlightedTextSegment)
   }));
+  dart.setLibraryUri(highlighted_text__highlighted_value.HighlightedValueComponent, "package:angular_components/highlighted_text/highlighted_value.dart");
   dart.setFieldSignature(highlighted_text__highlighted_value.HighlightedValueComponent, () => ({
     __proto__: dart.getFields(highlighted_text__highlighted_value.HighlightedValueComponent.__proto__),
     [_highLighter]: dart.finalFieldType(model__ui__highlight_provider.HighlightProvider),
@@ -37,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer', 'packag
   }));
   dart.trackLibraries("packages/angular_components/highlighted_text/highlighted_value.ddc", {
     "package:angular_components/highlighted_text/highlighted_value.dart": highlighted_text__highlighted_value
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlighted_value.dart"],"names":[],"mappings":";;;;;;;;;;;IAyBS;;;;;;;AAQL,YAAO,mBAAY,gBAAgB,CAAC,UAAK;IAC3C;;;IATO,YAAK;IAEmB,kBAAY;EAAC","file":"highlighted_value.ddc.js"}');
   // Exports:
   return {

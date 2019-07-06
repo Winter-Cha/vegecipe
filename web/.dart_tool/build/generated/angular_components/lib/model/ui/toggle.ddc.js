@@ -24,6 +24,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getMethods(model__ui__toggle.Toggleable.__proto__),
     toggle: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(model__ui__toggle.Toggleable, "package:angular_components/model/ui/toggle.dart");
   dart.setFieldSignature(model__ui__toggle.Toggleable, () => ({
     __proto__: dart.getFields(model__ui__toggle.Toggleable.__proto__),
     isOn: dart.fieldType(core.bool)
@@ -32,9 +33,11 @@ define(['dart_sdk'], function(dart_sdk) {
   (model__ui__toggle.Toggler.new = function() {
   }).prototype = model__ui__toggle.Toggler.prototype;
   dart.addTypeTests(model__ui__toggle.Toggler);
+  dart.setLibraryUri(model__ui__toggle.Toggler, "package:angular_components/model/ui/toggle.dart");
   dart.trackLibraries("packages/angular_components/model/ui/toggle.ddc", {
     "package:angular_components/model/ui/toggle.dart": model__ui__toggle
-  }, '{"version":3,"sourceRoot":"","sources":["toggle.dart"],"names":[],"mappings":";;;;;;;IAQO;;;;;;;AAGH,eAAI,GAAG,WAAC,SAAI;IACd;;;IAJK,UAAI,GAAG;EAKd;;;;;;;;;;;;;EAKA","file":"toggle.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["toggle.dart"],"names":[],"mappings":";;;;;;;IAQO;;;;;;;AAGH,eAAI,GAAG,WAAC,SAAI;IACd;;;IAJK,UAAI,GAAG;EAKd;;;;;;;;;;;;;;EAKA","file":"toggle.ddc.js"}');
   // Exports:
   return {
     model__ui__toggle: model__ui__toggle

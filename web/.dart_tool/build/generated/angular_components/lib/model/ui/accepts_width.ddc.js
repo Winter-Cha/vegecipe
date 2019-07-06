@@ -8,8 +8,10 @@ define(['dart_sdk'], function(dart_sdk) {
   (model__ui__accepts_width.AcceptsWidth.new = function() {
   }).prototype = model__ui__accepts_width.AcceptsWidth.prototype;
   dart.addTypeTests(model__ui__accepts_width.AcceptsWidth);
+  dart.setLibraryUri(model__ui__accepts_width.AcceptsWidth, "package:angular_components/model/ui/accepts_width.dart");
   dart.trackLibraries("packages/angular_components/model/ui/accepts_width.ddc", {
     "package:angular_components/model/ui/accepts_width.dart": model__ui__accepts_width
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["accepts_width.dart"],"names":[],"mappings":";;;;;;;;EAaA","file":"accepts_width.ddc.js"}');
   // Exports:
   return {

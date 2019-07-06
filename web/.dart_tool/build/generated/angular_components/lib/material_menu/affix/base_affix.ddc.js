@@ -17,6 +17,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer', 'packag
     dart.addTypeTests(BaseAffixComponent);
     BaseAffixComponent.prototype[_is_BaseAffixComponent_default] = true;
     BaseAffixComponent[dart.implements] = () => [RendersValueOfModelType(), interfaces__has_disabled.HasDisabled];
+    dart.setLibraryUri(BaseAffixComponent, "package:angular_components/material_menu/affix/base_affix.dart");
     return BaseAffixComponent;
   });
   material_menu__affix__base_affix.BaseAffixComponent = material_menu__affix__base_affix.BaseAffixComponent$();
@@ -26,9 +27,11 @@ define(['dart_sdk', 'packages/angular_components/model/ui/has_renderer', 'packag
     material_menu__affix__base_affix.BaseMenuItemAffixModel.__proto__.new.call(this);
   }).prototype = material_menu__affix__base_affix.BaseMenuItemAffixModel.prototype;
   dart.addTypeTests(material_menu__affix__base_affix.BaseMenuItemAffixModel);
+  dart.setLibraryUri(material_menu__affix__base_affix.BaseMenuItemAffixModel, "package:angular_components/material_menu/affix/base_affix.dart");
   dart.trackLibraries("packages/angular_components/material_menu/affix/base_affix.ddc", {
     "package:angular_components/material_menu/affix/base_affix.dart": material_menu__affix__base_affix
-  }, '{"version":3,"sourceRoot":"","sources":["base_affix.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAaA;;;;;;;;;;;EAOgC","file":"base_affix.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["base_affix.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;IAaA;;;;;;;;;;;;EAOgC","file":"base_affix.ddc.js"}');
   // Exports:
   return {
     material_menu__affix__base_affix: material_menu__affix__base_affix

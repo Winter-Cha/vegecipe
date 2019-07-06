@@ -84,6 +84,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/comparison_
     __proto__: dart.getGetters(material_datepicker__comparison.DatepickerComparison.__proto__),
     isComparisonEnabled: core.bool
   }));
+  dart.setLibraryUri(material_datepicker__comparison.DatepickerComparison, "package:angular_components/material_datepicker/comparison.dart");
   dart.setFieldSignature(material_datepicker__comparison.DatepickerComparison, () => ({
     __proto__: dart.getFields(material_datepicker__comparison.DatepickerComparison.__proto__),
     range: dart.finalFieldType(material_datepicker__range.DatepickerDateRange),
@@ -93,6 +94,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/comparison_
   dart.defineExtensionAccessors(material_datepicker__comparison.DatepickerComparison, ['hashCode']);
   dart.trackLibraries("packages/angular_components/material_datepicker/comparison.ddc", {
     "package:angular_components/material_datepicker/comparison.dart": material_datepicker__comparison
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["comparison.dart"],"names":[],"mappings":";;;;;;;;;;IAY4B;;;;;;IAGA;;;;;;;YAsBM,gBAAU,IAAI;IAAI;;YAI9C,gBAAU,CAAC,uDAAgB,eAAe;IAAC;;YAI3C,gBAAU,CAAC,uDAAgB,mBAAmB;IAAC;eAGnC,MAAuB;YACnC,AAEc,gBAFJ,IAAI,QACd,MAAM,IAAI,QACV,UAAK,IAAI,oBACT,eAAU,UAAU,IAChB,MAAM,uBAAuB,CAAC,UAAK,UAAU;IAAG;YAEvC,CAAC;UAAD,CAAC;YAEa,yDAD3B,CAAC,eACD,qCAAU,CAAC,UAAK,EAAE,CAAC,MAAM,gBACzB,qCAAU,CAAC,eAAU,EAAE,CAAC,WAAW;IAAC;;uBACpB,wBAAmB,IACjC,CAAiB,aAAjB,oCAAS,CAAC,UAAK,kBAAI,oCAAS,CAAC,eAAU,YACvC,oCAAS,CAAC,UAAK;IAAC;;YACD,uCAA0B,UAAK,qBAAI,eAAU;IAAC;;uEA7C9C,KAAyB,EAAE,MAAuB;2EACrD,KAAK,EAAE,MAAM,uBAAuB,CAAC,KAAK;EAAE;gFAE5B,KAAyB;2EACzC,KAAK,EAAE;EAAK;kFAEM,KAAyB;wEAClD,KAAK,EAAE,uDAAgB,eAAe;EAAC;sFAEV,KAAyB;wEACtD,KAAK,EAAE,uDAAgB,mBAAmB;EAAC;2EAIzB,IAAyB,EAAE,GAAQ,EAAE,GAAQ;;cACxD,IAAI,kBAAJ,IAAI,MAAO;;gDAA0B,GAAG,OAAO,GAAG;;cAC1D,IAAI,kBAAJ,IAAI,WAAY;;gDAA0B,GAAG,OAAO,GAAG;;EAAE;0EAEvC,KAAU,EAAE,UAAe;IAAtB,YAAK,GAAL,KAAK;IAAO,iBAAU,GAAV,UAAU;EAAC","file":"comparison.ddc.js"}');
   // Exports:
   return {

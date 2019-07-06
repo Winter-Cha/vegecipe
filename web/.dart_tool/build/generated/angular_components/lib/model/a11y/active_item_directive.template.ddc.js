@@ -41,6 +41,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(model__a11y__active_item_directive$46template.ActiveItemDirectiveNgCd.__proto__),
     detectHostChanges: dart.fnType(dart.void, [src__core__linker__app_view.AppView, html.Element])
   }));
+  dart.setLibraryUri(model__a11y__active_item_directive$46template.ActiveItemDirectiveNgCd, "package:angular_components/model/a11y/active_item_directive.template.dart");
   dart.setFieldSignature(model__a11y__active_item_directive$46template.ActiveItemDirectiveNgCd, () => ({
     __proto__: dart.getFields(model__a11y__active_item_directive$46template.ActiveItemDirectiveNgCd.__proto__),
     instance: dart.finalFieldType(model__a11y__active_item_directive.ActiveItemDirective),
@@ -64,7 +65,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   };
   dart.trackLibraries("packages/angular_components/model/a11y/active_item_directive.template.ddc", {
     "package:angular_components/model/a11y/active_item_directive.template.dart": model__a11y__active_item_directive$46template
-  }, '{"version":3,"sourceRoot":"","sources":["active_item_directive.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;IAkBoC;;;;;;sBAGX,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,OAAO;AACjC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,UAAU,SAAS;AACzD,qBAAO,GAAG,SAAS;;IAEvB;;wFAPwB,QAAa;IADhC,aAAO;IACiB,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;MAUpC,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,2DAAa;AACnB,IAAM,+CAAa;AACnB,IAAM,iEAAa;EACrB","file":"active_item_directive.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["active_item_directive.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;IAkBoC;;;;;;sBAGX,IAAqB,EAAE,EAAkB;AAC9D,UAAM,YAAY,aAAQ,OAAO;AACjC,oBAAI,AAAQ,8CAAY,CAAC,aAAO,EAAE,SAAS,IAAG;AAC5C,QAAQ,mDAAyB,CAAC,EAAE,EAAE,UAAU,SAAS;AACzD,qBAAO,GAAG,SAAS;;IAEvB;;wFAPwB,QAAa;IADhC,aAAO;IACiB,eAAQ,GAAR,QAAQ;;EAAC;;;;;;;;;;;;;;MAUpC,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,2DAAa;AACnB,IAAM,+CAAa;AACnB,IAAM,iEAAa;EACrB","file":"active_item_directive.template.ddc.js"}');
   // Exports:
   return {
     model__a11y__active_item_directive$46template: model__a11y__active_item_directive$46template

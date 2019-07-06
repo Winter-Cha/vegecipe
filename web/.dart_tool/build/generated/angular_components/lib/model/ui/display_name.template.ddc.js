@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/formatters/formatter.temp
   };
   dart.trackLibraries("packages/angular_components/model/ui/display_name.template.ddc", {
     "package:angular_components/model/ui/display_name.template.dart": model__ui__display_name$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["display_name.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,2CAAQ;YAAG;;;;;AAEb,kBAAI,2CAAQ,GAAE;AACZ;;AAEF,kDAAW;AAEX,IAAM,qDAAa;EACrB","file":"display_name.template.ddc.js"}');
   // Exports:
   return {

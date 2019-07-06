@@ -41,6 +41,7 @@ define(['dart_sdk', 'packages/angular_components/material_list/material_list_siz
     __proto__: dart.getSetters(material_list__material_list.MaterialListComponent.__proto__),
     width: dart.dynamic
   }));
+  dart.setLibraryUri(material_list__material_list.MaterialListComponent, "package:angular_components/material_list/material_list.dart");
   dart.setFieldSignature(material_list__material_list.MaterialListComponent, () => ({
     __proto__: dart.getFields(material_list__material_list.MaterialListComponent.__proto__),
     size: dart.fieldType(core.String),
@@ -48,6 +49,7 @@ define(['dart_sdk', 'packages/angular_components/material_list/material_list_siz
   }));
   dart.trackLibraries("packages/angular_components/material_list/material_list.ddc", {
     "package:angular_components/material_list/material_list.dart": material_list__material_list
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_list.dart"],"names":[],"mappings":";;;;;;;;;;;;IA4CS;;;;;;cAIG,GAAG;AACX,SAAG,GAAG,6CAAM,CAAC,GAAG;AAChB,qBAAQ,WAAJ,GAAG,SAAI,mBAAS,WAAJ,GAAG,QAAG,kDAAgB,OAAO,SAAO,KAAE;AACpD,iBAAI,GAAG,kDAAgB,OAAO,wBAAC,GAAG;;IAEtC;IAOO;;;;;;;;IAhBA,UAAI,GAAG,kDAAgB,KAAK;IAgB5B,UAAI,GAAG;EAChB","file":"material_list.ddc.js"}');
   // Exports:
   return {

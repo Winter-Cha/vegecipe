@@ -46,6 +46,7 @@ define(['dart_sdk'], function(dart_sdk) {
       _equals: dart.fnType(core.bool, [dart.dynamic]),
       [$_equals]: dart.fnType(core.bool, [dart.dynamic])
     }));
+    dart.setLibraryUri(Comparators, "package:angular_components/utils/comparators/comparators.dart");
     dart.defineExtensionMethods(Comparators, ['_equals']);
     return Comparators;
   });
@@ -90,6 +91,7 @@ define(['dart_sdk'], function(dart_sdk) {
       _equals: dart.fnType(core.bool, [dart.dynamic]),
       [$_equals]: dart.fnType(core.bool, [dart.dynamic])
     }));
+    dart.setLibraryUri(ConstComparators, "package:angular_components/utils/comparators/comparators.dart");
     dart.defineExtensionMethods(ConstComparators, ['_equals']);
     return ConstComparators;
   });
@@ -97,7 +99,8 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(utils__comparators__comparators.ConstComparators, _is_ConstComparators_default);
   dart.trackLibraries("packages/angular_components/utils/comparators/comparators.ddc", {
     "package:angular_components/utils/comparators/comparators.dart": utils__comparators__comparators
-  }, '{"version":3,"sourceRoot":"","sources":["comparators.dart"],"names":[],"mappings":";;;;;;;;;;;;;YAOkB,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;YAElC,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;cAGjC,KAAK;YAAL,KAAK;cAC6B,MAA/C,KAAK,iBAAS,kBAAW,mBAAI,KAAK,MAAgB,gBAAS,CAAC,KAAK,MAAK;MAAC;;;IAC7E;;;;;;;;;;;;;;;;;;;;;;YAKkB,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;YAElC,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;cAGjC,KAAK;YAAL,KAAK;cAC6B,MAA/C,KAAK,iBAAS,kBAAW,mBAAI,KAAK,MAAgB,gBAAS,CAAC,KAAK,MAAK;MAAC;;;IAXnD","file":"comparators.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["comparators.dart"],"names":[],"mappings":";;;;;;;;;;;;;YAOkB,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;YAElC,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;cAGjC,KAAK;YAAL,KAAK;cAC6B,MAA/C,KAAK,iBAAS,kBAAW,mBAAI,KAAK,MAAgB,gBAAS,CAAC,KAAK,MAAK;MAAC;;;IAC7E;;;;;;;;;;;;;;;;;;;;;;;YAKkB,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;YAElC,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,KAAI;MAAC;aAE/B,KAAO;iBAAL;cAA2B,cAAjB,gBAAS,CAAC,KAAK,MAAK;MAAC;cAGjC,KAAK;YAAL,KAAK;cAC6B,MAA/C,KAAK,iBAAS,kBAAW,mBAAI,KAAK,MAAgB,gBAAS,CAAC,KAAK,MAAK;MAAC;;;IAXnD","file":"comparators.ddc.js"}');
   // Exports:
   return {
     utils__comparators__comparators: utils__comparators__comparators

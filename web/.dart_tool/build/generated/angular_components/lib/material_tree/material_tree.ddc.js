@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const material_tree__material_tree = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/material_tree/material_tree.ddc", {
     "package:angular_components/material_tree/material_tree.dart": material_tree__material_tree
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"material_tree.ddc.js"}');
   // Exports:
   return {

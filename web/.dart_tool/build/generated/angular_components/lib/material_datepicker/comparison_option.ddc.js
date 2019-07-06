@@ -48,6 +48,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/range', 'pa
   dart.addTypeTests(material_datepicker__comparison_option.ComparisonOption);
   const displayName$ = Symbol("ComparisonOption.displayName");
   const computeComparisonRange$ = Symbol("ComparisonOption.computeComparisonRange");
+  dart.setLibraryUri(material_datepicker__comparison_option.ComparisonOption, "package:angular_components/material_datepicker/comparison_option.dart");
   dart.setFieldSignature(material_datepicker__comparison_option.ComparisonOption, () => ({
     __proto__: dart.getFields(material_datepicker__comparison_option.ComparisonOption.__proto__),
     displayName: dart.finalFieldType(core.String),
@@ -83,7 +84,8 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/range', 'pa
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/comparison_option.ddc", {
     "package:angular_components/material_datepicker/comparison_option.dart": material_datepicker__comparison_option
-  }, '{"version":3,"sourceRoot":"","sources":["comparison_option.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MAauB,+DAAwB;YAAG,iCAChD,uDAAgB,eAAe,EAC/B,uDAAgB,mBAAmB,EACnC,uDAAgB,OAAO;;;;;IAMV;;;;;;IAGM;;;;;;YAyCF,CAAC;UAAD,CAAC;YAEoB,4DADlC,CAAC,KACD,gBAAgB,IAAI,CAAC,YAAY,gBACjC,2BAA2B,EAAI,CAAC,uBAAuB;;;YAEvC,EAAqB,cAArB,gBAAW,+BAAY,2BAAsB;IAAS;;YAErD,iBAAW;;;0EA9CT,WAAgB,EAAE,sBAA2B;IAAxC,kBAAW,GAAX,WAAW;IAAO,6BAAsB,GAAtB,sBAAsB;EAAC;;;;;;;;;;;;MAEvC,sEAAc;iBACxC,2DAAgB,CAAC,sEAAc,EAAE,QAAC,KAAyB;AAC7D,YAAI,OAAO,KAAK,KAAK;AACrB,YAAI,IAAI,IAAI,mBAAS,IAAI,aAAa,GAAE;AACtC,gBAAO,mDAAmB,CAAC,sEAAc,EAAE,IAAI,MAAM,EAAE,IAAI,IAAI;;AAEjE,cAAO,KAAI;;;MAGiB,0EAAkB;iBAAG,2DAAgB,CAC/D,wEAAgB,EAChB,QAAC,KAAyB,IAAK,kDAAmB,CAAC,wEAAgB,EAC/D,KAAK,MAAM,IAAI,SAAQ,CAAC,KAAI,KAAK,IAAI,IAAI,SAAQ,CAAC;;MAE5B,8DAAM;iBAChC,2DAAgB,CAAC,kEAAU,EAAE,QAAC,KAAyB,IAAK;;MAE5C,sEAAc;YAAG,WAAI,QAAQ,CAAC,0BACxC,2BACG,6DACL,eACE,kEACF,qEACA;;MACY,wEAAgB;YAAG,WAAI,QAAQ,CAAC,wBAC1C,6BACG,8DACH,oEACF,oEACA;;MAEY,kEAAU;YAAG,WAAI,QAAQ,CAAC,iBACpC,uBACG,mEACH,6DACF","file":"comparison_option.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["comparison_option.dart"],"names":[],"mappings":";;;;;;;;;;;;;;MAauB,+DAAwB;YAAG,iCAChD,uDAAgB,eAAe,EAC/B,uDAAgB,mBAAmB,EACnC,uDAAgB,OAAO;;;;;IAMV;;;;;;IAGM;;;;;;YAyCF,CAAC;UAAD,CAAC;YAEoB,4DADlC,CAAC,KACD,gBAAgB,IAAI,CAAC,YAAY,gBACjC,2BAA2B,EAAI,CAAC,uBAAuB;;;YAEvC,EAAqB,cAArB,gBAAW,+BAAY,2BAAsB;IAAS;;YAErD,iBAAW;;;0EA9CT,WAAgB,EAAE,sBAA2B;IAAxC,kBAAW,GAAX,WAAW;IAAO,6BAAsB,GAAtB,sBAAsB;EAAC;;;;;;;;;;;;;MAEvC,sEAAc;iBACxC,2DAAgB,CAAC,sEAAc,EAAE,QAAC,KAAyB;AAC7D,YAAI,OAAO,KAAK,KAAK;AACrB,YAAI,IAAI,IAAI,mBAAS,IAAI,aAAa,GAAE;AACtC,gBAAO,mDAAmB,CAAC,sEAAc,EAAE,IAAI,MAAM,EAAE,IAAI,IAAI;;AAEjE,cAAO,KAAI;;;MAGiB,0EAAkB;iBAAG,2DAAgB,CAC/D,wEAAgB,EAChB,QAAC,KAAyB,IAAK,kDAAmB,CAAC,wEAAgB,EAC/D,KAAK,MAAM,IAAI,SAAQ,CAAC,KAAI,KAAK,IAAI,IAAI,SAAQ,CAAC;;MAE5B,8DAAM;iBAChC,2DAAgB,CAAC,kEAAU,EAAE,QAAC,KAAyB,IAAK;;MAE5C,sEAAc;YAAG,WAAI,QAAQ,CAAC,0BACxC,2BACG,6DACL,eACE,kEACF,qEACA;;MACY,wEAAgB;YAAG,WAAI,QAAQ,CAAC,wBAC1C,6BACG,8DACH,oEACF,oEACA;;MAEY,kEAAU;YAAG,WAAI,QAAQ,CAAC,iBACpC,uBACG,mEACH,6DACF","file":"comparison_option.ddc.js"}');
   // Exports:
   return {
     material_datepicker__comparison_option: material_datepicker__comparison_option

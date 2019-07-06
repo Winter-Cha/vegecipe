@@ -86,6 +86,7 @@ define(['dart_sdk', 'packages/firebase/firebase', 'packages/firebase/src/app'], 
     [_start]: dart.fnType(dart.void, []),
     displayStyle: dart.fnType(core.String, [])
   }));
+  dart.setLibraryUri(src__firebase_auth_ui_component.FirebaseAuthUIComponent, "package:firebase_dart_ui/src/firebase_auth_ui_component.dart");
   dart.setFieldSignature(src__firebase_auth_ui_component.FirebaseAuthUIComponent, () => ({
     __proto__: dart.getFields(src__firebase_auth_ui_component.FirebaseAuthUIComponent.__proto__),
     [_authUI]: dart.fieldType(dart.lazyJSType(() => dart.global.firebaseui.auth.AuthUI, "firebaseui.auth.AuthUI")),
@@ -97,6 +98,7 @@ define(['dart_sdk', 'packages/firebase/firebase', 'packages/firebase/src/app'], 
   dart.trackLibraries("packages/firebase_dart_ui/src/auth_ui_js.ddc", {
     "package:firebase_dart_ui/src/auth_ui_js.dart": src__auth_ui_js,
     "package:firebase_dart_ui/src/firebase_auth_ui_component.dart": src__firebase_auth_ui_component
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["auth_ui_js.dart","firebase_auth_ui_component.dart"],"names":[],"mappings":";;;;;;;;;;;MAgCM,2BAAW;YAAG;;MACd,+BAAe;YAAG;;MAClB,oBAAI;YAAG;;;;;;;;ICtBN;;;;;;IAGI;;;;;;IAGJ;;;;;;YAUM,IAAY;AAGrB,UAAI,IAAI,8CAAW,CAAC,IAAI,IAAI,KAAK;AAEjC,UAAI,CAAC,IAAI,MAAM;AACb,qBAAO,GAAG,CAAC;;AAIb,UAAI,aAAO,IAAI,MAAM;AACnB,qBAAO,GAAG,IAAI,kCAAM,CAAC,IAAI,SAAS;;AAKpC,MAAG,mBAAI,qBAAqB,OAAO,CAAC,QAAC,IAAI;AAEvC,0BAAa,GAAG;AAChB,YAAI,IAAI,IAAI,MAAM;AAChB,4BAAa,GAAG;eAEX;AACL,sBAAM;;;IAGZ;;AAKE,oBAAI,sBAAiB,GAAE,aAAO,kBAAkB;AAChD,mBAAO,MAAM,CAAC,8BAA8B,aAAQ;IACtD;;AAME,YAAO,AAAG,oBAAI,cAAc,IAAI,OAAO,UAAU;IACnD;;;IAzDO,aAAO;IACT,mBAAa,GAAG;IAGZ,cAAQ;IAGZ,uBAAiB,GAAG;IAQjB,WAAK;AALX,eAAK,GAAG,AAAG,mBAAI;AAEf,eAAK,CAAC,WAAK;EACb","file":"auth_ui_js.ddc.js"}');
   // Exports:
   return {

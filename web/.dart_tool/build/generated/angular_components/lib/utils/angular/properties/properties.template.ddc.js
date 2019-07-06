@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/angular/properties/properties.template.ddc", {
     "package:angular_components/utils/angular/properties/properties.template.dart": utils__angular__properties__properties$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["properties.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"properties.template.ddc.js"}');
   // Exports:
   return {

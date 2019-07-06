@@ -149,6 +149,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     componentFactory: src__core__linker__component_factory.ComponentFactory,
     value: dart.dynamic
   }));
+  dart.setLibraryUri(dynamic_component__dynamic_component.DynamicComponent, "package:angular_components/dynamic_component/dynamic_component.dart");
   dart.setFieldSignature(dynamic_component__dynamic_component.DynamicComponent, () => ({
     __proto__: dart.getFields(dynamic_component__dynamic_component.DynamicComponent.__proto__),
     [_slowComponentLoader]: dart.finalFieldType(src__core__linker__dynamic_component_loader.SlowComponentLoader),
@@ -167,6 +168,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
   }));
   dart.trackLibraries("packages/angular_components/dynamic_component/dynamic_component.ddc", {
     "package:angular_components/dynamic_component/dynamic_component.dart": dynamic_component__dynamic_component
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["dynamic_component.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;yBA0BuB,KAAsB;AACzC,6BAAiB,GAAG,KAAK;AACzB,oBAAI,mBAAa,GAAE;AACjB,yBAAW;AACX,2BAAa,GAAG;;IAEpB;;YAamC,wBAAiB,OAAO;;;YAMxB,sBAAe;;;AAIhD,kCAAsB;AACtB,6BAAiB,GAAG;IACtB;;AAGE,mCAAe;;AACf,2BAAe,GAAG;IACpB;sBAKkB,QAAa;AAC7B,uBAAI,oBAAc,EAAI,QAAQ,GAAE,kBAAY,GAAG;AAC/C,0BAAc,GAAG,QAAQ;IAC3B;yBAIqB,SAA0B;AAC7C,uBAAI,uBAAiB,EAAI,SAAS,GAAE,qBAAe,GAAG;AACtD,6BAAiB,GAAG,SAAS;IAC/B;cAKU,CAAS;AACjB,kBAAM,GAAG,CAAC;AACV,yBAAa,GAAG;IAClB;;AAIE,oBAAI,qBAAe,eAAI,kBAAY,GAAE;AACnC,oCAAsB;AACtB,YAAI,uBAAiB,IAAI,MAAM;AAC7B,2BAAW;eACN;AACL,6BAAa,GAAG;;YAEb,eAAI,mBAAa,GAAE;AAGxB,mCAAqB;;AAEvB,yBAAa,GAAG,qBAAe,GAAG,kBAAY,GAAG;IACnD;;AAGE,UAAI,uBAAiB,IAAI,MAAM;AAC7B,YAAI,qBAAe,IAAI,MAAM;AAC3B,qBAAM;;AAGR,6BAAe,GAAG,sBAAgB,mBAAmB,eACjD,uBAAiB,EAAE,uBAAiB;AACxC,+BAAiB,IAAI,CAAC,qBAAe;AACrC,mCAAqB;YAChB,KAAI,oBAAc,IAAI,MAAM;AAEjC,YAAK,WAAW,oBAAc;AAC9B,wDAAoB,mBACG,eAAC,QAAQ,EAAE,uBAAiB,MAC1C,YAAC,QAAC,YAAyB;AAClC,2BAAI,QAAQ,EAAI,oBAAc,GAAE;AAG9B,wBAAY,QAAQ;AACpB;;AAEF,cAAI,qBAAe,IAAI,MAAM;AAC3B,uBAAM;;AAER,+BAAe,GAAG,YAAY;AAC9B,iCAAiB,IAAI,CAAC,YAAY;AAClC,qCAAqB;;;IAG3B;;AAGE,8BAAkB,aAAa;AAE/B,UAAI,qBAAe,IAAI,MAAM;AAC3B,oDAAI,qBAAe,SAAS,GAAkB;AAC5C,yCAAe,SAAS,WAAS,YAAM;;;IAG7C;;;IA5HM,uBAAiB,GAAG,oCAA8B;IAEvC,uBAAiB;IAC7B,mBAAa,GAAG;IAWR,qBAAe;IACvB,oBAAc;IACd,kBAAY,GAAG;IACH,uBAAiB;IAC7B,qBAAe,GAAG;IAChB,YAAM;IACR,mBAAa,GAAG;IAOC,0BAAoB;IAAO,wBAAkB;IAC1D,sBAAgB;EAAC","file":"dynamic_component.ddc.js"}');
   // Exports:
   return {

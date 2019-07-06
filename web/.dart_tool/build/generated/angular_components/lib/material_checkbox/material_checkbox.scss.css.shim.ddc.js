@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_checkbox/material_checkbox.scss.css.shim.ddc", {
     "package:angular_components/material_checkbox/material_checkbox.scss.css.shim.dart": material_checkbox__material_checkbox$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_checkbox.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,+DAAM;YAAG,EAAC","file":"material_checkbox.scss.css.shim.ddc.js"}');
   // Exports:
   return {

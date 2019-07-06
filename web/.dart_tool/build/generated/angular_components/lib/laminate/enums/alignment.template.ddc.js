@@ -21,6 +21,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base.templat
   };
   dart.trackLibraries("packages/angular_components/laminate/enums/alignment.template.ddc", {
     "package:angular_components/laminate/enums/alignment.template.dart": laminate__enums__alignment$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["alignment.template.dart"],"names":[],"mappings":";;;;;;;;MASI,8CAAQ;YAAG;;;;;AAEb,kBAAI,8CAAQ,GAAE;AACZ;;AAEF,qDAAW;AAEX,IAAM,mDAAa;AACnB,IAAM,mDAAa;EACrB","file":"alignment.template.ddc.js"}');
   // Exports:
   return {

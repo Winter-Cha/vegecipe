@@ -67,6 +67,7 @@ define(['dart_sdk', 'packages/service_worker/src/js_adapter'], function(dart_sdk
   };
   dart.trackLibraries("packages/service_worker/window.ddc", {
     "package:service_worker/window.dart": window
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["window.dart"],"names":[],"mappings":";;;;;;;;;YAqBoC,+CAAsB,mBAAmB;;;;;YAKjC,aAAK;;;;;YAGzB,aAAK,IAAI;IAAI;;;;YAGV,YAAC,kBAAW;;;;;YAMP,aAAK,WAAW;;;;;YAKD,aAAK,MAAM;;;;;YAKlB,aAAK,mBAAmB;;;;;YAI9B,aAAK,QAAQ;;;;;YAKT,aAAK,UAAU;;;6BAOV,SAAgB,EAClD,OAAoC;4BAAP;UAClC,aAAK,SAAS,CAAC,SAAS,EAAE,OAAO;EAAC;oCAOa,KAAY;0BAAL;UACtD,aAAK,gBAAgB,CAAC,KAAK;EAAC;;UAM5B,aAAK,iBAAiB;EAAE;wCAGH,IAAW,EAAE,QAAiB,EAAG,UAAe;+BAAV;UAC3D,aAAK,iBAAiB,IAAC,IAAI,EAAE,QAAQ,EAAE,UAAU;EAAC","file":"window.ddc.js"}');
   // Exports:
   return {

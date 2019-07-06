@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const laminate__overlay__overlay = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/laminate/overlay/overlay.ddc", {
     "package:angular_components/laminate/overlay/overlay.dart": laminate__overlay__overlay
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"overlay.ddc.js"}');
   // Exports:
   return {

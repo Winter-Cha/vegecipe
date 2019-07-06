@@ -35,6 +35,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/mixins/highlight_assistant_mixin.template.ddc", {
     "package:angular_components/mixins/highlight_assistant_mixin.template.dart": mixins__highlight_assistant_mixin$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlight_assistant_mixin.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;MAgBI,qDAAQ;YAAG;;;;;AAEb,kBAAI,qDAAQ,GAAE;AACZ;;AAEF,4DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,4DAAa;AACnB,IAAM,4DAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,8DAAa;AACnB,IAAM,+CAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,sDAAa;AACnB,IAAM,0DAAa;EACrB","file":"highlight_assistant_mixin.template.ddc.js"}');
   // Exports:
   return {

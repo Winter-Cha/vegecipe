@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/focus/focus_activable_item.template.ddc", {
     "package:angular_components/focus/focus_activable_item.template.dart": focus__focus_activable_item$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_activable_item.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,+CAAQ;YAAG;;;;;AAEb,kBAAI,+CAAQ,GAAE;AACZ;;AAEF,sDAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,qCAAa;EACrB","file":"focus_activable_item.template.ddc.js"}');
   // Exports:
   return {

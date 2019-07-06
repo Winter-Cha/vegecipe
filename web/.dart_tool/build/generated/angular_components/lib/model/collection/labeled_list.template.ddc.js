@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/display_name.template'
   };
   dart.trackLibraries("packages/angular_components/model/collection/labeled_list.template.ddc", {
     "package:angular_components/model/collection/labeled_list.template.dart": model__collection__labeled_list$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["labeled_list.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,mDAAQ;YAAG;;;;;AAEb,kBAAI,mDAAQ,GAAE;AACZ;;AAEF,0DAAW;AAEX,IAAM,gDAAa;EACrB","file":"labeled_list.template.ddc.js"}');
   // Exports:
   return {

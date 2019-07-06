@@ -36,8 +36,10 @@ define(['dart_sdk', 'packages/angular_components/laminate/portal/portal', 'packa
     __proto__: dart.getSetters(src__laminate__components__modal__modal_controller_directive.ModalControllerDirective.__proto__),
     overlay: src__laminate__overlay__overlay_ref.OverlayRef
   }));
+  dart.setLibraryUri(src__laminate__components__modal__modal_controller_directive.ModalControllerDirective, "package:angular_components/src/laminate/components/modal/modal_controller_directive.dart");
   dart.trackLibraries("packages/angular_components/src/laminate/components/modal/modal_controller_directive.ddc", {
     "package:angular_components/src/laminate/components/modal/modal_controller_directive.dart": src__laminate__components__modal__modal_controller_directive
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["modal_controller_directive.dart"],"names":[],"mappings":";;;;;;;;;;;AAmBI,oBAAI,eAAU,GAAE;AACd,mBAAM;;IAEV;gBAIY,UAAqB;AAC/B,UAAI,UAAU,IAAI,MAAM;AACtB,sBAAI,eAAU,GAAE;AACd,qBAAW;;aAER;AACL,kBAAU,OAAO,CAAC;;IAEtB;;wGApBI,WAAuB,EAAE,gBAAiC;AACxD,mHAAM,WAAW,EAAE,gBAAgB;EAAC","file":"modal_controller_directive.ddc.js"}');
   // Exports:
   return {

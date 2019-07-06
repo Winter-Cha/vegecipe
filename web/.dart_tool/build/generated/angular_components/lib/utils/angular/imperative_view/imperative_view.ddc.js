@@ -54,6 +54,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     insertComponent: dart.fnType(async.Future$(src__core__linker__component_factory.ComponentRef), [src__core__linker__component_factory.ComponentFactory, src__core__linker__view_container_ref.ViewContainerRef, html.HtmlElement], {injector: src__di__injector__injector.Injector}),
     insertAngularView: dart.fnType(async.Future$(utils__angular__imperative_view__imperative_view.ImperativeViewRef), [html.HtmlElement, src__core__linker__template_ref.TemplateRef, src__core__linker__view_container_ref.ViewContainerRef])
   }));
+  dart.setLibraryUri(utils__angular__imperative_view__imperative_view.AcxImperativeViewUtils, "package:angular_components/utils/angular/imperative_view/imperative_view.dart");
   dart.setFieldSignature(utils__angular__imperative_view__imperative_view.AcxImperativeViewUtils, () => ({
     __proto__: dart.getFields(utils__angular__imperative_view__imperative_view.AcxImperativeViewUtils.__proto__),
     [_componentLoader]: dart.finalFieldType(src__core__linker__component_loader.ComponentLoader),
@@ -82,6 +83,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
     __proto__: dart.getMethods(utils__angular__imperative_view__imperative_view.ImperativeViewRef.__proto__),
     dispose: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(utils__angular__imperative_view__imperative_view.ImperativeViewRef, "package:angular_components/utils/angular/imperative_view/imperative_view.dart");
   dart.setFieldSignature(utils__angular__imperative_view__imperative_view.ImperativeViewRef, () => ({
     __proto__: dart.getFields(utils__angular__imperative_view__imperative_view.ImperativeViewRef.__proto__),
     [_disposeFn]: dart.finalFieldType(VoidTovoid()),
@@ -89,7 +91,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular/
   }));
   dart.trackLibraries("packages/angular_components/utils/angular/imperative_view/imperative_view.ddc", {
     "package:angular_components/utils/angular/imperative_view/imperative_view.dart": utils__angular__imperative_view__imperative_view
-  }, '{"version":3,"sourceRoot":"","sources":["imperative_view.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;oBAsEuC,gBAAiC,EAClE,aAA8B,EAAE,cAA0B;UAChD;AAAW;AACvB,YAAa,MAAM,sBAAgB,mBAAmB,eAClD,gBAAgB,EAAE,aAAa,aACrB,QAAQ,WAAR,QAAQ,GAAI,aAAa,eAAe;AACtD,cAAM,iBAAW,QAAQ;AACzB,sBAAc,SAAO,CAAC,GAAG,SAAS;AAClC,cAAO,IAAG;MACZ;;sBAQ4C,cAA0B,EAClE,WAAuB,EAAE,aAA8B;AACzD,gDAAO,iBAAW,QAAQ,OAAO,qEAAC,QAAC,CAAC;AAClC,YAAI,UAAU,aAAa,mBAAmB,CAAC,WAAW;AAC1D,iBAAW,WAAY,QAAO,UAAU,EAAE;AACxC,wBAAc,SAAO,CAAC,QAAQ;;AAEhC,mBAAO,qEAAmB,CAAC,OAAO,EAAE;AAClC,cAAI,QAAQ,aAAa,QAAQ,CAAC,OAAO;AACzC,cAAU,aAAN,KAAK,IAAG,CAAC,GAAG,aAAa,OAAO,CAAC,KAAK;;;IAGhD;;;IAjC4B,sBAAgB;IAAO,iBAAW;EAAC;;;;;;;;;;;;;;IAuCzC;;;;;;;AAMpB,sBAAU;IACZ;;oFALoB,OAAY;IAAP,cAAO,GAAP,OAAO;IAAO,gBAAU;EAAC","file":"imperative_view.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["imperative_view.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;oBAsEuC,gBAAiC,EAClE,aAA8B,EAAE,cAA0B;UAChD;AAAW;AACvB,YAAa,MAAM,sBAAgB,mBAAmB,eAClD,gBAAgB,EAAE,aAAa,aACrB,QAAQ,WAAR,QAAQ,GAAI,aAAa,eAAe;AACtD,cAAM,iBAAW,QAAQ;AACzB,sBAAc,SAAO,CAAC,GAAG,SAAS;AAClC,cAAO,IAAG;MACZ;;sBAQ4C,cAA0B,EAClE,WAAuB,EAAE,aAA8B;AACzD,gDAAO,iBAAW,QAAQ,OAAO,qEAAC,QAAC,CAAC;AAClC,YAAI,UAAU,aAAa,mBAAmB,CAAC,WAAW;AAC1D,iBAAW,WAAY,QAAO,UAAU,EAAE;AACxC,wBAAc,SAAO,CAAC,QAAQ;;AAEhC,mBAAO,qEAAmB,CAAC,OAAO,EAAE;AAClC,cAAI,QAAQ,aAAa,QAAQ,CAAC,OAAO;AACzC,cAAU,aAAN,KAAK,IAAG,CAAC,GAAG,aAAa,OAAO,CAAC,KAAK;;;IAGhD;;;IAjC4B,sBAAgB;IAAO,iBAAW;EAAC;;;;;;;;;;;;;;;IAuCzC;;;;;;;AAMpB,sBAAU;IACZ;;oFALoB,OAAY;IAAP,cAAO,GAAP,OAAO;IAAO,gBAAU;EAAC","file":"imperative_view.ddc.js"}');
   // Exports:
   return {
     utils__angular__imperative_view__imperative_view: utils__angular__imperative_view__imperative_view

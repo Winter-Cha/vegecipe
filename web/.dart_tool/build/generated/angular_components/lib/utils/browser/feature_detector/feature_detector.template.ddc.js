@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/browser/feature_detector/feature_detector.template.ddc", {
     "package:angular_components/utils/browser/feature_detector/feature_detector.template.dart": utils__browser__feature_detector__feature_detector$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["feature_detector.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"feature_detector.template.ddc.js"}');
   // Exports:
   return {

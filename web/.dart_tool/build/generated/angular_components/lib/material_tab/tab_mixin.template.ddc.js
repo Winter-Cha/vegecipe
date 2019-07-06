@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular/angular.template'], function(dart_sdk, ang
   };
   dart.trackLibraries("packages/angular_components/material_tab/tab_mixin.template.ddc", {
     "package:angular_components/material_tab/tab_mixin.template.dart": material_tab__tab_mixin$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["tab_mixin.template.dart"],"names":[],"mappings":";;;;;;;;MAQI,2CAAQ;YAAG;;;;;AAEb,kBAAI,2CAAQ,GAAE;AACZ;;AAEF,kDAAW;AAEX,IAAM,gCAAa;EACrB","file":"tab_mixin.template.ddc.js"}');
   // Exports:
   return {

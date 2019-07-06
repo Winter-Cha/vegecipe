@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/laminate/enums/alignment', 'pac
   });
   dart.trackLibraries("packages/angular_components/laminate/popup/module.ddc", {
     "package:angular_components/laminate/popup/module.dart": laminate__popup__module
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;MASM,uCAAe;YAAG,4CAAgB,gBAAgB;;MAKlD,6CAAqB;4BAAG,2CAAmC,CAC/D;;MAMI,mCAAW;wBAAG,0BAAM,WACf,gBACP,uCAAa,qCAEN,uCAAe;;MAGpB,uCAAe;YAAG,4BACtB,yCAAsB,CAAC,6CAAqB,EAAE,uCAAe,eAC7D,oCAAa,CAAC,2EAAqB;;MAM/B,qCAAa;YAAG,iBACpB,yCAAe,EACf,uCAAe;;MAMX,wCAAgB;wBAAG,0BAAM,WACpB,gBACP,4CAAkB,qCAEX,uCAAe;;MAMpB,0CAAkB;YAAG,iBACzB,8CAAoB,EACpB,uCAAe","file":"module.ddc.js"}');
   // Exports:
   return {

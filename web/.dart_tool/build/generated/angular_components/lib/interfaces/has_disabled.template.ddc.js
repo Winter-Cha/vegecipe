@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/interfaces/has_disabled.template.ddc", {
     "package:angular_components/interfaces/has_disabled.template.dart": interfaces__has_disabled$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_disabled.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"has_disabled.template.ddc.js"}');
   // Exports:
   return {

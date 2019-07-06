@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/focus/focus_interface.template.ddc", {
     "package:angular_components/focus/focus_interface.template.dart": focus__focus_interface$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_interface.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"focus_interface.template.ddc.js"}');
   // Exports:
   return {

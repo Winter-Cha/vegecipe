@@ -32,6 +32,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
     __proto__: dart.getMethods(src__runtime__text_binding.TextBinding.__proto__),
     updateText: dart.fnType(dart.void, [core.String])
   }));
+  dart.setLibraryUri(src__runtime__text_binding.TextBinding, "package:angular/src/runtime/text_binding.dart");
   dart.setFieldSignature(src__runtime__text_binding.TextBinding, () => ({
     __proto__: dart.getFields(src__runtime__text_binding.TextBinding.__proto__),
     [_currentValue]: dart.fieldType(core.String),
@@ -39,6 +40,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
   }));
   dart.trackLibraries("packages/angular/src/runtime/text_binding.ddc", {
     "package:angular/src/runtime/text_binding.dart": src__runtime__text_binding
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["text_binding.dart"],"names":[],"mappings":";;;;;;;;;;;IAaa;;;;;;eAUK,QAAe;AAC7B,oBAAI,8CAAY,CAAC,mBAAa,EAAE,QAAQ,IAAG;AACzC,oBAAO,OAAK,GAAG,QAAQ;AACvB,2BAAa,GAAG,QAAQ;;IAE5B;;;IAhBO,mBAAa,GAAG;IACZ,aAAO,GAAG,aAAI,CAAC;EAOb","file":"text_binding.ddc.js"}');
   // Exports:
   return {

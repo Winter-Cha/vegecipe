@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/color/color.template.ddc", {
     "package:angular_components/utils/color/color.template.dart": utils__color__color$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["color.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"color.template.ddc.js"}');
   // Exports:
   return {

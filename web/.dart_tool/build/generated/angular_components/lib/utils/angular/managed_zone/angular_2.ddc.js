@@ -60,6 +60,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/managed_zone/
   dart.addTypeTests(utils__angular__managed_zone__angular_2.Angular2ManagedZone);
   const innerZone = Symbol("Angular2ManagedZone.innerZone");
   const outerZone = Symbol("Angular2ManagedZone.outerZone");
+  dart.setLibraryUri(utils__angular__managed_zone__angular_2.Angular2ManagedZone, "package:angular_components/utils/angular/managed_zone/angular_2.dart");
   dart.setFieldSignature(utils__angular__managed_zone__angular_2.Angular2ManagedZone, () => ({
     __proto__: dart.getFields(utils__angular__managed_zone__angular_2.Angular2ManagedZone.__proto__),
     [_ngZone]: dart.finalFieldType(src__core__zone__ng_zone.NgZone),
@@ -69,6 +70,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/managed_zone/
   }));
   dart.trackLibraries("packages/angular_components/utils/angular/managed_zone/angular_2.ddc", {
     "package:angular_components/utils/angular/managed_zone/angular_2.dart": utils__angular__managed_zone__angular_2
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["angular_2.dart"],"names":[],"mappings":";;;;;;;;;;;;;IAoBO;;;;;;IAGA;;;;;;qBAYiB,KAAa;AACjC,oBAAI,iBAAW,GAAE;AACjB,4BAAsB,CAAC,KAAK;IAC9B;sBAGuB,KAAa;AAClC,oBAAI,iBAAW,GAAE;AACjB,6BAAuB,CAAC,KAAK;IAC/B;;AAIE,uBAAW,GAAG;IAChB;;YAGwB,YAAC,gBAAW;;iBAGrB,EAAM;YAAK,cAAO,IAAI,IAAC,EAAE;IAAC;kBAGzB,EAAM;YAAK,cAAO,kBAAkB,IAAC,EAAE;IAAC;;;IAzCnD,iBAAW,GAAG;IAGd,eAAS;IAGT,eAAS;IAEW,aAAO;;AAC9B,iBAAO,kBAAkB,YAAC;AACxB,oBAAS,GAAG,UAAI,QAAQ;AACxB,mBAAO,YAAY,OAAO,CAAC,oCAAiB;AAC5C,mBAAO,iBAAiB,OAAO,CAAC,mCAAgB;AAChD,mBAAO,WAAW,OAAO,CAAC,oCAAiB;;EAE/C","file":"angular_2.ddc.js"}');
   // Exports:
   return {

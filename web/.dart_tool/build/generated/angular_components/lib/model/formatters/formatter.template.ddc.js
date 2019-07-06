@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/model/formatters/formatter.template.ddc", {
     "package:angular_components/model/formatters/formatter.template.dart": model__formatters__formatter$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["formatter.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"formatter.template.ddc.js"}');
   // Exports:
   return {

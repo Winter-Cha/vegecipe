@@ -419,7 +419,9 @@ material-fab.no-mixin-red {
 }
 
 .content {
-  white-space: pre-wrap;
+  overflow-y: scroll;
+  white-space: pre;
+  max-height: 300px;
 }
 
 @media only screen and (min-width: 412px) {
@@ -498,6 +500,12 @@ material-fab.no-mixin-red {
   .section p {
     font-size: 16px;
   }
+
+  .content {
+    overflow-y: scroll;
+    white-space: pre;
+    max-height: 400px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .landscape-container, .landscape-placeholder, .landscape-actual {
@@ -536,5 +544,11 @@ material-fab.no-mixin-red {
   }
   .section p {
     font-size: 16px;
+  }
+
+  .content {
+    overflow-y: scroll;
+    white-space: pre;
+    max-height: 400px;
   }
 }

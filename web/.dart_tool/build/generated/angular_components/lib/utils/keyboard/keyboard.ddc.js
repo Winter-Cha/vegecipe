@@ -13,6 +13,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/keyboard/keyboard.ddc", {
     "package:angular_components/utils/keyboard/keyboard.dart": utils__keyboard__keyboard
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["keyboard.dart"],"names":[],"mappings":";;;;;;wDAWsB,KAAmB;QAC/B,wDAAW;QACZ,qDAAU;QACV,kDAAS;QACT,qDAAU;AACjB,UAAQ,AAEuB,MAFlB,SAAS,IAAI,QAAQ,IAC7B,KAAK,OAAO,IAAI,MAAM,IACtB,KAAK,QAAQ,IAAI,OAAO,IACxB,KAAK,QAAQ,IAAI,OAAO;EAC/B","file":"keyboard.ddc.js"}');
   // Exports:
   return {

@@ -117,6 +117,7 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
     activeTabIndex: core.int,
     tabLabels: core.List$(core.String)
   }));
+  dart.setLibraryUri(material_tab__fixed_material_tab_strip.FixedMaterialTabStripComponent, "package:angular_components/material_tab/fixed_material_tab_strip.dart");
   dart.setFieldSignature(material_tab__fixed_material_tab_strip.FixedMaterialTabStripComponent, () => ({
     __proto__: dart.getFields(material_tab__fixed_material_tab_strip.FixedMaterialTabStripComponent.__proto__),
     [_transitionAmount]: dart.finalFieldType(core.int),
@@ -136,7 +137,8 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
   });
   dart.trackLibraries("packages/angular_components/material_tab/fixed_material_tab_strip.ddc", {
     "package:angular_components/material_tab/fixed_material_tab_strip.dart": material_tab__fixed_material_tab_strip
-  }, '{"version":3,"sourceRoot":"","sources":["fixed_material_tab_strip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;YAiDgD,uBAAgB,OAAO;;;YAM7B,iBAAU,OAAO;;uBAOtC,KAAS;AAC1B,UAAI,qBAAe,IAAI,KAAK,EAAE;AAC5B,6BAAe,GAAG,KAAK;AACvB,0CAA4B;AAC5B,6BAAe,aAAa;;IAEhC;;YAE0B,sBAAe;;;YAKD,4BAAqB,OAAO;;kBAKtD,MAAmB;AAC/B,sBAAU,GAAG,MAAM;AACnB,wCAA4B;IAC9B;;YAE8B,iBAAU;;IAI3B;;;;;;sCAQyB,KAAU;AAC9C,uBAAO,KAAK,IAAG,CAAC,MAAM;IACxB;;YAEoC,6BAAsB;;aAE5C,KAAS;AACrB,UAAI,KAAK,IAAI,mBAAc,EAAE;AAC7B,UAAI,YAAQ,iDAAc,CAAC,mBAAc,EAAE,KAAK;AAChD,4BAAgB,IAAI,CAAC,KAAK;AAC1B,oBAAI,KAAK,iBAAiB,GAAE;AAC5B,yBAAc,GAAG,KAAK;AACtB,sBAAU,IAAI,CAAC,KAAK;AACpB,iCAAqB,IAAI,CAAC,mBAAc;IAC1C;cAEiB,KAAS;AACxB,YAAO,UAAG,mBAAc,IAAI,KAAK;IACnC;UAEa,KAAS;cAAK,WAAM;8CAAY,KAAK;IAAC;;AAGjD,UAAI,QAAQ,gBAAU,IAAI,OAAO,AAAE,iBAAE,gBAAU,SAAO,IAAG;AACzD,UAAI,WAA2B,AAAQ,aAAxB,qBAAe,IAAG,KAAK,gBAAG,uBAAiB;AAC1D,kCAAsB,GAAG,yBAAa,QAAQ,4BAAW,KAAK;IAChE;;wGA/B0B,KAAwC;IArD9D,qBAAe,GAAG;IACf,4BAAsB;IAChB,gBAAU;IASjB,sBAAgB,GAClB,4CAA0C,QAAO;IAK/C,gBAAU,GAAG,4CAA0C,QAAO;IAoB9D,2BAAqB,GAAG,iCAA+B;IAahD,YAAM;IAGV,qBAAe;IAClB,uBAAiB,GAAG,gGAA0B,CAAC,KAAK,WAAL,KAAK,GAAI;AAC5D,sCAA4B;EAC9B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA5Da,+EAAS;YAAG","file":"fixed_material_tab_strip.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["fixed_material_tab_strip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;YAiDgD,uBAAgB,OAAO;;;YAM7B,iBAAU,OAAO;;uBAOtC,KAAS;AAC1B,UAAI,qBAAe,IAAI,KAAK,EAAE;AAC5B,6BAAe,GAAG,KAAK;AACvB,0CAA4B;AAC5B,6BAAe,aAAa;;IAEhC;;YAE0B,sBAAe;;;YAKD,4BAAqB,OAAO;;kBAKtD,MAAmB;AAC/B,sBAAU,GAAG,MAAM;AACnB,wCAA4B;IAC9B;;YAE8B,iBAAU;;IAI3B;;;;;;sCAQyB,KAAU;AAC9C,uBAAO,KAAK,IAAG,CAAC,MAAM;IACxB;;YAEoC,6BAAsB;;aAE5C,KAAS;AACrB,UAAI,KAAK,IAAI,mBAAc,EAAE;AAC7B,UAAI,YAAQ,iDAAc,CAAC,mBAAc,EAAE,KAAK;AAChD,4BAAgB,IAAI,CAAC,KAAK;AAC1B,oBAAI,KAAK,iBAAiB,GAAE;AAC5B,yBAAc,GAAG,KAAK;AACtB,sBAAU,IAAI,CAAC,KAAK;AACpB,iCAAqB,IAAI,CAAC,mBAAc;IAC1C;cAEiB,KAAS;AACxB,YAAO,UAAG,mBAAc,IAAI,KAAK;IACnC;UAEa,KAAS;cAAK,WAAM;8CAAY,KAAK;IAAC;;AAGjD,UAAI,QAAQ,gBAAU,IAAI,OAAO,AAAE,iBAAE,gBAAU,SAAO,IAAG;AACzD,UAAI,WAA2B,AAAQ,aAAxB,qBAAe,IAAG,KAAK,gBAAG,uBAAiB;AAC1D,kCAAsB,GAAG,yBAAa,QAAQ,4BAAW,KAAK;IAChE;;wGA/B0B,KAAwC;IArD9D,qBAAe,GAAG;IACf,4BAAsB;IAChB,gBAAU;IASjB,sBAAgB,GAClB,4CAA0C,QAAO;IAK/C,gBAAU,GAAG,4CAA0C,QAAO;IAoB9D,2BAAqB,GAAG,iCAA+B;IAahD,YAAM;IAGV,qBAAe;IAClB,uBAAiB,GAAG,gGAA0B,CAAC,KAAK,WAAL,KAAK,GAAI;AAC5D,sCAA4B;EAC9B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA5Da,+EAAS;YAAG","file":"fixed_material_tab_strip.ddc.js"}');
   // Exports:
   return {
     material_tab__fixed_material_tab_strip: material_tab__fixed_material_tab_strip

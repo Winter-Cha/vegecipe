@@ -38,6 +38,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     activateFirstItemOnExpand: core.bool,
     activateLastItemOnExpand: core.bool
   }));
+  dart.setLibraryUri(material_menu__menu_popup_wrapper.ExpandAction, "package:angular_components/material_menu/menu_popup_wrapper.dart");
   dart.setFieldSignature(material_menu__menu_popup_wrapper.ExpandAction, () => ({
     __proto__: dart.getFields(material_menu__menu_popup_wrapper.ExpandAction.__proto__),
     [_focusIndexOnExpand]: dart.finalFieldType(core.int)
@@ -94,7 +95,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     }
     set width(val) {
       this[_width] = utils__angular__properties__properties.getInt(val, {defaultValue: 0});
-      if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed();
+      if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_menu/menu_popup_wrapper.dart", 104, 12, "_width >= 0 && _width <= 5");
     }
     get preferredPositions() {
       return this[preferredPositions];
@@ -129,6 +130,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     expandAction: material_menu__menu_popup_wrapper.ExpandAction,
     width: dart.dynamic
   }));
+  dart.setLibraryUri(material_menu__menu_popup_wrapper.MenuPopupWrapper, "package:angular_components/material_menu/menu_popup_wrapper.dart");
   dart.setFieldSignature(material_menu__menu_popup_wrapper.MenuPopupWrapper, () => ({
     __proto__: dart.getFields(material_menu__menu_popup_wrapper.MenuPopupWrapper.__proto__),
     [_expandAction]: dart.finalFieldType(ObservableReferenceOfExpandAction()),
@@ -193,6 +195,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     __proto__: dart.getGetters(material_menu__menu_popup_wrapper.MenuPopupTrigger.__proto__),
     onTrigger: async.Stream$(dart.void)
   }));
+  dart.setLibraryUri(material_menu__menu_popup_wrapper.MenuPopupTrigger, "package:angular_components/material_menu/menu_popup_wrapper.dart");
   dart.setFieldSignature(material_menu__menu_popup_wrapper.MenuPopupTrigger, () => ({
     __proto__: dart.getFields(material_menu__menu_popup_wrapper.MenuPopupTrigger.__proto__),
     [_onTriggerAction]: dart.finalFieldType(StreamControllerOfvoid()),
@@ -200,7 +203,8 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
   }));
   dart.trackLibraries("packages/angular_components/material_menu/menu_popup_wrapper.ddc", {
     "package:angular_components/material_menu/menu_popup_wrapper.dart": material_menu__menu_popup_wrapper
-  }, '{"version":3,"sourceRoot":"","sources":["menu_popup_wrapper.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;YA0BwC,0BAAmB,KAAI;IAAC;;YACzB,0BAAmB,KAAI,CAAC;IAAC;;;IAPlB,yBAAmB,GAAG;EAAC;;IAExB,yBAAmB,GAAG,CAAC;EAAC;;IAEhC,yBAAmB,GAAG;EAAI;;;;;;;;;;;;;;;IAYnD;;;;;;mBAQK,KAAK;AAClB,yBAAI,eAAU,EAAI,KAAK,GAAE;AAEzB,oBAAI,8CAAO,CAAC,KAAK,IAAG;AAClB,iCAAY;wCAAK,mCAAM,0DAAwB;aAC1C;AACL,yBAAY,GAAG;;IAEnB;qBAQiB,KAAkB;AACjC,sBAAI,mBAAa,MAAM,EAAI,KAAK,GAAE;AAElC,yBAAa,MAAM,GAAG,KAAK;IAC7B;;YAGuB,kBAAY,IAAI;IAAI;;YAEV,oBAAa,MAAM;;;cAKhD,iBAAY;;6BAA+B;IAAK;;cAKhD,iBAAY;;6BAA8B;IAAK;;mCAK/C,mBAAa,OAAO,IAAI,YAAC,QAAC,CAAC,IAAK,eAAU;IAAC;;YAMA,oBAAa,OAAO;;;cAMlD,SAAI;;6BAAW,YAAM;;cAK5B,GAAG;AACX,kBAAM,GAAG,6CAAM,CAAC,GAAG,iBAAgB;AACnC,YAAc,AAAK,aAAZ,YAAM,KAAI,KAAY,aAAP,YAAM,KAAI;IAClC;IAQS;;;;;;;;IAhFH,mBAAa,OAAG,yCAAiC,CAAC;IAI9C,WAAI;IAsEV,YAAM,GAAG;IAMJ,wBAAkB;EAC7B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAwBO;;;;;;;YAIyB,uBAAgB,OAAO;;6BASvB,KAAa;AACzC,gCAAI,KAAK,GAAmB;AAC1B,sBAAQ,CAAC,qCAAM,mEAAiC;aAC3C;AACL,sBAAQ,CAAC,qCAAM,0DAAwB;;IAE3C;gBAIiB,KAAmB;AAClC,oBAAQ,CAAC,qCAAM,kEAAgC;AAE/C,WAAK,eAAe;IACtB;kBAImB,KAAmB;AACpC,oBAAQ,CAAC,qCAAM,mEAAiC;AAEhD,WAAK,eAAe;IACtB;eAEc,MAAmB;AAC/B,oBAAI,qBAAgB,eAAI,eAAU,GAAE;AAClC,yBAAY,GAAG;aACV;AACL,yBAAY,GAAG,MAAM;;AAEvB,4BAAgB,IAAI,CAAC;IACvB;;;IApDM,sBAAgB,GAAG,4BAAsB;IAQ1C,sBAAgB,GAAG;EA6C1B","file":"menu_popup_wrapper.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["menu_popup_wrapper.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;YA0BwC,0BAAmB,KAAI;IAAC;;YACzB,0BAAmB,KAAI,CAAC;IAAC;;;IAPlB,yBAAmB,GAAG;EAAC;;IAExB,yBAAmB,GAAG,CAAC;EAAC;;IAEhC,yBAAmB,GAAG;EAAI;;;;;;;;;;;;;;;;IAYnD;;;;;;mBAQK,KAAK;AAClB,yBAAI,eAAU,EAAI,KAAK,GAAE;AAEzB,oBAAI,8CAAO,CAAC,KAAK,IAAG;AAClB,iCAAY;wCAAK,mCAAM,0DAAwB;aAC1C;AACL,yBAAY,GAAG;;IAEnB;qBAQiB,KAAkB;AACjC,sBAAI,mBAAa,MAAM,EAAI,KAAK,GAAE;AAElC,yBAAa,MAAM,GAAG,KAAK;IAC7B;;YAGuB,kBAAY,IAAI;IAAI;;YAEV,oBAAa,MAAM;;;cAKhD,iBAAY;;6BAA+B;IAAK;;cAKhD,iBAAY;;6BAA8B;IAAK;;mCAK/C,mBAAa,OAAO,IAAI,YAAC,QAAC,CAAC,IAAK,eAAU;IAAC;;YAMA,oBAAa,OAAO;;;cAMlD,SAAI;;6BAAW,YAAM;;cAK5B,GAAG;AACX,kBAAM,GAAG,6CAAM,CAAC,GAAG,iBAAgB;AACnC,YAAc,AAAK,aAAZ,YAAM,KAAI,KAAY,aAAP,YAAM,KAAI;IAClC;IAQS;;;;;;;;IAhFH,mBAAa,OAAG,yCAAiC,CAAC;IAI9C,WAAI;IAsEV,YAAM,GAAG;IAMJ,wBAAkB;EAC7B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAwBO;;;;;;;YAIyB,uBAAgB,OAAO;;6BASvB,KAAa;AACzC,gCAAI,KAAK,GAAmB;AAC1B,sBAAQ,CAAC,qCAAM,mEAAiC;aAC3C;AACL,sBAAQ,CAAC,qCAAM,0DAAwB;;IAE3C;gBAIiB,KAAmB;AAClC,oBAAQ,CAAC,qCAAM,kEAAgC;AAE/C,WAAK,eAAe;IACtB;kBAImB,KAAmB;AACpC,oBAAQ,CAAC,qCAAM,mEAAiC;AAEhD,WAAK,eAAe;IACtB;eAEc,MAAmB;AAC/B,oBAAI,qBAAgB,eAAI,eAAU,GAAE;AAClC,yBAAY,GAAG;aACV;AACL,yBAAY,GAAG,MAAM;;AAEvB,4BAAgB,IAAI,CAAC;IACvB;;;IApDM,sBAAgB,GAAG,4BAAsB;IAQ1C,sBAAgB,GAAG;EA6C1B","file":"menu_popup_wrapper.ddc.js"}');
   // Exports:
   return {
     material_menu__menu_popup_wrapper: material_menu__menu_popup_wrapper

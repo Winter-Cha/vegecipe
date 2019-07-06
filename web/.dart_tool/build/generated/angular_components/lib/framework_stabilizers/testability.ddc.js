@@ -25,6 +25,7 @@ define(['dart_sdk', 'packages/angular_components/framework_stabilizers/framework
   (framework_stabilizers__testability.Testability.new = function() {
   }).prototype = framework_stabilizers__testability.Testability.prototype;
   dart.addTypeTests(framework_stabilizers__testability.Testability);
+  dart.setLibraryUri(framework_stabilizers__testability.Testability, "package:angular_components/framework_stabilizers/testability.dart");
   const _callbacks = dart.privateName(framework_stabilizers__testability, "_callbacks");
   const _runCallbacksIfStable = dart.privateName(framework_stabilizers__testability, "_runCallbacksIfStable");
   framework_stabilizers__testability.AbstractTestability = class AbstractTestability extends core.Object {
@@ -72,6 +73,7 @@ define(['dart_sdk', 'packages/angular_components/framework_stabilizers/framework
     __proto__: dart.getGetters(framework_stabilizers__testability.AbstractTestability.__proto__),
     name: core.String
   }));
+  dart.setLibraryUri(framework_stabilizers__testability.AbstractTestability, "package:angular_components/framework_stabilizers/testability.dart");
   dart.setFieldSignature(framework_stabilizers__testability.AbstractTestability, () => ({
     __proto__: dart.getFields(framework_stabilizers__testability.AbstractTestability.__proto__),
     [_callbacks]: dart.finalFieldType(ListOfboolAndStringTovoid())
@@ -102,9 +104,11 @@ define(['dart_sdk', 'packages/angular_components/framework_stabilizers/framework
     isStable: core.bool,
     name: core.String
   }));
+  dart.setLibraryUri(framework_stabilizers__testability.NullTestability, "package:angular_components/framework_stabilizers/testability.dart");
   dart.trackLibraries("packages/angular_components/framework_stabilizers/testability.ddc", {
     "package:angular_components/framework_stabilizers/testability.dart": framework_stabilizers__testability
-  }, '{"version":3,"sourceRoot":"","sources":["testability.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;MAoBW,uDAAoB;YAAG,iCAAI,WAAS,CAAC;;;;;EAShD;;;;;;AAcI,uEAAoB,IAAI,CAAC,6BAAU;IACrC;eAKgB,EAAmB;AACjC,iCAAqB,eAAc,EAAE;IACvC;;AAME,iCAAqB;IACvB;;UAI6C;AAE3C,gBAAI,KAAK,IAAI,YAAC;AACZ,uBAAK,aAAQ,GAAE;AACb,cAAI,WAAW,IAAI,MAAM,gBAAU,MAAI,CAAC,WAAW;AACnD;;AAGF,0BAAM,CAAC;AACL,cAAI,WAAW,IAAI,MAAM,WAAW,CAAC,OAAO,SAAI;AAChD,2BAAO,gBAAU,aAAW,GAAE;AAC5B,YAAC,gBAAU,aAAW,GAAI,MAAM,SAAI;;;;IAI5C;;YAUmB,cAAa;IAAE;;;IAlDL,gBAAU,GAAG;EAmD5C;;;;;;;;;;;;;;;;;;;gBAQE;eAGgB,EAAmB;AACjC,qBAAM,yBAAgB,CAAC;IACzB;;AAIE,qBAAM,yBAAgB,CAAC;IACzB;;AAIE,qBAAM,yBAAgB,CAAC;IACzB;;;EACF","file":"testability.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["testability.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;MAoBW,uDAAoB;YAAG,iCAAI,WAAS,CAAC;;;;;EAShD;;;;;;;AAcI,uEAAoB,IAAI,CAAC,6BAAU;IACrC;eAKgB,EAAmB;AACjC,iCAAqB,eAAc,EAAE;IACvC;;AAME,iCAAqB;IACvB;;UAI6C;AAE3C,gBAAI,KAAK,IAAI,YAAC;AACZ,uBAAK,aAAQ,GAAE;AACb,cAAI,WAAW,IAAI,MAAM,gBAAU,MAAI,CAAC,WAAW;AACnD;;AAGF,0BAAM,CAAC;AACL,cAAI,WAAW,IAAI,MAAM,WAAW,CAAC,OAAO,SAAI;AAChD,2BAAO,gBAAU,aAAW,GAAE;AAC5B,YAAC,gBAAU,aAAW,GAAI,MAAM,SAAI;;;;IAI5C;;YAUmB,cAAa;IAAE;;;IAlDL,gBAAU,GAAG;EAmD5C;;;;;;;;;;;;;;;;;;;;gBAQE;eAGgB,EAAmB;AACjC,qBAAM,yBAAgB,CAAC;IACzB;;AAIE,qBAAM,yBAAgB,CAAC;IACzB;;AAIE,qBAAM,yBAAgB,CAAC;IACzB;;;EACF","file":"testability.ddc.js"}');
   // Exports:
   return {
     framework_stabilizers__testability: framework_stabilizers__testability

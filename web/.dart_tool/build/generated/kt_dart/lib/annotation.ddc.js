@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const annotation = Object.create(dart.library);
   dart.trackLibraries("packages/kt_dart/annotation.ddc", {
     "package:kt_dart/annotation.dart": annotation
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"annotation.ddc.js"}');
   // Exports:
   return {

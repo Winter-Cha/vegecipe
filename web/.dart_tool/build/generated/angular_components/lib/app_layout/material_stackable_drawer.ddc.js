@@ -43,6 +43,7 @@ define(['dart_sdk', 'packages/angular_components/app_layout/material_temporary_d
   dart.addTypeTests(app_layout__material_stackable_drawer.MaterialStackableDrawerComponent);
   const parent$ = Symbol("MaterialStackableDrawerComponent.parent");
   const isExpanded = Symbol("MaterialStackableDrawerComponent.isExpanded");
+  dart.setLibraryUri(app_layout__material_stackable_drawer.MaterialStackableDrawerComponent, "package:angular_components/app_layout/material_stackable_drawer.dart");
   dart.setFieldSignature(app_layout__material_stackable_drawer.MaterialStackableDrawerComponent, () => ({
     __proto__: dart.getFields(app_layout__material_stackable_drawer.MaterialStackableDrawerComponent.__proto__),
     parent: dart.finalFieldType(app_layout__material_stackable_drawer.MaterialStackableDrawerComponent),
@@ -50,6 +51,7 @@ define(['dart_sdk', 'packages/angular_components/app_layout/material_temporary_d
   }));
   dart.trackLibraries("packages/angular_components/app_layout/material_stackable_drawer.ddc", {
     "package:angular_components/app_layout/material_stackable_drawer.dart": app_layout__material_stackable_drawer
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_stackable_drawer.dart"],"names":[],"mappings":";;;;;;;;IAyByC;;;;;;IAOlC;;;;;;gBAGO,UAAe;AACzB,mBAAa,GAAG,UAAU;AAE1B,iBAAM,kBAAN,WAAM,WAAY,GAAG,UAAU;IACjC;;;;;YAGmC,YAAC,YAAO;;;YAGT,aAAO;;;YAMxB,aAAY;IAAE;;yFAxBE,MAAmC;IAK/D,gBAAU,GAAG;IAL4C,aAAM,GAAN,MAAM;AAC9D;EAAO","file":"material_stackable_drawer.ddc.js"}');
   // Exports:
   return {

@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/highlighted_text/highlighted_text.scss.css.shim.ddc", {
     "package:angular_components/highlighted_text/highlighted_text.scss.css.shim.dart": highlighted_text__highlighted_text$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlighted_text.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,6DAAM;YAAG,EAAC","file":"highlighted_text.scss.css.shim.ddc.js"}');
   // Exports:
   return {

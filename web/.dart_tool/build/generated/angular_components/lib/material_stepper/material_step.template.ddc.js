@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_stepper/material_step.template.ddc", {
     "package:angular_components/material_stepper/material_step.template.dart": material_stepper__material_step$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_step.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,mDAAQ;YAAG;;;;;AAEb,kBAAI,mDAAQ,GAAE;AACZ;;AAEF,0DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,+DAAa;EACrB","file":"material_step.template.ddc.js"}');
   // Exports:
   return {

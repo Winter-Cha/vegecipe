@@ -56,6 +56,7 @@ define(['dart_sdk', 'packages/angular_components/material_ripple/material_ripple
     build: dart.fnType(src__core__linker__component_factory.ComponentRef$(material_ripple__material_ripple.MaterialRippleComponent), []),
     initComponentStyles: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(material_ripple__material_ripple$46template.ViewMaterialRippleComponent0, "package:angular_components/material_ripple/material_ripple.template.dart");
   dart.defineLazy(material_ripple__material_ripple$46template.ViewMaterialRippleComponent0, {
     /*material_ripple__material_ripple$46template.ViewMaterialRippleComponent0._componentStyles*/get _componentStyles() {
       return null;
@@ -110,6 +111,7 @@ define(['dart_sdk', 'packages/angular_components/material_ripple/material_ripple
     __proto__: dart.getMethods(material_ripple__material_ripple$46template._ViewMaterialRippleComponentHost0.__proto__),
     build: dart.fnType(src__core__linker__component_factory.ComponentRef$(material_ripple__material_ripple.MaterialRippleComponent), [])
   }));
+  dart.setLibraryUri(material_ripple__material_ripple$46template._ViewMaterialRippleComponentHost0, "package:angular_components/material_ripple/material_ripple.template.dart");
   dart.setFieldSignature(material_ripple__material_ripple$46template._ViewMaterialRippleComponentHost0, () => ({
     __proto__: dart.getFields(material_ripple__material_ripple$46template._ViewMaterialRippleComponentHost0.__proto__),
     [_compView_0]: dart.fieldType(material_ripple__material_ripple$46template.ViewMaterialRippleComponent0),
@@ -137,7 +139,8 @@ define(['dart_sdk', 'packages/angular_components/material_ripple/material_ripple
   };
   dart.trackLibraries("packages/angular_components/material_ripple/material_ripple.template.ddc", {
     "package:angular_components/material_ripple/material_ripple.template.dart": material_ripple__material_ripple$46template
-  }, '{"version":3,"sourceRoot":"","sources":["material_ripple.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;MAqBoB,0EAA8B;YAAG,EAAS,oDAAM;;;;;AAShE,YAAQ,WAAQ,qCAAS,IAAG,sEAAsE;IACpG;;AAIE,UAAM,UAAU,WAAM;AACtB,UAA0B,mBAAmB,iBAAY,CAAC,OAAO;AACjE,gBAAK;IACP;;AAIE,UAAI,SAAS,yFAAgB;AAC7B,UAAI,AAAU,MAAM,IAAE,MAAO;AAC3B,QAAC,yFAAgB,GAAI,MAAM,GAAI,yFAAgB,GAAG,+DAAgC,CAAC,0EAA8B,EAAE,2FAAkB;;AAEvI,0BAAe,GAAG,MAAM;IAC1B;;2FAtB6B,UAA2B,EAAE,WAAe;AAAI,sGAAM,qCAAgB,UAAU,EAAE,UAAU,EAAE,WAAW,EAAE,8DAAuB,UAAU;AACvK,4BAAmB;AACnB,eAAM,2BAAG,AAAQ,aAAQ,gBAAc,CAAC;EAC1C;;;;;;;;MAJ+B,yFAAgB;;;;;;MA0BO,6EAAiC;YAAG,gBAAM,iDAAgB,CAAC,mBAAmB,gJAAwC;;;;;AAE5K,YAAO,8EAAiC;IAC1C;;;MAEoB,8EAAkC;YAAG;;;;;;;AAQrD,uBAAW,OAAG,4EAA4B,CAAC,MAAM;AACjD,iBAAM,GAAG,iBAAW,OAAO;AAC3B,wCAA4B,OAAG,4DAA+B,CAAC,WAAM;AACrE,uBAAW,OAAO,CAAC,kCAA4B,EAAE,mBAAc;AAC/D,gBAAK,CAAC,WAAM;AACZ,iBAAO,6CAAY,CAAC,GAAG,MAAM,WAAM,EAAE,kCAA4B;IACnE;;AAIE,UAAK,UAAU;AACf,UAAI,OAAO,EAAE;AACX,yBAAW,gBAAgB;;AAE7B,uBAAW,cAAc;IAC3B;;AAIE,uBAAW,qBAAqB;AAChC,wCAA4B,YAAY;IAC1C;;gGAxBkC,UAA2B,EAAE,WAAe;IAFjD,iBAAW;IACR,kCAA4B;AACsB,2GAAM,qCAAgB,KAAK,EAAE,UAAU,EAAE,WAAW,EAAE,8DAAuB,YAAY;EAAC;;;;;;;;;;;kGA2B5F,UAA2B,EAAE,WAAe;AAC5H,eAAO,iFAAiC,CAAC,UAAU,EAAE,WAAW;EAClE;;MAEI,oDAAQ;YAAG;;;;;AAEb,kBAAI,oDAAQ,GAAE;AACZ;;AAEF,2DAAW;AAEX,IAAO,oCAAiB,CAAC,uEAAuB,EAAE,4EAAgC;AAClF,IAAM,gCAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,2EAAa;AACnB,IAAM,+CAAa;EACrB","file":"material_ripple.template.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["material_ripple.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;MAqBoB,0EAA8B;YAAG,EAAS,oDAAM;;;;;AAShE,YAAQ,WAAQ,qCAAS,IAAG,sEAAsE;IACpG;;AAIE,UAAM,UAAU,WAAM;AACtB,UAA0B,mBAAmB,iBAAY,CAAC,OAAO;AACjE,gBAAK;IACP;;AAIE,UAAI,SAAS,yFAAgB;AAC7B,UAAI,AAAU,MAAM,IAAE,MAAO;AAC3B,QAAC,yFAAgB,GAAI,MAAM,GAAI,yFAAgB,GAAG,+DAAgC,CAAC,0EAA8B,EAAE,2FAAkB;;AAEvI,0BAAe,GAAG,MAAM;IAC1B;;2FAtB6B,UAA2B,EAAE,WAAe;AAAI,sGAAM,qCAAgB,UAAU,EAAE,UAAU,EAAE,WAAW,EAAE,8DAAuB,UAAU;AACvK,4BAAmB;AACnB,eAAM,2BAAG,AAAQ,aAAQ,gBAAc,CAAC;EAC1C;;;;;;;;;MAJ+B,yFAAgB;;;;;;MA0BO,6EAAiC;YAAG,gBAAM,iDAAgB,CAAC,mBAAmB,gJAAwC;;;;;AAE5K,YAAO,8EAAiC;IAC1C;;;MAEoB,8EAAkC;YAAG;;;;;;;AAQrD,uBAAW,OAAG,4EAA4B,CAAC,MAAM;AACjD,iBAAM,GAAG,iBAAW,OAAO;AAC3B,wCAA4B,OAAG,4DAA+B,CAAC,WAAM;AACrE,uBAAW,OAAO,CAAC,kCAA4B,EAAE,mBAAc;AAC/D,gBAAK,CAAC,WAAM;AACZ,iBAAO,6CAAY,CAAC,GAAG,MAAM,WAAM,EAAE,kCAA4B;IACnE;;AAIE,UAAK,UAAU;AACf,UAAI,OAAO,EAAE;AACX,yBAAW,gBAAgB;;AAE7B,uBAAW,cAAc;IAC3B;;AAIE,uBAAW,qBAAqB;AAChC,wCAA4B,YAAY;IAC1C;;gGAxBkC,UAA2B,EAAE,WAAe;IAFjD,iBAAW;IACR,kCAA4B;AACsB,2GAAM,qCAAgB,KAAK,EAAE,UAAU,EAAE,WAAW,EAAE,8DAAuB,YAAY;EAAC;;;;;;;;;;;;kGA2B5F,UAA2B,EAAE,WAAe;AAC5H,eAAO,iFAAiC,CAAC,UAAU,EAAE,WAAW;EAClE;;MAEI,oDAAQ;YAAG;;;;;AAEb,kBAAI,oDAAQ,GAAE;AACZ;;AAEF,2DAAW;AAEX,IAAO,oCAAiB,CAAC,uEAAuB,EAAE,4EAAgC;AAClF,IAAM,gCAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,2EAAa;AACnB,IAAM,+CAAa;EACrB","file":"material_ripple.template.ddc.js"}');
   // Exports:
   return {
     material_ripple__material_ripple$46template: material_ripple__material_ripple$46template

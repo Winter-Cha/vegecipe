@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_datepicker/material_datepicker.scss.css.shim.ddc", {
     "package:angular_components/material_datepicker/material_datepicker.scss.css.shim.dart": material_datepicker__material_datepicker$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_datepicker.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,mEAAM;YAAG,EAAC","file":"material_datepicker.scss.css.shim.ddc.js"}');
   // Exports:
   return {

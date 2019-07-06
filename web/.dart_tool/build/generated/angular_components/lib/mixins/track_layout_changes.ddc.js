@@ -17,12 +17,14 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = mixins__track_layout_changes.TrackLayoutChangesMixin.prototype;
   dart.addTypeTests(mixins__track_layout_changes.TrackLayoutChangesMixin);
   const trackLayoutChanges = Symbol("TrackLayoutChangesMixin.trackLayoutChanges");
+  dart.setLibraryUri(mixins__track_layout_changes.TrackLayoutChangesMixin, "package:angular_components/mixins/track_layout_changes.dart");
   dart.setFieldSignature(mixins__track_layout_changes.TrackLayoutChangesMixin, () => ({
     __proto__: dart.getFields(mixins__track_layout_changes.TrackLayoutChangesMixin.__proto__),
     trackLayoutChanges: dart.fieldType(core.bool)
   }));
   dart.trackLibraries("packages/angular_components/mixins/track_layout_changes.ddc", {
     "package:angular_components/mixins/track_layout_changes.dart": mixins__track_layout_changes
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["track_layout_changes.dart"],"names":[],"mappings":";;;;;;;IAaO;;;;;;;;4BAAkB,GAAG;EAC5B","file":"track_layout_changes.ddc.js"}');
   // Exports:
   return {

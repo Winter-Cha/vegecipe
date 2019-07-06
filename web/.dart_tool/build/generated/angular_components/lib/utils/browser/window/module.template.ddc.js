@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/window/module', '
   };
   dart.trackLibraries("packages/angular_components/utils/browser/window/module.template.ddc", {
     "package:angular_components/utils/browser/window/module.template.dart": utils__browser__window__module$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["module.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAUI,kDAAQ;YAAG;;;;;;;AAEb,kBAAI,kDAAQ,GAAE;AACZ;;AAEF,yDAAW;AAEX,IAAO,uCAAoB,CAAC,uEAAW,EAAE,sCACvC,oCAAK,0BAAM;AAEb,IAAM,gCAAa;EACrB","file":"module.template.ddc.js"}');
   // Exports:
   return {

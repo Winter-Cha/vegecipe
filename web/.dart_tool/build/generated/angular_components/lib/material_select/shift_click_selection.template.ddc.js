@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular_components/material_select/activation_hand
   };
   dart.trackLibraries("packages/angular_components/material_select/shift_click_selection.template.ddc", {
     "package:angular_components/material_select/shift_click_selection.template.dart": material_select__shift_click_selection$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["shift_click_selection.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,0DAAQ;YAAG;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAM,4DAAa;AACnB,IAAM,0DAAa;AACnB,IAAM,4DAAa;EACrB","file":"shift_click_selection.template.ddc.js"}');
   // Exports:
   return {

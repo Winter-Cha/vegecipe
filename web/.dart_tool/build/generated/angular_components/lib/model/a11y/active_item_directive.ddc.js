@@ -117,6 +117,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
     __proto__: dart.getSetters(model__a11y__active_item_directive.ActiveItemDirective.__proto__),
     itemActive: core.bool
   }));
+  dart.setLibraryUri(model__a11y__active_item_directive.ActiveItemDirective, "package:angular_components/model/a11y/active_item_directive.dart");
   dart.setFieldSignature(model__a11y__active_item_directive.ActiveItemDirective, () => ({
     __proto__: dart.getFields(model__a11y__active_item_directive.ActiveItemDirective.__proto__),
     [_element]: dart.finalFieldType(html.HtmlElement),
@@ -130,6 +131,7 @@ define(['dart_sdk', 'packages/angular/src/core/change_detection/change_detection
   }));
   dart.trackLibraries("packages/angular_components/model/a11y/active_item_directive.ddc", {
     "package:angular_components/model/a11y/active_item_directive.dart": model__a11y__active_item_directive
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["active_item_directive.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAwCqB,cAAO;;;AAOxB,2CAAuB;;AACvB,mCAAuB,GAAG;IAC5B;;AAIE,wBAAY,GAAG;AACf,sCAA0B;IAC5B;mBAIe,KAAU;AACvB,UAAI,KAAK,IAAI,aAAO,EAAE;AACtB,mBAAO,GAAG,KAAK;AACf,sCAA0B;IAC5B;;YAE0D,WAAxB,kBAAY,eAAI,aAAO,gBAAK,eAAS;;;AAGrE,2CAAuB;;AAEvB,oBAAI,2BAAqB,GAAE;AACzB,YAAI,YAAY,eAAS,IAAI,OACvB,eAAS,UAAU,GACnB,YAAM,IAAI,OAAO,YAAM,QAAQ,GAAG;AACxC,sBAAI,SAAS,GAAE;AACb,+BAAe;eACV;AACL,cAAI,mBAAmB,eAAS,IAAI,OAC9B,eAAS,iBAAiB,GAC1B,YAAM,iBAAiB;AAC7B,uCAAuB,GAAG,gBAAgB,OAAO,CAAC,QAAC,SAAS;AAC1D,0BAAI,SAAS,GAAE;AACb,mDAAuB;;AACvB,4BAAI,2BAAqB,GAAE;AACzB,qCAAe;;;;;;IAM3B;;AAGE,uBAAW,cAAc,CAAC;AACxB,YAAI;AACF,cAAI,UAAU,AAAQ,iBAAS;AAC/B,UAAQ,mBAAW,CAAC,OAAO,EAAE,SAAS;AACtC,UAAQ,mBAAW,CAAC,OAAO,EAAE,UAAU;AACvC,UAAQ,kBAAU,CAAC,cAAQ,EAAE,kBAAkB,CAAC,OAAO;;cAChD;AAAG,AACV,wBAAQ,iBAAe;;;IAG7B;;AAOE,qBAAS,GAAG;IACd;;AAIE,qBAAS,GAAG;IACd;;;IApFK,aAAO,GAAG;IAEV,kBAAY,GAAG;IAED,6BAAuB;IAsErC,eAAS,GAAG;IAhEQ,cAAQ;IAAO,iBAAW;IAAmB,YAAM;IACvD,eAAS;EAAC","file":"active_item_directive.ddc.js"}');
   // Exports:
   return {

@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
     dart.addTypeTests(HasFactoryRenderer);
     HasFactoryRenderer.prototype[_is_HasFactoryRenderer_default] = true;
     const factoryRenderer = Symbol("HasFactoryRenderer.factoryRenderer");
+    dart.setLibraryUri(HasFactoryRenderer, "package:angular_components/model/ui/has_factory.dart");
     dart.setFieldSignature(HasFactoryRenderer, () => ({
       __proto__: dart.getFields(HasFactoryRenderer.__proto__),
       factoryRenderer: dart.fieldType(IToComponentFactory())
@@ -32,6 +33,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules'], function(dart_sdk
   dart.addTypeTests(model__ui__has_factory.HasFactoryRenderer, _is_HasFactoryRenderer_default);
   dart.trackLibraries("packages/angular_components/model/ui/has_factory.ddc", {
     "package:angular_components/model/ui/has_factory.dart": model__ui__has_factory
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["has_factory.dart"],"names":[],"mappings":";;;;;;;;;;;MAoBwB;;;;;;;;2BAAe;IACvC","file":"has_factory.ddc.js"}');
   // Exports:
   return {

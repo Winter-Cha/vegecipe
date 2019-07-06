@@ -6,6 +6,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const material_tooltip__material_tooltip = Object.create(dart.library);
   dart.trackLibraries("packages/angular_components/material_tooltip/material_tooltip.ddc", {
     "package:angular_components/material_tooltip/material_tooltip.dart": material_tooltip__material_tooltip
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"material_tooltip.ddc.js"}');
   // Exports:
   return {

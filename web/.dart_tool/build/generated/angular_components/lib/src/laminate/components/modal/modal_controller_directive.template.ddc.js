@@ -24,6 +24,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/src/laminate/components/modal/modal_controller_directive.template.ddc", {
     "package:angular_components/src/laminate/components/modal/modal_controller_directive.template.dart": src__laminate__components__modal__modal_controller_directive$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["modal_controller_directive.template.dart"],"names":[],"mappings":";;;;;;;;;;MAUI,gFAAQ;YAAG;;;;;AAEb,kBAAI,gFAAQ,GAAE;AACZ;;AAEF,uFAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,iDAAa;EACrB","file":"modal_controller_directive.template.ddc.js"}');
   // Exports:
   return {

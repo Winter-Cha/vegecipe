@@ -77,6 +77,7 @@ define(['dart_sdk'], function(dart_sdk) {
       length: core.int,
       [$length]: core.int
     }));
+    dart.setLibraryUri(CombinedList, "package:angular_components/model/collection/combined_list.dart");
     dart.setFieldSignature(CombinedList, () => ({
       __proto__: dart.getFields(CombinedList.__proto__),
       [_lists]: dart.finalFieldType(ListOfListOfE())
@@ -89,6 +90,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(model__collection__combined_list.CombinedList, _is_CombinedList_default);
   dart.trackLibraries("packages/angular_components/model/collection/combined_list.ddc", {
     "package:angular_components/model/collection/combined_list.dart": model__collection__combined_list
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["combined_list.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;cAasB,aAAM,QAAM,CAAC,QAAC,IAAS,IAAK,IAAI,UAAQ;MAAC;;cAGtC,aAAM,MAAI,CAAC,QAAC,IAAS,IAAK,IAAI,aAAW;MAAC;;cAG/C,aAAM,OAAK,WAAC,GAAG,SAAC,GAAO,EAAE,IAAS,KAAS,aAAJ,GAAG,iBAAG,IAAI,SAAO;MAAC;WAG7D,KAAS;AACrB,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,YAAM,SAAO,GAAE,CAAC,IAAI;AACtC,cAAQ,OAAO,YAAM,QAAC,CAAC;AACvB,cAAU,aAAN,KAAK,iBAAG,IAAI,SAAO,GAAE,MAAO,KAAI,QAAC,KAAK;AAC1C,eAAK,GA1BX,aA0BM,KAAK,iBAAI,IAAI,SAAO;;AAEtB,uBAAM,mBAAU,CAAC,kCAAsB,KAAK,oBAAG,WAAM;MACvD;WAGkB,KAAS,EAAE,KAAO;iBAAL;AAC7B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,YAAM,SAAO,GAAE,CAAC,IAAI;AACtC,cAAQ,OAAO,YAAM,QAAC,CAAC;AACvB,cAAU,aAAN,KAAK,iBAAG,IAAI,SAAO,GAAE;AACvB,gBAAI,QAAC,KAAK,EAAI,KAAK;AACnB,kBALuB,MAAO;;AAOhC,eAAK,GAvCX,aAuCM,KAAK,iBAAI,IAAI,SAAO;;AAEtB,uBAAM,mBAAU,CAAC,kCAAsB,KAAK,oBAAG,WAAM;cAT1B,MAAO;MAUpC;iBAGW,SAAa;cAAK,gBAAM,2BAAkB;MAAE;;;MAnCrC,YAAM;IAAC","file":"combined_list.ddc.js"}');
   // Exports:
   return {

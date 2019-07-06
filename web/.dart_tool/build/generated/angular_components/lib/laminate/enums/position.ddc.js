@@ -20,6 +20,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base'], func
     __proto__: dart.getMethods(laminate__enums__position.Position.__proto__),
     apply: dart.fnType(dart.void, [dart.fnType(dart.void, [core.String, dart.dynamic])])
   }));
+  dart.setLibraryUri(laminate__enums__position.Position, "package:angular_components/laminate/enums/position.dart");
   dart.setFieldSignature(laminate__enums__position.Position, () => ({
     __proto__: dart.getFields(laminate__enums__position.Position.__proto__),
     [_cssPropertyValue]: dart.finalFieldType(core.String)
@@ -40,7 +41,8 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/enums/base'], func
   });
   dart.trackLibraries("packages/angular_components/laminate/enums/position.ddc", {
     "package:angular_components/laminate/enums/position.dart": laminate__enums__position
-  }, '{"version":3,"sourceRoot":"","sources":["position.dart"],"names":[],"mappings":";;;;;;;;;UAmBa,WAAyB;AAClC,iBAAW,CAAC,YAAY,uBAAiB;IAC3C;;;IALsB,uBAAiB;EAAC;;;;;;;;;;;;MAP3B,yCAAM;4BAAG,qCAAU,CAAC;;MACpB,2CAAQ;4BAAG,qCAAU,CAAC;;MACtB,wCAAK;4BAAG,qCAAU,CAAC;;MACnB,2CAAQ;4BAAG,qCAAU,CAAC","file":"position.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["position.dart"],"names":[],"mappings":";;;;;;;;;UAmBa,WAAyB;AAClC,iBAAW,CAAC,YAAY,uBAAiB;IAC3C;;;IALsB,uBAAiB;EAAC;;;;;;;;;;;;;MAP3B,yCAAM;4BAAG,qCAAU,CAAC;;MACpB,2CAAQ;4BAAG,qCAAU,CAAC;;MACtB,wCAAK;4BAAG,qCAAU,CAAC;;MACnB,2CAAQ;4BAAG,qCAAU,CAAC","file":"position.ddc.js"}');
   // Exports:
   return {
     laminate__enums__position: laminate__enums__position

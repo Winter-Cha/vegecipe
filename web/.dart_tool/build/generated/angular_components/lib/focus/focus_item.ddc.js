@@ -57,6 +57,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus'], function(dart_sd
     __proto__: dart.getSetters(focus__focus_item.FocusItemDirective.__proto__),
     tabbable: core.bool
   }));
+  dart.setLibraryUri(focus__focus_item.FocusItemDirective, "package:angular_components/focus/focus_item.dart");
   dart.setFieldSignature(focus__focus_item.FocusItemDirective, () => ({
     __proto__: dart.getFields(focus__focus_item.FocusItemDirective.__proto__),
     role: dart.finalFieldType(core.String),
@@ -65,6 +66,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus'], function(dart_sd
   }));
   dart.trackLibraries("packages/angular_components/focus/focus_item.ddc", {
     "package:angular_components/focus/focus_item.dart": focus__focus_item
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_item.dart"],"names":[],"mappings":";;;;;;;;;;;;IAmBe;;;;;;IAON;;;;;;;YAIiC,qBAAc,OAAO;;YAGhD,KAAmB;AAC9B,UAAI,aAAa,6CAAgC,CAAC,MAAM,KAAK;AAC7D,UAAI,UAAU,IAAI,MAAM;AACtB,4BAAc,IAAI,CAAC,UAAU;;IAEjC;iBAGa,KAAU;AACrB,mBAAQ,aAAG,KAAK,IAAG,MAAM;IAC3B;;uDAtBmB,OAAmB,EAAE,IAA8B;IAK/D,cAAQ,GAAG;IAEZ,oBAAc,GAAG,4CAA0C,QAAO;IAN7D,WAAI,GAAG,IAAI,WAAJ,IAAI,GAAI;AACpB,kEAAM,OAAO;EAAC","file":"focus_item.ddc.js"}');
   // Exports:
   return {

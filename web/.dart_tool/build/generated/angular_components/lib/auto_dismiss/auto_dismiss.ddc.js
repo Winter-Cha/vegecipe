@@ -52,6 +52,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
     __proto__: dart.getSetters(auto_dismiss__auto_dismiss.AutoDismissDirective.__proto__),
     autoDismissable: core.bool
   }));
+  dart.setLibraryUri(auto_dismiss__auto_dismiss.AutoDismissDirective, "package:angular_components/auto_dismiss/auto_dismiss.dart");
   dart.setFieldSignature(auto_dismiss__auto_dismiss.AutoDismissDirective, () => ({
     __proto__: dart.getFields(auto_dismiss__auto_dismiss.AutoDismissDirective.__proto__),
     [_dismissEvents]: dart.finalFieldType(async.Stream),
@@ -61,6 +62,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
   }));
   dart.trackLibraries("packages/angular_components/auto_dismiss/auto_dismiss.ddc", {
     "package:angular_components/auto_dismiss/auto_dismiss.dart": auto_dismiss__auto_dismiss
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["auto_dismiss.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;YA2C8B,uBAAgB;;wBAIxB,CAAM;AACxB,4BAAgB,GAAG,CAAC;AAKpB,yBAAa,GAAG,sBAAgB;AAChC,0BAAc,MAAM,KAAK,eAAC,iCAAgB;AAG1C,iBAAK,kBAAkB,YAAC,cAAM,WAAK,IAAI,CAAC,iCAAgB;IAC1D;;YAMI,qBAAc,MAAM,CAAC,QAAC,CAAC,IAAsB,UAAjB,sBAAgB,gBAAK,mBAAa;IAAC;uBAEjD,CAAC;wBAAD;YAAO,oBAAa,GAAG;IAAK;;kEA5BzB,OAAmB;IAGnC,mBAAa,GAAG;IAChB,sBAAgB,GAAG;IAJuB,WAAK;IAC9C,oBAAc,GAAG,8CAAe,CAAC,OAAO;EAAC","file":"auto_dismiss.ddc.js"}');
   // Exports:
   return {

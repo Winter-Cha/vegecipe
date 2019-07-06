@@ -19,12 +19,14 @@ define(['dart_sdk', 'packages/angular_components/model/ui/highlighted_text_model
   }).prototype = highlighted_text__highlighted_text.HighlightedTextComponent.prototype;
   dart.addTypeTests(highlighted_text__highlighted_text.HighlightedTextComponent);
   const segments = Symbol("HighlightedTextComponent.segments");
+  dart.setLibraryUri(highlighted_text__highlighted_text.HighlightedTextComponent, "package:angular_components/highlighted_text/highlighted_text.dart");
   dart.setFieldSignature(highlighted_text__highlighted_text.HighlightedTextComponent, () => ({
     __proto__: dart.getFields(highlighted_text__highlighted_text.HighlightedTextComponent.__proto__),
     segments: dart.fieldType(ListOfHighlightedTextSegment())
   }));
   dart.trackLibraries("packages/angular_components/highlighted_text/highlighted_text.ddc", {
     "package:angular_components/highlighted_text/highlighted_text.dart": highlighted_text__highlighted_text
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["highlighted_text.dart"],"names":[],"mappings":";;;;;;;;;IA8B+B;;;;;;;;kBAAQ;EACvC","file":"highlighted_text.ddc.js"}');
   // Exports:
   return {

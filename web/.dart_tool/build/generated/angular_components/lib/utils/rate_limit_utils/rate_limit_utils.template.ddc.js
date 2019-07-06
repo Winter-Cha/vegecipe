@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/utils/rate_limit_utils/rate_limit_utils.template.ddc", {
     "package:angular_components/utils/rate_limit_utils/rate_limit_utils.template.dart": utils__rate_limit_utils__rate_limit_utils$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["rate_limit_utils.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"rate_limit_utils.template.ddc.js"}');
   // Exports:
   return {

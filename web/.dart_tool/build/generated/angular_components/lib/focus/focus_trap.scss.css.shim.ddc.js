@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/focus/focus_trap.scss.css.shim.ddc", {
     "package:angular_components/focus/focus_trap.scss.css.shim.dart": focus__focus_trap$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["focus_trap.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,4CAAM;YAAG,EAAC","file":"focus_trap.scss.css.shim.ddc.js"}');
   // Exports:
   return {

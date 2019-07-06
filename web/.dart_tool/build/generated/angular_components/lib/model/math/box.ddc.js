@@ -45,6 +45,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const right$ = Symbol("Box.right");
   const bottom$ = Symbol("Box.bottom");
   const left$ = Symbol("Box.left");
+  dart.setLibraryUri(model__math__box.Box, "package:angular_components/model/math/box.dart");
   dart.setFieldSignature(model__math__box.Box, () => ({
     __proto__: dart.getFields(model__math__box.Box.__proto__),
     top: dart.finalFieldType(core.int),
@@ -54,6 +55,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/angular_components/model/math/box.ddc", {
     "package:angular_components/model/math/box.dart": model__math__box
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["box.dart"],"names":[],"mappings":";;;;;;;IASY;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;;;QAEM,yCAAM;QAAQ,+CAAQ;QAAQ,kDAAS;QAAQ,4CAAO;IAAtD,UAAG,GAAH,GAAG;IAAW,YAAK,GAAL,KAAK;IAAW,aAAM,GAAN,MAAM;IAAW,WAAI,GAAJ,IAAI;EAAM","file":"box.ddc.js"}');
   // Exports:
   return {

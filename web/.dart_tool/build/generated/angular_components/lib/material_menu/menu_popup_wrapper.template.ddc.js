@@ -28,6 +28,7 @@ define(['dart_sdk', 'packages/angular/angular.template', 'packages/angular_compo
   };
   dart.trackLibraries("packages/angular_components/material_menu/menu_popup_wrapper.template.ddc", {
     "package:angular_components/material_menu/menu_popup_wrapper.template.dart": material_menu__menu_popup_wrapper$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["menu_popup_wrapper.template.dart"],"names":[],"mappings":";;;;;;;;;;;;MAYI,qDAAQ;YAAG;;;;;AAEb,kBAAI,qDAAQ,GAAE;AACZ;;AAEF,4DAAW;AAEX,IAAM,gCAAa;AACnB,IAAM,0CAAa;AACnB,IAAM,sDAAa;AACnB,IAAM,iDAAa;AACnB,IAAM,+DAAa;EACrB","file":"menu_popup_wrapper.template.ddc.js"}');
   // Exports:
   return {

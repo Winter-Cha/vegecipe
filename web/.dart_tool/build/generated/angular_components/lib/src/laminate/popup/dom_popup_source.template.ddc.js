@@ -53,6 +53,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface.template'
   dart.trackLibraries("packages/angular_components/src/laminate/popup/dom_popup_source.template.ddc", {
     "package:angular_components/src/laminate/popup/popup_source.template.dart": src__laminate__popup__popup_source$46template,
     "package:angular_components/src/laminate/popup/dom_popup_source.template.dart": src__laminate__popup__dom_popup_source$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["popup_source.template.dart","dom_popup_source.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;MASI,sDAAQ;YAAG;;;;;AAEb,kBAAI,sDAAQ,GAAE;AACZ;;AAEF,6DAAW;AAEX,IAAM,+CAAa;AACnB,IAAM,mDAAa;EACrB;;MCJI,0DAAQ;YAAG;;;;;;;AAEb,kBAAI,0DAAQ,GAAE;AACZ;;AAEF,iEAAW;AAEX,IAAO,kCAAe,CAAC,2EAAqB,EAAE,QAAC,EAAe,QAAK,gEAAqB,CAAC,EAAE;AAC3F,IAAO,uCAAoB,CAAC,2EAAqB,EAAE,sCACjD,oCAAK,kDAAQ;AAEf,IAAM,gCAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,mDAAa;AACnB,IAAM,2DAAa;EACrB","file":"dom_popup_source.template.ddc.js"}');
   // Exports:
   return {

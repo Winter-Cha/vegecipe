@@ -89,7 +89,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       this[_disposer].addDisposable(utils__disposer__disposer.Disposable, this[_domService].scheduleRead(dart.fn(() => {
         this[_readElement]();
         let newValue = this[_scrollingMove];
-        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed();
+        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 133, 14, "_buttonSize > 0");
         if (dart.test(this.atEnd)) {
           newValue = dart.notNull(newValue) - dart.notNull(this[_buttonSize]);
         }
@@ -108,7 +108,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       this[_disposer].addDisposable(utils__disposer__disposer.Disposable, this[_domService].scheduleRead(dart.fn(() => {
         this[_readElement]();
         let newValue = this[_scrollingMove];
-        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed();
+        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 155, 14, "_buttonSize > 0");
         if (dart.test(this.atStart)) {
           newValue = dart.notNull(newValue) - dart.notNull(this[_buttonSize]);
         }
@@ -141,7 +141,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     }
     [_readElement](opts) {
       let windowResize = opts && 'windowResize' in opts ? opts.windowResize : false;
-      if (!dart.test(this[_domService].isReadingDom)) dart.assertFailed();
+      if (!dart.test(this[_domService].isReadingDom)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 189, 12, "_domService.isReadingDom");
       this[_clientSize] = this.currentClientSize;
       this[_scrollSize] = this.currentScrollSize;
       if (dart.dtest(windowResize) && !dart.test(this.isScrollable) && this[_transform] !== 0) {
@@ -221,6 +221,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     __proto__: dart.getSetters(scorecard__scorecard_bar.ScorecardBarDirective.__proto__),
     isVertical: dart.dynamic
   }));
+  dart.setLibraryUri(scorecard__scorecard_bar.ScorecardBarDirective, "package:angular_components/scorecard/scorecard_bar.dart");
   dart.setFieldSignature(scorecard__scorecard_bar.ScorecardBarDirective, () => ({
     __proto__: dart.getFields(scorecard__scorecard_bar.ScorecardBarDirective.__proto__),
     [_refreshController]: dart.finalFieldType(StreamControllerOfbool()),
@@ -237,6 +238,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
   }));
   dart.trackLibraries("packages/angular_components/scorecard/scorecard_bar.ddc", {
     "package:angular_components/scorecard/scorecard_bar.dart": scorecard__scorecard_bar
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["scorecard_bar.dart"],"names":[],"mappings":"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","file":"scorecard_bar.ddc.js"}');
   // Exports:
   return {

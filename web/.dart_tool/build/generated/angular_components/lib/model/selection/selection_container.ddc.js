@@ -84,6 +84,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       componentRenderer: dart.fnType(core.Type, [dart.dynamic]),
       factoryRenderer: dart.fnType(src__core__linker__component_factory.ComponentFactory, [T])
     }));
+    dart.setLibraryUri(SelectionContainer, "package:angular_components/model/selection/selection_container.dart");
     dart.setFieldSignature(SelectionContainer, () => ({
       __proto__: dart.getFields(SelectionContainer.__proto__),
       [_selection]: dart.fieldType(SelectionModelOfT()),
@@ -144,6 +145,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       value: T,
       itemRenderer: dart.fnType(core.String, [T])
     }));
+    dart.setLibraryUri(SelectionItem, "package:angular_components/model/selection/selection_container.dart");
     dart.setFieldSignature(SelectionItem, () => ({
       __proto__: dart.getFields(SelectionItem.__proto__),
       [_selection]: dart.fieldType(SelectionModelOfT()),
@@ -156,7 +158,8 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
   dart.addTypeTests(model__selection__selection_container.SelectionItem, _is_SelectionItem_default);
   dart.trackLibraries("packages/angular_components/model/selection/selection_container.ddc", {
     "package:angular_components/model/selection/selection_container.dart": model__selection__selection_container
-  }, '{"version":3,"sourceRoot":"","sources":["selection_container.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;cAiBqC,iBAAU;;oBAC/B,KAAuB;mCAAL;AAC9B,wBAAU,GAAG,KAAK;MACpB;;cAImC,eAAQ;;kBAC/B,KAAyB;qCAAL;AAC9B,sBAAQ,GAAG,KAAK;MAClB;;cAMoC,oBAAa;;uBAEhC,KAAqB;AACpC,2BAAa,GAAG,KAAK;MACvB;;cAM2C,yBAAkB;;4BAIvC,KAAuB;AAC3C,gCAAkB,GAAG,KAAK;MAC5B;;cAMwD,uBAAgB;;0BAEpD,KAAsC;AACxD,8BAAgB,GAAG,KAAK;MAC1B;;;MA3CkB,gBAAU;MAOR,cAAQ;MAQZ,mBAAa;MAUX,wBAAkB;MAYH,sBAAgB;IAOnD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cAMqC,iBAAU;;oBAC/B,KAAuB;mCAAL;AAC9B,wBAAU,GAAG,KAAK;MACpB;;cAIe,aAAM;;gBACX,KAAO;iBAAL;AACV,oBAAM,GAAG,KAAK;MAChB;;cAKoC,oBAAa;;uBAEhC,KAAqB;AACpC,2BAAa,GAAG,KAAK;MACvB;;;MApBkB,gBAAU;MAO1B,YAAM;MAOQ,mBAAa;IAO/B","file":"selection_container.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["selection_container.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;cAiBqC,iBAAU;;oBAC/B,KAAuB;mCAAL;AAC9B,wBAAU,GAAG,KAAK;MACpB;;cAImC,eAAQ;;kBAC/B,KAAyB;qCAAL;AAC9B,sBAAQ,GAAG,KAAK;MAClB;;cAMoC,oBAAa;;uBAEhC,KAAqB;AACpC,2BAAa,GAAG,KAAK;MACvB;;cAM2C,yBAAkB;;4BAIvC,KAAuB;AAC3C,gCAAkB,GAAG,KAAK;MAC5B;;cAMwD,uBAAgB;;0BAEpD,KAAsC;AACxD,8BAAgB,GAAG,KAAK;MAC1B;;;MA3CkB,gBAAU;MAOR,cAAQ;MAQZ,mBAAa;MAUX,wBAAkB;MAYH,sBAAgB;IAOnD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cAMqC,iBAAU;;oBAC/B,KAAuB;mCAAL;AAC9B,wBAAU,GAAG,KAAK;MACpB;;cAIe,aAAM;;gBACX,KAAO;iBAAL;AACV,oBAAM,GAAG,KAAK;MAChB;;cAKoC,oBAAa;;uBAEhC,KAAqB;AACpC,2BAAa,GAAG,KAAK;MACvB;;;MApBkB,gBAAU;MAO1B,YAAM;MAOQ,mBAAa;IAO/B","file":"selection_container.ddc.js"}');
   // Exports:
   return {
     model__selection__selection_container: model__selection__selection_container

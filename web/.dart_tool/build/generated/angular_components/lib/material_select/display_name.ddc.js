@@ -16,6 +16,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/display_name'], functi
   });
   dart.trackLibraries("packages/angular_components/material_select/display_name.ddc", {
     "package:angular_components/material_select/display_name.dart": material_select__display_name
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["display_name.dart"],"names":[],"mappings":";;;;;;;;wEAWkC,WAAuB;AACvD,QAAI,WAAW,IAAI,MAAM,WAAW,aAAa,GAAG,kDAAoB;EAC1E;;MAEM,kDAAoB;YACtB,SAAC,IAAY,gDAAM,IAAI,eAAmC","file":"display_name.ddc.js"}');
   // Exports:
   return {

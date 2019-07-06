@@ -26,6 +26,7 @@ define(['dart_sdk', 'packages/angular_components/material_expansionpanel/materia
   };
   dart.trackLibraries("packages/angular_components/material_expansionpanel/material_expansionpanel_set.template.ddc", {
     "package:angular_components/material_expansionpanel/material_expansionpanel_set.template.dart": material_expansionpanel__material_expansionpanel_set$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_expansionpanel_set.template.dart"],"names":[],"mappings":";;;;;;;;;;;MAWI,wEAAQ;YAAG;;;;;AAEb,kBAAI,wEAAQ,GAAE;AACZ;;AAEF,+EAAW;AAEX,IAAM,yEAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,kDAAa;EACrB","file":"material_expansionpanel_set.template.ddc.js"}');
   // Exports:
   return {

@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_tab/fixed_material_tab_strip.scss.css.shim.ddc", {
     "package:angular_components/material_tab/fixed_material_tab_strip.scss.css.shim.dart": material_tab__fixed_material_tab_strip$46scss$46css$46shim
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["fixed_material_tab_strip.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;MAAoB,iEAAM;YAAG,EAAC","file":"fixed_material_tab_strip.scss.css.shim.ddc.js"}');
   // Exports:
   return {

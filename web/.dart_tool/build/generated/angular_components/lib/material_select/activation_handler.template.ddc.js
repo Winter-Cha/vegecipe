@@ -8,6 +8,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   dart.trackLibraries("packages/angular_components/material_select/activation_handler.template.ddc", {
     "package:angular_components/material_select/activation_handler.template.dart": material_select__activation_handler$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["activation_handler.template.dart"],"names":[],"mappings":";;;;;;;EAQsB","file":"activation_handler.template.ddc.js"}');
   // Exports:
   return {

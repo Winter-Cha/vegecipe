@@ -11,6 +11,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/angular_components/material_ripple/material_ripple.scss.css.ddc", {
     "package:angular_components/material_ripple/material_ripple.scss.css.dart": material_ripple__material_ripple$46scss$46css
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["material_ripple.scss.css.dart"],"names":[],"mappings":";;;;;;;MAAoB,oDAAM;YAAG,EAAC","file":"material_ripple.scss.css.ddc.js"}');
   // Exports:
   return {

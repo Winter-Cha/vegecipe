@@ -30,6 +30,7 @@ define(['dart_sdk', 'packages/angular_components/material_datepicker/calendar.te
   };
   dart.trackLibraries("packages/angular_components/material_datepicker/date_input.template.ddc", {
     "package:angular_components/material_datepicker/date_input.template.dart": material_datepicker__date_input$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["date_input.template.dart"],"names":[],"mappings":";;;;;;;;;;;;;MAaI,mDAAQ;YAAG;;;;;AAEb,kBAAI,mDAAQ,GAAE;AACZ;;AAEF,0DAAW;AAEX,IAAM,sDAAa;AACnB,IAAM,oDAAa;AACnB,IAAM,gCAAa;AACnB,IAAM,uDAAa;AACnB,IAAM,0CAAa;AACnB,IAAM,kDAAa;EACrB","file":"date_input.template.ddc.js"}');
   // Exports:
   return {

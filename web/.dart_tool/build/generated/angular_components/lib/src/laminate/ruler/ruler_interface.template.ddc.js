@@ -22,6 +22,7 @@ define(['dart_sdk', 'packages/angular_components/laminate/enums/position.templat
   };
   dart.trackLibraries("packages/angular_components/src/laminate/ruler/ruler_interface.template.ddc", {
     "package:angular_components/src/laminate/ruler/ruler_interface.template.dart": src__laminate__ruler__ruler_interface$46template
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":["ruler_interface.template.dart"],"names":[],"mappings":";;;;;;;;;MASI,yDAAQ;YAAG;;;;;AAEb,kBAAI,yDAAQ,GAAE;AACZ;;AAEF,gEAAW;AAEX,IAAM,kDAAa;AACnB,IAAM,oDAAa;EACrB","file":"ruler_interface.template.ddc.js"}');
   // Exports:
   return {
