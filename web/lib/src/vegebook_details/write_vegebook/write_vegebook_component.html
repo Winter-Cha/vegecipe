@@ -1,3 +1,5 @@
+
+
 <div class="container" [class.visible]="contentVisible">
   <div class="landscape-container">
     <div class="landscape-placeholder">
@@ -9,41 +11,24 @@
 
   <form (ngSubmit)="onSubmit()" #bookForm="ngForm">
 
-    <material-button class="blue add-landscape-image" 
-                      raised
-                      (click)="landscapeImagefileInput.click()">
+    <material-button class="blue add-landscape-image" raised (click)="landscapeImagefileInput.click()">
     Add Landscape image
     </material-button>
-    <material-button class="red save-btn" 
-                    raised
-                    type="submit"
-                    [disabled]="!bookForm.form.valid"
-                    (click)="onSubmit()"
-                    #submit="ngForm"
-                    >
-    Save
-    </material-button>
-    <input hidden 
-          #landscapeImagefileInput
-          type="file" 
-          required
-          (change)="onLandscapeImageFileSelected($event)" 
-          accept="image/png, image/jpeg">
+    
+    <input hidden type="text" required #lImage="ngForm" [(ngModel)]="landscapeImageSrc" ngControl="lImage" />
+    <input hidden type="file" #landscapeImagefileInput required (change)="onLandscapeImageFileSelected($event)" accept="image/png, image/jpeg">
 
     <div class="vegebook-header">
       <div class="vegebook-poster">
           <div class="fallback-icon">
               <img src="images/fallback-icon.svg" [alt]="'Fallback image'"/>
           </div>
-        
             <img #posterImage class="poster-actual" [src]="posterImageSrc"/>
-        
-            <material-button class="blue add-post-image" 
-                      raised
-                      (click)="posterImagefileInput.click()">
-            Add post
+            <material-button class="blue add-post-image" raised (click)="posterImagefileInput.click()">
+              Add post
             </material-button>
-            <input hidden (change)="onPosterImageFileSelected($event)" #posterImagefileInput type="file" accept="image/png, image/jpeg">
+            <input hidden type="text" required [(ngModel)]="posterImageSrc" #pImage="ngForm" ngControl="pImage" >
+            <input hidden type="file" (change)="onPosterImageFileSelected($event)" #posterImagefileInput accept="image/png, image/jpeg">
       </div>
 
       <div class="vegebook-information">
@@ -62,27 +47,19 @@
         </material-input>
         <div class="body">
           <p class="writtenBy" >
-            <strong>{{ messages.writtenBy }}</strong>: {{ writer }}
+            <strong>{{ messages.writtenBy }}</strong>: {{ vegeBook.writtenBy }}
           </p>
         </div>
+        <material-button class="red save-btn" raised type="submit" [disabled]="!bookForm.form.valid" (click)="onSubmit()" #submit="ngForm">
+            Save
+        </material-button>
       </div>
     </div>
     
-    
     <div class="section" >
       <div class="centered-content">
-        <input 
-          hidden
-          type="text" 
-          [(ngModel)]="vegeBook.content"
-          #content="ngForm"
-          ngControl="content"
-          id="editableInput"
-          required />
-        
-        <div class="editable content">
-        </div>
-        
+        <input hidden type="text" [(ngModel)]="vegeBook.content" #content="ngForm" ngControl="content" id="editableInput" required />
+        <div class="editable content"></div>
       </div>
     </div>
   </form>

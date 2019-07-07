@@ -53,10 +53,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   ImageElement posterImageElement;
 
   var mediumEditor = null;
-
-  String title = "";
   String htmlStr = "";
-  String writer = "";
 
   String landscapeImageSrc = "";
   Object selectedLImage = null;
@@ -74,7 +71,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    this.writer = fb.auth().currentUser?.displayName;
+    this.vegeBook.writtenBy = fb.auth().currentUser?.displayName;
     _navigatedFromApp = previous != null;
     _animateContentIntoView();
     _creatMediumEditor();
@@ -82,9 +79,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   @override
   void ngOnDestroy() => _vegeBookDetailsSubscription?.cancel();
-
-  void _animateContentIntoView() =>
-      Timer(Duration.zero, () => contentVisible = true);
 
   void _creatMediumEditor() =>
       Timer(Duration.zero, () {
@@ -96,7 +90,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
             )
           );
           mediumEditor.subscribe('editableInput',  (event,editable) {
-              print("여기서 버튼 세팅");
               vegeBook.content = mediumEditor.getContent();
             });
         });
@@ -111,10 +104,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
       RoutePaths.vegeBook.toUrl(),
       replace: true,
     );
-  }
-  void onChangeContent(dynamic event){
-
-    print("!111111");
   }
 
   void onLandscapeImageFileSelected(dynamic event){
@@ -187,38 +176,42 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
       print("Error in uploading to storage: $e");
     }
 
-    vegeBook = VegeBook(
-      id: '',
-      title: '',
-      content: '',
-      images: VegeBookImageData(
-        landscapeBig: landscapeBig,
-        landscapeSmall: null,
-        portraitSmall: null,
-        portraitMedium: portraitMedium,
-        portraitLarge: null,
-      ),
-      writtenBy: fb.auth().currentUser?.displayName,
-      writerPhotoUrl: fb.auth().currentUser?.photoURL,
+    this.vegeBook.images = VegeBookImageData(
+      landscapeBig: landscapeBig,
+      landscapeSmall: null,
+      portraitSmall: null,
+      portraitMedium: portraitMedium,
+      portraitLarge: null,
     );
+    this.vegeBook.writtenBy = fb.auth().currentUser?.displayName;
+    this.vegeBook.writerPhotoUrl = fb.auth().currentUser?.photoURL;
 
     DocumentReference doc = fb.firestore().collection('vegebook').doc();
     var vegeBookMap  = {
                   //TODO : id field 만들기
                   'id': doc.id,
                   'images': {
-                    'landscapeBig': vegeBook.images.landscapeBig,
-                    'portraitMedium': vegeBook.images.portraitMedium,
+                    'landscapeBig': this.vegeBook.images.landscapeBig,
+                    'portraitMedium': this.vegeBook.images.portraitMedium,
                   },
-                  'content': this.htmlStr,
-                  'title': this.title,
-                  'writtenBy': vegeBook.writtenBy,
-                  'writerPhotoUrl': vegeBook.writerPhotoUrl,
+                  'content': mediumEditor.getContent(),
+                  'title': this.vegeBook.title,
+                  'writtenBy': this.vegeBook.writtenBy,
+                  'writerPhotoUrl': this.vegeBook.writerPhotoUrl,
                   'reportingDate': DateTime.now(),
                 };
     await doc.set(vegeBookMap).then((doc) => print(doc));
 
+    vegeBook = vegeBookByIdSelector(_store.state, doc.id);
+
+    if (vegeBook != null) {
+      _animateContentIntoView();
+      _store.dispatch(RefreshVegeBookAction());
+    }
   }
+
+  void _animateContentIntoView() =>
+    Timer(Duration.zero, () => contentVisible = true);
 
   void blur(){
 

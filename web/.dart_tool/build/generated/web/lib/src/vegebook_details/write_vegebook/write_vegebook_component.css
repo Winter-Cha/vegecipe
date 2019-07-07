@@ -293,6 +293,13 @@ material-fab.no-mixin-red {
   padding: 20px;
 }
 
+.save-btn {
+  position: relative;
+  float: right;
+  z-index: 2;
+  margin-right: 10px;
+}
+
 .add-landscape-image {
   position: relative;
   float: right;
