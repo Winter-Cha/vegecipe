@@ -28,6 +28,7 @@ class VegeBookMiddleware extends MiddlewareClass<AppState> {
       try {
 
         QuerySnapshot latestVegeBook = (await fs.collection('vegebook').orderBy('reportingDate', 'desc').get()) ;
+        print("_fetchLatestVegeBook :" + latestVegeBook.toString());
         next(ReceivedInTheatersVegeBookAction(VegeBookParser.parse(latestVegeBook)));
       } catch (e) {
         next(ErrorLoadingVegeBookAction());

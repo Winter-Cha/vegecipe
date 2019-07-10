@@ -16,7 +16,7 @@ import 'package:web/src/vegebook/vegebook_page_component.template.dart'
 import 'package:web/src/vegebook_details/vegebook_details_component.template.dart'
     deferred as vegebook_details;
 import 'package:web/src/vegebook_details/write_vegebook/write_vegebook_component.template.dart'
-    as write_vegebook;
+    deferred as write_vegebook;
 
 class RoutePaths {
 
@@ -35,7 +35,7 @@ class RoutePaths {
     //additionalData: EventListType.vegeNews,
   );
 
-  static final vegeBookDetails = RoutePath(path: 'vegebook/:vegeBookId');
+  static final vegeBookDetails = RoutePath(path: 'writebook/:vegeBookId');
   static final writeBook = RoutePath(path: 'writebook');
 
   // now in theaters <<
@@ -79,9 +79,9 @@ class Routes {
     RouteDefinition.defer(
       routePath: RoutePaths.vegeBookDetails,
       loader: () {
-        return vegebook_details
+        return write_vegebook
             .loadLibrary()
-            .then((_) => vegebook_details.VegeBookDetailsComponentNgFactory);
+            .then((_) => write_vegebook.WriteVegeBookComponentNgFactory);
       },
     ),
     RouteDefinition(
