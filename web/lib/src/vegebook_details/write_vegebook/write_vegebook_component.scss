@@ -37,22 +37,6 @@
     opacity: 1;
   }
 }
-
-.container {
-  @include full-size-overlay;
-
-  bottom: unset;
-  background: #f0f0f0;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0;
-  transition: opacity 500ms ease;
-
-  &.visible {
-    opacity: 1;
-  }
-}
-
 .back {
   position: absolute;
   top: 0;
@@ -64,11 +48,38 @@
   padding: 20px;
 }
 
+.container {
+  @include full-size-overlay;
+
+  bottom: unset;
+  background: #f0f0f0;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
 .save-btn{
-  position: relative;
+  position: relative∂;
   float: right;
-  z-index: 2;
+  color: #ffffff;
+  background-color: #db4437;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+  padding: 0.7em 0.57em;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
   margin-right: 10px;
+}
+.save-btn:disabled{
+  color: gray;
+  background-color: #f0f0f0;
 }
 
 .add-landscape-image{
@@ -160,7 +171,7 @@
 }
 
 .centered-content {
-  height: 300px;
+  // height: 300px;
   margin :20px;
 }
 
@@ -207,10 +218,7 @@
 }
 
 .content {
-  overflow-y: scroll;
-  white-space: pre;
-  max-height: 300px;
-
+  min-height: 300px;
 }
 
 @include screen-size-nexus-5x {
@@ -244,7 +252,6 @@
   }
 
   .centered-content {
-    height: 350px;
     margin: 20px;
   }
 
@@ -282,7 +289,7 @@
   }
   .centered-content {
     width: 80%;
-    height: 400px;
+    // height: 400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -300,10 +307,8 @@
     }
   }
 
-  .content {
-    overflow-y: scroll;
+  .html-content{
     white-space: pre;
-    max-height: 400px;
   }
 }
 
@@ -332,7 +337,7 @@
 
   .centered-content {
     width: 70%;
-    height: 400px;
+    // height: 400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -350,9 +355,4 @@
     }
   }
 
-  .content {
-    overflow-y: scroll;
-    white-space: pre;
-    max-height: 400px;
-  }
 }

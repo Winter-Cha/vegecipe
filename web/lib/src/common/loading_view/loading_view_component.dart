@@ -48,12 +48,10 @@ class LoadingViewComponent implements OnDestroy {
   }
 
   bool get loadingContentVisible => _status == LoadingStatus.loading;
-  bool get loadingContentPresent =>
-      loadingContentVisible || !_clearOutInvisibleContent;
+  bool get loadingContentPresent => loadingContentVisible || !_clearOutInvisibleContent;
 
   bool get successContentVisible => _status == LoadingStatus.success;
-  bool get successContentPresent =>
-      successContentVisible || !_clearOutInvisibleContent;
+  bool get successContentPresent => successContentVisible || !_clearOutInvisibleContent;
 
   bool get errorContentVisible =>
       _status == LoadingStatus.error ||

@@ -28,8 +28,7 @@ class EventsPageComponent implements OnActivate {
 
   EventListType _listType;
 
-  EventsPageViewModel get viewModel =>
-      EventsPageViewModel.fromStore(_store, _listType);
+  EventsPageViewModel get viewModel => EventsPageViewModel.fromStore(_store, _listType);
 
   String get eventTypeTitle => _listType == EventListType.nowInTheaters
       ? messages.nowInTheaters

@@ -10,6 +10,7 @@ import 'package:core/core.dart';
 import 'package:firebase/firestore.dart';
 import 'package:redux/redux.dart';
 import 'package:web/src/common/content_rating/content_rating_component.dart';
+import 'package:web/src/common/loading_view/loading_whole_view_component.dart';
 import 'package:web/src/common/vegebook_poster/vegebook_poster_component.dart';
 import 'package:web/src/routes.dart';
 import 'package:web/src/vegebook_details/landscape_image/vegebook_landscape_image_component.dart';
@@ -25,6 +26,7 @@ import 'package:web/src/common/medium_editor/medium_editor.dart';
   templateUrl: 'write_vegebook_component.html',
   directives: [
     formDirectives,
+    LoadingWholeViewComponent,
     ContentRatingComponent,
     VegeBookLandscapeImageComponent,
     VegeBookPosterComponent,
@@ -41,6 +43,8 @@ import 'package:web/src/common/medium_editor/medium_editor.dart';
   pipes: [DatePipe],
 )
 class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
+
+
   WriteVegeBookComponent(this._store, this._router, this.messages);
   final Store<AppState> _store;
   final Router _router;
@@ -66,17 +70,26 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   bool loading;
   bool _navigatedFromApp = false;
 
-  bool contentVisible = false;     // show details 
+  bool contentVisible = false;    // show details 
   bool editable = false;          // create or modify details
+  bool editMode = false;            
+
+  LoadingStatus saveStatus = LoadingStatus.idle;
 
   StreamSubscription<AppState> _vegeBookDetailsSubscription;
 
   VegeBook vegeBook;
+  VegeBook copyBook;
 
   @override
   void ngOnInit() {
     // Reset the scroll position in case this page was previously opened.
     window.scrollTo(0, 0);
+
+    // Timer(
+    //   const Duration(milliseconds: 3000),
+    //   () => saveStatus = LoadingStatus.error,
+    // );
   }
 
   @override
@@ -216,8 +229,63 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
       reader.readAsDataUrl(event.target.files[0]);
     }
   }
+  void onSubmit() => _saveSubmit();
 
-  Future onSubmit() async {
+  void _saveSubmit() async {
+
+    saveStatus = LoadingStatus.loading;
+
+    if (editMode) {
+      await _updateVegeBook();
+    }else{
+      await _createVegeBook();
+    }
+    _store.dispatch(RefreshVegeBookAction());
+    saveStatus = LoadingStatus.idle;
+
+  }
+
+  void _updateVegeBook() async{
+    DocumentReference doc = fb.firestore().collection('vegebook').doc(this.copyBook.id);
+    var vegeBookMap  = {
+                  //TODO : id field 만들기
+                  'id': doc.id,
+                  'content': mediumEditor.getContent(),
+                  'title': this.copyBook.title,
+                  'images': {
+                    'landscapeBig': this.copyBook.images.landscapeBig,
+                    'portraitMedium': this.copyBook.images.portraitMedium,
+                  },
+                  'writtenBy': this.copyBook.writtenBy,
+                  'writerPhotoUrl': this.copyBook.writerPhotoUrl,
+                  'reportingDate': this.copyBook.reportingDate,
+                  'lastModifiedDate': DateTime.now(),
+                };
+    await doc.set(vegeBookMap).then((onValue){
+      if (this.copyBook != null) {
+        this.vegeBook = VegeBook();
+        this.vegeBook.id = this.copyBook.id;
+        this.vegeBook.title = this.copyBook.title;
+        this.vegeBook.writtenBy = this.copyBook.writtenBy;
+        this.vegeBook.reportingDate = this.copyBook.reportingDate;
+        this.vegeBook.content = this.copyBook.content;
+        this.vegeBook.writerPhotoUrl = this.copyBook.writerPhotoUrl;
+        this.vegeBook.images = VegeBookImageData(
+          landscapeBig: this.copyBook.images.landscapeBig, 
+          landscapeSmall: null, 
+          portraitLarge: null, 
+          portraitMedium: this.copyBook.images.portraitMedium, 
+          portraitSmall: null);
+        _animateContentIntoView();
+      }
+    })
+    .catchError((onError){
+      // TODO
+    });
+
+  }
+
+  void _createVegeBook() async {
     fb.StorageReference stRef = fb.storage().ref("vegebook");
     var landscapeBig = '';
     var portraitMedium = '';
@@ -234,6 +302,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
+
     try {
       File pImgFile = this.selectedPImage;
 
@@ -260,6 +329,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
     this.vegeBook.writerPhotoUrl = fb.auth().currentUser?.photoURL;
 
     DocumentReference doc = fb.firestore().collection('vegebook').doc();
+    this.vegeBook.id = doc.id;
     var vegeBookMap  = {
                   //TODO : id field 만들기
                   'id': doc.id,
@@ -273,21 +343,67 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
                   'writerPhotoUrl': this.vegeBook.writerPhotoUrl,
                   'reportingDate': DateTime.now(),
                 };
-    await doc.set(vegeBookMap).then((doc) => print(doc));
-    // 여기에서 저장한 vegeBook을 못 찾아 옵니다.
-    vegeBook = vegeBookByIdSelector(_store.state, doc.id);
-    _store.dispatch(RefreshVegeBookAction());
-    print(vegeBook);
-
-    if (vegeBook != null) {
-      _animateContentIntoView();
-    }
-    goBack();
-
+    await doc.set(vegeBookMap).then((onValue){
+      if (this.vegeBook != null) {
+        print("save success!");
+        _animateContentIntoView();
+      }
+    })
+    .catchError((onError){
+      // TODO
+    });
+    
   }
 
-  void _animateContentIntoView() => Timer(Duration.zero, () => contentVisible = true);
-  void _animateContentIntoEdit() => Timer(Duration.zero, () => editable = true);
+
+  void goEdit () {
+    // 제목이랑 글만 바꾸게 만들어 줍시다.
+
+    // 사본을 만들어야 합니다.
+    this.copyBook = VegeBook();
+    this.copyBook.id = this.vegeBook.id;
+    this.copyBook.title = this.vegeBook.title;
+    this.copyBook.writtenBy = this.vegeBook.writtenBy;
+    this.copyBook.reportingDate = this.vegeBook.reportingDate;
+    this.copyBook.content = this.vegeBook.content;
+    this.copyBook.writerPhotoUrl = this.vegeBook.writerPhotoUrl;
+    this.copyBook.images = VegeBookImageData(
+          landscapeBig: this.vegeBook.images.landscapeBig, 
+          landscapeSmall: null, 
+          portraitLarge: null, 
+          portraitMedium: this.vegeBook.images.portraitMedium, 
+          portraitSmall: null);
+
+    this.editMode = true;
+    _animateContentIntoEdit();
+    _setEdit();
+  }
+
+  void _setEdit() =>
+      Timer(Duration.zero, () {
+          mediumEditor = new MediumEditor( 
+            document.querySelector('.editable'),
+            options: new MediumEditorOptions(
+              placeholder: new PlaceHolderOptions(text: 'Edit me!', hideOnClick: true),
+              toolbar: new Toolbar(buttons: ['bold', 'italic', 'underline', 'anchor','h1', 'h2', 'h3']),
+            )
+          );
+          mediumEditor.subscribe('editableInput',  (event,editable) {
+              copyBook.content = mediumEditor.getContent();
+            });
+          mediumEditor.setContent(this.copyBook.content);
+
+          this.landscapeImageSrc = this.copyBook.images.landscapeBig;
+          landscapeImageElement.classes.add('loaded');
+          this.posterImageSrc = this.copyBook.images.portraitMedium;
+          posterImageElement.classes.add('loaded');
+
+
+        });
+
+
+  void _animateContentIntoView() => Timer(Duration.zero, () { editable = false; contentVisible = true;});
+  void _animateContentIntoEdit() => Timer(Duration.zero, () { editable = true; contentVisible = false;});
 
   void blur(){
 
@@ -296,5 +412,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   void input(){
 
   }
+
 
 }
