@@ -1525,7 +1525,7 @@ define(['dart_sdk'], function(dart_sdk) {
       } else {
         let path = uri.toFilePath();
         let lastIndex = path.length - 1;
-        if (!(path[$_get](lastIndex) === "/" || path[$_get](lastIndex) === "\\")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/path/path.dart", 99, 12, "path[lastIndex] == '/' || path[lastIndex] == '\\\\'");
+        if (!(path[$_get](lastIndex) === "/" || path[$_get](lastIndex) === "\\")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/path/path.dart", 99, 12, "path[lastIndex] == '/' || path[lastIndex] == '\\\\'");
         path$._current = lastIndex === 0 ? path : path[$substring](0, lastIndex);
         return path$._current;
       }

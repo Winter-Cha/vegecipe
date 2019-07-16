@@ -116,7 +116,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       } else if (src__core__linker__element_ref.ElementRef.is(element)) {
         this[_focusableItem] = new focus__focus.RootFocusable.new(html.Element._check(element.nativeElement));
       } else {
-        if (!(element == null)) dart.assertFailed("Warning expansion panel content has a #focus" + "child which is not an Element, or Focusable", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_expansionpanel/material_expansionpanel.dart", 130, 11, "element == null");
+        if (!(element == null)) dart.assertFailed("Warning expansion panel content has a #focus" + "child which is not an Element, or Focusable", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_expansionpanel/material_expansionpanel.dart", 130, 11, "element == null");
       }
     }
     set mainPanel(mainPanel) {

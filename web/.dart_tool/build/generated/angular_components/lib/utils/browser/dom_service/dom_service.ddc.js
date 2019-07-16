@@ -122,7 +122,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
         if (highResTimer == null) {
           highResTimer = new core.DateTime.now().millisecondsSinceEpoch;
         }
-        if (!(this[_nextFrameCompleter] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/dom_service/dom_service.dart", 162, 14, "_nextFrameCompleter != null");
+        if (!(this[_nextFrameCompleter] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/dom_service/dom_service.dart", 162, 14, "_nextFrameCompleter != null");
         let completer = this[_nextFrameCompleter];
         this[_window][$cancelAnimationFrame](this[_nextFrameId]);
         this[_nextFrameFuture] = null;
@@ -133,7 +133,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
     }
     get nextFrame() {
       if (this[_nextFrameFuture] == null) {
-        if (!(this[_nextFrameCompleter] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/dom_service/dom_service.dart", 178, 14, "_nextFrameCompleter == null");
+        if (!(this[_nextFrameCompleter] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/dom_service/dom_service.dart", 178, 14, "_nextFrameCompleter == null");
         let completer = CompleterOfnum().sync();
         this[_nextFrameCompleter] = completer;
         this[_ngZone].runOutsideAngular(core.Null, dart.fn(() => {
@@ -194,7 +194,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
       return new src__utils__async__zoned_async.ZonedFuture.new(completer.future, dart.gbind(dart.bind(this[_ngZone], 'runOutsideAngular'), dart.dynamic));
     }
     [_processQueues]() {
-      if (!(this[_state] === utils__browser__dom_service__dom_service.DomServiceState.Idle)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/dom_service/dom_service.dart", 279, 12, "_state == DomServiceState.Idle");
+      if (!(this[_state] === utils__browser__dom_service__dom_service.DomServiceState.Idle)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/dom_service/dom_service.dart", 279, 12, "_state == DomServiceState.Idle");
       if (dart.test(this[_domReadQueue][$isEmpty]) && dart.test(this[_domWriteQueue][$isEmpty])) {
         this[_scheduledProcessQueue] = false;
         return;
@@ -222,7 +222,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
         if (fn == null) continue;
         fn();
       }
-      if (!(queue[$length] == previousLength)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/dom_service/dom_service.dart", 323, 12, "queue.length == previousLength");
+      if (!(queue[$length] == previousLength)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/dom_service/dom_service.dart", 323, 12, "queue.length == previousLength");
       queue[$clear]();
       return previousLength;
     }
@@ -520,7 +520,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/async/async_update_sc
     this[_fn] = fn;
     this[_callback] = callback;
     this[_framesToStabilize] = framesToStabilize;
-    if (!(dart.notNull(this[_framesToStabilize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/dom_service/dom_service.dart", 552, 12, "_framesToStabilize > 0");
+    if (!(dart.notNull(this[_framesToStabilize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/dom_service/dom_service.dart", 552, 12, "_framesToStabilize > 0");
   }).prototype = utils__browser__dom_service__dom_service._ChangeTracker.prototype;
   dart.addTypeTests(utils__browser__dom_service__dom_service._ChangeTracker);
   dart.setMethodSignature(utils__browser__dom_service__dom_service._ChangeTracker, () => ({

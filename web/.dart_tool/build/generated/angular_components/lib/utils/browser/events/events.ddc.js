@@ -68,9 +68,9 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       t == null ? utils__browser__events__events.enableNewTriggerLogic = true : t;
     }
     controller = StreamControllerOfEvent().broadcast({sync: true, onListen: dart.fn(() => {
-        if (!(clickListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 76, 16, "clickListener == null");
-        if (!(mouseDownListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 77, 16, "mouseDownListener == null");
-        if (!(mouseUpListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 78, 16, "mouseUpListener == null");
+        if (!(clickListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/events/events.dart", 76, 16, "clickListener == null");
+        if (!(mouseDownListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/events/events.dart", 77, 16, "mouseDownListener == null");
+        if (!(mouseUpListener == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/events/events.dart", 78, 16, "mouseUpListener == null");
         let lastEvent = null;
         let lastDownEvent = null;
         listener = dart.fn(e => {
@@ -127,7 +127,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     return controller.stream;
   };
   utils__browser__events__events.onResize = function(element) {
-    if (!dart.test(utils__browser__feature_detector__feature_detector.supportsResizeObserver)) dart.assertFailed("ResizeObserver support is required", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/browser/events/events.dart", 169, 10, "supportsResizeObserver");
+    if (!dart.test(utils__browser__feature_detector__feature_detector.supportsResizeObserver)) dart.assertFailed("ResizeObserver support is required", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/browser/events/events.dart", 169, 10, "supportsResizeObserver");
     let controller = null;
     let observer = null;
     controller = StreamControllerOfRectangleOfnum().broadcast({sync: true, onListen: dart.fn(() => {

@@ -42,7 +42,7 @@ define(['dart_sdk'], function(dart_sdk) {
     } else if (typeof inputValue == 'string') {
       return core.int.parse(inputValue);
     } else {
-      if (!core.int.is(inputValue)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/angular/properties/properties.dart", 84, 12, "inputValue is int");
+      if (!core.int.is(inputValue)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/angular/properties/properties.dart", 84, 12, "inputValue is int");
       return core.int._check(inputValue);
     }
   };

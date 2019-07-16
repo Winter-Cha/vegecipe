@@ -38,7 +38,7 @@ define(['dart_sdk', 'packages/angular_components/utils/id_generator/id_generator
       return this[_role];
     }
     set role(value) {
-      if (!(this.ariaRole == null)) dart.assertFailed("Aria role can only be set before initialization.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_select/dropdown_button.dart", 68, 9, "ariaRole == null");
+      if (!(this.ariaRole == null)) dart.assertFailed("Aria role can only be set before initialization.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_select/dropdown_button.dart", 68, 9, "ariaRole == null");
       this[_role] = value;
     }
     get ariaRole() {

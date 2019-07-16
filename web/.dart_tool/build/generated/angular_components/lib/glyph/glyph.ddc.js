@@ -40,7 +40,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon'], function(dart_
       return this[_iconSet] == null ? "material-icons-extended" : this[_iconSet];
     }
     set iconSet(value) {
-      if (!(value == null || value === "material-icons-extended")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/glyph/glyph.dart", 88, 12, "value == null || value == _materialIconsExtended");
+      if (!(value == null || value === "material-icons-extended")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/glyph/glyph.dart", 88, 12, "value == null || value == _materialIconsExtended");
       this[_iconSet] = value;
     }
     get useMaterialIconsExtended() {

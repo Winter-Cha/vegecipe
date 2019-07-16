@@ -119,7 +119,7 @@
         </p>
       </div>
 
-      <button class="save-btn" (click)="goEdit()">
+      <button class="save-btn" (click)="goEdit()" *ngIf="isMine"> 
           EDIT
       </button>
 

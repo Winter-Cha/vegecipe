@@ -151,7 +151,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
           this[_width] = null;
         } else {
           this[_width] = utils__angular__properties__properties.getInt(val);
-          if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/menu.dart", 125, 14, "_width >= 0 && _width <= 5");
+          if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/model/menu/menu.dart", 125, 14, "_width >= 0 && _width <= 5");
         }
       }
     }
@@ -350,7 +350,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
       this[itemSuffixes$] = itemSuffixes != null ? itemSuffixes : new (ObservableListOfMenuItemAffix()).from(new core$0.Optional.fromNullable(itemSuffix));
       this[cssClasses$] = BuiltListOfString().new(core$.Iterable._check(cssClasses != null ? cssClasses : const$ || (const$ = dart.constList([], dart.dynamic))));
       this[ariaLabel$] = ariaLabel != null ? ariaLabel : label;
-      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/menu.dart", 202, 12, "itemSuffix == null || itemSuffixes == null");
+      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/model/menu/menu.dart", 202, 12, "itemSuffix == null || itemSuffixes == null");
     }).prototype = MenuItem.prototype;
     dart.addTypeTests(MenuItem);
     MenuItem.prototype[_is_MenuItem_default] = true;

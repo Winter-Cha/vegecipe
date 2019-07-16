@@ -51,7 +51,7 @@ define(['dart_sdk', 'packages/angular_components/focus/focus_interface', 'packag
         return;
       }
       FutureOfNull()._check(this.focusDelegate.then(core.Null, dart.fn(delegate => {
-        if (!(focus__focus_interface.Focusable.is(delegate) || html.Element.is(delegate))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/focus/focus.dart", 56, 14, "delegate is Focusable || delegate is Element");
+        if (!(focus__focus_interface.Focusable.is(delegate) || html.Element.is(delegate))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/focus/focus.dart", 56, 14, "delegate is Focusable || delegate is Element");
         if (focus__focus_interface.Focusable.is(delegate)) {
           this[_resolvedFocusable] = delegate;
         } else {

@@ -89,7 +89,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       this[_disposer].addDisposable(utils__disposer__disposer.Disposable, this[_domService].scheduleRead(dart.fn(() => {
         this[_readElement]();
         let newValue = this[_scrollingMove];
-        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 133, 14, "_buttonSize > 0");
+        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/scorecard/scorecard_bar.dart", 133, 14, "_buttonSize > 0");
         if (dart.test(this.atEnd)) {
           newValue = dart.notNull(newValue) - dart.notNull(this[_buttonSize]);
         }
@@ -108,7 +108,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       this[_disposer].addDisposable(utils__disposer__disposer.Disposable, this[_domService].scheduleRead(dart.fn(() => {
         this[_readElement]();
         let newValue = this[_scrollingMove];
-        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 155, 14, "_buttonSize > 0");
+        if (!(dart.notNull(this[_buttonSize]) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/scorecard/scorecard_bar.dart", 155, 14, "_buttonSize > 0");
         if (dart.test(this.atStart)) {
           newValue = dart.notNull(newValue) - dart.notNull(this[_buttonSize]);
         }
@@ -141,7 +141,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     }
     [_readElement](opts) {
       let windowResize = opts && 'windowResize' in opts ? opts.windowResize : false;
-      if (!dart.test(this[_domService].isReadingDom)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard_bar.dart", 189, 12, "_domService.isReadingDom");
+      if (!dart.test(this[_domService].isReadingDom)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/scorecard/scorecard_bar.dart", 189, 12, "_domService.isReadingDom");
       this[_clientSize] = this.currentClientSize;
       this[_scrollSize] = this.currentScrollSize;
       if (dart.dtest(windowResize) && !dart.test(this.isScrollable) && this[_transform] !== 0) {

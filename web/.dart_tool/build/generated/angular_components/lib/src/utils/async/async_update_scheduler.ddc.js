@@ -753,7 +753,7 @@ define(['dart_sdk', 'packages/angular_components/utils/rate_limit_utils/rate_lim
       [_cleanUp]() {
         if (dart.test(this.hasListener)) {
           let listeners = this[_subscriptions];
-          if (!dart.test(listeners[$isNotEmpty])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/async/simple_stream.dart", 131, 14, "listeners.isNotEmpty");
+          if (!dart.test(listeners[$isNotEmpty])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/async/simple_stream.dart", 131, 14, "listeners.isNotEmpty");
           for (let liveCount = 0; liveCount < dart.notNull(listeners[$length]); liveCount++) {
             let firstRemovedListener = listeners[$_get](liveCount);
             if (firstRemovedListener[_stream] != null) continue;
@@ -843,7 +843,7 @@ define(['dart_sdk', 'packages/angular_components/utils/rate_limit_utils/rate_lim
         let onError = opts && 'onError' in opts ? opts.onError : null;
         let onDone = opts && 'onDone' in opts ? opts.onDone : null;
         let cancelOnError = opts && 'cancelOnError' in opts ? opts.cancelOnError : null;
-        if (!(this[_subscriptions] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/async/simple_stream.dart", 251, 12, "_subscriptions != null");
+        if (!(this[_subscriptions] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/async/simple_stream.dart", 251, 12, "_subscriptions != null");
         let contextZone = null;
         if (dart.test(this[_runInZone])) {
           contextZone = async.Zone.current;

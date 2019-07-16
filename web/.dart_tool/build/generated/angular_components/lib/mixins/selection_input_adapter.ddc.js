@@ -51,7 +51,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
         if (value == null) {
           this.selection.clear();
         } else {
-          if (!SingleSelectionModelOfT().is(this.selection)) dart.assertFailed("Passing selected value through `selection` input is only supported " + "for single select.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/mixins/selection_input_adapter.dart", 62, 11, "selection is SingleSelectionModel<T>");
+          if (!SingleSelectionModelOfT().is(this.selection)) dart.assertFailed("Passing selected value through `selection` input is only supported " + "for single select.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/mixins/selection_input_adapter.dart", 62, 11, "selection is SingleSelectionModel<T>");
           this.selection.select(T._check(value));
         }
       }

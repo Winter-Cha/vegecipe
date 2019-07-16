@@ -264,7 +264,7 @@ define(['dart_sdk', 'packages/collection/collection'], function(dart_sdk, collec
         }
       }
       [_extractStream]() {
-        if (!dart.test(this[_isClosed])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_queue.dart", 445, 12, "_isClosed");
+        if (!dart.test(this[_isClosed])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_queue.dart", 445, 12, "_isClosed");
         if (dart.test(this[_isDone])) {
           return StreamOfT().empty();
         }
@@ -1845,19 +1845,19 @@ define(['dart_sdk', 'packages/collection/collection'], function(dart_sdk, collec
       }
       [_setSourceStream](sourceStream) {
         StreamOfT()._check(sourceStream);
-        if (!(this[_sourceStream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_completer.dart", 149, 12, "_sourceStream == null");
+        if (!(this[_sourceStream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_completer.dart", 149, 12, "_sourceStream == null");
         this[_sourceStream] = sourceStream;
         if (this[_controller$] != null) {
           this[_linkStreamToController]();
         }
       }
       [_linkStreamToController]() {
-        if (!(this[_controller$] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_completer.dart", 159, 12, "_controller != null");
-        if (!(this[_sourceStream] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_completer.dart", 160, 12, "_sourceStream != null");
+        if (!(this[_controller$] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_completer.dart", 159, 12, "_controller != null");
+        if (!(this[_sourceStream] != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_completer.dart", 160, 12, "_sourceStream != null");
         this[_controller$].addStream(this[_sourceStream], {cancelOnError: false}).whenComplete(dart.bind(this[_controller$], 'close'));
       }
       [_setEmpty]() {
-        if (!(this[_sourceStream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_completer.dart", 171, 12, "_sourceStream == null");
+        if (!(this[_sourceStream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_completer.dart", 171, 12, "_sourceStream == null");
         if (this[_controller$] == null) {
           this[_createController]();
         }
@@ -1865,7 +1865,7 @@ define(['dart_sdk', 'packages/collection/collection'], function(dart_sdk, collec
         this[_controller$].close();
       }
       [_createController]() {
-        if (!(this[_controller$] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_completer.dart", 181, 12, "_controller == null");
+        if (!(this[_controller$] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_completer.dart", 181, 12, "_controller == null");
         this[_controller$] = StreamControllerOfT().new({sync: true});
       }
     }
@@ -3144,8 +3144,8 @@ define(['dart_sdk', 'packages/collection/collection'], function(dart_sdk, collec
         return this[_closeGroup].future;
       }
       [_cancelSubscription]() {
-        if (!dart.test(this[_controllers].isEmpty)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_splitter.dart", 125, 12, "_controllers.isEmpty");
-        if (!dart.test(this[_isClosed$])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_splitter.dart", 126, 12, "_isClosed");
+        if (!dart.test(this[_controllers].isEmpty)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_splitter.dart", 125, 12, "_controllers.isEmpty");
+        if (!dart.test(this[_isClosed$])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_splitter.dart", 126, 12, "_isClosed");
         let future = null;
         if (this[_subscription$0] != null) future = this[_subscription$0].cancel();
         if (future != null) this[_closeGroup].add(async.Future._check(future));
@@ -3352,7 +3352,7 @@ define(['dart_sdk', 'packages/collection/collection'], function(dart_sdk, collec
       }
       [_setDestinationSink](sink) {
         StreamSinkOfT()._check(sink);
-        if (!(this[_destinationSink] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/async/src/stream_sink_completer.dart", 157, 12, "_destinationSink == null");
+        if (!(this[_destinationSink] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/async/src/stream_sink_completer.dart", 157, 12, "_destinationSink == null");
         this[_destinationSink] = sink;
         if (this[_controller$2] != null) {
           sink.addStream(this[_controller$2].stream).whenComplete(dart.bind(sink, 'close')).catchError(dart.fn(_ => {

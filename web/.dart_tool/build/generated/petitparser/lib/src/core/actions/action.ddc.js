@@ -509,7 +509,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }
     (DelegateParser.new = function(delegate) {
       this[delegate$] = delegate;
-      if (!(delegate != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/combinators/delegate.dart", 12, 42, "delegate != null");
+      if (!(delegate != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/combinators/delegate.dart", 12, 42, "delegate != null");
       DelegateParser.__proto__.new.call(this);
     }).prototype = DelegateParser.prototype;
     dart.addTypeTests(DelegateParser);
@@ -556,8 +556,8 @@ define(['dart_sdk'], function(dart_sdk) {
     (RepeatingParser.new = function(parser, min, max) {
       this[min$] = min;
       this[max$] = max;
-      if (!(min != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/repeaters/repeating.dart", 14, 16, "min != null");
-      if (!(max != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/repeaters/repeating.dart", 15, 16, "max != null");
+      if (!(min != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/repeaters/repeating.dart", 14, 16, "min != null");
+      if (!(max != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/repeaters/repeating.dart", 15, 16, "max != null");
       RepeatingParser.__proto__.new.call(this, parser);
       if (dart.notNull(this.min) < 0) {
         dart.throw(new core.ArgumentError.new("Minimum repetitions must be positive, but got " + dart.str(this.min) + "."));
@@ -678,7 +678,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }
     (LimitedRepeatingParser.new = function(delegate, limit, min, max) {
       this[limit$] = limit;
-      if (!(limit != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/repeaters/limited.dart", 14, 16, "limit != null");
+      if (!(limit != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/repeaters/limited.dart", 14, 16, "limit != null");
       LimitedRepeatingParser.__proto__.new.call(this, ParserOfT()._check(delegate), min, max);
     }).prototype = LimitedRepeatingParser.prototype;
     dart.addTypeTests(LimitedRepeatingParser);
@@ -912,7 +912,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   (src__core__predicates__any.AnyParser.new = function(message) {
     this[message$] = message;
-    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/predicates/any.dart", 19, 36, "message != null");
+    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/predicates/any.dart", 19, 36, "message != null");
     src__core__predicates__any.AnyParser.__proto__.new.call(this);
   }).prototype = src__core__predicates__any.AnyParser.prototype;
   dart.addTypeTests(src__core__predicates__any.AnyParser);
@@ -961,7 +961,7 @@ define(['dart_sdk'], function(dart_sdk) {
     }
     (FailureParser.new = function(message) {
       this[message$] = message;
-      if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/parsers/failure.dart", 18, 40, "message != null");
+      if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/parsers/failure.dart", 18, 40, "message != null");
       FailureParser.__proto__.new.call(this);
     }).prototype = FailureParser.prototype;
     dart.addTypeTests(FailureParser);
@@ -1049,7 +1049,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   (src__core__parsers__eof.EndOfInputParser.new = function(message) {
     this[message$0] = message;
-    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/parsers/eof.dart", 15, 43, "message != null");
+    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/parsers/eof.dart", 15, 43, "message != null");
     src__core__parsers__eof.EndOfInputParser.__proto__.new.call(this);
   }).prototype = src__core__parsers__eof.EndOfInputParser.prototype;
   dart.addTypeTests(src__core__parsers__eof.EndOfInputParser);
@@ -1231,7 +1231,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   (src__core__combinators__not.NotParser.new = function(delegate, message) {
     this[message$1] = message;
-    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/combinators/not.dart", 14, 16, "message != null");
+    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/combinators/not.dart", 14, 16, "message != null");
     src__core__combinators__not.NotParser.__proto__.new.call(this, delegate);
   }).prototype = src__core__combinators__not.NotParser.prototype;
   dart.addTypeTests(src__core__combinators__not.NotParser);
@@ -1463,8 +1463,8 @@ define(['dart_sdk'], function(dart_sdk) {
     (TrimmingParser.new = function(delegate, left, right) {
       this[left$] = left;
       this[right$] = right;
-      if (!(left != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/actions/trimming.dart", 15, 16, "left != null");
-      if (!(right != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/actions/trimming.dart", 16, 16, "right != null");
+      if (!(left != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/actions/trimming.dart", 15, 16, "left != null");
+      if (!(right != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/actions/trimming.dart", 16, 16, "right != null");
       TrimmingParser.__proto__.new.call(this, delegate);
     }).prototype = TrimmingParser.prototype;
     dart.addTypeTests(TrimmingParser);
@@ -1801,8 +1801,8 @@ define(['dart_sdk'], function(dart_sdk) {
   (src__core__characters__parser.CharacterParser.new = function(predicate, message) {
     this[predicate$] = predicate;
     this[message$3] = message;
-    if (!(predicate != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/characters/parser.dart", 15, 16, "predicate != null");
-    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/characters/parser.dart", 16, 16, "message != null");
+    if (!(predicate != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/characters/parser.dart", 15, 16, "predicate != null");
+    if (!(message != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/characters/parser.dart", 16, 16, "message != null");
     src__core__characters__parser.CharacterParser.__proto__.new.call(this);
   }).prototype = src__core__characters__parser.CharacterParser.prototype;
   dart.addTypeTests(src__core__characters__parser.CharacterParser);
@@ -1841,7 +1841,7 @@ define(['dart_sdk'], function(dart_sdk) {
   };
   (src__core__characters__char.SingleCharPredicate.new = function(value) {
     this[value$] = value;
-    if (!(value != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/characters/char.dart", 17, 50, "value != null");
+    if (!(value != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/characters/char.dart", 17, 50, "value != null");
     src__core__characters__char.SingleCharPredicate.__proto__.new.call(this);
   }).prototype = src__core__characters__char.SingleCharPredicate.prototype;
   dart.addTypeTests(src__core__characters__char.SingleCharPredicate);
@@ -2092,8 +2092,8 @@ define(['dart_sdk'], function(dart_sdk) {
       if (hasSideEffects === void 0) hasSideEffects = false;
       this[callback$] = callback;
       this[hasSideEffects$] = hasSideEffects;
-      if (!(callback != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/actions/action.dart", 18, 16, "callback != null");
-      if (!(hasSideEffects != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/petitparser/src/core/actions/action.dart", 19, 16, "hasSideEffects != null");
+      if (!(callback != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/actions/action.dart", 18, 16, "callback != null");
+      if (!(hasSideEffects != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/petitparser/src/core/actions/action.dart", 19, 16, "hasSideEffects != null");
       ActionParser.__proto__.new.call(this, delegate);
     }).prototype = ActionParser.prototype;
     dart.addTypeTests(ActionParser);

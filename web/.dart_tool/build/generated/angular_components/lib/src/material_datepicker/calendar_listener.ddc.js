@@ -174,7 +174,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
     updateActiveDragOrPreview(day) {
       if (!dart.equals(day, this.dragAnchor) && this.state !== src__material_datepicker__calendar_listener._DragState.canPreview) {
         if (this.state === src__material_datepicker__calendar_listener._DragState.pendingGrabOrClick && dart.test(this.model.value.has(this.model.value.currentSelection))) {
-          if (!(this.selectionPendingGrab != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_datepicker/calendar_listener.dart", 225, 16, "selectionPendingGrab != null");
+          if (!(this.selectionPendingGrab != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_datepicker/calendar_listener.dart", 225, 16, "selectionPendingGrab != null");
           this.model.value = this.model.value.select(this.selectionPendingGrab);
           this.selectionPendingGrab = null;
         }

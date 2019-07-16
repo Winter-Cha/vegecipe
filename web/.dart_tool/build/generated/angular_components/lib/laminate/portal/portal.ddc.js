@@ -31,7 +31,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     let FutureOfT = () => (FutureOfT = dart.constFn(async.Future$(T)))();
     class Portal extends core.Object {
       attach(host) {
-        if (!(host != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 22, 12, "host != null");
+        if (!(host != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 22, 12, "host != null");
         if (dart.test(this.isAttached)) {
           dart.throw(new core.StateError.new("Already attached to host!"));
         } else {
@@ -41,7 +41,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       }
       detach() {
         let currentHost = this[_attachedHost];
-        if (!(currentHost != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 39, 12, "currentHost != null");
+        if (!(currentHost != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 39, 12, "currentHost != null");
         this[_attachedHost] = null;
         return currentHost.detach();
       }
@@ -168,8 +168,8 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
     this[template$] = template;
     this[viewContainer$] = viewContainer;
     laminate__portal__portal.TemplatePortal.__proto__.new.call(this);
-    if (!(this.template != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 91, 12, "template != null");
-    if (!(this.viewContainer != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 92, 12, "viewContainer != null");
+    if (!(this.template != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 91, 12, "template != null");
+    if (!(this.viewContainer != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 92, 12, "viewContainer != null");
   }).prototype = laminate__portal__portal.TemplatePortal.prototype;
   dart.addTypeTests(laminate__portal__portal.TemplatePortal);
   const template$ = Symbol("TemplatePortal.template");
@@ -203,7 +203,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
   const _isDisposed = dart.privateName(laminate__portal__portal, "_isDisposed");
   laminate__portal__portal.BasePortalHost = class BasePortalHost extends core.Object {
     attach(portal) {
-      if (!(portal != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 152, 12, "portal != null");
+      if (!(portal != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 152, 12, "portal != null");
       if (dart.test(this[_isDisposed])) {
         dart.throw(new core.StateError.new("Already disposed."));
       }
@@ -246,7 +246,7 @@ define(['dart_sdk', 'packages/angular/src/bootstrap/modules', 'packages/angular_
       return this[_attachedPortal] != null;
     }
     setPortalDisposer(fn) {
-      if (!(this[_detachPortal] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/portal/portal.dart", 204, 12, "_detachPortal == null");
+      if (!(this[_detachPortal] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/portal/portal.dart", 204, 12, "_detachPortal == null");
       this[_detachPortal] = fn;
     }
   };

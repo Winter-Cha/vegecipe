@@ -134,7 +134,7 @@ define(['dart_sdk', 'packages/quiver/core'], function(dart_sdk, core) {
       dart.throw(new core$.FormatException.new("Invalid color format", s));
     }
     withAlpha(a) {
-      if (!(dart.notNull(a) >= 0 && dart.notNull(a) <= 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/color/color.dart", 181, 12, "a >= 0 && a <= 1");
+      if (!(dart.notNull(a) >= 0 && dart.notNull(a) <= 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/color/color.dart", 181, 12, "a >= 0 && a <= 1");
       return new utils__color__color.Color.rgba(this.red, this.green, this.blue, a);
     }
     withBackground(background) {

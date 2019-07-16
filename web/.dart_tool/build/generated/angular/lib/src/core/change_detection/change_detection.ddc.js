@@ -102,7 +102,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
   dart.copyProperties(src__runtime__optimizations, {
     get _assertionsEnabled() {
       let enabled = false;
-      if (!(enabled = true)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/runtime/optimizations.dart", 11, 10, "enabled = true");
+      if (!(enabled = true)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/runtime/optimizations.dart", 11, 10, "enabled = true");
       return enabled;
     }
   });
@@ -132,7 +132,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
   src__di__errors.debugInjectorLeave = function(token) {
     if (dart.test(src__runtime__optimizations.isDevMode)) {
       let removed = src__di__errors._tokenStack[$removeLast]();
-      if (!core.identical(removed, token)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/errors.dart", 36, 12, "identical(removed, token)");
+      if (!core.identical(removed, token)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/errors.dart", 36, 12, "identical(removed, token)");
     }
   };
   src__di__errors.debugInjectorWrap = function(T, token, wrap) {
@@ -704,11 +704,11 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
       return result;
     }
     provideType(T, token) {
-      if (!!dart.equals(dart.wrapType(T), dart.wrapType(dart.dynamic))) dart.assertFailed("Returning a dynamic is not supported", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/injector.dart", 121, 12, "T != dynamic");
+      if (!!dart.equals(dart.wrapType(T), dart.wrapType(dart.dynamic))) dart.assertFailed("Returning a dynamic is not supported", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/injector.dart", 121, 12, "T != dynamic");
       return src__runtime__optimizations.unsafeCast(T, this.get(token));
     }
     provideTypeOptional(T, token) {
-      if (!!dart.equals(dart.wrapType(T), dart.wrapType(dart.dynamic))) dart.assertFailed("Returning a dynamic is not supported", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/injector.dart", 135, 12, "T != dynamic");
+      if (!!dart.equals(dart.wrapType(T), dart.wrapType(dart.dynamic))) dart.assertFailed("Returning a dynamic is not supported", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/injector.dart", 135, 12, "T != dynamic");
       return src__runtime__optimizations.unsafeCast(T, this.get(token, null));
     }
     provideToken(T, token) {
@@ -917,7 +917,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
     useFactory(factory, opts) {
       let deps = opts && 'deps' in opts ? opts.deps : null;
       let resolvedArgs = this[_resolveArgs](factory, deps);
-      if (!(dart.test(src__di__injector__runtime._RuntimeInjector._functionHasNoRequiredArguments(factory)) || dart.test(resolvedArgs[$isNotEmpty]))) dart.assertFailed("Could not resolve dependencies for factory function " + dart.str(factory) + ". This " + "is is usually a sign of an omitted @Injectable. Consider migrating " + "to @GeneratedInjector (and \"runApp\") or add the missing annotation " + "for the time being.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/runtime.dart", 259, 9, "_functionHasNoRequiredArguments(factory) || resolvedArgs.isNotEmpty");
+      if (!(dart.test(src__di__injector__runtime._RuntimeInjector._functionHasNoRequiredArguments(factory)) || dart.test(resolvedArgs[$isNotEmpty]))) dart.assertFailed("Could not resolve dependencies for factory function " + dart.str(factory) + ". This " + "is is usually a sign of an omitted @Injectable. Consider migrating " + "to @GeneratedInjector (and \"runApp\") or add the missing annotation " + "for the time being.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/runtime.dart", 259, 9, "_functionHasNoRequiredArguments(factory) || resolvedArgs.isNotEmpty");
       return core.Function.apply(factory, resolvedArgs);
     }
     static _functionHasNoRequiredArguments(func) {
@@ -933,7 +933,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
     this[_multiProviders] = multiProviders;
     this[_staticOnlyResolveAndCreate] = staticOnlyResolveAndCreate;
     src__di__injector__runtime._RuntimeInjector.__proto__.new.call(this, parent);
-    if (!(parent != null)) dart.assertFailed("A parent injector is always required.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/runtime.dart", 109, 12, "parent != null");
+    if (!(parent != null)) dart.assertFailed("A parent injector is always required.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/runtime.dart", 109, 12, "parent != null");
     this[_instances][$_set](dart.wrapType(src__di__injector__injector.Injector), this);
   }).prototype = src__di__injector__runtime._RuntimeInjector.prototype;
   dart.addTypeTests(src__di__injector__runtime._RuntimeInjector);
@@ -1023,7 +1023,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
         let providers = src__di__module.internalModuleToList(item);
         src__di__injector__runtime._flattenProviders(providers, allProviders, multiProviders);
       } else {
-        if (!false) dart.assertFailed("Unsupported: " + dart.str(item), "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/runtime.dart", 368, 14, "false");
+        if (!false) dart.assertFailed("Unsupported: " + dart.str(item), "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/runtime.dart", 368, 14, "false");
       }
     }
     return new src__di__injector__runtime._FlatProviders.new(allProviders, multiProviders);
@@ -1035,7 +1035,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
       if (orElse === void 0) orElse = src__di__injector__injector.throwIfNotFound;
       let result = this[_providers$][$_get](token);
       if (result == null) {
-        if (!!dart.test(this[_providers$][$containsKey](token))) dart.assertFailed("Value for " + dart.str(token) + " should not be null for Injector.map", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/di/injector/map.dart", 26, 14, "!_providers.containsKey(token)");
+        if (!!dart.test(this[_providers$][$containsKey](token))) dart.assertFailed("Value for " + dart.str(token) + " should not be null for Injector.map", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/di/injector/map.dart", 26, 14, "!_providers.containsKey(token)");
         if (token === dart.wrapType(src__di__injector__injector.Injector)) {
           return this;
         }
@@ -2541,7 +2541,7 @@ define(['dart_sdk', 'packages/collection/src/comparators', 'packages/stack_trace
     this[directiveTypes$] = directiveTypes;
     this[pipes$] = pipes;
     this[encapsulation$] = encapsulation;
-    if (!(changeDetection != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/core/metadata.dart", 265, 16, "changeDetection != null");
+    if (!(changeDetection != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/core/metadata.dart", 265, 16, "changeDetection != null");
     src__core__metadata.Component.__proto__.new.call(this, {selector: selector, exportAs: exportAs, providers: providers, visibility: visibility});
   }).prototype = src__core__metadata.Component.prototype;
   dart.addTypeTests(src__core__metadata.Component);

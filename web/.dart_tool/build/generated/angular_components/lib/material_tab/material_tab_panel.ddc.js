@@ -91,7 +91,7 @@ define(['dart_sdk', 'packages/angular_components/material_tab/tab_change_event',
       return this[_tabIds];
     }
     [_setActiveTab](i, focusTab) {
-      if (!(dart.notNull(i) >= 0 && dart.notNull(i) < dart.notNull(this[_tabs][$length]))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_tab/material_tab_panel.dart", 119, 12, "i >= 0 && i < _tabs.length");
+      if (!(dart.notNull(i) >= 0 && dart.notNull(i) < dart.notNull(this[_tabs][$length]))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_tab/material_tab_panel.dart", 119, 12, "i >= 0 && i < _tabs.length");
       let t = this[_activeTab];
       t == null ? null : t.deactivate();
       this[_activeTabIndex] = i;

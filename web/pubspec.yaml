@@ -19,6 +19,8 @@ dependencies:
   angular_quill: ^0.1.2
   image: ^2.1.4
   yabwe: ^0.0.2
+  dialog: ^0.7.0
+
 
 dev_dependencies:
   angular_test: ^2.0.0

@@ -220,7 +220,7 @@ define(['dart_sdk', 'packages/angular_components/src/model/action/async_action',
   }));
   material_stepper__material_step.SummaryDirective = class SummaryDirective extends laminate__portal__portal.TemplatePortal {
     set summary(step) {
-      if (!(step != null)) dart.assertFailed("Should pass in a valid step for a summary.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_stepper/material_step.dart", 188, 12, "step != null");
+      if (!(step != null)) dart.assertFailed("Should pass in a valid step for a summary.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_stepper/material_step.dart", 188, 12, "step != null");
       step.summaryDirective = this;
     }
   };

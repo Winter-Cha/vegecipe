@@ -510,7 +510,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/date', 'packages/col
       return this.selections[$singleWhere](dart.fn(s => s.id == id, CalendarSelectionTobool()));
     }
     highlighted(id, date) {
-      if (!(date != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_datepicker/calendar/model.dart", 153, 12, "date != null");
+      if (!(date != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_datepicker/calendar/model.dart", 153, 12, "date != null");
       if (this.preview != null && this.currentSelection == id) {
         let current = this.selection(this.currentSelection);
         let anchor = dart.test(this.previewAnchoredAtStart) ? current.start : current.end;
@@ -542,7 +542,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/date', 'packages/col
       return this.setSelection(new material_datepicker__calendar.CalendarSelection.guessOrder(this.currentSelection, a, b), {cause: material_datepicker__calendar.CausedBy.drag});
     }
     updateCurrentPreview(newPreviewTarget) {
-      if (!(newPreviewTarget != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_datepicker/calendar/model.dart", 237, 12, "newPreviewTarget != null");
+      if (!(newPreviewTarget != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_datepicker/calendar/model.dart", 237, 12, "newPreviewTarget != null");
       return new material_datepicker__calendar.CalendarState.new({selections: this.selections, currentSelection: this.currentSelection, cause: material_datepicker__calendar.CausedBy.preview, preview: newPreviewTarget, previewAnchoredAtStart: this.previewAnchoredAtStart, resolution: this.resolution});
     }
     cancelCurrentPreview() {
@@ -561,7 +561,7 @@ define(['dart_sdk', 'packages/angular_components/model/date/date', 'packages/col
       let movingStartMaintainsLength = opts && 'movingStartMaintainsLength' in opts ? opts.movingStartMaintainsLength : null;
       let current = this.selection(this.currentSelection);
       let anchor = dart.test(this.previewAnchoredAtStart) ? current.start : current.end;
-      if (!(this.preview != null && anchor != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_datepicker/calendar/model.dart", 279, 12, "preview != null && anchor != null");
+      if (!(this.preview != null && anchor != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_datepicker/calendar/model.dart", 279, 12, "preview != null && anchor != null");
       let cause = dart.test(confirmRange) ? material_datepicker__calendar.CausedBy.rangeConfirm : material_datepicker__calendar.CausedBy.endpointConfirm;
       if (dart.test(this.previewAnchoredAtStart)) {
         if (dart.test(this.preview['<='](anchor))) {

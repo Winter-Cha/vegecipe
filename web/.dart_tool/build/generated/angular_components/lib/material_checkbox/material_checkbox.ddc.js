@@ -129,7 +129,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon', 'packages/angul
       let checked = opts && 'checked' in opts ? opts.checked : false;
       let indeterminate = opts && 'indeterminate' in opts ? opts.indeterminate : false;
       let emitEvent = opts && 'emitEvent' in opts ? opts.emitEvent : true;
-      if (!(!dart.test(checked) || !dart.test(indeterminate))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_checkbox/material_checkbox.dart", 192, 12, "!checked || !indeterminate");
+      if (!(!dart.test(checked) || !dart.test(indeterminate))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_checkbox/material_checkbox.dart", 192, 12, "!checked || !indeterminate");
       let prevChecked = this[_checked];
       let prevIndeterminate = this[_indeterminate];
       let prevState = this[_checkedStr];
@@ -184,7 +184,7 @@ define(['dart_sdk', 'packages/angular_components/model/ui/icon', 'packages/angul
       } else if (dart.test(this.checked)) {
         this[_setStates]();
       } else {
-        if (!dart.test(this.indeterminate)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_checkbox/material_checkbox.dart", 272, 14, "indeterminate");
+        if (!dart.test(this.indeterminate)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_checkbox/material_checkbox.dart", 272, 14, "indeterminate");
         this[_setStates]({checked: this.indeterminateToChecked});
       }
     }

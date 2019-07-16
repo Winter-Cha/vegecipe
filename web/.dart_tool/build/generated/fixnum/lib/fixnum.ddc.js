@@ -967,7 +967,7 @@ define(['dart_sdk'], function(dart_sdk) {
         q = (dart.notNull(d0) / dart.notNull(fatRadix))[$truncate]();
         r = dart.notNull(d0) - q * dart.notNull(fatRadix);
         d0 = q;
-        if (!(chunk3 === "")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 735, 14, "chunk3 == \"\"");
+        if (!(chunk3 === "")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 735, 14, "chunk3 == \"\"");
         chunk3 = chunk2;
         chunk2 = chunk1;
         chunk1 = (dart.notNull(fatRadix) + r)[$toRadixString](radix)[$substring](1);
@@ -1048,8 +1048,8 @@ define(['dart_sdk'], function(dart_sdk) {
         q2 = q2d[$toInt]();
         q1 = q1d[$toInt]();
         q0 = q0d[$toInt]();
-        if (!(q0 + K1 * q1 + K2 * q2 === (ad / bd)[$floorToDouble]())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 929, 14, "q0 + K1 * q1 + K2 * q2 == (ad / bd).floorToDouble()");
-        if (!(q2 === 0 || b2 === 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 930, 14, "q2 == 0 || b2 == 0");
+        if (!(q0 + K1 * q1 + K2 * q2 === (ad / bd)[$floorToDouble]())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 929, 14, "q0 + K1 * q1 + K2 * q2 == (ad / bd).floorToDouble()");
+        if (!(q2 === 0 || b2 === 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 930, 14, "q2 == 0 || b2 == 0");
         let p0d = q0d * dart.notNull(b0);
         let p0carry = (p0d / K1)[$floorToDouble]();
         p0d = p0d - p0carry * K1;
@@ -1057,7 +1057,7 @@ define(['dart_sdk'], function(dart_sdk) {
         let p1carry = (p1d / K1)[$floorToDouble]();
         p1d = p1d - p1carry * K1;
         let p2d = q2d * dart.notNull(b0) + q1d * dart.notNull(b1) + q0d * dart.notNull(b2) + p1carry;
-        if (!(p2d <= 1048575)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 941, 14, "p2d <= _MASK2");
+        if (!(p2d <= 1048575)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 941, 14, "p2d <= _MASK2");
         let diff0 = dart.notNull(a0) - p0d[$toInt]();
         let diff1 = dart.notNull(a1) - p1d[$toInt]() - (diff0 >> 22 & 1);
         let diff2 = dart.notNull(a2) - p2d[$toInt]() - (diff1 >> 22 & 1);
@@ -1080,9 +1080,9 @@ define(['dart_sdk'], function(dart_sdk) {
           q2 = 1048575 & d2;
         }
       }
-      if (!dart.test(fixnum.Int64.ZERO['<='](new fixnum.Int64._bits(r0, r1, r2)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 977, 12, "Int64.ZERO <= Int64._bits(r0, r1, r2)");
-      if (!(r2 < dart.notNull(b2) || dart.test(new fixnum.Int64._bits(r0, r1, r2)['<'](new fixnum.Int64._bits(b0, b1, b2))))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 978, 12, "r2 < b2 || Int64._bits(r0, r1, r2) < Int64._bits(b0, b1, b2)");
-      if (!(what === 1 || what === 3 || what === 2)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/fixnum/src/int64.dart", 981, 12, "what == _RETURN_DIV || what == _RETURN_MOD || what == _RETURN_REM");
+      if (!dart.test(fixnum.Int64.ZERO['<='](new fixnum.Int64._bits(r0, r1, r2)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 977, 12, "Int64.ZERO <= Int64._bits(r0, r1, r2)");
+      if (!(r2 < dart.notNull(b2) || dart.test(new fixnum.Int64._bits(r0, r1, r2)['<'](new fixnum.Int64._bits(b0, b1, b2))))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 978, 12, "r2 < b2 || Int64._bits(r0, r1, r2) < Int64._bits(b0, b1, b2)");
+      if (!(what === 1 || what === 3 || what === 2)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/fixnum/src/int64.dart", 981, 12, "what == _RETURN_DIV || what == _RETURN_MOD || what == _RETURN_REM");
       if (what === 1) {
         if (aNeg != bNeg) return fixnum.Int64._negate(q0, q1, q2);
         return fixnum.Int64._masked(q0, q1, q2);

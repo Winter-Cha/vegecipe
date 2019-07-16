@@ -2167,7 +2167,7 @@ define(['dart_sdk'], function(dart_sdk) {
         }, UserJsImplToNull()));
         let errorWrapper = js.allowInterop(dynamicTovoid(), dart.fn(e => this[_changeController$].addError(e), dynamicTovoid()));
         const startListen = () => {
-          if (!(this[_onAuthUnsubscribe] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/firebase/src/auth.dart", 281, 16, "_onAuthUnsubscribe == null");
+          if (!(this[_onAuthUnsubscribe] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/firebase/src/auth.dart", 281, 16, "_onAuthUnsubscribe == null");
           this[_onAuthUnsubscribe] = this.jsObject.onAuthStateChanged(nextWrapper, errorWrapper);
         };
         dart.fn(startListen, VoidTovoid());
@@ -2187,7 +2187,7 @@ define(['dart_sdk'], function(dart_sdk) {
         }, UserJsImplToNull()));
         let errorWrapper = js.allowInterop(dynamicTovoid(), dart.fn(e => this[_idTokenChangedController].addError(e), dynamicTovoid()));
         const startListen = () => {
-          if (!(this[_onIdTokenChangedUnsubscribe] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/firebase/src/auth.dart", 316, 16, "_onIdTokenChangedUnsubscribe == null");
+          if (!(this[_onIdTokenChangedUnsubscribe] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/firebase/src/auth.dart", 316, 16, "_onIdTokenChangedUnsubscribe == null");
           this[_onIdTokenChangedUnsubscribe] = this.jsObject.onIdTokenChanged(nextWrapper, errorWrapper);
         };
         dart.fn(startListen, VoidTovoid());

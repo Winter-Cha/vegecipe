@@ -25,7 +25,7 @@ define(['dart_sdk', 'packages/quiver/strings', 'packages/angular_components/util
       } else if (this.hostTabIndex == null) {
         return null;
       } else if (!dart.test(strings$.isBlank(this.hostTabIndex))) {
-        if (!(utils__angular__properties__properties.getInt(this.hostTabIndex) != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/mixins/has_tab_index.dart", 35, 14, "getInt(hostTabIndex) != null");
+        if (!(utils__angular__properties__properties.getInt(this.hostTabIndex) != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/mixins/has_tab_index.dart", 35, 14, "getInt(hostTabIndex) != null");
         return this.hostTabIndex;
       }
       dart.throw("Host tabIndex should either be null or a value");

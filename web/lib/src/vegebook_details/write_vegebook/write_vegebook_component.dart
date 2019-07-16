@@ -15,6 +15,7 @@ import 'package:web/src/common/vegebook_poster/vegebook_poster_component.dart';
 import 'package:web/src/routes.dart';
 import 'package:web/src/vegebook_details/landscape_image/vegebook_landscape_image_component.dart';
 import 'lazy_image_component.dart';
+import 'package:dialog/dialog.dart';
 
 import 'package:firebase/firebase.dart' as fb;
 
@@ -72,7 +73,8 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   bool contentVisible = false;    // show details 
   bool editable = false;          // create or modify details
-  bool editMode = false;            
+  bool editMode = false;    
+  bool isMine = false;        
 
   LoadingStatus saveStatus = LoadingStatus.idle;
 
@@ -99,7 +101,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
     // view
     if(current.parameters['vegeBookId'] != null){
-      print(current.parameters['vegeBookId']);
       _populateVegeBookDetails(
         current.parameters['vegeBookId'],
       );
@@ -116,9 +117,10 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   // initialize view mode
   void _populateVegeBookDetails(String vegeBookId) {
-    vegeBook = vegeBookByIdSelector(_store.state, vegeBookId);
+    this.vegeBook = vegeBookByIdSelector(_store.state, vegeBookId);
 
     if (vegeBook != null) {
+      this.isMine = this.vegeBook.writerUid == fb.auth().currentUser?.uid;
       _animateContentIntoView();
     } else {
       _store.dispatch(RefreshVegeBookAction());
@@ -233,6 +235,9 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   void _saveSubmit() async {
 
+    var myConfirm = await confirm("Confirmed?!");
+    if(!myConfirm) return;
+
     saveStatus = LoadingStatus.loading;
 
     if (editMode) {
@@ -257,6 +262,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
                     'portraitMedium': this.copyBook.images.portraitMedium,
                   },
                   'writtenBy': this.copyBook.writtenBy,
+                  'writerUid': this.copyBook.writerUid,
                   'writerPhotoUrl': this.copyBook.writerPhotoUrl,
                   'reportingDate': this.copyBook.reportingDate,
                   'lastModifiedDate': DateTime.now(),
@@ -341,11 +347,13 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
                   'title': this.vegeBook.title,
                   'writtenBy': this.vegeBook.writtenBy,
                   'writerPhotoUrl': this.vegeBook.writerPhotoUrl,
+                  'writerUid': fb.auth().currentUser?.uid,
                   'reportingDate': DateTime.now(),
                 };
     await doc.set(vegeBookMap).then((onValue){
       if (this.vegeBook != null) {
         print("save success!");
+        this.isMine = true;
         _animateContentIntoView();
       }
     })
@@ -358,7 +366,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
   void goEdit () {
     // 제목이랑 글만 바꾸게 만들어 줍시다.
-
     // 사본을 만들어야 합니다.
     this.copyBook = VegeBook();
     this.copyBook.id = this.vegeBook.id;
@@ -367,6 +374,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
     this.copyBook.reportingDate = this.vegeBook.reportingDate;
     this.copyBook.content = this.vegeBook.content;
     this.copyBook.writerPhotoUrl = this.vegeBook.writerPhotoUrl;
+    this.copyBook.writerUid = this.vegeBook.writerUid;
     this.copyBook.images = VegeBookImageData(
           landscapeBig: this.vegeBook.images.landscapeBig, 
           landscapeSmall: null, 

@@ -124,11 +124,11 @@ define(['dart_sdk', 'packages/angular_components/material_stepper/material_step'
       this[noText] = value;
     }
     set orientation(s) {
-      if (!dart.test(material_stepper__common.orientations[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_stepper/material_stepper.dart", 149, 12, "orientations.contains(s)");
+      if (!dart.test(material_stepper__common.orientations[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_stepper/material_stepper.dart", 149, 12, "orientations.contains(s)");
       this[_orientation] = s;
     }
     set size(s) {
-      if (!dart.test(material_stepper__common.sizes[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_stepper/material_stepper.dart", 159, 12, "sizes.contains(s)");
+      if (!dart.test(material_stepper__common.sizes[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_stepper/material_stepper.dart", 159, 12, "sizes.contains(s)");
       this[_size] = s;
     }
     get shouldInlineContent() {
@@ -144,7 +144,7 @@ define(['dart_sdk', 'packages/angular_components/material_stepper/material_step'
       return dart.test(this.steps[$isNotEmpty]) ? this.steps[$_get](this.activeStepIndex) : null;
     }
     set legalJumps(s) {
-      if (!dart.test(material_stepper__common.jumps[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_stepper/material_stepper.dart", 188, 12, "jumps.contains(s)");
+      if (!dart.test(material_stepper__common.jumps[$contains](s))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_stepper/material_stepper.dart", 188, 12, "jumps.contains(s)");
       this[_legalJumps] = s;
       this[_recalculatePropertiesOfSteps]();
     }

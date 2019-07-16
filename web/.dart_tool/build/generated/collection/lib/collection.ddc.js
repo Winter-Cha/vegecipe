@@ -463,7 +463,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/colle
         if (core.List.is(source)) {
           let length = source[$length];
           let queue = new (QueueListOfE()).new(dart.notNull(length) + 1);
-          if (!(dart.notNull(queue[_table][$length]) > dart.notNull(length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/collection/src/queue_list.dart", 57, 14, "queue._table.length > length");
+          if (!(dart.notNull(queue[_table][$length]) > dart.notNull(length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/collection/src/queue_list.dart", 57, 14, "queue._table.length > length");
           let sourceList = source;
           queue[_table][$setRange](0, length, sourceList, 0);
           queue[_tail] = length;
@@ -579,7 +579,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/colle
         return (dart.notNull(number) & dart.notNull(number) - 1) === 0;
       }
       static _nextPowerOf2(number) {
-        if (!(dart.notNull(number) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/collection/src/queue_list.dart", 192, 12, "number > 0");
+        if (!(dart.notNull(number) > 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/collection/src/queue_list.dart", 192, 12, "number > 0");
         number = (dart.notNull(number) << 1 >>> 0) - 1;
         for (;;) {
           let nextNumber = (dart.notNull(number) & dart.notNull(number) - 1) >>> 0;
@@ -604,7 +604,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/colle
       }
       [_writeToList](target) {
         ListOfE()._check(target);
-        if (!(dart.notNull(target[$length]) >= dart.notNull(this.length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/collection/src/queue_list.dart", 220, 12, "target.length >= length");
+        if (!(dart.notNull(target[$length]) >= dart.notNull(this.length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/collection/src/queue_list.dart", 220, 12, "target.length >= length");
         if (dart.notNull(this[_head]) <= dart.notNull(this[_tail])) {
           let length = dart.notNull(this[_tail]) - dart.notNull(this[_head]);
           target[$setRange](0, length, this[_table], this[_head]);
@@ -617,7 +617,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/colle
         }
       }
       [_preGrow](newElementCount) {
-        if (!(dart.notNull(newElementCount) >= dart.notNull(this.length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/collection/src/queue_list.dart", 235, 12, "newElementCount >= length");
+        if (!(dart.notNull(newElementCount) >= dart.notNull(this.length))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/collection/src/queue_list.dart", 235, 12, "newElementCount >= length");
         newElementCount = dart.notNull(newElementCount) + newElementCount[$rightShift](1);
         let newCapacity = src__queue_list.QueueList._nextPowerOf2(newElementCount);
         let newTable = ListOfE().new(newCapacity);
@@ -636,7 +636,7 @@ define(['dart_sdk', 'packages/collection/src/canonicalized_map', 'packages/colle
       } else if (!dart.test(src__queue_list.QueueList._isPowerOf2(initialCapacity))) {
         initialCapacity = src__queue_list.QueueList._nextPowerOf2(initialCapacity);
       }
-      if (!dart.test(src__queue_list.QueueList._isPowerOf2(initialCapacity))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/collection/src/queue_list.dart", 45, 12, "_isPowerOf2(initialCapacity)");
+      if (!dart.test(src__queue_list.QueueList._isPowerOf2(initialCapacity))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/collection/src/queue_list.dart", 45, 12, "_isPowerOf2(initialCapacity)");
       this[_table] = ListOfE().new(initialCapacity);
     }).prototype = QueueList.prototype;
     (QueueList.__ = function() {

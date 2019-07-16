@@ -82,7 +82,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/collection/src/canonicaliz
     if (!dart.test(dart.fn(() => {
       list = core$.List$(E).unmodifiable(list);
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/observable/src/internal.dart", 7, 10, "() {list = new List<E>.unmodifiable(list); return true;}()");
+    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/observable/src/internal.dart", 7, 10, "() {list = new List<E>.unmodifiable(list); return true;}()");
     return list;
   };
   src__records.ChangeRecord = class ChangeRecord extends core$.Object {};
@@ -226,7 +226,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/collection/src/canonicaliz
             dart.throw(new core$.ArgumentError.new("Invalid `addedCount`: " + dart.str(this.addedCount)));
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/observable/src/records/list_change_record.dart", 84, 12, "() {if (object == null) {throw new ArgumentError.notNull('object');} if (index == null) {throw new ArgumentError.notNull('index');} if (removed == null) {throw new ArgumentError.notNull('removed');} if (addedCount == null || addedCount < 0) {throw new ArgumentError('Invalid `addedCount`: $addedCount');} return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/observable/src/records/list_change_record.dart", 84, 12, "() {if (object == null) {throw new ArgumentError.notNull('object');} if (index == null) {throw new ArgumentError.notNull('index');} if (removed == null) {throw new ArgumentError.notNull('removed');} if (addedCount == null || addedCount < 0) {throw new ArgumentError('Invalid `addedCount`: $addedCount');} return true;}()");
       }
       indexChanged(reference) {
         if (dart.notNull(reference) < dart.notNull(this.index)) return false;
@@ -942,7 +942,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/collection/src/canonicaliz
     if (!dart.test(dart.fn(() => {
       splices = core$.List$(src__records.ListChangeRecord$(E)).unmodifiable(splices);
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/observable/src/differs/list_differ.dart", 306, 10, "() {splices = new List<ListChangeRecord<E>>.unmodifiable(splices); return true;}()");
+    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/observable/src/differs/list_differ.dart", 306, 10, "() {splices = new List<ListChangeRecord<E>>.unmodifiable(splices); return true;}()");
     return splices;
   };
   src__differs._intersect = function(start1, end1, start2, end2) {

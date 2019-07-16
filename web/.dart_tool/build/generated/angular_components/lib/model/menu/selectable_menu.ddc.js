@@ -174,7 +174,7 @@ define(['dart_sdk', 'packages/angular_components/model/selection/selection_model
       this[itemSuffixes$] = itemSuffixes != null ? itemSuffixes : new (ObservableListOfMenuItemAffix()).from(new core$0.Optional.fromNullable(itemSuffix));
       this[cssClasses$] = BuiltListOfString().new(core$.Iterable._check(cssClasses != null ? cssClasses : const$ || (const$ = dart.constList([], dart.dynamic))));
       SelectableMenuItem.__proto__.new.call(this);
-      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/model/menu/selectable_menu.dart", 147, 12, "itemSuffix == null || itemSuffixes == null");
+      if (!(itemSuffix == null || itemSuffixes == null)) dart.assertFailed("Only one of itemSuffix or itemSuffixes should be provided", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/model/menu/selectable_menu.dart", 147, 12, "itemSuffix == null || itemSuffixes == null");
     }).prototype = SelectableMenuItem.prototype;
     dart.addTypeTests(SelectableMenuItem);
     SelectableMenuItem.prototype[_is_SelectableMenuItem_default] = true;

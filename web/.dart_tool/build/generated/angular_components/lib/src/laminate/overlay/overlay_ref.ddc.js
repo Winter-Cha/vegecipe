@@ -756,7 +756,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/angular_components/laminat
         src__laminate__overlay__overlay_service.OverlayService._logger.severe("OverlayService must be a singleton: " + "Check that there is no nested overlayBindings or popupBindings");
       }
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/laminate/overlay/overlay_service.dart", 76, 12, "() {if (existingInstance != null) {_logger.severe('OverlayService must be a singleton: ' 'Check that there is no nested overlayBindings or popupBindings');} return true;}()");
+    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/laminate/overlay/overlay_service.dart", 76, 12, "() {if (existingInstance != null) {_logger.severe('OverlayService must be a singleton: ' 'Check that there is no nested overlayBindings or popupBindings');} return true;}()");
   }).prototype = src__laminate__overlay__overlay_service.OverlayService.prototype;
   dart.addTypeTests(src__laminate__overlay__overlay_service.OverlayService);
   dart.setMethodSignature(src__laminate__overlay__overlay_service.OverlayService, () => ({

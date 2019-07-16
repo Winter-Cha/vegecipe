@@ -435,7 +435,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
       return math.sqrt(dart.notNull(x) * dart.notNull(x) + dart.notNull(y) * dart.notNull(y));
     }
     start(touchStart) {
-      if (!(this[_scrollTimer] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/gestures.dart", 261, 12, "_scrollTimer == null");
+      if (!(this[_scrollTimer] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/gestures.dart", 261, 12, "_scrollTimer == null");
       this[_scrollTimer] = async.Timer.periodic(this[_scrollInterval], dart.bind(this, _addDragEvent));
       this[_startTime] = this[_clock].now();
       this[_lastTime] = this[_startTime];
@@ -445,7 +445,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
       this[_startingTarget] = touchStart[$target];
     }
     update(touchMove) {
-      if (!!dart.test(this[_finished])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/gestures.dart", 277, 12, "!_finished");
+      if (!!dart.test(this[_finished])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/gestures.dart", 277, 12, "!_finished");
       this[_lastTime] = this[_clock].now();
       this[_lastTouchPoint] = touchMove.touches[$first][$screen];
     }

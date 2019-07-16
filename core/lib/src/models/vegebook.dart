@@ -9,6 +9,7 @@ class VegeBook {
     this.images,
     this.galleryImages,
     this.writtenBy,
+    this.writerUid,
     this.writerPhotoUrl,
     this.reportingDate,
     this.lastModifiedDate,
@@ -20,6 +21,7 @@ class VegeBook {
   VegeBookImageData images;
   KtList<VegeBookGalleryImage> galleryImages;
   String writtenBy;
+  String writerUid;
   String writerPhotoUrl;
   DateTime reportingDate;
   DateTime lastModifiedDate;
@@ -42,6 +44,7 @@ class VegeBook {
           images == other.images &&
           galleryImages == other.galleryImages &&
           writtenBy == other.writtenBy &&
+          writerUid == other.writerUid &&
           writerPhotoUrl == other.writerPhotoUrl &&
           reportingDate == other.reportingDate &&
           lastModifiedDate == other.lastModifiedDate;
@@ -54,6 +57,7 @@ class VegeBook {
       images.hashCode ^
       galleryImages.hashCode ^
       writtenBy.hashCode ^
+      writerUid.hashCode ^
       writerPhotoUrl.hashCode ^
       reportingDate.hashCode ^
       lastModifiedDate.hashCode;

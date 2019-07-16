@@ -159,7 +159,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 11, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 11, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         if (src__collection__kt_collection.KtCollection.is(this) && dart.test(src__collection__kt_collection.KtCollection.as(this).isEmpty())) return true;
         for (let element of this.iter) {
           if (!dart.test(predicate(element))) {
@@ -198,7 +198,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (keySelector == null) dart.throw(new core.ArgumentError.new("keySelector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 61, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 61, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); return true;}()");
         for (let element of this.iter) {
           let key = keySelector(element);
           let value = V._check(valueTransform == null ? element : valueTransform(element));
@@ -210,7 +210,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 78, 12, "() {if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 78, 12, "() {if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         for (let element of this.iter) {
           let pair = transform(element);
           destination.put(pair.first, pair.second);
@@ -227,7 +227,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (valueSelector == null) dart.throw(new core.ArgumentError.new("valueSelector can't be null"));
           if (!src__collection__kt_map_mutable.KtMutableMap$(T, V).is(destination) && !M.is(src__collection__collections.mutableMapFrom(T, V))) dart.throw(new core.ArgumentError.new("associateWithTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<" + dart.str(dart.wrapType(T)) + ", " + dart.str(dart.wrapType(V)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") items aren't subtype of ") + (dart.str(this[$runtimeType]) + " items. Items can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 100, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (valueSelector == null) throw ArgumentError(\"valueSelector can't be null\"); if (destination is! KtMutableMap<T, V> && mutableMapFrom<T, V>() is! M) throw ArgumentError(\"associateWithTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$T, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) items aren't subtype of \" \"$runtimeType items. Items can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 100, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (valueSelector == null) throw ArgumentError(\"valueSelector can't be null\"); if (destination is! KtMutableMap<T, V> && mutableMapFrom<T, V>() is! M) throw ArgumentError(\"associateWithTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$T, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) items aren't subtype of \" \"$runtimeType items. Items can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.iter) {
           destination.put(element, valueSelector(element));
         }
@@ -237,7 +237,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 121, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 121, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let sum = 0.0;
         let count = 0;
         for (let element of this.iter) {
@@ -250,14 +250,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (size == null) dart.throw(new core.ArgumentError.new("size can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 136, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 136, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); return true;}()");
         return this.windowed(size, {step: size, partialWindows: true});
       }
       chunkedTransform(R, size, transform) {
         if (!dart.test(dart.fn(() => {
           if (size == null) dart.throw(new core.ArgumentError.new("size can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 145, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 145, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); return true;}()");
         return this.windowedTransform(R, size, transform, {step: size, partialWindows: true});
       }
       contains(element) {
@@ -290,7 +290,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 182, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 182, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let set = src__collection__collections.hashSetOf(K);
         let list = src__collection__collections.mutableListOf(T);
         for (let element of this.iter) {
@@ -305,7 +305,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (n == null) dart.throw(new core.ArgumentError.new("n can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 199, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 199, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
         let list = src__collection__collections.mutableListOf(T);
         let count = 0;
         for (let item of this.iter) {
@@ -319,7 +319,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 215, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 215, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         let yielding = false;
         let list = src__collection__collections.mutableListOf(T);
         for (let item of this.iter) {
@@ -338,7 +338,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 236, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 236, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         return this.elementAtOrElse(index, dart.fn(index => {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("Collection doesn't contain element at index: " + dart.str(index) + "."));
         }, intToNull()));
@@ -349,7 +349,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           if (defaultValue == null) dart.throw(new core.ArgumentError.new("defaultValue function can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 249, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 249, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
         if (dart.notNull(index) < 0) {
           return defaultValue(index);
         }
@@ -367,7 +367,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 271, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 271, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         if (dart.notNull(index) < 0) {
           return null;
         }
@@ -395,7 +395,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           if (!KtMutableCollectionOfT().is(destination) && !C.is(src__collection__collections.mutableListOf(T))) dart.throw(new core.ArgumentError.new("filterIndexedTo destination has wrong type parameters." + ("\nExpected: KtMutableCollection<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 308, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterIndexedTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 308, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterIndexedTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         let i = 0;
         for (let element of this.iter) {
           if (dart.test(predicate(i++, element))) {
@@ -426,7 +426,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (!KtMutableCollectionOfT().is(destination) && !C.is(src__collection__collections.mutableListOf(T))) dart.throw(new core.ArgumentError.new("filterNotNullTo destination has wrong type parameters." + ("\nExpected: KtMutableCollection<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 358, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterNotNullTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 358, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterNotNullTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.iter) {
           if (element != null) {
             destination.add(element);
@@ -440,7 +440,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (!KtMutableCollectionOfT().is(destination) && !C.is(src__collection__collections.mutableListOf(T))) dart.throw(new core.ArgumentError.new("filterNotTo destination has wrong type parameters." + ("\nExpected: KtMutableCollection<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 380, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterNotTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 380, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterNotTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.iter) {
           if (!dart.test(predicate(element))) {
             destination.add(element);
@@ -454,7 +454,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (!KtMutableCollectionOfT().is(destination) && !C.is(src__collection__collections.mutableListOf(T))) dart.throw(new core.ArgumentError.new("filterTo destination has wrong type parameters." + ("\nExpected: KtMutableCollection<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 402, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 402, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination == null) throw ArgumentError(\"destination can't be null\"); if (destination is! KtMutableCollection<T> && mutableListOf<T>() is! C) throw ArgumentError(\"filterTo destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.iter) {
           if (dart.test(predicate(element))) {
             destination.add(element);
@@ -466,14 +466,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 423, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 423, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         return this.firstOrNull(predicate);
       }
       findLast(predicate) {
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 432, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 432, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         return this.lastOrNull(predicate);
       }
       first(predicate) {
@@ -523,7 +523,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 491, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 491, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         for (let element of this.iter) {
           let list = transform(element);
           destination.addAll(list);
@@ -534,7 +534,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 505, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 505, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let accumulator = initial;
         for (let element of this.iter) {
           accumulator = operation(accumulator, element);
@@ -545,7 +545,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 518, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 518, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let index = 0;
         let accumulator = initial;
         for (let element of this.iter) {
@@ -557,7 +557,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (action == null) dart.throw(new core.ArgumentError.new("action can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 532, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 532, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
         let i = this.iterator();
         while (dart.test(i.hasNext())) {
           let element = i.next();
@@ -568,7 +568,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (action == null) dart.throw(new core.ArgumentError.new("action can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 545, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 545, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
         let index = 0;
         for (let item of this.iter) {
           action(index++, item);
@@ -588,7 +588,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (keySelector == null) dart.throw(new core.ArgumentError.new("keySelector can't be null"));
           if (!src__collection__kt_map_mutable.KtMutableMap$(K, KtMutableListOfT()).is(destination) && !M.is(src__collection__collections.mutableMapFrom(K, KtMutableListOfT()))) dart.throw(new core.ArgumentError.new("groupByTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<K, KtMutableList<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 572, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); if (destination is! KtMutableMap<K, KtMutableList<T>> && mutableMapFrom<K, KtMutableList<T>>() is! M) throw ArgumentError(\"groupByTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<K, KtMutableList<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 572, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); if (destination is! KtMutableMap<K, KtMutableList<T>> && mutableMapFrom<K, KtMutableList<T>>() is! M) throw ArgumentError(\"groupByTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<K, KtMutableList<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.iter) {
           let key = keySelector(element);
           let list = destination.getOrPut(key, dart.fn(() => src__collection__collections.mutableListOf(T), VoidToKtMutableListOfT()));
@@ -602,7 +602,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (keySelector == null) dart.throw(new core.ArgumentError.new("keySelector can't be null"));
           if (valueTransform == null) dart.throw(new core.ArgumentError.new("valueTransform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 595, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); if (valueTransform == null) throw ArgumentError(\"valueTransform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 595, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (keySelector == null) throw ArgumentError(\"keySelector can't be null\"); if (valueTransform == null) throw ArgumentError(\"valueTransform can't be null\"); return true;}()");
         for (let element of this.iter) {
           let key = keySelector(element);
           let list = destination.getOrPut(key, dart.fn(() => src__collection__collections.mutableListOf(V), dart.fnType(src__collection__kt_list_mutable.KtMutableList$(V), [])));
@@ -624,7 +624,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 623, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 623, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         let index = 0;
         for (let item of this.iter) {
           if (dart.test(predicate(item))) {
@@ -638,7 +638,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 639, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 639, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         let lastIndex = -1;
         let index = 0;
         for (let item of this.iter) {
@@ -767,7 +767,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 790, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 790, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         let index = 0;
         for (let item of this.iter) {
           let element = transform(index++, item);
@@ -782,7 +782,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 808, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 808, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         let index = 0;
         for (let item of this.iter) {
           destination.add(transform(index++, item));
@@ -798,7 +798,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 831, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 831, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         for (let item of this.iter) {
           let result = transform(item);
           if (result != null) {
@@ -812,7 +812,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 848, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 848, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         for (let item of this.iter) {
           destination.add(transform(item));
         }
@@ -839,7 +839,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 882, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 882, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(this.iterator().hasNext())) return null;
         let maxElement = i.next();
@@ -858,7 +858,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (comparator == null) dart.throw(new core.ArgumentError.new("comparator can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 903, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 903, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(i.hasNext())) return null;
         let max = i.next();
@@ -892,7 +892,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 942, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 942, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         if (src__collection__kt_collection.KtCollection.is(this) && dart.test(src__collection__kt_collection.KtCollection.as(this).isEmpty())) {
           return this.toList();
         }
@@ -920,7 +920,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 972, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 972, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(this.iterator().hasNext())) return null;
         let minElement = i.next();
@@ -939,7 +939,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (comparator == null) dart.throw(new core.ArgumentError.new("comparator can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 993, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 993, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(i.hasNext())) return null;
         let min = i.next();
@@ -966,7 +966,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (action == null) dart.throw(new core.ArgumentError.new("action can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1023, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1023, 12, "() {if (action == null) throw ArgumentError(\"action can't be null\"); return true;}()");
         for (let element of this.iter) {
           action(element);
         }
@@ -975,7 +975,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1034, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1034, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         let first = src__collection__collections.mutableListOf(T);
         let second = src__collection__collections.mutableListOf(T);
         for (let element of this.iter) {
@@ -992,7 +992,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1052, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1052, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         let result = src__collection__collections.mutableListOf(T);
         result.addAll(this.asIterable());
         result.addAll(elements);
@@ -1013,7 +1013,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1075, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1075, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(i.hasNext())) dart.throw(new core.UnsupportedError.new("Empty collection can't be reduced."));
         let accumulator = S.as(i.next());
@@ -1026,7 +1026,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1091, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1091, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(i.hasNext())) dart.throw(new core.UnsupportedError.new("Empty collection can't be reduced."));
         let index = 1;
@@ -1107,14 +1107,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1189, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1189, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         return this.sortedWith(src__collection__comparisons.compareBy(T, selector));
       }
       sortedByDescending(R, selector) {
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1199, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1199, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         return this.sortedWith(src__collection__comparisons.compareByDescending(T, selector));
       }
       sortedDescending() {
@@ -1124,7 +1124,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (comparator == null) dart.throw(new core.ArgumentError.new("comparator can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1211, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1211, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
         let mutableList = this.toMutableList();
         mutableList.list[$sort](comparator);
         return mutableList;
@@ -1134,7 +1134,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (other == null) dart.throw(new core.ArgumentError.new("other can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1222, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1222, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); return true;}()");
         let set = this.toMutableSet();
         set.removeAll(other);
         return set;
@@ -1153,7 +1153,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1247, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1247, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let sum = 0;
         for (let element of this.iter) {
           sum = sum + dart.notNull(selector(element));
@@ -1164,7 +1164,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1260, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1260, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         let sum = 0.0;
         for (let element of this.iter) {
           sum = sum + dart.notNull(selector(element));
@@ -1175,7 +1175,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (n == null) dart.throw(new core.ArgumentError.new("n can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1273, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1273, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
         if (dart.notNull(n) < 0) {
           dart.throw(new core.ArgumentError.new("Requested element count " + dart.str(n) + " is less than zero."));
         }
@@ -1202,7 +1202,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (destination == null) dart.throw(new core.ArgumentError.new("destination can't be null"));
           if (!C.is(src__collection__collections.mutableListOf(T))) dart.throw(new core.ArgumentError.new("toCollection destination has wrong type parameters." + ("\nExpected: KtMutableCollection<" + dart.str(dart.wrapType(T)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1303, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (mutableListOf<T>() is! C) throw ArgumentError(\"toCollection destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1303, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (mutableListOf<T>() is! C) throw ArgumentError(\"toCollection destination has wrong type parameters.\" \"\\nExpected: KtMutableCollection<$T>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let item of this.iter) {
           destination.add(item);
         }
@@ -1228,7 +1228,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (other == null) dart.throw(new core.ArgumentError.new("other can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1337, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1337, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); return true;}()");
         let set = this.toMutableSet();
         set.addAll(other);
         return set;
@@ -1241,7 +1241,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (step == null) dart.throw(new core.ArgumentError.new("step can't be null"));
           if (partialWindows == null) dart.throw(new core.ArgumentError.new("partialWindows can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1349, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); if (step == null) throw ArgumentError(\"step can't be null\"); if (partialWindows == null) throw ArgumentError(\"partialWindows can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1349, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); if (step == null) throw ArgumentError(\"step can't be null\"); if (partialWindows == null) throw ArgumentError(\"partialWindows can't be null\"); return true;}()");
         let list = this.toList();
         let thisSize = list.size;
         let result = src__collection__collections.mutableListOf(KtListOfT());
@@ -1264,7 +1264,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (step == null) dart.throw(new core.ArgumentError.new("step can't be null"));
           if (partialWindows == null) dart.throw(new core.ArgumentError.new("partialWindows can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1373, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (step == null) throw ArgumentError(\"step can't be null\"); if (partialWindows == null) throw ArgumentError(\"partialWindows can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1373, 12, "() {if (size == null) throw ArgumentError(\"size can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (step == null) throw ArgumentError(\"step can't be null\"); if (partialWindows == null) throw ArgumentError(\"partialWindows can't be null\"); return true;}()");
         let list = this.toList();
         let thisSize = list.size;
         let result = src__collection__collections.mutableListOf(R);
@@ -1286,7 +1286,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (other == null) dart.throw(new core.ArgumentError.new("other can't be null"));
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1402, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1402, 12, "() {if (other == null) throw ArgumentError(\"other can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         let first = this.iterator();
         let second = other.iterator();
         let list = src__collection__collections.mutableListOf(V);
@@ -1302,7 +1302,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1422, 12, "() {if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_extension_mixin.dart", 1422, 12, "() {if (transform == null) throw ArgumentError(\"transform can't be null\"); return true;}()");
         let i = this.iterator();
         if (!dart.test(i.hasNext())) {
           return src__collection__collections.emptyList(R);
@@ -1492,7 +1492,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/iterable_mutable_extension_mixin.dart", 15, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/iterable_mutable_extension_mixin.dart", 15, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         let result = false;
         let i = this.iterator();
         while (dart.test(i.hasNext()))
@@ -1557,7 +1557,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set_mutable.dart", 37, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set_mutable.dart", 37, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.all(dart.bind(this[_set], 'contains'));
       }
       isEmpty() {
@@ -1597,7 +1597,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set_mutable.dart", 77, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set_mutable.dart", 77, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         let oldSize = this.size;
         this[_set].addAll(elements.iter);
         return this.size != oldSize;
@@ -1614,7 +1614,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set_mutable.dart", 94, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set_mutable.dart", 94, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         let oldSize = this.size;
         for (let value of elements.iter) {
           this[_set].remove(value);
@@ -1626,7 +1626,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set_mutable.dart", 107, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set_mutable.dart", 107, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         let oldSize = this.size;
         this[_set].removeWhere(dart.fn(it => !dart.test(elements.contains(it)), TTobool()));
         return oldSize != this.size;
@@ -1884,7 +1884,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set_empty.dart", 17, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set_empty.dart", 17, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.isEmpty();
       }
       isEmpty() {
@@ -2009,7 +2009,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/set.dart", 31, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/set.dart", 31, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.all(dart.bind(this[_set$], 'contains'));
       }
       isEmpty() {
@@ -2251,7 +2251,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           if (!KtMutableMapOfK$V().is(destination) && !M.is(src__collection__collections.mutableMapFrom(K, V))) dart.throw(new core.ArgumentError.new("filterTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<" + dart.str(dart.wrapType(K)) + ", " + dart.str(dart.wrapType(V)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 16, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableMap<K, V> && mutableMapFrom<K, V>() is! M) throw ArgumentError(\"filterTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 16, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableMap<K, V> && mutableMapFrom<K, V>() is! M) throw ArgumentError(\"filterTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.entries.iter) {
           if (dart.test(predicate(element))) {
             destination.put(element.key, element.value);
@@ -2269,7 +2269,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           if (!KtMutableMapOfK$V().is(destination) && !M.is(src__collection__collections.mutableMapFrom(K, V))) dart.throw(new core.ArgumentError.new("filterNotTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<" + dart.str(dart.wrapType(K)) + ", " + dart.str(dart.wrapType(V)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\ndestination (" + dart.str(dart.runtimeType(destination)) + ") entries aren't subtype of ") + ("map (" + dart.str(this[$runtimeType]) + ") entries. Entries can't be copied to destination.") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 45, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableMap<K, V> && mutableMapFrom<K, V>() is! M) throw ArgumentError(\"filterNotTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 45, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (predicate == null) throw ArgumentError(\"predicate can't be null\"); if (destination is! KtMutableMap<K, V> && mutableMapFrom<K, V>() is! M) throw ArgumentError(\"filterNotTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $V>, Actual: ${destination.runtimeType}\" \"\\ndestination (${destination.runtimeType}) entries aren't subtype of \" \"map ($runtimeType) entries. Entries can't be copied to destination.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.entries.iter) {
           if (!dart.test(predicate(element))) {
             destination.put(element.key, element.value);
@@ -2283,7 +2283,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (defaultValue == null) dart.throw(new core.ArgumentError.new("defaultValue can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 66, 12, "() {if (defaultValue == null) throw ArgumentError(\"defaultValue can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 66, 12, "() {if (defaultValue == null) throw ArgumentError(\"defaultValue can't be null\"); return true;}()");
         let l = this.get(key);
         return l != null ? l : defaultValue();
       }
@@ -2311,7 +2311,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           if (!src__collection__kt_map_mutable.KtMutableMap$(R, V).is(destination) && !M.is(src__collection__collections.mutableMapFrom(R, V))) dart.throw(new core.ArgumentError.new("mapKeysTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<" + dart.str(dart.wrapType(R)) + ", " + dart.str(dart.wrapType(V)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\nEntries after key transformation with " + dart.str(transform) + " have type KtMapEntry<" + dart.str(dart.wrapType(R)) + ", " + dart.str(dart.wrapType(V)) + "> ") + ("and can't be copied into destination of type " + dart.str(dart.runtimeType(destination)) + ".") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 98, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (destination is! KtMutableMap<R, V> && mutableMapFrom<R, V>() is! M) throw ArgumentError(\"mapKeysTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$R, $V>, Actual: ${destination.runtimeType}\" \"\\nEntries after key transformation with $transform have type KtMapEntry<$R, $V> \" \"and can't be copied into destination of type ${destination.runtimeType}.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 98, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (destination is! KtMutableMap<R, V> && mutableMapFrom<R, V>() is! M) throw ArgumentError(\"mapKeysTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$R, $V>, Actual: ${destination.runtimeType}\" \"\\nEntries after key transformation with $transform have type KtMapEntry<$R, $V> \" \"and can't be copied into destination of type ${destination.runtimeType}.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.entries.iter) {
           destination.put(transform(element), element.value);
         }
@@ -2327,7 +2327,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (transform == null) dart.throw(new core.ArgumentError.new("transform can't be null"));
           if (!src__collection__kt_map_mutable.KtMutableMap$(K, R).is(destination) && !M.is(src__collection__collections.mutableMapFrom(K, R))) dart.throw(new core.ArgumentError.new("mapValuesTo destination has wrong type parameters." + ("\nExpected: KtMutableMap<" + dart.str(dart.wrapType(K)) + ", " + dart.str(dart.wrapType(R)) + ">, Actual: " + dart.str(dart.runtimeType(destination))) + ("\nEntries after key transformation with " + dart.str(transform) + " have type KtMapEntry<" + dart.str(dart.wrapType(K)) + ", " + dart.str(dart.wrapType(R)) + "> ") + ("and can't be copied into destination of type " + dart.str(dart.runtimeType(destination)) + ".") + ("\n\n" + "This type error can't be caught at compile time due to a bug in the dart compiler.\nPlease upvote https://github.com/dart-lang/sdk/issues/35518 if you want this error to be cought earlier.\n")));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 124, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (destination is! KtMutableMap<K, R> && mutableMapFrom<K, R>() is! M) throw ArgumentError(\"mapValuesTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $R>, Actual: ${destination.runtimeType}\" \"\\nEntries after key transformation with $transform have type KtMapEntry<$K, $R> \" \"and can't be copied into destination of type ${destination.runtimeType}.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 124, 12, "() {if (destination == null) throw ArgumentError(\"destination can't be null\"); if (transform == null) throw ArgumentError(\"transform can't be null\"); if (destination is! KtMutableMap<K, R> && mutableMapFrom<K, R>() is! M) throw ArgumentError(\"mapValuesTo destination has wrong type parameters.\" \"\\nExpected: KtMutableMap<$K, $R>, Actual: ${destination.runtimeType}\" \"\\nEntries after key transformation with $transform have type KtMapEntry<$K, $R> \" \"and can't be copied into destination of type ${destination.runtimeType}.\" \"\\n\\n$kBug35518GenericTypeError\"); return true;}()");
         for (let element of this.entries.iter) {
           destination.put(element.key, transform(element));
         }
@@ -2348,7 +2348,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (map == null) dart.throw(new core.ArgumentError.new("map can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 151, 12, "() {if (map == null) throw ArgumentError(\"map can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_extensions_mixin.dart", 151, 12, "() {if (map == null) throw ArgumentError(\"map can't be null\"); return true;}()");
         let _ = this.toMutableMap();
         _.putAll(map);
         return _;
@@ -2425,7 +2425,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (defaultValue == null) dart.throw(new core.ArgumentError.new("defaultValue can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_mutable_extensions_mixin.dart", 7, 12, "() {if (defaultValue == null) throw ArgumentError(\"defaultValue can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_mutable_extensions_mixin.dart", 7, 12, "() {if (defaultValue == null) throw ArgumentError(\"defaultValue can't be null\"); return true;}()");
         let value = this.get(key);
         if (value != null) return value;
         let answer = defaultValue();
@@ -2440,7 +2440,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (pairs == null) dart.throw(new core.ArgumentError.new("pairs can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/map_mutable_extensions_mixin.dart", 24, 12, "() {if (pairs == null) throw ArgumentError(\"pairs can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/map_mutable_extensions_mixin.dart", 24, 12, "() {if (pairs == null) throw ArgumentError(\"pairs can't be null\"); return true;}()");
         for (let value of pairs.iter) {
           this.put(value.first, value.second);
         }
@@ -2551,7 +2551,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (from == null) dart.throw(new core.ArgumentError.new("from can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/map_mutable.dart", 73, 12, "() {if (from == null) throw ArgumentError(\"from can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/map_mutable.dart", 73, 12, "() {if (from == null) throw ArgumentError(\"from can't be null\"); return true;}()");
         for (let entry of from.entries.iter) {
           this[_map][$_set](entry.key, entry.value);
         }
@@ -3080,7 +3080,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 27, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 27, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         if (dart.notNull(this.size) > 1) {
           this.sortWith(src__collection__comparisons.compareBy(T, selector));
         }
@@ -3089,7 +3089,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (selector == null) dart.throw(new core.ArgumentError.new("selector can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 38, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 38, 12, "() {if (selector == null) throw ArgumentError(\"selector can't be null\"); return true;}()");
         if (dart.notNull(this.size) > 1) {
           this.sortWith(src__collection__comparisons.compareByDescending(T, selector));
         }
@@ -3098,7 +3098,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (comparator == null) dart.throw(new core.ArgumentError.new("comparator can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 49, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_mutable_extension_mixin.dart", 49, 12, "() {if (comparator == null) throw ArgumentError(\"comparator can't be null\"); return true;}()");
         this.list[$sort](comparator);
       }
       swap(indexA, indexB) {
@@ -3153,7 +3153,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (n == null) dart.throw(new core.ArgumentError.new("n can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 7, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 7, 12, "() {if (n == null) throw ArgumentError(\"n can't be null\"); return true;}()");
         let count = dart.notNull(this.size) - dart.notNull(n);
         if (count < 0) {
           count = 0;
@@ -3164,7 +3164,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (predicate == null) dart.throw(new core.ArgumentError.new("predicate can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 20, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 20, 12, "() {if (predicate == null) throw ArgumentError(\"predicate can't be null\"); return true;}()");
         if (!dart.test(this.isEmpty())) {
           let i = this.listIterator(this.size);
           while (dart.test(i.hasPrevious())) {
@@ -3184,7 +3184,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           if (defaultValue == null) dart.throw(new core.ArgumentError.new("defaultValue function can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 40, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 40, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
         return dart.notNull(index) >= 0 && dart.notNull(index) <= dart.notNull(this.lastIndex) ? this.get(index) : defaultValue(index);
       }
       elementAtOrNull(index) {
@@ -3206,7 +3206,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 68, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 68, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         if (dart.test(this.isEmpty())) return initial;
         let accumulator = initial;
         let i = this.listIterator(this.size);
@@ -3219,7 +3219,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 84, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 84, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         if (dart.test(this.isEmpty())) return initial;
         let accumulator = initial;
         let i = this.listIterator(this.size);
@@ -3234,14 +3234,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           if (defaultValue == null) dart.throw(new core.ArgumentError.new("defaultValue function can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 100, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 100, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (defaultValue == null) throw ArgumentError(\"defaultValue function can't be null\"); return true;}()");
         return dart.notNull(index) >= 0 && dart.notNull(index) <= dart.notNull(this.lastIndex) ? this.get(index) : defaultValue(index);
       }
       getOrNull(index) {
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 113, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 113, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         return dart.notNull(index) >= 0 && dart.notNull(index) <= dart.notNull(this.lastIndex) ? this.get(index) : null;
       }
       last(predicate) {
@@ -3270,7 +3270,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 146, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 146, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let i = this.listIterator(this.size);
         if (!dart.test(i.hasPrevious())) {
           dart.throw(new core.UnimplementedError.new("Empty list can't be reduced."));
@@ -3285,7 +3285,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (operation == null) dart.throw(new core.ArgumentError.new("operation can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 163, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 163, 12, "() {if (operation == null) throw ArgumentError(\"operation can't be null\"); return true;}()");
         let i = this.listIterator(this.size);
         if (!dart.test(i.hasPrevious())) {
           dart.throw(new core.UnimplementedError.new("Empty list can't be reduced."));
@@ -3355,7 +3355,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (indices == null) dart.throw(new core.ArgumentError.new("indices can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 234, 12, "() {if (indices == null) throw ArgumentError(\"indices can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/extension/list_extension_mixin.dart", 234, 12, "() {if (indices == null) throw ArgumentError(\"indices can't be null\"); return true;}()");
         if (indices.count() === 0) {
           return src__collection__collections.emptyList(T);
         }
@@ -3448,14 +3448,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 42, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 42, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.all(dart.bind(this[_list], $contains));
       }
       get(index) {
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 51, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 51, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         if (dart.notNull(index) < 0 || dart.notNull(index) >= dart.notNull(this.size)) {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("List doesn't contain element at index: " + dart.str(index) + ", size: " + dart.str(this.size)));
         }
@@ -3496,7 +3496,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 94, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 94, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         this[_list][$addAll](elements.iter);
         return true;
       }
@@ -3506,7 +3506,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 104, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 104, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         this[_list][$insertAll](index, elements.iter);
         return true;
       }
@@ -3515,7 +3515,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 115, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 115, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         this[_list][$insert](index, element);
       }
       clear() {
@@ -3529,7 +3529,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 130, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 130, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         if (dart.notNull(index) < 0 || dart.notNull(index) >= dart.notNull(this.size)) {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("index: " + dart.str(index) + ", size: " + dart.str(this.size)));
         }
@@ -3540,7 +3540,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 142, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 142, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         let old = this[_list][$_get](index);
         this[_list][$_set](index, element);
         return old;
@@ -3554,7 +3554,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 156, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 156, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         let changed = false;
         for (let value of elements.iter) {
           changed = !!(changed | dart.test(this[_list][$remove](value)));
@@ -3566,7 +3566,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 169, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 169, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         this[_list][$removeWhere](dart.fn(it => !dart.test(elements.contains(it)), TTobool()));
         return true;
       }
@@ -3578,7 +3578,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
             dart.throw(new core.ArgumentError.new("fromIndex: " + dart.str(fromIndex) + " > toIndex: " + dart.str(toIndex)));
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_mutable.dart", 179, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); if (fromIndex > toIndex) {throw ArgumentError(\"fromIndex: $fromIndex > toIndex: $toIndex\");} return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_mutable.dart", 179, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); if (fromIndex > toIndex) {throw ArgumentError(\"fromIndex: $fromIndex > toIndex: $toIndex\");} return true;}()");
         if (dart.notNull(fromIndex) < 0 || dart.notNull(toIndex) > dart.notNull(this.size)) {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("fromIndex: " + dart.str(fromIndex) + ", toIndex: " + dart.str(toIndex) + ", size: " + dart.str(this.size)));
         }
@@ -3737,21 +3737,21 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_empty.dart", 21, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_empty.dart", 21, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.isEmpty();
       }
       get(index) {
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_empty.dart", 30, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_empty.dart", 30, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("Empty list doesn't contain element at index: " + dart.str(index) + "."));
       }
       _get(index) {
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_empty.dart", 40, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_empty.dart", 40, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("Empty list doesn't contain element at index: " + dart.str(index) + "."));
       }
       indexOf(element) {
@@ -3773,7 +3773,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_empty.dart", 62, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_empty.dart", 62, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         return new (_EmptyIteratorOfT()).new();
       }
       get size() {
@@ -3784,7 +3784,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (fromIndex == null) dart.throw(new core.ArgumentError.new("fromIndex can't be null"));
           if (toIndex == null) dart.throw(new core.ArgumentError.new("toIndex can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list_empty.dart", 74, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list_empty.dart", 74, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); return true;}()");
         if (fromIndex === 0 && toIndex === 0) return this;
         dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("fromIndex: " + dart.str(fromIndex) + ", toIndex: " + dart.str(toIndex) + ", size: " + dart.str(this.size)));
       }
@@ -4148,14 +4148,14 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (elements == null) dart.throw(new core.ArgumentError.new("elements can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list.dart", 36, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list.dart", 36, 12, "() {if (elements == null) throw ArgumentError(\"elements can't be null\"); return true;}()");
         return elements.all(dart.bind(this[_list$], $contains));
       }
       get(index) {
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list.dart", 45, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list.dart", 45, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         if (dart.notNull(index) < 0 || dart.notNull(index) >= dart.notNull(this.size)) {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("index: " + dart.str(index) + ", size: " + dart.str(this.size)));
         }
@@ -4183,7 +4183,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
         if (!dart.test(dart.fn(() => {
           if (index == null) dart.throw(new core.ArgumentError.new("index can't be null"));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list.dart", 72, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list.dart", 72, 12, "() {if (index == null) throw ArgumentError(\"index can't be null\"); return true;}()");
         return new (InterOpKtListIteratorOfT()).new(this[_list$], index);
       }
       get size() {
@@ -4195,7 +4195,7 @@ define(['dart_sdk', 'packages/kt_dart/src/exception/exceptions'], function(dart_
           if (toIndex == null) dart.throw(new core.ArgumentError.new("toIndex can't be null"));
           if (dart.notNull(fromIndex) > dart.notNull(toIndex)) dart.throw(new core.ArgumentError.new("fromIndex: " + dart.str(fromIndex) + " > toIndex: " + dart.str(toIndex)));
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/kt_dart/src/collection/impl/list.dart", 84, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); if (fromIndex > toIndex) throw ArgumentError(\"fromIndex: $fromIndex > toIndex: $toIndex\"); return true;}()");
+        }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/kt_dart/src/collection/impl/list.dart", 84, 12, "() {if (fromIndex == null) throw ArgumentError(\"fromIndex can't be null\"); if (toIndex == null) throw ArgumentError(\"toIndex can't be null\"); if (fromIndex > toIndex) throw ArgumentError(\"fromIndex: $fromIndex > toIndex: $toIndex\"); return true;}()");
         if (dart.notNull(fromIndex) < 0 || dart.notNull(toIndex) > dart.notNull(this.size)) {
           dart.throw(new src__exception__exceptions.IndexOutOfBoundsException.new("fromIndex: " + dart.str(fromIndex) + ", toIndex: " + dart.str(toIndex) + ", size: " + dart.str(this.size)));
         }

@@ -38,7 +38,7 @@ define(['dart_sdk', 'packages/angular_components/src/laminate/overlay/overlay_re
       return this[_stack][$length];
     }
     onModalClosed(modal) {
-      if (!dart.equals(this[_stack][$last], modal)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/laminate/components/modal/modal.dart", 33, 12, "_stack.last == modal");
+      if (!dart.equals(this[_stack][$last], modal)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/laminate/components/modal/modal.dart", 33, 12, "_stack.last == modal");
       if (dart.equals(this[_stack][$last], modal)) {
         this[_stack][$removeLast]();
         if (dart.test(this[_stack][$isNotEmpty])) {

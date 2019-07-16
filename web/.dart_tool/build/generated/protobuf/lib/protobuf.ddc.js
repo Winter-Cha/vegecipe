@@ -208,7 +208,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
   const _mergeEntry = dart.privateName(protobuf, "_mergeEntry");
   const _ensureMapField = dart.privateName(protobuf, "_ensureMapField");
   protobuf._mergeFromCodedBufferReader = function(fs, input, registry) {
-    if (!(registry != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/coded_buffer.dart", 31, 10, "registry != null");
+    if (!(registry != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/coded_buffer.dart", 31, 10, "registry != null");
     while (true) {
       let tag = input.readTag();
       if (tag === 0) return;
@@ -511,7 +511,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[_currentLimit] = oldLimit;
     }
     [_checkLimit](increment) {
-      if (!(this[_currentLimit] !== -1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/coded_buffer_reader.dart", 54, 12, "_currentLimit != -1");
+      if (!(this[_currentLimit] !== -1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/coded_buffer_reader.dart", 54, 12, "_currentLimit != -1");
       this[_bufferPos] = dart.notNull(this[_bufferPos]) + dart.notNull(increment);
       if (dart.notNull(this[_bufferPos]) > dart.notNull(this[_currentLimit])) {
         dart.throw(new protobuf.InvalidProtocolBufferException.truncatedMessage());
@@ -1351,7 +1351,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
     }
     [_addField](fi) {
       this.byIndex[$add](fi);
-      if (!dart.equals(this.byIndex[$_get](fi.index), fi)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/builder_info.dart", 59, 12, "byIndex[fi.index] == fi");
+      if (!dart.equals(this.byIndex[$_get](fi.index), fi)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/builder_info.dart", 59, 12, "byIndex[fi.index] == fi");
       this.fieldInfo[$_set](fi.tagNumber, fi);
       this.byTagAsString[$_set](dart.str(fi.tagNumber), fi);
       this.byName[$_set](fi.name, fi);
@@ -1382,21 +1382,21 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this.add(T, tagNumber, name, fieldType, defaultOrMaker, null, valueOf, enumValues);
     }
     p(T, tagNumber, name, fieldType) {
-      if (!(!dart.test(protobuf._isGroupOrMessage(fieldType)) && !dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/builder_info.dart", 110, 12, "!_isGroupOrMessage(fieldType) && !_isEnum(fieldType)");
+      if (!(!dart.test(protobuf._isGroupOrMessage(fieldType)) && !dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/builder_info.dart", 110, 12, "!_isGroupOrMessage(fieldType) && !_isEnum(fieldType)");
       this.addRepeated(T, tagNumber, name, fieldType, protobuf.getCheckFunction(fieldType), null, null, null);
     }
     pc(T, tagNumber, name, fieldType, subBuilder, valueOf, enumValues) {
       if (subBuilder === void 0) subBuilder = null;
       if (valueOf === void 0) valueOf = null;
       if (enumValues === void 0) enumValues = null;
-      if (!(dart.test(protobuf._isGroupOrMessage(fieldType)) || dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/builder_info.dart", 120, 12, "_isGroupOrMessage(fieldType) || _isEnum(fieldType)");
+      if (!(dart.test(protobuf._isGroupOrMessage(fieldType)) || dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/builder_info.dart", 120, 12, "_isGroupOrMessage(fieldType) || _isEnum(fieldType)");
       this.addRepeated(T, tagNumber, name, fieldType, dart.fn(protobuf._checkNotNull, ObjectTovoid()), subBuilder, valueOf, enumValues);
     }
     pp(T, tagNumber, name, fieldType, check, subBuilder, valueOf, enumValues) {
       if (subBuilder === void 0) subBuilder = null;
       if (valueOf === void 0) valueOf = null;
       if (enumValues === void 0) enumValues = null;
-      if (!(dart.test(protobuf._isGroupOrMessage(fieldType)) || dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/builder_info.dart", 131, 12, "_isGroupOrMessage(fieldType) || _isEnum(fieldType)");
+      if (!(dart.test(protobuf._isGroupOrMessage(fieldType)) || dart.test(protobuf._isEnum(fieldType)))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/builder_info.dart", 131, 12, "_isGroupOrMessage(fieldType) || _isEnum(fieldType)");
       this.addRepeated(T, tagNumber, name, fieldType, dart.fn(protobuf._checkNotNull, ObjectTovoid()), subBuilder, valueOf, enumValues);
     }
     oo(oneofIndex, tags) {
@@ -1717,12 +1717,12 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
         }
       }
       [_createRepeatedField](m) {
-        if (!dart.test(this.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 156, 12, "isRepeated");
+        if (!dart.test(this.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 156, 12, "isRepeated");
         return m.createRepeatedField(T, this.tagNumber, this);
       }
       [_createRepeatedFieldWithType](S, m) {
         dart.checkTypeBound(S, T, 'S');
-        if (!dart.test(this.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 162, 12, "isRepeated");
+        if (!dart.test(this.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 162, 12, "isRepeated");
         return m.createRepeatedField(S, this.tagNumber, protobuf.FieldInfo$(S)._check(this));
       }
       [_ensureRepeatedField](fs) {
@@ -1748,9 +1748,9 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[makeDefault$] = protobuf.FieldInfo.findMakeDefault(type, defaultOrMaker);
       this[check$] = null;
       this[_mapEntryBuilderInfo] = null;
-      if (!(type !== 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 47, 12, "type != 0");
-      if (!(!dart.test(protobuf._isGroupOrMessage(type)) || this.subBuilder != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 48, 12, "!_isGroupOrMessage(type) || subBuilder != null");
-      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 49, 12, "!_isEnum(type) || valueOf != null");
+      if (!(type !== 0)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 47, 12, "type != 0");
+      if (!(!dart.test(protobuf._isGroupOrMessage(type)) || this.subBuilder != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 48, 12, "!_isGroupOrMessage(type) || subBuilder != null");
+      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 49, 12, "!_isEnum(type) || valueOf != null");
     }).prototype = FieldInfo.prototype;
     (FieldInfo.repeated = function(name, tagNumber, index, type, check, subBuilder, valueOf, enumValues) {
       if (valueOf === void 0) valueOf = null;
@@ -1766,11 +1766,11 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[type$] = type;
       this[makeDefault$] = dart.fn(() => new (PbListOfT()).new({check: check}), VoidToPbListOfT());
       this[_mapEntryBuilderInfo] = null;
-      if (!(this.name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 58, 12, "name != null");
-      if (!(this.tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 59, 12, "tagNumber != null");
-      if (!dart.test(protobuf._isRepeated(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 60, 12, "_isRepeated(type)");
-      if (!(this.check != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 61, 12, "check != null");
-      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 62, 12, "!_isEnum(type) || valueOf != null");
+      if (!(this.name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 58, 12, "name != null");
+      if (!(this.tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 59, 12, "tagNumber != null");
+      if (!dart.test(protobuf._isRepeated(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 60, 12, "_isRepeated(type)");
+      if (!(this.check != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 61, 12, "check != null");
+      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 62, 12, "!_isEnum(type) || valueOf != null");
     }).prototype = FieldInfo.prototype;
     (FieldInfo._map = function(name, tagNumber, index, type, makeDefault, defaultOrMaker, subBuilder, valueOf, enumValues, mapEntryBuilderInfo) {
       if (defaultOrMaker === void 0) defaultOrMaker = null;
@@ -1789,9 +1789,9 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[_mapEntryBuilderInfo] = mapEntryBuilderInfo;
       this[type$] = type;
       this[check$] = null;
-      if (!(this.name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 74, 12, "name != null");
-      if (!(this.tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 75, 12, "tagNumber != null");
-      if (!dart.test(protobuf._isMapField(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 76, 12, "_isMapField(type)");
+      if (!(this.name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 74, 12, "name != null");
+      if (!(this.tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 75, 12, "tagNumber != null");
+      if (!dart.test(protobuf._isMapField(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 76, 12, "_isMapField(type)");
     }).prototype = FieldInfo.prototype;
     dart.addTypeTests(FieldInfo);
     FieldInfo.prototype[_is_FieldInfo_default] = true;
@@ -1946,9 +1946,9 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       return true;
     }
     [_ensureRepeatedField](T, fi) {
-      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/extension_field_set.dart", 40, 12, "!_isReadOnly");
-      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/extension_field_set.dart", 41, 12, "fi.isRepeated");
-      if (!(fi.extendee == this[_parent][_messageName])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/extension_field_set.dart", 42, 12, "fi.extendee == _parent._messageName");
+      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/extension_field_set.dart", 40, 12, "!_isReadOnly");
+      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/extension_field_set.dart", 41, 12, "fi.isRepeated");
+      if (!(fi.extendee == this[_parent][_messageName])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/extension_field_set.dart", 42, 12, "fi.extendee == _parent._messageName");
       let list = this[_values][$_get](fi.tagNumber);
       if (list != null) return core.List$(T).as(list);
       return core.List$(T)._check(this[_addInfoAndCreateList](fi));
@@ -2011,7 +2011,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       }
     }
     [_addInfoUnchecked](fi) {
-      if (!(fi.extendee == this[_parent][_messageName])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/extension_field_set.dart", 123, 12, "fi.extendee == _parent._messageName");
+      if (!(fi.extendee == this[_parent][_messageName])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/extension_field_set.dart", 123, 12, "fi.extendee == _parent._messageName");
       this[_info][$_set](fi.tagNumber, fi);
     }
     [_setFieldUnchecked](fi, value) {
@@ -2042,7 +2042,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
         let value = original[_getFieldOrNull](extension);
         if (value == null) continue;
         if (dart.test(extension.isRepeated)) {
-          if (!protobuf.PbListBase.is(value)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/extension_field_set.dart", 158, 16, "value is PbListBase");
+          if (!protobuf.PbListBase.is(value)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/extension_field_set.dart", 158, 16, "value is PbListBase");
           this[_ensureRepeatedField](dart.dynamic, extension)[$addAll](core.Iterable._check(value));
         } else {
           this[_setFieldUnchecked](extension, value);
@@ -2523,7 +2523,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
         return fs[_ensureMapField](K, V, this);
       }
       [_createMapField](m) {
-        if (!dart.test(this.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 205, 12, "isMapField");
+        if (!dart.test(this.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 205, 12, "isMapField");
         return m.createMapField(K, V, this.tagNumber, this);
       }
     }
@@ -2532,10 +2532,10 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[keyFieldType$] = keyFieldType;
       this[valueFieldType$] = valueFieldType;
       MapFieldInfo.__proto__._map.call(this, name, tagNumber, index, type, dart.fn(() => new (PbMapOfK$V()).new(keyFieldType, valueFieldType, mapEntryBuilderInfo), VoidToPbMapOfK$V()), null, null, null, null, mapEntryBuilderInfo);
-      if (!(name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 194, 12, "name != null");
-      if (!(tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 195, 12, "tagNumber != null");
-      if (!dart.test(protobuf._isMapField(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 196, 12, "_isMapField(type)");
-      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_info.dart", 197, 12, "!_isEnum(type) || valueOf != null");
+      if (!(name != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 194, 12, "name != null");
+      if (!(tagNumber != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 195, 12, "tagNumber != null");
+      if (!dart.test(protobuf._isMapField(type))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 196, 12, "_isMapField(type)");
+      if (!(!dart.test(protobuf._isEnum(type)) || this.valueOf != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_info.dart", 197, 12, "!_isEnum(type) || valueOf != null");
     }).prototype = MapFieldInfo.prototype;
     dart.addTypeTests(MapFieldInfo);
     MapFieldInfo.prototype[_is_MapFieldInfo_default] = true;
@@ -2710,14 +2710,14 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       return value;
     }
     [_getDefaultList](T, fi) {
-      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 196, 12, "fi.isRepeated");
+      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 196, 12, "fi.isRepeated");
       if (dart.test(this[_isReadOnly])) return core.List$(T).unmodifiable(const$2 || (const$2 = dart.constList([], dart.dynamic)));
       let value = core.List$(T)._check(fi[_createRepeatedFieldWithType](T, this[_message]));
       this[_setNonExtensionFieldUnchecked](fi, value);
       return value;
     }
     [_getDefaultMap](K, V, fi) {
-      if (!dart.test(fi.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 208, 12, "fi.isMapField");
+      if (!dart.test(fi.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 208, 12, "fi.isMapField");
       if (dart.test(this[_isReadOnly])) return new (protobuf.PbMap$(K, V)).unmodifiable(new (protobuf.PbMap$(K, V)).new(fi.keyFieldType, fi.valueFieldType, fi[_mapEntryBuilderInfo]));
       let value = fi[_createMapField](this[_message]);
       this[_setNonExtensionFieldUnchecked](fi, value);
@@ -2777,8 +2777,8 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       this[_setNonExtensionFieldUnchecked](fi, value);
     }
     [_setFieldUnchecked](fi, value) {
-      if (!(fi != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 299, 12, "fi != null");
-      if (!!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 300, 12, "!fi.isRepeated");
+      if (!(fi != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 299, 12, "fi != null");
+      if (!!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 300, 12, "!fi.isRepeated");
       if (fi.index == null) {
         let _ = this[_ensureExtensions]();
         _[_addInfoUnchecked](protobuf.Extension._check(fi));
@@ -2788,8 +2788,8 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       }
     }
     [_ensureRepeatedField](T, fi) {
-      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 317, 12, "!_isReadOnly");
-      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 318, 12, "fi.isRepeated");
+      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 317, 12, "!_isReadOnly");
+      if (!dart.test(fi.isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 318, 12, "fi.isRepeated");
       if (fi.index == null) {
         return this[_ensureExtensions]()[_ensureRepeatedField](T, protobuf.Extension$(T)._check(fi));
       }
@@ -2800,9 +2800,9 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       return newValue;
     }
     [_ensureMapField](K, V, fi) {
-      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 331, 12, "!_isReadOnly");
-      if (!dart.test(fi.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 332, 12, "fi.isMapField");
-      if (!(fi.index != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 333, 12, "fi.index != null");
+      if (!!dart.test(this[_isReadOnly])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 331, 12, "!_isReadOnly");
+      if (!dart.test(fi.isMapField)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 332, 12, "fi.isMapField");
+      if (!(fi.index != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 333, 12, "fi.index != null");
       let value = this[_getFieldOrNull](fi);
       if (value != null) return protobuf.PbMap$(K, V)._check(core.Map$(K, V).as(value));
       let newValue = fi[_createMapField](this[_message]);
@@ -2866,8 +2866,8 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       return true;
     }
     [_$set](index, value) {
-      if (!!dart.test(this[_nonExtensionInfoByIndex](index).isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 428, 12, "!_nonExtensionInfoByIndex(index).isRepeated");
-      if (!dart.test(this[_$check](index, value))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/field_set.dart", 429, 12, "_$check(index, value)");
+      if (!!dart.test(this[_nonExtensionInfoByIndex](index).isRepeated)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 428, 12, "!_nonExtensionInfoByIndex(index).isRepeated");
+      if (!dart.test(this[_$check](index, value))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/field_set.dart", 429, 12, "_$check(index, value)");
       this[_ensureWritable]();
       if (value == null) {
         this[_$check](index, value);
@@ -4261,7 +4261,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
     if (!dart.test(dart.fn(() => {
       fs[_validateField](fi, value);
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/json.dart", 146, 10, "() {fs._validateField(fi, value); return true;}()");
+    }, VoidTobool())())) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/json.dart", 146, 10, "() {fs._validateField(fi, value); return true;}()");
     fs[_setFieldUnchecked](fi, value);
   };
   protobuf._convertJsonValue = function(fs, value, tagNumber, fieldType, registry) {
@@ -4528,7 +4528,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
       let check = opts && 'check' in opts ? opts.check : dart.fn(protobuf._checkNotNull, ObjectTovoid());
       this[check$] = check;
       this[_wrappedList] = JSArrayOfE().of([]);
-      if (!(this.check != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/pb_list.dart", 162, 12, "check != null");
+      if (!(this.check != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/pb_list.dart", 162, 12, "check != null");
     }).prototype = PbListBase.prototype;
     (PbListBase._from = function(from) {
       this[_wrappedList] = ListOfE().from(from);
@@ -5150,7 +5150,7 @@ define(['dart_sdk', 'packages/fixnum/fixnum'], function(dart_sdk, fixnum) {
     }
     [_getField](number) {
       this[_checkFieldNumber](number);
-      if (dart.test(this[_isReadOnly])) if (!dart.test(this[_fields][$containsKey](number))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/protobuf/src/protobuf/unknown_field_set.dart", 129, 29, "_fields.containsKey(number)");
+      if (dart.test(this[_isReadOnly])) if (!dart.test(this[_fields][$containsKey](number))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/protobuf/src/protobuf/unknown_field_set.dart", 129, 29, "_fields.containsKey(number)");
       return this[_fields][$putIfAbsent](number, dart.fn(() => new protobuf.UnknownFieldSetField.new(), VoidToUnknownFieldSetField()));
     }
     _equals(other) {

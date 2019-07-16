@@ -75,7 +75,7 @@ define(['dart_sdk', 'packages/angular_components/utils/browser/events/events', '
       this[_disposeListeners]();
     }
     [_attach](child) {
-      if (!(child != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/laminate/popup/popup_hierarchy.dart", 40, 12, "child != null");
+      if (!(child != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/laminate/popup/popup_hierarchy.dart", 40, 12, "child != null");
       if (dart.test(this[_visiblePopupStack][$isEmpty])) {
         this[_rootPane] = utils__browser__events__events.closestWithClass(html.Element._check(child.elementRef.nativeElement), "pane");
       }

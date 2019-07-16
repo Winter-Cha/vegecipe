@@ -192,7 +192,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
         let l = value == null ? null : value[$isNotEmpty];
         return l != null ? l : false;
       })() ? value : null;
-      if (!(this[_slide] == null || this.slide === "x" || this.slide === "y")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_popup/material_popup.dart", 191, 12, "_slide == null || (slide == 'x' || slide == 'y')");
+      if (!(this[_slide] == null || this.slide === "x" || this.slide === "y")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_popup/material_popup.dart", 191, 12, "_slide == null || (slide == 'x' || slide == 'y')");
     }
     set popupSizeProvider(value) {
       this[_popupSizeProvider] = value;
@@ -289,7 +289,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       this[templateRef] = value;
     }
     [_initView]() {
-      if (!(this[_viewInitialized] === false)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_popup/material_popup.dart", 318, 12, "_viewInitialized == false");
+      if (!(this[_viewInitialized] === false)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_popup/material_popup.dart", 318, 12, "_viewInitialized == false");
       this[_overlayRef] = this[_overlayService].createOverlayRefSync();
       this[_disposer].addFunction(dart.bind(this[_overlayRef], 'dispose'));
       this[_zIndex] = this[_zIndexer].pop();
@@ -529,7 +529,7 @@ define(['dart_sdk', 'packages/angular_components/utils/disposer/disposer', 'pack
       return dart.test(material_popup__material_popup._flatten(this.state.preferredPositions)[$isNotEmpty]) ? this.state.preferredPositions : this[_defaultPreferredPositions];
     }
     [_getBestPosition](contentRect, sourceRect, containerRect) {
-      if (!dart.test(this.state.enforceSpaceConstraints)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_popup/material_popup.dart", 699, 12, "state.enforceSpaceConstraints");
+      if (!dart.test(this.state.enforceSpaceConstraints)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_popup/material_popup.dart", 699, 12, "state.enforceSpaceConstraints");
       let containerOffset = containerRect[$topLeft];
       let positions = material_popup__material_popup._flatten(this[_preferredPositions]);
       let bestPosition = positions[$first];

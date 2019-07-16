@@ -564,7 +564,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/quiver/iterables'], functi
         V._check(value);
         this[_insertMru](this[_createEntry](key, value));
         if (dart.notNull(this.length) > dart.notNull(this.maximumSize)) {
-          if (!(this.length === dart.notNull(this.maximumSize) + 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/quiver/src/collection/lru_map.dart", 217, 14, "length == maximumSize + 1");
+          if (!(this.length === dart.notNull(this.maximumSize) + 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/quiver/src/collection/lru_map.dart", 217, 14, "length == maximumSize + 1");
           this[_removeLru]();
         }
         return value;
@@ -620,7 +620,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/quiver/iterables'], functi
           }, KAndVToNull()));
           result.write("}");
         } finally {
-          if (!(collection$._toStringVisiting[$last] === this)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/quiver/src/collection/lru_map.dart", 284, 14, "identical(_toStringVisiting.last, this)");
+          if (!(collection$._toStringVisiting[$last] === this)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/quiver/src/collection/lru_map.dart", 284, 14, "identical(_toStringVisiting.last, this)");
           collection$._toStringVisiting[$removeLast]();
         }
         return result.toString();
@@ -639,7 +639,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/quiver/iterables'], functi
         }
         this[_insertMru](this[_createEntry](key, newValue));
         if (dart.notNull(this.length) > dart.notNull(this.maximumSize)) {
-          if (!(this.length === dart.notNull(this.maximumSize) + 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/quiver/src/collection/lru_map.dart", 307, 14, "length == maximumSize + 1");
+          if (!(this.length === dart.notNull(this.maximumSize) + 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/quiver/src/collection/lru_map.dart", 307, 14, "length == maximumSize + 1");
           this[_removeLru]();
         }
         return newValue;
@@ -672,7 +672,7 @@ define(['dart_sdk', 'packages/quiver/core', 'packages/quiver/iterables'], functi
         entry.next = this[_head];
         this[_head] = entry;
         if (this[_tail] == null) {
-          if (!(this.length === 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/quiver/src/collection/lru_map.dart", 352, 14, "length == 1");
+          if (!(this.length === 1)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/quiver/src/collection/lru_map.dart", 352, 14, "length == 1");
           this[_tail] = this[_head];
         }
       }

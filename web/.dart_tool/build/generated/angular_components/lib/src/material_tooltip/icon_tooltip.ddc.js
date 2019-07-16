@@ -621,8 +621,8 @@ define(['dart_sdk', 'packages/angular_components/model/action/delayed_action', '
     this[tooltipBehavior] = null;
     this[icon$] = icon != null ? icon : (type != null ? type : "help") + "_outline";
     this[iconSize] = size != null ? size : "medium";
-    if (!(type === "help" || type === "info" || type === "error" || type == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_tooltip/icon_tooltip.dart", 105, 12, "type == 'help' || type == 'info' || type == 'error' || type == null");
-    if (!(this.iconSize === "x-small" || this.iconSize === "small" || this.iconSize === "medium" || this.iconSize === "large" || this.iconSize === "x-large" || this.iconSize === "")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/material_tooltip/icon_tooltip.dart", 106, 12, "iconSize == 'x-small' || iconSize == 'small' || iconSize == 'medium' || iconSize == 'large' || iconSize == 'x-large' || iconSize == ''");
+    if (!(type === "help" || type === "info" || type === "error" || type == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_tooltip/icon_tooltip.dart", 105, 12, "type == 'help' || type == 'info' || type == 'error' || type == null");
+    if (!(this.iconSize === "x-small" || this.iconSize === "small" || this.iconSize === "medium" || this.iconSize === "large" || this.iconSize === "x-large" || this.iconSize === "")) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/material_tooltip/icon_tooltip.dart", 106, 12, "iconSize == 'x-small' || iconSize == 'small' || iconSize == 'medium' || iconSize == 'large' || iconSize == 'x-large' || iconSize == ''");
     this.element = element;
     darkTheme.themeElement(element);
   }).prototype = src__material_tooltip__icon_tooltip.MaterialIconTooltipComponent.prototype;

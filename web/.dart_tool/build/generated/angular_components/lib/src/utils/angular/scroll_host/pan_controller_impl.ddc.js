@@ -170,7 +170,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
     }
     get onPan() {
       if (this[_controller] == null) {
-        if (!(this[_stream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/pan_controller_impl.dart", 60, 14, "_stream == null");
+        if (!(this[_stream] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/pan_controller_impl.dart", 60, 14, "_stream == null");
         this[_controller] = StreamControllerOfPanEvent().broadcast({sync: true, onListen: dart.bind(this, _onListen), onCancel: dart.bind(this, _onCancel)});
         this[_stream] = new (ZonedStreamOfPanEvent()).new(this[_controller].stream, dart.gbind(dart.bind(this.ngZone, 'runOutsideAngular'), dart.dynamic));
       }
@@ -183,7 +183,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
       return dart.notNull(this.host[$scrollHeight]) - dart.notNull(this.host.clientHeight);
     }
     [_onListen]() {
-      if (!(this[_onWheelSubscription] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/pan_controller_impl.dart", 73, 12, "_onWheelSubscription == null");
+      if (!(this[_onWheelSubscription] == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/pan_controller_impl.dart", 73, 12, "_onWheelSubscription == null");
       this.ngZone.runOutsideAngular(core$.Null, dart.fn(() => {
         this[_onWheelSubscription] = this.host[$onMouseWheel].listen(dart.fn(event => {
           if (dart.test(this[_wasScrolling])) return;
@@ -553,8 +553,8 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
       }
     }
     [_startIntersectionSubscription](stickyElement) {
-      if (!(stickyElement.intersectionElement == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/position_sticky_controller.dart", 150, 12, "stickyElement.intersectionElement == null");
-      if (!(stickyElement.intersectionSubscription == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/position_sticky_controller.dart", 151, 12, "stickyElement.intersectionSubscription == null");
+      if (!(stickyElement.intersectionElement == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/position_sticky_controller.dart", 150, 12, "stickyElement.intersectionElement == null");
+      if (!(stickyElement.intersectionSubscription == null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/position_sticky_controller.dart", 151, 12, "stickyElement.intersectionSubscription == null");
       stickyElement.intersectionElement = (() => {
         let _ = html.DivElement.new();
         _.style[$width] = "0px";
@@ -1002,7 +1002,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
     this.range = range;
     this.stickyClass = stickyClass;
     this[_stickyKey] = stickyKey;
-    if (!(dart.test(this.isTop) || dart.test(this.isBottom))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/sticky_controller_impl.dart", 262, 12, "isTop || isBottom");
+    if (!(dart.test(this.isTop) || dart.test(this.isBottom))) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/sticky_controller_impl.dart", 262, 12, "isTop || isBottom");
   }).prototype = src__utils__angular__scroll_host__sticky_controller_impl._StickyRow.prototype;
   dart.addTypeTests(src__utils__angular__scroll_host__sticky_controller_impl._StickyRow);
   src__utils__angular__scroll_host__sticky_controller_impl._StickyRow[dart.implements] = () => [src__utils__angular__scroll_host__sticky_controller_impl.StickyRowPosition];
@@ -1227,7 +1227,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
               dart.dsetindex(stickyKeyToRowIndex, row.stickyKey, dart.notNull(layout.topRows[$length]) - 1);
             }
           } else {
-            if (!dart.test(row.isBottom)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/sticky_controller_impl.dart", 528, 18, "row.isBottom");
+            if (!dart.test(row.isBottom)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/sticky_controller_impl.dart", 528, 18, "row.isBottom");
             if (layout.bottomRows == null) {
               layout.bottomRows = _interceptors.JSArray$(src__utils__angular__scroll_host__sticky_controller_impl._RowData$(T)).of([]);
             }
@@ -1469,7 +1469,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
       }
     }
     onIntersection(element) {
-      if (!dart.test(utils__browser__feature_detector__feature_detector.supportsIntersectionObserver)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/scroll_host_base.dart", 286, 12, "feature_detector.supportsIntersectionObserver");
+      if (!dart.test(utils__browser__feature_detector__feature_detector.supportsIntersectionObserver)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/scroll_host_base.dart", 286, 12, "feature_detector.supportsIntersectionObserver");
       let t = this[_intersectionStreams][$_get](element);
       t == null ? this[_intersectionStreams][$_set](element, StreamControllerOfIntersectionObserverEntry().broadcast({onListen: dart.fn(() => this[_intersectionObserver].observe(element), VoidTovoid()), onCancel: dart.fn(() => this[_intersectionObserver].unobserve(element), VoidTovoid()), sync: true})) : t;
       return this[_intersectionStreams][$_get](element).stream;
@@ -1726,7 +1726,7 @@ define(['dart_sdk', 'packages/angular_components/src/utils/angular/scroll_host/s
   const _updateClass = dart.privateName(src__utils__angular__scroll_host__scroll_host_base, "_updateClass");
   src__utils__angular__scroll_host__scroll_host_base.BasePanClassDirective = class BasePanClassDirective extends core$.Object {
     set className(value) {
-      if (!(this[_className] == null || this[_className] == value)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/src/utils/angular/scroll_host/scroll_host_base.dart", 431, 12, "(_className == null) || (_className == value)");
+      if (!(this[_className] == null || this[_className] == value)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/src/utils/angular/scroll_host/scroll_host_base.dart", 431, 12, "(_className == null) || (_className == value)");
       this[_className] = value;
     }
     startPanListener() {

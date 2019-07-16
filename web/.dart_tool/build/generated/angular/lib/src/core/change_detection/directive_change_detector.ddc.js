@@ -39,7 +39,7 @@ define(['dart_sdk', 'packages/angular/src/core/application_tokens', 'packages/an
       this[el] = value;
     }
     initCd() {
-      if (!src__core__change_detection__component_state.ComponentState.is(this.directive)) dart.assertFailed("Should never be called", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular/src/core/change_detection/directive_change_detector.dart", 25, 12, "directive is ComponentState");
+      if (!src__core__change_detection__component_state.ComponentState.is(this.directive)) dart.assertFailed("Should never be called", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular/src/core/change_detection/directive_change_detector.dart", 25, 12, "directive is ComponentState");
       src__core__change_detection__component_state.internalSetStateChanged(src__runtime__optimizations.unsafeCast(src__core__change_detection__component_state.ComponentState, this.directive), dart.fn(() => {
         if (!dart.test(this[_hasHostChanges])) {
           this[_hasHostChanges] = true;

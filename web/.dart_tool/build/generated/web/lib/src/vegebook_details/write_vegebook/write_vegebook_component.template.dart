@@ -947,8 +947,10 @@ class _ViewWriteVegeBookComponent6 extends AppView<import2.WriteVegeBookComponen
   NgIf _NgIf_8_9;
   ViewContainer _appEl_13;
   NgIf _NgIf_13_9;
-  ViewContainer _appEl_16;
-  NgIf _NgIf_16_9;
+  ViewContainer _appEl_14;
+  NgIf _NgIf_14_9;
+  ViewContainer _appEl_15;
+  NgIf _NgIf_15_9;
   var _expr_0;
   bool _expr_1;
   var _expr_2;
@@ -1008,16 +1010,15 @@ class _ViewWriteVegeBookComponent6 extends AppView<import2.WriteVegeBookComponen
     _appEl_13 = ViewContainer(13, 12, this, _anchor_13);
     TemplateRef _TemplateRef_13_8 = TemplateRef(_appEl_13, viewFactory_WriteVegeBookComponent8);
     _NgIf_13_9 = NgIf(_appEl_13, _TemplateRef_13_8);
-    final _el_14 = import11.appendElement(doc, _el_9, 'button');
-    this.updateChildClass(_el_14, 'save-btn');
-    addShimC(_el_14);
-    final _text_15 = import11.appendText(_el_14, 'EDIT');
-    final _anchor_16 = import11.appendAnchor(_el_0);
-    _appEl_16 = ViewContainer(16, 0, this, _anchor_16);
-    TemplateRef _TemplateRef_16_8 = TemplateRef(_appEl_16, viewFactory_WriteVegeBookComponent9);
-    _NgIf_16_9 = NgIf(_appEl_16, _TemplateRef_16_8);
+    final _anchor_14 = import11.appendAnchor(_el_9);
+    _appEl_14 = ViewContainer(14, 9, this, _anchor_14);
+    TemplateRef _TemplateRef_14_8 = TemplateRef(_appEl_14, viewFactory_WriteVegeBookComponent9);
+    _NgIf_14_9 = NgIf(_appEl_14, _TemplateRef_14_8);
+    final _anchor_15 = import11.appendAnchor(_el_0);
+    _appEl_15 = ViewContainer(15, 0, this, _anchor_15);
+    TemplateRef _TemplateRef_15_8 = TemplateRef(_appEl_15, viewFactory_WriteVegeBookComponent10);
+    _NgIf_15_9 = NgIf(_appEl_15, _TemplateRef_15_8);
     _el_3.addEventListener('click', eventHandler0(_ctx.goBack));
-    _el_14.addEventListener('click', eventHandler0(_ctx.goEdit));
     init1(_el_0);
   }
 
@@ -1035,10 +1036,12 @@ class _ViewWriteVegeBookComponent6 extends AppView<import2.WriteVegeBookComponen
     }
     _NgIf_8_9.ngIf = _ctx.vegeBook.hasMediumPortraitImage;
     _NgIf_13_9.ngIf = (_ctx.vegeBook.writtenBy != null);
-    _NgIf_16_9.ngIf = _ctx.vegeBook.hasContent;
+    _NgIf_14_9.ngIf = _ctx.isMine;
+    _NgIf_15_9.ngIf = _ctx.vegeBook.hasContent;
     _appEl_8.detectChangesInNestedViews();
     _appEl_13.detectChangesInNestedViews();
-    _appEl_16.detectChangesInNestedViews();
+    _appEl_14.detectChangesInNestedViews();
+    _appEl_15.detectChangesInNestedViews();
     final bool currVal_0 = (!_ctx.contentVisible);
     if (import13.checkBinding(_expr_0, currVal_0)) {
       import11.setProperty(_el_0, 'hidden', currVal_0);
@@ -1062,7 +1065,8 @@ class _ViewWriteVegeBookComponent6 extends AppView<import2.WriteVegeBookComponen
   void destroyInternal() {
     _appEl_8.destroyNestedViews();
     _appEl_13.destroyNestedViews();
-    _appEl_16.destroyNestedViews();
+    _appEl_14.destroyNestedViews();
+    _appEl_15.destroyNestedViews();
     _compView_2.destroyInternalState();
     _VegeBookLandscapeImageComponent_2_5.ngOnDestroy();
   }
@@ -1153,9 +1157,30 @@ AppView<void> viewFactory_WriteVegeBookComponent8(AppView<dynamic> parentView, i
 }
 
 class _ViewWriteVegeBookComponent9 extends AppView<import2.WriteVegeBookComponent> {
+  _ViewWriteVegeBookComponent9(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    initComponentStyles();
+  }
+  @override
+  ComponentRef<import2.WriteVegeBookComponent> build() {
+    final _ctx = ctx;
+    final doc = import8.document;
+    final _el_0 = doc.createElement('button');
+    this.updateChildClass(_el_0, 'save-btn');
+    addShimC(_el_0);
+    final _text_1 = import11.appendText(_el_0, 'EDIT');
+    _el_0.addEventListener('click', eventHandler0(_ctx.goEdit));
+    init1(_el_0);
+  }
+}
+
+AppView<void> viewFactory_WriteVegeBookComponent9(AppView<dynamic> parentView, int parentIndex) {
+  return _ViewWriteVegeBookComponent9(parentView, parentIndex);
+}
+
+class _ViewWriteVegeBookComponent10 extends AppView<import2.WriteVegeBookComponent> {
   var _expr_0;
   import8.Element _el_2;
-  _ViewWriteVegeBookComponent9(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewWriteVegeBookComponent10(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     initComponentStyles();
   }
   @override
@@ -1184,8 +1209,8 @@ class _ViewWriteVegeBookComponent9 extends AppView<import2.WriteVegeBookComponen
   }
 }
 
-AppView<void> viewFactory_WriteVegeBookComponent9(AppView<dynamic> parentView, int parentIndex) {
-  return _ViewWriteVegeBookComponent9(parentView, parentIndex);
+AppView<void> viewFactory_WriteVegeBookComponent10(AppView<dynamic> parentView, int parentIndex) {
+  return _ViewWriteVegeBookComponent10(parentView, parentIndex);
 }
 
 final List<dynamic> styles$WriteVegeBookComponentHost = const [];

@@ -110,7 +110,7 @@ define(['dart_sdk'], function(dart_sdk) {
       return disposable;
     }
     addFunction(disposable) {
-      if (!(disposable != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/disposer/disposer.dart", 145, 12, "disposable != null");
+      if (!(disposable != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/disposer/disposer.dart", 145, 12, "disposable != null");
       let t = this[_disposeFunctions];
       t == null ? this[_disposeFunctions] = JSArrayOfVoidTovoid().of([]) : t;
       this[_disposeFunctions][$add](disposable);
@@ -118,7 +118,7 @@ define(['dart_sdk'], function(dart_sdk) {
       return disposable;
     }
     [_checkIfAlreadyDisposed]() {
-      if (!!(dart.test(this[_oneShot]) && dart.test(this[_disposeCalled]))) dart.assertFailed("Possible memory leak detected: A disposable should not be added to one shot disposers after the dispose() method has been called.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/utils/disposer/disposer.dart", 154, 12, "!(_oneShot && _disposeCalled)");
+      if (!!(dart.test(this[_oneShot]) && dart.test(this[_disposeCalled]))) dart.assertFailed("Possible memory leak detected: A disposable should not be added to one shot disposers after the dispose() method has been called.", "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/utils/disposer/disposer.dart", 154, 12, "!(_oneShot && _disposeCalled)");
     }
     dispose() {
       if (this[_disposeSubs] != null) {

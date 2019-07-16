@@ -324,7 +324,7 @@ define(['dart_sdk', 'packages/path/path', 'packages/term_glyph/term_glyph'], fun
       this[_writeSidebar]({end: src__generated__top_level.downEnd});
       this[_buffer].writeln();
       let lineStart = src__utils.findLineStart(this[_span].context, this[_span].text, this[_span].start.column);
-      if (!(lineStart != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/source_span/src/highlighter.dart", 197, 12, "lineStart != null");
+      if (!(lineStart != null)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/source_span/src/highlighter.dart", 197, 12, "lineStart != null");
       let context = this[_span].context;
       if (dart.notNull(lineStart) > 0) {
         let lines = context[$substring](0, dart.notNull(lineStart) - 1)[$split]("\n");
@@ -392,7 +392,7 @@ define(['dart_sdk', 'packages/path/path', 'packages/term_glyph/term_glyph'], fun
       this[_buffer].writeln();
     }
     [_writeIntermediateLines](lines) {
-      if (!dart.test(this[_multiline])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/source_span/src/highlighter.dart", 294, 12, "_multiline");
+      if (!dart.test(this[_multiline])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/source_span/src/highlighter.dart", 294, 12, "_multiline");
       let lineNumber = dart.notNull(this[_span].start.line) + 1;
       for (let line of lines) {
         this[_writeSidebar]({line: lineNumber});
@@ -407,7 +407,7 @@ define(['dart_sdk', 'packages/path/path', 'packages/term_glyph/term_glyph'], fun
       }
     }
     [_writeLastLine](line) {
-      if (!dart.test(this[_multiline])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/source_span/src/highlighter.dart", 315, 12, "_multiline");
+      if (!dart.test(this[_multiline])) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/source_span/src/highlighter.dart", 315, 12, "_multiline");
       this[_writeSidebar]({line: this[_span].end.line});
       let endColumn = math.min(core.int, this[_span].end.column, line.length);
       if (dart.test(this[_multiline]) && endColumn === line.length) {

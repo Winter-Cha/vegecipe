@@ -109,7 +109,7 @@ define(['dart_sdk', 'packages/angular_components/utils/color/palette', 'packages
       return this[_isChangeNeutral];
     }
     get changeGlyphIcon() {
-      if (!!dart.test(this.isChangeNeutral)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/scorecard/scorecard.dart", 128, 12, "!isChangeNeutral");
+      if (!!dart.test(this.isChangeNeutral)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/scorecard/scorecard.dart", 128, 12, "!isChangeNeutral");
       return dart.test(this.isChangePositive) ? "arrow_upward" : "arrow_downward";
     }
     get selected() {

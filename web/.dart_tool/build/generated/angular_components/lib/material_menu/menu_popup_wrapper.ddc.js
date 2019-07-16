@@ -95,7 +95,7 @@ define(['dart_sdk', 'packages/angular_components/model/observable/observable', '
     }
     set width(val) {
       this[_width] = utils__angular__properties__properties.getInt(val, {defaultValue: 0});
-      if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spaceN42JPh/packages/angular_components/material_menu/menu_popup_wrapper.dart", 104, 12, "_width >= 0 && _width <= 5");
+      if (!(dart.notNull(this[_width]) >= 0 && dart.notNull(this[_width]) <= 5)) dart.assertFailed(null, "file:///private/var/folders/_q/d3_d45gx0clfh53k0fj1d8sw0000gn/T/scratch_spacej3kyT1/packages/angular_components/material_menu/menu_popup_wrapper.dart", 104, 12, "_width >= 0 && _width <= 5");
     }
     get preferredPositions() {
       return this[preferredPositions];
