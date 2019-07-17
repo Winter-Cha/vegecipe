@@ -108,8 +108,8 @@ input.visible {
 }
 @media only screen and (min-width: 768px) {
   .buttons {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
 }
 

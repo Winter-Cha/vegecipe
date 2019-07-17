@@ -37,7 +37,6 @@ import 'package:firebase/firebase.dart' as fb;
     MaterialIconComponent,
     MaterialButtonComponent,
     MaterialDialogComponent,
-    MaterialIconComponent,
     ModalComponent,
     SignInPageComponent,
     NgFor,
@@ -68,6 +67,7 @@ class SignInBarComponent {
   bool isAuthenticated() => fb.auth().currentUser != null;
   String get userEmail => fb.auth().currentUser?.email;
   String get displayName => fb.auth().currentUser?.displayName;
+  String get userPhoto => fb.auth().currentUser?.photoURL;
   Map<String, dynamic> get userJson => fb.auth().currentUser?.toJson();
 
   Future<Null> logout() async {

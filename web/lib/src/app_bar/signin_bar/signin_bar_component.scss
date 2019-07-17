@@ -12,14 +12,29 @@ h2 {
 }
 
 .signin-button-group{
-  padding: 10px;
+  width: 90px;
+  padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
 
   @include screen-size-tablet {
-    padding: 14px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
   }
 
 }
 
 .signin-user-info{
   color: aquamarine
+}
+
+.signin-user-photo{
+  width: 40px;
+  height: 40px;
+}
+
+.signin-out{
+  width: 30px;
+  height: 30px;
 }

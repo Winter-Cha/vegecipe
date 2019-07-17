@@ -5,18 +5,17 @@
     Sign in
   </material-button>
 
- 
-  <div *ngIf="isAuthenticated()" class="signin-user-info" >
-      {{displayName}}
+  <img *ngIf="isAuthenticated()" class="signin-user-photo" [src]="userPhoto"/>
+  <!-- <div *ngIf="isAuthenticated()" class="signin-user-info" >
+      {{userPhoto}} -->
     <!-- <p>User email: {{userEmail}}  Display Name: {{displayName}}</p>
     <p>User Json: {{userJson}}</p>
     <p>Provider Access Token 
     (may not be present unless session is new) : {{providerAccessToken}}</p>
      -->
-  </div>
-  <material-button *ngIf="isAuthenticated()" (click)="logout()" class="red" raised>
-      Logout
-    </material-button>
+  <!-- </div> -->
+
+  <img *ngIf="isAuthenticated()" (click)="logout()" class="signin-out" src="/images/icon/outline-exit_to_app-24px.svg"/>
 </div>
 
 
