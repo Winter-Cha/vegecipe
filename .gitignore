@@ -23,3 +23,6 @@ web/doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+# Files and directories created by vscode
+.vscode/
