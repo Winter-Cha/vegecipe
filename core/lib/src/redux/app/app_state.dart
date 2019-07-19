@@ -2,6 +2,7 @@ import 'package:core/src/models/actor.dart';
 import 'package:core/src/redux/event/event_state.dart';
 import 'package:core/src/redux/show/show_state.dart';
 import 'package:core/src/redux/theater/theater_state.dart';
+import 'package:core/src/redux/userinfo/userinfo_state.dart';
 import 'package:core/src/redux/vegenews/vegenews_state.dart';
 import 'package:core/src/redux/vegebook/vegebook_state.dart';
 import 'package:kt_dart/collection.dart';
@@ -17,6 +18,7 @@ class AppState {
     @required this.eventState,
     @required this.vegeNewsState,
     @required this.vegeBookState,
+    @required this.userInfoState,
   });
 
   final String searchQuery;
@@ -26,6 +28,7 @@ class AppState {
   final EventState eventState;
   final VegeNewsState vegeNewsState;
   final VegeBookState vegeBookState;
+  final UserInfoState userInfoState;
 
   factory AppState.initial() {
     return AppState(
@@ -36,6 +39,7 @@ class AppState {
       eventState: EventState.initial(),
       vegeNewsState: VegeNewsState.initial(),
       vegeBookState: VegeBookState.initial(),
+      userInfoState: UserInfoState.initial(),
     );
   }
 
@@ -47,6 +51,7 @@ class AppState {
     EventState eventState,
     VegeNewsState vegeNewsState,
     VegeBookState vegeBookState,
+    UserInfoState userInfoState,
   }) {
     return AppState(
       searchQuery: searchQuery ?? this.searchQuery,
@@ -56,6 +61,7 @@ class AppState {
       eventState: eventState ?? this.eventState,
       vegeNewsState: vegeNewsState ?? this.vegeNewsState,
       vegeBookState: vegeBookState ?? this.vegeBookState,
+      userInfoState: userInfoState ?? this.userInfoState,
     );
   }
 
@@ -70,7 +76,8 @@ class AppState {
           showState == other.showState &&
           eventState == other.eventState &&
           vegeNewsState == other.vegeNewsState &&
-          vegeBookState == other.vegeBookState;
+          vegeBookState == other.vegeBookState &&
+          userInfoState == other.userInfoState;
 
   @override
   int get hashCode =>
@@ -80,5 +87,6 @@ class AppState {
       showState.hashCode ^
       eventState.hashCode ^
       vegeNewsState.hashCode ^
-      vegeBookState.hashCode;
+      vegeBookState.hashCode ^
+      userInfoState.hashCode;
 }

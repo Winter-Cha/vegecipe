@@ -19,10 +19,10 @@ import 'package:firebase_dart_ui/firebase_dart_ui.dart';
     NgIf,
   ],
 )
-class SignInPageComponent {
-  SignInPageComponent(this.messages, this.store);
-  final Messages messages;
-  final Store<AppState> store;
+class SignInPageComponent implements OnInit{
+  SignInPageComponent(this._messages, this._store);
+  final Messages _messages;
+  final Store<AppState> _store;
 
   // If the provider gave us an access token, we put it here.
   String providerAccessToken = "";
@@ -45,9 +45,12 @@ class SignInPageComponent {
     print("sign in  success. ProviderID =  ${authResult.credential.providerId}");
     print("Info= ${authResult.additionalUserInfo.username}");
 
+    _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
+    
     // returning false gets rid of the double page load (no need to redirect to /)
     return false;
   }
+
 
   /// Your Application must provide the UI configuration for the
   /// AuthUi widget. This is where you configure the providers and options.
@@ -100,8 +103,14 @@ class SignInPageComponent {
           credentialHelper: ACCOUNT_CHOOSER,
           tosUrl: '/tos.html',
           callbacks: callbacks);
+    }else{
+      print("else");
     }
     return _uiConfig;
+  }
+
+  @override
+  void ngOnInit() {
   }
 
 }

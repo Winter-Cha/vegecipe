@@ -26,6 +26,7 @@ export 'src/redux/vegenews/vegenews_actions.dart';
 export 'src/redux/vegenews/vegenews_selectors.dart';
 export 'src/redux/vegebook/vegebook_actions.dart';
 export 'src/redux/vegebook/vegebook_selectors.dart';
+export 'src/redux/userinfo/userinfo_actions.dart';
 export 'src/redux/store.dart';
 
 export 'src/viewmodels/theater_list_view_model.dart';
