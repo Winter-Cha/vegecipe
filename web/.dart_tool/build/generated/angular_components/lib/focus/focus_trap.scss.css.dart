@@ -1,1 +1,0 @@
-final List<dynamic> styles = [':host {\n  display: block;\n}\n\n[focusContentWrapper] {\n  height: inherit;\n  max-height: inherit;\n  min-height: inherit;\n}\n'];

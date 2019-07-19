@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["js|lib/js.dart","service_worker|lib/src/js_facade/isomorphic_fetch.dart","service_worker|lib/src/js_facade/promise.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["html","typed_data"]}

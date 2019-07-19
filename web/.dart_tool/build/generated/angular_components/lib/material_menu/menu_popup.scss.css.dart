@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['.item-group-list {\n  padding: 8px 0;\n}\n'];

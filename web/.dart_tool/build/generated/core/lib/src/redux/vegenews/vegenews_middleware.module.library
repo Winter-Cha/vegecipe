@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["core|lib/src/redux/_common/common_actions.dart","core|lib/src/redux/app/app_state.dart","core|lib/src/redux/vegenews/vegenews_actions.dart","firebase|lib/firestore.dart","redux|lib/redux.dart","core|lib/src/parsers/vegenews_parser.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"]}

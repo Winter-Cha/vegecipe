@@ -1,1 +1,0 @@
-final List<dynamic> styles = [':host[size=small] img {\n  width: 20px;\n  height: 20px;\n}\n:host[size=medium] img {\n  width: 30px;\n  height: 30px;\n}\n\nimg {\n  width: 20px;\n  height: 20px;\n  vertical-align: middle;\n  margin-right: 6px;\n}\nimg:last-child {\n  margin-right: 0;\n}\n'];

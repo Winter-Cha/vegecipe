@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["core|lib/src/models/loading_status.dart","core|lib/src/redux/vegebook/vegebook_actions.dart","core|lib/src/redux/vegebook/vegebook_state.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

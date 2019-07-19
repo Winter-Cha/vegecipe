@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['.searchbox-input._ngcontent-%ID%{width:100%;padding:0}.searchbox-input._ngcontent-%ID%  .glyph{color:#bdbdbd}'];

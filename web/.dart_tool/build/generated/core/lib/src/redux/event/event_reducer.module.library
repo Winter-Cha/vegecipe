@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["core|lib/src/models/event.dart","core|lib/src/models/loading_status.dart","core|lib/src/redux/_common/common_actions.dart","core|lib/src/redux/event/event_actions.dart","core|lib/src/redux/event/event_state.dart","kt_dart|lib/collection.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

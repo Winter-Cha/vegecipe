@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['material-input._ngcontent-%ID%{width:inherit}'];

@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['img._ngcontent-%ID%{max-width:100%;max-height:100%;width:100%;opacity:0;transition:opacity 750ms ease}'];

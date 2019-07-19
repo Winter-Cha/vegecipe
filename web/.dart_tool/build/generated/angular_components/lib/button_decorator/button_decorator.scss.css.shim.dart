@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['[buttonDecorator]._ngcontent-%ID%{cursor:pointer}[buttonDecorator].is-disabled._ngcontent-%ID%{cursor:not-allowed}'];

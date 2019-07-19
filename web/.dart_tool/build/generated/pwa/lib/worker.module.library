@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["service_worker|lib/worker.dart"],"parts":["pwa|lib/src/cache.dart","pwa|lib/src/handler.dart","pwa|lib/src/push.dart","pwa|lib/src/router.dart"],"conditionalDeps":[],"sdkDeps":["async"]}

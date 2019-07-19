@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['._nghost-%ID%{display:block}._nghost-%ID%[centerStrip] > material-tab-strip._ngcontent-%ID%{margin:0 auto}'];

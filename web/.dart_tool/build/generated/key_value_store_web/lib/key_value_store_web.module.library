@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["key_value_store|lib/key_value_store.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","convert","html"]}

@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["core|lib/src/redux/app/app_state.dart","intl|lib/intl.dart","core|lib/src/models/theater.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

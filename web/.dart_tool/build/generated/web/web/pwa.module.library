@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["core|lib/core.dart","pwa|lib/worker.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

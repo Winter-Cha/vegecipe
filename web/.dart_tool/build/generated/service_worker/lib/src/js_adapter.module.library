@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["js|lib/js.dart","js|lib/js_util.dart","service_worker|lib/src/js_facade/promise.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","collection"]}

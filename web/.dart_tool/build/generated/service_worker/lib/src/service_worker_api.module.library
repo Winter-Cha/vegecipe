@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["js|lib/js.dart","js|lib/js_util.dart","service_worker|lib/src/js_adapter.dart","service_worker|lib/src/js_facade/service_worker_api.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","convert","html","indexed_db","typed_data"]}

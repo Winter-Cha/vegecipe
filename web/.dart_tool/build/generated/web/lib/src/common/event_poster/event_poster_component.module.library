@@ -1,1 +1,0 @@
-{"isEntrypoint":false,"deps":["angular|lib/angular.dart","core|lib/core.dart","intl|lib/intl.dart","web|lib/src/common/content_rating/content_rating_component.dart","web|lib/src/common/event_poster/lazy_image_component.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
