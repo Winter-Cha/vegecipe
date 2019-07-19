@@ -3,7 +3,8 @@
 # Files and directories created by pub
 core/.dart_tool/
 web/.dart_tool/
-/core/.packages
+core/.packages
+web/.packages
 core/build/
 web/build/
 # If you're building an application, you may want to check-in your pubspec.lock
