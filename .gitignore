@@ -3,6 +3,8 @@
 # Files and directories created by pub
 core/.dart_tool/
 web/.dart_tool/
+core/.idea/
+web/.idea/
 core/.packages
 web/.packages
 core/build/
