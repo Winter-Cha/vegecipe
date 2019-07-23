@@ -9,12 +9,10 @@ import 'package:web/src/showtimes/showtimes_page_component.template.dart'
 
 import 'package:web/src/vegenews/vegenews_page_component.template.dart'
     as vegenews_page;
-import 'package:web/src/vegenews_details/vegenews_details_component.template.dart'
-    deferred as vegenews_details;
+import 'package:web/src/vegenews_details/write_vegenews/write_vegenews_component.template.dart'
+    deferred as write_vegenews;
 import 'package:web/src/vegebook/vegebook_page_component.template.dart'
     as vegebook_page;
-import 'package:web/src/vegebook_details/vegebook_details_component.template.dart'
-    deferred as vegebook_details;
 import 'package:web/src/vegebook_details/write_vegebook/write_vegebook_component.template.dart'
     deferred as write_vegebook;
 
@@ -26,7 +24,8 @@ class RoutePaths {
     //additionalData: EventListType.vegeNews,
   );
 
-  static final vegeNewsDetails = RoutePath(path: 'vegenews/:vegeNewsId');
+  static final vegeNewsDetails = RoutePath(path: 'writenews/:vegeNewsId');
+  static final writeNews = RoutePath(path: 'writenews');
 
    // VegeBook
   static final vegeBook = RoutePath(
@@ -66,10 +65,14 @@ class Routes {
     RouteDefinition.defer(
       routePath: RoutePaths.vegeNewsDetails,
       loader: () {
-        return vegenews_details
+        return write_vegenews
             .loadLibrary()
-            .then((_) => vegenews_details.VegeNewsDetailsComponentNgFactory);
+            .then((_) => write_vegenews.WriteVegeNewsComponentNgFactory);
       },
+    ),
+    RouteDefinition(
+      routePath: RoutePaths.writeNews,
+      component: write_vegenews.WriteVegeNewsComponentNgFactory,
     ),
     RouteDefinition(
       routePath: RoutePaths.vegeBook,

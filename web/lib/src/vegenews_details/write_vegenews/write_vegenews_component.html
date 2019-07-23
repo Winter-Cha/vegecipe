@@ -1,0 +1,135 @@
+
+<div class="container" [hidden]="!editable" [class.visible]="editable" *ngIf=" editable && vegeNews != null">
+  <loading-whole-view 
+        [status]="saveStatus"
+        [errorMessage]="messages.saveVegeNewsError"
+        (actionButtonClicked)="onSubmit()">
+</loading-whole-view>
+<form (ngSubmit)="onSubmit()" #newsForm="ngForm">
+  <div class="landscape-container">
+    <div class="landscape-placeholder">
+      <img src="images/fallback-icon.svg"/>
+    </div>
+    <img #landscapeImage class="landscape-actual" [src]="landscapeImageSrc"/>
+  </div>
+  <img src="images/back.svg" class="back" (click)="goBack()"/>
+    
+    <material-button *ngIf="!editMode" class="blue add-landscape-image" raised (click)="landscapeImagefileInput.click()">
+      Add Landscape image
+    </material-button>
+      <div style="display: none;">
+        <input type="text" required #lImage="ngForm" [(ngModel)]="landscapeImageSrc" ngControl="lImage" />
+        <input type="file" #landscapeImagefileInput required (change)="onLandscapeImageFileSelected($event)" accept="image/png, image/jpeg">
+      </div>
+    
+    <div class="vegenews-header">
+      <div class="vegenews-poster">
+        <div class="fallback-icon">
+          <img src="images/fallback-icon.svg" [alt]="'Fallback image'"/>
+        </div>
+        <img #posterImage class="poster-actual" [src]="posterImageSrc"/>
+        <material-button *ngIf="!editMode" class="blue add-post-image" raised (click)="posterImagefileInput.click()">
+          Add post
+        </material-button>
+        <div style="display: none;">
+            <input type="text" required [(ngModel)]="posterImageSrc" #pImage="ngForm" ngControl="pImage" >
+            <input type="file" (change)="onPosterImageFileSelected($event)" #posterImagefileInput accept="image/png, image/jpeg">
+        </div>
+      </div>
+      
+      <div class="vegenews-information">
+        <!-- <h2 class="title">{{ vegeNews.title }}</h2> -->
+        <material-input floatingLabel 
+        *ngIf="!editMode"
+        type="text" 
+        label="Type title [required]"
+        [(ngModel)]="vegeNews.title"
+        required
+        requiredErrorMsg="This input requires a value!"
+        class="title"
+        id="title"
+        #title="ngForm"
+        ngControl="title"
+        >
+      </material-input>
+
+      <material-input floatingLabel 
+        *ngIf="editMode"
+        type="text" 
+        label="Type title [required]"
+        [(ngModel)]="copyNews.title"
+        required
+        requiredErrorMsg="This input requires a value!"
+        class="title"
+        id="title"
+        #title="ngForm"
+        ngControl="title"
+        >
+      </material-input>
+
+      <div class="body">
+        <p class="writtenBy" >
+          <strong>{{ messages.writtenBy }}</strong>: {{ vegeNews.writtenBy }}
+        </p>
+      </div>
+      <!-- <material-button class="red save-btn" raised type="submit" [disabled]="!newsForm.form.valid" #submit="ngForm">
+        Save
+      </material-button> -->
+      <button [disabled]="!newsForm.form.valid" type="button" (click)="onSubmit()" class="save-btn">
+        SUBMIT
+      </button>
+    </div>
+  </div>
+  
+  <div class="section" >
+    <div class="centered-content">
+        <div style="display: none;">
+            <input type="text" [(ngModel)]="vegeNews.content" #content="ngForm" ngControl="content" id="editableInput" required />
+        </div>
+      <div class="editable content"></div>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- View page -->
+<div class="container" [hidden]="!contentVisible" [class.visible]="contentVisible" *ngIf=" contentVisible && vegeNews != null">
+  <div class="landscape-container">
+    <vegenews-landscape-image [vegeNews]="vegeNews"></vegenews-landscape-image>
+  </div>
+  <img src="images/back.svg" class="back" (click)="goBack()"/>
+
+  <div class="vegenews-header">
+    <div class="vegenews-poster">
+      <div class="fallback-icon">
+        <img src="images/fallback-icon.svg"
+            [alt]="'Fallback image for ' + vegeNews.title"/>
+      </div>
+      <lazy-img *ngIf="vegeNews.hasMediumPortraitImage"
+                [src]="vegeNews.images.portraitMedium"
+                [alt]="'Poster for ' + vegeNews.title"></lazy-img>
+    </div>
+    
+    <div class="vegenews-information">
+      <h2 class="title">{{ vegeNews.title }}</h2>
+
+      <div class="body">
+        <p class="writtenBy" *ngIf="vegeNews.writtenBy != null">
+          <strong>{{ messages.writtenBy }}</strong>: {{ vegeNews.writtenBy }}
+        </p>
+      </div>
+
+      <button class="save-btn" (click)="goEdit()" *ngIf="isMine"> 
+          EDIT
+      </button>
+
+    </div>
+  </div>
+  <div class="section" *ngIf="vegeNews.hasContent">
+    <div class="centered-content">
+      <!-- <div class="content">{{ vegeNews.content }}</div> -->
+      <simple-html class="html-content" [innerHtml]="vegeNews.content"></simple-html>
+    </div>
+  </div>
+</div>
+

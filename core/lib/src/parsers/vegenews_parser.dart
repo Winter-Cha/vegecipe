@@ -13,6 +13,7 @@ class VegeNewsParser {
         images: VegeNewsImageDataParser.parse(doc.get('images')),
         galleryImages: VegeNewsGalleryParser.parse(doc.get('galleryImages')),
         writtenBy: doc.get('writtenBy'),
+        writerUid: doc.get('writerUid'),
         writerPhotoUrl: doc.get('writerPhotoUrl'),
         reportingDate: doc.get('reportingDate'),
         lastModifiedDate: doc.get('lastModifiedDate'),

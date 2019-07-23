@@ -53,9 +53,9 @@ class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,Afte
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    print("onActivate 1: " + isAuthenticated().toString());
-    print("onActivate 2: " + _store.state.userInfoState.auth);
-    print(isAdmin());
+    // print("onActivate 1: " + isAuthenticated().toString());
+    // print("onActivate 2: " + _store.state.userInfoState.auth);
+    // print(isAdmin());
     //_listType = current.routePath.additionalData;
     restoreScrollPositionIfNeeded(previous, RoutePaths.vegeBookDetails);
 
@@ -74,22 +74,22 @@ class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,Afte
 
   @override
   void ngOnInit() {
-    print("ngOnInit 1: " + isAuthenticated().toString());
-    print("ngOnInit 2: " + _store.state.userInfoState.auth);
-    print(isAdmin());
+    // print("ngOnInit 1: " + isAuthenticated().toString());
+    // print("ngOnInit 2: " + _store.state.userInfoState.auth);
+    // print(isAdmin());
   }
 
   @override
   void ngAfterContentInit() {
-    print("ngAfterContentInit 1: " + isAuthenticated().toString());
-    print("ngAfterContentInit 2: " + _store.state.userInfoState.auth);
-    print(isAdmin());
+    // print("ngAfterContentInit 1: " + isAuthenticated().toString());
+    // print("ngAfterContentInit 2: " + _store.state.userInfoState.auth);
+    // print(isAdmin());
   }
 
   @override
   void ngAfterViewInit() {
-    print("ngAfterViewInit 1: " + isAuthenticated().toString());
-    print("ngAfterViewInit 2: " + _store.state.userInfoState.auth);
-    print(isAdmin());
+    // print("ngAfterViewInit 1: " + isAuthenticated().toString());
+    // print("ngAfterViewInit 2: " + _store.state.userInfoState.auth);
+    // print(isAdmin());
   }
 }

@@ -15,6 +15,10 @@ class Messages {
         'There was an error while\nuploading content.',
         name: 'saveVegeBookError',
       );
+  String get saveVegeNewsError => Intl.message(
+        'There was an error while\nuploading content.',
+        name: 'saveVegeNewsError',
+      );
   String get nowInTheaters => Intl.message(
         'Now in theaters',
         name: 'nowInTheaters',

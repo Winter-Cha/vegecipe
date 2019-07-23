@@ -9,20 +9,22 @@ class VegeNews {
     this.images,
     this.galleryImages,
     this.writtenBy,
+    this.writerUid,
     this.writerPhotoUrl,
     this.reportingDate,
     this.lastModifiedDate,
   });
 
-  final String id;
-  final String title;
-  final String content;
-  final VegeNewsImageData images;
-  final KtList<VegeNewsGalleryImage> galleryImages;
-  final String writtenBy;
-  final String writerPhotoUrl;
-  final DateTime reportingDate;
-  final DateTime lastModifiedDate;
+  String id;
+  String title;
+  String content;
+  VegeNewsImageData images;
+  KtList<VegeNewsGalleryImage> galleryImages;
+  String writtenBy;
+  String writerUid;
+  String writerPhotoUrl;
+  DateTime reportingDate;
+  DateTime lastModifiedDate;
 
 
   bool get hasContent => (content != null && content.isNotEmpty) ;
@@ -42,6 +44,7 @@ class VegeNews {
           images == other.images &&
           galleryImages == other.galleryImages &&
           writtenBy == other.writtenBy &&
+          writerUid == other.writerUid &&
           writerPhotoUrl == other.writerPhotoUrl &&
           reportingDate == other.reportingDate &&
           lastModifiedDate == other.lastModifiedDate;
@@ -54,6 +57,7 @@ class VegeNews {
       images.hashCode ^
       galleryImages.hashCode ^
       writtenBy.hashCode ^
+      writerUid.hashCode ^
       writerPhotoUrl.hashCode ^
       reportingDate.hashCode ^
       lastModifiedDate.hashCode;
@@ -65,8 +69,8 @@ class VegeNewsGalleryImage {
     this.thumbnailLocation,
   });
 
-  final String location;
-  final String thumbnailLocation;
+  String location;
+  String thumbnailLocation;
 
   @override
   bool operator ==(Object other) =>
@@ -89,11 +93,11 @@ class VegeNewsImageData {
     @required this.landscapeBig,
   });
 
-  final String portraitSmall;
-  final String portraitMedium;
-  final String portraitLarge;
-  final String landscapeSmall;
-  final String landscapeBig;
+  String portraitSmall;
+  String portraitMedium;
+  String portraitLarge;
+  String landscapeSmall;
+  String landscapeBig;
 
   String get anyAvailableImage =>
       portraitSmall ??

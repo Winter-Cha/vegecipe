@@ -6,7 +6,8 @@ import 'package:core/core.dart';
 import 'package:redux/redux.dart';
 
 import 'package:firebase/src/interop/firebase_interop.dart';
-import 'package:firebase/firebase.dart' as fb;
+import 'package:firebase/firebase.dart'
+as fb;
 import 'package:firebase_dart_ui/firebase_dart_ui.dart';
 
 @Component(
@@ -19,14 +20,14 @@ import 'package:firebase_dart_ui/firebase_dart_ui.dart';
     NgIf,
   ],
 )
-class SignInPageComponent implements OnInit{
+class SignInPageComponent implements OnInit {
   SignInPageComponent(this._messages, this._store);
   final Messages _messages;
-  final Store<AppState> _store;
+  final Store < AppState > _store;
 
   // If the provider gave us an access token, we put it here.
   String providerAccessToken = "";
-  
+
   UIConfig _uiConfig;
 
   Future<Null> logout() async {
@@ -35,9 +36,9 @@ class SignInPageComponent implements OnInit{
   }
 
   // todo: We need to create a nicer wrapper for the sign in callbacks.
-  PromiseJsImpl<void>  signInFailure(AuthUIError authUiError) {
+  PromiseJsImpl < void > signInFailure(AuthUIError authUiError) {
     // nothing to do;
-    return new PromiseJsImpl<void>( () => print("SignIn Failure"));
+    return new PromiseJsImpl < void > (() => print("SignIn Failure"));
   }
 
   // Example SignInSuccess callback handler
@@ -46,7 +47,7 @@ class SignInPageComponent implements OnInit{
     print("Info= ${authResult.additionalUserInfo.username}");
 
     _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
-    
+
     // returning false gets rid of the double page load (no need to redirect to /)
     return false;
   }
@@ -57,21 +58,21 @@ class SignInPageComponent implements OnInit{
   UIConfig getUIConfig() {
     if (_uiConfig == null) {
       var googleOptions = new CustomSignInOptions(
-          provider: fb.GoogleAuthProvider.PROVIDER_ID,
-          scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
-          customParameters:
-              new GoogleCustomParameters(prompt: 'select_account'));
+        provider: fb.GoogleAuthProvider.PROVIDER_ID,
+        scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
+        customParameters:
+        new GoogleCustomParameters(prompt: 'select_account'));
 
       var facebookOptions = new CustomSignInOptions(
-          provider: fb.FacebookAuthProvider.PROVIDER_ID,
-          //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
-          customParameters:
-              new FacebookCustomParameters());
+        provider: fb.FacebookAuthProvider.PROVIDER_ID,
+        //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
+        customParameters:
+        new FacebookCustomParameters());
 
       var twitterOptions = new CustomSignInOptions(
-          provider: fb.TwitterAuthProvider.PROVIDER_ID
-          //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
-          );
+        provider: fb.TwitterAuthProvider.PROVIDER_ID
+        //scopes: ['email', 'https://www.googleapis.com/auth/plus.login'],
+      );
 
 
       // var gitHub = new CustomSignInOptions(
@@ -80,37 +81,37 @@ class SignInPageComponent implements OnInit{
       //     // See https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/
       //     scopes: [/*'repo', 'gist' */]);
 
-
       var callbacks = new Callbacks(
-          uiShown: () => print("UI shown callback"),
-          signInSuccessWithAuthResult: allowInterop(signInSuccess),
-          signInFailure: signInFailure
+        uiShown: () => print("UI shown callback"),
+        signInSuccessWithAuthResult: allowInterop(signInSuccess),
+        signInFailure: signInFailure
       );
 
-
       _uiConfig = new UIConfig(
-          signInSuccessUrl: '/',
-          signInOptions: [
-            googleOptions,
-            facebookOptions,
-            twitterOptions,
-            //fb.EmailAuthProvider.PROVIDER_ID,
-            //fb.PhoneAuthProvider.PROVIDER_ID,
-            //gitHub
-          ],
-          signInFlow: "redirect",
-          //signInFlow: "popup",
-          credentialHelper: ACCOUNT_CHOOSER,
-          tosUrl: '/tos.html',
-          callbacks: callbacks);
-    }else{
-      print("else");
+        signInSuccessUrl: '/',
+        signInOptions: [
+          googleOptions,
+          facebookOptions,
+          twitterOptions,
+          //fb.EmailAuthProvider.PROVIDER_ID,
+          //fb.PhoneAuthProvider.PROVIDER_ID,
+          //gitHub
+        ],
+        signInFlow: "redirect",
+        //signInFlow: "popup",
+        credentialHelper: ACCOUNT_CHOOSER,
+        tosUrl: '/tos.html',
+        callbacks: callbacks);
+    } else {
+      // When the browser is refreshed, it resets the user information. 
+      if (_store.state.userInfoState.userUid == null) {
+        _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
+      }
     }
     return _uiConfig;
   }
 
   @override
-  void ngOnInit() {
-  }
+  void ngOnInit() {}
 
 }

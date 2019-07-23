@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:core/core.dart';
 import 'package:redux/redux.dart';
@@ -8,6 +9,8 @@ import 'package:web/src/routes.dart';
 
 import '../restore_scroll_position.dart';
 
+import 'package:firebase/firebase.dart' as fb;
+
 @Component(
   selector: 'vegenews-page',
   styleUrls: ['vegenews_page_component.css'],
@@ -15,6 +18,8 @@ import '../restore_scroll_position.dart';
   directives: [
     LoadingViewComponent,
     VegeNewsPosterComponent,
+    MaterialButtonComponent,
+    NgIf,
     NgFor,
   ],
 )
@@ -24,7 +29,17 @@ class VegeNewsPageComponent implements OnActivate {
   final Router _router;
   final Messages messages;
 
+  bool isAuthenticated() => fb.auth().currentUser != null;
+  bool isAdmin() => _store.state.userInfoState.auth == "admin";
+
   String get VegeNewsTitle => this.messages.vegeNews;
+
+
+  void writeNews() {
+    final url = RoutePaths.writeNews.toUrl();
+    _router.navigate(url);
+  }
+
 
   VegeNewsPageViewModel get viewModel =>
       VegeNewsPageViewModel.fromStore(_store);

@@ -28,7 +28,6 @@ class VegeBookMiddleware extends MiddlewareClass<AppState> {
       try {
 
         QuerySnapshot latestVegeBook = (await fs.collection('vegebook').orderBy('reportingDate', 'desc').get()) ;
-        print("_fetchLatestVegeBook :" + latestVegeBook.toString());
         next(ReceivedInTheatersVegeBookAction(VegeBookParser.parse(latestVegeBook)));
       } catch (e) {
         next(ErrorLoadingVegeBookAction());
@@ -36,7 +35,6 @@ class VegeBookMiddleware extends MiddlewareClass<AppState> {
   }
 
   Future<void> _refreshEvents( RefreshVegeBookAction action, NextDispatcher next) {
-    print("_refreshEvents");
     return _fetchLatestVegeBook(next);
   }
 }

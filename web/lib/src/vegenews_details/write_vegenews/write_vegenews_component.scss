@@ -101,7 +101,7 @@
   margin-left: 10px;
 }
 
-.vegebook-header {
+.vegenews-header {
   display: flex;
   flex-flow: row;
   align-items: flex-start;
@@ -109,9 +109,9 @@
   position: relative;
   z-index: 3;
 
-  .vegebook-poster {
+  .vegenews-poster {
     flex: 1;
-    min-width: 125px;
+    max-width: 125px;
     max-width: 200px;
     box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.35);
     width: 100px;
@@ -147,7 +147,7 @@
   }
 }
 
-.vegebook-information {
+.vegenews-information {
   flex: 2;
   margin: 60px 0 0 15px;
 
@@ -224,6 +224,10 @@
   min-height: 300px;
 }
 
+.html-content {
+  white-space: pre;
+}
+
 @include screen-size-nexus-5x {
 
   .landscape-container,
@@ -232,11 +236,11 @@
     height: 280px;
   }
 
-  .vegebook-header {
+  .vegenews-header {
     margin: -40px auto 0 auto;
     width: 70%;
 
-    .vegebook-poster {
+    .vegenews-poster {
       flex: unset;
       min-width: unset;
       max-width: unset;
@@ -244,7 +248,7 @@
       height: 180px;
     }
 
-    .vegebook-information {
+    .vegenews-information {
       margin-left: 25px;
 
       .title {
@@ -272,11 +276,11 @@
     height: 320px;
   }
 
-  .vegebook-header {
+  .vegenews-header {
     margin: -60px auto 0 auto;
     width: 70%;
 
-    .vegebook-poster {
+    .vegenews-poster {
       flex: unset;
       min-width: unset;
       max-width: unset;
@@ -284,7 +288,7 @@
       height: 300px;
     }
 
-    .vegebook-information {
+    .vegenews-information {
       margin-left: 25px;
 
       .title {
@@ -317,10 +321,6 @@
       font-size: 16px;
     }
   }
-
-  .html-content {
-    white-space: pre;
-  }
 }
 
 @include screen-size-laptop {
@@ -331,11 +331,11 @@
     height: 450px;
   }
 
-  .vegebook-header {
+  .vegenews-header {
     margin: -225px auto 0 auto;
     width: 70%;
 
-    .vegebook-poster {
+    .vegenews-poster {
       flex: unset;
       min-width: unset;
       max-width: unset;
@@ -343,7 +343,7 @@
       height: 450px;
     }
 
-    .vegebook-information {
+    .vegenews-information {
       margin-top: 240px;
       margin-left: 30px;
     }
@@ -368,5 +368,4 @@
       font-size: 16px;
     }
   }
-
 }

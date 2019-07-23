@@ -4,18 +4,18 @@
 
 h2 {
   color: #222;
-  font-family: Roboto,"Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 40px;
   margin: 20px;
 }
 
-.signin-button-group{
+.signin-button-group {
   width: 90px;
   padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 2px;
+  padding-left: 5px;
+  padding-right: 2px;
 
   @include screen-size-tablet {
     padding-top: 10px;
@@ -25,16 +25,17 @@ h2 {
 
 }
 
-.signin-user-info{
+.signin-user-info {
   color: aquamarine
 }
 
-.signin-user-photo{
+.signin-user-photo {
   width: 40px;
   height: 40px;
+  border-radius: 25px;
 }
 
-.signin-out{
+.signin-out {
   width: 30px;
   height: 30px;
 }
