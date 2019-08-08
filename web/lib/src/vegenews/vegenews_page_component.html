@@ -2,7 +2,7 @@
   <div class="page-title">
     <h3>{{ VegeNewsTitle }}</h3>
   </div>
-  <material-button *ngIf="isAuthenticated()" 
+  <material-button *ngIf="isAuthenticated() && isAdmin()" 
     class="blue" 
     (click)="writeNews()" 
     raised>

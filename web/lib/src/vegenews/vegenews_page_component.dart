@@ -34,12 +34,10 @@ class VegeNewsPageComponent implements OnActivate {
 
   String get VegeNewsTitle => this.messages.vegeNews;
 
-
   void writeNews() {
     final url = RoutePaths.writeNews.toUrl();
     _router.navigate(url);
   }
-
 
   VegeNewsPageViewModel get viewModel =>
       VegeNewsPageViewModel.fromStore(_store);
@@ -53,7 +51,7 @@ class VegeNewsPageComponent implements OnActivate {
   @override
   void onActivate(RouterState previous, RouterState current) {
     //_listType = current.routePath.additionalData;
-    
+
     restoreScrollPositionIfNeeded(previous, RoutePaths.vegeNewsDetails);
 
     // if (_listType == EventListType.comingSoon) {
@@ -64,8 +62,8 @@ class VegeNewsPageComponent implements OnActivate {
   void openVegeNewsDetails(VegeNews vegeNews) {
     storeCurrentScrollPosition();
 
-    final url =
-        RoutePaths.vegeNewsDetails.toUrl(parameters: {'vegeNewsId': vegeNews.id});
+    final url = RoutePaths.vegeNewsDetails
+        .toUrl(parameters: {'vegeNewsId': vegeNews.id});
     _router.navigate(url);
   }
 }

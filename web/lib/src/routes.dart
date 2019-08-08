@@ -1,20 +1,20 @@
 import 'package:angular_router/angular_router.dart';
 import 'package:core/core.dart';
 import 'package:web/src/event_details/event_details_component.template.dart'
-    deferred as event_details;
+     as event_details;
 import 'package:web/src/events/events_page_component.template.dart'
     as events_page;
 import 'package:web/src/showtimes/showtimes_page_component.template.dart'
-    deferred as showtimes_page;
+     as showtimes_page;
 
 import 'package:web/src/vegenews/vegenews_page_component.template.dart'
     as vegenews_page;
 import 'package:web/src/vegenews_details/write_vegenews/write_vegenews_component.template.dart'
-    deferred as write_vegenews;
+     as write_vegenews;
 import 'package:web/src/vegebook/vegebook_page_component.template.dart'
     as vegebook_page;
 import 'package:web/src/vegebook_details/write_vegebook/write_vegebook_component.template.dart'
-    deferred as write_vegebook;
+     as write_vegebook;
 
 class RoutePaths {
 
@@ -62,13 +62,14 @@ class Routes {
       routePath: RoutePaths.vegeNews,
       component: vegenews_page.VegeNewsPageComponentNgFactory,
     ),
-    RouteDefinition.defer(
+    RouteDefinition(
       routePath: RoutePaths.vegeNewsDetails,
-      loader: () {
-        return write_vegenews
-            .loadLibrary()
-            .then((_) => write_vegenews.WriteVegeNewsComponentNgFactory);
-      },
+      // loader: () {
+      //   return write_vegenews
+      //       .loadLibrary()
+      //       .then((_) => write_vegenews.WriteVegeNewsComponentNgFactory);
+      // },
+      component: write_vegenews.WriteVegeNewsComponentNgFactory,
     ),
     RouteDefinition(
       routePath: RoutePaths.writeNews,
@@ -79,13 +80,14 @@ class Routes {
       useAsDefault: true,
       component: vegebook_page.VegeBookPageComponentNgFactory,
     ),
-    RouteDefinition.defer(
+    RouteDefinition(
       routePath: RoutePaths.vegeBookDetails,
-      loader: () {
-        return write_vegebook
-            .loadLibrary()
-            .then((_) => write_vegebook.WriteVegeBookComponentNgFactory);
-      },
+      // loader: () {
+      //   return write_vegebook
+      //       .loadLibrary()
+      //       .then((_) => write_vegebook.WriteVegeBookComponentNgFactory);
+      // },
+      component: write_vegebook.WriteVegeBookComponentNgFactory,
     ),
     RouteDefinition(
       routePath: RoutePaths.writeBook,
@@ -99,29 +101,32 @@ class Routes {
       routePath: RoutePaths.comingSoon,
       component: events_page.EventsPageComponentNgFactory,
     ),
-    RouteDefinition.defer(
+    RouteDefinition(
       routePath: RoutePaths.showtimes,
-      loader: () {
-        return showtimes_page
-            .loadLibrary()
-            .then((_) => showtimes_page.ShowtimesPageComponentNgFactory);
-      },
+      // loader: () {
+      //   return showtimes_page
+      //       .loadLibrary()
+      //       .then((_) => showtimes_page.ShowtimesPageComponentNgFactory);
+      // },
+      component: showtimes_page.ShowtimesPageComponentNgFactory,
     ),
-    RouteDefinition.defer(
+    RouteDefinition(
       routePath: RoutePaths.eventDetails,
-      loader: () {
-        return event_details
-            .loadLibrary()
-            .then((_) => event_details.EventDetailsComponentNgFactory);
-      },
+      // loader: () {
+      //   return event_details
+      //       .loadLibrary()
+      //       .then((_) => event_details.EventDetailsComponentNgFactory);
+      // },
+      component: event_details.EventDetailsComponentNgFactory,
     ),
-    RouteDefinition.defer(
+    RouteDefinition(
       routePath: RoutePaths.showDetails,
-      loader: () {
-        return event_details
-            .loadLibrary()
-            .then((_) => event_details.EventDetailsComponentNgFactory);
-      },
+      // loader: () {
+      //   return event_details
+      //       .loadLibrary()
+      //       .then((_) => event_details.EventDetailsComponentNgFactory);
+      // },
+      component: event_details.EventDetailsComponentNgFactory
     ),
   ];
 }

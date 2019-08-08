@@ -3,6 +3,7 @@ import 'dart:js';
 
 import 'package:angular/angular.dart';
 import 'package:core/core.dart';
+import 'package:dialog/dialogs/confirm.dart';
 import 'package:redux/redux.dart';
 
 import 'package:firebase/src/interop/firebase_interop.dart';
@@ -30,11 +31,6 @@ class SignInPageComponent implements OnInit {
 
   UIConfig _uiConfig;
 
-  Future<Null> logout() async {
-    await fb.auth().signOut();
-    providerAccessToken = "";
-  }
-
   // todo: We need to create a nicer wrapper for the sign in callbacks.
   PromiseJsImpl < void > signInFailure(AuthUIError authUiError) {
     // nothing to do;
@@ -46,11 +42,15 @@ class SignInPageComponent implements OnInit {
     print("sign in  success. ProviderID =  ${authResult.credential.providerId}");
     print("Info= ${authResult.additionalUserInfo.username}");
 
-    _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
-
+    if(!hasAuth){
+      _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
+      hasAuth = true;
+    }
     // returning false gets rid of the double page load (no need to redirect to /)
     return false;
   }
+
+  bool hasAuth = false;
 
 
   /// Your Application must provide the UI configuration for the
@@ -103,9 +103,16 @@ class SignInPageComponent implements OnInit {
         tosUrl: '/tos.html',
         callbacks: callbacks);
     } else {
-      // When the browser is refreshed, it resets the user information. 
-      if (_store.state.userInfoState.userUid == null) {
-        _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
+      if(!hasAuth){
+        if (_store.state.userInfoState.userUid == "") {
+          if(fb.auth().currentUser?.uid != null){
+            if(fb.auth().currentUser.uid != ""){
+              //print(fb.auth().currentUser.uid);
+              _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));
+              hasAuth = true;
+            }
+          }
+        }
       }
     }
     return _uiConfig;

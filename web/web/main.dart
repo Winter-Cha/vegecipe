@@ -38,15 +38,17 @@ void main() async {
   runApp(ng.AppComponentNgFactory, createInjector: rootInjector);
 }
 
+
+
 // firebase 설정
 void _initializeFirebase() async{
   fb.initializeApp(
-    apiKey: "AIzaSyCvMl1leOFg95dzmjb_LJPZQdKklbc71LU",
-    authDomain: "vegecipeapp.firebaseapp.com",
-    databaseURL: "https://vegecipeapp.firebaseio.com",
-    projectId: "vegecipeapp",
-    storageBucket: "vegecipeapp.appspot.com",
-    messagingSenderId: "432274912386",
+    apiKey: "AIzaSyD6G0qLWHziRVCpFJR3Ecy0D7nHg0vU9Ao",
+    authDomain: "vegecipe-2019.firebaseapp.com",
+    databaseURL: "https://vegecipe-2019.firebaseio.com",
+    projectId: "vegecipe-2019",
+    storageBucket: "vegecipe-2019.appspot.com",
+    messagingSenderId: "1081638798625",
   );
   
   var lang = await findSystemLocale();

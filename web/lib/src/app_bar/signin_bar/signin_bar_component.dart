@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:core/core.dart';
+import 'package:dialog/dialogs/confirm.dart';
 import 'package:redux/redux.dart';
 
 import 'package:angular_components/focus/focus.dart';
@@ -10,6 +11,7 @@ import 'package:angular_components/laminate/overlay/module.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_dialog/material_dialog.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
+import 'package:web/src/app_bar/app_bar_component.dart';
 
 import 'package:web/src/common/signin_page/signin_page_component.dart';
 
@@ -34,6 +36,7 @@ import 'package:firebase/firebase.dart' as fb;
   styleUrls: ['signin_bar_component.css'],
   directives: [
     AutoFocusDirective,
+    AppBarComponent,
     MaterialIconComponent,
     MaterialButtonComponent,
     MaterialDialogComponent,
@@ -71,6 +74,8 @@ class SignInBarComponent {
   Map<String, dynamic> get userJson => fb.auth().currentUser?.toJson();
 
   Future<Null> logout() async {
+    var myConfirm = await confirm("Are you sure that you want to sign out?");
+    if (!myConfirm) return;
     await fb.auth().signOut();
     providerAccessToken = "";
   }

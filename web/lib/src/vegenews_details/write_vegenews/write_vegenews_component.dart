@@ -235,7 +235,7 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
   void onSubmit() => _saveSubmit();
 
   void _saveSubmit() async {
-    var myConfirm = await confirm("Confirmed?!");
+    var myConfirm = await confirm("Confirmed?");
     if (!myConfirm) return;
 
     saveStatus = LoadingStatus.loading;

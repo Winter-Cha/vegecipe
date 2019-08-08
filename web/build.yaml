@@ -4,8 +4,8 @@ targets:
       build_web_compilers|entrypoint:
         options:
           dart2js_args:
-          - --minify
+          # - --minify
           - --omit-implicit-checks
           - --fast-startup
           - --trust-primitives
-          - --trust-type-annotations
+          - --omit-implicit-checks
