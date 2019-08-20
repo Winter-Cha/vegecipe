@@ -1,9 +1,7 @@
-import 'dart:async';
 import 'dart:js';
 
 import 'package:angular/angular.dart';
 import 'package:core/core.dart';
-import 'package:dialog/dialogs/confirm.dart';
 import 'package:redux/redux.dart';
 
 import 'package:firebase/src/interop/firebase_interop.dart';
@@ -39,8 +37,8 @@ class SignInPageComponent implements OnInit {
 
   // Example SignInSuccess callback handler
   bool signInSuccess(fb.UserCredential authResult, String redirectUrl) {
-    print("sign in  success. ProviderID =  ${authResult.credential.providerId}");
-    print("Info= ${authResult.additionalUserInfo.username}");
+    // print("sign in  success. ProviderID =  ${authResult.credential.providerId}");
+    // print("Info= ${authResult.additionalUserInfo.username}");
 
     if(!hasAuth){
       _store.dispatch(SetUserInfoAction(fb.auth().currentUser?.uid));

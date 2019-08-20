@@ -177,10 +177,16 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
                 'h3'
               ]),
             ));
-        mediumEditor.subscribe('editableInput', (event, editable) {
-          vegeNews.content = mediumEditor.getContent();
-        });
+        DivElement editorDiv = document.querySelector('.editable');
+        editorDiv.onKeyUp.listen(setContent);
       });
+
+  void setContent(e){
+    DivElement editorDiv = querySelector(".editable");
+    if (e.target == editorDiv) {
+      this.vegeNews.content = mediumEditor.getContent();
+    }
+  }
 
   void goBack() {
     if (_navigatedFromApp) {
@@ -303,7 +309,7 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
 
       var dowurl = await (await task.future).ref.getDownloadURL();
       landscapeBig = dowurl.toString();
-      print(' url l ${dowurl.toString()}');
+      // print(' url l ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
@@ -319,7 +325,7 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
 
       var dowurl = await (await task.future).ref.getDownloadURL();
       portraitMedium = dowurl.toString();
-      print(' url p ${dowurl.toString()}');
+      // print(' url p ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
@@ -352,7 +358,7 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
     };
     await doc.set(vegeNewsMap).then((onValue) {
       if (this.vegeNews != null) {
-        print("save success!");
+        // print("save success!");
         this.isMine = true;
         _animateContentIntoView();
       }
@@ -399,16 +405,23 @@ class WriteVegeNewsComponent implements OnInit, OnActivate, OnDestroy {
                 'h3'
               ]),
             ));
-        mediumEditor.subscribe('editableInput', (event, editable) {
-          copyNews.content = mediumEditor.getContent();
-        });
         mediumEditor.setContent(this.copyNews.content);
+
+        DivElement editorDiv = document.querySelector('.editable');
+        editorDiv.onKeyUp.listen(setContentForCopy);
 
         this.landscapeImageSrc = this.copyNews.images.landscapeBig;
         landscapeImageElement.classes.add('loaded');
         this.posterImageSrc = this.copyNews.images.portraitMedium;
         posterImageElement.classes.add('loaded');
       });
+
+  void setContentForCopy(e){
+    DivElement editorDiv = querySelector(".editable");
+    if (e.target == editorDiv) {
+      this.copyNews.content = mediumEditor.getContent();
+    }
+  }
 
   void _animateContentIntoView() => Timer(Duration.zero, () {
         editable = false;

@@ -78,6 +78,6 @@ class MediumEditor {
   /// Returns the trimmed html content for the first editor element, or the element at index.
   String getContent({int index}) => _me.getContent(index);
 
-  //Attaches a listener for the specified custom event name
-  void subscribe(String name, Function listener) => _me.subscribe(name,listener);
+  /// Attaches a listener for the specified custom event name
+  void subscribe(String name, dynamic listener) => _me.subscribe(name,listener);
 }

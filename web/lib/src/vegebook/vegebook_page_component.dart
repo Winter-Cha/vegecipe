@@ -25,10 +25,7 @@ import 'package:firebase/firebase.dart' as fb;
   ],
 )
 class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,AfterViewInit {
-  VegeBookPageComponent(this._store, this._router, this.messages){
-     print( "constructor : " + isAuthenticated().toString());
-     print( "constructor : " + isAdmin().toString());
-  }
+  VegeBookPageComponent(this._store, this._router, this.messages){}
   final Store<AppState> _store;
   final Router _router;
   final Messages messages;

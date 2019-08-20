@@ -23,10 +23,7 @@ VegeNews vegeNewsByIdSelector(AppState state, String id) {
 
 
 KtList<VegeNews> _vegeNewsWithSearchQuery(KtList<VegeNews> original, String searchQuery) {
-
   final searchQueryPattern = RegExp(searchQuery, caseSensitive: false);
-  print("original" + original.toString());
-
   return original.filter((vegeNews) {
     return vegeNews.title.contains(searchQueryPattern);
   });

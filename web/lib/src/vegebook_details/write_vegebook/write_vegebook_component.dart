@@ -177,10 +177,16 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
                 'h3'
               ]),
             ));
-        mediumEditor.subscribe('editableInput', (event, editable) {
-          vegeBook.content = mediumEditor.getContent();
-        });
+        DivElement editorDiv = document.querySelector('.editable');
+        editorDiv.onKeyUp.listen(setContent);
       });
+
+  void setContent(e){
+    DivElement editorDiv = querySelector(".editable");
+    if (e.target == editorDiv) {
+      this.vegeBook.content = mediumEditor.getContent();
+    }
+  }
 
   void goBack() {
     if (_navigatedFromApp) {
@@ -303,7 +309,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
       var dowurl = await (await task.future).ref.getDownloadURL();
       landscapeBig = dowurl.toString();
-      print(' url l ${dowurl.toString()}');
+      // print(' url l ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
@@ -319,7 +325,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
 
       var dowurl = await (await task.future).ref.getDownloadURL();
       portraitMedium = dowurl.toString();
-      print(' url p ${dowurl.toString()}');
+      // print(' url p ${dowurl.toString()}');
     } catch (e) {
       print("Error in uploading to storage: $e");
     }
@@ -352,7 +358,7 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
     };
     await doc.set(vegeBookMap).then((onValue) {
       if (this.vegeBook != null) {
-        print("save success!");
+        // print("save success!");
         this.isMine = true;
         _animateContentIntoView();
       }
@@ -399,10 +405,10 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
                 'h3'
               ]),
             ));
-        mediumEditor.subscribe('editableInput', (event, editable) {
-          copyBook.content = mediumEditor.getContent();
-        });
         mediumEditor.setContent(this.copyBook.content);
+
+        DivElement editorDiv = document.querySelector('.editable');
+        editorDiv.onKeyUp.listen(setContentForCopy);
 
         this.landscapeImageSrc = this.copyBook.images.landscapeBig;
         landscapeImageElement.classes.add('loaded');
@@ -410,6 +416,13 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
         posterImageElement.classes.add('loaded');
       });
 
+  void setContentForCopy(e){
+    DivElement editorDiv = querySelector(".editable");
+    if (e.target == editorDiv) {
+      this.copyBook.content = mediumEditor.getContent();
+    }
+  }
+  
   void _animateContentIntoView() => Timer(Duration.zero, () {
         editable = false;
         contentVisible = true;
@@ -422,4 +435,6 @@ class WriteVegeBookComponent implements OnInit, OnActivate, OnDestroy {
   void blur() {}
 
   void input() {}
+
+
 }
