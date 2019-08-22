@@ -24,7 +24,7 @@ import 'package:firebase/firebase.dart' as fb;
     NgIf,
   ],
 )
-class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,AfterViewInit {
+class VegeBookPageComponent implements OnActivate {
   VegeBookPageComponent(this._store, this._router, this.messages){}
   final Store<AppState> _store;
   final Router _router;
@@ -43,17 +43,8 @@ class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,Afte
 
   VegeBookPageViewModel get viewModel => VegeBookPageViewModel.fromStore(_store);
 
-  // String get eventTypeTitle => _listType == EventListType.nowInTheaters
-  //     ? messages.nowInTheaters
-  //     : messages.comingSoon;
-
-  //bool get isDisplayingComingSoonMovies => _listType == EventListType.comingSoon;
-
   @override
   void onActivate(RouterState previous, RouterState current) {
-    // print("onActivate 1: " + isAuthenticated().toString());
-    // print("onActivate 2: " + _store.state.userInfoState.auth);
-    // print(isAdmin());
     //_listType = current.routePath.additionalData;
     restoreScrollPositionIfNeeded(previous, RoutePaths.vegeBookDetails);
 
@@ -68,26 +59,5 @@ class VegeBookPageComponent implements OnInit, OnActivate, AfterContentInit,Afte
     final url =
         RoutePaths.vegeBookDetails.toUrl(parameters: {'vegeBookId': vegeBook.id});
     _router.navigate(url);
-  }
-
-  @override
-  void ngOnInit() {
-    // print("ngOnInit 1: " + isAuthenticated().toString());
-    // print("ngOnInit 2: " + _store.state.userInfoState.auth);
-    // print(isAdmin());
-  }
-
-  @override
-  void ngAfterContentInit() {
-    // print("ngAfterContentInit 1: " + isAuthenticated().toString());
-    // print("ngAfterContentInit 2: " + _store.state.userInfoState.auth);
-    // print(isAdmin());
-  }
-
-  @override
-  void ngAfterViewInit() {
-    // print("ngAfterViewInit 1: " + isAuthenticated().toString());
-    // print("ngAfterViewInit 2: " + _store.state.userInfoState.auth);
-    // print(isAdmin());
   }
 }

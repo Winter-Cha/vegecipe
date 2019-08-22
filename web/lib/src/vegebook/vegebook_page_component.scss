@@ -8,9 +8,10 @@
 }
 
 vegebook-poster {
-  width: calc(100% / 2);
+  width: calc(100%/2);
   min-height: 243px;
   cursor: pointer;
+  border:1px solid #b1b1b1
 }
 
 @include screen-size-nexus-5x {

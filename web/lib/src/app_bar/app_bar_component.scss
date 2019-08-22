@@ -2,7 +2,8 @@
 @import '../breakpoints';
 
 header {
-  background: rgb(54, 54, 54);
+  // background: rgb(54, 54, 54);
+  background-color: antiquewhite;
   box-shadow: 0 10px 60px rgba(0, 0, 0, .4);
   width: 100%;
   height: 56px;
@@ -37,7 +38,8 @@ header {
 .logo {
   position: relative;
   display: flex;
-  color: #ffffff;
+  // color: #ffffff;
+  color: darkblue;
   align-items: center;
   text-decoration: none;
   user-select: none;
@@ -53,7 +55,8 @@ header {
     display: none;
     font-size: 20px;
     font-weight: 500;
-    color: #FEFEFE;
+    // color: #FEFEFE;
+    color: darkblue;
   }
 
   .mobile-logo-focus-trap {
